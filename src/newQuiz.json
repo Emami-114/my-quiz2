@@ -1,5 +1,1652 @@
 [
   {
+    "id": 725,
+    "de": {
+      "frage": "Welche Kombination aus Spezifikationen und Frequenzen bietet die höchste Geschwindigkeit und Kompatibilität für IoT-Geräte?",
+      "optionen": {
+        "A": "A und 5GHz",
+        "B": "Band 2,4GHz",
+        "C": "G und 5GHz",
+        "D": "N und 2,4GHz"
+      },
+      "antwort": "D",
+      "erklärung": "802.11n kombiniert mit der 2,4GHz-Frequenz bietet die größte Kompatibilität für IoT-Geräte. 802.11n unterstützt sowohl 2,4GHz als auch 5GHz und ist abwärtskompatibel mit älteren Standards wie 802.11b/g. Die 2,4GHz-Frequenz hat eine größere Reichweite und bessere Wanddurchdringung, ideal für IoT-Geräte."
+    },
+    "en": {
+      "question": "Which of the following combinations of specifications and frequencies delivers the greatest speed and compatibility for IoT devices?",
+      "options": {
+        "A": "A and 5GHz",
+        "B": "Band 2.4GHz",
+        "C": "G and 5GHz",
+        "D": "N and 2.4GHz"
+      },
+      "answer": "D",
+      "explanation": "802.11n combined with the 2.4GHz frequency offers the greatest compatibility for IoT devices. 802.11n operates on both 2.4GHz and 5GHz bands and is backward compatible with older standards like 802.11b/g. The 2.4GHz frequency provides longer range and better penetration through walls."
+    }
+  },
+  {
+    "id": 726,
+    "de": {
+      "frage": "Welches der folgenden ist eine E-Mail-Authentifizierungsmethode, die entwickelt wurde, um E-Mail-Spoofing zu erkennen, indem eine digitale Signatur an ausgehende E-Mails angehängt wird?",
+      "optionen": {
+        "A": "SPF",
+        "B": "DKIM",
+        "C": "DNS-Pointer",
+        "D": "MX-Einträge"
+      },
+      "antwort": "B",
+      "erklärung": "DKIM (DomainKeys Identified Mail) ist eine E-Mail-Authentifizierungsmethode, die eine digitale Signatur an ausgehende E-Mails anhängt, um deren Authentizität zu überprüfen und Spoofing zu erkennen."
+    },
+    "en": {
+      "question": "Which of the following is an email authentication method designed to detect email spoofing by attaching a digital signature to outgoing email?",
+      "options": {
+        "A": "SPF",
+        "B": "DKIM",
+        "C": "DNS pointer",
+        "D": "MX records"
+      },
+      "answer": "B",
+      "explanation": "DKIM (DomainKeys Identified Mail) is an email authentication method that attaches a digital signature to outgoing emails to verify authenticity and detect spoofing."
+    }
+  },
+  {
+    "id": 727,
+    "de": {
+      "frage": "Ein Benutzer berichtet, dass sein Computer in den letzten Tagen sehr langsam geworden ist. Der Techniker stellt fest, dass zufällige Pop-ups auf dem Bildschirm erscheinen. Welcher Schritt sollte als nächstes unternommen werden?",
+      "optionen": {
+        "A": "Erstellen einer Wissensdatenbank.",
+        "B": "Aufstellen einer Theorie über die wahrscheinliche Ursache.",
+        "C": "Eine neue Theorie aufstellen und Eskalation in Betracht ziehen.",
+        "D": "Einen Aktionsplan erstellen."
+      },
+      "antwort": "B",
+      "erklärung": "Der Techniker hat die Symptome (langsame Leistung und zufällige Pop-ups) identifiziert und muss nun eine Theorie über die wahrscheinliche Ursache aufstellen, z. B. Malware oder Spyware, wie es die CompTIA-Fehlerbehebungsmethodik vorschreibt."
+    },
+    "en": {
+      "question": "A user is reporting that a computer has been very slow in recent days. The technician looks into the problem and finds pop-ups are randomly appearing on the screen. Which of the following is the next step the technician must take?",
+      "options": {
+        "A": "Establish a knowledge base.",
+        "B": "Establish a theory of probable cause.",
+        "C": "Establish a new theory and consider escalating.",
+        "D": "Establish a plan of action."
+      },
+      "answer": "B",
+      "explanation": "The technician has identified the symptoms (slow performance and random pop-ups) and must now establish a theory of probable cause, such as malware or spyware infection, as per the CompTIA troubleshooting methodology."
+    }
+  },
+  {
+    "id": 728,
+    "de": {
+      "frage": "Ein Benutzer berichtet, dass sich das Datum und die Uhrzeit eines Computers nach dem Ausschalten immer wieder zurücksetzen. Was sollte der Techniker zuerst überprüfen?",
+      "optionen": {
+        "A": "Betriebssystem-Updates",
+        "B": "CMOS-Batterie",
+        "C": "NTP-Server",
+        "D": "RAM"
+      },
+      "antwort": "B",
+      "erklärung": "Die CMOS-Batterie versorgt die Echtzeituhr (RTC) des Motherboards mit Strom. Wenn die Batterie leer ist, verliert das System die Datum- und Uhrzeiteinstellungen."
+    },
+    "en": {
+      "question": "A user reports that, despite manually changing the date and time on a computer, the changes always revert after the computer is turned off for a period of time. Which of the following should the technician consider first?",
+      "options": {
+        "A": "OS updates",
+        "B": "CMOS battery",
+        "C": "NTP server",
+        "D": "RAM"
+      },
+      "answer": "B",
+      "explanation": "The CMOS battery powers the real-time clock (RTC) on the motherboard. If the battery fails, the system loses date and time settings when powered off."
+    }
+  },
+  {
+    "id": 729,
+    "de": {
+      "frage": "Ein Benutzer kann nicht auf Netzwerkressourcen zugreifen. Der Techniker stellt fest, dass das Gerät des Benutzers eine ungültige statische IP-Adresse hat. Welche Einstellung sollte der Techniker konfigurieren, damit das Gerät eine IP-Adresse anfordert?",
+      "optionen": {
+        "A": "SSH",
+        "B": "FTP",
+        "C": "DHCP",
+        "D": "DNS"
+      },
+      "antwort": "C",
+      "erklärung": "DHCP (Dynamic Host Configuration Protocol) weist Geräten automatisch IP-Adressen zu. Durch die Konfiguration des Geräts auf DHCP kann es automatisch eine gültige IP-Adresse anfordern."
+    },
+    "en": {
+      "question": "A user is unable to connect to network resources. A technician discovers that the user's device has an invalid static IP address. Which of the following should the technician configure on the user's device to request an IP address?",
+      "options": {
+        "A": "SSH",
+        "B": "FTP",
+        "C": "DHCP",
+        "D": "DNS"
+      },
+      "answer": "C",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) dynamically assigns IP addresses to devices on a network. Configuring the device to use DHCP allows it to request and receive a valid IP address automatically."
+    }
+  },
+  {
+    "id": 730,
+    "de": {
+      "frage": "Ein Unternehmen verlangt, dass alle Benutzer biometrische Identifikation aktiviert haben. Welche Funktion in Windows bietet diese Möglichkeit?",
+      "optionen": {
+        "A": "BitLocker",
+        "B": "Hello",
+        "C": "Defender",
+        "D": "Trusted Platform Module"
+      },
+      "antwort": "B",
+      "erklärung": "Windows Hello bietet biometrische Authentifizierungsoptionen wie Gesichtserkennung, Fingerabdruck- und Irisscans."
+    },
+    "en": {
+      "question": "A company requires all users to have biometric identification enabled. Which of the following features in Windows provides this functionality?",
+      "options": {
+        "A": "BitLocker",
+        "B": "Hello",
+        "C": "Defender",
+        "D": "Trusted Platform Module"
+      },
+      "answer": "B",
+      "explanation": "Windows Hello provides biometric authentication options, including facial recognition, fingerprint scanning, and iris scanning."
+    }
+  },
+  
+  {
+    "id": 731,
+    "de": {
+      "frage": "Ein Mitarbeiter kann sich nicht mit dem drahtlosen Netzwerk im Büro verbinden, jedoch zu Hause mit seinem privaten Netzwerk. Der Techniker überprüft den Netzwerknamen und stellt fest, dass das Signal stark ist. Welche Maßnahme sollte der Techniker ergreifen, um das Problem zu lösen?",
+      "optionen": {
+        "A": "Das aktuelle 802.1X-Zertifikat installieren.",
+        "B": "Die Einstellungen des WLAN-Routers überprüfen.",
+        "C": "Den WLAN-Treiber aktualisieren.",
+        "D": "Die Windows-Firewall deaktivieren."
+      },
+      "antwort": "A",
+      "erklärung": "802.1X ist ein Authentifizierungsprotokoll, das häufig in Unternehmensnetzwerken verwendet wird. Wenn der Benutzer sich zu Hause verbinden kann, aber nicht im Büro, liegt das Problem wahrscheinlich am fehlenden oder veralteten 802.1X-Zertifikat."
+    },
+    "en": {
+      "question": "An employee cannot connect to the wireless network at the office but can connect to a personal wireless network when at home. The technician verifies the wireless network name is correct, and the signal strength appears to be strong. Which of the following is the best action for the technician to take to resolve the issue?",
+      "options": {
+        "A": "Install the current 802.1X certificate.",
+        "B": "Check the wireless router settings.",
+        "C": "Update the wireless driver.",
+        "D": "Disable the Windows firewall."
+      },
+      "answer": "A",
+      "explanation": "802.1X is a network authentication protocol commonly used in enterprise environments. The issue is likely related to the 802.1X certificate required for authentication. Installing or updating the certificate will resolve the issue."
+    }
+  },
+  {
+    "id": 732,
+    "de": {
+      "frage": "Mehrere Organisationen arbeiten zusammen an einem Projekt und möchten die Daten in die Cloud migrieren. Welches Cloud-Modell sollte verwendet werden?",
+      "optionen": {
+        "A": "Public",
+        "B": "Hybrid",
+        "C": "Private",
+        "D": "Community"
+      },
+      "antwort": "D",
+      "erklärung": "Ein Community-Cloud-Modell ist für mehrere Organisationen konzipiert, die gemeinsame Ziele oder Projekte verfolgen. Es ermöglicht Zusammenarbeit und bietet gleichzeitig ein gewisses Maß an Privatsphäre."
+    },
+    "en": {
+      "question": "Multiple organizations are working together on a project and want to migrate the data to the cloud. Which of the following cloud models should be used?",
+      "options": {
+        "A": "Public",
+        "B": "Hybrid",
+        "C": "Private",
+        "D": "Community"
+      },
+      "answer": "D",
+      "explanation": "A community cloud is designed for multiple organizations with shared goals or projects, allowing collaboration while maintaining a level of privacy."
+    }
+  },
+  {
+    "id": 733,
+    "de": {
+      "frage": "Welches der folgenden Kabel bietet die beste Leistung mit der geringsten elektromagnetischen Störung (EMI)?",
+      "optionen": {
+        "A": "Cat 5",
+        "B": "Cat 6",
+        "C": "Cat 7",
+        "D": "Koaxial"
+      },
+      "antwort": "C",
+      "erklärung": "Cat-7-Kabel bieten die beste Leistung und die geringste elektromagnetische Störung (EMI) dank ihrer verbesserten Abschirmung. Sie unterstützen höhere Geschwindigkeiten und Bandbreiten als Cat 5 oder Cat 6."
+    },
+    "en": {
+      "question": "Which of the following cables provides the best performance with the least EMI?",
+      "options": {
+        "A": "Cat 5",
+        "B": "Cat 6",
+        "C": "Cat 7",
+        "D": "Coaxial"
+      },
+      "answer": "C",
+      "explanation": "Category 7 (Cat 7) cables provide the best performance with the least Electromagnetic Interference (EMI) due to their enhanced shielding."
+    }
+  },
+  {
+    "id": 734,
+    "de": {
+      "frage": "Ein Benutzer kann nicht drucken, da der Drucker offline ist. Andere Benutzer können jedoch problemlos auf denselben Drucker zugreifen. Was sollte der Techniker zuerst überprüfen?",
+      "optionen": {
+        "A": "Die Druckwarteschlangeneinstellungen des Benutzers.",
+        "B": "Die IP-Adresse des Druckers.",
+        "C": "Die Netzwerkeinstellungen des Benutzers.",
+        "D": "Die Firmware-Version des Druckers."
+      },
+      "antwort": "A",
+      "erklärung": "Wenn ein Drucker für einen Benutzer offline ist, aber für andere funktioniert, liegt das Problem oft an den Druckwarteschlangeneinstellungen des Benutzers, z. B. angehaltene Warteschlangen oder fehlgeschlagene Druckaufträge."
+    },
+    "en": {
+      "question": "When trying to print, a user finds the printer is offline. Other users can print to the same printer without error. Which of the following is the first step the technician should take to resolve this issue?",
+      "options": {
+        "A": "Check the user's print queue settings.",
+        "B": "Check the printer's IP address.",
+        "C": "Check the user's network settings.",
+        "D": "Check the printer's firmware version."
+      },
+      "answer": "A",
+      "explanation": "When a printer is offline for one user but works for others, the issue often lies in the user's print queue settings, such as a paused queue or failed print jobs."
+    }
+  },
+  {
+    "id": 735,
+    "de": {
+      "frage": "Ein Benutzer kommt ins Büro und kann mit seinem Smartphone nicht auf das Unternehmensnetzwerk zugreifen. Der Benutzer aktiviert Wi-Fi auf dem Smartphone, sieht aber nur das 5G-Symbol. Welche Einstellung sollte der Benutzer konfigurieren, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Autoverbindung",
+        "B": "VPN",
+        "C": "Verschlüsselung",
+        "D": "WPS"
+      },
+      "antwort": "A",
+      "erklärung": "Wenn das Smartphone das 5G-Symbol anzeigt, ist es mit dem Mobilfunknetz verbunden, nicht mit Wi-Fi. Das Aktivieren der Autoverbindung stellt sicher, dass sich das Gerät automatisch mit dem Unternehmens-Wi-Fi verbindet, sobald es in Reichweite ist."
+    },
+    "en": {
+      "question": "A user arrives at the office and is unable to access the company's network on a smartphone. The user enables Wi-Fi on the smartphone, but it only shows the 5G symbol. Which of the following device settings should the user configure to fix this issue?",
+      "options": {
+        "A": "Autoconnect",
+        "B": "VPN",
+        "C": "Encryption",
+        "D": "WPS"
+      },
+      "answer": "A",
+      "explanation": "If the smartphone shows a 5G symbol, it is connected to the cellular network instead of Wi-Fi. Enabling Autoconnect ensures the device automatically connects to the company Wi-Fi when in range."
+    }
+  },
+  {
+    "id": 736,
+    "de": {
+      "frage": "In welchem der folgenden Cloud-Modelle ist der Kunde nicht für Hardware- und Betriebssystemebenen verantwortlich, sondern nur für Daten und Anwendungen?",
+      "optionen": {
+        "A": "PaaS",
+        "B": "SaaS",
+        "C": "IaaS",
+        "D": "CaaS"
+      },
+      "antwort": "A",
+      "erklärung": "Im Platform-as-a-Service-Modell (PaaS) verwaltet der Cloud-Anbieter Hardware, Betriebssystem und Middleware, während der Kunde für Daten und Anwendungen verantwortlich ist."
+    },
+    "en": {
+      "question": "In which of the following cloud models is the customer not responsible for hardware and OS layers but is responsible for the data and the application?",
+      "options": {
+        "A": "PaaS",
+        "B": "SaaS",
+        "C": "IaaS",
+        "D": "CaaS"
+      },
+      "answer": "A",
+      "explanation": "In Platform as a Service (PaaS), the provider manages hardware, OS, and middleware, while the customer manages data and applications."
+    }
+  },
+  {
+    "id": 737,
+    "de": {
+      "frage": "Ein Techniker behebt ein Problem mit einem kürzlich installierten Drucker, der mehrere Linien und Streifen auf Ausdrucke hinterlässt. Welches Bauteil sollte der Techniker zuerst austauschen?",
+      "optionen": {
+        "A": "Rollen",
+        "B": "Trommel",
+        "C": "Toner",
+        "D": "Fixiereinheit"
+      },
+      "antwort": "C",
+      "erklärung": "Streifen und Linien entstehen oft durch Probleme mit der Tonerkartusche, z. B. durch Beschädigungen oder falsche Installation. Der Austausch der Kartusche ist der erste logische Schritt."
+    },
+    "en": {
+      "question": "A technician is troubleshooting a recently installed printer that is leaving multiple lines and streaks on print jobs. Which of the following should the technician replace first?",
+      "options": {
+        "A": "Rollers",
+        "B": "Drum",
+        "C": "Toner",
+        "D": "Fuser"
+      },
+      "answer": "C",
+      "explanation": "Streaks and lines are often caused by issues with the toner cartridge. Replacing it is the simplest first step."
+    }
+  },
+  {
+    "id": 738,
+    "de": {
+      "frage": "Ein Administrator richtet einen Konferenzraum für eine wichtige Vorstandssitzung ein. Der COO verlangt eine redundante Internetverbindung. Das Büro hat nur einen ISP und die Geräte im Raum sind per Ethernet verbunden. Welche Lösung sollte der Administrator implementieren?",
+      "optionen": {
+        "A": "Wireless Access Point",
+        "B": "NFC",
+        "C": "Hotspot",
+        "D": "Bluetooth"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Hotspot bietet eine redundante Internetverbindung über Mobilfunkdaten und stellt sicher, dass die Verbindung auch bei einem Ausfall des Haupt-ISPs bestehen bleibt."
+    },
+    "en": {
+      "question": "An administrator is setting up a conference room for an important board of directors meeting. The chief operating officer has asked the administrator to make sure a redundant internet connection is available. The office only has one ISP, and the conference room equipment is currently configured using Ethernet. Which of the following should the administrator set up to ensure redundancy?",
+      "options": {
+        "A": "Wireless access point",
+        "B": "Near-field communication",
+        "C": "Hotspot",
+        "D": "Bluetooth"
+      },
+      "answer": "C",
+      "explanation": "A hotspot provides a redundant internet connection using cellular data, ensuring connectivity even if the primary ISP fails."
+    }
+  },
+  {
+    "id": 739,
+    "de": {
+      "frage": "Ein Netzwerkdrucker in einem SOHO-Netzwerk war einige Tage ohne Strom. Nach dem Einschalten kann der Benutzer nicht mehr darauf zugreifen. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Der Drucker hat eine statische IP-Adresse.",
+        "B": "Der Drucker hat eine dynamische IP-Adresse.",
+        "C": "Der Drucker hat eine APIPA-Adresse.",
+        "D": "Der Drucker hat eine öffentliche IP-Adresse."
+      },
+      "antwort": "B",
+      "erklärung": "Wenn der Drucker eine dynamische IP-Adresse verwendet und längere Zeit ausgeschaltet war, könnte die DHCP-Lease abgelaufen sein, wodurch der Drucker eine neue IP-Adresse erhalten hat."
+    },
+    "en": {
+      "question": "A SOHO user's network printer has been without power for the last few days. After turning the printer back on, the user cannot connect to it. Which of the following is the most probable cause?",
+      "options": {
+        "A": "The printer has a static IP address.",
+        "B": "The printer has a dynamic IP address.",
+        "C": "The printer has an APIPA.",
+        "D": "The printer has a public IP address."
+      },
+      "answer": "B",
+      "explanation": "If the printer uses a dynamic IP address, the DHCP lease may have expired during its downtime, resulting in a new IP address."
+    }
+  },
+  {
+    "id": 740,
+    "de": {
+      "frage": "Was beschreibt am besten das Konzept eines DHCP-Lease?",
+      "optionen": {
+        "A": "Eine Definition des Adressbereichs, der einem Gerät zugewiesen wird.",
+        "B": "Eine Reservierung einer IP-Konfiguration für ein Gerät.",
+        "C": "Eine temporäre Zuweisung einer IP-Konfiguration an ein Gerät.",
+        "D": "Eine Übersetzung von Netzwerknamen in IP-Adressen für ein Gerät."
+      },
+      "antwort": "C",
+      "erklärung": "Ein DHCP-Lease ist eine temporäre Zuweisung von IP-Adressen und Netzwerkkonfigurationen, die regelmäßig erneuert wird."
+    },
+    "en": {
+      "question": "Which of the following best describes the concept of a DHCP lease?",
+      "options": {
+        "A": "A definition of the scope of addresses to be assigned to a device on the network.",
+        "B": "A reservation of an IP configuration for a device on the network.",
+        "C": "A temporary assignment of an IP configuration to a device on the network.",
+        "D": "A translation of network names to IP addresses for a device on the network."
+      },
+      "answer": "C",
+      "explanation": "A DHCP lease is a temporary assignment of an IP address and configuration details that is periodically renewed."
+    }
+  },
+  {
+    "id": 741,
+    "de": {
+      "frage": "Welche der folgenden Kabel werden höchstwahrscheinlich mit einem Punch-Down-Block implementiert? (Wählen Sie zwei).",
+      "optionen": {
+        "A": "Telefon",
+        "B": "Glasfaser",
+        "C": "HDMI",
+        "D": "Ethernet",
+        "E": "Koaxial",
+        "F": "USB"
+      },
+      "antwort": ["A", "D"],
+      "erklärung": "Punch-Down-Blöcke werden häufig verwendet, um Kabel für Telefon- und Ethernet-Netzwerke zu terminieren und zu verwalten. Sie ermöglichen eine effiziente Organisation und Verbindung von Drähten."
+    },
+    "en": {
+      "question": "Which of the following cables are the most likely to be implemented using a punch down block? (Select two).",
+      "options": {
+        "A": "Telephone",
+        "B": "Fiber",
+        "C": "HDMI",
+        "D": "Ethernet",
+        "E": "Coaxial",
+        "F": "USB"
+      },
+      "answer": ["A", "D"],
+      "explanation": "Punch-down blocks are commonly used to terminate and manage cabling for telephone systems and Ethernet networks. They allow for efficient organization and connection of wires."
+    }
+  },
+  {
+    "id": 742,
+    "de": {
+      "frage": "Ein Helpdesk-Techniker bemerkt, dass die Netzwerkkarte eines Computers nur 10Mbps Halbduplex verwendet, nachdem der Computer in ein provisorisches Büro umgezogen wurde. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Der Computer ist mit DSL verbunden.",
+        "B": "Der Computer ist mit einem unmanaged Switch verbunden.",
+        "C": "Der Computer ist für NIC-Teaming konfiguriert.",
+        "D": "Der Computer ist mit einem Hub verbunden."
+      },
+      "antwort": "D",
+      "erklärung": "Hubs arbeiten im Halbduplex-Modus und sind auf niedrige Geschwindigkeiten wie 10Mbps begrenzt, was die wahrscheinlichste Ursache für die Leistungseinschränkung der Netzwerkkarte ist."
+    },
+    "en": {
+      "question": "A help desk technician notices the network card will not utilize anything beyond 10Mbps half-duplex after moving a computer to a makeshift office. Which of the following is the most likely issue?",
+      "options": {
+        "A": "The computer is connected with DSL.",
+        "B": "The computer is connected to an unmanaged switch.",
+        "C": "The computer is configured for NIC teaming.",
+        "D": "The computer is connected to a hub."
+      },
+      "answer": "D",
+      "explanation": "Hubs operate in half-duplex mode and are limited to low speeds like 10Mbps, making them the most likely cause for the network card's performance issue."
+    }
+  },
+  {
+    "id": 743,
+    "de": {
+      "frage": "Welche der folgenden Internetverbindungstypen wird höchstwahrscheinlich in abgelegenen Gebieten verwendet?",
+      "optionen": {
+        "A": "Glasfaser",
+        "B": "Kabel",
+        "C": "Satellit",
+        "D": "DSL",
+        "E": "Mobilfunk"
+      },
+      "antwort": "C",
+      "erklärung": "Satelliteninternet wird häufig in abgelegenen Gebieten verwendet, wo keine kabelgebundene Infrastruktur wie Glasfaser oder Kabel verfügbar ist."
+    },
+    "en": {
+      "question": "Which of the following internet connection types is most likely to be used in remote locations?",
+      "options": {
+        "A": "Fiber",
+        "B": "Cable",
+        "C": "Satellite",
+        "D": "DSL",
+        "E": "Cellular"
+      },
+      "answer": "C",
+      "explanation": "Satellite internet is most commonly used in remote areas where wired infrastructure (e.g., fiber or cable) is unavailable."
+    }
+  },
+  {
+    "id": 744,
+    "de": {
+      "frage": "Ein Benutzer berichtet, dass das Sichern großer Dateien auf externe Festplatten länger dauert als bei anderen Benutzern. Was sollte der Techniker zuerst tun, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Das USB-Kabel der Festplatte ersetzen.",
+        "B": "Die externe Festplatte des Benutzers defragmentieren.",
+        "C": "Die Speichertreiber auf dem System des Benutzers aktualisieren.",
+        "D": "Dem Benutzer empfehlen, die Dateien zu komprimieren."
+      },
+      "antwort": "B",
+      "erklärung": "Eine stark fragmentierte Festplatte kann die Lese-/Schreibvorgänge erheblich verlangsamen. Das Defragmentieren der Festplatte organisiert die Daten für effizienteren Zugriff."
+    },
+    "en": {
+      "question": "A user reports that backing up large files to external hard drives takes longer than other users' backups. What should the technician do first to correct this issue?",
+      "options": {
+        "A": "Replace the hard drive's USB cable.",
+        "B": "Defragment the user's external hard drive.",
+        "C": "Update the storage drivers on the user's system.",
+        "D": "Instruct the user to compress the files."
+      },
+      "answer": "B",
+      "explanation": "If a hard drive is heavily fragmented, file read/write operations can take significantly longer. Defragmenting the drive organizes the data for more efficient access."
+    }
+  },
+  {
+    "id": 745,
+    "de": {
+      "frage": "Ein Sicherheitsteam möchte Compliance-Kontrollen implementieren, die nur die Installation von firmenzugelassener Software auf Benutzer-Laptops erlauben. Welche der folgenden Lösungen sollte die IT-Abteilung einsetzen?",
+      "optionen": {
+        "A": "EDR",
+        "B": "VPN",
+        "C": "MDM",
+        "D": "SaaS"
+      },
+      "antwort": "C",
+      "erklärung": "Mobile Device Management (MDM) ermöglicht es der IT-Abteilung, Compliance-Kontrollen durchzusetzen, wie z. B. die Einschränkung der Installation nicht genehmigter Software."
+    },
+    "en": {
+      "question": "A security team wants to implement compliance controls that only permit the installation of company-approved software on user laptops. Which of the following should the IT department deploy?",
+      "options": {
+        "A": "EDR",
+        "B": "VPN",
+        "C": "MDM",
+        "D": "SaaS"
+      },
+      "answer": "C",
+      "explanation": "Mobile Device Management (MDM) allows IT departments to enforce compliance controls, such as restricting the installation of unapproved software."
+    }
+  },
+  {
+    "id": 746,
+    "de": {
+      "frage": "Ein Techniker möchte einen Computer auf eine neue Windows-Version aktualisieren. Der Windows Upgrade Advisor meldet, dass der Computer aufgrund fehlender TPM-2.0-Unterstützung nicht kompatibel ist. Was sollte der Techniker als nächstes tun?",
+      "optionen": {
+        "A": "Das Modul im UEFI-BIOS aktivieren.",
+        "B": "Ein HSM im Computer installieren.",
+        "C": "Eine Neuinstallation der neuen Windows-Version durchführen.",
+        "D": "BitLocker auf dem Computer implementieren."
+      },
+      "antwort": "A",
+      "erklärung": "TPM 2.0 ist oft standardmäßig im UEFI-BIOS deaktiviert. Das Aktivieren des Moduls ist erforderlich, um die Anforderungen bestimmter Windows-Versionen zu erfüllen."
+    },
+    "en": {
+      "question": "A technician wants to upgrade a computer to a new Windows version. The Windows Upgrade Advisor states that the computer is not compatible due to a lack of TPM 2.0 support. What should the technician do next?",
+      "options": {
+        "A": "Enable the module in the UEFI BIOS.",
+        "B": "Install an HSM in the computer.",
+        "C": "Perform a clean install of the new Windows version.",
+        "D": "Implement BitLocker on the computer."
+      },
+      "answer": "A",
+      "explanation": "TPM 2.0 is often disabled by default in the UEFI BIOS. Enabling it is necessary to meet the requirements for certain Windows installations."
+    }
+  },
+  {
+    "id": 747,
+    "de": {
+      "frage": "Welcher Dienst wird verwendet, um IP-Adressen in einer unternehmensweiten Umgebung zuzuweisen?",
+      "optionen": {
+        "A": "DNS",
+        "B": "Syslog",
+        "C": "Telnet",
+        "D": "DHCP"
+      },
+      "antwort": "D",
+      "erklärung": "DHCP (Dynamic Host Configuration Protocol) ist ein Netzwerkdienst, der IP-Adressen und andere Netzwerkkonfigurationsdetails automatisch zuweist."
+    },
+    "en": {
+      "question": "Which of the following services is used to allocate IP addresses in an enterprise-wide environment?",
+      "options": {
+        "A": "DNS",
+        "B": "Syslog",
+        "C": "Telnet",
+        "D": "DHCP"
+      },
+      "answer": "D",
+      "explanation": "Dynamic Host Configuration Protocol (DHCP) is a network service used to automatically assign IP addresses and other network configuration details to devices on an enterprise-wide network."
+    }
+  },
+  {
+    "id": 748,
+    "de": {
+      "frage": "Welche der folgenden Optionen beinhaltet die Installation einer Anwendung auf einem Server, damit mehrere Benutzer die Anwendung gleichzeitig nutzen können, ohne sie lokal installieren zu müssen?",
+      "optionen": {
+        "A": "Client-Virtualisierung",
+        "B": "Software as a Service",
+        "C": "Sandboxing",
+        "D": "Eingebettete Software"
+      },
+      "antwort": "A",
+      "erklärung": "Client-Virtualisierung ermöglicht die Installation einer Anwendung auf einem Server und die gleichzeitige Nutzung durch mehrere Benutzer über virtualisierte Sitzungen."
+    },
+    "en": {
+      "question": "Which of the following involves installing an application on a server so several users can run the application concurrently without the need for local installation?",
+      "options": {
+        "A": "Client virtualization",
+        "B": "Software as a service",
+        "C": "Sandboxing",
+        "D": "Embedded software"
+      },
+      "answer": "A",
+      "explanation": "Client virtualization involves installing an application on a server and enabling multiple users to run the application simultaneously via virtualized sessions."
+    }
+  },
+  {
+    "id": 749,
+    "de": {
+      "frage": "Ein Managementteam ist besorgt über Unternehmensgeräte, die keine Kontrollen implementiert haben. Was sollte ein Administrator implementieren, um dieses Problem zu lösen?",
+      "optionen": {
+        "A": "MDM",
+        "B": "MFA",
+        "C": "VPN",
+        "D": "SSL"
+      },
+      "antwort": "A",
+      "erklärung": "Mobile Device Management (MDM) ermöglicht Administratoren, Kontrollen auf Unternehmensgeräten durchzusetzen, wie z. B. App-Einschränkungen und Sicherheitsrichtlinien."
+    },
+    "en": {
+      "question": "A management team is concerned about enterprise devices that do not have any controls in place. Which of the following should an administrator implement to address this concern?",
+      "options": {
+        "A": "MDM",
+        "B": "MFA",
+        "C": "VPN",
+        "D": "SSL"
+      },
+      "answer": "A",
+      "explanation": "Mobile Device Management (MDM) enables administrators to enforce controls on enterprise devices, such as restricting apps and managing security policies."
+    }
+  },
+  {
+    "id": 750,
+    "de": {
+      "frage": "Eine Personalabteilung teilt sich ein Netzwerk mit anderen Abteilungen und erstellt verschiedene Druckunterlagen zur rechtlichen Archivierung. Nur Mitglieder der Personalabteilung sollen Zugriff auf diese Materialien haben. Was sollte der Techniker implementieren?",
+      "optionen": {
+        "A": "Security-Gruppen",
+        "B": "Audit-Logs",
+        "C": "Zeitabhängiger Zugriff",
+        "D": "Print-Server"
+      },
+      "antwort": "A",
+      "erklärung": "Security-Gruppen (Sicherheitsgruppen) steuern Zugriffsberechtigungen auf freigegebene Netzwerkressourcen, sodass ausschließlich autorisierte HR-Mitarbeitende auf die Dateien zugreifen können."
+    },
+    "en": {
+      "question": "A human resources department shares a network with other departments and produces printed resources that must be retained for legal purposes. The HR department wants only its members to have access to these materials. Which of the following should the technician implement?",
+      "options": {
+        "A": "Security groups",
+        "B": "Audit logs",
+        "C": "Time-of-day access",
+        "D": "Print server"
+      },
+      "answer": "A",
+      "explanation": "Security groups manage permissions to network resources, ensuring only authorized HR staff can access the shared materials."
+    }
+  },
+  {
+    "id": 751,
+    "de": {
+      "frage": "Welchen Stromanschluss verwendet eine IDE-Festplatte?",
+      "optionen": {
+        "A": "F-Typ",
+        "B": "SC",
+        "C": "Molex",
+        "D": "Lightning"
+      },
+      "antwort": "C",
+      "erklärung": "IDE-Festplatten werden über einen 4-poligen Molex-Stecker mit Strom versorgt."
+    },
+    "en": {
+      "question": "Which of the following types of connectors does an IDE hard drive use for power?",
+      "options": {
+        "A": "F type",
+        "B": "SC",
+        "C": "Molex",
+        "D": "Lightning"
+      },
+      "answer": "C",
+      "explanation": "An IDE drive uses the 4-pin Molex connector for power."
+    }
+  },
+  {
+    "id": 752,
+    "de": {
+      "frage": "Welches der folgenden Geräte ist dazu bestimmt, ein- und ausgehenden Netzwerkverkehr zu überwachen und zu filtern?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Access Point",
+        "C": "Firewall",
+        "D": "Hub"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Firewall analysiert Datenpakete und lässt sie gemäß definierter Sicherheitsregeln zu oder blockiert sie."
+    },
+    "en": {
+      "question": "Which of the following devices is designed to monitor and filter incoming and outgoing network traffic?",
+      "options": {
+        "A": "Switch",
+        "B": "Access point",
+        "C": "Firewall",
+        "D": "Hub"
+      },
+      "answer": "C",
+      "explanation": "A firewall inspects and filters traffic based on security rules, protecting the network from unauthorized access."
+    }
+  },
+  {
+    "id": 753,
+    "de": {
+      "frage": "Ein Techniker möchte Netzwerkstatistiken für Geräte beobachten, die innerhalb desselben Subnetzes miteinander kommunizieren. Welches Gerät sollte er installieren?",
+      "optionen": {
+        "A": "Managed Switch",
+        "B": "Router",
+        "C": "Access Point",
+        "D": "Firewall"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Managed Switch bietet Funktionen wie Port-Monitoring (z. B. SNMP, sFlow) und ermöglicht detaillierte Statistiken über den lokalen Verkehr."
+    },
+    "en": {
+      "question": "A technician wants to monitor network statistics for devices communicating with one another on the local subnet. Which of the following devices should the technician install?",
+      "options": {
+        "A": "Managed switch",
+        "B": "Router",
+        "C": "Access point",
+        "D": "Firewall"
+      },
+      "answer": "A",
+      "explanation": "A managed switch supplies advanced features such as port statistics and traffic monitoring on the local subnet."
+    }
+  },
+  {
+    "id": 754,
+    "de": {
+      "frage": "Ein kleines Unternehmen möchte in Farbe drucken können, aber die Anschaffungskosten des Druckers so gering wie möglich halten. Welche Option ist am besten?",
+      "optionen": {
+        "A": "Thermodrucker",
+        "B": "Tintenstrahldrucker",
+        "C": "Nadeldrucker",
+        "D": "Laserdrucker"
+      },
+      "antwort": "B",
+      "erklärung": "Tintenstrahldrucker sind preiswert in der Anschaffung und unterstützen hochwertigen Farbdruck, auch wenn die Seitenkosten höher sind."
+    },
+    "en": {
+      "question": "A small company wants the ability to print in full color but needs to pay a minimal initial purchase price for the printer. Which of the following is the best option?",
+      "options": {
+        "A": "Thermal printer",
+        "B": "Inkjet printer",
+        "C": "Dot-matrix printer",
+        "D": "Laser printer"
+      },
+      "answer": "B",
+      "explanation": "Inkjet printers offer full-color output at a low upfront cost, suitable for small businesses."
+    }
+  },
+  {
+    "id": 755,
+    "de": {
+      "frage": "Welcher der folgenden Steckertypen eignet sich am besten für ein Unternehmen mit sehr hohem Internet-Datenaufkommen?",
+      "optionen": {
+        "A": "USB 3.1",
+        "B": "Quad-geschirmtes RG11-Koax",
+        "C": "SATA 3.0",
+        "D": "Ungeschirmtes Plenum-RJ45"
+      },
+      "antwort": "B",
+      "erklärung": "RG11-Koaxialkabel mit vierfacher Abschirmung bietet hohe Bandbreite und exzellente Störfestigkeit – ideal für große Datenvolumen über längere Strecken."
+    },
+    "en": {
+      "question": "Which of the following connector types would best suit a company that experiences a large volume of Internet traffic?",
+      "options": {
+        "A": "USB 3.1",
+        "B": "Quad-shielded RG11 coax",
+        "C": "SATA 3.0",
+        "D": "Unshielded plenum RJ45"
+      },
+      "answer": "B",
+      "explanation": "Quad-shielded RG11 coaxial cable handles high bandwidth and resists interference, making it suitable for heavy Internet traffic."
+    }
+  },
+  {
+    "id": 756,
+    "de": {
+      "frage": "Eine neue Richtlinie verlangt eine Sicherheitskomponente, die Nutzern eine zusätzliche Authentifizierungsstufe für System- und Gebäudezugang bietet und kein Wissensfaktor sein darf. Welche Komponente erfüllt diese Anforderungen am besten?",
+      "optionen": {
+        "A": "Fingerabdruckleser",
+        "B": "Smartcard",
+        "C": "Secure Token",
+        "D": "NFC-Scanner"
+      },
+      "antwort": "B",
+      "erklärung": "Eine Smartcard ist \"etwas, das man besitzt\" und speichert kryptografische Zertifikate für Multi-Factor-Authentifizierung sowie Zutrittskontrolle."
+    },
+    "en": {
+      "question": "A new directive mandates the use of a security component that securely allows users to authenticate to systems, access sensitive data, and enter the office. The component must provide an additional factor of authentication and cannot be something the user knows. Which component best meets these requirements?",
+      "options": {
+        "A": "Fingerprint reader",
+        "B": "Smart card",
+        "C": "Secure token",
+        "D": "NFC scanner"
+      },
+      "answer": "B",
+      "explanation": "A smart card is a physical credential ('something you have') that stores certificates for strong multi-factor authentication and physical access."
+    }
+  },
+  {
+    "id": 757,
+    "de": {
+      "frage": "Ein Unternehmen benötigt weiterhin eine wichtige Legacy-Anwendung, die unter dem aktuellen Betriebssystem nicht mehr lauffähig ist. Welche Lösung unterstützt die Software am besten, ohne das OS zurückzustufen?",
+      "optionen": {
+        "A": "Geteilte Ressourcen",
+        "B": "System-Sandbox",
+        "C": "Testumgebung",
+        "D": "Anwendungsvirtualisierung"
+      },
+      "antwort": "D",
+      "erklärung": "Anwendungsvirtualisierung kapselt die Legacy-Software in einer virtuellen Umgebung, sodass sie auf modernen Betriebssystemen ausgeführt werden kann, ohne das Host-OS anzupassen."
+    },
+    "en": {
+      "question": "A company uses vital legacy software that does not run in the current OS version. Which of the following will best support the software while keeping the OS current?",
+      "options": {
+        "A": "Shared resources",
+        "B": "System sandbox",
+        "C": "Test development",
+        "D": "Application virtualization"
+      },
+      "answer": "D",
+      "explanation": "Application virtualization isolates the legacy application in a virtual container, allowing it to run on a modern OS without modification."
+    }
+  },
+  {
+    "id": 758,
+    "de": {
+      "frage": "Welche Aussage beschreibt am besten die Nutzung einer virtuellen Maschine als Sandbox?",
+      "optionen": {
+        "A": "Eine Anwendung ohne Installation auf mehreren Arbeitsplätzen ausführen",
+        "B": "Beobachten, wie sich eine Anwendung in einer anderen Umgebung verhält",
+        "C": "Eine genutzte Legacy-Anwendung von physisch zu virtuell migrieren",
+        "D": "Eine Firewall erstellen, bei der die Sandbox als Perimeternetz fungiert"
+      },
+      "antwort": "B",
+      "erklärung": "Eine Sandbox-VM bietet eine isolierte Testumgebung, in der Verhalten, Sicherheit oder Kompatibilität einer Anwendung risikofrei analysiert werden können."
+    },
+    "en": {
+      "question": "Which of the following best characterizes the use of a virtual machine as a sandbox?",
+      "options": {
+        "A": "Run an application on multiple workstations without installation",
+        "B": "Explore how an application behaves in a different environment",
+        "C": "Migrate a currently used legacy application from physical to virtual",
+        "D": "Create a firewall where the sandbox acts as a perimeter network"
+      },
+      "answer": "B",
+      "explanation": "Using a VM as a sandbox allows you to observe and test an application's behavior in an isolated environment without affecting the host."
+    }
+  },
+  {
+    "id": 759,
+    "de": {
+      "frage": "In einem neuen Firmengebäude sollen auf jeder Etage vier RJ45-gebundene Drucker bereitstehen, die keiner Domäne beitreten. Was muss eingerichtet werden, um dies zu ermöglichen? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Druckerfreigaben",
+        "B": "DHCP-Server",
+        "C": "Print-Server",
+        "D": "Drucker-Subnetz",
+        "E": "SMB-Konfiguration",
+        "F": "Drucker-Wi-Fi-Einstellungen"
+      },
+      "antwort": "A, C",
+      "erklärung": "Ein Print-Server verwaltet Druckaufträge zentral, und Druckerfreigaben ermöglichen Benutzern den Zugriff auf die Netzwerktrucker."
+    },
+    "en": {
+      "question": "Each floor at a new corporate facility will have four printers connected with RJ45 and not joined to a domain. Which of the following needs to be set up to accomplish this task? (Select two.)",
+      "options": {
+        "A": "Printer shares",
+        "B": "DHCP server",
+        "C": "Print server",
+        "D": "Printer subnet",
+        "E": "SMB configuration",
+        "F": "Printer Wi-Fi settings"
+      },
+      "answer": "A, C",
+      "explanation": "A print server centrally manages the printers, and printer shares allow users to access the network printers."
+    }
+  },
+  {
+    "id": 760,
+    "de": {
+      "frage": "Welches der folgenden Netzwerke wird in erster Linie zum Archivieren von Daten eingesetzt?",
+      "optionen": {
+        "A": "PAN",
+        "B": "MAN",
+        "C": "SAN",
+        "D": "LAN",
+        "E": "WAN"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Storage Area Network (SAN) dient der zentralen, blockbasierten Massenspeicherung und wird häufig für Datensicherung und Archivierung in Enterprise-Umgebungen verwendet."
+    },
+    "en": {
+      "question": "Which of the following is used primarily for archiving data?",
+      "options": {
+        "A": "PAN",
+        "B": "MAN",
+        "C": "SAN",
+        "D": "LAN",
+        "E": "WAN"
+      },
+      "answer": "C",
+      "explanation": "A Storage Area Network (SAN) provides high-speed, block-level storage ideally suited for large-scale backups and data archiving."
+    }
+  },
+  {
+    "id": 761,
+    "de": {
+      "frage": "Ein Benutzer erhält sehr viele unerwünschte E-Mails. Welche Kontrolle sollte konfiguriert werden, um diese E-Mails am effektivsten zu reduzieren?",
+      "optionen": {
+        "A": "Load-Balancer",
+        "B": "Spam-Gateway",
+        "C": "Mail-Weiterleitung",
+        "D": "Proxy-Server"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Spam-Gateway filtert unerwünschte E-Mails serverseitig, bevor sie das Postfach des Benutzers erreichen."
+    },
+    "en": {
+      "question": "A user is receiving many unsolicited emails. Which of the following controls can be configured to best reduce these types of emails?",
+      "options": {
+        "A": "Load balancer",
+        "B": "Spam gateway",
+        "C": "Mail forwarding",
+        "D": "Proxy servers"
+      },
+      "answer": "B",
+      "explanation": "A spam gateway filters unsolicited email at the mail-server boundary, greatly reducing spam reaching user inboxes."
+    }
+  },
+  {
+    "id": 762,
+    "de": {
+      "frage": "Um Druckkosten zu senken, hat ein Unternehmen eine Lösung implementiert, bei der Mitarbeiter sich am Drucker authentifizieren müssen, um Druckaufträge freizugeben. Was wurde implementiert?",
+      "optionen": {
+        "A": "Access-Control-List",
+        "B": "Audit-Logging",
+        "C": "Badging",
+        "D": "Print-Server"
+      },
+      "antwort": "C",
+      "erklärung": "Beim Badging authentifizieren sich Nutzer mittels Ausweis/Karte direkt am Drucker, sodass nur autorisierte Personen Druckaufträge auslösen."
+    },
+    "en": {
+      "question": "A company implements a solution that requires employees to authenticate at the printer to release print jobs. What has the company implemented?",
+      "options": {
+        "A": "Access control list",
+        "B": "Audit logging",
+        "C": "Badging",
+        "D": "Print server"
+      },
+      "answer": "C",
+      "explanation": "Badging uses an ID card or badge for user authentication at the printer, restricting printing to authorized users and lowering costs."
+    }
+  },
+  {
+    "id": 763,
+    "de": {
+      "frage": "Welcher DNS-Record-Typ leitet E-Mails an einen Mail-Server weiter?",
+      "optionen": {
+        "A": "CNAME",
+        "B": "SRV",
+        "C": "MX",
+        "D": "SOA"
+      },
+      "antwort": "C",
+      "erklärung": "Ein MX-Record (Mail Exchange) gibt den zuständigen Mail-Server für eine Domain an."
+    },
+    "en": {
+      "question": "Which of the following DNS record types is used to direct email to a mail server?",
+      "options": {
+        "A": "CNAME",
+        "B": "SRV",
+        "C": "MX",
+        "D": "SOA"
+      },
+      "answer": "C",
+      "explanation": "An MX (Mail Exchange) record identifies the mail server responsible for receiving email for a domain."
+    }
+  },
+  {
+    "id": 764,
+    "de": {
+      "frage": "Ein Unternehmen möchte Aufgaben protokollieren, die von einer Anwendung ausgeführt werden. Welche Komponente sollte am ehesten implementiert werden?",
+      "optionen": {
+        "A": "Fileshare",
+        "B": "Syslog",
+        "C": "Datenbank",
+        "D": "SAN"
+      },
+      "antwort": "B",
+      "erklärung": "Syslog ist ein standardisiertes Protokoll zur zentralen Erfassung von System- und Anwendungsereignissen."
+    },
+    "en": {
+      "question": "A company needs to keep a record of tasks performed by an application. Which of the following should the company most likely implement as part of a solution?",
+      "options": {
+        "A": "Fileshare",
+        "B": "Syslog",
+        "C": "Database",
+        "D": "SAN"
+      },
+      "answer": "B",
+      "explanation": "Syslog provides a standardized way to log application and system events to a central location."
+    }
+  },
+  {
+    "id": 765,
+    "de": {
+      "frage": "Welches der folgenden Kabel/Materialien ist speziell für den Einsatz in gewerblichen Gebäuden vorgesehen?",
+      "optionen": {
+        "A": "USB 3.1 Gen 2",
+        "B": "Straight-Tip-Faserstecker",
+        "C": "Plenum-Kabel",
+        "D": "Cat 8"
+      },
+      "antwort": "C",
+      "erklärung": "Plenum-Kabel verfügen über eine schwer entflammbare Ummantelung, die in Lüftungs- oder Zwischendeckenräumen (Plenum-Bereichen) vorgeschrieben ist."
+    },
+    "en": {
+      "question": "Which of the following is designed to be used in commercial spaces?",
+      "options": {
+        "A": "USB 3.1 Gen 2",
+        "B": "Straight tip fiber connector",
+        "C": "Plenum cabling",
+        "D": "Cat 8"
+      },
+      "answer": "C",
+      "explanation": "Plenum-rated cabling is fire-resistant and produces low-toxicity smoke, meeting building codes for commercial air-handling spaces."
+    }
+  },
+  {
+    "id": 766,
+    "de": {
+      "frage": "Ein Vertriebsmitarbeiter kann an einem Kundenstandort mit dem privaten Gerät weder E-Mails noch Kalenderfunktionen nutzen, im Büro jedoch schon. Welche Richtlinie wurde auf dem Mobilgerät durchgesetzt?",
+      "optionen": {
+        "A": "MOW",
+        "B": "MAN",
+        "C": "MFA",
+        "D": "MAM"
+      },
+      "antwort": "D",
+      "erklärung": "Mobile Application Management (MAM) kann App-Nutzung ortsbasiert einschränken; dadurch sind Unternehmens-Apps außerhalb vertrauenswürdiger Standorte blockiert."
+    },
+    "en": {
+      "question": "A salesperson cannot access email and calendar features on a personal device at a client site but could do so at the office. Which policy has been enforced on the salesperson's mobile device?",
+      "options": {
+        "A": "MOW",
+        "B": "MAN",
+        "C": "MFA",
+        "D": "MAM"
+      },
+      "answer": "D",
+      "explanation": "Mobile Application Management (MAM) can enforce location-based restrictions on corporate apps, blocking access at untrusted sites."
+    }
+  },
+  {
+    "id": 767,
+    "de": {
+      "frage": "Eine Finanzinstitution benötigt eine sichere Methode zum Schutz der Schlüssel, mit denen Chipkarten entschlüsselt werden. Welche Lösung sollte eingesetzt werden?",
+      "optionen": {
+        "A": "TLS",
+        "B": "AMD",
+        "C": "HSM",
+        "D": "ARM"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Hardware Security Module (HSM) speichert und schützt kryptografische Schlüssel sicher vor unbefugtem Zugriff."
+    },
+    "en": {
+      "question": "A financial institution needs a secure way to protect encryption keys used for unlocking chips on its credit cards. Which of the following should the institution use?",
+      "options": {
+        "A": "TLS",
+        "B": "AMD",
+        "C": "HSM",
+        "D": "ARM"
+      },
+      "answer": "C",
+      "explanation": "A Hardware Security Module (HSM) securely generates, stores, and manages cryptographic keys for high-security applications."
+    }
+  },
+  {
+    "id": 768,
+    "de": {
+      "frage": "Ein Techniker ersetzt ein defektes Netzteil in einem zehn Jahre alten PC. Der ATX-Stecker des neuen Netzteils passt nicht auf das Mainboard. Welche kostengünstige Maßnahme sollte der Techniker als Nächstes ergreifen?",
+      "optionen": {
+        "A": "Eingangsspannung anpassen",
+        "B": "Modulares Netzteil installieren",
+        "C": "Defektes Netzteil reparieren",
+        "D": "20-Pin-auf-24-Pin-Adapter verwenden"
+      },
+      "antwort": "D",
+      "erklärung": "Ein Adapter gleicht den Unterschied zwischen älteren 20-Pin-Mainboards und neueren 24-Pin-Netzteilen günstig aus."
+    },
+    "en": {
+      "question": "A technician is replacing a failed power supply in a ten-year-old computer. The ATX connector on the new supply will not plug into the motherboard. What should the technician do next for a cost-effective solution?",
+      "options": {
+        "A": "Adjust the input voltage",
+        "B": "Install a modular power supply",
+        "C": "Rebuild the failed power supply",
+        "D": "Use a 20-pin to 24-pin adapter"
+      },
+      "answer": "D",
+      "explanation": "A simple 20-pin-to-24-pin adapter allows the newer power supply to connect to the older motherboard at minimal cost."
+    }
+  },
+  {
+    "id": 769,
+    "de": {
+      "frage": "Eine Software lief gestern einwandfrei, heute lässt sie sich nicht mehr starten. Was sollte der Techniker als Nächstes tun?",
+      "optionen": {
+        "A": "Symptome recherchieren",
+        "B": "Vom Benutzer vorgenommene Änderungen identifizieren",
+        "C": "Zu erledigende Schritte bestimmen",
+        "D": "Website des Herstellers prüfen"
+      },
+      "antwort": "B",
+      "erklärung": "Das Auffinden kürzlich vorgenommener Änderungen ist der logische nächste Schritt, da solche Änderungen häufig Startprobleme verursachen."
+    },
+    "en": {
+      "question": "A user reports that an application worked yesterday but will not launch today. What should the technician do next?",
+      "options": {
+        "A": "Research the symptoms",
+        "B": "Identify any changes the user has made",
+        "C": "Determine which steps need to be performed",
+        "D": "Check the vendor's website for guidance"
+      },
+      "answer": "B",
+      "explanation": "Identifying recent system or configuration changes is the next troubleshooting step because changes often cause sudden application failures."
+    }
+  },
+  {
+    "id": 770,
+    "de": {
+      "frage": "Ein Techniker installiert eine neue High-End-Grafikkarte, die einen 12VHPWR-Stecker verwendet. Welche der folgenden Leistungen kann dieser Stecker maximal liefern?",
+      "optionen": {
+        "A": "400 W",
+        "B": "MOW",
+        "C": "600 W",
+        "D": "700 W"
+      },
+      "antwort": "C",
+      "erklärung": "Der 12VHPWR-Stromanschluss kann bis zu 600 W bereitstellen und ist speziell für leistungshungrige Grafikkarten ausgelegt."
+    },
+    "en": {
+      "question": "A technician is installing a new high-end graphics card that uses a 12VHPWR connector. Which of the following is the maximum wattage supported by this power connector?",
+      "options": {
+        "A": "400W",
+        "B": "MOW",
+        "C": "600W",
+        "D": "700W"
+      },
+      "answer": "C",
+      "explanation": "The 12VHPWR connector can supply up to 600 watts of power, designed for high-end graphics cards."
+    }
+  },
+  {
+    "id": 771,
+    "de": {
+      "frage": "Jedes Mal, wenn ein Benutzer drucken möchte, bleibt das Papier im letzten Schritt des Druckvorgangs stecken und muss manuell herausgezogen werden. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Walzen (Rollers)",
+        "B": "Papierfach-Baugruppe",
+        "C": "Toner",
+        "D": "Druckkopf"
+      },
+      "antwort": "A",
+      "erklärung": "Sind die Auszugs- bzw. Transportwalzen verschmutzt oder verschlissen, kann das Papier am Ende des Druckpfads hängen bleiben."
+    },
+    "en": {
+      "question": "Each time a user tries to print, the paper becomes stuck at the last stage of the print job and has to be pulled out. Which of the following is the most likely cause?",
+      "options": {
+        "A": "Rollers",
+        "B": "Tray assembly",
+        "C": "Toner",
+        "D": "Printhead"
+      },
+      "answer": "A",
+      "explanation": "Worn or dirty rollers that move the paper through the printer often cause jams at the final stage."
+    }
+  },
+  {
+    "id": 772,
+    "de": {
+      "frage": "Ein Techniker hat eine neue SSD in einen Computer eingebaut, aber das Laufwerk wird nicht erkannt. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Defekte SSD, muss ersetzt werden",
+        "B": "Die SSD ist nicht formatiert",
+        "C": "Die SSD ist inkompatibel mit dem Mainboard",
+        "D": "Die SSD wurde nicht korrekt eingesetzt und muss neu eingesteckt werden"
+      },
+      "antwort": "D",
+      "erklärung": "Am häufigsten liegt ein Erkennungsproblem an einer nicht korrekt eingesteckten oder nicht vollständig eingerasteten SSD."
+    },
+    "en": {
+      "question": "A technician has just installed a new SSD into a computer, but the drive is not appearing. Which of the following is the most likely reason?",
+      "options": {
+        "A": "The SSD is faulty and should be replaced",
+        "B": "The SSD has not been properly formatted",
+        "C": "The SSD is incompatible with the motherboard",
+        "D": "The SSD has not been installed properly and should be reseated"
+      },
+      "answer": "D",
+      "explanation": "Improper seating is the most common reason an SSD isn’t recognized; reseating the drive usually resolves the issue."
+    }
+  },
+  {
+    "id": 773,
+    "de": {
+      "frage": "Ein Techniker muss sicherstellen, dass alle Datenverbindungen bei der Anmeldung an Konsolen sämtlicher Netzwerkgeräte verschlüsselt sind. Welches Protokoll sollte aktiviert werden?",
+      "optionen": {
+        "A": "SSH",
+        "B": "LDAP",
+        "C": "FTPS",
+        "D": "SMTP"
+      },
+      "antwort": "A",
+      "erklärung": "SSH (Secure Shell) verschlüsselt Remote-Logins und Management-Sitzungen und schützt somit alle Konsolenverbindungen."
+    },
+    "en": {
+      "question": "A technician needs to ensure all data communications on all network devices are encrypted when logging in to the console. Which protocol should be enabled?",
+      "options": {
+        "A": "SSH",
+        "B": "LDAP",
+        "C": "FTPS",
+        "D": "SMTP"
+      },
+      "answer": "A",
+      "explanation": "SSH encrypts remote login sessions, ensuring secure console access to network devices."
+    }
+  },
+  {
+    "id": 774,
+    "de": {
+      "frage": "Welches der folgenden Geräte wird verwendet, um ACL-Richtlinien in einer Umgebung durchzusetzen?",
+      "optionen": {
+        "A": "Managed Switch",
+        "B": "Gateway",
+        "C": "Repeater",
+        "D": "Firewall"
+      },
+      "antwort": "D",
+      "erklärung": "Firewalls setzen Access-Control-Lists ein, um Datenverkehr anhand definierter Regeln zuzulassen oder zu blockieren."
+    },
+    "en": {
+      "question": "Which of the following devices is used to implement ACL policies for an environment?",
+      "options": {
+        "A": "Managed switch",
+        "B": "Gateway",
+        "C": "Repeater",
+        "D": "Firewall"
+      },
+      "answer": "D",
+      "explanation": "A firewall enforces ACLs to filter traffic based on rules such as IP, port, or protocol."
+    }
+  },
+  {
+    "id": 775,
+    "de": {
+      "frage": "Ein Vertriebsmitarbeiter kann vom Home-Office-PC nicht ins Internet. Ein Support-Techniker möchte prüfen, ob der Router eine gültige öffentliche IP-Adresse erhält. Welche der folgenden Adressen wäre in diesem Szenario eine gültige öffentliche IP?",
+      "optionen": {
+        "A": "10.254.128.11",
+        "B": "66.157.195.20",
+        "C": "172.16.0.30",
+        "D": "192.168.1.50"
+      },
+      "antwort": "B",
+      "erklärung": "66.157.195.20 liegt außerhalb aller privaten Adressbereiche und ist daher eine öffentliche IP-Adresse."
+    },
+    "en": {
+      "question": "A salesperson is unable to reach the Internet from a home-office PC. A technician wants to verify the router is receiving a valid public IP address. Which of the following is a valid public IP address in this scenario?",
+      "options": {
+        "A": "10.254.128.11",
+        "B": "66.157.195.20",
+        "C": "172.16.0.30",
+        "D": "192.168.1.50"
+      },
+      "answer": "B",
+      "explanation": "66.157.195.20 is outside the private IP ranges, making it a valid public address."
+    }
+  },
+  {
+    "id": 776,
+    "de": {
+      "frage": "Benutzer klagen darüber, dass der Ton eines Präsentators abgehackt und unverständlich ist. Welche Komponente verursacht das Problem höchstwahrscheinlich?",
+      "optionen": {
+        "A": "Webcam",
+        "B": "Digitizer",
+        "C": "Inverter",
+        "D": "Mikrofon"
+      },
+      "antwort": "D",
+      "erklärung": "Abgehackter oder unverständlicher Ton resultiert meist aus Problemen mit dem Mikrofon (Hardwaredefekt, schlechte Qualität, Fehlkonfiguration)."
+    },
+    "en": {
+      "question": "Users are complaining that the audio from a presenter is choppy and unintelligible. Which of the following is causing the issue?",
+      "options": {
+        "A": "Webcam",
+        "B": "Digitizer",
+        "C": "Inverter",
+        "D": "Microphone"
+      },
+      "answer": "D",
+      "explanation": "Choppy or unintelligible audio is typically due to microphone issues such as hardware faults or misconfiguration."
+    }
+  },
+  {
+    "id": 777,
+    "de": {
+      "frage": "Ein Kunde hat Verbindungsprobleme zu Netzwerkressourcen. Nach offenen Fragen vermutet der Techniker, dass das Problem am entfernten Server liegt. Was sollte der Techniker als Nächstes tun?",
+      "optionen": {
+        "A": "Ergebnisse dokumentieren",
+        "B": "Theorie testen",
+        "C": "Informationen sammeln",
+        "D": "Aktionsplan erstellen"
+      },
+      "antwort": "B",
+      "erklärung": "Gemäß Fehlerbehebungs-Methodik wird nach Aufstellen einer Vermutung zunächst die Theorie getestet, um die Ursache zu bestätigen."
+    },
+    "en": {
+      "question": "A customer reports a problem connecting to network resources. After asking open-ended questions, the technician determines the issue likely exists on the remote server. What should the technician do next?",
+      "options": {
+        "A": "Document the findings",
+        "B": "Test the theory",
+        "C": "Gather information",
+        "D": "Establish a plan of action"
+      },
+      "answer": "B",
+      "explanation": "After forming a hypothesis, the next troubleshooting step is to test the theory to confirm the root cause."
+    }
+  },
+  {
+    "id": 778,
+    "de": {
+      "frage": "Ein SAS-RAID-Array ist stark degradiert und offline gegangen. Der Administrator findet im Syslog keine eindeutige Ursache. Welche Vorgehensweisen sollte er anwenden, um das Problem zu identifizieren? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Mit einem Magneten über jede Festplatte fahren",
+        "B": "Prüfen, ob eine Festplatte nicht waagerecht liegt",
+        "C": "Auf Klick- oder Schleifgeräusche hören",
+        "D": "Betriebssystem-Logs prüfen",
+        "E": "Firmware des RAID-Controllers aktualisieren",
+        "F": "Historische SMART-Daten auswerten"
+      },
+      "antwort": "C, F",
+      "erklärung": "Mechanische Klick- oder Schleifgeräusche weisen auf Laufwerksfehler hin; SMART-Daten liefern detaillierte Gesundheitsinformationen der Festplatten."
+    },
+    "en": {
+      "question": "An SAS RAID array has severely degraded and gone offline. A systems administrator examines the syslog, but the point of failure is not obvious. Which techniques should the administrator use to identify the issue? (Select two.)",
+      "options": {
+        "A": "Run a magnet over each drive",
+        "B": "Check if one of the drives is not level",
+        "C": "Listen for clicking and grinding noises",
+        "D": "Check the OS logs",
+        "E": "Update the RAID controller firmware",
+        "F": "Check the historical SMART data"
+      },
+      "answer": "C, F",
+      "explanation": "Clicking or grinding noises indicate mechanical failure, and SMART data reveals drive health statistics for pinpointing failing disks."
+    }
+  },
+  {
+    "id": 779,
+    "de": {
+      "frage": "Nach einem In-Place-Upgrade des Laptop-Betriebssystems funktionieren weder die integrierte Kamera noch Bluetooth-Zubehör. Welche Ursachen sind am wahrscheinlichsten? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Falsche Konfigurationseinstellungen",
+        "B": "Inkompatibilität zwischen OS- und Geräteversion",
+        "C": "Nach dem Upgrade deaktivierte Funktionen",
+        "D": "Voller Speicherplatz",
+        "E": "Veraltete Treiber",
+        "F": "Beschädigte Registry-Einträge"
+      },
+      "antwort": "C, E",
+      "erklärung": "Geräteprobleme nach einem OS-Upgrade treten häufig durch deaktivierte Funktionen oder veraltete/inkompatible Treiber auf."
+    },
+    "en": {
+      "question": "A user is experiencing multiple issues after an in-place OS upgrade on a laptop: the built-in camera is unresponsive, and Bluetooth accessories will not pair. Which of the following are the most likely causes? (Select two.)",
+      "options": {
+        "A": "Incorrect configuration of the settings",
+        "B": "OS and device version incompatibility",
+        "C": "Disabled settings following the upgrade",
+        "D": "Full storage",
+        "E": "Outdated drivers",
+        "F": "Corrupted registry entries"
+      },
+      "answer": "C, E",
+      "explanation": "Outdated drivers can cause device malfunctions after an OS upgrade, and some settings may be disabled during the upgrade process."
+    }
+  },
+  {
+    "id": 780,
+    "de": {
+      "frage": "Welcher der folgenden Vorteile ergibt sich aus der Verwendung eines VLANs?",
+      "optionen": {
+        "A": "Es minimiert Kollisionsdomänen.",
+        "B": "Es ermöglicht privaten Zugriff auf Cloud-Ressourcen.",
+        "C": "Es vergrößert den Adressraum des Netzwerks.",
+        "D": "Es ermöglicht eine sichere Netzsegmentierung."
+      },
+      "antwort": "D",
+      "erklärung": "Ein VLAN (Virtual Local Area Network) segmentiert ein physisches Netzwerk in getrennte logische Netzwerke und erhöht dadurch die Sicherheit, weil der Datenverkehr voneinander isoliert wird."
+    },
+    "en": {
+      "question": "Which of the following is a benefit of using a VLAN?",
+      "options": {
+        "A": "It minimizes collision domains.",
+        "B": "It provides private access to cloud resources.",
+        "C": "It increases network address space.",
+        "D": "It enables secure network segmentation."
+      },
+      "answer": "D",
+      "explanation": "A VLAN segments a physical network into separate logical networks, enhancing security by isolating traffic."
+    }
+  },
+  {
+    "id": 781,
+    "de": {
+      "frage": "Eine Gruppe von Freunden trifft sich in einem Raum, um Videospiele zu spielen. Einer der Freunde betreibt einen Spieleserver. Welcher der folgenden Netzwerktypen sollte verwendet werden, damit alle sich mit demselben Server und dem Internet verbinden können?",
+      "optionen": {
+        "A": "SAN",
+        "B": "MAN",
+        "C": "LAN",
+        "D": "PAN"
+      },
+      "antwort": "C",
+      "erklärung": "Ein LAN (Local Area Network) ist für kleine, lokale Netze innerhalb eines Gebäudes ausgelegt und bietet hohe Geschwindigkeit sowie geringe Latenz – ideal für gemeinsames Gaming."
+    },
+    "en": {
+      "question": "A group of friends is gathering in a room to play video games. One of the friends has a game server. Which network type should the group use so they can all connect to the same server and the Internet?",
+      "options": {
+        "A": "SAN",
+        "B": "MAN",
+        "C": "LAN",
+        "D": "PAN"
+      },
+      "answer": "C",
+      "explanation": "A Local Area Network (LAN) is designed for small, localized networks such as within a single room, providing high-speed, low-latency connections ideal for gaming."
+    }
+  },
+  {
+    "id": 782,
+    "de": {
+      "frage": "Ein Techniker erhält ein Tablet mit einer sichtbaren Wölbung, die das Display vom Gehäuse wegdrückt. Das Tablet funktioniert bei angeschlossenem Netzteil, schaltet sich aber beim Trennen aus. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Fehlerhafte Stromversorgung",
+        "B": "Beschädigter Ladeanschluss",
+        "C": "Aufgeblähter Akku",
+        "D": "Defektes Display"
+      },
+      "antwort": "C",
+      "erklärung": "Ein aufgeblähter Akku dehnt sich durch Gasbildung aus, drückt das Display nach außen und hält keine Ladung mehr. Das Gerät läuft nur noch am Netzstrom."
+    },
+    "en": {
+      "question": "A technician receives a tablet that looks like it has a bulge inside pushing the screen away from the backplate. The tablet turns on only when plugged in, and the screen looks damaged. What is the most likely cause?",
+      "options": {
+        "A": "Malfunctioning power supply",
+        "B": "Damaged charge port",
+        "C": "Swollen battery",
+        "D": "Broken screen"
+      },
+      "answer": "C",
+      "explanation": "A swollen battery builds up gas, causing the case to bulge outward and preventing the device from holding a charge."
+    }
+  },
+  {
+    "id": 783,
+    "de": {
+      "frage": "Welcher der folgenden Netzwerkdienste weist einem Host automatisch eine IP-Adresse zu?",
+      "optionen": {
+        "A": "DHCP",
+        "B": "DNS",
+        "C": "LDAP",
+        "D": "SMTP"
+      },
+      "antwort": "A",
+      "erklärung": "DHCP (Dynamic Host Configuration Protocol) verteilt IP-Adressen sowie Netzparameter automatisch an Hosts."
+    },
+    "en": {
+      "question": "Which of the following network services is used to assign an IP address to a network host?",
+      "options": {
+        "A": "DHCP",
+        "B": "DNS",
+        "C": "LDAP",
+        "D": "SMTP"
+      },
+      "answer": "A",
+      "explanation": "DHCP dynamically assigns IP addresses and other configuration details to network hosts."
+    }
+  },
+  {
+    "id": 784,
+    "de": {
+      "frage": "Ein Techniker muss sicherstellen, dass Desktop-PCs weltweit bei entfernten Mitarbeitenden eingesetzt werden können. Welche Spezifikation sollte geprüft werden?",
+      "optionen": {
+        "A": "Eingangsspannung",
+        "B": "BIOS-Sprachunterstützung",
+        "C": "Supply-Chain-Sicherheit",
+        "D": "Energieeffizienz"
+      },
+      "antwort": "A",
+      "erklärung": "Die Eingangsspannung des Netzteils muss zu den regionalen Stromnetzen (z. B. 110 V / 220 V) passen, um Hardwareschäden zu vermeiden."
+    },
+    "en": {
+      "question": "A technician needs to confirm that desktop PCs can be deployed to a global, remote workforce. Which specification should the technician validate?",
+      "options": {
+        "A": "Input voltage",
+        "B": "BIOS language support",
+        "C": "Supply chain security",
+        "D": "Power efficiency"
+      },
+      "answer": "A",
+      "explanation": "Input-voltage compatibility ensures the PCs can operate on different regional power standards (e.g., 110 V vs. 220 V)."
+    }
+  },
+  {
+    "id": 785,
+    "de": {
+      "frage": "Welche der folgenden RAM-Typen wird typischerweise in Servern eingesetzt?",
+      "optionen": {
+        "A": "SODIMM",
+        "B": "Rambus",
+        "C": "DDR3",
+        "D": "ECC"
+      },
+      "antwort": "D",
+      "erklärung": "ECC-RAM (Error Correcting Code) erkennt und korrigiert Speicherfehler und wird daher in Servern zur Steigerung der Zuverlässigkeit verwendet."
+    },
+    "en": {
+      "question": "Which of the following types of RAM is typically used in servers?",
+      "options": {
+        "A": "SODIMM",
+        "B": "Rambus",
+        "C": "DDR3",
+        "D": "ECC"
+      },
+      "answer": "D",
+      "explanation": "ECC RAM provides error detection and correction, improving reliability in critical server environments."
+    }
+  },
+  {
+    "id": 786,
+    "de": {
+      "frage": "Welche Anzeigeeigenschaft ist am wichtigsten, damit Bildschirmfarben dem späteren Druck möglichst genau entsprechen?",
+      "optionen": {
+        "A": "Farbraum (Color Gamut)",
+        "B": "Pixeldichte",
+        "C": "Bildwiederholrate",
+        "D": "Auflösung"
+      },
+      "antwort": "A",
+      "erklärung": "Ein weiter und präziser Farbraum (z. B. Adobe RGB) stellt sicher, dass die auf dem Monitor dargestellten Farben mit dem Druck übereinstimmen."
+    },
+    "en": {
+      "question": "Which display characteristic would be most important to ensure screen images appear the same as printed output?",
+      "options": {
+        "A": "Color gamut",
+        "B": "Pixel density",
+        "C": "Refresh rate",
+        "D": "Resolution"
+      },
+      "answer": "A",
+      "explanation": "Color gamut defines the range of colors a display can reproduce, making it critical for matching on-screen color to printed output."
+    }
+  },
+  {
+    "id": 787,
+    "de": {
+      "frage": "Welche der folgenden Optionen kann ein Benutzer nutzen, um die Internetverbindung seines Mobiltelefons mit einem Laptop zu teilen?",
+      "optionen": {
+        "A": "IR",
+        "B": "NFC",
+        "C": "Wi-Fi Direct",
+        "D": "Tethering"
+      },
+      "antwort": "D",
+      "erklärung": "Beim Tethering wird die Mobilfunkverbindung des Smartphones per USB, Bluetooth oder WLAN mit einem anderen Gerät geteilt und als Hotspot bereitgestellt."
+    },
+    "en": {
+      "question": "Which of the following can a user utilize to share their mobile phone connection with their laptop?",
+      "options": {
+        "A": "IR",
+        "B": "NFC",
+        "C": "Wi-Fi Direct",
+        "D": "Tethering"
+      },
+      "answer": "D",
+      "explanation": "Tethering shares the phone’s internet connection with another device via USB, Bluetooth, or Wi-Fi, effectively creating a personal hotspot."
+    }
+  },
+  {
+    "id": 788,
+    "de": {
+      "frage": "Ein Techniker erhält bei einem PC einen S.M.A.R.T.-Fehler. Nach Drücken von Esc startet der PC normal. Welche Maßnahme sollte der Techniker als Nächstes ergreifen?",
+      "optionen": {
+        "A": "HDD ersetzen",
+        "B": "BIOS aktualisieren",
+        "C": "Ticket schließen",
+        "D": "NIC austauschen"
+      },
+      "antwort": "A",
+      "erklärung": "Ein S.M.A.R.T.-Fehler weist auf einen bevorstehenden Festplattenausfall hin. Die Festplatte sollte umgehend ersetzt und die Daten gesichert werden."
+    },
+    "en": {
+      "question": "A technician receives a S.M.A.R.T. error on a PC. Pressing Esc allows the PC to boot normally. What should the technician do next?",
+      "options": {
+        "A": "Replace the HDD",
+        "B": "Update the PC's BIOS",
+        "C": "Close the ticket",
+        "D": "Change the NIC"
+      },
+      "answer": "A",
+      "explanation": "A S.M.A.R.T. error is an early warning of HDD failure; the drive should be replaced and data backed up immediately."
+    }
+  },
+  {
+    "id": 789,
+    "de": {
+      "frage": "Ein Techniker hat festgestellt, dass einige Nutzer mit einem Netzwerk verbunden sind, das in der Oberfläche nicht angezeigt wird. Welches Tool ist am besten geeignet, um Netzwerke zu identifizieren, die ihre SSID nicht aussenden?",
+      "optionen": {
+        "A": "Kabeltester",
+        "B": "Toner-Sonde",
+        "C": "Wi-Fi-Analyzer",
+        "D": "Loopback-Stecker"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Wi-Fi-Analyzer erkennt auch versteckte WLANs (verborgene SSIDs) und liefert Details zu Signalstärke, Kanalbelegung und Verschlüsselung."
+    },
+    "en": {
+      "question": "A technician discovers that some users are connected to a network that is not visible in the user interface. Which tool is most effective for identifying networks that are not broadcasting SSIDs?",
+      "options": {
+        "A": "Cable tester",
+        "B": "Toner probe",
+        "C": "Wi-Fi analyzer",
+        "D": "Loopback plug"
+      },
+      "answer": "C",
+      "explanation": "A Wi-Fi analyzer can detect hidden networks that are not broadcasting their SSIDs and provide details such as signal strength and channel usage."
+    }
+  },
+
+  {
     "id": 790,
     "de": {
       "frage": "Welche der folgenden Druckinitiativen wäre am besten geeignet, um umweltfreundliche Ziele zu erreichen?",
@@ -205,165 +1852,130 @@
       "explanation": "During POST the BIOS checks RAM; memory faults trigger specific beep codes, often the first sign of RAM issues when BSODs occur randomly."
     }
   },
-
-  {
-    "id": 790,
-    "frage": "Welche der folgenden Druckinitiativen wäre am besten geeignet, um umweltfreundliche Ziele zu erreichen?",
-    "optionen": {
-      "A": "Eine Benutzerauthentifizierung für den Druck vorschreiben.",
-      "B": "Den Druck auf bestimmte Personen beschränken.",
-      "C": "Duplex-Einstellungen auf beidseitigen Druck ändern.",
-      "D": "Die Druckqualitätseinstellungen auf \"Beste\" ändern."
-    },
-    "antwort": "C",
-    "erklärung": "Das Ändern der Duplex-Einstellungen auf beidseitigen Druck (Duplexdruck) reduziert den Papierverbrauch und ist somit eine der effektivsten umweltfreundlichen Druckinitiativen. Es minimiert direkt den Abfall und unterstützt Nachhaltigkeitsziele am Arbeitsplatz."
-  },
-  {
-    "id": 791,
-    "frage": "Welcher der folgenden Stecker befindet sich an einem optischen Netzwerkkabel?",
-    "optionen": {
-      "A": "RJ45",
-      "B": "LC",
-      "C": "USB-C",
-      "D": "Lightning"
-    },
-    "antwort": "B",
-    "erklärung": "Der LC-Stecker (Lucent Connector) ist ein Typ von Glasfaserstecker, der häufig in optischen Netzwerkkabeln verwendet wird. Er ist klein, kompakt und weit verbreitet für die Hochgeschwindigkeitsdatenübertragung über Glasfasernetze. LC-Stecker sind speziell für Glasfaserkabel konzipiert und somit die richtige Antwort."
-  },
-  {
-    "id": 792,
-    "frage": "Welche der folgenden Portnummern sind mit E-Mail-Verkehr verbunden? (Wählen Sie zwei aus).",
-    "optionen": {
-      "A": "23",
-      "B": "25",
-      "C": "67",
-      "D": "110",
-      "E": "137",
-      "F": "443"
-    },
-    "antwort": "B, D",
-    "erklärung": "Port 25 (SMTP - Simple Mail Transfer Protocol): Dieser Port wird hauptsächlich zum Senden von E-Mails zwischen Mailservern und von Mail-Clients an Mailserver (Senden ausgehender E-Mails) verwendet. SMTP ist ein wichtiges Protokoll für den E-Mail-Verkehr. Port 110 (POP3 - Post Office Protocol v3): POP3 wird zum Abrufen von E-Mails von einem Mailserver verwendet. Es wird häufig zum Herunterladen von E-Mail-Nachrichten auf einen lokalen Client verwendet, wonach die Nachrichten vom Server gelöscht werden."
-  },
-  {
-    "id": 793,
-    "frage": "Welches der folgenden Netzwerkgeräte muss höchstwahrscheinlich zwischen dem ISP, der DOCSIS betreibt, und dem LAN in einer SOHO-Umgebung installiert werden?",
-    "optionen": {
-      "A": "Switch",
-      "B": "Firewall",
-      "C": "Kabelmodem",
-      "D": "Router",
-      "E": "Access Point"
-    },
-    "antwort": "C",
-    "erklärung": "Um das richtige Gerät zu bestimmen, müssen wir verstehen, wie ein DOCSIS-Netzwerk (Data Over Cable Service Interface Specification) in einer Small Office/Home Office (SOHO)-Umgebung funktioniert: Ein Kabelmodem ist erforderlich, um das vom ISP (Internet Service Provider) über ein DOCSIS-Netzwerk bereitgestellte Signal in ein Format umzuwandeln, das vom lokalen Netzwerk (LAN) verwendet werden kann. DOCSIS ist ein Standard für Hochgeschwindigkeitsinternet über Kabelfernsehinfrastruktur, und das Kabelmodem fungiert als Gateway zwischen dem Koaxialnetzwerk des ISP und dem LAN. Ohne das Kabelmodem könnten Geräte im LAN nicht auf das Internet zugreifen."
-  },
-  {
-    "id": 794,
-    "frage": "Ein Techniker behebt ein Problem mit einem Computer, der während des normalen Gebrauchs zufällige BSOD-Warnungen anzeigt und zeitweise einfriert. Die Leistung verschlechtert sich im Laufe des Tages. Es wurden keine neuen Software- oder Hardwareänderungen implementiert. Das Einfrieren tritt bei leistungsintensiven Operationen auf. Welches der folgenden Hardwarekomponenten ist höchstwahrscheinlich defekt?",
-    "optionen": {
-      "A": "Grafikkarte",
-      "B": "HDD (Festplatte)",
-      "C": "RAM-Modul",
-      "D": "TPM (Trusted Platform Module)"
-    },
-    "antwort": "C",
-    "erklärung": "Zufällige BSODs (Blue Screen of Death), intermittierendes Einfrieren und eine verschlechterte Leistung unter Last sind häufige Symptome von fehlerhaftem oder ausfallendem RAM (Random Access Memory). Ein fehlerhafter oder ausfallender RAM kann aufgrund von Speicherfehlern zu zufälligen BSODs führen, wenn das System versucht, Daten in beschädigte Speicherorte zu lesen oder zu schreiben. Intermittierendes Einfrieren, insbesondere bei leistungsintensiven Operationen, kann auftreten, weil die CPU für aktive Verarbeitungsprozesse stark auf den RAM angewiesen ist. Im Laufe der Zeit kann die während des Gebrauchs erzeugte Wärme die RAM-Instabilität verschlimmern, was zu einer zunehmend schlechteren Leistung im Laufe des Tages führt."
-  },
-  {
-    "id": 795,
-    "frage": "Welcher der folgenden Kabeltypen ist am besten geeignet, um 10-Gbit-Geschwindigkeiten über Entfernungen von mehr als 100 m (328 Fuß) bis unter 400 m (1.312 Fuß) zu liefern?",
-    "optionen": {
-      "A": "Multimode-Faser",
-      "B": "Singlemode-Faser",
-      "C": "Cat 6a",
-      "D": "Cat 6"
-    },
-    "antwort": "A",
-    "erklärung": "Wenn es darum geht, 10-Gbit/s-Geschwindigkeiten über lange Entfernungen zu liefern, sind Glasfaserkabel die beste Wahl. Multimode-Faser (Correct Answer): Multimode-Faser ist für relativ kurze bis mittlere Entfernungen (bis zu 400 Meter oder 1.312 Fuß) ausgelegt und unterstützt gleichzeitig Hochgeschwindigkeitsdatenübertragung (10 Gbit/s und höher). Sie verwendet LED-Lichtquellen und ist kostengünstig für Umgebungen wie Rechenzentren oder innerhalb von Gebäuden. Für die angegebene Entfernung von über 100 m, aber unter 400 m, ist Multimode-Faser die am besten geeignete Option."
-  },
-  {
-    "id": 796,
-    "frage": "Der Bildschirm in einem Konferenzraum zeigt ein Geisterbild, das nicht zur Präsentation passt. Welche der folgenden Maßnahmen würde das Problem lösen?",
-    "optionen": {
-      "A": "Die Farbeinstellungen anpassen.",
-      "B": "Die Trapezkorrektur (Keystone) anpassen.",
-      "C": "Die Helligkeitsstufen erhöhen.",
-      "D": "Den Monitor ersetzen."
-    },
-    "antwort": "B",
-    "erklärung": "Eine Trapezkorrektur (Keystone Correction) passt die Bildform an, wenn ein Projektor nach oben oder unten geneigt ist. Wenn ein Projektor nicht direkt senkrecht zur Leinwand positioniert ist, wird das Bild verzerrt oder versetzt. Das Korrigieren der Trapezverzerrung behebt Ausrichtungsprobleme und stellt sicher, dass die Präsentation mit dem Bildschirm übereinstimmt."
-  },
-  {
-    "id": 797,
-    "frage": "Ein Benutzer erlebt während der Computernutzung einen zufälligen BSOD (Blue Screen of Death), aber das Betriebssystem erholt sich wie erwartet. Welches der folgenden Symptome würde darauf hindeuten, dass das Problem mit dem RAM zusammenhängt?",
-    "optionen": {
-      "A": "Falsche BIOS-Konfigurationen",
-      "B": "Kontinuierliche Neustarts",
-      "C": "Aufgeblähte Kondensatoren",
-      "D": "POST-Piepcodes"
-    },
-    "antwort": "D",
-    "erklärung": "Während des Power-On Self-Tests (POST) führt das BIOS Überprüfungen der Systemhardware durch, einschließlich des RAMs. Wenn der RAM fehlerhaft ist, kann der POST eine Reihe von Piepcodes erzeugen, die auf Speicherprobleme hinweisen. Diese Piepcodes sind oft das erste Anzeichen für RAM-bezogene Probleme, insbesondere wenn der BSOD zufällig auftritt."
-  },
   {
     "id": 798,
-    "frage": "Welcher der folgenden Anschlüsse kann zum Aufladen der meisten modernen mobilen Geräte verwendet werden und kann Daten, Audio und Video übertragen?",
-    "optionen": {
-      "A": "Lightning",
-      "B": "USB-C",
-      "C": "MicroUSB",
-      "D": "MiniUSB"
+    "de": {
+      "frage": "Welcher der folgenden Anschlüsse kann zum Aufladen der meisten modernen mobilen Geräte verwendet werden und kann Daten, Audio und Video übertragen?",
+      "optionen": {
+        "A": "Lightning",
+        "B": "USB-C",
+        "C": "MicroUSB",
+        "D": "MiniUSB"
+      },
+      "antwort": "B",
+      "erklärung": "USB-C ist ein vielseitiger Anschluss, der Ladevorgänge, Hochgeschwindigkeitsdatenübertragung und die Möglichkeit zur Übertragung von Audio- und Videosignalen (z. B. DisplayPort über USB-C) unterstützt. Er wird von den meisten modernen mobilen Geräten und Laptops aufgrund seiner schnellen Übertragungsgeschwindigkeiten und Stromversorgungsfähigkeiten verwendet."
     },
-    "antwort": "B",
-    "erklärung": "USB-C ist ein vielseitiger Anschluss, der Ladevorgänge, Hochgeschwindigkeitsdatenübertragung und die Möglichkeit zur Übertragung von Audio- und Videosignalen (z. B. DisplayPort über USB-C) unterstützt. Er wird von den meisten modernen mobilen Geräten und Laptops aufgrund seiner schnellen Übertragungsgeschwindigkeiten und Stromversorgungsfähigkeiten verwendet."
+    "en": {
+      "question": "Which of the following ports can be used to charge most modern mobile devices and can transmit data, audio, and video?",
+      "options": {
+        "A": "Lightning",
+        "B": "USB-C",
+        "C": "MicroUSB",
+        "D": "MiniUSB"
+      },
+      "answer": "B",
+      "explanation": "USB-C is a versatile port that supports charging, high-speed data transfer, and the ability to transmit audio and video signals (e.g., DisplayPort over USB-C). It is widely used by most modern mobile devices and laptops due to its fast transfer speeds and power capabilities."
+    }
   },
   {
     "id": 799,
-    "frage": "Ein Techniker hat Probleme beim Austausch der WLAN-Karte eines Laptops, da die Abdeckung festsitzt. Was sollte der Techniker als Nächstes tun, um dieses Problem zu beheben?",
-    "optionen": {
-      "A": "Das Produkthandbuch für das Verfahren überprüfen.",
-      "B": "Ein Hebelwerkzeug verwenden, um die Abdeckung gewaltsam zu öffnen.",
-      "C": "Die WLAN-Karte in den M.2-Steckplatz einsetzen.",
-      "D": "Versuchen, die Abdeckung durch Schieben in alle Richtungen zu bewegen."
+    "de": {
+      "frage": "Ein Techniker hat Probleme beim Austausch der WLAN-Karte eines Laptops, da die Abdeckung festsitzt. Was sollte der Techniker als Nächstes tun, um dieses Problem zu beheben?",
+      "optionen": {
+        "A": "Das Produkthandbuch für das Verfahren überprüfen.",
+        "B": "Ein Hebelwerkzeug verwenden, um die Abdeckung gewaltsam zu öffnen.",
+        "C": "Die WLAN-Karte in den M.2-Steckplatz einsetzen.",
+        "D": "Versuchen, die Abdeckung durch Schieben in alle Richtungen zu bewegen."
+      },
+      "antwort": "A",
+      "erklärung": "Wenn Hardware nicht leicht zugänglich ist, sollte immer das Produkthandbuch für die ordnungsgemäße Demontage konsultiert werden. Das gewaltsame Öffnen der Abdeckung kann den Laptop beschädigen oder die Garantie ungültig machen. Produkthandbücher enthalten oft Schritt-für-Schritt-Anleitungen für den sicheren Zugriff auf interne Komponenten."
     },
-    "antwort": "A",
-    "erklärung": "Wenn Hardware nicht leicht zugänglich ist, sollte immer das Produkthandbuch für die ordnungsgemäße Demontage konsultiert werden. Das gewaltsame Öffnen der Abdeckung kann den Laptop beschädigen oder die Garantie ungültig machen. Produkthandbücher enthalten oft Schritt-für-Schritt-Anleitungen für den sicheren Zugriff auf interne Komponenten."
+    "en": {
+      "question": "A technician is having trouble replacing a laptop's Wi-Fi card because the cover is stuck. What should the technician do next to resolve this issue?",
+      "options": {
+        "A": "Review the product manual for the procedure.",
+        "B": "Use a pry tool to forcibly open the cover.",
+        "C": "Insert the Wi-Fi card into the M.2 slot.",
+        "D": "Try moving the cover in all directions to loosen it."
+      },
+      "answer": "A",
+      "explanation": "If hardware is not easily accessible, the product manual should always be consulted for proper disassembly procedures. Forcing the cover open may damage the laptop or void its warranty. Product manuals often include step-by-step instructions for safe access to internal components."
+    }
   },
   {
     "id": 800,
-    "frage": "Ein Benutzer kehrt von einer Reise zurück und stellt fest, dass ein Computer, der mit dem LAN verbunden ist, zeitweise abbricht. Bei der Untersuchung stellt ein Techniker fest, dass der RJ45-Pin nicht ordnungsgemäß terminiert ist. Welches der folgenden Netzwerkwerkzeuge ist am besten geeignet, um das Problem zu beheben?",
-    "optionen": {
-      "A": "Toner-Sonde",
-      "B": "Kabeltester",
-      "C": "Anlegewerkzeug (Punchdown)",
-      "D": "Crimpzange (Crimper)"
+    "de": {
+      "frage": "Ein Benutzer kehrt von einer Reise zurück und stellt fest, dass ein Computer, der mit dem LAN verbunden ist, zeitweise abbricht. Bei der Untersuchung stellt ein Techniker fest, dass der RJ45-Pin nicht ordnungsgemäß terminiert ist. Welches der folgenden Netzwerkwerkzeuge ist am besten geeignet, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Toner-Sonde",
+        "B": "Kabeltester",
+        "C": "Anlegewerkzeug (Punchdown)",
+        "D": "Crimpzange (Crimper)"
+      },
+      "antwort": "D",
+      "erklärung": "Eine Crimpzange wird verwendet, um ein RJ45-Kabel ordnungsgemäß zu terminieren, indem der Stecker an die verdrillten Adernpaare angeschlossen wird. Wenn die Terminierung nicht korrekt durchgeführt wird, ist die Verbindung intermittierend oder fällt vollständig aus."
     },
-    "antwort": "D",
-    "erklärung": "Eine Crimpzange wird verwendet, um ein RJ45-Kabel ordnungsgemäß zu terminieren, indem der Stecker an die verdrillten Adernpaare angeschlossen wird. Wenn die Terminierung nicht korrekt durchgeführt wird, ist die Verbindung intermittierend oder fällt vollständig aus."
+    "en": {
+      "question": "A user returns from a trip and notices that a computer connected to the LAN intermittently drops its connection. Upon investigation, a technician finds that the RJ45 pin is not properly terminated. Which of the following network tools is best suited to fix the issue?",
+      "options": {
+        "A": "Toner probe",
+        "B": "Cable tester",
+        "C": "Punchdown tool",
+        "D": "Crimper"
+      },
+      "answer": "D",
+      "explanation": "A crimper is used to properly terminate an RJ45 cable by attaching the connector to the twisted wire pairs. If termination is not done correctly, the connection can be intermittent or fail completely."
+    }
   },
   {
     "id": 801,
-    "frage": "Ein Benutzer meldete Leistungsprobleme auf einem Computer nach einem kürzlichen Betriebssystem-Update. Ein Techniker ist zuversichtlich, dass das Zurücksetzen des Systems das Problem lösen wird. Welchen der folgenden Schritte sollte der Techniker als Nächstes unternehmen?",
-    "optionen": {
-      "A": "Die Ergebnisse dokumentieren.",
-      "B": "Kürzliche Infrastrukturänderungen untersuchen.",
-      "C": "Die Systemwiederherstellung einleiten.",
-      "D": "Die volle Systemfunktionalität überprüfen."
+    "de": {
+      "frage": "Ein Benutzer meldete Leistungsprobleme auf einem Computer nach einem kürzlichen Betriebssystem-Update. Ein Techniker ist zuversichtlich, dass das Zurücksetzen des Systems das Problem lösen wird. Welchen der folgenden Schritte sollte der Techniker als Nächstes unternehmen?",
+      "optionen": {
+        "A": "Die Ergebnisse dokumentieren.",
+        "B": "Kürzliche Infrastrukturänderungen untersuchen.",
+        "C": "Die Systemwiederherstellung einleiten.",
+        "D": "Die volle Systemfunktionalität überprüfen."
+      },
+      "antwort": "C",
+      "erklärung": "Wenn der Techniker zuversichtlich ist, dass das Zurücksetzen des Systems auf einen früheren Wiederherstellungspunkt das Problem lösen wird, ist der nächste logische Schritt die Einleitung des Systemwiederherstellungsprozesses. Die Systemwiederherstellung ermöglicht es dem System, zu einem Zustand vor dem Betriebssystem-Update zurückzukehren, wodurch die durch das Update verursachten Leistungsprobleme behoben werden können."
     },
-    "antwort": "C",
-    "erklärung": "Wenn der Techniker zuversichtlich ist, dass das Zurücksetzen des Systems auf einen früheren Wiederherstellungspunkt das Problem lösen wird, ist der nächste logische Schritt die Einleitung des Systemwiederherstellungsprozesses. Die Systemwiederherstellung ermöglicht es dem System, zu einem Zustand vor dem Betriebssystem-Update zurückzukehren, wodurch die durch das Update verursachten Leistungsprobleme behoben werden können."
+    "en": {
+      "question": "A user reported performance issues on a computer after a recent operating system update. A technician is confident that resetting the system will resolve the issue. Which of the following steps should the technician take next?",
+      "options": {
+        "A": "Document the findings.",
+        "B": "Review recent infrastructure changes.",
+        "C": "Initiate a system restore.",
+        "D": "Verify full system functionality."
+      },
+      "answer": "C",
+      "explanation": "If the technician is confident that resetting the system to a previous restore point will resolve the issue, the next logical step is to initiate the system restore process. This allows the system to return to a state prior to the operating system update, resolving performance issues caused by the update."
+    }
   },
   {
     "id": 802,
-    "frage": "Ein Benutzer nimmt an einer Telefonkonferenz mit einem Bluetooth-Headset teil. Was hat der Benutzer dabei erstellt?",
-    "optionen": {
-      "A": "MAN (Metropolitan Area Network)",
-      "B": "PAN (Personal Area Network)",
-      "C": "SAN (Storage Area Network)",
-      "D": "WAN (Wide Area Network)"
+    "de": {
+      "frage": "Ein Benutzer nimmt an einer Telefonkonferenz mit einem Bluetooth-Headset teil. Was hat der Benutzer dabei erstellt?",
+      "optionen": {
+        "A": "MAN (Metropolitan Area Network)",
+        "B": "PAN (Personal Area Network)",
+        "C": "SAN (Storage Area Network)",
+        "D": "WAN (Wide Area Network)"
+      },
+      "antwort": "B",
+      "erklärung": "Ein PAN (Personal Area Network) ist ein Netzwerk, das zwischen Geräten in unmittelbarer Nähe aufgebaut wird, wie zum Beispiel zwischen einem Smartphone und einem Bluetooth-Headset. Die Bluetooth-Technologie ist speziell für die Kurzstreckenkommunikation konzipiert und ist daher eine Art PAN."
     },
-    "antwort": "B",
-    "erklärung": "Ein PAN (Personal Area Network) ist ein Netzwerk, das zwischen Geräten in unmittelbarer Nähe aufgebaut wird, wie zum Beispiel zwischen einem Smartphone und einem Bluetooth-Headset. Die Bluetooth-Technologie ist speziell für die Kurzstreckenkommunikation konzipiert und ist daher eine Art PAN."
+    "en": {
+      "question": "A user participates in a conference call using a Bluetooth headset. What type of network has the user created?",
+      "options": {
+        "A": "MAN (Metropolitan Area Network)",
+        "B": "PAN (Personal Area Network)",
+        "C": "SAN (Storage Area Network)",
+        "D": "WAN (Wide Area Network)"
+      },
+      "answer": "B",
+      "explanation": "A PAN (Personal Area Network) is a network created between devices in close proximity, such as between a smartphone and a Bluetooth headset. Bluetooth technology is specifically designed for short-range communication, making it a type of PAN."
+    }
   },
   {
     "id": 803,
