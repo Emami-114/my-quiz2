@@ -1,0 +1,522 @@
+[
+  {
+    "id": 0,
+    "question": "Welche der folgenden Optionen würde ein Administrator verwenden, um virtuelle Maschinen von lokalen Standorten in die Cloud zu migrieren?",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "DBaaS",
+      "DRaaS"
+    ],
+    "answer": "IaaS",
+    "explanation": "Ein Administrator würde Infrastructure as a Service (IaaS) verwenden, um virtuelle Maschinen von lokalen Standorten in die Cloud zu migrieren. IaaS bietet virtualisierte Computerressourcen wie Server, Speicher und Netzwerke, die zur Bereitstellung und Ausführung von Anwendungen in der Cloud genutzt werden können. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.3"
+  },
+  {
+    "id": 1,
+    "question": "Ein Benutzer versucht, eine Präsentation über einen Projektor in einem Konferenzraum zu halten, meldet jedoch, dass der Projektor Video aber keinen Ton ausgibt. Welche der folgenden Maßnahmen wird das Problem höchstwahrscheinlich beheben?",
+    "options": [
+      "Den Eingang am Projektor auf VGA umstellen",
+      "Den Ausgang am PC auf DVI umstellen",
+      "Die Bildwiederholfrequenz des Projektors anpassen",
+      "Eine HDMI-Verbindung verwenden"
+    ],
+    "answer": "Eine HDMI-Verbindung verwenden",
+    "explanation": "Das Problem von Video ohne Ton kann durch die Verwendung einer HDMI-Verbindung zwischen PC und Projektor gelöst werden. HDMI unterstützt sowohl Video- als auch Audiosignale und wird häufig für Präsentationen verwendet. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.5"
+  },
+  {
+    "id": 2,
+    "question": "Welcher der folgenden Standards unterstützt MIMO-Technologie?",
+    "options": [
+      "802.11a",
+      "802.11b",
+      "802.11g",
+      "802.11n"
+    ],
+    "answer": "802.11n",
+    "explanation": "Der 802.11n-Standard unterstützt Multiple Input Multiple Output (MIMO)-Technologie, die mehrere Antennen nutzt, um die drahtlose Leistung zu verbessern. Die anderen Standards unterstützen MIMO nicht. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.3"
+  },
+  {
+    "id": 3,
+    "question": "Ein Benutzer hat eine Leistungssteigerung für einen firmeneigenen Laptop angefordert, um die Arbeit mit einer großen Datenbank auf Laufwerk C zu verbessern. Welche TWO Maßnahmen sollte ein Systemadministrator ergreifen, um dieses Ziel am besten zu erreichen?",
+    "options": [
+      "RAID 1 konfigurieren",
+      "Eine Hybridfestplatte installieren",
+      "Auf eine 1GB-NIC aufrüsten",
+      "Den Arbeitsspeicher erhöhen",
+      "Auf eine SSD migrieren",
+      "Das Netzteil aufrüsten"
+    ],
+    "answer": "Den Arbeitsspeicher erhöhen, Auf eine SSD migrieren",
+    "explanation": "Um die Leistung des Laptops bei der Arbeit mit einer großen Datenbank zu verbessern, sollte der Arbeitsspeicher erhöht und auf eine SSD migriert werden. Dies beschleunigt den Datenzugriff und verbessert die Verarbeitung großer Datenmengen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.1"
+  },
+  {
+    "id": 4,
+    "question": "Welche der folgenden Technologien ermöglicht es mehreren Netzwerken, einen Switch zu durchlaufen?",
+    "options": [
+      "VLAN",
+      "VRRP",
+      "VPN",
+      "DHCP"
+    ],
+    "answer": "VLAN",
+    "explanation": "VLAN (Virtual Local Area Network) ermöglicht die logische Trennung von Netzwerken auf derselben physischen Infrastruktur, sodass mehrere Netzwerke denselben Switch durchlaufen können. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.2"
+  },
+  {
+    "id": 5,
+    "question": "Ein Unternehmen hat einen Drucker gekauft, der automatisch auf beiden Seiten des Papiers drucken kann. Nach der Installation kann der Techniker jedoch nur manuell auf beiden Seiten drucken. Was sollte der Techniker tun, um das Problem zu beheben?",
+    "options": [
+      "Die neueste Firmware-Aktualisierung für den Drucker installieren",
+      "Den Hersteller für einen Hardwareaustausch kontaktieren",
+      "Die Druckersoftware und Treiber neu installieren und den Drucker neu starten",
+      "Die Installationsanleitung lesen und die Duplex-Einstellungen konfigurieren"
+    ],
+    "answer": "Die Installationsanleitung lesen und die Duplex-Einstellungen konfigurieren",
+    "explanation": "Das Problem liegt höchstwahrscheinlich in einer falschen Konfiguration der Duplex-Einstellungen. Der Techniker sollte die Anleitung lesen und die Einstellungen korrekt vornehmen, um automatischen Duplexdruck zu ermöglichen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.5"
+  },
+  {
+    "id": 6,
+    "question": "Ein Online-Händler möchte Kapazitäten hinzufügen, um gestiegene Verkäufe zu unterstützen. Zusätzliche Server wurden installiert. Welche der folgenden Optionen sollte verwendet werden, um sicherzustellen, dass jeder neue Server ordnungsgemäß genutzt wird?",
+    "options": [
+      "Virtualisierung",
+      "Clustering",
+      "Lastenausgleich",
+      "Round-Robin-DNS"
+    ],
+    "answer": "Lastenausgleich",
+    "explanation": "Ein Lastenausgleich (Load Balancer) verteilt den Netzwerkverkehr gleichmäßig auf mehrere Server, um eine Überlastung einzelner Server zu verhindern und die Auslastung zu optimieren. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.7"
+  },
+  {
+    "id": 7,
+    "question": "Welche der folgenden Optionen verwendet die TCP-Ports 20/21 und überträgt Daten im Klartext?",
+    "options": [
+      "SNMP",
+      "SSH",
+      "FTP",
+      "Telnet"
+    ],
+    "answer": "FTP",
+    "explanation": "FTP (File Transfer Protocol) verwendet die TCP-Ports 20/21 und überträgt Daten unverschlüsselt im Klartext, was es unsicher für die Übertragung sensibler Daten macht. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.1"
+  },
+  {
+    "id": 8,
+    "question": "Ein Kunde nutzt eine Satelliten-Internetverbindung, die langsam ist. Ein Techniker stellt eine hohe Latenz beim Ping fest, aber der Download-Test funktioniert einwandfrei mit hohen Geschwindigkeiten. Was sollte der Techniker als NÄCHSTES tun?",
+    "options": [
+      "Das Modem neu starten und ein Online-Internetverbindungs- und Geschwindigkeitsdiagnosetool ausführen",
+      "Den Kunden anleiten, den Internetplan beim Anbieter zu upgraden, um die Latenz zu verbessern",
+      "Dem Kunden erklären, dass dies normal für diese Art der Internetverbindung ist",
+      "Das Modem ersetzen, da es aufgrund des Testergebnisses nicht korrekt funktioniert"
+    ],
+    "answer": "Das Modem neu starten und ein Online-Internetverbindungs- und Geschwindigkeitsdiagnosetool ausführen",
+    "explanation": "Hohe Latenz bei Satelliten-Internetverbindungen ist üblich. Der Techniker sollte das Modem neu starten und ein Diagnosetool verwenden, um weitere Probleme zu identifizieren. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.6"
+  },
+  {
+    "id": 9,
+    "question": "Eine Organisation verwaltet verschiedene Arten von Aufzeichnungen, einschließlich Gesundheits- und Strafjustizdaten. Welche der folgenden Cloud-Umgebungen wird die Organisation höchstwahrscheinlich verwenden, um die Angriffsfläche zu begrenzen?",
+    "options": [
+      "Öffentlich",
+      "Hybrid",
+      "Community",
+      "Privat"
+    ],
+    "answer": "Privat",
+    "explanation": "Private Clouds bieten die größte Kontrolle über Sicherheit und Datenzugriff, was sie ideal für sensible Daten wie Gesundheits- und Strafjustizaufzeichnungen macht. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.1"
+  },
+  {
+    "id": 10,
+    "question": "Welche der folgenden Komponenten ermöglicht die Eingabe auf dem Touchscreen eines Mobilgeräts?",
+    "options": [
+      "OLED",
+      "Digitizer",
+      "Inverter",
+      "CMOS-Sensor"
+    ],
+    "answer": "Digitizer",
+    "explanation": "Der Digitizer ist eine transparente Schicht über dem Display, die Berührungseingaben erkennt und an das Gerät weiterleitet. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.3"
+  },
+  {
+    "id": 11,
+    "question": "Was sollte ein Techniker in einem Rechenzentrum implementieren, um die maximale Verfügbarkeit für virtuelle Maschinen der Kunden zu gewährleisten?",
+    "options": [
+      "Netzfilter",
+      "AC-Spannungsregler",
+      "USV (unterbrechungsfreie Stromversorgung)",
+      "Cloud-Speicher-Backup"
+    ],
+    "answer": "USV (unterbrechungsfreie Stromversorgung)",
+    "explanation": "Eine USV stellt bei Stromausfällen oder Spannungsschwankungen eine unterbrechungsfreie Stromversorgung sicher und gewährleistet so die Verfügbarkeit der virtuellen Maschinen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.5"
+  },
+  {
+    "id": 12,
+    "question": "Ein Techniker wird zu einem Standort mit Internetausfall geschickt. Bei der Ankunft stellt der Techniker fest, dass auch die POTS-Leitungen nicht funktionieren. Welche Technologie wird der Standort höchstwahrscheinlich nutzen?",
+    "options": [
+      "Faser",
+      "Kabel",
+      "DSL",
+      "Satellit"
+    ],
+    "answer": "DSL",
+    "explanation": "DSL (Digital Subscriber Line) nutzt POTS-Leitungen (Plain Old Telephone Service) für die Internetverbindung. Ein Ausfall der POTS-Leitungen würde daher auch die DSL-Verbindung beeinträchtigen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.6"
+  },
+  {
+    "id": 13,
+    "question": "Ein Kunde meldet, dass ein Computer nie eine Datenübertragungsrate von mehr als 100Mbps erreicht, obwohl eine Gigabit-LAN-Karte verwendet wird. Beim Troubleshooting stellt der Techniker fest, dass das Netzwerkkabel ersetzt werden muss. Welche der folgenden Kabelkategorien begrenzt die Übertragungsgeschwindigkeit?",
+    "options": [
+      "Cat 5",
+      "Cat 5e",
+      "Cat 6",
+      "Cat 6a"
+    ],
+    "answer": "Cat 5",
+    "explanation": "Cat-5-Kabel sind auf 100Mbps begrenzt, während Cat-5e, Cat-6 und Cat-6a Gigabit-Ethernet (1000Mbps) unterstützen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.3"
+  },
+  {
+    "id": 14,
+    "question": "Ein Benutzer in einem SOHO-Netzwerk kann keine Online-Videos ansehen, selbst nicht bei 240 Pixeln. Der Techniker führt ipconfig aus und stellt fest, dass die Verbindung korrekt konfiguriert ist. Ein Test-Laptop, der mit demselben Kabel verbunden ist, zeigt hohe Download- und Upload-Geschwindigkeiten. Was ist die wahrscheinlichste Ursache für das Problem?",
+    "options": [
+      "Falsche IP-Adresse",
+      "Defekte Netzwerkkarte (NIC)",
+      "Falsch konfiguriertes Standardgateway",
+      "Defektes Netzwerkkabel"
+    ],
+    "answer": "Defekte Netzwerkkarte (NIC)",
+    "explanation": "Da der Test-Laptop einwandfrei funktioniert, liegt das Problem höchstwahrscheinlich an einer defekten Netzwerkkarte im Computer des Benutzers. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 5.5"
+  },
+  {
+    "id": 15,
+    "question": "Ein Techniker muss eine Internetverbindung für einen Kunden empfehlen, der weltweit reist und in abgelegenen Campinggebieten Verbindung haben möchte. Einige Standorte haben nur eingeschränkten oder unzuverlässigen Mobilfunkempfang. Welche Verbindungsart sollte der Techniker empfehlen?",
+    "options": [
+      "Satellit",
+      "DSL",
+      "Faser",
+      "Hotspot"
+    ],
+    "answer": "Satellit",
+    "explanation": "Satelliten-Internet ist die beste Option für abgelegene Standorte, da es überall mit freier Sicht zum Satelliten funktioniert. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.6"
+  },
+  {
+    "id": 16,
+    "question": "Ein Techniker bemerkt bei der Implementierung einer nicht trägergradfähigen drahtlosen Rückverbindung, dass der aktuell gewählte Kanal stark mit verschiedenen RF-Signalen belastet ist. Eine Spektralanalyse zeigt einen Kanal mit fast keinen Störungen, der jedoch nicht ausgewählt werden kann. Was ist der wahrscheinlichste Grund?",
+    "options": [
+      "Der Kanal ist für lizenzierte Bandnutzung reserviert",
+      "Die Kanalauswahl ist defekt; der Hersteller sollte kontaktiert werden",
+      "Der Kanal muss vom Hersteller freigeschaltet werden",
+      "Das Gerät benötigt ein Firmware-Update, um den Kanal freizuschalten"
+    ],
+    "answer": "Der Kanal ist für lizenzierte Bandnutzung reserviert",
+    "explanation": "Einige Kanäle sind für lizenzierte Nutzung reserviert (z.B. für Militär oder kritische Infrastruktur) und können nicht von ungelizenzierter Hardware genutzt werden. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.3"
+  },
+  {
+    "id": 17,
+    "question": "Ein Benutzer verbindet ein Smartphone mit einem Laptop. Welche Art von Netzwerk hat der Benutzer erstellt?",
+    "options": [
+      "PAN (Personal Area Network)",
+      "MAN (Metropolitan Area Network)",
+      "WLAN (Wireless Local Area Network)",
+      "LAN (Local Area Network)"
+    ],
+    "answer": "PAN (Personal Area Network)",
+    "explanation": "Die Verbindung zwischen einem Smartphone und einem Laptop in unmittelbarer Nähe wird als Personal Area Network (PAN) bezeichnet. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.2"
+  },
+  {
+    "id": 18,
+    "question": "Ein Benutzer meldet, dass gedruckte Belege schwarze Schmierspuren über dem gesamten Bild aufweisen. Der Text ist noch vorhanden, aber sehr dunkel und manchmal unleserlich. Was ist die wahrscheinlichste Ursache und Lösung?",
+    "options": [
+      "Das Farbband ist verklemmt und reibt am Papier. Das Farbband sollte freigegeben und korrekt eingelegt werden",
+      "Der Druckkopf ist zu heiß. Die Temperatur sollte verringert und ein erneuter Druckversuch unternommen werden",
+      "Der Drucker ist mit dem falschen Papier beladen. Das Belegpapier sollte durch Kohlepapier ersetzt werden",
+      "Die blaue Patrone wurde mit schwarzer Tinte befüllt. Die korrekte Tinte sollte eingesetzt und der Druckkopf gereinigt werden"
+    ],
+    "answer": "Das Farbband ist verklemmt und reibt am Papier. Das Farbband sollte freigegeben und korrekt eingelegt werden",
+    "explanation": "Schwarze Schmierspuren deuten auf ein verklemmtes Farbband hin, das am Papier reibt. Das Problem kann durch korrektes Einlegen des Farbbands behoben werden. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.5"
+  },
+  {
+    "id": 19,
+    "question": "Ein Techniker konfiguriert einen Arbeitsplatzrechner als VM-Host. Nach der Installation der erforderlichen Software können keine VMs erstellt werden. Was sollte der Techniker tun?",
+    "options": [
+      "Das BIOS-Passwort deaktivieren",
+      "TPM aktivieren",
+      "Multithreading aktivieren",
+      "Schnellstart aktivieren"
+    ],
+    "answer": "TPM aktivieren",
+    "explanation": "Trusted Platform Module (TPM) ist eine hardwarebasierte Sicherheitsfunktion, die für viele Virtualisierungstechnologien erforderlich ist. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.7"
+  },
+  {
+    "id": 20,
+    "question": "Mehrere Benutzer melden ungewollte, dünne, vertikale Linien, die über die gesamte Höhe jeder Seite eines Multifunktionsdruckers gedruckt werden. Was sollte der Techniker tun?",
+    "options": [
+      "Das Druckerpapier durch eine neue Packung ersetzen",
+      "Den Druckerspooler auf jedem Computer leeren",
+      "Den Druckertreiber auf jedem Computer neu installieren",
+      "Die Trommelreinigungsprozedur durchführen"
+    ],
+    "answer": "Die Trommelreinigungsprozedur durchführen",
+    "explanation": "Dünne vertikale Linien deuten auf eine verschmutzte Trommel oder Tonerkartusche hin. Eine Reinigung der Trommel sollte das Problem beheben. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.5"
+  },
+  {
+    "id": 21,
+    "question": "Ein Techniker richtet einen neuen Desktop-Computer ein und installiert die Festplatte direkt auf dem Motherboard ohne Kabel. Welche der folgenden Optionen wird der Techniker installieren?",
+    "options": [
+      "Thunderbolt",
+      "eSATA",
+      "M.2",
+      "SCSI"
+    ],
+    "answer": "M.2",
+    "explanation": "M.2 ist ein Formfaktor für SSDs, die direkt auf dem Motherboard ohne separate Kabel installiert werden können. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.4"
+  },
+  {
+    "id": 22,
+    "question": "Eine Organisation hat einige Computer mit macOS und einige mit Windows. Die macOS-Computer müssen auch eine Windows-Software ausführen. Welche Lösung beschreibt dies am besten?",
+    "options": [
+      "Betriebssystem-Spoofing",
+      "Remote-Software-Bereitstellung",
+      "Indirekte Software-Implementierung",
+      "Cross-Platform-Virtualisierung"
+    ],
+    "answer": "Cross-Platform-Virtualisierung",
+    "explanation": "Cross-Platform-Virtualisierung ermöglicht die Ausführung eines Windows-Betriebssystems in einer virtuellen Maschine auf einem macOS-Computer. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.7"
+  },
+  {
+    "id": 23,
+    "question": "Ein Techniker ersetzt ein defektes Motherboard auf einem alten High-End-Desktop-Computer. Die CPU passt jedoch nicht in den Sockel, da die Pins nicht ausgerichtet sind. Was sollte der Techniker als NÄCHSTES tun?",
+    "options": [
+      "So viele Pins wie möglich einsetzen",
+      "Einen Adapter für einen universellen Sockel installieren",
+      "Den Sockeltyp und Hersteller überprüfen",
+      "Ein kompatibles Motherboard für die CPU finden"
+    ],
+    "answer": "Den Sockeltyp und Hersteller überprüfen",
+    "explanation": "Der Techniker sollte sicherstellen, dass der Sockeltyp des Motherboards mit der CPU kompatibel ist. Eine falsche Ausrichtung der Pins deutet auf eine Inkompatibilität hin. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.5"
+  },
+  {
+    "id": 24,
+    "question": "Ein Benutzer bereitet sich auf eine Arbeit in einem anderen Land vor und muss die Unternehmensrichtlinie für den Datenschutz beim Kopieren von Dateien auf tragbare Medien einhalten. Welche Lösung erfüllt diese Anforderung am besten?",
+    "options": [
+      "Ein USB-3.1-Flashlaufwerk mit BitLocker to Go",
+      "Eine SD-Speicherkarte mit NTFS",
+      "Eine xD-Speicherkarte mit ext3",
+      "Eine externe Festplatte mit FAT32"
+    ],
+    "answer": "Ein USB-3.1-Flashlaufwerk mit BitLocker to Go",
+    "explanation": "BitLocker to Go ermöglicht die Verschlüsselung von tragbaren Medien und erfüllt damit die Datenschutzanforderungen des Unternehmens. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.8"
+  },
+  {
+    "id": 25,
+    "question": "Ein Techniker muss ein Cat-5-Kabelproblem beheben. Das Kabel, das mit einer Netzwerkdose verbunden ist, fällt aus, wenn es bewegt wird. Welche TWO Werkzeuge/Teile muss der Techniker verwenden?",
+    "options": [
+      "Schere",
+      "Netzwerk-Tap",
+      "Magnetisierter Schraubendreher",
+      "Ton-Generator",
+      "RJ45-Stecker",
+      "Crimpzange"
+    ],
+    "answer": "RJ45-Stecker, Crimpzange",
+    "explanation": "Der Techniker sollte einen neuen RJ45-Stecker mit einer Crimpzange anbringen, um eine lockere Verbindung zu beheben. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 5.6"
+  },
+  {
+    "id": 26,
+    "question": "Ein Techniker hört beim Booten eines PCs drei aufeinanderfolgende laute Pieptöne. Welche Komponente ist höchstwahrscheinlich defekt?",
+    "options": [
+      "RAM",
+      "Grafikkarte",
+      "CPU",
+      "Netzteil"
+    ],
+    "answer": "RAM",
+    "explanation": "Drei aufeinanderfolgende Pieptöne weisen oft auf einen RAM-Fehler hin. Der Techniker sollte die RAM-Module überprüfen und gegebenenfalls ersetzen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.5"
+  },
+  {
+    "id": 27,
+    "question": "Welche der folgenden Optionen beschreibt die gemessene Nutzung von Cloud-Ressourcen?",
+    "options": [
+      "Sofort bereitgestellte Ressourcen",
+      "Zahlung nur für genutzte Ressourcen",
+      "Zusammengefasste Ressourcen zur Erhöhung der Rechenleistung",
+      "Implementierung von schneller Elastizität"
+    ],
+    "answer": "Zahlung nur für genutzte Ressourcen",
+    "explanation": "Cloud-Anbieter berechnen Kunden nur für die tatsächlich genutzten Ressourcen (Pay-as-you-go-Modell). Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.1"
+  },
+  {
+    "id": 28,
+    "question": "Ein Techniker stellt fest, dass sporadische Netzwerkausfälle im gesamten Büro durch elektromagnetische Interferenz (EMI) verursacht werden. Welches Kabelmedium wäre die kostengünstigste Lösung ohne Leistungseinbußen?",
+    "options": [
+      "Koaxial",
+      "Geschirmtes Cat 6",
+      "Plenum Cat 5e",
+      "Multimode-Faser"
+    ],
+    "answer": "Geschirmtes Cat 6",
+    "explanation": "Geschirmtes Cat-6-Kabel bietet Schutz gegen EMI und ist kostengünstiger als Glasfaser. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.3"
+  },
+  {
+    "id": 29,
+    "question": "Ein Benutzer meldet, dass ein PC gelegentlich nicht bootet. Beim Neustart verschlechtert sich die Leistung, und der Techniker hört ein tickendes Geräusch. Was sollte der Techniker zuerst tun?",
+    "options": [
+      "Daten sichern",
+      "RAM-Module neu einstecken",
+      "Den Lüfter überprüfen",
+      "Das CD-Laufwerk überprüfen"
+    ],
+    "answer": "Daten sichern",
+    "explanation": "Ein tickendes Geräusch deutet auf einen mechanischen Festplattenfehler hin. Der Techniker sollte zuerst die Daten sichern, bevor weitere Maßnahmen ergriffen werden. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 5.5"
+  },
+  {
+    "id": 30,
+    "question": "Ein Techniker richtet eine Zwei-Faktor-Authentifizierung ein. Welche der folgenden Kombinationen erfüllt diese Anforderung?",
+    "options": [
+      "Fingerabdruck/Netzhautscan",
+      "Passwort/Passwort",
+      "Passwort/Fingerabdruck",
+      "Passwort/PIN"
+    ],
+    "answer": "Passwort/Fingerabdruck",
+    "explanation": "Zwei-Faktor-Authentifizierung erfordert zwei verschiedene Faktoren (z.B. Wissen + Biometrie). Passwort + Fingerabdruck erfüllen diese Anforderung. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.8"
+  },
+  {
+    "id": 31,
+    "question": "Ein Entwickler möchte Code in einer isolierten Umgebung schreiben, um andere Infrastruktur nicht zu beeinträchtigen. Welche Lösung bietet die BESTE Umgebung?",
+    "options": [
+      "Cross-Platform-Funktionalität",
+      "Software-Kompatibilität",
+      "Testfall-Entwicklung",
+      "Sandbox-Umgebung"
+    ],
+    "answer": "Sandbox-Umgebung",
+    "explanation": "Eine Sandbox ist eine isolierte Testumgebung, in der Code ohne Auswirkungen auf andere Systeme entwickelt werden kann. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.2"
+  },
+  {
+    "id": 32,
+    "question": "Ein Laptop zeigt gelegentlich ein verblasstes Bild bei hoher Helligkeit, aber der Besitzer behauptet, der Bildschirm sei kaputt. Was sollte der Techniker zuerst überprüfen?",
+    "options": [
+      "Die Grafikkarte ersetzen",
+      "Den Bildschirm wie vom Kunden gewünscht ersetzen",
+      "Die Verwendung eines externen Displays empfehlen",
+      "Die Hintergrundbeleuchtung überprüfen"
+    ],
+    "answer": "Die Hintergrundbeleuchtung überprüfen",
+    "explanation": "Ein verblasstes Bild bei hoher Helligkeit deutet auf ein Problem mit der Hintergrundbeleuchtung hin, nicht auf einen defekten Bildschirm. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.3"
+  },
+  {
+    "id": 33,
+    "question": "Ein Techniker stellt fest, dass ein Projektor nach 15 Minuten Betrieb ausschaltet und erst nach einer Abkühlphase wieder eingeschaltet werden kann. Was sollte der Techniker als NÄCHSTES tun?",
+    "options": [
+      "Den Filter reinigen",
+      "Die Standby-Zeit anpassen",
+      "Die Stromkabelverbindung überprüfen",
+      "Die Lampe ersetzen"
+    ],
+    "answer": "Den Filter reinigen",
+    "explanation": "Überhitzung ist die wahrscheinliche Ursache. Der Techniker sollte den Filter reinigen, um die Luftzirkulation zu verbessern. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.10"
+  },
+  {
+    "id": 34,
+    "question": "Ein Techniker muss die Reaktionszeit eines Arbeitsplatzrechners für häufig genutzte Anwendungen verbessern, ohne die aktuelle Festplatte zu entfernen. Welches Speichergerät sollte installiert werden?",
+    "options": [
+      "M.2",
+      "SAS",
+      "HDD",
+      "SCSI"
+    ],
+    "answer": "M.2",
+    "explanation": "Eine M.2-SSD bietet hohe Geschwindigkeit und kann parallel zur vorhandenen Festplatte installiert werden. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.4"
+  },
+  {
+    "id": 35,
+    "question": "Ein Smartphone zeigt nach einem Sturz normale Symbole an, reagiert aber nicht auf Berührungen. Was ist die wahrscheinlichste Ursache?",
+    "options": [
+      "Digitizer-Probleme",
+      "Überhitzung",
+      "Gebrochener Bildschirm",
+      "Malware"
+    ],
+    "answer": "Digitizer-Probleme",
+    "explanation": "Ein Sturz kann den Digitizer beschädigen, der für die Touch-Eingabe verantwortlich ist, selbst wenn das Display intakt erscheint. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 1.3"
+  },
+  {
+    "id": 36,
+    "question": "Ein Techniker bemerkt, dass ein Drucker Belege mit weißem Leerraum in der Mitte ausgibt. Was ist die wahrscheinlichste Ursache?",
+    "options": [
+      "Verschmutzter Fuser",
+      "Abgenutzte Rollen",
+      "Ein Papierstau",
+      "Falsche Seitenausrichtung"
+    ],
+    "answer": "Falsche Seitenausrichtung",
+    "explanation": "Weißer Leerraum deutet auf eine falsche Ausrichtung des Papiers oder der Druckeinstellungen hin. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 4.5"
+  },
+  {
+    "id": 37,
+    "question": "Welche der folgenden Optionen beschreibt den Hauptunterschied zwischen den T568A- und T568B-Verkabelungsstandards?",
+    "options": [
+      "T568B hat eine höhere Datenübertragungsrate als T568A",
+      "Die grünen und orangen Kabel sind vertauscht",
+      "T568A wird in blauen Kabeln verwendet, T568B in grünen Kabeln",
+      "Die Standards verwenden unterschiedliche Kabelstecker"
+    ],
+    "answer": "Die grünen und orangen Kabel sind vertauscht",
+    "explanation": "Der Hauptunterschied zwischen T568A und T568B liegt in der Vertauschung der grünen und orangen Adernpaare. Beide Standards sind gleichwertig in der Leistung. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 2.3"
+  },
+  {
+    "id": 38,
+    "question": "Ein Techniker soll eine Workstation mit gespiegeltem Speicher einrichten, der zwei 4TB-Laufwerke verwendet und einen Ausfall toleriert. Welche RAID-Konfiguration erfüllt diese Anforderung?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "answer": "RAID 1",
+    "explanation": "RAID 1 (Spiegelung) verwendet zwei Laufwerke und toleriert den Ausfall eines Laufwerks ohne Datenverlust. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.4"
+  },
+  {
+    "id": 39,
+    "question": "Ein Techniker soll zusätzlichen RAM in einem Desktop-Computer installieren. Welcher RAM-Typ wird höchstwahrscheinlich verwendet?",
+    "options": [
+      "SODIMM",
+      "DDR3",
+      "ECC",
+      "VRAM"
+    ],
+    "answer": "DDR3",
+    "explanation": "DDR3-RAM ist in vielen Desktop-Computern verbreitet und bietet eine gute Balance zwischen Leistung und Kosten. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.3"
+  },
+  {
+    "id": 40,
+    "question": "Ein Techniker ersetzt ein Motherboard auf einem Server, aber ein 64-Bit-Hypervisor lädt nicht korrekt. Was muss aktiviert werden?",
+    "options": [
+      "Hardware-Prefetcher",
+      "Hyperthreading",
+      "vPro",
+      "VT-d"
+    ],
+    "answer": "VT-d",
+    "explanation": "Virtualization Technology for Directed I/O (VT-d) muss im BIOS aktiviert sein, damit der Hypervisor korrekt funktioniert. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.7"
+  },
+  {
+    "id": 41,
+    "question": "Ein Benutzer berichtet, dass die Uhrzeit und das Datum auf einem Desktop-PC nach dem Herunterfahren zurückgesetzt werden. Am nächsten Tag startet der PC nicht und zeigt die Meldung 'Date/Time Not Set'. Was sollte als NÄCHSTES getan werden?",
+    "options": [
+      "Das Motherboard austauschen",
+      "Die Stromanschlüsse des Motherboards überprüfen",
+      "Die CMOS-Batterie ersetzen",
+      "Die BIOS-Einstellungen auf Werkseinstellungen zurücksetzen"
+    ],
+    "answer": "Die CMOS-Batterie ersetzen",
+    "explanation": "Eine leere CMOS-Batterie verursacht den Verlust der Systemuhr-Einstellungen. Der Austausch der Batterie sollte das Problem beheben. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.5"
+  },
+  {
+    "id": 42,
+    "question": "Eine Organisation möchte die Verarbeitungsleistung ihrer Computer verbessern. Benutzer berichten, dass die Systemantwortzeit stark verlangsamt wird, wenn mehrere Anwendungen geöffnet sind. Was sollte zuerst aufgerüstet werden?",
+    "options": [
+      "SSD",
+      "RAM",
+      "CPU",
+      "Grafikkarte"
+    ],
+    "answer": "RAM",
+    "explanation": "Die Erhöhung des Arbeitsspeichers (RAM) verbessert die Systemleistung, insbesondere bei mehreren gleichzeitig geöffneten Anwendungen. Referenz: CompTIA A+ Certification Exam: Core 1 - Objective 3.1"
+  }
+]

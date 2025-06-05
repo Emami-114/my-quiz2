@@ -1,0 +1,992 @@
+[
+  {
+    "id": 790,
+    "de": {
+      "frage": "Welche der folgenden Druckinitiativen wäre am besten geeignet, um umweltfreundliche Ziele zu erreichen?",
+      "optionen": {
+        "A": "Eine Benutzerauthentifizierung für den Druck vorschreiben.",
+        "B": "Den Druck auf bestimmte Personen beschränken.",
+        "C": "Duplex-Einstellungen auf beidseitigen Druck ändern.",
+        "D": "Die Druckqualitätseinstellungen auf \"Beste\" ändern."
+      },
+      "antwort": "C",
+      "erklärung": "Das Ändern der Duplex-Einstellungen auf beidseitigen Druck (Duplexdruck) reduziert den Papierverbrauch und ist somit eine der effektivsten umweltfreundlichen Druckinitiativen. Es minimiert direkt den Abfall und unterstützt Nachhaltigkeitsziele am Arbeitsplatz."
+    },
+    "en": {
+      "question": "Which of the following printing initiatives would be most suitable for achieving environmentally friendly goals?",
+      "options": {
+        "A": "Require user authentication for printing.",
+        "B": "Restrict printing to specific individuals.",
+        "C": "Change duplex settings to double-sided printing.",
+        "D": "Change print-quality settings to \"Best.\""
+      },
+      "answer": "C",
+      "explanation": "Changing duplex settings to double-sided (duplex) printing reduces paper consumption, making it one of the most effective eco-friendly printing initiatives. It directly minimizes waste and supports workplace sustainability goals."
+    }
+  },
+  {
+    "id": 791,
+    "de": {
+      "frage": "Welcher der folgenden Stecker befindet sich an einem optischen Netzwerkkabel?",
+      "optionen": {
+        "A": "RJ45",
+        "B": "LC",
+        "C": "USB-C",
+        "D": "Lightning"
+      },
+      "antwort": "B",
+      "erklärung": "Der LC-Stecker (Lucent Connector) ist ein Typ von Glasfaserstecker, der häufig in optischen Netzwerkkabeln verwendet wird. Er ist klein, kompakt und weit verbreitet für die Hochgeschwindigkeitsdatenübertragung über Glasfasernetze. LC-Stecker sind speziell für Glasfaserkabel konzipiert und somit die richtige Antwort."
+    },
+    "en": {
+      "question": "Which of the following connectors is found on an optical network cable?",
+      "options": {
+        "A": "RJ45",
+        "B": "LC",
+        "C": "USB-C",
+        "D": "Lightning"
+      },
+      "answer": "B",
+      "explanation": "The LC (Lucent Connector) is a type of fiber-optic connector commonly used on optical network cables. It is small, compact, and widely deployed for high-speed data transfer over fiber networks, making LC the correct answer."
+    }
+  },
+  {
+    "id": 792,
+    "de": {
+      "frage": "Welche der folgenden Portnummern sind mit E-Mail-Verkehr verbunden? (Wählen Sie zwei aus).",
+      "optionen": {
+        "A": "23",
+        "B": "25",
+        "C": "67",
+        "D": "110",
+        "E": "137",
+        "F": "443"
+      },
+      "antwort": "B, D",
+      "erklärung": "Port 25 (SMTP - Simple Mail Transfer Protocol): Dieser Port wird hauptsächlich zum Senden von E-Mails zwischen Mailservern und von Mail-Clients an Mailserver (Senden ausgehender E-Mails) verwendet. SMTP ist ein wichtiges Protokoll für den E-Mail-Verkehr. Port 110 (POP3 - Post Office Protocol v3): POP3 wird zum Abrufen von E-Mails von einem Mailserver verwendet. Es wird häufig zum Herunterladen von E-Mail-Nachrichten auf einen lokalen Client verwendet, wonach die Nachrichten vom Server gelöscht werden."
+    },
+    "en": {
+      "question": "Which of the following port numbers are associated with email traffic? (Select two.)",
+      "options": {
+        "A": "23",
+        "B": "25",
+        "C": "67",
+        "D": "110",
+        "E": "137",
+        "F": "443"
+      },
+      "answer": "B, D",
+      "explanation": "Port 25 (SMTP – Simple Mail Transfer Protocol) is primarily used to send email between mail servers or from mail clients to servers. Port 110 (POP3 – Post Office Protocol v3) is used to retrieve email from a mail server to a local client."
+    }
+  },
+  {
+    "id": 793,
+    "de": {
+      "frage": "Welches der folgenden Netzwerkgeräte muss höchstwahrscheinlich zwischen dem ISP, der DOCSIS betreibt, und dem LAN in einer SOHO-Umgebung installiert werden?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Firewall",
+        "C": "Kabelmodem",
+        "D": "Router",
+        "E": "Access Point"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Kabelmodem ist erforderlich, um das vom ISP über ein DOCSIS-Netzwerk bereitgestellte Signal in ein Format umzuwandeln, das vom lokalen Netzwerk verwendet werden kann."
+    },
+    "en": {
+      "question": "Which of the following network devices is most likely required between a DOCSIS-based ISP and the LAN in a SOHO environment?",
+      "options": {
+        "A": "Switch",
+        "B": "Firewall",
+        "C": "Cable modem",
+        "D": "Router",
+        "E": "Access point"
+      },
+      "answer": "C",
+      "explanation": "A cable modem is needed to convert the ISP’s DOCSIS signal into a format usable by the local network, acting as the gateway between the cable infrastructure and the LAN."
+    }
+  },
+  {
+    "id": 794,
+    "de": {
+      "frage": "Ein Techniker behebt ein Problem mit einem Computer, der während des normalen Gebrauchs zufällige BSOD-Warnungen anzeigt und zeitweise einfriert. Die Leistung verschlechtert sich im Laufe des Tages. Es wurden keine neuen Software- oder Hardwareänderungen implementiert. Das Einfrieren tritt bei leistungsintensiven Operationen auf. Welches der folgenden Hardwarekomponenten ist höchstwahrscheinlich defekt?",
+      "optionen": {
+        "A": "Grafikkarte",
+        "B": "HDD (Festplatte)",
+        "C": "RAM-Modul",
+        "D": "TPM (Trusted Platform Module)"
+      },
+      "antwort": "C",
+      "erklärung": "Zufällige BSODs, intermittierendes Einfrieren und eine verschlechterte Leistung unter Last sind häufige Symptome von fehlerhaftem oder ausfallendem RAM."
+    },
+    "en": {
+      "question": "A technician is troubleshooting a computer that shows random BSOD warnings during normal use and occasionally freezes. Performance worsens throughout the day. No new software or hardware changes have been made. Freezes occur during resource-intensive operations. Which of the following hardware components is most likely failing?",
+      "options": {
+        "A": "Graphics card",
+        "B": "HDD",
+        "C": "RAM module",
+        "D": "TPM"
+      },
+      "answer": "C",
+      "explanation": "Random BSODs, intermittent freezing, and worsening performance under load are classic signs of bad or failing RAM."
+    }
+  },
+  {
+    "id": 795,
+    "de": {
+      "frage": "Welcher der folgenden Kabeltypen ist am besten geeignet, um 10-Gbit-Geschwindigkeiten über Entfernungen von mehr als 100 m bis unter 400 m zu liefern?",
+      "optionen": {
+        "A": "Multimode-Faser",
+        "B": "Singlemode-Faser",
+        "C": "Cat 6a",
+        "D": "Cat 6"
+      },
+      "antwort": "A",
+      "erklärung": "Multimode-Faser unterstützt 10 Gbit/s über Entfernungen bis zu 400 m und ist damit die passende Wahl für die angegebene Strecke."
+    },
+    "en": {
+      "question": "Which of the following cable types is best suited to deliver 10-Gbps speeds over distances greater than 100 m but under 400 m?",
+      "options": {
+        "A": "Multimode fiber",
+        "B": "Single-mode fiber",
+        "C": "Cat 6a",
+        "D": "Cat 6"
+      },
+      "answer": "A",
+      "explanation": "Multimode fiber is designed for short-to-medium runs (up to about 400 m) while still supporting 10 Gbps throughput, making it the appropriate choice for the stated distance."
+    }
+  },
+  {
+    "id": 796,
+    "de": {
+      "frage": "Der Bildschirm in einem Konferenzraum zeigt ein Geisterbild, das nicht zur Präsentation passt. Welche der folgenden Maßnahmen würde das Problem lösen?",
+      "optionen": {
+        "A": "Die Farbeinstellungen anpassen.",
+        "B": "Die Trapezkorrektur (Keystone) anpassen.",
+        "C": "Die Helligkeitsstufen erhöhen.",
+        "D": "Den Monitor ersetzen."
+      },
+      "antwort": "B",
+      "erklärung": "Eine Fehlausrichtung durch geneigten Projektor lässt sich meist durch Anpassung der Keystone-(Trapez-)Korrektur beheben."
+    },
+    "en": {
+      "question": "A conference-room screen shows a ghosted image that does not line up with the presentation. Which of the following actions would resolve the issue?",
+      "options": {
+        "A": "Adjust the color settings.",
+        "B": "Adjust the keystone correction.",
+        "C": "Increase brightness levels.",
+        "D": "Replace the monitor."
+      },
+      "answer": "B",
+      "explanation": "Misalignment caused by a tilted projector is typically corrected by adjusting the keystone setting to square the image."
+    }
+  },
+  {
+    "id": 797,
+    "de": {
+      "frage": "Ein Benutzer erlebt während der Computernutzung einen zufälligen BSOD, aber das Betriebssystem erholt sich wie erwartet. Welches der folgenden Symptome würde darauf hindeuten, dass das Problem mit dem RAM zusammenhängt?",
+      "optionen": {
+        "A": "Falsche BIOS-Konfigurationen",
+        "B": "Kontinuierliche Neustarts",
+        "C": "Aufgeblähte Kondensatoren",
+        "D": "POST-Piepcodes"
+      },
+      "antwort": "D",
+      "erklärung": "Wenn der POST Speicherfehler feststellt, generiert er charakteristische Piepcodes – ein typisches Anzeichen für RAM-Probleme."
+    },
+    "en": {
+      "question": "A user experiences a random BSOD during computer use, but the OS recovers as expected. Which of the following symptoms would indicate the issue is RAM-related?",
+      "options": {
+        "A": "Incorrect BIOS configurations",
+        "B": "Continuous reboots",
+        "C": "Bulging capacitors",
+        "D": "POST beep codes"
+      },
+      "answer": "D",
+      "explanation": "During POST the BIOS checks RAM; memory faults trigger specific beep codes, often the first sign of RAM issues when BSODs occur randomly."
+    }
+  },
+
+  {
+    "id": 790,
+    "frage": "Welche der folgenden Druckinitiativen wäre am besten geeignet, um umweltfreundliche Ziele zu erreichen?",
+    "optionen": {
+      "A": "Eine Benutzerauthentifizierung für den Druck vorschreiben.",
+      "B": "Den Druck auf bestimmte Personen beschränken.",
+      "C": "Duplex-Einstellungen auf beidseitigen Druck ändern.",
+      "D": "Die Druckqualitätseinstellungen auf \"Beste\" ändern."
+    },
+    "antwort": "C",
+    "erklärung": "Das Ändern der Duplex-Einstellungen auf beidseitigen Druck (Duplexdruck) reduziert den Papierverbrauch und ist somit eine der effektivsten umweltfreundlichen Druckinitiativen. Es minimiert direkt den Abfall und unterstützt Nachhaltigkeitsziele am Arbeitsplatz."
+  },
+  {
+    "id": 791,
+    "frage": "Welcher der folgenden Stecker befindet sich an einem optischen Netzwerkkabel?",
+    "optionen": {
+      "A": "RJ45",
+      "B": "LC",
+      "C": "USB-C",
+      "D": "Lightning"
+    },
+    "antwort": "B",
+    "erklärung": "Der LC-Stecker (Lucent Connector) ist ein Typ von Glasfaserstecker, der häufig in optischen Netzwerkkabeln verwendet wird. Er ist klein, kompakt und weit verbreitet für die Hochgeschwindigkeitsdatenübertragung über Glasfasernetze. LC-Stecker sind speziell für Glasfaserkabel konzipiert und somit die richtige Antwort."
+  },
+  {
+    "id": 792,
+    "frage": "Welche der folgenden Portnummern sind mit E-Mail-Verkehr verbunden? (Wählen Sie zwei aus).",
+    "optionen": {
+      "A": "23",
+      "B": "25",
+      "C": "67",
+      "D": "110",
+      "E": "137",
+      "F": "443"
+    },
+    "antwort": "B, D",
+    "erklärung": "Port 25 (SMTP - Simple Mail Transfer Protocol): Dieser Port wird hauptsächlich zum Senden von E-Mails zwischen Mailservern und von Mail-Clients an Mailserver (Senden ausgehender E-Mails) verwendet. SMTP ist ein wichtiges Protokoll für den E-Mail-Verkehr. Port 110 (POP3 - Post Office Protocol v3): POP3 wird zum Abrufen von E-Mails von einem Mailserver verwendet. Es wird häufig zum Herunterladen von E-Mail-Nachrichten auf einen lokalen Client verwendet, wonach die Nachrichten vom Server gelöscht werden."
+  },
+  {
+    "id": 793,
+    "frage": "Welches der folgenden Netzwerkgeräte muss höchstwahrscheinlich zwischen dem ISP, der DOCSIS betreibt, und dem LAN in einer SOHO-Umgebung installiert werden?",
+    "optionen": {
+      "A": "Switch",
+      "B": "Firewall",
+      "C": "Kabelmodem",
+      "D": "Router",
+      "E": "Access Point"
+    },
+    "antwort": "C",
+    "erklärung": "Um das richtige Gerät zu bestimmen, müssen wir verstehen, wie ein DOCSIS-Netzwerk (Data Over Cable Service Interface Specification) in einer Small Office/Home Office (SOHO)-Umgebung funktioniert: Ein Kabelmodem ist erforderlich, um das vom ISP (Internet Service Provider) über ein DOCSIS-Netzwerk bereitgestellte Signal in ein Format umzuwandeln, das vom lokalen Netzwerk (LAN) verwendet werden kann. DOCSIS ist ein Standard für Hochgeschwindigkeitsinternet über Kabelfernsehinfrastruktur, und das Kabelmodem fungiert als Gateway zwischen dem Koaxialnetzwerk des ISP und dem LAN. Ohne das Kabelmodem könnten Geräte im LAN nicht auf das Internet zugreifen."
+  },
+  {
+    "id": 794,
+    "frage": "Ein Techniker behebt ein Problem mit einem Computer, der während des normalen Gebrauchs zufällige BSOD-Warnungen anzeigt und zeitweise einfriert. Die Leistung verschlechtert sich im Laufe des Tages. Es wurden keine neuen Software- oder Hardwareänderungen implementiert. Das Einfrieren tritt bei leistungsintensiven Operationen auf. Welches der folgenden Hardwarekomponenten ist höchstwahrscheinlich defekt?",
+    "optionen": {
+      "A": "Grafikkarte",
+      "B": "HDD (Festplatte)",
+      "C": "RAM-Modul",
+      "D": "TPM (Trusted Platform Module)"
+    },
+    "antwort": "C",
+    "erklärung": "Zufällige BSODs (Blue Screen of Death), intermittierendes Einfrieren und eine verschlechterte Leistung unter Last sind häufige Symptome von fehlerhaftem oder ausfallendem RAM (Random Access Memory). Ein fehlerhafter oder ausfallender RAM kann aufgrund von Speicherfehlern zu zufälligen BSODs führen, wenn das System versucht, Daten in beschädigte Speicherorte zu lesen oder zu schreiben. Intermittierendes Einfrieren, insbesondere bei leistungsintensiven Operationen, kann auftreten, weil die CPU für aktive Verarbeitungsprozesse stark auf den RAM angewiesen ist. Im Laufe der Zeit kann die während des Gebrauchs erzeugte Wärme die RAM-Instabilität verschlimmern, was zu einer zunehmend schlechteren Leistung im Laufe des Tages führt."
+  },
+  {
+    "id": 795,
+    "frage": "Welcher der folgenden Kabeltypen ist am besten geeignet, um 10-Gbit-Geschwindigkeiten über Entfernungen von mehr als 100 m (328 Fuß) bis unter 400 m (1.312 Fuß) zu liefern?",
+    "optionen": {
+      "A": "Multimode-Faser",
+      "B": "Singlemode-Faser",
+      "C": "Cat 6a",
+      "D": "Cat 6"
+    },
+    "antwort": "A",
+    "erklärung": "Wenn es darum geht, 10-Gbit/s-Geschwindigkeiten über lange Entfernungen zu liefern, sind Glasfaserkabel die beste Wahl. Multimode-Faser (Correct Answer): Multimode-Faser ist für relativ kurze bis mittlere Entfernungen (bis zu 400 Meter oder 1.312 Fuß) ausgelegt und unterstützt gleichzeitig Hochgeschwindigkeitsdatenübertragung (10 Gbit/s und höher). Sie verwendet LED-Lichtquellen und ist kostengünstig für Umgebungen wie Rechenzentren oder innerhalb von Gebäuden. Für die angegebene Entfernung von über 100 m, aber unter 400 m, ist Multimode-Faser die am besten geeignete Option."
+  },
+  {
+    "id": 796,
+    "frage": "Der Bildschirm in einem Konferenzraum zeigt ein Geisterbild, das nicht zur Präsentation passt. Welche der folgenden Maßnahmen würde das Problem lösen?",
+    "optionen": {
+      "A": "Die Farbeinstellungen anpassen.",
+      "B": "Die Trapezkorrektur (Keystone) anpassen.",
+      "C": "Die Helligkeitsstufen erhöhen.",
+      "D": "Den Monitor ersetzen."
+    },
+    "antwort": "B",
+    "erklärung": "Eine Trapezkorrektur (Keystone Correction) passt die Bildform an, wenn ein Projektor nach oben oder unten geneigt ist. Wenn ein Projektor nicht direkt senkrecht zur Leinwand positioniert ist, wird das Bild verzerrt oder versetzt. Das Korrigieren der Trapezverzerrung behebt Ausrichtungsprobleme und stellt sicher, dass die Präsentation mit dem Bildschirm übereinstimmt."
+  },
+  {
+    "id": 797,
+    "frage": "Ein Benutzer erlebt während der Computernutzung einen zufälligen BSOD (Blue Screen of Death), aber das Betriebssystem erholt sich wie erwartet. Welches der folgenden Symptome würde darauf hindeuten, dass das Problem mit dem RAM zusammenhängt?",
+    "optionen": {
+      "A": "Falsche BIOS-Konfigurationen",
+      "B": "Kontinuierliche Neustarts",
+      "C": "Aufgeblähte Kondensatoren",
+      "D": "POST-Piepcodes"
+    },
+    "antwort": "D",
+    "erklärung": "Während des Power-On Self-Tests (POST) führt das BIOS Überprüfungen der Systemhardware durch, einschließlich des RAMs. Wenn der RAM fehlerhaft ist, kann der POST eine Reihe von Piepcodes erzeugen, die auf Speicherprobleme hinweisen. Diese Piepcodes sind oft das erste Anzeichen für RAM-bezogene Probleme, insbesondere wenn der BSOD zufällig auftritt."
+  },
+  {
+    "id": 798,
+    "frage": "Welcher der folgenden Anschlüsse kann zum Aufladen der meisten modernen mobilen Geräte verwendet werden und kann Daten, Audio und Video übertragen?",
+    "optionen": {
+      "A": "Lightning",
+      "B": "USB-C",
+      "C": "MicroUSB",
+      "D": "MiniUSB"
+    },
+    "antwort": "B",
+    "erklärung": "USB-C ist ein vielseitiger Anschluss, der Ladevorgänge, Hochgeschwindigkeitsdatenübertragung und die Möglichkeit zur Übertragung von Audio- und Videosignalen (z. B. DisplayPort über USB-C) unterstützt. Er wird von den meisten modernen mobilen Geräten und Laptops aufgrund seiner schnellen Übertragungsgeschwindigkeiten und Stromversorgungsfähigkeiten verwendet."
+  },
+  {
+    "id": 799,
+    "frage": "Ein Techniker hat Probleme beim Austausch der WLAN-Karte eines Laptops, da die Abdeckung festsitzt. Was sollte der Techniker als Nächstes tun, um dieses Problem zu beheben?",
+    "optionen": {
+      "A": "Das Produkthandbuch für das Verfahren überprüfen.",
+      "B": "Ein Hebelwerkzeug verwenden, um die Abdeckung gewaltsam zu öffnen.",
+      "C": "Die WLAN-Karte in den M.2-Steckplatz einsetzen.",
+      "D": "Versuchen, die Abdeckung durch Schieben in alle Richtungen zu bewegen."
+    },
+    "antwort": "A",
+    "erklärung": "Wenn Hardware nicht leicht zugänglich ist, sollte immer das Produkthandbuch für die ordnungsgemäße Demontage konsultiert werden. Das gewaltsame Öffnen der Abdeckung kann den Laptop beschädigen oder die Garantie ungültig machen. Produkthandbücher enthalten oft Schritt-für-Schritt-Anleitungen für den sicheren Zugriff auf interne Komponenten."
+  },
+  {
+    "id": 800,
+    "frage": "Ein Benutzer kehrt von einer Reise zurück und stellt fest, dass ein Computer, der mit dem LAN verbunden ist, zeitweise abbricht. Bei der Untersuchung stellt ein Techniker fest, dass der RJ45-Pin nicht ordnungsgemäß terminiert ist. Welches der folgenden Netzwerkwerkzeuge ist am besten geeignet, um das Problem zu beheben?",
+    "optionen": {
+      "A": "Toner-Sonde",
+      "B": "Kabeltester",
+      "C": "Anlegewerkzeug (Punchdown)",
+      "D": "Crimpzange (Crimper)"
+    },
+    "antwort": "D",
+    "erklärung": "Eine Crimpzange wird verwendet, um ein RJ45-Kabel ordnungsgemäß zu terminieren, indem der Stecker an die verdrillten Adernpaare angeschlossen wird. Wenn die Terminierung nicht korrekt durchgeführt wird, ist die Verbindung intermittierend oder fällt vollständig aus."
+  },
+  {
+    "id": 801,
+    "frage": "Ein Benutzer meldete Leistungsprobleme auf einem Computer nach einem kürzlichen Betriebssystem-Update. Ein Techniker ist zuversichtlich, dass das Zurücksetzen des Systems das Problem lösen wird. Welchen der folgenden Schritte sollte der Techniker als Nächstes unternehmen?",
+    "optionen": {
+      "A": "Die Ergebnisse dokumentieren.",
+      "B": "Kürzliche Infrastrukturänderungen untersuchen.",
+      "C": "Die Systemwiederherstellung einleiten.",
+      "D": "Die volle Systemfunktionalität überprüfen."
+    },
+    "antwort": "C",
+    "erklärung": "Wenn der Techniker zuversichtlich ist, dass das Zurücksetzen des Systems auf einen früheren Wiederherstellungspunkt das Problem lösen wird, ist der nächste logische Schritt die Einleitung des Systemwiederherstellungsprozesses. Die Systemwiederherstellung ermöglicht es dem System, zu einem Zustand vor dem Betriebssystem-Update zurückzukehren, wodurch die durch das Update verursachten Leistungsprobleme behoben werden können."
+  },
+  {
+    "id": 802,
+    "frage": "Ein Benutzer nimmt an einer Telefonkonferenz mit einem Bluetooth-Headset teil. Was hat der Benutzer dabei erstellt?",
+    "optionen": {
+      "A": "MAN (Metropolitan Area Network)",
+      "B": "PAN (Personal Area Network)",
+      "C": "SAN (Storage Area Network)",
+      "D": "WAN (Wide Area Network)"
+    },
+    "antwort": "B",
+    "erklärung": "Ein PAN (Personal Area Network) ist ein Netzwerk, das zwischen Geräten in unmittelbarer Nähe aufgebaut wird, wie zum Beispiel zwischen einem Smartphone und einem Bluetooth-Headset. Die Bluetooth-Technologie ist speziell für die Kurzstreckenkommunikation konzipiert und ist daher eine Art PAN."
+  },
+  {
+    "id": 803,
+    "frage": "Mehrere Stürme führen dazu, dass geschäftskritische Server unerwartet offline gehen. Ein Server fällt auch plötzlich aufgrund eines Hardwarefehlers aus. Nach der Bewertung kauft das Unternehmen neue USV-Anlagen, um die Stromversorgung zu konditionieren und den Betriebssystemen im Falle eines Stromausfalls ein ordnungsgemäßes Herunterfahren zu ermöglichen. Die USV-Anlagen verzögern sich jedoch aufgrund von Lieferkettenproblemen. Was kann eine kostengünstige Lösung mit den Anforderungen an die Verfügbarkeit in Einklang bringen?",
+    "optionen": {
+      "A": "Notstromgeneratoren kaufen.",
+      "B": "Die Eingangsspannung erhöhen.",
+      "C": "Redundante Netzteile (PSUs) installieren.",
+      "D": "Einen Hot Site aktivieren."
+    },
+    "antwort": "C",
+    "erklärung": "Redundante Netzteile (PSUs) bieten Fehlertoleranz, indem sie sicherstellen, dass bei Ausfall eines Netzteils ein anderes nahtlos übernimmt. Dies ist eine kostengünstige Möglichkeit, die Betriebszeit zu erhöhen, während auf die Lieferung der USV-Anlagen gewartet wird."
+  },
+  {
+    "id": 804,
+    "frage": "Ein kürzlich installierter Drucker richtet gedruckte Dokumente falsch aus. Was sollte der Techniker zuerst tun, um dieses Problem zu beheben?",
+    "optionen": {
+      "A": "Die Wartungsanwendung ausführen.",
+      "B": "Die Rollen reinigen.",
+      "C": "Die Firmware aktualisieren.",
+      "D": "Die Treiber neu installieren."
+    },
+    "antwort": "A",
+    "erklärung": "Die meisten modernen Drucker enthalten eine integrierte Wartungsanwendung, die die Druckköpfe kalibrieren und Ausrichtungsprobleme korrigieren kann. Das Ausführen dieses Tools ist der erste Schritt zur Behebung von Fehlausrichtungen."
+  },
+  {
+    "id": 805,
+    "frage": "Beim Überprüfen der Optionen auf der BIOS/UEFI-Einstellungsseite zur Behebung eines Laptop-Problems bemerkt ein Support-Techniker eine Option zum Löschen vorhandener TPM-Schlüssel. Was würde höchstwahrscheinlich passieren, wenn das TPM gelöscht wird?",
+    "optionen": {
+      "A": "Verschlüsselte Festplatten wären wahrscheinlich nicht zugänglich.",
+      "B": "Alle Sicherheitszertifikate müssten von vertrauenswürdigen Stammzertifikaten neu installiert werden.",
+      "C": "Das Gerät müsste in der MDM-Plattform neu registriert werden.",
+      "D": "Der Laptop müsste als neuer Client bei der Domäne registriert werden."
+    },
+    "antwort": "A",
+    "erklärung": "Das Trusted Platform Module (TPM) ist eine hardwarebasierte Sicherheitsfunktion, die zum Speichern kryptografischer Schlüssel verwendet wird, z. B. für Verschlüsselung, Authentifizierung oder Geräteidentifikation. Es spielt eine entscheidende Rolle bei der Gewährleistung sicherer Vorgänge für verschlüsselte Laufwerke, BitLocker und sichere Boot-Prozesse. Das Löschen von TPM-Schlüsseln bedeutet das Löschen aller gespeicherten kryptografischen Daten, was je nachdem, wofür das TPM verwendet wurde, zu mehreren Konsequenzen führen kann. Verschlüsselte Festplatten, wie z. B. solche, die mit BitLocker-Verschlüsselung gesichert sind, verlassen sich auf die im TPM gespeicherten kryptografischen Schlüssel, um Daten zu entschlüsseln. Das Löschen des TPM löscht diese Schlüssel, wodurch es für das verschlüsselte Laufwerk unmöglich wird, seine Inhalte zu entschlüsseln, es sei denn, ein Wiederherstellungsschlüssel (separat vom TPM) ist verfügbar. Ohne diesen Wiederherstellungsschlüssel werden die Daten wahrscheinlich unzugänglich."
+  },
+  {
+    "id": 806,
+    "frage": "Ein Benutzer bringt seinen Laptop jeden Morgen zur Arbeit, setzt ihn korrekt in die Dockingstation und öffnet dann den Laptop, um ohne Probleme mit der Arbeit zu beginnen. Nachdem der Benutzer den Laptop während eines zweiwöchigen Urlaubs zu Hause gelassen hatte, funktioniert der Laptop nicht mehr. Bei der Rückkehr ins Büro meldet der Benutzer, dass Tastatur und Bildschirm nicht mehr funktionieren. Was sollte der Techniker den Benutzer zuerst bitten zu tun?",
+    "optionen": {
+      "A": "Sicherstellen, dass die Dockingstation angeschlossen ist.",
+      "B": "Die Ein-/Aus-Taste des Laptops drücken und loslassen.",
+      "C": "Den Laptop anschließen und über Nacht aufladen lassen.",
+      "D": "Den Laptop direkt mit dem Netzwerk verbinden."
+    },
+    "antwort": "B",
+    "erklärung": "Viele Dockingstations liefern Strom und Funktionalität nur, wenn der Laptop ordnungsgemäß eingeschaltet ist. Wenn der Laptop ausgeschaltet war (z. B. während des Urlaubs), schaltet er sich beim Andocken nicht automatisch ein. Der Techniker sollte zuerst sicherstellen, dass der Laptop durch Drücken der Ein-/Aus-Taste eingeschaltet ist. Dies ist ein gängiger erster Schritt zur Fehlerbehebung, wenn Laptops in Dockingstations nicht funktionieren."
+  },
+  {
+    "id": 807,
+    "frage": "Ein Techniker behebt ein Problem mit einem PoE-Telefon, das sich nicht einschalten lässt. Wenn ein Laptop direkt an den Switchport für das Telefon angeschlossen wird, sieht der Techniker eine Datenlink-LED und Aktivität. Welches der folgenden Tools sollte der Techniker verwenden, um die PoE-Verfügbarkeit für das Telefon zu überprüfen?",
+    "optionen": {
+      "A": "Netzwerktap",
+      "B": "Kabeltester",
+      "C": "Loopback-Stecker",
+      "D": "Toner-Sonde"
+    },
+    "antwort": "B",
+    "erklärung": "Ein Kabeltester, der PoE-Funktionalität testen kann, kann überprüfen, ob der Switchport die erforderliche Leistung für das Telefon bereitstellt. Dieses Tool misst sowohl das Vorhandensein von Daten als auch die Spannung oder Wattzahl, die durch das Ethernet-Kabel geliefert wird."
+  },
+  {
+    "id": 808,
+    "frage": "Ein Projektor schaltet sich nach 30 Minuten Gebrauch ab und hat einen seltsamen Geruch. Der Techniker bestätigt, dass die Stromquelle nicht die Ursache des Problems ist. Welchen der folgenden Schritte sollte der Techniker als Nächstes unternehmen, um dieses Problem zu beheben?",
+    "optionen": {
+      "A": "Die Lampe ersetzen.",
+      "B": "Die Projektorkonfiguration überprüfen.",
+      "C": "Den Filter reinigen.",
+      "D": "Die Gamma-Einstellungen anpassen."
+    },
+    "antwort": "C",
+    "erklärung": "Projektoren verfügen über Luftfilter, die das Eindringen von Staub in die internen Komponenten verhindern. Ein verstopfter Filter kann dazu führen, dass der Projektor überhitzt, was zu Abschaltungen und sogar seltsamen Gerüchen aufgrund überhitzter Komponenten führen kann. Die Reinigung des Filters ist ein Standard-Schritt zur Fehlerbehebung, wenn Projektoren Überhitzungssymptome zeigen."
+  },
+  {
+    "id": 809,
+    "frage": "Ein Benutzer schließt routinemäßig mehrere Geräte an einen Laptop an und trennt sie wieder. Welche der folgenden Optionen sollte ein Techniker empfehlen, um die Benutzerfreundlichkeit zu erleichtern?",
+    "optionen": {
+      "A": "Serielle Schnittstellen",
+      "B": "Dockingstation",
+      "C": "Netzwerk-Switch",
+      "D": "USB-Hub"
+    },
+    "antwort": "B",
+    "erklärung": "Eine Dockingstation ist so konzipiert, dass sie einen zentralen Verbindungspunkt für mehrere Peripheriegeräte wie Monitore, Tastaturen, Mäuse und Netzwerkkabel bietet. Sie ermöglicht es Benutzern, alle Geräte schnell zu verbinden oder zu trennen, indem sie ihren Laptop einfach andocken oder abdocken, was die Mobilität verbessert und den Verschleiß an einzelnen Anschlüssen reduziert."
+  },
+  {
+    "id": 810,
+    "frage": "Ein Techniker muss das Smartphone eines Benutzers beheben, das keine Verbindung zum Dienst seines Mobilfunkanbieters herstellt. Welches der folgenden Dinge sollte der Techniker zuerst überprüfen?",
+    "optionen": {
+      "A": "SIM-Karte",
+      "B": "Netzwerkeinstellungen",
+      "C": "Abonnementplan",
+      "D": "Bluetooth-Verbindung"
+    },
+    "antwort": "C",
+    "erklärung": "Wenn ein Smartphone keine Verbindung zum Mobilfunkanbieter herstellt, ist eine der häufigsten Ursachen, dass der Abonnementplan des Benutzers abgelaufen ist, gesperrt wurde oder keine Daten mehr enthält. Dies ist ein grundlegender Faktor für die Dienstbereitstellung. Die SIM-Karte, Netzwerkeinstellungen oder die Bluetooth-Verbindung sind zwar auch wichtig, aber eine Überprüfung des Abonnementplans ist ein schneller und oft aufschlussreicher erster Schritt."
+  },
+  {
+    "id": 811,
+    "frage": "Ein Mitarbeiter, der weltweit reist, möchte, dass eine Workstation die gleiche Leistung erbringt, egal ob sich die Workstation im Unternehmensbüro oder anderswo befindet. Was sollte ein Techniker implementieren?",
+    "optionen": {
+      "A": "Public Cloud",
+      "B": "VDI",
+      "C": "SSH",
+      "D": "SaaS"
+    },
+    "antwort": "B",
+    "erklärung": "VDI (Virtual Desktop Infrastructure) ermöglicht es Benutzern, von jedem Ort aus auf einen zentral gehosteten Desktop zuzugreifen, der immer die gleiche Leistung und Konfiguration bietet. Dies ist ideal für Mitarbeiter, die weltweit reisen, da die Workstation-Umgebung konsistent bleibt, unabhängig vom physischen Standort oder dem verwendeten Zugriffsgerät."
+  },
+  {
+    "id": 812,
+    "frage": "Ein Techniker bringt RJ45-Stecker an Cat 6-Kabeln an. Welches der folgenden Werkzeuge sollte der Techniker verwenden, um die Stecker zu befestigen?",
+    "optionen": {
+      "A": "Loopback-Stecker",
+      "B": "Drahtschneider",
+      "C": "Anlegewerkzeug (Punchdown)",
+      "D": "Crimpzange (Crimping)"
+    },
+    "antwort": "D",
+    "erklärung": "Eine Crimpzange (Crimping tool) ist das spezielle Werkzeug, das verwendet wird, um RJ45-Stecker an Ethernet-Kabeln zu befestigen. Sie drückt die Kontakte des Steckers in die einzelnen Adern des Kabels, um eine sichere elektrische Verbindung herzustellen."
+  },
+  {
+    "id": 813,
+    "frage": "Ein Kunde meldet, dass ein reines Textdokument mit unkenntlichen Zeichen gedruckt wird. Die Druckvorschau zeigt das Dokument korrekt an. Was ist die wahrscheinlichste Ursache des Problems?",
+    "optionen": {
+      "A": "Veraltete Firmware",
+      "B": "Falscher Treiber",
+      "C": "Schlechte Tonerkartusche",
+      "D": "Beschädigte Dokumentdatei"
+    },
+    "antwort": "B",
+    "erklärung": "Wenn ein Dokument in der Druckvorschau korrekt angezeigt wird, aber beim Drucken mit unkenntlichen Zeichen erscheint, deutet dies stark auf ein Problem mit dem Druckertreiber hin. Der Treiber ist dafür verantwortlich, die Daten vom Computer für den Drucker verständlich zu übersetzen. Ein falscher oder beschädigter Treiber kann zu einer fehlerhaften Übersetzung führen."
+  },
+  {
+    "id": 814,
+    "frage": "Ein Techniker experimentiert mit Netzwerkkonfigurationen und hat zwei Laptops an einen unmanaged Switch angeschlossen. Der Techniker hat einen der Laptops mit einer statischen IP-Adresse von 192.168.1.1 und den anderen mit einer statischen IP-Adresse von 192.168.2.2 konfiguriert. Die Laptops kommunizieren nicht miteinander. Was ist die wahrscheinlichste Erklärung für dieses Problem?",
+    "optionen": {
+      "A": "Der Techniker muss einen Hub anstelle eines Switches verwenden.",
+      "B": "Die WLAN-NICs funktionieren nicht richtig.",
+      "C": "PoE stört die Kommunikation zwischen Subnetzen.",
+      "D": "Die Laptops haben keinen Zugang zu einem Router."
+    },
+    "antwort": "D",
+    "erklärung": "Die Laptops befinden sich in unterschiedlichen IP-Subnetzen (192.168.1.x und 192.168.2.x). Um zwischen verschiedenen Subnetzen kommunizieren zu können, ist ein Router erforderlich, der den Datenverkehr zwischen ihnen leitet. Ein einfacher, unmanaged Switch kann nur Geräte innerhalb desselben Subnetzes verbinden."
+  },
+  {
+    "id": 815,
+    "frage": "Ein Helpdesk-Techniker muss an einem Hochleistungdrucker arbeiten. Benutzer haben gelegentliche Papierstaus und Verschmierungen auf gedruckten Dokumenten gemeldet. Welchen der folgenden Schritte sollte der Techniker als Nächstes unternehmen, um diese Probleme zu beheben?",
+    "optionen": {
+      "A": "Einen vollständigen Werksreset durchführen.",
+      "B": "Die Rollen überprüfen und reinigen.",
+      "C": "Alle Tinten- oder Tonerkartuschen wechseln.",
+      "D": "Die Fixiereinheit ersetzen."
+    },
+    "antwort": "B",
+    "erklärung": "Papierstaus und Verschmierungen bei Hochleistungsdruckern werden oft durch verschmutzte oder abgenutzte Rollen verursacht. Rollen sind dafür verantwortlich, das Papier durch den Drucker zu führen. Im Laufe der Zeit sammeln sie Staub, Tonerückstände an oder nutzen sich ab, was zu Fehleinzug oder Staus führt. Das Reinigen oder Ersetzen dieser Rollen löst dieses Problem in der Regel."
+  },
+  {
+    "id": 816,
+    "frage": "Ein Techniker muss eine Workstation in ein anderes logisches Netzwerksegment verschieben. Welche der folgenden Technologien sollte der Techniker verwenden?",
+    "optionen": {
+      "A": "DHCP",
+      "B": "VLAN",
+      "C": "DNS",
+      "D": "VPN"
+    },
+    "antwort": "B",
+    "erklärung": "Ein VLAN (Virtual LAN) wird verwendet, um ein Netzwerk logisch zu segmentieren, ohne eine physische Trennung zu erfordern. Es ermöglicht die Gruppierung von Geräten basierend auf Funktion oder Abteilung, unabhängig von ihrem physischen Standort."
+  },
+  {
+    "id": 817,
+    "frage": "Ein Techniker behebt Probleme mit Stiften an identischen, vom Unternehmen bereitgestellten Tablets. Benutzer können ihr eigenes Zubehör kaufen. Einige Benutzer haben keine Probleme, aber andere berichten, dass ihre Stifte nur intermittierend laden und häufig ausfallen. Was ist die wahrscheinlichste Ursache für dieses Problem?",
+    "optionen": {
+      "A": "Bestimmte Hüllen verursachen Ladeprobleme.",
+      "B": "Die Tablets müssen aktualisiert werden.",
+      "C": "Einige der Tablets haben Herstellungsfehler.",
+      "D": "Die defekten Stifte benötigen Firmware-Updates."
+    },
+    "antwort": "A",
+    "erklärung": "Die wahrscheinlichste Ursache sind Hüllen von Drittanbietern oder schlecht sitzende Hüllen, die den Kontakt zwischen dem Stift und dem Ladeanschluss des Tablets behindern. Einige Hüllen sind möglicherweise nicht für das Laden des Stifts ausgelegt, insbesondere wenn Benutzer ihr eigenes Zubehör kaufen."
+  },
+  {
+    "id": 818,
+    "frage": "Welche der folgenden Speicheroptionen würde ein Techniker am ehesten empfehlen, um große Mengen an erschwinglicher Kapazität ohne Berücksichtigung der Lesezeiten auf einem Desktop-Computer zu erhalten?",
+    "optionen": {
+      "A": "750GB NVMe M.2 SSD",
+      "B": "2x 1TB PCIe SSD im RAID 1",
+      "C": "2TB SATA 3.5\" 5.400rpm HDD",
+      "D": "4TB SAS 2.5\" 15.000rpm HDD"
+    },
+    "antwort": "C",
+    "erklärung": "Wenn Leistung keine primäre Rolle spielt und der Benutzer große, kostengünstige Speicherkapazität benötigt, ist eine 2TB 5400rpm SATA HDD ideal. Sie bietet eine hohe Kapazität zu einem niedrigeren Preis als SSDs und schnellere HDDs."
+  },
+  {
+    "id": 819,
+    "frage": "Ein Benutzer möchte Dateien von einem Büro im Ausland über einen freigegebenen Netzwerkordner drucken. Der Laptop des Benutzers hat keine öffentliche Internetverbindung. Welches der folgenden kann verwendet werden, um von dem freigegebenen Netzwerkordner zu drucken?",
+    "optionen": {
+      "A": "ADF",
+      "B": "USB",
+      "C": "PCL",
+      "D": "SMB"
+    },
+    "antwort": "D",
+    "erklärung": "SMB (Server Message Block) ist ein Protokoll, das für den Zugriff auf Dateien und Drucker über ein Netzwerk verwendet wird, einschließlich über freigegebene Netzwerkordner. Es ermöglicht dem Benutzer, auf Dateien zuzugreifen und sie auszudrucken, die remote in einem freigegebenen Verzeichnis gespeichert sind."
+  },
+  {
+    "id": 820,
+    "frage": "Welches der folgenden Cloud-Modelle würden mehrere Organisationen in derselben Branche am ehesten verwenden?",
+    "optionen": {
+      "A": "Öffentlich (Public)",
+      "B": "Hybrid",
+      "C": "Gemeinschaft (Community)",
+      "D": "Privat (Private)"
+    },
+    "antwort": "C",
+    "erklärung": "Eine Community Cloud ist für die Nutzung durch mehrere Organisationen mit gemeinsamen Anliegen (z.B. Sicherheit, Compliance, Zuständigkeit) konzipiert. Dies ist in Branchen wie dem Gesundheitswesen oder dem Finanzsektor üblich, wo mehrere Unternehmen von einer gemeinsamen Infrastruktur mit gemeinsamen Richtlinien profitieren."
+  },
+  {
+    "id": 821,
+    "frage": "Welches der folgenden Werkzeuge ist am besten geeignet, um zu verfolgen, wo ein Ethernet-Kabel angeschlossen ist?",
+    "optionen": {
+      "A": "Crimpzange",
+      "B": "Anlegewerkzeug (Punchdown-Tool)",
+      "C": "Abisolierzange",
+      "D": "Toner-Sonde (Toner probe)"
+    },
+    "antwort": "D",
+    "erklärung": "Eine Toner-Sonde (auch als Tongenerator und Sonde bekannt) ist das beste Werkzeug zum Verfolgen und Identifizieren von Kabeln in einem Patchpanel oder einer Wandbuchse. Der Tongenerator sendet ein Signal durch das Kabel, und die Sonde hilft, das Kabel durch Erkennen des Tons zu lokalisieren."
+  },
+  {
+    "id": 822,
+    "frage": "Ein drahtloses Headset eines Benutzers zeigt den Status \"verbunden\" an, wenn es eingeschaltet ist, aber die Bluetooth-Liste auf dem Telefon des Benutzers zeigt an, dass das Headset \"nicht verbunden\" ist. Was sollte der Techniker tun?",
+    "optionen": {
+      "A": "Die PIN eingeben.",
+      "B": "WLAN ausschalten.",
+      "C": "Die Geräte neu koppeln.",
+      "D": "Bluetooth aktivieren."
+    },
+    "antwort": "C",
+    "erklärung": "Wenn ein Gerät als nicht verbunden angezeigt wird, obwohl es zuvor gekoppelt war, ist die effektivste Maßnahme, die Geräte neu zu koppeln. Dies setzt die Bluetooth-Verbindung zurück, löscht etwaige Beschädigungen in den Kopplungsprofilen und stellt die Kommunikation wieder her."
+  },
+  {
+    "id": 823,
+    "frage": "Ein Techniker muss PC-Komponenten mit einer minimalen Anzahl sichtbarer interner Kabel auswählen. Was sollte der Techniker verwenden?",
+    "optionen": {
+      "A": "SATA-Laufwerksanschlüsse",
+      "B": "Flüssigkeitskühlung",
+      "C": "Modulares Netzteil",
+      "D": "Drahtlose NIC"
+    },
+    "antwort": "C",
+    "erklärung": "Ein modulares Netzteil ermöglicht es einem Techniker, nur die benötigten Stromkabel anzuschließen, wodurch das Kabelgewirr reduziert und der Luftstrom verbessert wird. Dies ist ideal, wenn ein sauberer Aufbau mit minimalen sichtbaren internen Kabeln angestrebt wird."
+  },
+  {
+    "id": 824,
+    "frage": "Ein Techniker hat kürzlich die Firmware eines Dual-BIOS-Motherboards aktualisiert. Nach dem Update steckt das System in einer Boot-Schleife fest und kann kein Betriebssystem von internen oder externen Geräten starten. Der Techniker kann auch nicht auf das UEFI-Menü zugreifen. Was sollte der Techniker als Nächstes tun?",
+    "optionen": {
+      "A": "Die sekundäre Konfiguration aktivieren.",
+      "B": "Die Firmware über USB downgraden.",
+      "C": "Eine Garantiereparatur des Motherboards einleiten.",
+      "D": "Wärmeleitpaste auf die CPU erneut auftragen."
+    },
+    "antwort": "A",
+    "erklärung": "Dual-BIOS-Motherboards enthalten zwei Firmware-Chips. Wenn das primäre BIOS beschädigt wird, kann das System auf das sekundäre BIOS umspringen. Die meisten Boards ermöglichen die manuelle Aktivierung des sekundären BIOS über einen physischen Schalter oder Jumper."
+  },
+  {
+    "id": 825,
+    "frage": "Ein Computer zeigt beim Installieren von Anwendungen eine Fehlermeldung über unzureichenden Speicherplatz an. Der Benutzer berichtet außerdem über langsame Ladezeiten von Anwendungen. Welche der folgenden Komponenten würde dieses Problem am besten beheben?",
+    "optionen": {
+      "A": "SSD",
+      "B": "USB",
+      "C": "HDD",
+      "D": "RAM"
+    },
+    "antwort": "A",
+    "erklärung": "Ein Upgrade auf ein Solid-State-Laufwerk (SSD) verbessert sowohl die Speicherkapazität als auch die Ladegeschwindigkeit. Im Gegensatz zu einer HDD bietet eine SSD schnellere Zugriffszeiten, was langsames Laden reduziert und Speicherfehler behebt."
+  },
+  {
+    "id": 826,
+    "frage": "Bei der Installation eines Netzwerkdruckers muss ein Techniker sicherstellen, dass der Drucker auch nach einem Neustart des Netzwerks verfügbar bleibt. Welche Einstellung sollte dafür am Drucker vorgenommen werden?",
+    "optionen": {
+      "A": "Statische IP-Adresse",
+      "B": "Private Adresse",
+      "C": "Wi-Fi am Drucker",
+      "D": "Dynamische Adressierung"
+    },
+    "antwort": "A",
+    "erklärung": "Eine statische IP-Adresse garantiert, dass der Drucker bei jedem Neustart dieselbe Adresse behält. Dadurch bleibt er für Benutzer und Printserver immer erreichbar."
+  },
+  {
+    "id": 827,
+    "frage": "Ein Benutzer druckt eine Tabelle im Duplexmodus, aber einige Spalten laufen auf die Rückseite des Blattes über, was das Lesen erschwert. Was sollte der Benutzer tun, um das Problem zu vermeiden, aber weiterhin beidseitig zu drucken?",
+    "optionen": {
+      "A": "Duplexdruck deaktivieren.",
+      "B": "Eine kleinere Schriftgröße in der Tabelle verwenden.",
+      "C": "Seitenausrichtung ändern.",
+      "D": "Einen anderen Druckertreiber verwenden."
+    },
+    "antwort": "C",
+    "erklärung": "Durch Ändern der Seitenausrichtung (z. B. von Hochformat zu Querformat) können breitere Tabellenzeilen auf eine Seite passen, ohne dass der Duplexdruck deaktiviert werden muss."
+  },
+  {
+    "id": 828,
+    "frage": "Ein Techniker behebt Internetprobleme nach einem Firewall-Update. Benutzer berichten, dass sie auf lokale Ressourcen (z. B. Drucker, Dateifreigaben) zugreifen können, aber keinen Internetzugang haben. Welche Einstellung verursacht wahrscheinlich das Problem?",
+    "optionen": {
+      "A": "Statische IP-Zuweisungen",
+      "B": "Standard-Gateway",
+      "C": "Subnetzmaske",
+      "D": "VLANs"
+    },
+    "antwort": "B",
+    "erklärung": "Das Standard-Gateway leitet Datenverkehr aus dem lokalen Netzwerk ins Internet weiter. Wenn es falsch konfiguriert ist oder fehlt (z. B. durch Firewalländerungen), ist kein Internetzugang möglich, obwohl lokaler Zugriff funktioniert."
+  },
+  {
+    "id": 829,
+    "frage": "Nach der Installation eines neuen Mainboards startet der Computer nicht und bleibt im POST hängen. Der Techniker hat überprüft, dass das Netzteil funktioniert und die CPU korrekt installiert ist. Was sollte der Techniker als Nächstes tun?",
+    "optionen": {
+      "A": "BIOS flashen.",
+      "B": "CMOS-Batterie überprüfen.",
+      "C": "RAM neu einsetzen.",
+      "D": "Altes Mainboard wieder einbauen."
+    },
+    "antwort": "C",
+    "erklärung": "Ein häufiger Grund für einen POST-Fehler nach einem Mainboardwechsel ist schlecht sitzender Arbeitsspeicher. Der Techniker sollte den RAM aus- und wieder einbauen, um sicherzustellen, dass er korrekt verbunden ist."
+  },
+  {
+    "id": 830,
+    "frage": "Ein Benutzer meldet langsames Surfen im Internet. Der Techniker stellt eine hohe CPU- und Speicherauslastung sowie häufige Pop-ups fest. Was sollte der Techniker als Nächstes tun?",
+    "optionen": {
+      "A": "An das Netzwerkteam eskalieren, um die End-to-End-Konnektivität zu prüfen.",
+      "B": "Die neuesten Treiber herunterladen und installieren.",
+      "C": "Anti-Malware-Signaturen aktualisieren und das System scannen.",
+      "D": "Drahtlose Einstellungen prüfen und DHCP-Konfiguration validieren."
+    },
+    "antwort": "C",
+    "erklärung": "Hohe Ressourcenauslastung und häufige Pop-ups sind klassische Anzeichen für eine Malware-Infektion. Die beste Maßnahme ist es, die Signaturen der Antimalware zu aktualisieren und einen vollständigen Systemscan durchzuführen."
+  },
+  {
+    "id": 831,
+    "frage": "Ein Techniker arbeitet an einem RAID-1-Verbund, der als 'degradiert' angezeigt wird. RAM und Stromversorgung funktionieren einwandfrei. Was sollte der Techniker als Nächstes tun, um das Problem weiter einzugrenzen?",
+    "optionen": {
+      "A": "Diagnosetests für die einzelnen Laufwerke durchführen.",
+      "B": "Den Befehl chkdsk /i ausführen.",
+      "C": "Das RAID neu aufbauen.",
+      "D": "Das Array als RAID 0 neu konfigurieren."
+    },
+    "antwort": "A",
+    "erklärung": "Ein degradiertes RAID 1 weist auf ein fehlerhaftes Laufwerk hin. Die korrekte Vorgehensweise besteht darin, jedes Laufwerk einzeln zu testen, um das fehlerhafte zu identifizieren, bevor eine Wiederherstellung erfolgt."
+  },
+  {
+    "id": 832,
+    "frage": "Ein Benutzer kann bestimmte sichere Apps auf seinem Tablet von zu Hause aus nicht nutzen, im Büro jedoch schon. Welcher Dienst muss wahrscheinlich neu konfiguriert werden, um den Fernzugriff zu ermöglichen?",
+    "optionen": {
+      "A": "Global Positioning System",
+      "B": "Mobile Device Management",
+      "C": "Wi-Fi Protected Access",
+      "D": "Near-Field Communication"
+    },
+    "antwort": "B",
+    "erklärung": "Mobile Device Management (MDM) kann den Zugriff auf Anwendungen basierend auf Standort, Netzwerk oder VPN einschränken. Wenn Apps nur im Büro funktionieren, blockiert wahrscheinlich die MDM-Richtlinie den Zugriff von zu Hause."
+  },
+  {
+    "id": 833,
+    "frage": "Welche der folgenden Konfigurationen verhindert, dass eine virtuelle Maschine mit anderen Netzwerkteilnehmern oder dem Internet kommuniziert?",
+    "optionen": {
+      "A": "VDI",
+      "B": "Private Cloud",
+      "C": "Sandbox",
+      "D": "Typ-1-Hypervisor"
+    },
+    "antwort": "C",
+    "erklärung": "Eine Sandbox ist eine isolierte Umgebung, die verhindert, dass eine VM mit externen Systemen kommuniziert. Sie wird verwendet, um Software sicher zu testen, ohne Risiken für das Netzwerk einzugehen."
+  },
+  {
+    "id": 834,
+    "frage": "Ein Techniker behebt ein Netzwerkproblem an einem Computer. Der Befehl 'ipconfig' zeigt die IP-Adresse 169.254.0.6 an. Welcher Typ von IP-Adresse liegt hier wahrscheinlich vor?",
+    "optionen": {
+      "A": "DHCP-Reservierung",
+      "B": "Dynamische Zuweisung",
+      "C": "Selbstzuweisung",
+      "D": "Statische Zuweisung"
+    },
+    "antwort": "C",
+    "erklärung": "Eine IP-Adresse im Bereich 169.254.x.x ist eine sogenannte selbstzugewiesene Adresse (APIPA). Sie entsteht, wenn der DHCP-Server nicht erreichbar ist. Solche Adressen ermöglichen nur lokale Kommunikation, keinen Internetzugang."
+  },
+  {
+    "id": 835,
+    "frage": "Ein Benutzer meldet, dass Ausdrucke aus einem Laserdrucker Linien und Verschmierungen enthalten. Außerdem wird das Papier manchmal nicht richtig eingezogen. Welche Komponente sollte ein Techniker austauschen, um das Problem zu beheben?",
+    "optionen": {
+      "A": "Fixiereinheit (Fuser)",
+      "B": "Wartungskit",
+      "C": "Koronadraht",
+      "D": "Tonerkartusche"
+    },
+    "antwort": "B",
+    "erklärung": "Ein Wartungskit für Laserdrucker enthält häufig Komponenten wie Einzugsrollen, Fuser und andere Teile, die sich mit der Zeit abnutzen. Verschmierungen und Papiereinzugprobleme deuten darauf hin, dass mehrere Komponenten fehlerhaft sind – ein Wartungskit ist dafür die passende Lösung."
+  },
+  {
+    "id": 836,
+    "frage": "Welche der folgenden Kabeltypen kann sowohl Daten als auch Videosignale übertragen?",
+    "optionen": {
+      "A": "USB-C",
+      "B": "HDMI",
+      "C": "DisplayPort",
+      "D": "VGA"
+    },
+    "antwort": "A",
+    "erklärung": "USB-C ist ein vielseitiger Anschluss, der Daten, Video, Audio und Strom übertragen kann. Dank Standards wie Thunderbolt oder DisplayPort über USB-C ist eine Verbindung zu Displays, Datenübertragung und Laden mit nur einem Kabel möglich."
+  },
+  {
+    "id": 837,
+    "frage": "Was kann ein Benutzer tun, um die Speicherbandbreite beim Kauf von RAM für einen High-End-Gaming-PC zu maximieren?",
+    "optionen": {
+      "A": "Fehlerkorrektur (ECC)",
+      "B": "RAM-Spannung",
+      "C": "Kanal-Konfiguration",
+      "D": "Physische Modulgröße"
+    },
+    "antwort": "C",
+    "erklärung": "Die Kanal-Konfiguration (z. B. Dual-Channel oder Quad-Channel) beeinflusst, wie der RAM mit dem Speichercontroller kommuniziert. Durch den Einsatz von gepaarten Modulen in Dual- oder Quad-Channel-Konfigurationen lässt sich die Bandbreite erheblich steigern – ideal für Gaming."
+  },
+  {
+    "id": 838,
+    "frage": "Ein Kunde meldet, dass der Ausdruck seines Thermodruckers vertikale weiße Linien enthält. Was ist am wahrscheinlichsten die Ursache?",
+    "optionen": {
+      "A": "Tintenpatrone ersetzen",
+      "B": "Richtiges Papiertyp verwenden",
+      "C": "Wartungskit installieren",
+      "D": "Heizelement reinigen"
+    },
+    "antwort": "D",
+    "erklärung": "Vertikale weiße Linien bei Thermodruckern deuten darauf hin, dass das Heizelement (Druckkopf) verschmutzt oder blockiert ist. Eine Reinigung des Druckkopfs stellt die gleichmäßige Hitzeverteilung wieder her."
+  },
+  {
+    "id": 839,
+    "frage": "Ein Techniker erhält ein Tablet mit einer sichtbaren Wölbung im Gehäuse. Das Display wird nach außen gedrückt. Das Gerät funktioniert nur, wenn es am Strom angeschlossen ist, und das Display ist beschädigt. Was ist die wahrscheinlichste Ursache?",
+    "optionen": {
+      "A": "Defektes Netzteil",
+      "B": "Beschädigter Ladeanschluss",
+      "C": "Defekte (aufgeblähte) Batterie",
+      "D": "Gebrochenes Display"
+    },
+    "antwort": "C",
+    "erklärung": "Eine aufgeblähte Batterie ist typisch für ein gewölbtes Gehäuse. Solche Batterien verlieren ihre Kapazität und sind potenziell gefährlich. Wenn das Tablet nur mit Netzstrom funktioniert, liegt das klar an einer defekten Batterie."
+  },
+  {
+    "id": 840,
+    "frage": "Das Domänenpasswort eines Benutzers läuft ab, während er im Homeoffice arbeitet. Beim Versuch, es mit Strg+Alt+Entf zu ändern, erscheint die Meldung: 'Konfigurationsinformationen konnten nicht vom Domänencontroller gelesen werden, entweder weil der Computer nicht verfügbar ist oder der Zugriff verweigert wurde.' Was löst dieses Problem?",
+    "optionen": {
+      "A": "Computer neu starten",
+      "B": "Mit dem VPN verbinden",
+      "C": "Konto in Active Directory zurücksetzen",
+      "D": "Mit dem WLAN verbinden"
+    },
+    "antwort": "B",
+    "erklärung": "Um ein Domänenpasswort aus der Ferne zu ändern, muss der Computer mit dem Domänencontroller kommunizieren können. Dafür ist eine Verbindung über das Firmen-VPN nötig. Ohne VPN ist keine Authentifizierung möglich."
+  },
+  {
+    "id": 841,
+    "frage": "Der Ausdruck eines Nadeldruckers ist mit der Zeit immer blasser geworden. Was sollte ein Techniker tun, um das Problem zu beheben?",
+    "optionen": {
+      "A": "Druckkopf reinigen",
+      "B": "Farbband ersetzen",
+      "C": "Wartungskit installieren",
+      "D": "Ausrichtung kalibrieren"
+    },
+    "antwort": "B",
+    "erklärung": "Nadeldrucker verwenden ein Farbband, das durch Pins auf das Papier geschlagen wird. Wird das Farbband abgenutzt oder trocken, wird der Ausdruck blass. Ein neues Farbband stellt die Druckqualität wieder her."
+  },
+  {
+    "id": 842,
+    "frage": "Ein Techniker untersucht die langsame Reaktion eines Mobilgeräts bei einfachen Aufgaben. Neue Apps starten manchmal nicht. Was sollte als Nächstes getan werden?",
+    "optionen": {
+      "A": "Gerät in einen kühleren Raum bringen",
+      "B": "Unnötige Programme schließen",
+      "C": "Werkseinstellungen zurücksetzen",
+      "D": "Akkuzustand überprüfen"
+    },
+    "antwort": "B",
+    "erklärung": "Langsame Reaktion und App-Abstürze deuten auf Ressourcenüberlastung (RAM oder CPU) hin. Das Schließen unnötiger Apps kann Speicher freigeben und die Leistung verbessern."
+  },
+  {
+    "id": 843,
+    "frage": "Ein Benutzer druckt mit einem Laserdrucker, aber beim Wischen löst sich der Toner von der Seite. Der Techniker tauscht die Tonerkartusche aus, aber das Problem bleibt. Welches Bauteil sollte als Nächstes ersetzt werden?",
+    "optionen": {
+      "A": "Fixiereinheit (Fuser)",
+      "B": "Bildtrommel (Drum)",
+      "C": "Entwicklerwalze",
+      "D": "Entladungslampe"
+    },
+    "antwort": "A",
+    "erklärung": "Die Fixiereinheit (Fuser) schmilzt den Toner auf das Papier. Wenn der Toner abwischbar ist, liegt es meist an einem defekten oder nicht ausreichend heißen Fuser."
+  },
+  {
+    "id": 844,
+    "frage": "Ein Benutzer meldet, dass sein Desktop-PC nicht startet. Welche Komponente ist höchstwahrscheinlich die Ursache?",
+    "optionen": {
+      "A": "Netzteil (PSU)",
+      "B": "Grafikkarte (GPU)",
+      "C": "Arbeitsspeicher (RAM)",
+      "D": "Prozessor (CPU)"
+    },
+    "antwort": "A",
+    "erklärung": "Wenn ein PC überhaupt nicht reagiert (keine Lüfter, Lichter, Beeps), ist das Netzteil oft defekt. Es versorgt das gesamte System mit Strom – fällt es aus, startet nichts mehr."
+  },
+  {
+    "id": 845,
+    "frage": "Welche der folgenden Komponenten verwendet spezielle Anschlüsse an einem Laptop, um die lokalen Verbindungsmöglichkeiten zu erweitern?",
+    "optionen": {
+      "A": "NFC-Adapter",
+      "B": "Dockingstation",
+      "C": "Port-Replikator",
+      "D": "USB-Dongle"
+    },
+    "antwort": "B",
+    "erklärung": "Eine Dockingstation nutzt proprietäre oder moderne Ports (z. B. USB-C, Thunderbolt), um zusätzliche Anschlüsse wie USB, Ethernet, Video und Audio bereitzustellen – ideal zur Erweiterung eines Laptops zu einem Desktop-ähnlichen Arbeitsplatz."
+  },
+  {
+    "id": 846,
+    "frage": "Ein IT-Spezialist vergleicht Bluetooth- und NFC-Technologien zur Verbindung mobiler Geräte. Welche Aussage beschreibt einen wichtigen Unterschied korrekt?",
+    "optionen": {
+      "A": "NFC ist schneller als Bluetooth beim Übertragen großer Dateien.",
+      "B": "NFC verbraucht mehr Energie als Bluetooth und ist daher weniger geeignet für Geräte mit geringem Stromverbrauch.",
+      "C": "NFC erfordert eine Kopplung mit dem Empfängergerät, Bluetooth benötigt nur eine verfügbare Verbindung.",
+      "D": "NFC funktioniert nur im Nahbereich von wenigen Zentimetern, während Bluetooth eine Reichweite von bis zu 10 m (32 Fuß) bietet."
+    },
+    "antwort": "D",
+    "erklärung": "NFC arbeitet im Nahbereich (unter 4 cm) und eignet sich gut für schnelle, sichere Übertragungen (z. B. Bezahlsysteme). Bluetooth hat eine Reichweite von bis zu 10 Metern und wird für dauerhafte Verbindungen wie Audio oder Dateiübertragung genutzt."
+  },
+  {
+    "id": 847,
+    "frage": "Ein Support-Techniker erhält einen Anruf: Ein Benutzer hat ein neues Gerät ins Netzwerk eingebunden, indem er die Konfiguration eines anderen Geräts kopierte. Wenn beide Geräte eingeschaltet sind, funktioniert keine zuverlässige Netzwerkverbindung. Was ist die wahrscheinlichste Ursache?",
+    "optionen": {
+      "A": "Der neue Computer hat eine doppelte IP-Adresse.",
+      "B": "Der DNS-Server registriert beide Hostnamen.",
+      "C": "Das Netzwerkkabel wurde falsch terminiert.",
+      "D": "Die Sicherheit des Switchports muss zurückgesetzt werden."
+    },
+    "antwort": "A",
+    "erklärung": "Zwei Geräte mit derselben statischen IP-Adresse verursachen einen IP-Konflikt, was zu Netzwerkunterbrechungen oder Verbindungsfehlern führt – besonders bei manueller Konfigurationsübernahme sehr häufig."
+  },
+  {
+    "id": 848,
+    "frage": "Ein Kunde meldet langsame Netzwerkgeschwindigkeiten. Welche der folgenden Komponenten fällt höchstwahrscheinlich aus?",
+    "optionen": {
+      "A": "CPU",
+      "B": "NIC",
+      "C": "HDD",
+      "D": "RAM"
+    },
+    "antwort": "B",
+    "erklärung": "Eine Netzwerkkarte (NIC) ist für die Netzwerkverbindung verantwortlich. Wenn sie fehlerhaft ist (z. B. durch defekte Treiber oder Hardwareprobleme), kann dies zu langsamen Netzwerkgeschwindigkeiten führen."
+  },
+  {
+    "id": 849,
+    "frage": "Welcher der folgenden Punkte ist ein Vorteil der Nutzung von VDI (Virtual Desktop Infrastructure)?",
+    "optionen": {
+      "A": "Authentifizierung in einer Domäne ist nicht erforderlich.",
+      "B": "Lizenzkosten werden minimiert.",
+      "C": "Weniger manuelle Konfiguration pro Arbeitsplatz ist notwendig.",
+      "D": "Ein Virus wird automatisch lokal eingeschränkt."
+    },
+    "antwort": "C",
+    "erklärung": "VDI ermöglicht eine zentrale Verwaltung und schnelle Bereitstellung virtueller Desktops, wodurch weniger manuelle Konfiguration erforderlich ist."
+  },
+  {
+    "id": 850,
+    "frage": "Welche der folgenden Auflösungen ist allgemein als Ultra HD bekannt?",
+    "optionen": {
+      "A": "1920x1080",
+      "B": "2048x1080",
+      "C": "3840x2160",
+      "D": "7680x4320"
+    },
+    "antwort": "C",
+    "erklärung": "Ultra HD (UHD) oder 4K hat eine Auflösung von 3840x2160. Sie bietet viermal so viele Pixel wie Full HD (1080p)."
+  },
+  {
+    "id": 851,
+    "frage": "Welches der folgenden Cloud-Modelle verwendet ausschließlich ein lokales Rechenzentrum?",
+    "optionen": {
+      "A": "Private",
+      "B": "Public",
+      "C": "Hybrid",
+      "D": "Community"
+    },
+    "antwort": "A",
+    "erklärung": "Ein Private Cloud-Modell wird nur für eine Organisation betrieben, oft im eigenen lokalen Rechenzentrum."
+  },
+  {
+    "id": 852,
+    "frage": "Welchen DNS-Eintrag würde ein Administrator ändern, um den E-Mail-Verkehr umzuleiten?",
+    "optionen": {
+      "A": "MX",
+      "B": "TXT",
+      "C": "SPF",
+      "D": "CNAME"
+    },
+    "antwort": "A",
+    "erklärung": "Ein MX-Eintrag legt fest, welcher Mailserver für den Empfang von E-Mails für eine Domain zuständig ist."
+  },
+  {
+    "id": 853,
+    "frage": "Ein Unternehmen muss eine Notfallwiederherstellungslösung basierend auf virtuellen Maschinen entwickeln. Welches der folgenden Servicemodelle ist am besten geeignet?",
+    "optionen": {
+      "A": "Infrastructure as a Service",
+      "B": "Security as a Service",
+      "C": "Platform as a Service",
+      "D": "Software as a Service"
+    },
+    "antwort": "A",
+    "erklärung": "IaaS bietet virtuelle Ressourcen wie Server und Speicher — ideal für Disaster Recovery über virtuelle Maschinen."
+  },
+  {
+    "id": 854,
+    "frage": "Beim Einschalten einer Workstation erscheint folgende Meldung: 'Bootfähiges Gerät nicht gefunden.' Die Bootreihenfolge im BIOS ist korrekt. Was sollte der Techniker als Nächstes tun?",
+    "optionen": {
+      "A": "Die Festplatte formatieren.",
+      "B": "Festplattendiagnose durchführen.",
+      "C": "RAM neu einsetzen.",
+      "D": "Festplatte austauschen."
+    },
+    "antwort": "B",
+    "erklärung": "Der nächste Schritt ist eine Festplattendiagnose, um einen logischen oder physischen Defekt zu identifizieren, bevor weitere Maßnahmen getroffen werden."
+}
+]

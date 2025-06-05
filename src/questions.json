@@ -1,0 +1,632 @@
+[
+  {
+    "question": "Welche der folgenden Optionen würde ein Administrator verwenden, um virtuelle Maschinen vom lokalen Standort in die Cloud zu migrieren?",
+    "options": ["IaaS", "SaaS", "DBaaS", "DRaaS"],
+    "answer": "IaaS",
+    "explanation": "Ein Administrator würde Infrastructure as a Service (IaaS) verwenden, um virtuelle Maschinen zu migrieren, da es virtualisierte Computerressourcen wie Server und Speicher bereitstellt. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Ziel 3.3"
+  },
+  {
+    "question": "Ein Benutzer meldet beim Präsentieren über einen Projektor im Konferenzraum Video ohne Ton. Welche Lösung behebt das Problem am wahrscheinlichsten?",
+    "options": [
+      "Projektoreingang auf VGA umstellen",
+      "PC-Ausgang auf DVI umstellen",
+      "Bildwiederholrate anpassen",
+      "HDMI-Verbindung verwenden"
+    ],
+    "answer": "Utilizing an HDMI connection",
+    "explanation": "HDMI überträgt sowohl Video als auch Audio und löst das Problem. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Ziel 2.5"
+  },
+  {
+    "question": "Welcher Standard unterstützt MIMO-Technologie?",
+    "options": ["802.11a", "802.11b", "802.11g", "802.11n"],
+    "answer": "802.11n",
+    "explanation": "802.11n unterstützt Multiple Input Multiple Output (MIMO) für verbesserte Datenübertragung. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Ziel 3.3"
+  },
+  {
+    "question": "Welche Maßnahmen verbessern die Leistung eines Laptops bei großen Datenbanken? (Wähle ZWEI)",
+    "options": [
+      "RAID 1 konfigurieren",
+      "Hybridlaufwerk installieren",
+      "1GB-NIC aufrüsten",
+      "RAM erweitern",
+      "Auf SSD migrieren",
+      "Netzteil austauschen"
+    ],
+    "answer": "Increase the RAM, Migrate to a SSD",
+    "explanation": "RAM-Erweiterung verbessert die Datenverarbeitung, SSDs erhöhen die Zugriffsgeschwindigkeit. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Ziel 3.1"
+  },
+  {
+    "question": "Welche Technologie ermöglicht mehrere Netzwerke über einen Switch?",
+    "options": ["VLAN", "VRRP", "VPN", "DHCP"],
+    "answer": "VLAN",
+    "explanation": "VLANs trennen Datenverkehr durch logische Netzwerke innerhalb physischer Infrastruktur. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Ziel 3.2"
+  },
+  {
+    "question": "Warum druckt ein neuer Drucker beidseitig nur manuell?",
+    "options": [
+      "Firmware-Update installieren",
+      "Hardware-Austausch anfordern",
+      "Druckersoftware neu installieren",
+      "Duplex-Einstellungen konfigurieren"
+    ],
+    "answer": "Read the installation manual and configure duplex settings",
+    "explanation": "Die Duplex-Funktion erfordert korrekte Konfiguration in den Druckereinstellungen. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was gewährleistet die Auslastung neuer Server bei gesteigertem Datenverkehr?",
+    "options": ["Virtualisierung", "Clustering", "Load Balancer", "Round-Robin-DNS"],
+    "answer": "Load balancer",
+    "explanation": "Ein Lastenausgleich verteilt Anfragen gleichmäßig auf Server. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 181"
+  },
+  {
+    "question": "Welches Protokoll nutzt TCP-Ports 20/21 und überträgt Klartext?",
+    "options": ["SNMP", "SSH", "FTP", "Telnet"],
+    "answer": "FTP",
+    "explanation": "FTP überträgt unverschlüsselt über Port 20/21. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 199"
+  },
+  {
+    "question": "Wie behebt man hohe Latenz bei Satelliten-Internet?",
+    "options": [
+      "Modem neu starten und Diagnosetool ausführen",
+      "Internettarif upgraden",
+      "Kunden über normale Satelliten-Eigenschaften informieren",
+      "Modem austauschen"
+    ],
+    "answer": "Restart the modem and run an online internet connection and speed diagnostic tool",
+    "explanation": "Neustart und Diagnose sind erste Schritte bei Satelliten-Latenzproblemen. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 102"
+  },
+  {
+    "question": "Welche Cloud-Umgebung schützt sensible Daten am besten?",
+    "options": ["Public", "Hybrid", "Community", "Private"],
+    "answer": "Private",
+    "explanation": "Private Clouds bieten maximale Kontrolle über Sicherheitseinstellungen. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 234"
+  },
+  {
+    "question": "Welche Komponente ermöglicht Touch-Eingaben auf Mobilgeräten?",
+    "options": ["OLED", "Digitizer", "Inverter", "CMOS-Sensor"],
+    "answer": "Digitizer",
+    "explanation": "Der Digitizer wandelt Berührungen in digitale Signale um. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 177"
+  },
+  {
+    "question": "Was gewährleistet maximale Verfügbarkeit virtueller Maschinen?",
+    "options": ["Netzfilter", "AC-Spannungsregler", "USV", "Cloud-Backup"],
+    "answer": "Uninterruptible power supply",
+    "explanation": "USVs schützen vor Stromausfällen. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 159"
+  },
+  {
+    "question": "Welche Technologie nutzt ein Standort mit ausgefallenen POTS-Leitungen?",
+    "options": ["Faser", "Kabel", "DSL", "Satellit"],
+    "answer": "DSL",
+    "explanation": "DSL nutzt Telefonleitungen für Internetzugang. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 231"
+  },
+  {
+    "question": "Welches Kabel limitiert die Übertragungsrate auf 100Mbps?",
+    "options": ["Cat 5", "Cat 5e", "Cat 6", "Cat 6a"],
+    "answer": "Cat 5",
+    "explanation": "Cat-5-Kabel unterstützen maximal 100Mbps. Referenz: CompTIA A+ Zertifizierungsprüfung: Core 1 - Seite 196"
+  },
+  {
+    "question": "Warum kann ein Benutzer keine Online-Videos abspielen?",
+    "options": [
+      "Falsche IP-Adresse",
+      "Defekte Netzwerkkarte",
+      "Falsches Standardgateway",
+      "Defektes Netzwerkkabel"
+    ],
+    "answer": "Faulty NIC",
+    "explanation": "Die Netzwerkkonfiguration ist korrekt, daher deutet alles auf eine defekte NIC hin. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Welcher Internetanschluss eignet sich für abgelegene Campingplätze?",
+    "options": ["Satellit", "DSL", "Faser", "Hotspot"],
+    "answer": "Satellite",
+    "explanation": "Satelliten-Internet funktioniert überall mit Sichtverbindung zum Satelliten. Referenz: CompTIA A+ Zertifizierungsprüfung - 220-1001: 1.6"
+  },
+  {
+    "question": "Warum lässt sich ein störungsfreier Funkkanal nicht auswählen?",
+    "options": [
+      "Der Kanal ist lizenziert",
+      "Kanalauswahl defekt",
+      "Kanal muss freigeschaltet werden",
+      "Firmware-Update erforderlich"
+    ],
+    "answer": "The channel is reserved for licensed band use",
+    "explanation": "Lizenzierte Kanäle sind für bestimmte Dienste reserviert. Referenz: CompTIA A+ Zertifizierungsprüfung - 220-1001: 3.3"
+  },
+  {
+    "question": "Welches Netzwerk entsteht durch Verbindung von Smartphone und Laptop?",
+    "options": ["PAN", "MAN", "WLAN", "LAN"],
+    "answer": "PAN",
+    "explanation": "Eine Personal Area Network (PAN) verbindet Geräte in unmittelbarer Nähe. Referenz: CompTIA A+ Zertifizierungsprüfung - 220-1001: 1.1"
+  },
+  {
+    "question": "Was verursacht schwarze Schmierspuren auf Kassenbons?",
+    "options": [
+      "Farbband klemmt",
+      "Druckkopf überhitzt",
+      "Falsches Papier",
+      "Falsche Tintenpatrone"
+    ],
+    "answer": "The ribbon is jammed and is rubbing on the paper. Clear the bad ribbon and feed it through properly",
+    "explanation": "Ein klemmendes Farbband verschmiert die Druckergebnisse. Referenz: CompTIA A+ Zertifizierungsprüfung - 220-1001: 4.5"
+  },
+  {
+    "question": "Warum lassen sich auf einer VM-Host-Workstation keine VMs erstellen?",
+    "options": [
+      "BIOS-Passwort deaktivieren",
+      "TPM aktivieren",
+      "Multithreading aktivieren",
+      "Schnellstart aktivieren"
+    ],
+    "answer": "Enable TPM",
+    "explanation": "TPM (Trusted Platform Module) ist für viele Virtualisierungstechnologien erforderlich. Referenz: CompTIA A+ Zertifizierungsprüfung 220-1002: 2.7"
+  },
+  {
+    "question": "Wie behebt man vertikale Linien auf allen Druckseiten?",
+    "options": [
+      "Papier austauschen",
+      "Druckwarteschlange leeren",
+      "Treibersoftware neu installieren",
+      "Trommelreinigung durchführen"
+    ],
+    "answer": "Perform the drum-cleaning procedure",
+    "explanation": "Linien werden oft durch verschmutzte Trommeln verursacht. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 18"
+  },
+  {
+    "question": "Wie installiert man eine Festplatte direkt auf dem Mainboard?",
+    "options": ["Thunderbolt", "eSATA", "M.2", "SCSI"],
+    "answer": "M.2",
+    "explanation": "M.2-SSDs ermöglichen direkte Mainboard-Montage ohne Kabel. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 5"
+  },
+  {
+    "question": "Wie führt man Windows-Software auf macOS aus?",
+    "options": [
+      "Betriebssystem-Spoofing",
+      "Remote-Software-Bereitstellung",
+      "Indirekte Software-Implementierung",
+      "Plattformübergreifende Virtualisierung"
+    ],
+    "answer": "Cross-platform virtualization",
+    "explanation": "Virtualisierung ermöglicht Windows-Umgebungen auf macOS. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 1"
+  },
+  {
+    "question": "Was aktiviert man für Hypervisor-Betrieb nach Mainboard-Tausch?",
+    "options": ["Hardware-Prefetcher", "Hyperthreading", "vPro", "VT-d"],
+    "answer": "VT-d",
+    "explanation": "VT-d (Virtualization Technology for Directed I/O) ist für Hypervisor-Betrieb nötig. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 11"
+  },
+  {
+    "question": "Wie schützt man Daten auf tragbaren Medien?",
+    "options": [
+      "USB-Stick mit BitLocker To Go",
+      "SD-Karte mit NTFS",
+      "XD-Karte mit ext3",
+      "Externe Festplatte mit FAT32"
+    ],
+    "answer": "A USB 3.1 flash drive with BitLocker to Go installed",
+    "explanation": "BitLocker To Go verschlüsselt mobile Datenträger. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 12"
+  },
+  {
+    "question": "Wie behebt man Netzwerkverbindungsprobleme bei 84m Kabel?",
+    "options": [
+      "Kabelverbindung prüfen",
+      "Verstärker installieren",
+      "Auf Cat 5 STP umstellen",
+      "Multimode-Faser verlegen"
+    ],
+    "answer": "Check for loose connections, pinched bends, and physical damage",
+    "explanation": "Physische Schäden sind erste Fehlerquelle bei langen Kabeln. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 14"
+  },
+  {
+    "question": "Wie verbessert man Excel-Leistung bei großen Dateien?",
+    "options": [
+      "Auslagerungsdatei vergrößern",
+      "CPU aufrüsten",
+      "Netzteil austauschen",
+      "RAM aufrüsten"
+    ],
+    "answer": "Upgrade the RAM in the workstation",
+    "explanation": "Mehr RAM verbessert die Verarbeitung großer Dateien. Referenz: CompTIA A+ Zertifizierungsprüfung, Kapitel 9"
+  },
+  {
+    "question": "Was verursacht unerwartete Neustarts beim 3D-Rendering?",
+    "options": [
+      "USV ungeeignet",
+      "Netzteil unterdimensioniert",
+      "Grafikkarte defekt",
+      "Mainboard inkompatibel"
+    ],
+    "answer": "The power supply, as 200W is insufficient when the GPU is heavily tasked",
+    "explanation": "200W reichen nicht für High-End-GPUs unter Last. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie behebt man Papierstau im Fixiereinheit?",
+    "options": [
+      "Wartungsset anwenden",
+      "Papiereinzug prüfen",
+      "Drucker neu starten",
+      "Fixiereinheit austauschen"
+    ],
+    "answer": "Check the printer paper path to locate any obstructions",
+    "explanation": "Papierstaus erfordern Überprüfung des Papiertransports. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie repariert man ein defektes Cat-5-Kabel? (Wähle ZWEI)",
+    "options": [
+      "Schere",
+      "Network Tap",
+      "Magnetischer Schraubendreher",
+      "Ton-Generator",
+      "RJ45-Stecker",
+      "Crimpzange"
+    ],
+    "answer": "RJ45 connector, Crimper",
+    "explanation": "RJ45-Stecker und Crimpzange sind für Kabelreparaturen nötig. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Warum kann ein Benutzer keine Netzwerkressourcen erreichen?",
+    "options": [
+      "Internetverbindung ausgefallen",
+      "Domain-Konto gesperrt",
+      "Switch defekt",
+      "IP-Adresse erneuern"
+    ],
+    "answer": "The user's internet connection is down",
+    "explanation": "Lokaler Zugriff funktioniert, daher ist Internetverbindung ausgefallen. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Welche Konfiguration eignet sich für Client-seitige Virtualisierung?",
+    "options": [
+      "CPU 2.5GHz - 4 Kerne, 16GB DDR4 RAM, 1TB SSD",
+      "CPU 3.2GHz - 1 Kern, 16GB DDR4 RAM, 4TB SSD",
+      "CPU 2.5GHz - 2 Kerne, 16GB DDR4 RAM, 4x1TB HDD RAID 5",
+      "CPU 3.2GHz - 4 Kerne, 8GB DDR4 RAM, 500GB HDD"
+    ],
+    "answer": "CPU 2.5GHz - 4 cores, 16GB DDR4 RAM, 1TB SSD",
+    "explanation": "4 Kerne, 16GB RAM und SSD bieten beste Virtualisierungsleistung. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie identifiziert man nicht beschriftete Netzwerkports?",
+    "options": ["Network Tap", "Punchdown-Tool", "Ton-Sonde", "Crimpzange"],
+    "answer": "Toner probe",
+    "explanation": "Ton-Sonden lokalisieren Kabel in unmarkierten Bündeln. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 2.9"
+  },
+  {
+    "question": "Welches Gerät trennt Broadcast-Domänen?",
+    "options": ["Switch", "WAP", "Router", "Hub"],
+    "answer": "Router",
+    "explanation": "Router trennen Netzwerke und blockieren Broadcast-Verkehr. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 2.9"
+  },
+  {
+    "question": "Warum ist Netzwerklaufwerkszugriff langsam?",
+    "options": [
+      "Netzwerkauslastung",
+      "Zwei-Faktor-Authentifizierung",
+      "Lokaler Speicherplatz",
+      "RAID-Array-Status"
+    ],
+    "answer": "Level of network utilization",
+    "explanation": "Hohe Netzwerkauslastung verlangsamt Dateizugriffe. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 2.9"
+  },
+  {
+    "question": "Wofür wird PaaS genutzt?",
+    "options": [
+      "Offsite-Backups",
+      "Anwendungsentwicklungsumgebung",
+      "Virtuelle Serverkonfiguration",
+      "Webanwendung für Asset-Management"
+    ],
+    "answer": "An application development environment",
+    "explanation": "PaaS bietet Plattformen für Softwareentwicklung. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 1.7"
+  },
+  {
+    "question": "Wie verhindert man Papierverschwendung durch ungehobene Drucke?",
+    "options": [
+      "Erinnerungen senden",
+      "Duplexdruck aktivieren",
+      "Kosten verrechnen",
+      "Freigabecode verlangen"
+    ],
+    "answer": "Require a code or badge before releasing a print job",
+    "explanation": "Freigabecode stellt sicher, dass Benutzer ihre Drucke abholen. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 2.10"
+  },
+  {
+    "question": "Wie behebt man drei Pieptöne beim Booten?",
+    "options": [
+      "Netzteil austauschen",
+      "USV austauschen",
+      "CMOS-Batterie wechseln",
+      "RAM neu einstecken"
+    ],
+    "answer": "Reseating the RAM",
+    "explanation": "Drei Pieptöne deuten auf RAM-Probleme hin. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 1.9"
+  },
+  {
+    "question": "Warum wird ein Smartphone heiß und langsam?",
+    "options": [
+      "Defekter Ladeanschluss",
+      "Digitizer-Defekt",
+      "CPU-Überhitzung",
+      "Defekter Akku"
+    ],
+    "answer": "Defective battery",
+    "explanation": "Defekte Akkus verursachen Überhitzung und Leistungsprobleme. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 2.14"
+  },
+  {
+    "question": "Wie behebt man 'Kein Eingangssignal' am Monitor?",
+    "options": [
+      "BIOS-Einstellungen ändern",
+      "Monitor-Eingang umstellen",
+      "Stromkabel prüfen",
+      "PC-Stromkabel prüfen"
+    ],
+    "answer": "Changing the connector setting on the monitor",
+    "explanation": "Falscher Eingangskanal ist häufigste Fehlerquelle. Referenz: CompTIA A+ Zertifizierungsprüfung 1001, 1.10"
+  },
+  {
+    "question": "Wie erweitert man Speicher ohne Innenumbau?",
+    "options": ["SCSI", "eSATA", "PCIe", "NVMe"],
+    "answer": "eSATA",
+    "explanation": "eSATA bietet hohe Geschwindigkeiten für externe Speicher. Referenz: CompTIA A+ Zertifizierungsprüfung Core 1 - 1.5"
+  },
+  {
+    "question": "Was verursacht klickende Geräusche beim Booten?",
+    "options": ["RAID", "SSD", "S.M.A.R.T", "HDD"],
+    "answer": "HDD",
+    "explanation": "Klickgeräusche deuten auf mechanische HDD-Defekte hin. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie authentifiziert man sich mit 13.56MHz an Gebäuden?",
+    "options": ["Bluetooth", "Biometrie", "NFC", "PIN"],
+    "answer": "NFC",
+    "explanation": "NFC nutzt 13.56MHz für kontaktlose Authentifizierung. Referenz: CompTIA A+ Zertifizierungsprüfung 220-1001 - 4.4"
+  },
+  {
+    "question": "Wie behebt man nicht reagierende Tasten auf älteren Laptops?",
+    "options": [
+      "Feststelltasten deaktivieren",
+      "Tastatur reinigen",
+      "BIOS zurücksetzen",
+      "Laptop aufladen"
+    ],
+    "answer": "Clean the keyboard",
+    "explanation": "Verschmutzte Tastaturen verursachen Eingabeprobleme. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie verwaltet man Firmen-Smartphones zentral?",
+    "options": [
+      "Tethering mit Firmen-Laptop",
+      "WPA2-Enterprise WLAN",
+      "Firmen-E-Mail",
+      "Mobile-Device-Management"
+    ],
+    "answer": "Mobile device management",
+    "explanation": "MDM ermöglicht Fernlöschung und App-Kontrolle. Referenz: CompTIA A+ Zertifizierungsprüfung 220-1001 - 2.8"
+  },
+  {
+    "question": "Was ist nach Problemidentifikation und Backup der nächste Schritt?",
+    "options": [
+      "Lösung dokumentieren",
+      "Lösungsplan erstellen",
+      "Ergebnisse dokumentieren",
+      "Fehlerursache ermitteln"
+    ],
+    "answer": "Establish a theory of probable cause, researching internally or externally as needed",
+    "explanation": "Fehleranalyse folgt nach Problemidentifikation. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie beginnt man die Fehlersuche bei defektem Fingerprint-Scanner?",
+    "options": [
+      "Änderungen erfragen",
+      "Schadensmeldung erstellen",
+      "Neuen Scanner anfordern",
+      "Scanner reinigen"
+    ],
+    "answer": "Inquire about possible changes",
+    "explanation": "Kürzliche Änderungen sind häufige Fehlerursache. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was verursacht Doppelbilder bei Drucken?",
+    "options": [
+      "Trennpad",
+      "Transferrolle",
+      "Tintenpatrone",
+      "Fixiereinheit"
+    ],
+    "answer": "Fuser",
+    "explanation": "Defekte Fixiereinheiten erzeugen Geisterbilder. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie behebt man zurückgesetzte Systemzeit?",
+    "options": [
+      "Mainboard austauschen",
+      "Stromanschlüsse prüfen",
+      "CMOS-Batterie wechseln",
+      "BIOS zurücksetzen"
+    ],
+    "answer": "Replace the CMOS battery",
+    "explanation": "CMOS-Batterien halten BIOS-Einstellungen aufrecht. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was verbessert Leistung bei mehreren Anwendungen?",
+    "options": ["SSD", "CPU", "HDD", "RAM"],
+    "answer": "RAM",
+    "explanation": "Mehr RAM reduziert langsame Auslagerungsdateizugriffe. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was ist die Hauptfunktion eines Webservers?",
+    "options": [
+      "Dateispeicherung und Zugriffskontrolle",
+      "Mailboxen und Kalender einrichten",
+      "IP-Adressen und Druckdienste bereitstellen",
+      "Webseiten und Portale hosten"
+    ],
+    "answer": "Hosting home pages and business portals",
+    "explanation": "Webserver verarbeiten HTTP-Anfragen für Websites. Referenz: CompTIA A+ Zertifizierungsprüfung 220-1001 - 1.6"
+  },
+  {
+    "question": "Was schützt virtuelle Maschinen voreinander?",
+    "options": ["Isolation", "Authentifizierung", "Absicherung", "Autorisierung"],
+    "answer": "Isolation",
+    "explanation": "Isolation trennt virtuelle Maschinen sicherheitshalber. Referenz: CompTIA A+ Zertifizierungsprüfung 220-1002 - 4.1"
+  },
+  {
+    "question": "Wie behebt man Projektor-Abschaltung nach 15 Minuten?",
+    "options": [
+      "Filter reinigen",
+      "Standby-Zeit anpassen",
+      "Stromkabel prüfen",
+      "Lampe austauschen"
+    ],
+    "answer": "Clean the filter",
+    "explanation": "Verschmutzte Filter verursachen Überhitzung. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Warum enthalten Etiketten weiße Flächen?",
+    "options": [
+      "Verschmutzte Fixiereinheit",
+      "Abgenutzte Rollen",
+      "Papiereinzugsproblem",
+      "Seitenausrichtung"
+    ],
+    "answer": "Page orientation",
+    "explanation": "Falsche Ausrichtung positioniert Druckelemente falsch. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Wie verbessert man Anwendungsstartzeiten ohne Festplattenaustausch?",
+    "options": ["M.2", "SAS", "HDD", "SCSI"],
+    "answer": "M.2",
+    "explanation": "M.2-SSDs bieten höchste Lese-/Schreibgeschwindigkeiten. Referenz: CompTIA A+ Zertifizierungsprüfung Core 1 - 1.5"
+  },
+  {
+    "question": "Warum reagiert ein Smartphone nach Sturz nicht auf Berührungen?",
+    "options": ["Digitizer-Defekt", "Überhitzung", "Bruchsicherung", "Malware"],
+    "answer": "Digitizer issues",
+    "explanation": "Digitizer-Schäden verhindern Touch-Eingaben. Referenz: CompTIA A+ Zertifizierungsprüfung Core 1 - 3.3"
+  },
+  {
+    "question": "Wie behebt man Webcam-Probleme in Videokonferenzsoftware?",
+    "options": [
+      "Andere Software schließen",
+      "Auflösung anpassen",
+      "Auf 'Konferenzmodus' umstellen",
+      "Webcam neu anstecken"
+    ],
+    "answer": "Close other video software and retry",
+    "explanation": "Konflikte mit anderer Software blockieren Kamera-Zugriff. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was verursacht langsame WLAN-Verbindungen im Büro?",
+    "options": [
+      "Versteckte SSID",
+      "Gerätestörungen",
+      "Ethernet-Port-Flapping",
+      "Hohe ISP-Latenz"
+    ],
+    "answer": "Device interference",
+    "explanation": "Interferenzen durch andere Geräte stören WLAN-Signale. Referenz: CompTIA A+ Zertifizierungsprüfung Core 1 - 3.7"
+  },
+  {
+    "question": "Wo testet man experimentellen Code sicher?",
+    "options": [
+      "Plattformübergreifende Funktionen",
+      "Softwarekompatibilität",
+      "Testfallentwicklung",
+      "Sandbox-Umgebung"
+    ],
+    "answer": "Sandbox environment",
+    "explanation": "Sandboxen isolieren Testumgebungen. Referenz: CompTIA A+ Zertifizierungsprüfung Core 2 - 5.5"
+  },
+  {
+    "question": "Was verursacht Festplattenfehlermeldungen trotz funktionierendem Dateisystem?",
+    "options": ["S.M.A.R.T-Fehler", "IOPS-Fehler", "DIMM-Fehler", "RAID-Fehler"],
+    "answer": "S.M.A.R.T failure",
+    "explanation": "S.M.A.R.T warnt vor bevorstehenden Festplattenausfällen. Referenz: CompTIA A+ Zertifizierungsprüfung Core 1 - 3.3"
+  },
+  {
+    "question": "Wie behebt man fehlendes Webcam-Bild?",
+    "options": [
+      "Firmware suchen",
+      "Diagnosetool ausführen",
+      "Webcam neu anstecken",
+      "Treiber neu installieren"
+    ],
+    "answer": "Reseat the webcam",
+    "explanation": "Lose Verbindungen sind häufige Ursache. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 502)"
+  },
+  {
+    "question": "Was unterscheidet T568A und T568B?",
+    "options": [
+      "T568B ist schneller",
+      "Grüne und orange Kabel vertauscht",
+      "Unterschiedliche Stecker",
+      "Farbkodierung unterschiedlich"
+    ],
+    "answer": "The green and the orange cables are interchanged",
+    "explanation": "Die Verdrahtungsreihenfolge variiert zwischen den Standards. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was verursacht einen Piepton und Fehlermeldung beim Booten? (Wähle ZWEI)",
+    "options": [
+      "RAM-Modul",
+      "Grafikkarte",
+      "CPU",
+      "Boot-Reihenfolge",
+      "USB-Stick",
+      "Netzteil"
+    ],
+    "answer": "RAM module, Boot order",
+    "explanation": "Ein Piepton zeigt erfolgreichen POST, Fehlermeldungen deuten auf RAM/Boot-Probleme hin. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 693)"
+  },
+  {
+    "question": "Was beschreibt gemessene Cloud-Ressourcennutzung?",
+    "options": [
+      "Sofort bereitgestellte Ressourcen",
+      "Nur genutzte Ressourcen bezahlen",
+      "Gepoolte Ressourcen",
+      "Schnelle Skalierung"
+    ],
+    "answer": "Payments made only for resources that are used",
+    "explanation": "Pay-as-you-go-Modelle berechnen nur tatsächliche Nutzung. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 642)"
+  },
+  {
+    "question": "Welches Kabel schützt kostengünstig vor Störungen?",
+    "options": ["Koaxial", "Geschirmtes Cat 6", "Plenum Cat 5e", "Multimode-Faser"],
+    "answer": "Shielded Cat 6",
+    "explanation": "Geschirmte Kabel reduzieren elektromagnetische Interferenzen. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 548)"
+  },
+  {
+    "question": "Was tun bei tickenden Geräuschen und Bootfehlern?",
+    "options": [
+      "Daten sichern",
+      "RAM neu einstecken",
+      "Lüfter prüfen",
+      "CD-Laufwerk prüfen"
+    ],
+    "answer": "Try to extract data",
+    "explanation": "Tickgeräusche deuten auf bevorstehenden Festplattenausfall hin. Referenz: CompTIA A+ Zertifizierungsprüfung"
+  },
+  {
+    "question": "Was ist Zwei-Faktor-Authentifizierung?",
+    "options": [
+      "Fingerabdruck/Netzhautscan",
+      "Passwort/Passwort",
+      "Passwort/Fingerabdruck",
+      "Passwort/PIN"
+    ],
+   
+    "answer": "Password and fingerprint",
+    "explanation": "Zwei-Faktor-Authentifizierung kombiniert zwei verschiedene Authentifizierungsmethoden. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 456)"
+  },
+  {
+    "question": "Was verursacht 'Kein Signal' auf dem Monitor?",
+    "options": [
+      "Grafikkarte defekt",
+      "Monitor-Eingang falsch",
+      "Netzteil defekt",
+      "RAM defekt"
+    ],
+    "answer": "The monitor input is set to the wrong port",
+    "explanation": "Falscher Eingangskanal ist häufigste Fehlerquelle. Referenz: CompTIA A+ Zertifizierungsprüfung (Seite 502)"
+  }
+]
