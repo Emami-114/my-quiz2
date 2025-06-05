@@ -10,29 +10,48 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [lang, setLang] = useState("de"); // Sprach-State
+  const [answeredIds, setAnsweredIds] = useState([]);
 
   const handleSelect = (option) => {
     setSelected(option);
     setShowAnswer(true);
-    if (option === questions[current][lang].antwort || option === questions[current][lang].answer) {
+
+    const isCorrect = option === questions[current][lang].antwort || option === questions[current][lang].answer;
+
+    if (isCorrect) {
       setScore(score + 1);
-    }
-    if (option !== questions[current][lang].antwort && option !== questions[current][lang].answer) {
+
+      // Entferne die Frage aus dem Speicher, wenn sie richtig beantwortet wurde
       const wrong = JSON.parse(localStorage.getItem("wrongAnswers") || "[]");
-      const alreadySaved = wrong.some(
-        (q) => q.id === questions[current].id
-      );
+      const updatedWrong = wrong.filter((q) => q.id !== questions[current].id);
+      localStorage.setItem("wrongAnswers", JSON.stringify(updatedWrong));
+    } else {
+      // Füge die Frage hinzu, wenn sie falsch beantwortet wurde
+      const wrong = JSON.parse(localStorage.getItem("wrongAnswers") || "[]");
+      const alreadySaved = wrong.some((q) => q.id === questions[current].id);
       if (!alreadySaved) {
         wrong.push(questions[current]);
         localStorage.setItem("wrongAnswers", JSON.stringify(wrong));
       }
     }
+    setAnsweredIds([...answeredIds, questions[current].id]);
+  };
+
+    // Funktion, um eine zufällige unbeantwortete Frage zu wählen
+  const pickRandomQuestion = () => {
+    const unanswered = questions.filter(q => !answeredIds.includes(q.id));
+    if (unanswered.length === 0) {
+      setCurrent(null);
+      return;
+    }
+    const randomIndex = Math.floor(Math.random() * unanswered.length);
+    setCurrent(questions.findIndex(q => q.id === unanswered[randomIndex].id));
   };
 
   const nextQuestion = () => {
     setSelected("");
     setShowAnswer(false);
-    setCurrent(current + 1);
+    pickRandomQuestion();
   };
 
   const repeatWrongQuestions = () => {
@@ -98,7 +117,7 @@ export default function Quiz() {
   const optionEntries = Object.entries(currentQuestion.optionen || currentQuestion.options);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-6">
+    <div className="min-h-screen min-w-screen flex items-center justify-center bg-gray-900 text-white p-6">
       {/* Sprachumschalter */}
       <Button
         className="fixed top-4 left-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
