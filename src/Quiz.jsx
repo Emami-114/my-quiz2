@@ -126,6 +126,12 @@ export default function Quiz() {
         {lang === "de" ? "English" : "Deutsch"}
       </Button>
       {/* Dauerhafter Button */}
+       <Button
+        className="fixed top-4 center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50 "
+        onClick={() => {}}
+      >
+        {lang === "de" ? `Gesamtfragen:  ${answeredIds.length}` : `Total Questions:  ${answeredIds.length}`}
+      </Button>
       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={repeatWrongQuestions}
