@@ -1379,7 +1379,7 @@
         "E": "USB-Stick",
         "F": "Netzteil"
       },
-      "antwort": "A,D",
+      "antwort": "D,E",
       "erklärung": "Ein einzelner Beep zeigt erfolgreichen POST; Fehler danach kann am RAM oder falscher Bootquelle liegen."
     },
     "en": {
@@ -1392,7 +1392,7 @@
         "E": "USB flash drive",
         "F": "Power supply"
       },
-      "answer": "A,D",
+      "answer": "D,E",
       "explanation": "POST passed (single beep), but system cannot load boot files – bad RAM or wrong boot device."
     }
   },
@@ -1611,7 +1611,7 @@
         "C": "Sockeltyp und Hersteller prüfen",
         "D": "Kompatibles Mainboard für CPU suchen"
       },
-      "antwort": "C",
+      "antwort": "D",
       "erklärung": "Zunächst sicherstellen, dass Board-Sockel und CPU zueinander passen."
     },
     "en": {
@@ -1622,7 +1622,7 @@
         "C": "Verify socket type and manufacturer",
         "D": "Find compatible motherboard for the CPU"
       },
-      "answer": "C",
+      "answer": "D",
       "explanation": "Confirming proper socket compatibility avoids damage."
     }
   },
@@ -1836,7 +1836,7 @@
         "C": "WLAN-Protokolleinstellungen",
         "D": "DNS-Server"
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "Wenn eine MAC-Filterung auf dem alten Router aktiv war, muss die Liste auf dem neuen Router aktualisiert werden, da dieser eine andere MAC-Adresse hat und bekannte Geräte sonst blockiert werden."
     },
     "en": {
@@ -1847,7 +1847,7 @@
         "C": "Wireless protocol settings",
         "D": "DNS servers"
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "If MAC filtering was active on the old router, the list must be updated on the new router, as it has a different MAC address and would otherwise block known devices."
     }
   },
@@ -2169,7 +2169,7 @@
         "C": "DNS",
         "D": "ARP"
       },
-      "antwort": "C",
+      "antwort": "A",
       "erklärung": "Wenn Pings zu IP-Adressen funktionieren, aber der Zugriff auf Ressourcen über Namen fehlschlägt, ist DNS (Namensauflösung) ein häufiger Verdächtiger."
     },
     "en": {
@@ -2180,7 +2180,7 @@
         "C": "DNS",
         "D": "ARP"
       },
-      "answer": "C",
+      "answer": "A",
       "explanation": "If pings to IP addresses work but accessing resources by name fails, DNS (name resolution) is a common suspect."
     }
   },
@@ -2419,7 +2419,7 @@
         "C": "Alle Medienoptionen deaktivieren.",
         "D": "Secure Boot aktivieren."
       },
-      "antwort": "D",
+      "antwort": "C",
       "erklärung": "Die Aktivierung von Secure Boot überprüft die digitale Signatur des Bootloaders und des Betriebssystems und stellt sicher, dass das System nur von vertrauenswürdigen und autorisierten Quellen bootet. Dies kann das Booten von einer nicht autorisierten Live-CD oder anderen externen Medien verhindern."
     },
     "en": {
@@ -2430,7 +2430,7 @@
         "C": "Disable all media options.",
         "D": "Enable secure boot."
       },
-      "answer": "D",
+      "answer": "C",
       "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised sources. This can prevent booting from an unauthorised live CD or other external media."
     }
   },
@@ -2469,7 +2469,7 @@
         "C": "Die Papierrollen ersetzen.",
         "D": "Neuen Toner installieren."
       },
-      "antwort": "A",
+      "antwort": "B",
       "erklärung": "Hohe Hitze und Feuchtigkeit können die Druckqualität von Thermodruckern beeinträchtigen (Thermosensitives Papier reagiert auf Umgebungsbedingungen). Die Wiederherstellung der Klimaanlage normalisiert die Umgebungsbedingungen."
     },
     "en": {
@@ -2480,7 +2480,7 @@
         "C": "Replace the paper rolls.",
         "D": "Install new toner."
       },
-      "answer": "A",
+      "answer": "B",
       "explanation": "High heat and humidity can affect the print quality of thermal printers (heat-sensitive paper reacts to environmental conditions). Restoring the air conditioner normalizes the environment."
     }
   },
@@ -2947,7 +2947,7 @@
         "D": "Den Abschlussbericht fertigstellen.",
         "E": "Die Quelle der Installationsdatei ermitteln."
       },
-      "antwort": "A",
+      "antwort": "E",
       "erklärung": "Da die Installationsdateien unterschiedlich sind, könnten die des betroffenen Benutzers beschädigt oder unvollständig sein. Ein erneuter Installationsversuch mit einer bekannten, funktionierenden Version der Installationsdateien ist der logische nächste Schritt."
     },
     "en": {
@@ -2959,7 +2959,7 @@
         "D": "Complete the final report.",
         "E": "Determine the source of the installation file."
       },
-      "answer": "A",
+      "answer": "E",
       "explanation": "Since the installation files differ, the affected user's files might be corrupt or incomplete. Attempting reinstallation with a known good version of the installation files is the logical next step."
     }
   },
@@ -3152,7 +3152,7 @@
         "C": "Die Speicheranforderungen des Motherboards überprüfen.",
         "D": "Ein Antistatik-Armband anlegen."
       },
-      "antwort": "C",
+      "antwort": "D",
       "erklärung": "Bevor neuer RAM gekauft oder eingebaut wird, muss sichergestellt werden, welcher RAM-Typ (DDR3, DDR4, etc.), welche Geschwindigkeit und welche maximale Kapazität vom Laptop-Motherboard unterstützt wird, um Kompatibilität zu gewährleisten."
     },
     "en": {
@@ -3163,7 +3163,7 @@
         "C": "Verify memory requirements of the motherboard.",
         "D": "Connect an electrostatic discharge strap."
       },
-      "answer": "C",
+      "answer": "D",
       "explanation": "Before buying or installing new RAM, it's crucial to verify the RAM type (DDR3, DDR4, etc.), speed, and maximum capacity supported by the laptop's motherboard to ensure compatibility."
     }
   },
@@ -3402,7 +3402,7 @@
         "C": "Den Benutzer nach weiteren Details zur Problembeschreibung fragen",
         "D": "Die durchgeführten Aktionen und Ergebnisse dokumentieren"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Bevor weitere Maßnahmen ergriffen werden, sollten zusätzliche Informationen vom Benutzer eingeholt werden, um mögliche Ursachen zu klären."
     },
     "en": {
@@ -3413,7 +3413,7 @@
         "C": "Ask the user additional clarifying questions regarding the issue",
         "D": "Document the action taken and the outcome"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "Gathering more information from the user helps narrow down potential causes (software, settings, environment) before further troubleshooting."
     }
   },
@@ -3470,7 +3470,7 @@
   {
     "id": 144,
     "de": {
-      "frage": "Ein Techniker führte mehrere Upgrades an einem Computer durch und stellte dann fest, dass das Netzteil nicht mehr ausreichend Leistung liefert. Welche beiden Upgrades würden am ehesten die Leistungsinsuffizienz verursachen?",
+      "frage": "Ein Techniker führte mehrere Upgrades an einem Computer durch und stellte dann fest, dass das Netzteil nicht mehr ausreichend Leistung liefert. Welche beiden Upgrades würden am ehesten die Leistungsinsuffizienz verursachen? (Select TWO).",
       "optionen": {
         "A": "Austausch der HDD gegen SSD",
         "B": "Firmware-Upgrade",
