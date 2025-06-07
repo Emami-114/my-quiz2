@@ -136,7 +136,7 @@ export default function Quiz() {
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={repeatWrongQuestions}
       >
-        {lang === "de" ? "Falsche Fragen wiederholen" : "Repeat wrong questions"}
+        {lang === "de" ? "FFW" : "RWQ"}
       </Button>
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
