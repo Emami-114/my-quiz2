@@ -11,6 +11,7 @@ export default function Quiz() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [lang, setLang] = useState("de"); // Sprach-State
   const [answeredIds, setAnsweredIds] = useState([]);
+  const [totalFalse, setTotalFalse] = useState(0);
 
   const handleSelect = (option) => {
     setSelected(option);
@@ -33,6 +34,7 @@ export default function Quiz() {
         wrong.push(questions[current]);
         localStorage.setItem("wrongAnswers", JSON.stringify(wrong));
       }
+      setTotalFalse(totalFalse + 1);
     }
     setAnsweredIds([...answeredIds, questions[current].id]);
   };
@@ -130,7 +132,7 @@ export default function Quiz() {
         className="fixed top-4 center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50 "
         onClick={() => {}}
       >
-        {lang === "de" ? `Gesamtfragen:  ${answeredIds.length}` : `Total Questions:  ${answeredIds.length}`}
+        {lang === "de" ? `total:  ${answeredIds.length} - false: ${totalFalse}` : `Total:  ${answeredIds.length} - False: ${totalFalse}`}
       </Button>
       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
