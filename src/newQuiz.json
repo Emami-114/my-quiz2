@@ -4332,7 +4332,7 @@
         "C": "Überprüfen, ob der Front-Panel-Header korrekt angeschlossen ist",
         "D": "Prüfen, ob das I/O-Shield richtig eingesetzt ist"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Ein falsch angeschlossener Front-Panel-Header kann zu Beep-Codes und automatischem Shutdown führen, da Power- und Reset-Leitungen fehlen."
     },
     "en": {
@@ -4343,7 +4343,7 @@
         "C": "Verify the front-panel header connector is properly connected",
         "D": "Spot-check that the I/O shield for the motherboard is properly installed"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "An improperly connected front-panel header (power/reset) can cause beep codes and shutdowns."
     }
   },
@@ -4486,7 +4486,7 @@
         "C": "Beschädigter Umgebungslichtsensor",
         "D": "Flüssigkeitsschaden"
       },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Ein defekter Digitizer kann zu toten Zonen und dunklen Flecken führen, selbst wenn das Glas unbeschädigt ist."
     },
     "en": {
@@ -4497,7 +4497,7 @@
         "C": "Ambient light sensor damage",
         "D": "Liquid damage"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "Damage to the digitizer can cause dead zones or dark blotches even if the glass remains intact."
     }
   },
@@ -4511,7 +4511,7 @@
         "C": "Das Filament weiter hineinschieben, bis Widerstand spürbar ist",
         "D": "Das Filament zurückziehen und die Spule entfernen"
       },
-      "antwort": "D",
+      "antwort": "A",
       "erklärung": "Um das alte Filament zu entfernen, zieht man es nach dem Vorheizen zurück und nimmt die leere Spule ab, bevor man das neue Filament einlegt."
     },
     "en": {
@@ -4522,7 +4522,7 @@
         "C": "Push the filament along until resistance is felt",
         "D": "Withdraw the filament and remove the spool"
       },
-      "answer": "D",
+      "answer": "A",
       "explanation": "After preheating, the technician should withdraw the old filament and remove the empty spool before loading the new filament."
     }
   },
