@@ -12,6 +12,7 @@ export default function Quiz() {
   const [lang, setLang] = useState("de"); // Sprach-State
   const [answeredIds, setAnsweredIds] = useState([]);
   const [totalFalse, setTotalFalse] = useState(0);
+  const [isRandom, setIsRandom] = useState(false);
 
   const handleSelect = (option) => {
     setSelected(option);
@@ -53,7 +54,11 @@ export default function Quiz() {
   const nextQuestion = () => {
     setSelected("");
     setShowAnswer(false);
-    pickRandomQuestion();
+    if (isRandom) {
+      pickRandomQuestion();
+      return;
+    }
+    setCurrent(current + 1);
   };
 
   const repeatWrongQuestions = () => {
@@ -195,6 +200,12 @@ export default function Quiz() {
           )}
         </CardContent>
       </Card>
+      <Button
+        className="fixed bottom-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
+        onClick={() => setIsRandom(!isRandom)}
+      >
+        {isRandom ? (lang === "de" ? "Zufällige Fragen: Ein" : "Random Questions: On") : (lang === "de" ? "Zufällige Fragen: Aus" : "Random Questions: Off")}
+      </Button>
     </div>
   );
 }
