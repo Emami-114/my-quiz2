@@ -4948,7 +4948,7 @@
         "C": "1 TB SATA SSD",
         "D": "1 TB SAS"
       },
-      "antwort": "A",
+      "antwort": "C",
       "erklärung": "NVMe-SSDs bieten deutlich höhere Bandbreiten und geringere Latenzen als SATA-SSDs oder SAS-Festplatten und sind daher die schnellste Option."
     },
     "en": {
@@ -4959,7 +4959,7 @@
         "C": "1 TB SATA SSD",
         "D": "1 TB SAS"
       },
-      "answer": "A",
+      "answer": "C",
       "explanation": "NVMe SSDs deliver the highest throughput and lowest latency compared to SATA SSDs and SAS HDDs, making them the fastest storage option."
     }
   },
@@ -5125,7 +5125,7 @@
         "C": "DNS-Adresse auf 1.1.1.1 ändern",
         "D": "Gruppenrichtlinien-Einstellungen aktualisieren"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Durch eine offizielle Ausnahme vom Proxy kann der Techniker das Update herunterladen, ohne Unternehmensrichtlinien zu verletzen."
     },
     "en": {
@@ -5136,7 +5136,7 @@
         "C": "Change the DNS address to 1.1.1.1",
         "D": "Update the Group Policy settings"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "Requesting a proxy exception from IT allows the necessary traffic without breaching security policies."
     }
   },
@@ -6178,7 +6178,7 @@
         "D": "SaaS",
         "E": "PaaS"
       },
-      "antwort": "E",
+      "antwort": "D",
       "erklärung": "PaaS bietet eine Plattform zur Entwicklung und Bereitstellung von Anwendungen, ohne die Infrastruktur selbst zu verwalten."
     },
     "en": {
@@ -6190,7 +6190,7 @@
         "D": "SaaS",
         "E": "PaaS"
       },
-      "answer": "E",
+      "answer": "D",
       "explanation": "Platform as a Service (PaaS) delivers a hosted environment for building and deploying apps without managing underlying infrastructure."
     }
   },
@@ -7189,7 +7189,7 @@
         "C": "Transceiver",
         "D": "Medienkonverter"
       },
-      "antwort": "D",
+      "antwort": "B",
       "erklärung": "Ein Medienkonverter verbindet unterschiedliche Medien (z. B. Kupfer und Glasfaser) und fungiert so als Bridge."
     },
     "en": {
@@ -7200,7 +7200,7 @@
         "C": "Transceiver",
         "D": "Media converter"
       },
-      "answer": "D",
+      "answer": "B",
       "explanation": "A media converter bridges two different media types, such as copper and fiber, allowing them to communicate."
     }
   },
@@ -7621,10 +7621,10 @@
       "optionen": {
         "A": "HDD-Treiber neu installieren",
         "B": "Das RAID neu aufbauen",
-        "C": "Defekte Treiber ersetzen",
+        "C": "Ersetzen Sie die ausgefallenen Laufwerke",
         "D": "System neu starten"
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "RAID 5 toleriert einen Festplattenausfall, läuft aber mit reduzierter Leistung. Nach Austausch der defekten Platte muss das Array neu aufgebaut werden."
     },
     "en": {
@@ -7632,10 +7632,10 @@
       "options": {
         "A": "Reinstall the HDD drivers",
         "B": "Rebuild the RAID",
-        "C": "Replace the failed drivers",
+        "C": "Replace the failed drives",
         "D": "Restart the system"
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "RAID 5 operates in degraded mode after one disk failure. The failed disk must be replaced and the array rebuilt."
     }
   },
