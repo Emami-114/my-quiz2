@@ -8457,7 +8457,7 @@
         "C": "Ein Boot-Gerät ist im BIOS falsch konfiguriert",
         "D": "Das Netzwerkkabel ist abgezogen"
       },
-      "antwort": "A",
+      "antwort": "C",
       "erklärung": "Fehlende oder defekte Systemfestplatte verhindert das Auffinden des Bootlaufwerks, was zu dieser Fehlermeldung führt."
     },
     "en": {
@@ -8468,7 +8468,7 @@
         "C": "A misconfigured boot device is in the BIOS",
         "D": "The network cable is unplugged"
       },
-      "answer": "A",
+      "answer": "C",
       "explanation": "This error typically means the system cannot detect or access the boot drive—often due to HDD failure or disconnection."
     }
   },
@@ -8507,7 +8507,7 @@
         "C": "Eine neue Fixiereinheit (Fuser) installieren",
         "D": "Die Tonerkartusche ersetzen"
       },
-      "antwort": "D",
+      "antwort": "C",
       "erklärung": "Vertikale Linien entstehen meist durch einen fehlerhaften oder leeren Tonerbehälter. Ein Austausch der Kartusche ist der erste Schritt."
     },
     "en": {
@@ -8518,7 +8518,7 @@
         "C": "Install a new fuser",
         "D": "Replace the toner cartridge"
       },
-      "answer": "D",
+      "answer": "C",
       "explanation": "Vertical lines are commonly caused by a defective or empty toner cartridge; replacing it often clears the defect."
     }
   },
@@ -8963,7 +8963,7 @@
         "C": "Das alte Telefon hat andere Hardware",
         "D": "Das alte Telefon nutzt andere Wireless-Protokolle"
       },
-      "antwort": "D",
+      "antwort": "A",
       "erklärung": "Unterschiedliche Wireless-Protokolle (z. B. Wi-Fi Direct vs. Bluetooth) zwischen den Geräten können die direkte Datenübertragung verhindern."
     },
     "en": {
@@ -8974,7 +8974,7 @@
         "C": "The older phone had different hardware",
         "D": "The older phone utilized different wireless protocols"
       },
-      "answer": "D",
+      "answer": "A",
       "explanation": "Incompatible wireless protocols (e.g., one device using Wi-Fi Direct, the other using Bluetooth) can break peer-to-peer transfers."
     }
   },
@@ -10177,7 +10177,7 @@
         "C": "Firmware version",
         "D": "Location"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "The transmit power settings of the access point determine how strong the Wi-Fi signal is. If the transmit power is too low, the Wi-Fi network will have slow connection speeds and poor coverage. If the transmit power is too high, the Wi-Fi network will interfere with other nearby networks and devices, causing congestion and performance issues. Therefore, the technician should check the transmit power settings first and adjust them to an optimal level for the office environment."
     },
     "de": {
@@ -10188,7 +10188,7 @@
         "C": "Firmware-Version",
         "D": "Standort"
       },
-      "antwort": "A",
+      "antwort": "D",
       "explanation": "Die Sendeleistungseinstellungen des Access Points bestimmen, wie stark das WLAN-Signal ist. Wenn die Sendeleistung zu niedrig ist, hat das WLAN-Netzwerk langsame Verbindungsgeschwindigkeiten und eine schlechte Abdeckung. Wenn die Sendeleistung zu hoch ist, stört das WLAN-Netzwerk andere nahegelegene Netzwerke und Geräte, was zu Überlastung und Leistungsproblemen führt. Daher sollte der Techniker zuerst die Sendeleistungseinstellungen überprüfen und sie auf ein optimales Niveau für die Büroumgebung einstellen."
     }
   },
@@ -10378,7 +10378,7 @@
         "D": "Toner tank",
         "E": "Resin"
       },
-      "answer": "C",
+      "answer": "D",
       "explanation": "In a color laser printer, each color (Cyan, Magenta, Yellow, Black) typically has its own toner cartridge and often a corresponding section on the imaging drum(s). If a single color like yellow is consistently missing after cleaning cycles have been run (and assuming the yellow toner cartridge/tank (D) is not empty), the issue often lies with the imaging drum (C) section responsible for transferring the yellow toner to the paper. Wear or damage to this specific part of the drum can prevent yellow from being printed. The fuser (A) melts toner onto the paper and affects all colors. Ink cartridges (B) are used in inkjet printers. Resin (E) is used in 3D printing."
     },
     "de": {
@@ -10390,7 +10390,7 @@
         "D": "Tonertank",
         "E": "Harz"
       },
-      "antwort": "C",
+      "antwort": "D",
       "explanation": "In einem Farblaserdrucker hat jede Farbe (Cyan, Magenta, Gelb, Schwarz) typischerweise ihre eigene Tonerkartusche und oft einen entsprechenden Abschnitt auf der/den Bildtrommel(n). Wenn eine einzelne Farbe wie Gelb nach dem Durchführen von Reinigungszyklen konstant fehlt (und angenommen wird, dass die gelbe Tonerkartusche/der Tonertank (D) nicht leer ist), liegt das Problem oft bei dem Abschnitt der Bildtrommel (C), der für die Übertragung des gelben Toners auf das Papier verantwortlich ist. Verschleiß oder Beschädigung dieses spezifischen Teils der Trommel kann verhindern, dass Gelb gedruckt wird. Die Fixiereinheit (A) schmilzt den Toner auf das Papier und betrifft alle Farben. Tintenpatronen (B) werden in Tintenstrahldruckern verwendet. Harz (E) wird im 3D-Druck verwendet."
     }
   },
@@ -10554,7 +10554,7 @@
         "C": "M.2 SATA SSD",
         "D": "SCSI 15,000rpm HDD"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "Clicking sounds from the storage area are a definitive sign of a failing mechanical Hard Disk Drive (HDD). When replacing a failing drive, upgrading to a Solid State Drive (SSD) is highly recommended for significant performance and reliability improvements. Among SSD options commonly found in laptops, NVMe SSDs (B) offer the highest performance by utilizing the PCIe bus, provided the laptop's motherboard has an M.2 slot with NVMe support. M.2 SATA SSDs (C) use the same M.2 form factor but are limited by SATA speeds, though still much faster than HDDs. Replacing with another HDD (A) resolves the failure but retains the slow speed and mechanical vulnerability. SCSI drives (D) are not used in typical laptops."
     },
     "de": {
@@ -10565,7 +10565,7 @@
         "C": "M.2 SATA SSD",
         "D": "SCSI 15.000 U/min HDD"
       },
-      "antwort": "B",
+      "antwort": "A",
       "explanation": "Klickende Geräusche aus dem Speicherbereich sind ein eindeutiges Zeichen für eine ausfallende mechanische Festplatte (HDD). Beim Austausch eines ausfallenden Laufwerks wird dringend empfohlen, auf ein Solid State Drive (SSD) aufzurüsten, um erhebliche Leistungs- und Zuverlässigkeitsverbesserungen zu erzielen. Unter den SSD-Optionen, die häufig in Laptops zu finden sind, bieten NVMe SSDs (B) die höchste Leistung durch die Nutzung des PCIe-Busses, vorausgesetzt, das Motherboard des Laptops verfügt über einen M.2-Steckplatz mit NVMe-Unterstützung. M.2 SATA SSDs (C) verwenden denselben M.2-Formfaktor, sind jedoch durch SATA-Geschwindigkeiten begrenzt, obwohl sie immer noch viel schneller als HDDs sind. Ein Austausch gegen eine andere HDD (A) behebt den Ausfall, behält aber die langsame Geschwindigkeit und mechanische Anfälligkeit bei. SCSI-Laufwerke (D) werden nicht in typischen Laptops verwendet."
     }
   },
@@ -11314,7 +11314,7 @@
         "C": "Establish a plan of action to resolve the problem and implement the solution.",
         "D": "Document the findings, actions, and outcomes."
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "According to the CompTIA troubleshooting methodology, after establishing a theory of probable cause (suspecting the power supply), the next step is to test the theory. Before testing, conducting research based on the observed symptoms helps confirm or refine the theory. This involves checking common failure signs for the suspected component (power supply) against the symptoms presented by the PC. This step precedes formulating an action plan or documenting results."
     },
     "de": {
@@ -11325,7 +11325,7 @@
         "C": "Einen Aktionsplan zur Lösung des Problems erstellen und die Lösung implementieren.",
         "D": "Die Ergebnisse, Maßnahmen und Resultate dokumentieren."
       },
-      "antwort": "B",
+      "antwort": "C",
       "explanation": "Gemäß der CompTIA-Fehlerbehebungsmethodik ist der nächste Schritt nach der Aufstellung einer Theorie über die wahrscheinliche Ursache (Verdacht auf das Netzteil) das Testen der Theorie. Vor dem Testen hilft die Recherche basierend auf den beobachteten Symptomen, die Theorie zu bestätigen oder zu verfeinern. Dies beinhaltet die Überprüfung häufiger Ausfallanzeichen für die verdächtige Komponente (Netzteil) im Vergleich zu den vom PC gezeigten Symptomen. Dieser Schritt geht der Formulierung eines Aktionsplans oder der Dokumentation der Ergebnisse voraus."
     }
   },
@@ -11364,7 +11364,7 @@
         "C": "DHCP server",
         "D": "Default gateway"
       },
-      "answer": "D",
+      "answer": "B",
       "explanation": "The explanation states the user's static IP (192.168.1.20) is on a different subnet than the configured default gateway (192.168.0.1). The default gateway must be on the same logical network (subnet) as the host's IP address to route traffic outside the local network (to the internet). Therefore, the technician needs to edit the default gateway address to one within the 192.168.1.x range (e.g., 192.168.1.1)."
     },
     "de": {
@@ -11375,7 +11375,7 @@
         "C": "DHCP-Server",
         "D": "Standardgateway"
       },
-      "antwort": "D",
+      "antwort": "B",
       "explanation": "Die Erklärung besagt, dass die statische IP des Benutzers (192.168.1.20) sich in einem anderen Subnetz befindet als das konfigurierte Standardgateway (192.168.0.1). Das Standardgateway muss sich im selben logischen Netzwerk (Subnetz) wie die IP-Adresse des Hosts befinden, um den Datenverkehr außerhalb des lokalen Netzwerks (ins Internet) weiterzuleiten. Daher muss der Techniker die Adresse des Standardgateways auf eine Adresse im Bereich 192.168.1.x ändern (z. B. 192.168.1.1)."
     }
   },
@@ -11389,7 +11389,7 @@
         "C": "Bench test the laptop.",
         "D": "Run a firmware update."
       },
-      "answer": "D",
+      "answer": "B",
       "explanation": "Firmware controls hardware components. Updates can improve performance, stability, and compatibility, and fix bugs. Since basic software troubleshooting failed, updating firmware might resolve the slowness, especially if it's outdated or corrupted."
     },
     "de": {
@@ -11400,7 +11400,7 @@
         "C": "Den Laptop einem Bench-Test unterziehen.",
         "D": "Ein Firmware-Update durchführen."
       },
-      "antwort": "D",
+      "antwort": "B",
       "explanation": "Firmware steuert Hardwarekomponenten. Updates können Leistung, Stabilität und Kompatibilität verbessern sowie Fehler beheben. Da die grundlegende Software-Fehlerbehebung fehlgeschlagen ist, könnte ein Firmware-Update die Langsamkeit beheben, insbesondere wenn die Firmware veraltet oder beschädigt ist."
     }
   },
@@ -11670,7 +11670,7 @@
         "C": "Das Netzteil ersetzen.",
         "D": "Die RAM-Timings verringern."
       },
-      "antwort": "C",
+      "antwort": "A",
       "erklärung": "Ein Netzteil (PSU) wandelt Wechselstrom aus der Steckdose in Gleichstrom um, den die PC-Komponenten nutzen können. Ein defektes oder ausfallendes Netzteil kann zufällige Systemabstürze verursachen. Der Techniker sollte das Netzteil testen oder gegen ein bekannt funktionierendes austauschen, um zu prüfen, ob das Problem dadurch behoben wird."
     },
     "en": {
@@ -11681,7 +11681,7 @@
         "C": "Replace the PSU.",
         "D": "Decrease the RAM timings."
       },
-      "answer": "C",
+      "answer": "A",
       "explanation": "A PSU (power supply unit) converts AC power from the wall outlet into DC power that the PC components can use. A faulty or failing PSU can cause random system crashes. The technician should test the PSU or swap it with a known good one to see if the issue is resolved."
     }
   },
@@ -11722,7 +11722,7 @@
         "E": "Heizelement",
         "F": "Raumtemperatur"
       },
-      "antwort": "C,E",
+      "antwort": "F,E",
       "erklärung": "Ein 3-Zoll-Kassendrucker ist ein Thermodrucker, der Hitze verwendet, um auf speziellem Thermopapier zu drucken. Wenn der Drucker nur vollständig schwarze Belege druckt, könnte das Heizelement überhitzen oder defekt sein, oder die Rollen könnten verschmutzt oder beschädigt sein, wodurch das Papier am Heizelement kleben bleibt und verbrennt. Diese beiden Komponenten sollten überprüft werden."
     },
     "en": {
@@ -11735,7 +11735,7 @@
         "E": "Heating element",
         "F": "Room temperature"
       },
-      "answer": "C,E",
+      "answer": "F,E",
       "explanation": "A 3in point-of-sale printer is a thermal printer that uses heat to print on special thermal paper. If the printer is only printing fully black receipts, the heating element might be overheating or malfunctioning, or the rollers might be dirty or damaged, causing the paper to stick to the heating element and burn. These two components should be checked."
     }
   },
@@ -11774,7 +11774,7 @@
         "C": "Bluetooth",
         "D": "Hotspot"
       },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Tethering ist der Prozess, die Internet-Datenverbindung eines Mobilgeräts mit anderen Geräten wie Laptops oder Tablets zu teilen. Dies kann über einen Wi-Fi-Hotspot, Bluetooth oder ein USB-Kabel erfolgen. Ein PAN (Personal Area Network) kann durch Tethering erstellt werden, um einer Gruppe von Benutzern Internetzugang zu bieten."
     },
     "en": {
@@ -11785,7 +11785,7 @@
         "C": "Bluetooth",
         "D": "Hotspot"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "Tethering is the process of sharing a mobile device's internet data connection with other devices like laptops or tablets. This can be done via a Wi-Fi hotspot, Bluetooth, or USB cable. A PAN (Personal Area Network) can be created through tethering to provide internet access to a group of users."
     }
   },
@@ -11799,7 +11799,7 @@
         "C": "Die physischen Server drosseln aufgrund von Überhitzung.",
         "D": "Die physischen Server konkurrieren um Ressourcen."
       },
-      "antwort": "C",
+      "antwort": "D",
       "erklärung": "Die physischen Server drosseln wahrscheinlich aufgrund von Überhitzung, was bedeutet, dass sie ihre Leistung reduzieren, um Schäden durch übermäßige Hitze zu vermeiden. Dies kann dazu führen, dass virtuelle Maschinen langsam laufen, da sie von den Ressourcen der physischen Server abhängen. Eine angemessene Kühlung und Überwachung der Temperatur sind notwendig, um dies zu vermeiden."
     },
     "en": {
@@ -11810,7 +11810,7 @@
         "C": "The physical servers are throttling due to overheating.",
         "D": "The physical servers are contending for resources."
       },
-      "answer": "C",
+      "answer": "D",
       "explanation": "The physical servers are likely throttling due to overheating, meaning they are reducing performance to prevent damage from excessive heat. This can cause virtual machines to run slowly as they depend on the physical servers' resources. Adequate cooling and temperature monitoring are necessary to avoid this."
     }
   },
