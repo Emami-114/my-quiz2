@@ -137,7 +137,7 @@ export default function Quiz() {
         className="fixed top-4 center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50 "
         onClick={() => {}}
       >
-        {lang === "de" ? `total:  ${answeredIds.length} - false: ${totalFalse}` : `Total:  ${answeredIds.length} - False: ${totalFalse}`}
+        {lang === "de" ? `Total:  ${answeredIds.length} - Wrong: ${totalFalse}` : `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`}
       </Button>
       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
