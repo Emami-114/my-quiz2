@@ -206,6 +206,16 @@ export default function Quiz() {
       >
         {isRandom ? (lang === "de" ? "Zufällige Fragen: Ein" : "Random Questions: On") : (lang === "de" ? "Zufällige Fragen: Aus" : "Random Questions: Off")}
       </Button>
+      <Button
+  className="fixed bottom-4 left-4 bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
+  onClick={() => {
+    localStorage.removeItem("wrongAnswers");
+    alert(lang === "de" ? "Alle falsch beantworteten Fragen wurden gelöscht!" : "All wrong questions have been deleted!");
+    window.location.reload();
+  }}
+>
+  {lang === "de" ? "Falsche Fragen löschen" : "Delete wrong questions"}
+</Button>
     </div>
   );
 }
