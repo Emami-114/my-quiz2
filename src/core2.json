@@ -1,0 +1,2252 @@
+[
+  {
+    "id": 2,
+    "de": {
+      "frage": "Ein Techniker hat ein bekannt funktionsfähiges, kompatibles Motherboard in einem neuen Laptop eingebaut. Das Motherboard funktioniert aber nicht. Was hätte der Techniker MOSTENS tun sollen, um Schäden zu vermeiden?",
+      "optionen": {
+        "A": "Allen Schmuck ablegen",
+        "B": "Werkzeuginventar vor Gebrauch durchführen",
+        "C": "Brandschutzmaßnahmen für Elektrobrände beachten",
+        "D": "Eine ordnungsgemäße ESD-Armbandschlaufe anschließen"
+      },
+      "antwort": "D",
+      "erklärung": "Elektrostatische Entladungen können empfindliche Komponenten zerstören. Durch das Tragen eines korrekt geerdeten ESD-Armbandes wird der Techniker geerdet und die Gefahr von ESD-Schäden am Motherboard minimiert."
+    },
+    "en": {
+      "question": "A technician installed a known-good, compatible motherboard on a new laptop. However, the motherboard is not working. Which of the following should the technician MOST likely have done to prevent damage?",
+      "options": {
+        "A": "Removed all jewelry",
+        "B": "Completed an inventory of tools before use",
+        "C": "Practiced electrical fire safety",
+        "D": "Connected a proper ESD strap"
+      },
+      "answer": "D",
+      "explanation": "Electrostatic discharge can damage electronic components. Wearing a properly grounded ESD strap grounds the technician and prevents ESD damage to the motherboard."
+    }
+  },
+  {
+    "id": 3,
+    "de": {
+      "frage": "Ein Benutzer kann keine externen Webseiten auflösen, aber bestimmte IP-Adressen funktionieren. Welche Einstellung muss der Techniker MOSTENS am Arbeitsplatz ändern?",
+      "optionen": {
+        "A": "Standard-Gateway",
+        "B": "Host-Adresse",
+        "C": "Nameserver (DNS)",
+        "D": "Subnetzmaske"
+      },
+      "antwort": "C",
+      "erklärung": "Wenn nur direkte IP-Aufrufe funktionieren, liegt ein DNS-Auflösungsproblem vor. Die Konfiguration des DNS-Nameservers muss angepasst werden."
+    },
+    "en": {
+      "question": "A user cannot resolve external web pages; however, specific IP addresses work. Which of the following does the technician MOST likely need to change on the workstation?",
+      "options": {
+        "A": "Default gateway",
+        "B": "Host address",
+        "C": "Name server (DNS)",
+        "D": "Subnet mask"
+      },
+      "answer": "C",
+      "explanation": "Successful access by IP but not by name indicates DNS resolution failure. Updating the configured DNS name server will restore name resolution."
+    }
+  },
+  {
+    "id": 4,
+    "de": {
+      "frage": "Ein Techniker soll eine Backup-Methode empfehlen, die Ransomware-Angriffe bestmöglich abmildert. Nur wenige Dateien ändern sich regelmäßig, und Speicherplatz ist knapp. Welche Backup-Methode ist BESTENS geeignet?",
+      "optionen": {
+        "A": "Vollbackup",
+        "B": "Differenziell",
+        "C": "Off-Site-Backup",
+        "D": "Großvater-Vater-Sohn"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Off-Site- bzw. Offline-Backup bleibt vom produktiven Netz getrennt und ist damit gegen Ransomware geschützt. Da nur wenige Dateien geändert werden, kann die Off-Site-Lösung schlank gehalten werden."
+    },
+    "en": {
+      "question": "A technician needs to recommend the best backup method to mitigate ransomware attacks. Only a few files change regularly, and storage is a concern. Which backup method BEST addresses these concerns?",
+      "options": {
+        "A": "Full",
+        "B": "Differential",
+        "C": "Off-site",
+        "D": "Grandfather-father-son"
+      },
+      "answer": "C",
+      "explanation": "Keeping backups offline or in an off-site location isolates them from ransomware infections. With few modified files, off-site backups can be kept small and cost-effective."
+    }
+  },
+  {
+    "id": 5,
+    "de": {
+      "frage": "Ein Change Advisory Board lehnte eine Änderung ab, weil alternative Maßnahmen bei Fehlschlag fehlten. Was sollte VOR einer erneuten Freigabe aktualisiert werden?",
+      "optionen": {
+        "A": "Umfang der Änderung",
+        "B": "Risikostufe",
+        "C": "Rollback-Plan",
+        "D": "Endbenutzer-Akzeptanz"
+      },
+      "antwort": "C",
+      "erklärung": "Ein detaillierter Rollback-Plan definiert, wie bei Problemen auf den vorherigen Zustand zurückgegangen wird und ist Voraussetzung für die Genehmigung."
+    },
+    "en": {
+      "question": "A change advisory board did not approve a requested change due to the lack of alternative actions if implementation failed. Which of the following should be updated before requesting approval again?",
+      "options": {
+        "A": "Scope of change",
+        "B": "Risk level",
+        "C": "Rollback plan",
+        "D": "End-user acceptance"
+      },
+      "answer": "C",
+      "explanation": "A comprehensive rollback plan provides clear steps to restore service if the change fails, satisfying CAB requirements."
+    }
+  },
+  {
+    "id": 6,
+    "de": {
+      "frage": "Ein Benutzer hat nach der Installation einer angeblichen Performance-App Telefon­probleme, hohe Netzwerkauslastung und Sicherheitswarnungen. Welche Maßnahme sollte der Techniker ZUERST durchführen?",
+      "optionen": {
+        "A": "Auf Werkseinstellungen zurücksetzen",
+        "B": "Die betrügerische App deinstallieren",
+        "C": "Datentarif erhöhen",
+        "D": "Mobile Hotspot deaktivieren"
+      },
+      "antwort": "B",
+      "erklärung": "Die verdächtige App ist wahrscheinlich schädlich. Ihre Entfernung ist der erste Schritt, um Netzwerktraffic und Warnungen zu stoppen."
+    },
+    "en": {
+      "question": "A user is having phone issues after installing a new performance-optimizing app. Network utilization is high and security warnings appear. Which of the following should the technician perform FIRST to mitigate the issue?",
+      "options": {
+        "A": "Reset the phone to factory settings",
+        "B": "Uninstall the fraudulent application",
+        "C": "Increase the data plan limits",
+        "D": "Disable the mobile hotspot"
+      },
+      "answer": "B",
+      "explanation": "Removing the suspicious application eliminates the most likely source of malware and abnormal traffic before taking further actions."
+    }
+  },
+  {
+    "id": 7,
+    "de": {
+      "frage": "Ein Benutzer sorgt sich, dass jemand den Muster-Bildschirm­sperrcode seines Smartphones durch fortlaufende Versuche erraten könnte. Welche Funktion entschärft diese Sorge am BESTEN?",
+      "optionen": {
+        "A": "Remote-Wipe",
+        "B": "Anti-Malware",
+        "C": "Geräteverschlüsselung",
+        "D": "Beschränkung bei Fehlanmeldungen"
+      },
+      "antwort": "D",
+      "erklärung": "Sperren nach X Fehlversuchen verhindert unbegrenzte Muster-Versuche (Brute Force) und schützt das Gerät."
+    },
+    "en": {
+      "question": "A user is concerned that someone could unlock a pattern-protected phone by repeatedly guessing patterns. Which feature BEST addresses this concern?",
+      "options": {
+        "A": "Remote wipe",
+        "B": "Anti-malware",
+        "C": "Device encryption",
+        "D": "Failed-login restrictions"
+      },
+      "answer": "D",
+      "explanation": "Locking or wiping the device after a small number of failed attempts thwarts brute-force unlock attempts."
+    }
+  },
+  {
+    "id": 8,
+    "de": {
+      "frage": "Ein Techniker legt für einen Anrufer ein Ticket an. Welche Praxis stellt SICHER, dass das Ticket dem richtigen Benutzer zugeordnet bleibt?",
+      "optionen": {
+        "A": "Rückrufnummer des Benutzers im Ticket vermerken",
+        "B": "Ticket dem Power-User der Abteilung zuweisen",
+        "C": "Ticket mit eindeutiger Benutzerkennung registrieren",
+        "D": "Dem Benutzer eine eindeutige Ticketnummer geben"
+      },
+      "antwort": "D",
+      "erklärung": "Die Ticketnummer ermöglicht dem Benutzer (und jeder nachfolgenden Kommunikation) eindeutig auf dasselbe Ticket zu verweisen."
+    },
+    "en": {
+      "question": "When a technician opens a ticket on behalf of a user, which practice ensures the ticket is associated with the correct user?",
+      "options": {
+        "A": "Have the user provide a callback phone number",
+        "B": "Assign the ticket to the department’s power user",
+        "C": "Register the ticket with a unique user identifier",
+        "D": "Provide the user with a unique ticket number"
+      },
+      "answer": "D",
+      "explanation": "Giving the user the unique ticket number lets both parties track and reference the correct record on follow-up calls."
+    }
+  },
+  {
+    "id": 9,
+    "de": {
+      "frage": "Welche Windows-10-Edition bietet Remote-Desktop-Zugriff und ist dabei am kostengünstigsten?",
+      "optionen": {
+        "A": "Home",
+        "B": "Pro for Workstations",
+        "C": "Enterprise",
+        "D": "Pro"
+      },
+      "antwort": "D",
+      "erklärung": "Windows 10 Pro ist die günstigste Edition mit integriertem Remote Desktop Host. Home bietet keinen RD-Host, Workstations und Enterprise sind teurer."
+    },
+    "en": {
+      "question": "Which is the MOST cost-effective version of Windows 10 that allows Remote Desktop access?",
+      "options": {
+        "A": "Home",
+        "B": "Pro for Workstations",
+        "C": "Enterprise",
+        "D": "Pro"
+      },
+      "answer": "D",
+      "explanation": "Windows 10 Pro includes Remote Desktop hosting and is cheaper than Pro for Workstations or Enterprise. Home lacks the feature."
+    }
+  },
+  {
+    "id": 10,
+    "de": {
+      "frage": "Ein Benutzer benötigt einmal pro Woche Linux für eine Open-Source-App; Windows-Programme sollen parallel laufen. Bandbreite ist tagsüber begrenzt. Welche Lösung ist AM EFFIZIENTESTEN?",
+      "optionen": {
+        "A": "Linux in einer PaaS-Cloud ausführen",
+        "B": "Linux als VM unter Windows installieren",
+        "C": "Wechselrahmen mit getrennten Systemlaufwerken nutzen",
+        "D": "Dual-Boot-System einrichten"
+      },
+      "antwort": "B",
+      "erklärung": "Eine lokale VM erlaubt gleichzeitigen Betrieb von Linux- und Windows-Anwendungen ohne Reboot und ohne zusätzlichen Bandbreitenbedarf."
+    },
+    "en": {
+      "question": "Which solution is MOST efficient, allowing parallel execution of Linux and Windows applications while conserving bandwidth?",
+      "options": {
+        "A": "Run Linux in a PaaS cloud environment",
+        "B": "Install Linux as a virtual machine under Windows",
+        "C": "Use swappable drive bays with separate OS drives",
+        "D": "Set up a dual-boot system"
+      },
+      "answer": "B",
+      "explanation": "A locally hosted VM runs Linux alongside Windows, requiring no additional network bandwidth and enabling simultaneous application use."
+    }
+  },
+  {
+    "id": 11,
+    "de": {
+      "frage": "Ein Software-Update muss heruntergeladen werden, aber der Proxy blockiert die Seite. Was sollte der Techniker tun?",
+      "optionen": {
+        "A": "DNS-Adresse auf 1.1.1.1 ändern",
+        "B": "Gruppenrichtlinie aktualisieren",
+        "C": "Seite zur Ausnahmeliste des Clients hinzufügen",
+        "D": "Softwarelizenz überprüfen"
+      },
+      "antwort": "C",
+      "erklärung": "Durch Hinzufügen der URL zur Proxy-Ausnahmeliste kann der Client die Update-Site direkt erreichen, ohne globale Änderungen."
+    },
+    "en": {
+      "question": "A proxy is blocking traffic to a software-update site. What should the technician do?",
+      "options": {
+        "A": "Change the DNS address to 1.1.1.1",
+        "B": "Update Group Policy",
+        "C": "Add the site to the client’s exceptions list",
+        "D": "Verify the software license"
+      },
+      "answer": "C",
+      "explanation": "Placing the update URL on the proxy/browser exception list bypasses filtering for that site only, allowing the download."
+    }
+  },
+  {
+    "id": 12,
+    "de": {
+      "frage": "Welcher Dateityp wird beim Installieren neuer Software unter macOS am HÄUFIGSTEN verwendet?",
+      "optionen": {
+        "A": ".deb",
+        "B": ".vbs",
+        "C": ".exe",
+        "D": ".app"
+      },
+      "antwort": "D",
+      "erklärung": "macOS-Programme werden als Application Bundle mit der Endung .app bereitgestellt und können per Drag-and-Drop installiert werden."
+    },
+    "en": {
+      "question": "Which file type will the technician MOST likely use when installing new software on macOS?",
+      "options": {
+        "A": ".deb",
+        "B": ".vbs",
+        "C": ".exe",
+        "D": ".app"
+      },
+      "answer": "D",
+      "explanation": "macOS applications are distributed as .app bundles that the user drags into the Applications folder."
+    }
+  },
+  {
+    "id": 13,
+    "de": {
+      "frage": "Welches Umweltkriterium ist im Rechenzentrum AM WICHTIGSTEN?",
+      "optionen": {
+        "A": "Batterieentsorgung",
+        "B": "ESD-Matten",
+        "C": "Tonerentsorgung",
+        "D": "Luftfeuchtigkeit"
+      },
+      "antwort": "D",
+      "erklärung": "Zu hohe Feuchte verursacht Kondensation, zu niedrige führt zu statischer Aufladung. 40–60 % relative Luftfeuchtigkeit schützen die Hardware."
+    },
+    "en": {
+      "question": "Which environmental factor is MOST important inside a data center?",
+      "options": {
+        "A": "Battery disposal",
+        "B": "Electrostatic discharge mats",
+        "C": "Toner disposal",
+        "D": "Humidity levels"
+      },
+      "answer": "D",
+      "explanation": "Maintaining proper humidity (≈40-60 %) prevents both condensation and electrostatic buildup, reducing hardware failures."
+    }
+  },
+  {
+    "id": 14,
+    "de": {
+      "frage": "Ein Administrator richtet einen neuen Windows-PC ein. Unternehmensrichtlinie fordert Least-Privilege, der Benutzer benötigt jedoch erweiterte Einstellungen in mehreren Anwendungen. Welche Kontoart ist AM BESTEN geeignet?",
+      "optionen": {
+        "A": "Power-User",
+        "B": "Standardkonto",
+        "C": "Gastkonto",
+        "D": "Administrator"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Standardbenutzer kann Anwendungs­einstellungen ändern, aber keine systemweiten Änderungen durchführen – Least-Privilege wird eingehalten."
+    },
+    "en": {
+      "question": "Corporate policy requires least privilege. Which account type BEST meets the requirement while allowing access to advanced application settings?",
+      "options": {
+        "A": "Power user",
+        "B": "Standard account",
+        "C": "Guest account",
+        "D": "Administrator account"
+      },
+      "answer": "B",
+      "explanation": "A standard user can adjust application-level settings but cannot make system-wide changes, satisfying least privilege."
+    }
+  },
+  {
+    "id": 15,
+    "de": {
+      "frage": "Ein Change Advisory Board hat eine Änderung genehmigt. Welcher Schritt folgt MOSTENS als NÄCHSTES?",
+      "optionen": {
+        "A": "Endbenutzer-Akzeptanz",
+        "B": "Risikobewertung",
+        "C": "Kommunikation an Stakeholder",
+        "D": "Sandbox-Tests"
+      },
+      "antwort": "C",
+      "erklärung": "Nach Genehmigung werden Stakeholder informiert und der Implementierungsplan terminiert. Risikoanalyse und Tests erfolgen vor der CAB-Freigabe."
+    },
+    "en": {
+      "question": "A change advisory board just approved a change request. Which step is MOST likely next?",
+      "options": {
+        "A": "End-user acceptance",
+        "B": "Perform risk analysis",
+        "C": "Communicate to stakeholders",
+        "D": "Sandbox testing"
+      },
+      "answer": "C",
+      "explanation": "Once approved, the change schedule and impact are communicated to stakeholders before deployment."
+    }
+  },
+  {
+    "id": 16,
+    "de": {
+      "frage": "Ein Windows-10-Rechner zeigt seit einer Stunde Dauer-Festplattenaktivität mit starker Performance-Einbuße. In welchem Task-Manager-Reiter findet der Techniker die URSACHE am ehesten?",
+      "optionen": {
+        "A": "Dienste",
+        "B": "Prozesse",
+        "C": "Leistung",
+        "D": "Autostart"
+      },
+      "antwort": "B",
+      "erklärung": "Der Reiter \"Prozesse\" zeigt pro Prozess CPU-, RAM- und Datenträgerauslastung und identifiziert das verantwortliche Programm."
+    },
+    "en": {
+      "question": "A Windows 10 desktop shows constant disk activity and poor performance. Which Task Manager tab contains information to identify the cause?",
+      "options": {
+        "A": "Services",
+        "B": "Processes",
+        "C": "Performance",
+        "D": "Startup"
+      },
+      "answer": "B",
+      "explanation": "The Processes tab lists each process’s CPU, memory, and disk usage, allowing identification of the culprit."
+    }
+  },
+  {
+    "id": 17,
+    "de": {
+      "frage": "Beim Öffnen des Browsers erscheinen Pop-ups, die 137 Viren melden und Zahlung verlangen. Welche Schritte beheben das Problem MOSTENS? (Wähle ZWEI.)",
+      "optionen": {
+        "A": "Computer mit Firmen-Antivirus scannen",
+        "B": "Neue Festplatte einbauen und klonen",
+        "C": "Ad-Blocking-Erweiterung im Browser installieren",
+        "D": "Firmen-Antivirus deinstallieren",
+        "E": "Link anklicken und bezahlen",
+        "F": "Browser zurücksetzen"
+      },
+      "antwort": ["C","F"],
+      "erklärung": "Die Pop-ups stammen meist von unseriösen Scripts/Erweiterungen. Ein Browser-Reset entfernt schädliche Add-ons; ein Ad-Blocker verhindert künftige Pop-ups."
+    },
+    "en": {
+      "question": "Pop-ups claim the PC is infected and request payment. Messages appear only when the browser opens. Which steps will MOST likely resolve the issue? (Select TWO.)",
+      "options": {
+        "A": "Scan with company-provided AV",
+        "B": "Install new HDD and clone",
+        "C": "Deploy an ad-blocking extension",
+        "D": "Uninstall company AV",
+        "E": "Click the link and pay",
+        "F": "Reset the web browser"
+      },
+      "answer": ["C","F"],
+      "explanation": "Resetting the browser removes malicious add-ons, and an ad-blocker prevents further pop-ups. No payment or hardware replacement is required."
+    }
+  },
+  {
+    "id": 18,
+    "de": {
+      "frage": "Ein Bericht erwähnt, dass Angreifer Remote-Access-Konten durch Passwort-Bruteforce kompromittierten. Welche Maßnahmen begrenzen das Risiko für die Bank BESTENS? (Wähle ZWEI.)",
+      "optionen": {
+        "A": "Multi-Factor-Authentifizierung für Support-Konten aktivieren",
+        "B": "Remotezugriff nur auf interne Ziele beschränken",
+        "C": "Logins aus dem Ausland blockieren",
+        "D": "Remote-Tool ersetzen",
+        "E": "Passwort-Manager anschaffen",
+        "F": "Account-Lockout nach fünf Fehlversuchen erzwingen"
+      },
+      "antwort": ["A","F"],
+      "erklärung": "MFA stoppt die meisten Bruteforce-Angriffe. Account-Lockouts begrenzen automatisierte Passwort-Versuche und alarmieren bei Angriffen."
+    },
+    "en": {
+      "question": "Which actions would BEST limit the bank’s risk from brute-force attacks on remote-access accounts? (Select TWO.)",
+      "options": {
+        "A": "Enable multifactor authentication for each support account",
+        "B": "Limit remote access to internal destinations",
+        "C": "Block support logins from foreign countries",
+        "D": "Replace the remote-access tool",
+        "E": "Purchase a password manager",
+        "F": "Enforce account lockouts after five bad password attempts"
+      },
+      "answer": ["A","F"],
+      "explanation": "MFA adds an additional verification factor, and account lockout policies stop repeated guessing, greatly reducing brute-force success."
+    }
+  },
+  {
+    "id": 19,
+    "de": {
+      "frage": "Welches Tool nutzt ein Techniker unter macOS, um eine Partition auf dem internen Laufwerk zu vergrößern oder verkleinern?",
+      "optionen": {
+        "A": "Console",
+        "B": "Festplattendienstprogramm",
+        "C": "Time Machine",
+        "D": "FileVault"
+      },
+      "antwort": "B",
+      "erklärung": "Das Festplattendienstprogramm ermöglicht das Verwalten und Resizen von Partitionen auf macOS-Systemen."
+    },
+    "en": {
+      "question": "A technician must resize a partition on an internal drive in macOS. Which tool should be used?",
+      "options": {
+        "A": "Console",
+        "B": "Disk Utility",
+        "C": "Time Machine",
+        "D": "FileVault"
+      },
+      "answer": "B",
+      "explanation": "Disk Utility is the built-in macOS tool for manipulating partitions and volumes."
+    }
+  },
+  {
+    "id": 20,
+    "de": {
+      "frage": "Ein Unternehmen überträgt vertrauliche Daten per USB-Stick zwischen Büros. Medien müssen laut Compliance im Ruhezustand verschlüsselt sein. Welche Maßnahme sichert den aktuellen Workflow BESTENS?",
+      "optionen": {
+        "A": "Zweite Festplatte mit Verschlüsselung installieren",
+        "B": "Hardened-SFTP-Portal einrichten",
+        "C": "Dateien einzeln passwortschützen",
+        "D": "BitLocker To Go mit konformem Passwort aktivieren"
+      },
+      "antwort": "D",
+      "erklärung": "BitLocker To Go verschlüsselt komplette USB-Sticks transparent und erfüllt die Vorgabe „Verschlüsselung ruhender Daten“, ohne den Arbeitsablauf zu ändern."
+    },
+    "en": {
+      "question": "Which solution BEST secures the current workflow of transferring sensitive data via USB drives while meeting the requirement that media at rest be encrypted?",
+      "options": {
+        "A": "Deploy a secondary encrypted hard drive",
+        "B": "Configure a hardened SFTP portal",
+        "C": "Password-protect each file individually",
+        "D": "Enable BitLocker To Go with a compliant password"
+      },
+      "answer": "D",
+      "explanation": "BitLocker To Go provides full-disk encryption for removable drives, securing data at rest without changing the established USB workflow."
+    }
+  },
+  {
+    "id": 21,
+    "de": {
+      "frage": "Unternehmensrichtlinie verlangt Full-Disk-Encryption für mobile Windows-Geräte. Welche Verschlüsselungslösung sollte der Techniker auswählen?",
+      "optionen": {
+        "A": "Encrypting File System (EFS)",
+        "B": "FileVault",
+        "C": "BitLocker",
+        "D": "Encrypted LVM"
+      },
+      "antwort": "C",
+      "erklärung": "BitLocker bietet vollständige Laufwerksverschlüsselung für Windows-Systeme und erfüllt die Policy-Anforderung."
+    },
+    "en": {
+      "question": "Corporate policy requires full-disk encryption on all mobile Windows laptops. Which encryption solution should the technician choose?",
+      "options": {
+        "A": "Encrypting File System",
+        "B": "FileVault",
+        "C": "BitLocker",
+        "D": "Encrypted LVM"
+      },
+      "answer": "C",
+      "explanation": "BitLocker provides full-disk encryption natively on Windows and is the appropriate solution for policy compliance."
+    }
+  },
+  {
+    "id": 22,
+    "de": {
+      "frage": "Welcher Aspekt muss während des gesamten forensischen Lebenszyklus eines Beweisstücks aufrechterhalten werden?",
+      "optionen": {
+        "A": "Acceptable-Use-Policy",
+        "B": "Chain of Custody",
+        "C": "Sicherheitsrichtlinie",
+        "D": "Informationsmanagement"
+      },
+      "antwort": "B",
+      "erklärung": "Die Chain of Custody dokumentiert jeden Besitz- und Standortwechsel des Beweises und wahrt dessen Integrität."
+    },
+    "en": {
+      "question": "Which of the following must be maintained throughout the forensic evidence life cycle?",
+      "options": {
+        "A": "Acceptable use",
+        "B": "Chain of custody",
+        "C": "Security policy",
+        "D": "Information management"
+      },
+      "answer": "B",
+      "explanation": "A documented chain of custody preserves the integrity and admissibility of evidence from collection to court presentation."
+    }
+  },
+  {
+    "id": 23,
+    "de": {
+      "frage": "Ein CAD-Upgrade speichert Backups nur in der Cloud des Herstellers. Welche Sorge hat der IT-Manager höchstwahrscheinlich?",
+      "optionen": {
+        "A": "Alle Systeme müssen vorab getestet werden",
+        "B": "Zusätzliche Technikerstunden für Installation",
+        "C": "Stark erhöhte Netzwerkauslastung durch CAD-Dateien",
+        "D": "Lokale Festplatten werden überlastet"
+      },
+      "antwort": "C",
+      "erklärung": "Große CAD-Dateien, die regelmäßig in die Cloud hochgeladen werden, können das WAN stark belasten und andere Dienste beeinträchtigen."
+    },
+    "en": {
+      "question": "An architecture firm’s new CAD version forces backups to the vendor’s cloud. Which concern is MOST likely for the IT manager?",
+      "options": {
+        "A": "All updated software must be tested",
+        "B": "Extra technician hours during installation",
+        "C": "Network utilization will increase significantly",
+        "D": "Local hard drives will be overloaded"
+      },
+      "answer": "C",
+      "explanation": "Uploading large CAD files to the cloud will consume considerable bandwidth, potentially saturating network links."
+    }
+  },
+  {
+    "id": 24,
+    "de": {
+      "frage": "Ein WLAN weist Interferenzen durch benachbarte SSIDs auf. Welche Maßnahme behebt dies am BESTEN?",
+      "optionen": {
+        "A": "Kanal wechseln",
+        "B": "WLAN-Sicherheit ändern",
+        "C": "SSID-Broadcast deaktivieren",
+        "D": "Access-Point-Name ändern"
+      },
+      "antwort": "A",
+      "erklärung": "Durch Auswahl eines überlappungsfreien Kanals (z. B. 1, 6 oder 11 bei 2,4 GHz) wird Überschneidung reduziert und Störungen werden minimiert."
+    },
+    "en": {
+      "question": "A wireless network experiences interference from nearby SSIDs. Which action BEST resolves the interference?",
+      "options": {
+        "A": "Changing channels",
+        "B": "Modifying wireless security",
+        "C": "Disabling SSID broadcast",
+        "D": "Changing the access-point name"
+      },
+      "answer": "A",
+      "explanation": "Selecting a less-crowded channel reduces co-channel interference from neighboring networks."
+    }
+  },
+  {
+    "id": 25,
+    "de": {
+      "frage": "Ein Techniker vermutet einen Rootkit-Befall. Welche Maßnahme beseitigt das Problem AM BESTEN?",
+      "optionen": {
+        "A": "Anwendungs-Updates",
+        "B": "Anti-Malware-Software",
+        "C": "Neuinstallation des Betriebssystems",
+        "D": "Dateiwiederherstellung"
+      },
+      "antwort": "C",
+      "erklärung": "Rootkits verbergen sich auf niedriger Ebene. Eine saubere OS-Neuinstallation ist die zuverlässigste Entfernungsmethode."
+    },
+    "en": {
+      "question": "A technician suspects a rootkit is installed. Which action would BEST resolve the issue?",
+      "options": {
+        "A": "Application updates",
+        "B": "Anti-malware software",
+        "C": "OS reinstallation",
+        "D": "File restore"
+      },
+      "answer": "C",
+      "explanation": "Because rootkits operate at the kernel level and avoid detection, wiping and reinstalling the OS is the most reliable removal method."
+    }
+  },
+  {
+    "id": 26,
+    "de": {
+      "frage": "Ein Windows-10-PC lädt nachts Updates und danach starten Anwendungen nicht mehr. Was ist der ERSTE Troubleshooting-Schritt?",
+      "optionen": {
+        "A": "Open-Source-Alternativen installieren",
+        "B": "CPU- und RAM-Tests durchführen",
+        "C": "Installierte Patches prüfen und einzeln zurückrollen",
+        "D": "Festplatte formatieren und Windows neu installieren"
+      },
+      "antwort": "C",
+      "erklärung": "Fehlerhafte Updates sind häufige Ursachen. Durch schrittweises Deinstallieren neuer Patches lässt sich der Verursacher identifizieren."
+    },
+    "en": {
+      "question": "Applications fail to load after an overnight reboot on a Windows 10 PC. What is the FIRST troubleshooting step?",
+      "options": {
+        "A": "Install alternate open-source software",
+        "B": "Run CPU and memory tests",
+        "C": "Check for installed patches and roll them back one at a time",
+        "D": "Reformat the drive and reinstall Windows"
+      },
+      "answer": "C",
+      "explanation": "Recent updates often cause post-reboot issues. Rolling back patches individually isolates the problematic update without drastic action."
+    }
+  },
+  {
+    "id": 27,
+    "de": {
+      "frage": "Ein POS-Rechner verarbeitet Kreditkartendaten. Welche Verschlüsselung schützt ihn im Diebstahlsfall am BESTEN?",
+      "optionen": {
+        "A": "Daten-in-Transit-Verschlüsselung",
+        "B": "Dateiverschlüsselung",
+        "C": "USB-Laufwerksverschlüsselung",
+        "D": "Festplattenverschlüsselung"
+      },
+      "antwort": "D",
+      "erklärung": "Eine vollständige Festplattenverschlüsselung schützt alle gespeicherten Zahlungsdaten, selbst wenn das Gerät entwendet wird."
+    },
+    "en": {
+      "question": "Which encryption technology should be used to secure a POS workstation in case of theft?",
+      "options": {
+        "A": "Data-in-transit encryption",
+        "B": "File encryption",
+        "C": "USB drive encryption",
+        "D": "Disk encryption"
+      },
+      "answer": "D",
+      "explanation": "Full-disk encryption ensures all data on the stolen drive remains inaccessible without the encryption key."
+    }
+  },
+  {
+    "id": 28,
+    "de": {
+      "frage": "Nach Installation eines neuen Backup-Systems sollte zuerst welcher Backup-Typ erstellt werden?",
+      "optionen": {
+        "A": "Voll-Backup",
+        "B": "Non-Parity-Backup",
+        "C": "Differenzielles Backup",
+        "D": "Inkrementelles Backup"
+      },
+      "antwort": "A",
+      "erklärung": "Ein initiales Vollbackup bildet die Basis, auf die spätere differenzielle oder inkrementelle Sicherungen aufbauen."
+    },
+    "en": {
+      "question": "After installing a new backup system, which type of backup should be completed FIRST?",
+      "options": {
+        "A": "Full",
+        "B": "Non-parity",
+        "C": "Differential",
+        "D": "Incremental"
+      },
+      "answer": "A",
+      "explanation": "A full backup captures all data and serves as the reference for subsequent differential or incremental backups."
+    }
+  },
+  {
+    "id": 29,
+    "de": {
+      "frage": "Ein Call-Center-Techniker erklärt einem Benutzer, wie Windows zu aktualisieren ist. Welche Anweisung ist korrekt?",
+      "optionen": {
+        "A": "Dem Benutzer ein iPad empfehlen",
+        "B": "Benutzer soll Passwort per SMS senden",
+        "C": "\"Nach Updates suchen\" eintippen und Enter drücken",
+        "D": "Auf automatisches Patch warten"
+      },
+      "antwort": "C",
+      "erklärung": "Der integrierte Windows Update Dialog wird schnell über das Suchfeld \"Nach Updates suchen\" geöffnet."
+    },
+    "en": {
+      "question": "Which instruction should the technician give a user asking how to update Windows?",
+      "options": {
+        "A": "Suggest using an iPad instead",
+        "B": "Have the user text their password",
+        "C": "Ask the user to type Check for Updates in Search and press Enter",
+        "D": "Tell the user to wait for an automatic patch"
+      },
+      "answer": "C",
+      "explanation": "Typing \"Check for Updates\" in the search bar directly opens Windows Update, guiding the user through the process."
+    }
+  },
+  {
+    "id": 30,
+    "de": {
+      "frage": "Jemand ruft einen Mitarbeiter an und gibt sich fälschlich als Bank aus. Wie nennt man diesen Vorfall?",
+      "optionen": {
+        "A": "Pretexting",
+        "B": "Spoofing",
+        "C": "Vishing",
+        "D": "Scareware"
+      },
+      "antwort": "C",
+      "erklärung": "Vishing (Voice Phishing) nutzt Telefonanrufe, um sich als legitime Stelle auszugeben und sensible Daten zu ergaunern."
+    },
+    "en": {
+      "question": "Someone fraudulently claiming to be from a bank calls an employee. Which term describes this incident?",
+      "options": {
+        "A": "Pretexting",
+        "B": "Spoofing",
+        "C": "Vishing",
+        "D": "Scareware"
+      },
+      "answer": "C",
+      "explanation": "Vishing is voice-based phishing, where attackers impersonate trusted organizations via phone calls to steal information."
+    }
+  },
+  {
+    "id": 31,
+    "de": {
+      "frage": "Ein Unternehmen gibt Smartphones an Mitarbeiter aus und möchte Daten schützen, falls Geräte verloren gehen. Welche Lösung ist die BESTE?",
+      "optionen": {
+        "A": "Anti-Malware",
+        "B": "Remote-Wipe",
+        "C": "Locator-Apps",
+        "D": "Bildschirm­sperre"
+      },
+      "antwort": "B",
+      "erklärung": "Mit Remote-Wipe kann das Gerät aus der Ferne gelöscht werden, wodurch vertrauliche Unternehmensdaten geschützt werden, falls das Gerät verloren oder gestohlen wird."
+    },
+    "en": {
+      "question": "A company issues smartphones to employees and needs to ensure data is secure if devices are lost or stolen. Which provides the BEST solution?",
+      "options": {
+        "A": "Anti-malware",
+        "B": "Remote wipe",
+        "C": "Locator applications",
+        "D": "Screen lock"
+      },
+      "answer": "B",
+      "explanation": "Remote wipe allows administrators to erase data on a lost or stolen phone, preventing unauthorized access to sensitive information."
+    }
+  },
+  {
+    "id": 32,
+    "de": {
+      "frage": "Ein zehn Jahre alter SOHO-Router soll das möglichst sichere WLAN bereitstellen. Welche Einstellung muss der Techniker wählen?",
+      "optionen": { "A": "WPA2 mit TKIP", "B": "WPA2 mit AES", "C": "WPA3 mit AES-256", "D": "WPA3 mit AES-128" },
+      "antwort": "B",
+      "erklärung": "Auf sehr alten Routern steht meist nur WPA/WPA2 zur Verfügung. WPA2 in Kombination mit AES-Verschlüsselung bietet hierbei den höchsten erreichbaren Schutz."
+    },
+    "en": {
+      "question": "A ten-year-old SOHO router must be configured for the most secure wireless network possible. Which option should the technician select?",
+      "options": { "A": "WPA2 with TKIP", "B": "WPA2 with AES", "C": "WPA3 with AES-256", "D": "WPA3 with AES-128" },
+      "answer": "B",
+      "explanation": "Legacy routers rarely support WPA3. WPA2 paired with AES provides the strongest security that such hardware can offer."
+    }
+  },
+  {
+    "id": 33,
+    "de": {
+      "frage": "Eine möglichst schnelle und sichere Laptop-Anmeldung wird benötigt. Welche Anmelde­methode erfüllt beide Anforderungen am BESTEN?",
+      "optionen": { "A": "PIN", "B": "Benutzername und Passwort", "C": "SSO", "D": "Fingerabdruck" },
+      "antwort": "A",
+      "erklärung": "Eine gerätegebundene PIN (z. B. Windows Hello PIN) wird lokal geprüft, ist somit vor Netzwerk-Angriffen und Keyloggern geschützt und erlaubt eine sehr schnelle Anmeldung."
+    },
+    "en": {
+      "question": "Which log-in method is the fastest and most secure for laptops?",
+      "options": { "A": "PIN", "B": "Username and password", "C": "SSO", "D": "Fingerprint" },
+      "answer": "A",
+      "explanation": "A device-specific PIN is validated locally, is not transmitted over the network, resists key-logging, and unlocks the device very quickly."
+    }
+  },
+  {
+    "id": 34,
+    "de": {
+      "frage": "Vor dem CPU-Tausch will ein Techniker interne Komponenten schützen. Welche ZWEI Sicherheitsmaßnahmen sind dafür am BESTEN geeignet?",
+      "optionen": { "A": "ESD-Armband verwenden", "B": "Stromstecker ziehen", "C": "Netzteil in antistatische Tüte legen", "D": "Für ausreichende Belüftung sorgen", "E": "Lüfter entstauben", "F": "Geräte erden" },
+      "antwort": ["A","F"],
+      "erklärung": "Das Ableiten statischer Ladung durch ein ESD-Band und eine geerdete Arbeits­umgebung verhindert elektrostatische Schäden beim Einbau neuer Bauteile."
+    },
+    "en": {
+      "question": "Which TWO safety procedures BEST protect PC components while replacing a processor?",
+      "options": { "A": "Use an ESD strap", "B": "Unplug the computer", "C": "Place the PSU in an antistatic bag", "D": "Ensure proper ventilation", "E": "Remove dust from fans", "F": "Ensure equipment is grounded" },
+      "answer": ["A","F"],
+      "explanation": "Grounding the system and wearing an ESD strap dissipate static charges that could otherwise damage sensitive components."
+    }
+  },
+  {
+    "id": 35,
+    "de": {
+      "frage": "Nach Zurücksetzen eines Android-Geräts wurde MDM installiert. Welche ZWEI Einstellungen härten das Gerät gegen erneute Malware-Installation am BESTEN?",
+      "optionen": { "A": "Geräte-Root verhindern", "B": "Biometrische Anmeldung deaktivieren", "C": "PIN auf Sperrbildschirm verlangen", "D": "Entwicklermodus aktivieren", "E": "Installation von Drittanbieter-Apps blockieren", "F": "GPS-Spoofing verhindern" },
+      "antwort": ["C","E"],
+      "erklärung": "Eine obligatorische Display-PIN schützt vor unbefugter Nutzung, während das Blockieren von ‚Unknown Sources‘ verhindert, dass bösartige APKs installiert werden."
+    },
+    "en": {
+      "question": "Which TWO actions should an administrator take to harden a phone against future threats?",
+      "options": { "A": "Prevent device root", "B": "Disable biometric authentication", "C": "Require a PIN on the lock screen", "D": "Enable developer mode", "E": "Block third-party app installation", "F": "Prevent GPS spoofing" },
+      "answer": ["C","E"],
+      "explanation": "Requiring a PIN stops unauthorized access, and disallowing third-party APKs greatly reduces the risk of installing malicious apps again."
+    }
+  },
+  {
+    "id": 36,
+    "de": {
+      "frage": "Alte Benutzer-Festplatten sollen wiederverwendet werden. Welche Methode entfernt Daten AM SICHERSTEN?",
+      "optionen": { "A": "Windows neu installieren", "B": "Schnellformatierung", "C": "Festplatten-Wiping-Software", "D": "Dateien per CLI löschen" },
+      "antwort": "C",
+      "erklärung": "Spezialisierte Wiping-Tools überschreiben jede Sektorposition mehrmals und verhindern damit eine spätere Datenwiederherstellung."
+    },
+    "en": {
+      "question": "Which method is MOST secure for removing data so hard drives can be reused?",
+      "options": { "A": "Reinstall Windows", "B": "Perform a quick format", "C": "Use disk-wiping software", "D": "Delete all files via CLI" },
+      "answer": "C",
+      "explanation": "Disk-wiping utilities overwrite the entire drive, eliminating all remnants of previous data and thwarting forensic recovery."
+    }
+  },
+  {
+    "id": 37,
+    "de": {
+      "frage": "DHCP muss verwendet werden, aber ein Server soll stets dieselbe Adresse erhalten. Welche Funktion setzt der Techniker ein?",
+      "optionen": { "A": "DHCP-Reservierung", "B": "Port-Forwarding", "C": "DNS-A-Record", "D": "NAT" },
+      "antwort": "A",
+      "erklärung": "Eine DHCP-Reservierung weist anhand der MAC-Adresse jedes Mal dieselbe IP zu, ohne gegen das Verbot statischer Adressen zu verstoßen."
+    },
+    "en": {
+      "question": "Static IPs are disallowed, yet a server must always keep the same address. What should the technician configure?",
+      "options": { "A": "DHCP reservation", "B": "Port forwarding", "C": "DNS A record", "D": "NAT" },
+      "answer": "A",
+      "explanation": "A reservation binds the server’s MAC address to one IP lease, satisfying policy while ensuring consistent addressing."
+    }
+  },
+  {
+    "id": 38,
+    "de": {
+      "frage": "Ein Smartphone nutzt mobile Daten nicht, während SMS/Telefon funktionieren. Was ist die WAHRSCHEINLICHSTE Ursache?",
+      "optionen": { "A": "Kein Datentarif gebucht", "B": "SIM-Karte defekt", "C": "Bluetooth deaktiviert", "D": "Zu viele Apps geöffnet" },
+      "antwort": "A",
+      "erklärung": "Telefonie und SMS laufen über das Sprach-/Signalisierungsnetz. Fehlt jedoch ein Datentarif, schlagen alle Internet-Dienste über Mobilfunk fehl."
+    },
+    "en": {
+      "question": "A smartphone cannot use mobile data but can text and call. What is the MOST likely cause?",
+      "options": { "A": "Line not provisioned with a data plan", "B": "Failed SIM card", "C": "Bluetooth radio disabled", "D": "Too many apps open" },
+      "answer": "A",
+      "explanation": "Voice/SMS work without a data plan; lacking data provisioning blocks all Internet functions when Wi-Fi is unavailable."
+    }
+  },
+  {
+    "id": 39,
+    "de": {
+      "frage": "Ein Smartphone wird heiß, Apps stürzen ab und Bildschirmausrichtung passt nicht. Welche ZWEI Maßnahmen beheben mit minimalem Aufwand?",
+      "optionen": { "A": "Autorotation einschalten", "B": "Flugmodus aktivieren", "C": "Unnötige Apps schließen", "D": "Werksreset", "E": "Betriebssystem updaten", "F": "Problempapps neu installieren" },
+      "antwort": ["A","E"],
+      "erklärung": "Die fehlerhafte Ausrichtung weist auf deaktivierte Autorotation hin, während ein OS-Update Stabilitäts- und Temperaturprobleme behebt, ohne Datenverlust."
+    },
+    "en": {
+      "question": "Which TWO actions will MOST likely fix the phone’s heat, crashes and orientation issues with minimal impact?",
+      "options": { "A": "Turn on auto-rotation", "B": "Activate airplane mode", "C": "Close unnecessary apps", "D": "Factory reset", "E": "Update the OS", "F": "Reinstall crashing apps" },
+      "answer": ["A","E"],
+      "explanation": "Re-enabling auto-rotation corrects the display mode; applying OS patches addresses stability and thermal management without wiping data."
+    }
+  },
+  {
+    "id": 40,
+    "de": {
+      "frage": "Ein Laptop soll im Dock nicht schlafen, wenn der Deckel zu ist. Welche Einstellung ist korrekt?",
+      "optionen": { "A": "Energieplan – PC in den Ruhezustand (Netzbetrieb) → Nie", "B": "Energieplan – PC in den Ruhezustand (Akku) → Nie", "C": "Anzeige ausschalten (Netzbetrieb) → Nie", "D": "Wählen, was das Zuklappen des Deckels bewirkt → Bei Netzbetrieb: Nichts unternehmen" },
+      "antwort": "D",
+      "erklärung": "Die Option ‚Beim Zuklappen: Nichts unternehmen‘ verhindert den Wechsel in den Energiesparmodus, sobald der Deckel geschlossen wird."
+    },
+    "en": {
+      "question": "Which option prevents a docked laptop from sleeping when the lid is closed?",
+      "options": { "A": "Sleep (Plugged in) → Never", "B": "Sleep (On battery) → Never", "C": "Turn off display (Plugged in) → Never", "D": "Choose what closing the lid does → Plugged in: Do nothing" },
+      "answer": "D",
+      "explanation": "Setting ‘Do nothing’ for the lid-close action leaves the system running while external monitors and peripherals are used."
+    }
+  },
+  {
+    "id": 41,
+    "de": {
+      "frage": "Nach Upgrade von 32-Bit- auf 64-Bit-Windows kann das Unternehmen welchen Bestandteil endlich voll ausnutzen?",
+      "optionen": { "A": "CPU", "B": "Festplatte", "C": "RAM", "D": "Touchscreen" },
+      "antwort": "C",
+      "erklärung": "Ein 64-Bit-OS adressiert weit mehr als 4 GB RAM und beseitigt die Speichergrenze der 32-Bit-Variante."
+    },
+    "en": {
+      "question": "After moving from a 32-bit to a 64-bit Windows OS, which resource can be fully utilized?",
+      "options": { "A": "CPU", "B": "Hard drive", "C": "RAM", "D": "Touch screen" },
+      "answer": "C",
+      "explanation": "64-bit operating systems can address terabytes of memory, removing the 4 GB limitation of 32-bit systems."
+    }
+  },
+  {
+    "id": 42,
+    "de": {
+      "frage": "Welches WLAN-Protokoll gilt derzeit als am sichersten?",
+      "optionen": { "A": "WPA3", "B": "WPA-AES", "C": "WEP", "D": "WPA-TKIP" },
+      "antwort": "A",
+      "erklärung": "WPA3 implementiert zeitgemäße Verschlüsselung (SAE, 192-Bit Suite-B) und löst WPA2 als sichersten Standard ab."
+    },
+    "en": {
+      "question": "Which Wi-Fi protocol is the MOST secure?",
+      "options": { "A": "WPA3", "B": "WPA-AES", "C": "WEP", "D": "WPA-TKIP" },
+      "answer": "A",
+      "explanation": "WPA3 uses modern cryptography (SAE, forward secrecy) and supersedes WPA2 as the most secure option."
+    }
+  },
+  {
+    "id": 43,
+    "de": {
+      "frage": "Dateien sind plötzlich verschlüsselt, und der Nutzer erhielt keine Änderungen. Welche Malware ist schuld?",
+      "optionen": { "A": "Cryptominer", "B": "Phishing", "C": "Ransomware", "D": "Keylogger" },
+      "antwort": "C",
+      "erklärung": "Ransomware verschlüsselt lokale Dateien und fordert Lösegeld für den Entschlüsselungsschlüssel."
+    },
+    "en": {
+      "question": "Files suddenly show an encryption notice; no company changes occurred. Which malware type is responsible?",
+      "options": { "A": "Cryptominer", "B": "Phishing", "C": "Ransomware", "D": "Keylogger" },
+      "answer": "C",
+      "explanation": "Ransomware encrypts user files and demands payment to restore access."
+    }
+  },
+  {
+    "id": 44,
+    "de": {
+      "frage": "Ein unbekannter Prozess wurde beendet, System wieder normal, AV erkennt nichts. Wie prüft man andere Rechner AM BESTEN auf dieselbe Bedrohung?",
+      "optionen": { "A": "Startskript löscht Datei nach Name", "B": "Beispieldatei an AV-Hersteller senden", "C": "Jeden Rechner manuell prüfen", "D": "Ausgehenden Traffic überwachen" },
+      "antwort": "B",
+      "erklärung": "Das Einsenden der verdächtigen Datei ermöglicht dem Hersteller, eine Signatur zu erstellen; danach können alle Clients zentral erneut gescannt werden."
+    },
+    "en": {
+      "question": "What is the MOST effective way to check other machines for an unknown virus that current AV misses?",
+      "options": { "A": "Run a startup script deleting files by name", "B": "Provide a sample to the AV vendor", "C": "Manually check each machine", "D": "Monitor outbound traffic" },
+      "answer": "B",
+      "explanation": "Submitting the sample lets the vendor build detection signatures; enterprise updates then automatically scan every host."
+    }
+  },
+  {
+    "id": 45,
+    "de": {
+      "frage": "GPU-Temperatur ist extrem hoch, obwohl CPU/RAM normal sind. Welcher Malware-Typ ist wahrscheinlich aktiv?",
+      "optionen": { "A": "Spyware", "B": "Cryptominer", "C": "Ransomware", "D": "Boot-Sektor-Virus" },
+      "antwort": "B",
+      "erklärung": "Krypto-Miner nutzen GPU-Rechenleistung, was hohe Temperaturen verursacht und das System verlangsamt."
+    },
+    "en": {
+      "question": "GPU temperature is abnormally high while other resources are normal. Which malware is MOST likely present?",
+      "options": { "A": "Spyware", "B": "Cryptominer", "C": "Ransomware", "D": "Boot sector virus" },
+      "answer": "B",
+      "explanation": "Cryptomining malware stresses GPU cores for hash calculations, raising temperature and degrading performance."
+    }
+  },
+  {
+    "id": 46,
+    "de": {
+      "frage": "Nach Download eines ISO wird folgende Zeichenfolge angezeigt: 59d15a16ce90cBcc97fa7c211b767aB. Welchem Zweck dient sie?",
+      "optionen": { "A": "XSS-Verifikation", "B": "AES-256-Verifikation", "C": "Hash-Verifikation", "D": "Digitale Signatur" },
+      "antwort": "C",
+      "erklärung": "Die bereitgestellte Prüfsumme (Hash) ermöglicht den Abgleich, ob das heruntergeladene ISO unverändert ist."
+    },
+    "en": {
+      "question": "After downloading an ISO, a string is provided: 59d15a16ce90cBcc97fa7c211b767aB. What is its purpose?",
+      "options": { "A": "XSS verification", "B": "AES-256 verification", "C": "Hash verification", "D": "Digital signature verification" },
+      "answer": "C",
+      "explanation": "The string is a checksum; matching it verifies that the ISO was not altered during download."
+    }
+  },
+  {
+    "id": 47,
+    "de": {
+      "frage": "Welches Betriebssystem bietet eine schlanke, browserzentrierte Oberfläche für Arbeitsplätze?",
+      "optionen": { "A": "FreeBSD", "B": "Chrome OS", "C": "macOS", "D": "Windows" },
+      "antwort": "B",
+      "erklärung": "Chrome OS ist auf Web-Apps ausgelegt, bootet schnell und benötigt vergleichsweise geringe Hardware-Ressourcen."
+    },
+    "en": {
+      "question": "Which OS provides a lightweight, browser-based interface for workstations?",
+      "options": { "A": "FreeBSD", "B": "Chrome OS", "C": "macOS", "D": "Windows" },
+      "answer": "B",
+      "explanation": "Chrome OS centers on the Chrome browser and cloud apps, offering a minimal desktop footprint."
+    }
+  },
+  {
+    "id": 48,
+    "de": {
+      "frage": "Nach einem Windows-Update öffnen PDFs in Edge statt Acrobat. Welches Dienstprogramm setzt Acrobat wieder als Standard?",
+      "optionen": { "A": "Netzwerk- und Freigabecenter", "B": "Programme und Features", "C": "Standard-Apps", "D": "Programme deinstallieren" },
+      "antwort": "C",
+      "erklärung": "Unter Einstellungen → Apps → Standard-Apps kann der Dateityp .pdf erneut Adobe Reader zugewiesen werden."
+    },
+    "en": {
+      "question": "Which utility ensures all PDFs open in Adobe Reader instead of Edge?",
+      "options": { "A": "Network and Sharing Center", "B": "Programs and Features", "C": "Default Apps", "D": "Add/Remove Programs" },
+      "answer": "C",
+      "explanation": "Windows Settings → Apps → Default Apps lets you reassign the .pdf file association to Adobe Reader."
+    }
+  },
+  {
+    "id": 49,
+    "de": {
+      "frage": "Welche ZWEI Maßnahmen sichern einen Serverraum physisch am BESTEN?",
+      "optionen": { "A": "Biometrisches Schloss", "B": "Ausweis-Badge-Leser", "C": "USB-Token", "D": "Videoüberwachung", "E": "Abschließbarer Rack-Schrank", "F": "Schleusenvestibül" },
+      "antwort": ["A","B"],
+      "erklärung": "Die Kombination aus Badge-Leser (Nachvollziehbarkeit) und biometrischer Verifikation verhindert unbefugten Zutritt effektiv."
+    },
+    "en": {
+      "question": "Which TWO options BEST secure physical access to a data-center server room?",
+      "options": { "A": "Biometric lock", "B": "Badge reader", "C": "USB token", "D": "Video surveillance", "E": "Locking rack", "F": "Access-control vestibule" },
+      "answer": ["A","B"],
+      "explanation": "Badges authenticate identity while biometrics confirm the holder, providing layered physical security."
+    }
+  },
+  {
+    "id": 50,
+    "de": {
+      "frage": "Auf einem iPhone wurden während des Flugs unerwartet AirDrop-Bilder empfangen. Welche Einstellung löst das Problem am BESTEN?",
+      "optionen": { "A": "AirDrop nur von Kontakten zulassen", "B": "Alle Funkverbindungen im Flug deaktivieren", "C": "iMessage durch sichere App ersetzen", "D": "Nur Nachrichten von gespeicherten Kontakten zulassen" },
+      "antwort": "A",
+      "erklärung": "AirDrop auf ‚Nur Kontakte‘ schränkt eingehende Transfers ein und verhindert fremde Datei-Pushes."
+    },
+    "en": {
+      "question": "What should the executive do to stop unsolicited AirDrop pictures on an iPhone?",
+      "options": { "A": "Set AirDrop to accept from contacts only", "B": "Disable all wireless systems during flight", "C": "Stop using iMessage", "D": "Allow calls/messages from contacts only" },
+      "answer": "A",
+      "explanation": "Limiting AirDrop to contacts blocks unsolicited file transfers from unknown nearby devices."
+    }
+  },
+  {
+    "id": 51,
+    "de": {
+      "frage": "Eine Antivirus-Meldung unbekannter Herkunft erscheint. Welcher Schritt ist als NÄCHSTES angebracht?",
+      "optionen": { "A": "PC ausschalten und tauschen", "B": "Untersuchung der Meldung/Quelle", "C": "Vollständigen Scan über angebotene Oberfläche starten", "D": "Angegebene Telefonnummer anrufen" },
+      "antwort": "B",
+      "erklärung": "Zuerst muss verifiziert werden, ob es sich um legitime oder gefälschte AV-Software handelt, bevor weitere Maßnahmen erfolgen."
+    },
+    "en": {
+      "question": "An unfamiliar antivirus popup appears. What is the technician’s NEXT step?",
+      "options": { "A": "Shut down and swap the PC", "B": "Investigate the interface and its trigger", "C": "Run a full scan using the popup", "D": "Call the phone number in the popup" },
+      "answer": "B",
+      "explanation": "Determining whether the alert itself is malicious is crucial before trusting or acting on it."
+    }
+  },
+  {
+    "id": 52,
+    "de": {
+      "frage": "Welcher Linux-Befehl 'cat comptia.txt' zeigt den Inhalt der Datei an?",
+      "optionen": { "A": "Datei wird geleert", "B": "Datei wird angezeigt", "C": "Alphabetisch sortieren", "D": "Datei wird kopiert" },
+      "antwort": "B",
+      "erklärung": "cat gibt den Inhalt der angegebenen Textdatei auf der Konsole aus."
+    },
+    "en": {
+      "question": "What is the result of typing cat comptia.txt in a Linux terminal?",
+      "options": { "A": "Replaces the file with a blank document", "B": "Displays the file’s contents", "C": "Sorts the file alphabetically", "D": "Copies the file" },
+      "answer": "B",
+      "explanation": "The cat command concatenates or prints the contents of the specified file to stdout."
+    }
+  },
+  {
+    "id": 53,
+    "de": {
+      "frage": "Ein Smartphone soll warnen, wenn Apps heimlich Daten versenden. Welche Lösung deckt diese Anforderung am BESTEN ab?",
+      "optionen": { "A": "OS-Updates", "B": "Remote-Wipe", "C": "Antivirus", "D": "Firewall" },
+      "antwort": "D",
+      "erklärung": "Eine lokale Firewall überwacht ausgehenden Traffic, kann Verbindungen blockieren und den Benutzer bei Netzwerkzugriffen von Apps benachrichtigen."
+    },
+    "en": {
+      "question": "Which option BEST alerts a user when an app tries to access the Internet on a phone?",
+      "options": { "A": "OS updates", "B": "Remote wipe", "C": "Antivirus", "D": "Firewall" },
+      "answer": "D",
+      "explanation": "A per-app firewall controls outbound connections and notifies the user of any unexpected data transmissions."
+    }
+  },
+  {
+    "id": 54,
+    "de": {
+      "frage": "Ein Laptop mit Windows 10 Home kann keiner Domäne beitreten. Was ist der WAHRSCHEINLICHSTE Grund?",
+      "optionen": { "A": "CPU-Inkompatibilität der Domäne", "B": "Windows 10 Home installiert", "C": "Kein Ethernet-Adapter", "D": "Fehlende Windows-Updates" },
+      "antwort": "B",
+      "erklärung": "Nur Windows 10 Pro/Enterprise/Education unterstützen die Active-Directory-Domänenmitgliedschaft."
+    },
+    "en": {
+      "question": "Why can a Windows 10 laptop not join a domain?",
+      "options": { "A": "Domain CPU compatibility issue", "B": "Windows 10 Home is installed", "C": "No onboard Ethernet adapter", "D": "Missing Windows updates" },
+      "answer": "B",
+      "explanation": "The Home edition lacks the capability to join Active Directory domains."
+    }
+  },
+  {
+    "id": 55,
+    "de": {
+      "frage": "Programme verzögern den Windows-Start. Welche Vorgehensweise verhindert selektiv Autostart-Programme?",
+      "optionen": { "A": "shell:startup leeren", "B": "Registry-Run-Einträge auskommentieren", "C": "Alle Autostarts deaktivieren", "D": "Im Task-Manager Reiter Startup Einträge einzeln deaktivieren und testen" },
+      "antwort": "D",
+      "erklärung": "Der Startup-Tab des Task-Managers ermöglicht es, jeden Autostart-Eintrag getrennt auszuschalten und die Auswirkung auf den Bootvorgang zu prüfen."
+    },
+    "en": {
+      "question": "Which method selectively prevents startup programs to shorten boot time?",
+      "options": { "A": "Delete items in shell:startup", "B": "Remark out Run registry entries", "C": "Disable all startup tasks", "D": "Use Task Manager’s Startup tab to disable items one-by-one" },
+      "answer": "D",
+      "explanation": "Disabling entries individually helps identify which specific program lengthens boot time without indiscriminately disabling all."
+    }
+  },
+  {
+    "id": 56,
+    "de": {
+      "frage": "Ein Laptop soll für einen neuen Mitarbeiter vollständig aufgefrischt werden. Welche Methode ist geeignet?",
+      "optionen": { "A": "Internet-basiertes Upgrade", "B": "Reparaturinstallation", "C": "Clean Install", "D": "USB-Reparatur", "E": "In-Place-Upgrade" },
+      "antwort": "C",
+      "erklärung": "Eine Neuinstallation sorgt für ein sauberes System ohne Altlasten des Vorbenutzers."
+    },
+    "en": {
+      "question": "Which method should be used to refresh a Windows 10 laptop for a new hire?",
+      "options": { "A": "Internet-based upgrade", "B": "Repair installation", "C": "Clean install", "D": "USB repair", "E": "In-place upgrade" },
+      "answer": "C",
+      "explanation": "A clean install removes all previous data and applications, ensuring a pristine environment."
+    }
+  },
+  {
+    "id": 57,
+    "de": {
+      "frage": "Kryptomining auf Arbeits-PCs verstößt nun gegen Richtlinien. Welches Dokument ist zu aktualisieren?",
+      "optionen": { "A": "MDM-Richtlinie", "B": "EULA", "C": "Incident-Response-Plan", "D": "AUP" },
+      "antwort": "D",
+      "erklärung": "Die Acceptable-Use-Policy definiert, welche Nutzungen der Unternehmensressourcen erlaubt oder verboten sind."
+    },
+    "en": {
+      "question": "Which document should be updated to forbid cryptocurrency mining on work desktops?",
+      "options": { "A": "MDM policy", "B": "EULA", "C": "IRP", "D": "AUP" },
+      "answer": "D",
+      "explanation": "An updated Acceptable Use Policy formally bans mining and informs all employees."
+    }
+  },
+  {
+    "id": 58,
+    "de": {
+      "frage": "Ein PC ist mit Ransomware infiziert. Was ist der ERSTE Schritt des Technikers?",
+      "optionen": { "A": "Malware scannen und entfernen", "B": "Automatische Scans planen", "C": "System isolieren/quarantänisieren", "D": "Systemwiederherstellung deaktivieren" },
+      "antwort": "C",
+      "erklärung": "Die sofortige Isolation verhindert weitere Verschlüsselung im Netz oder auf gemappten Laufwerken."
+    },
+    "en": {
+      "question": "A PC is infected with ransomware. What should the technician do FIRST?",
+      "options": { "A": "Scan and remove malware", "B": "Schedule automated scans", "C": "Quarantine the system", "D": "Disable System Restore" },
+      "answer": "C",
+      "explanation": "Isolating the system stops the spread and preserves evidence for analysis."
+    }
+  },
+  {
+    "id": 59,
+    "de": {
+      "frage": "Windows-Hello-Fingerabdruck soll eingerichtet werden. Welcher Pfad ist korrekt?",
+      "optionen": { "A": "Systemsteuerung → Sicherheit u. Wartung", "B": "Einstellungen → Konten → Anmeldeoptionen → Windows Hello Fingerabdruck", "C": "Einstellungen → Update & Sicherheit → Windows-Sicherheit", "D": "Systemsteuerung → Verwaltung" },
+      "antwort": "B",
+      "erklärung": "Die Fingerprint-Einrichtung befindet sich in den Konto-Anmeldeoptionen von Windows 10."
+    },
+    "en": {
+      "question": "Which path sets up Windows Hello Fingerprint?",
+      "options": { "A": "Control Panel → Security and Maintenance", "B": "Settings → Accounts → Sign-in options → Windows Hello Fingerprint", "C": "Settings → Update & Security → Windows Security", "D": "Control Panel → Administrative Tools" },
+      "answer": "B",
+      "explanation": "Windows Hello enrollment is managed under Account sign-in options."
+    }
+  },
+  {
+    "id": 60,
+    "de": {
+      "frage": "Ein stark fragmentiertes Laufwerk wird vermutet. Welches Tool startet die Defragmentierung?",
+      "optionen": { "A": "resmon.exe", "B": "msconfig.exe", "C": "dfrgui.exe", "D": "msinfo32.exe" },
+      "antwort": "C",
+      "erklärung": "dfrgui.exe öffnet die grafische Defragmentierungs-Oberfläche unter Windows."
+    },
+    "en": {
+      "question": "Which tool launches disk defragmenter in Windows?",
+      "options": { "A": "resmon.exe", "B": "msconfig.exe", "C": "dfrgui.exe", "D": "msinfo32.exe" },
+      "answer": "C",
+      "explanation": "dfrgui.exe opens the ‘Defragment and Optimize Drives’ utility."
+    }
+  },
+  {
+    "id": 61,
+    "de": {
+      "frage": "Welches Tool hilft einem Techniker, wenn ein PC allgemein langsam ist?",
+      "optionen": { "A": "Datenträgerbereinigung", "B": "Gruppenrichtlinien-Editor", "C": "Datenträgerverwaltung", "D": "Ressourcenmonitor" },
+      "antwort": "D",
+      "erklärung": "Resource Monitor zeigt live CPU-, RAM-, Disk- und Netzwerk­auslastung und hilft Engpässe zu identifizieren."
+    },
+    "en": {
+      "question": "Which Windows utility helps identify why a PC is running slowly?",
+      "options": { "A": "Disk Cleanup", "B": "Group Policy Editor", "C": "Disk Management", "D": "Resource Monitor" },
+      "answer": "D",
+      "explanation": "Resource Monitor provides real-time CPU, memory, disk and network statistics to pinpoint bottlenecks."
+    }
+  },
+  {
+    "id": 62,
+    "de": {
+      "frage": "Desktop kann sich nicht an Domäne anmelden; Laptop funktioniert. Ursache ist wahrscheinlich?",
+      "optionen": { "A": "Zeitabweichung", "B": "Speicherfehler", "C": "Applikationsabsturz", "D": "Dateisystemfehler" },
+      "antwort": "A",
+      "erklärung": "Kerberos-Authentifizierung schlägt fehl, wenn die lokale Uhr zu weit von der Domänenzeit abweicht."
+    },
+    "en": {
+      "question": "Which is the MOST likely cause when a desktop cannot log onto the domain but a laptop can?",
+      "options": { "A": "Time drift", "B": "DIMM failure", "C": "Application crash", "D": "Filesystem errors" },
+      "answer": "A",
+      "explanation": "Kerberos rejects authentication if the client’s clock differs significantly from the domain controller."
+    }
+  },
+  {
+    "id": 63,
+    "de": {
+      "frage": "Welche Lösung implementiert sicheren physischen Zutritt zum Rechenzentrum?",
+      "optionen": { "A": "Geofence", "B": "Alarmsystem", "C": "Ausweis-Badge-Leser", "D": "Bewegungsmelder" },
+      "antwort": "C",
+      "erklärung": "Badge-Leser erlauben nur authentifizierten Personen Zutritt und protokollieren diesen."
+    },
+    "en": {
+      "question": "Which option provides secure physical access to a data center?",
+      "options": { "A": "Geofence", "B": "Alarm system", "C": "Badge reader", "D": "Motion sensor" },
+      "answer": "C",
+      "explanation": "Badge readers enforce identity verification before granting access."
+    }
+  },
+  {
+    "id": 64,
+    "de": {
+      "frage": "Spracheingabe soll aktiviert werden. Welches Windows-Einstellungsmodul nutzt der Benutzer?",
+      "optionen": { "A": "Sprache", "B": "System", "C": "Personalisierung", "D": "Erleichterte Bedienung" },
+      "antwort": "D",
+      "erklärung": "Spracherkennung wird unter Einstellungen → Erleichterte Bedienung (Ease of Access) eingerichtet."
+    },
+    "en": {
+      "question": "In which Windows settings area can a user enable speech recognition?",
+      "options": { "A": "Language", "B": "System", "C": "Personalization", "D": "Ease of Access" },
+      "answer": "D",
+      "explanation": "Speech Recognition resides in Ease of Access settings."
+    }
+  },
+  {
+    "id": 65,
+    "de": {
+      "frage": "Hartnäckige Malware konnte nicht durch Rollback entfernt werden. Welche Maßnahme löst das Problem am wahrscheinlichsten?",
+      "optionen": { "A": "Systemdateien isolieren", "B": "Re-Imaging des Rechners", "C": "Festplatte verschlüsseln", "D": "TLS 1.0 deaktivieren" },
+      "antwort": "B",
+      "erklärung": "Ein vollständiges Re-Image setzt das System auf einen sauberen bekannten Zustand zurück und entfernt alle persistierenden Schadprogramme."
+    },
+    "en": {
+      "question": "Malware persists after multiple rollbacks. Which action is MOST likely to resolve the issue?",
+      "options": { "A": "Quarantine system files", "B": "Reimage the workstation", "C": "Encrypt the hard drive", "D": "Disable TLS 1.0" },
+      "answer": "B",
+      "explanation": "Reimaging wipes the drive and installs a clean OS, removing deeply embedded malware."
+    }
+  },
+  {
+    "id": 66,
+    "de": {
+      "frage": "Ein 20-GB-Transfer von Linux zu Windows via USB ist nötig. Welches Dateisystem eignet sich AM BESTEN?",
+      "optionen": { "A": "FAT32", "B": "ext4", "C": "NTFS", "D": "exFAT" },
+      "antwort": "D",
+      "erklärung": "exFAT unterstützt sehr große Dateien, ist plattform­übergreifend und benötigt keine Journal-Features wie NTFS."
+    },
+    "en": {
+      "question": "Which filesystem is MOST appropriate for a 20 GB USB transfer from Linux to Windows?",
+      "options": { "A": "FAT32", "B": "ext4", "C": "NTFS", "D": "exFAT" },
+      "answer": "D",
+      "explanation": "exFAT removes the 4 GB limit of FAT32 while being natively supported by Windows and well supported on Linux."
+    }
+  },
+  {
+    "id": 67,
+    "de": {
+      "frage": "Desktop soll auf freigegebenes Laufwerk eines anderen PCs zugreifen. Welche Einstellung ist erforderlich?",
+      "optionen": { "A": "Netzwerk als privat konfigurieren", "B": "Proxy-Server aktivieren", "C": "Benutzer zum Netzwerk-Administrator machen", "D": "Link auf öffentliche Dokumente erstellen" },
+      "antwort": "A",
+      "erklärung": "Im privaten Netzwerkprofil werden File- und Printer-Sharing-Dienste automatisch zugelassen."
+    },
+    "en": {
+      "question": "Which configuration allows a desktop to access a shared drive on another PC?",
+      "options": { "A": "Set the network to Private", "B": "Enable a proxy server", "C": "Grant the user network-admin role", "D": "Create a shortcut to public documents" },
+      "answer": "A",
+      "explanation": "The Windows Private profile opens the necessary ports for SMB file sharing on the LAN."
+    }
+  },
+  {
+    "id": 68,
+    "de": {
+      "frage": "Viele Dateien sollen über eine instabile Verbindung kopiert werden; ein Neustart muss fortsetzbar sein. Welches Tool?",
+      "optionen": { "A": "afc", "B": "chkdsk", "C": "git clone", "D": "robocopy" },
+      "antwort": "D",
+      "erklärung": "Robocopy setzt unvollständige Kopiervorgänge dank /Z (restartable mode) und /R Schalter zuverlässig fort."
+    },
+    "en": {
+      "question": "Which tool copies many files over an unreliable link and can resume after interruption?",
+      "options": { "A": "afc", "B": "chkdsk", "C": "git clone", "D": "robocopy" },
+      "answer": "D",
+      "explanation": "Robocopy’s /Z switch enables restartable copies, making it ideal for unstable connections."
+    }
+  },
+  {
+    "id": 69,
+    "de": {
+      "frage": "Beweise müssen für einen möglichen Rechtsstreit gesichert werden. Welche Maßnahme ergreift der Incident-Handler AM EHESTEN?",
+      "optionen": { "A": "Dateien verschlüsseln", "B": "Betroffene Festplatten klonen", "C": "Cyber-Versicherung kontaktieren", "D": "Strafverfolgung informieren" },
+      "antwort": "B",
+      "erklärung": "Forensische 1-zu-1-Klon-Images bewahren Originaldaten unverändert und erlauben Analysen ohne Beweismittel­veränderung."
+    },
+    "en": {
+      "question": "To preserve evidence for litigation, what will the incident handler MOST likely do?",
+      "options": { "A": "Encrypt the files", "B": "Clone any impacted hard drives", "C": "Contact the cyber-insurance company", "D": "Inform law enforcement" },
+      "answer": "B",
+      "explanation": "Bit-for-bit forensic clones keep the original drive pristine and admissible while allowing investigators to work on the copy."
+    }
+  },
+  {
+    "id": 70,
+    "de": {
+      "frage": "Ein Techniker hat stundenlang am PC des CEOs gearbeitet; das Gerät wird dringend benötigt. Welchen Schritt sollte der Techniker als NÄCHSTES durchführen?",
+      "optionen": {
+        "A": "Weiter recherchieren",
+        "B": "Iterativen Prozess erneut starten",
+        "C": "Dem CEO zwei Wochen Reparaturzeit ankündigen",
+        "D": "Ticket eskalieren"
+      },
+      "antwort": "D",
+      "erklärung": "Die Eskalation sorgt dafür, dass höherstufige Support-Ressourcen eingebunden werden und das CEO-Gerät schnellstmöglich zurückgegeben werden kann."
+    },
+    "en": {
+      "question": "After hours of unsuccessful troubleshooting on the CEO’s PC, the device is needed back immediately. What should the technician do NEXT?",
+      "options": {
+        "A": "Continue researching",
+        "B": "Repeat the iterative processes",
+        "C": "Tell the CEO repairs will take a couple of weeks",
+        "D": "Escalate the ticket"
+      },
+      "answer": "D",
+      "explanation": "Escalating the ticket engages higher-level support and expedites resolution for the CEO."
+    }
+  },
+  {
+    "id": 71,
+    "de": {
+      "frage": "Ein Ordner soll von der Windows-Suche ausgeschlossen werden. Welches Dienstprogramm wird verwendet?",
+      "optionen": {
+        "A": "Datenschutz",
+        "B": "Indizierungsoptionen",
+        "C": "System",
+        "D": "Geräte-Manager"
+      },
+      "antwort": "B",
+      "erklärung": "Über ‚Indizierungsoptionen‘ lassen sich Pfade von der Suchindizierung ausnehmen."
+    },
+    "en": {
+      "question": "A technician must exclude an application folder from Windows 10 search indexing. Which utility should be used?",
+      "options": {
+        "A": "Privacy",
+        "B": "Indexing Options",
+        "C": "System",
+        "D": "Device Manager"
+      },
+      "answer": "B",
+      "explanation": "Indexing Options lets you add or remove folders from the Windows Search catalog."
+    }
+  },
+  {
+    "id": 72,
+    "de": {
+      "frage": "Nach 500 Wörterbuch-Versuchen wurde ein Konto kompromittiert. Welche Maßnahme mindert diese Bedrohung AM BESTEN?",
+      "optionen": {
+        "A": "Verschlüsselung ruhender Daten",
+        "B": "Account-Lockout",
+        "C": "Automatische Bildschirm­sperre",
+        "D": "Antivirus"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Kontosperr­mechanismus blockiert oder verzögert zusätzliche Anmeldeversuche und stoppt Wörterbuch- bzw. Brute-Force-Angriffe."
+    },
+    "en": {
+      "question": "A user account was breached after 500 dictionary attempts. Which control BEST mitigates this threat?",
+      "options": {
+        "A": "Encryption at rest",
+        "B": "Account lockout",
+        "C": "Automatic screen lock",
+        "D": "Antivirus"
+      },
+      "answer": "B",
+      "explanation": "Account-lockout policies disable or delay login after several failed attempts, thwarting dictionary attacks."
+    }
+  },
+  {
+    "id": 73,
+    "de": {
+      "frage": "Bei CYOD sollen Windows-Geräte nach Standby eine Passwortabfrage erzwingen. Welcher Pfad führt zur richtigen Einstellung?",
+      "optionen": {
+        "A": "Einstellungen → Bildschirmschoner",
+        "B": "Einstellungen → Bildschirm-Timeout",
+        "C": "Einstellungen → Allgemein",
+        "D": "Einstellungen → Anzeige"
+      },
+      "antwort": "A",
+      "erklärung": "Über die Bildschirmschoner-Einstellungen lässt sich ‚Anmeldeseite bei Reaktivierung‘ aktivieren, sodass ein Passwort verlangt wird."
+    },
+    "en": {
+      "question": "Under a CYOD policy, each Windows device must require a password on resume. Which path leads to the needed setting?",
+      "options": {
+        "A": "Use Settings to access Screensaver settings",
+        "B": "Use Settings to access Screen Timeout settings",
+        "C": "Use Settings to access General",
+        "D": "Use Settings to access Display"
+      },
+      "answer": "A",
+      "explanation": "In Screen Saver settings you can check ‘On resume, display logon screen’, enforcing a password after inactivity or sleep."
+    }
+  },
+  {
+    "id": 74,
+    "de": {
+      "frage": "Ein Benutzer richtet zum ersten Mal einen SOHO-Router ein. Welche Einstellung sollte ER/SIE ZUERST ändern?",
+      "optionen": {
+        "A": "Verschlüsselung",
+        "B": "WLAN-Kanal",
+        "C": "Standardpasswörter",
+        "D": "SSID"
+      },
+      "antwort": "C",
+      "erklärung": "Die werkseitigen Admin- und Wi-Fi-Passwörter sind öffentlich bekannt; ihre sofortige Änderung verhindert unbefugten Zugriff."
+    },
+    "en": {
+      "question": "When configuring a new SOHO Wi-Fi router, which setting should be changed FIRST?",
+      "options": {
+        "A": "Encryption",
+        "B": "Wi-Fi channel",
+        "C": "Default passwords",
+        "D": "Service Set Identifier"
+      },
+      "answer": "C",
+      "explanation": "Default administrative and Wi-Fi passwords are widely published; changing them is the first security step."
+    }
+  },
+  {
+    "id": 75,
+    "de": {
+      "frage": "Für zentralisierten Support muss der Techniker den Desktop eines entfernten Nutzers gleichzeitig sehen können. Welche Technologie erfüllt dies?",
+      "optionen": {
+        "A": "RDP",
+        "B": "VNC",
+        "C": "SSH",
+        "D": "VPN"
+      },
+      "antwort": "B",
+      "erklärung": "VNC überträgt denselben Desktop, den der Benutzer sieht, ohne ihn abzumelden – ideal für gemeinsamen Support."
+    },
+    "en": {
+      "question": "Which technology lets a technician view the same screen as a remote user to provide support?",
+      "options": {
+        "A": "RDP",
+        "B": "VNC",
+        "C": "SSH",
+        "D": "VPN"
+      },
+      "answer": "B",
+      "explanation": "VNC mirrors the user’s active session so both parties see and control the same desktop simultaneously."
+    }
+  },
+  {
+    "id": 76,
+    "de": {
+      "frage": "Ein Benutzer empfindet den PC als langsam, andere Nutzer desselben PCs nicht. System funktioniert laut Admin normal. Welcher Schritt ist als NÄCHSTES sinnvoll?",
+      "optionen": {
+        "A": "Auslagerungsdatei vergrößern",
+        "B": "chkdsk ausführen",
+        "C": "Benutzerprofil neu erstellen",
+        "D": "Mehr RAM einbauen",
+        "E": "Festplatte defragmentieren"
+      },
+      "antwort": "C",
+      "erklärung": "Wenn Leistungseinbußen nur bei einem Konto auftreten, ist oft ein beschädigtes Benutzerprofil schuld. Ein neues Profil löst das Problem ohne Hardware-Änderungen."
+    },
+    "en": {
+      "question": "One user experiences sluggish performance on a shared workstation; others do not. After confirming the PC is healthy, what should the admin do NEXT?",
+      "options": {
+        "A": "Increase paging file size",
+        "B": "Run chkdsk",
+        "C": "Rebuild the user’s profile",
+        "D": "Add more memory",
+        "E": "Defragment the hard drive"
+      },
+      "answer": "C",
+      "explanation": "User-specific slowness often indicates a corrupted profile; recreating it restores normal performance for that user."
+    }
+  },
+  {
+    "id": 82,
+    "de": {
+      "frage": "Ein Android-Smartphone bricht ein per USB angestoßenes OS-Update ohne Fehlermeldung ab. Was sollte der Techniker als NÄCHSTES prüfen?",
+      "optionen": { "A": "Alle Third-Party-Apps deaktivieren", "B": "Genügend freien Speicherplatz prüfen", "C": "Akku-Ladestand kontrollieren", "D": "Starke WLAN/LTE-Verbindung sicherstellen" },
+      "antwort": "C",
+      "erklärung": "Ist der Akku nicht ausreichend geladen, beendet Android aus Sicherheitsgründen das Update, ohne zwangsläufig eine Fehlermeldung zu zeigen."
+    },
+    "en": {
+      "question": "A tethered Android OS update failed with no on-screen errors. What should the technician check NEXT?",
+      "options": { "A": "Verify all third-party apps are disabled", "B": "Ensure there is adequate free storage", "C": "Check if the battery is sufficiently charged", "D": "Confirm a strong Wi-Fi/cellular connection" },
+      "answer": "C",
+      "explanation": "If the battery is below the required threshold, Android silently aborts the update to avoid bricking the device."
+    }
+  },
+  {
+    "id": 83,
+    "de": {
+      "frage": "Ein Benutzer möchte Texte und Symbole in Windows 10 größer darstellen. Welcher Weg über die Einstellungen ist der BESTE?",
+      "optionen": {
+        "A": "Einstellungen → Geräte → Anzeige → Auflösung verringern",
+        "B": "Einstellungen → System → Anzeige → Auflösung verringern",
+        "C": "Einstellungen → System → Anzeige → Skalierung erhöhen",
+        "D": "Einstellungen → Personalisierung → Anzeige → Skalierung erhöhen"
+      },
+      "antwort": "C",
+      "erklärung": "Die Skalierungsoption ändert die DPI und vergrößert alle Elemente, ohne die native Panelauflösung herabzusetzen."
+    },
+    "en": {
+      "question": "What is the BEST way in Windows 10 Settings to make text, apps and other items larger?",
+      "options": {
+        "A": "Settings → Devices → Display → lower the resolution",
+        "B": "Settings → System → Display → lower the resolution",
+        "C": "Settings → System → Display → increase the Scale and layout percentage",
+        "D": "Settings → Personalization → Display → increase the Scale and layout percentage"
+      },
+      "answer": "C",
+      "explanation": "Changing the scaling factor increases the effective DPI and enlarges all on-screen objects without degrading image quality."
+    }
+  },
+  {
+    "id": 84,
+    "de": {
+      "frage": "Ein Techniker installiert neue SOHO-Netzwerkgeräte und möchte sie zuerst gegen Internet-Bedrohungen absichern. Welchen Schritt führt er ZUERST aus?",
+      "optionen": { "A": "Alle Geräte einschließen", "B": "Nur Produkte eines Herstellers wählen", "C": "Standard-Admin-Kennwort ändern", "D": "Aktuellstes OS und Patches installieren" },
+      "antwort": "C",
+      "erklärung": "Werkskennwörter sind öffentlich bekannt; ihre sofortige Änderung verhindert Remote-Zugriffe, noch bevor die Geräte ans Netz gehen."
+    },
+    "en": {
+      "question": "When deploying new SOHO network gear, which action should be taken FIRST to secure it from Internet threats?",
+      "options": { "A": "Lock all devices in a closet", "B": "Use devices from the same vendor", "C": "Change the default administrative password", "D": "Install the latest firmware/patches" },
+      "answer": "C",
+      "explanation": "Default credentials are well-known; replacing them is the very first line of defense."
+    }
+  },
+  {
+    "id": 85,
+    "de": {
+      "frage": "Welcher Linux-Befehl wird standardmäßig zum Installieren einer Anwendung verwendet?",
+      "optionen": { "A": "yum", "B": "grep", "C": "ls", "D": "sudo" },
+      "antwort": "A",
+      "erklärung": "Auf RPM-basierten Distributionen (z. B. CentOS/RHEL) ist yum der Paketmanager zum Installieren neuer Softwarepakete."
+    },
+    "en": {
+      "question": "Which Linux command is used to install an application?",
+      "options": { "A": "yum", "B": "grep", "C": "ls", "D": "sudo" },
+      "answer": "A",
+      "explanation": "yum (or its successor dnf) resolves dependencies and installs packages from configured repositories."
+    }
+  },
+  {
+    "id": 86,
+    "de": {
+      "frage": "Ein Techniker vermutet fehlerhafte Sektoren auf dem Boot-Laufwerk. Welches Kommando überprüft dies, ohne etwas zu verändern?",
+      "optionen": { "A": "sfc /scannow", "B": "cleanmgr", "C": "chkdsk", "D": "dfrgui" },
+      "antwort": "C",
+      "erklärung": "chkdsk ohne Reparaturoption analysiert das Dateisystem und listet defekte Sektoren, ohne Änderungen vorzunehmen."
+    },
+    "en": {
+      "question": "Which command should the technician run to check for bad sectors without making changes?",
+      "options": { "A": "sfc /scannow", "B": "cleanmgr", "C": "chkdsk", "D": "dfrgui" },
+      "answer": "C",
+      "explanation": "chkdsk runs surface and file-system checks and can be executed in read-only mode."
+    }
+  },
+  {
+    "id": 87,
+    "de": {
+      "frage": "BitLocker fehlt im Control Panel eines Windows-10-Laptops. Warum?",
+      "optionen": { "A": "Hardware erfüllt Mindestanforderungen nicht", "B": "BitLocker wurde umbenannt", "C": "Windows 10 Home installiert", "D": "Registry-Eintrag deaktiviert BitLocker" },
+      "antwort": "C",
+      "erklärung": "Die Home-Edition enthält keine BitLocker-Komponente; sie ist erst ab Windows 10 Pro verfügbar."
+    },
+    "en": {
+      "question": "A technician cannot find BitLocker Drive Encryption in Control Panel. Why?",
+      "options": { "A": "Hardware does not meet requirements", "B": "BitLocker was renamed in Windows 10", "C": "Windows 10 Home is installed", "D": "BitLocker was disabled in the registry" },
+      "answer": "C",
+      "explanation": "BitLocker ships only with Pro, Enterprise and Education editions, not with Windows 10 Home."
+    }
+  },
+  {
+    "id": 88,
+    "de": {
+      "frage": "Ein Laptop meldet veralteten Virenschutz, obwohl Engine und Signaturen aktuell sind. Was ist am WAHRSCHEINLICHSTEN passiert?",
+      "optionen": { "A": "Ransomware", "B": "Fehlgeschlagene OS-Updates", "C": "Adware", "D": "Fehlende Systemdateien" },
+      "antwort": "C",
+      "erklärung": "Falsche Sicherheitswarnungen stammen typischerweise von Adware/Scareware, die den Benutzer zum Installieren fragwürdiger Software bewegen will."
+    },
+    "en": {
+      "question": "A laptop shows an out-of-date AV warning, yet engine and signatures are current. What has MOST likely occurred?",
+      "options": { "A": "Ransomware", "B": "Failed OS updates", "C": "Adware", "D": "Missing system files" },
+      "answer": "C",
+      "explanation": "Fake AV pop-ups are characteristic of adware rather than a real signature problem."
+    }
+  },
+  {
+    "id": 89,
+    "de": {
+      "frage": "Welches Protokoll ist ein proprietäres Cisco-AAA-Protokoll?",
+      "optionen": { "A": "TKIP", "B": "AES", "C": "RADIUS", "D": "TACACS+" },
+      "antwort": "D",
+      "erklärung": "TACACS+ wurde von Cisco entwickelt und bietet AAA-Funktionalität mit getrennter Authentifizierungs- und Autorisierungsarchitektur."
+    },
+    "en": {
+      "question": "Which of the following is Cisco’s proprietary AAA protocol?",
+      "options": { "A": "TKIP", "B": "AES", "C": "RADIUS", "D": "TACACS+" },
+      "answer": "D",
+      "explanation": "TACACS+ is Cisco-proprietary and extends TACACS with full AAA support."
+    }
+  },
+  {
+    "id": 90,
+    "de": {
+      "frage": "Zwei Außenstellen sollen sicher mit der Hauptniederlassung verbunden werden. Welche Technologie ist am BESTEN geeignet?",
+      "optionen": { "A": "MSRA", "B": "VNC", "C": "VPN", "D": "SSH" },
+      "antwort": "C",
+      "erklärung": "Ein Site-to-Site-VPN schafft einen verschlüsselten Tunnel und erfüllt Best-Practice-Sicherheitsanforderungen."
+    },
+    "en": {
+      "question": "A technician must interconnect two offices with the main branch while meeting security best practices. What should be implemented?",
+      "options": { "A": "MSRA", "B": "VNC", "C": "VPN", "D": "SSH" },
+      "answer": "C",
+      "explanation": "A VPN provides encrypted site-to-site connectivity over untrusted networks."
+    }
+  },
+  {
+    "id": 91,
+    "de": {
+      "frage": "Ein Exploit wurde für die Web-Server-Software entdeckt, ein Patch existiert noch nicht. Welche Art Angriff liegt am WAHRSCHEINLICHSTEN vor?",
+      "optionen": { "A": "Brute-Force", "B": "Zero-Day", "C": "Denial of Service", "D": "On-Path" },
+      "antwort": "B",
+      "erklärung": "Ein Zero-Day nutzt eine Schwachstelle aus, bevor ein Patch verfügbar ist."
+    },
+    "en": {
+      "question": "An exploit exists for the web-server software and no patch is available. Which attack has MOST likely occurred?",
+      "options": { "A": "Brute force", "B": "Zero day", "C": "Denial of service", "D": "On-path" },
+      "answer": "B",
+      "explanation": "This scenario describes a zero-day exploit against an unknown/unpatched vulnerability."
+    }
+  },
+  {
+    "id": 92,
+    "de": {
+      "frage": "Ein USB-Stick soll 20 GB Daten von Linux zu Windows transportieren. Welches Dateisystem ist AM BESTEN geeignet?",
+      "optionen": { "A": "FAT32", "B": "ext4", "C": "NTFS", "D": "exFAT" },
+      "antwort": "D",
+      "erklärung": "exFAT unterstützt Dateien >4 GB und wird von Windows nativ sowie von modernen Linux-Distributionen gut unterstützt."
+    },
+    "en": {
+      "question": "Which filesystem is MOST appropriate for transferring a 20 GB file between Linux and Windows via USB?",
+      "options": { "A": "FAT32", "B": "ext4", "C": "NTFS", "D": "exFAT" },
+      "answer": "D",
+      "explanation": "exFAT removes the 4 GB limit of FAT32 while remaining cross-platform."
+    }
+  },
+  {
+    "id": 93,
+    "de": {
+      "frage": "Ein Netbook verfügt über ein webbasiertes proprietäres Betriebssystem. Welches OS ist am WAHRSCHEINLICHSTEN installiert?",
+      "optionen": { "A": "macOS", "B": "Linux", "C": "Chrome OS", "D": "Windows" },
+      "antwort": "C",
+      "erklärung": "Chrome OS ist ein von Google entwickeltes, Cloud-zentriertes Betriebssystem für leichte Geräte."
+    },
+    "en": {
+      "question": "A netbook ships with a proprietary, web-centric OS. Which OS is MOST likely installed?",
+      "options": { "A": "macOS", "B": "Linux", "C": "Chrome OS", "D": "Windows" },
+      "answer": "C",
+      "explanation": "Chrome OS is a proprietary, browser-based operating system designed for cloud workloads."
+    }
+  },
+  {
+    "id": 94,
+    "de": {
+      "frage": "Eine Android-Firmen-App stürzt sofort ab, auch nach Neustart des Telefons. Welche Maßnahme versucht der Administrator ZUERST?",
+      "optionen": { "A": "App de- und neu installieren", "B": "Werksreset", "C": "Alternative App installieren", "D": "App-Cache leeren" },
+      "antwort": "D",
+      "erklärung": "Das Leeren des Caches entfernt beschädigte temporäre Daten, ohne Nutzerdaten oder App-Installationen zu gefährden."
+    },
+    "en": {
+      "question": "A proprietary Android app crashes immediately after launch. What should the admin attempt FIRST?",
+      "options": { "A": "Uninstall and reinstall the app", "B": "Factory-reset the phone", "C": "Install an alternative app", "D": "Clear the application cache" },
+      "answer": "D",
+      "explanation": "Clearing the cache is non-destructive and often resolves launch failures caused by corrupt temporary data."
+    }
+  },
+  {
+    "id": 95,
+    "de": {
+      "frage": "Das lückenlose Dokumentieren, wer Beweismittel wann besessen hat, bezeichnet man als …?",
+      "optionen": { "A": "Rights Management", "B": "Audit-Trail", "C": "Chain of Custody", "D": "Datenintegrität" },
+      "antwort": "C",
+      "erklärung": "Die Chain of Custody stellt sicher, dass Beweise vor Gericht zulässig bleiben."
+    },
+    "en": {
+      "question": "Documenting who possessed evidence at every step is known as …?",
+      "options": { "A": "Rights management", "B": "Audit trail", "C": "Chain of custody", "D": "Data integrity" },
+      "answer": "C",
+      "explanation": "The chain of custody preserves evidence admissibility and authenticity."
+    }
+  },
+  {
+    "id": 96,
+    "de": {
+      "frage": "Nach Klick auf einen Gift-Card-Link zeigt ein PC Malware-Anzeichen. Welchen Schritt führt der Techniker als ERSTES aus?",
+      "optionen": { "A": "Vollständigen Scan starten", "B": "In Safe-Mode booten", "C": "Kürzlich installierte Programme prüfen", "D": "Netzwerkverbindung trennen" },
+      "antwort": "D",
+      "erklärung": "Das Isolieren reduziert Ausbreitung und Datenabfluss und entspricht dem ersten Schritt des Malware-Entfernungsprozesses."
+    },
+    "en": {
+      "question": "A user suspects malware after clicking a suspicious link. What should the technician instruct NEXT?",
+      "options": { "A": "Run a full system scan", "B": "Boot into Safe Mode", "C": "Check recently installed apps", "D": "Disconnect the PC from the network" },
+      "answer": "D",
+      "explanation": "Quarantining the system prevents lateral movement and further damage."
+    }
+  },
+  {
+    "id": 97,
+    "de": {
+      "frage": "Wie entsorgt man Daten auf optischen Datenträgern am SICHERSTEN?",
+      "optionen": { "A": "Entmagnetisieren", "B": "Low-Level-Format", "C": "Recycling", "D": "Schreddern" },
+      "antwort": "D",
+      "erklärung": "CDs/DVDs lassen sich nicht entmagnetisieren; physisches Zerstören (Schreddern) verhindert jegliche Datenwiederherstellung."
+    },
+    "en": {
+      "question": "What is the MOST effective way to dispose of data stored on optical discs?",
+      "options": { "A": "Degaussing", "B": "Low-level formatting", "C": "Recycling", "D": "Shredding" },
+      "answer": "D",
+      "explanation": "Physically shredding the disc renders the data unrecoverable."
+    }
+  },
+  {
+    "id": 98,
+    "de": {
+      "frage": "Nach Verteilung clientseitiger Zertifikate für WLAN soll zusätzlich der Domänen-Login bleiben. Welchen Sicherheitsgewinn erzielt man?",
+      "optionen": { "A": "Erzwingt Multifaktor-Authentifizierung", "B": "Verschlüsselt gesamten WLAN-Traffic", "C": "Verhindert Abhören generell", "D": "Blockiert Rogue-APs" },
+      "antwort": "A",
+      "erklärung": "Nutzername/Passwort (Wissen) plus Client-Zertifikat (Besitz) bilden zwei Faktoren – MFA."
+    },
+    "en": {
+      "question": "After deploying client certificates in addition to user credentials for Wi-Fi, which benefit is realized?",
+      "options": { "A": "Multifactor authentication is enforced", "B": "All Wi-Fi traffic is encrypted", "C": "Eavesdropping is prevented", "D": "Rogue APs cannot connect" },
+      "answer": "A",
+      "explanation": "Combining something you know (password) with something you have (certificate) establishes MFA."
+    }
+  },
+  {
+    "id": 99,
+    "de": {
+      "frage": "Welche Maßnahme verhindert das Einfahren von Fahrzeugen in eine Bankfiliale und bleibt für Kunden zugänglich?",
+      "optionen": { "A": "Wachpersonal", "B": "Poller", "C": "Bewegungsmelder", "D": "Schleusenvestibül" },
+      "antwort": "B",
+      "erklärung": "Bollards (Poller) blockieren Fahrzeuge, ohne den Fußgängerverkehr zu beeinträchtigen."
+    },
+    "en": {
+      "question": "A bank wants to stop vehicles from ramming the building while keeping customer access easy. Which solution BEST meets the need?",
+      "options": { "A": "Guards", "B": "Bollards", "C": "Motion sensors", "D": "Access-control vestibule" },
+      "answer": "B",
+      "explanation": "Bollards provide physical anti-ram protection yet allow pedestrian flow."
+    }
+  },
+  {
+    "id": 100,
+    "de": {
+      "frage": "In einer Arztpraxis nutzen Nachbarn das WLAN-Gastnetz. Wie minimiert man das Problem am BESTEN?",
+      "optionen": { "A": "Ungenutzte Ports deaktivieren", "B": "Gastnetz entfernen", "C": "Passwort für Gastnetz setzen", "D": "WLAN-Kanal ändern" },
+      "antwort": "C",
+      "erklärung": "Ein sicheres Kennwort (idealerweise mit Captive Portal) begrenzt den Zugang auf autorisierte Patienten."
+    },
+    "en": {
+      "question": "Employees notice non-patients are on the practice’s Wi-Fi. How can the technician BEST minimize this issue?",
+      "options": { "A": "Disable unused switch ports", "B": "Remove the guest network", "C": "Add a password to the guest SSID", "D": "Change the Wi-Fi channel" },
+      "answer": "C",
+      "explanation": "Securing the guest SSID with WPA2/3 and a password stops casual neighbors from connecting."
+    }
+  },
+  {
+    "id": 101,
+    "de": {
+      "frage": "Nach Windows-Neuinstallation erkennt ein 16-GB-PC nur 4 GB RAM. Warum?",
+      "optionen": { "A": "UEFI-Einstellung", "B": "RAM inkompatibel", "C": "Defekter RAM", "D": "x86-Betriebssystem installiert" },
+      "antwort": "D",
+      "erklärung": "32-Bit-Versionen können maximal 4 GB adressieren; die Hardware ist intakt."
+    },
+    "en": {
+      "question": "A newly installed Windows OS sees only 4 GB of the 16 GB RAM. Why?",
+      "options": { "A": "UEFI settings", "B": "RAM incompatible", "C": "Some RAM is defective", "D": "An x86 OS was installed" },
+      "answer": "D",
+      "explanation": "A 32-bit (x86) OS is limited to ~4 GB of addressable memory."
+    }
+  },
+  {
+    "id": 102,
+    "de": {
+      "frage": "Welcher Standard schützt Kreditkartendaten?",
+      "optionen": { "A": "PHI", "B": "NIST", "C": "PCI", "D": "GDPR" },
+      "antwort": "C",
+      "erklärung": "PCI-DSS definiert Sicherheitsanforderungen für alle Unternehmen, die Kreditkartendaten verarbeiten."
+    },
+    "en": {
+      "question": "Which data-security standard focuses on protecting credit-card information?",
+      "options": { "A": "PHI", "B": "NIST", "C": "PCI", "D": "GDPR" },
+      "answer": "C",
+      "explanation": "The PCI-DSS governs storage, processing and transmission of payment-card data."
+    }
+  },
+  {
+    "id": 103,
+    "de": {
+      "frage": "Welche Lösung steuert Sicherheits­einstellungen eines Android-Geräts in einer Domäne?",
+      "optionen": { "A": "MDM", "B": "MFA", "C": "ACL", "D": "SMS" },
+      "antwort": "A",
+      "erklärung": "Mobile-Device-Management ermöglicht zentrale Richtlinien wie Passcode, Verschlüsselung, Fernsperre."
+    },
+    "en": {
+      "question": "Which option should be used to control Android security settings in a domain environment?",
+      "options": { "A": "MDM", "B": "MFA", "C": "ACL", "D": "SMS" },
+      "answer": "A",
+      "explanation": "An MDM platform enforces security policies and configuration over enrolled mobile devices."
+    }
+  },
+  {
+    "id": 104,
+    "de": {
+      "frage": "Welche ZWEI Befehle liefern den Netzwerknamen eines Windows-PCs?",
+      "optionen": { "A": "ipconfig /all", "B": "hostname", "C": "netstat /?", "D": "nslookup localhost", "E": "arp -a", "F": "ping ::1" },
+      "antwort": ["A", "B"],
+      "erklärung": "ipconfig /all listet ‚Host Name‘ im Header; der Befehl hostname gibt ihn direkt aus."
+    },
+    "en": {
+      "question": "Which TWO commands let a user provide the PC’s network name to a technician?",
+      "options": { "A": "ipconfig /all", "B": "hostname", "C": "netstat /?", "D": "nslookup localhost", "E": "arp -a", "F": "ping ::1" },
+      "answer": ["A", "B"],
+      "explanation": "Both commands display the computer’s host name that remote-assistance tools require."
+    }
+  },
+  {
+    "id": 105,
+    "de": {
+      "frage": "Welches Windows-Programm hilft einem Benutzer, eine Datei zu verstecken, um versehentliches Löschen zu verhindern?",
+      "optionen": { "A": "Geräte-Manager", "B": "Indizierungsoptionen", "C": "Datei-Explorer", "D": "Verwaltung" },
+      "antwort": "C",
+      "erklärung": "Im Datei-Explorer → Eigenschaften kann das Attribut ‚Versteckt‘ gesetzt werden."
+    },
+    "en": {
+      "question": "Which application assists a user in hiding a file on a shared drive?",
+      "options": { "A": "Device Manager", "B": "Indexing Options", "C": "File Explorer", "D": "Administrative Tools" },
+      "answer": "C",
+      "explanation": "File Explorer > Properties > Hidden marks the file so it is not shown by default."
+    }
+  },
+  {
+    "id": 106,
+    "de": {
+      "frage": "Ein Entwickler schreibt Shell-Skripte unter Linux. Welcher Dateityp wird standardmäßig unterstützt?",
+      "optionen": { "A": ".py", "B": ".js", "C": ".vbs", "D": ".sh" },
+      "antwort": "D",
+      "erklärung": ".sh ist die typische Endung für Bourne-shell-kompatible Skripte."
+    },
+    "en": {
+      "question": "A developer automates tasks in Linux shell. Which file type is supported by default?",
+      "options": { "A": ".py", "B": ".js", "C": ".vbs", "D": ".sh" },
+      "answer": "D",
+      "explanation": "Shell scripts traditionally use the .sh extension and require only a shebang to execute."
+    }
+  },
+  {
+    "id": 107,
+    "de": {
+      "frage": "Welche MMC-Konsole plant das automatische Öffnen einer Website um 16:45 Uhr?",
+      "optionen": { "A": "taskschd.msc", "B": "perfmon.msc", "C": "lusrmgr.msc", "D": "eventvwr.msc" },
+      "antwort": "A",
+      "erklärung": "Task Scheduler (taskschd.msc) kann Programme oder URLs zeitgesteuert starten."
+    },
+    "en": {
+      "question": "Which tool can schedule a browser to open a traffic site at 4:45 PM?",
+      "options": { "A": "taskschd.msc", "B": "perfmon.msc", "C": "lusrmgr.msc", "D": "eventvwr.msc" },
+      "answer": "A",
+      "explanation": "The Windows Task Scheduler automates program or URL launches at specified times."
+    }
+  },
+  {
+    "id": 108,
+    "de": {
+      "frage": "Auf einem Windows-10-Enterprise-32-Bit-PC soll eine Business-App installiert werden. Welche Datei wird ausgeführt?",
+      "optionen": { "A": "Installer_x64.exe", "B": "Installer_Files.zip", "C": "Installer_32.msi", "D": "Installer_x86.exe", "E": "Installer_Win10Enterprise.dmg" },
+      "antwort": "D",
+      "erklärung": "x86-Bezeichnungen stehen für 32-Bit-Anwendungen, die mit einem 32-Bit-OS kompatibel sind."
+    },
+    "en": {
+      "question": "Which installer should be executed on a Windows 10 Enterprise 32-bit system?",
+      "options": { "A": "Installer_x64.exe", "B": "Installer_Files.zip", "C": "Installer_32.msi", "D": "Installer_x86.exe", "E": "Installer_Win10Enterprise.dmg" },
+      "answer": "D",
+      "explanation": "x86 denotes 32-bit code; .exe installers run directly on Windows."
+    }
+  },
+  {
+    "id": 109,
+    "de": {
+      "frage": "Nur ein Benutzer hat Probleme mit einer Office-Software auf einem geteilten PC. Was sollte der Techniker tun?",
+      "optionen": { "A": "Updates zurücksetzen", "B": "Pagefile erhöhen", "C": "Treiber updaten", "D": "Benutzerprofil neu erstellen" },
+      "antwort": "D",
+      "erklärung": "Das Problem ist benutzerspezifisch; ein frisches Profil beseitigt beschädigte Einstellungen."
+    },
+    "en": {
+      "question": "Only one user experiences issues on a shared workstation. What should the technician do?",
+      "options": { "A": "Roll back updates", "B": "Increase the page file", "C": "Update drivers", "D": "Rebuild the user profile" },
+      "answer": "D",
+      "explanation": "Re-creating the profile removes corrupt user-specific configuration."
+    }
+  },
+  {
+    "id": 110,
+    "de": {
+      "frage": "Welches Paar stellt ECHTE Multifaktor-Authentifizierung dar?",
+      "optionen": { "A": "Fingerprint & Retina-Scan", "B": "Passwort & PIN", "C": "Benutzername & Passwort", "D": "Smartcard & Passwort" },
+      "antwort": "D",
+      "erklärung": "MFA erfordert mindestens zwei Faktoren aus unterschiedlichen Kategorien. Smartcard (Besitz) + Passwort (Wissen) erfüllen dies."
+    },
+    "en": {
+      "question": "Which option is an example of MFA?",
+      "options": { "A": "Fingerprint scan and retina scan", "B": "Password and PIN", "C": "Username and password", "D": "Smart card and password" },
+      "answer": "D",
+      "explanation": "Different factor types are required; a smart card (something you have) plus a password (something you know) qualifies."
+    }
+  },
+  {
+    "id": 111,
+    "de": {
+      "frage": "Welcher CMD-Befehl löscht ein Verzeichnis?",
+      "optionen": { "A": "md", "B": "del", "C": "dir", "D": "rd", "E": "cd" },
+      "antwort": "D",
+      "erklärung": "rd oder rmdir entfernt leere Verzeichnisse, optional mit /s für rekursive Löschung."
+    },
+    "en": {
+      "question": "Which command-line tool deletes a directory?",
+      "options": { "A": "md", "B": "del", "C": "dir", "D": "rd", "E": "cd" },
+      "answer": "D",
+      "explanation": "rd (or rmdir) removes directories; switches allow recursive deletion."
+    }
+  },
+  {
+    "id": 112,
+    "de": {
+      "frage": "Wie sichert ein Polizist seinen PC am SCHNELLSTEN, wenn er kurz den Platz verlässt?",
+      "optionen": { "A": "Tastenkombination zum Sperren", "B": "Umfeld auf Unbefugte prüfen", "C": "Bildschirmschoner nach 30 Min aktivieren", "D": "Monitor ausschalten" },
+      "antwort": "A",
+      "erklärung": "Win+L sperrt sofort und schützt sensible Daten."
+    },
+    "en": {
+      "question": "What is the BEST way for an officer to secure the workstation quickly when walking away?",
+      "options": { "A": "Use a key combo to lock the PC", "B": "Ensure no unauthorized personnel are around", "C": "Set a 30-minute screen saver lock", "D": "Turn off the monitor" },
+      "answer": "A",
+      "explanation": "Locking via hotkey instantly prevents access while retaining the session."
+    }
+  },
+  {
+    "id": 113,
+    "de": {
+      "frage": "Call-Center-Mitarbeiter lassen PCs ungesperrt zurück, Patientendaten sind sichtbar. Welche Maßnahme verhindert DIEBSTAHL am BESTEN?",
+      "optionen": { "A": "Festplatten verschlüsseln", "B": "Workstations nach 5 Min sperren", "C": "Privacy-Filter montieren", "D": "Benutzer abmelden, wenn ungenutzt" },
+      "antwort": "B",
+      "erklärung": "Automatische Sperre blendet Daten aus, sobald der Agent weggeht, ohne Arbeitsfluss stark zu stören."
+    },
+    "en": {
+      "question": "Which action BEST prevents data theft in the call center scenario?",
+      "options": { "A": "Encrypt workstation drives", "B": "Lock workstations after 5 minutes of inactivity", "C": "Install privacy screens", "D": "Log users off when idle" },
+      "answer": "B",
+      "explanation": "Auto-locking hides PHI quickly and enforces least privilege without manual steps."
+    }
+  },
+  {
+    "id": 114,
+    "de": {
+      "frage": "Ein Backup soll nur ZWEI Tape-Sets zum Restore benötigen. Welche Methode wählt der Techniker?",
+      "optionen": { "A": "Differentielles Backup", "B": "Off-Site-Backup", "C": "Inkrementelles Backup", "D": "Vollbackup" },
+      "antwort": "A",
+      "erklärung": "Zur Wiederherstellung braucht man nur das letzte Vollbackup + das aktuelle Differential."
+    },
+    "en": {
+      "question": "Which backup type requires only two tape sets for a full restore?",
+      "options": { "A": "Differential", "B": "Off-site", "C": "Incremental", "D": "Full" },
+      "answer": "A",
+      "explanation": "A restore uses the latest full backup and the most recent differential backup—two sets."
+    }
+  },
+  {
+    "id": 115,
+    "de": {
+      "frage": "GUI eines Linux-Servers stürzt ab, RDP schlägt fehl. Mit welchem Verfahren kann der Admin TROUBLESHOOTEN?",
+      "optionen": { "A": "SFTP", "B": "SSH", "C": "VNC", "D": "MSRA" },
+      "antwort": "B",
+      "erklärung": "SSH bietet Shell-Zugriff unabhängig vom grafischen Subsystem."
+    },
+    "en": {
+      "question": "The Linux server’s GUI crashes and remote desktop fails. Which method allows effective troubleshooting?",
+      "options": { "A": "SFTP", "B": "SSH", "C": "VNC", "D": "MSRA" },
+      "answer": "B",
+      "explanation": "SSH grants command-line access even when X-server or VNC services are down."
+    }
+  },
+  {
+    "id": 116,
+    "de": {
+      "frage": "Neues Laptop erhält statische IP, alt-PC hat dieselbe. Beide melden IP-Konflikt. Was sollte der Techniker tun?",
+      "optionen": { "A": "LAN-Brücke einrichten", "B": "Laptop auf DHCP stellen", "C": "Statische IP am Desktop entfernen", "D": "Laptop-NIC tauschen" },
+      "antwort": "C",
+      "erklärung": "Die Duplizierung entsteht, weil das alte Gerät die IP noch hält; Entfernen löst den Konflikt."
+    },
+    "en": {
+      "question": "A static IP is required for new software; both old desktop and new laptop share it. What should the technician do?",
+      "options": { "A": "Bridge the LAN ports", "B": "Use DHCP on the laptop", "C": "Remove the static IP from the desktop", "D": "Replace the laptop NIC" },
+      "answer": "C",
+      "explanation": "Removing the duplicate static IP from the old PC eliminates the address conflict."
+    }
+  },
+  {
+    "id": 117,
+    "de": {
+      "frage": "Nach erfolgreicher Reparatur – welcher Schritt folgt als NÄCHSTES?",
+      "optionen": { "A": "Mail an Telecom", "B": "Ticket schließen", "C": "Benutzer zur Selbstreparatur auffordern", "D": "Benutzer über Lösung aufklären" },
+      "antwort": "D",
+      "erklärung": "Nutzeraufklärung verhindert Wiederholungsfehler und schließt den Support-Prozess kundenorientiert ab."
+    },
+    "en": {
+      "question": "After resolving the issue, what should be done NEXT?",
+      "options": { "A": "Email Telecom", "B": "Close the ticket", "C": "Tell the user to fix it next time", "D": "Educate the user on the solution" },
+      "answer": "D",
+      "explanation": "User education completes the service cycle and reduces repeat incidents."
+    }
+  },
+  {
+    "id": 118,
+    "de": {
+      "frage": "Welche ZWEI Windows-Tools nutzt ein Helpdesk, um Malware zu entfernen?",
+      "optionen": { "A": "Datei-Explorer", "B": "UAC", "C": "Backup/Restore", "D": "Windows-Firewall", "E": "Windows Defender", "F": "Packet Analyzer" },
+      "antwort": ["A", "E"],
+      "erklärung": "Windows Defender scannt/quarantänisiert; der Explorer kann verbliebene Dateien/Ordner manuell löschen."
+    },
+    "en": {
+      "question": "Which TWO Windows tools help a technician remove malware?",
+      "options": { "A": "File Explorer", "B": "User Account Control", "C": "Windows Backup and Restore", "D": "Windows Firewall", "E": "Windows Defender", "F": "Network Packet Analyzer" },
+      "answer": ["A", "E"],
+      "explanation": "Windows Defender provides scanning/removal; File Explorer allows manual deletion of residual malicious files."
+    }
+  },
+  {
+    "id": 119,
+    "de": {
+      "frage": "Nach Malware-Bereinigung: Was sollte der Techniker vor Rückgabe des Laptops tun?",
+      "optionen": { "A": "Benutzer in Malware-Removal schulen", "B": "OS-Neuinstallation erklären", "C": "Recovery-Modus zeigen", "D": "Über gängige Bedrohungen & Prävention informieren" },
+      "antwort": "D",
+      "erklärung": "Präventionsschulung reduziert das Risiko erneuter Infektionen."
+    },
+    "en": {
+      "question": "After removing malware, what should the technician do BEFORE returning the laptop?",
+      "options": { "A": "Teach the user malware removal techniques", "B": "Explain how to reinstall the OS", "C": "Show recovery mode access", "D": "Educate the user on common threats and avoidance" },
+      "answer": "D",
+      "explanation": "User awareness is key to preventing re-infection."
+    }
+  },
+  {
+    "id": 120,
+    "de": {
+      "frage": "Support-Termin dauert länger, nächster Kunde wird 5 Min verspätet. Was macht der Supporter?",
+      "optionen": { "A": "Nächsten Kunden kurz über Verzögerung informieren", "B": "Aktuellen Kunden abbrechen", "C": "Einfach verspätet erscheinen", "D": "Entschuldigung erst bei Ankunft" },
+      "antwort": "A",
+      "erklärung": "Proaktive Kommunikation zeigt Professionalität und respektiert die Zeit des nächsten Kunden."
+    },
+    "en": {
+      "question": "A session runs long and will delay the next appointment by five minutes. What should the rep do NEXT?",
+      "options": { "A": "Quickly notify the next customer of the delay", "B": "Cut the current customer short", "C": "Arrive late without notice", "D": "Apologize on arrival" },
+      "answer": "A",
+      "explanation": "Prompt notification manages expectations and maintains good customer relations."
+    }
+  },
+  {
+    "id": 121,
+    "de": {
+      "frage": "Viele Rechner aus verschiedenen Standorten überfluten den Web-Server mit Anfragen. Welche Angriffsmethode ist das?",
+      "optionen": { "A": "Zero-Day", "B": "SQL-Injection", "C": "Cross-Site-Scripting", "D": "Distributed Denial of Service" },
+      "antwort": "D",
+      "erklärung": "Ein DDoS nutzt zahlreiche Quellen, um den Dienst lahmzulegen."
+    },
+    "en": {
+      "question": "Numerous computers from multiple locations overwhelm the web server. Which attack is occurring?",
+      "options": { "A": "Zero day", "B": "SQL injection", "C": "Cross-site scripting", "D": "Distributed denial of service" },
+      "answer": "D",
+      "explanation": "Simultaneous requests from many hosts characterize a DDoS attack."
+    }
+  },
+  {
+    "id": 122,
+    "de": {
+      "frage": "Interne Nutzer erhalten Zertifikatswarnungen auf vielen Websites; externe Nutzer nicht. Was ist die WAHRSCHEINLICHSTE Ursache?",
+      "optionen": { "A": "Fehlerhaftes AV-Update", "B": "Router blockiert Traffic", "C": "Upstream-ISP flappt", "D": "Zeit/Datum nicht synchron" },
+      "antwort": "D",
+      "erklärung": "Wenn Client-Zeit stark abweicht, erscheinen gültige Zertifikate als ungültig. Externe Geräte mit korrekter Zeit sind nicht betroffen."
+    },
+    "en": {
+      "question": "Internal users receive untrusted-certificate messages on many sites; remote users do not. What is the MOST likely cause?",
+      "options": { "A": "Bad AV signature update", "B": "Misconfigured router blocking traffic", "C": "Flapping upstream ISP", "D": "Time/date not in sync with websites" },
+      "answer": "D",
+      "explanation": "A skewed system clock invalidates TLS certificate validity windows, triggering trust errors."
+    }
+  },
+  {
+    "id": 123,
+    "de": {
+      "frage": "Sicherheitssoftware wurde versehentlich deinstalliert; Neuinstallation erfordert Change Request. Warum sollte man den Change-Prozess befolgen?",
+      "optionen": { "A": "Owner können Performance überwachen", "B": "Risikoanalyse klärt Notwendigkeit", "C": "Endnutzer erfahren Umfang", "D": "Rollback-Plan bei Problemen" },
+      "antwort": "D",
+      "erklärung": "Ein genehmigter Change enthält u. a. einen Rollback-Plan, falls die Wiederinstallation unerwartete Konflikte auslöst."
+    },
+    "en": {
+      "question": "Why follow the change-management process to reinstall accidentally removed security software?",
+      "options": { "A": "Notify owners to monitor performance", "B": "Perform a risk assessment", "C": "Inform end users of scope", "D": "Ensure a rollback plan exists" },
+      "answer": "D",
+      "explanation": "Change control provides documented rollback procedures if the reinstallation impacts services."
+    }
+  },
+  {
+    "id": 124,
+    "de": {
+      "frage": "Welche Windows-Edition ist die GRUNDVERSION, die BitLocker enthält?",
+      "optionen": { "A": "Home", "B": "Pro", "C": "Enterprise", "D": "Pro for Workstations" },
+      "antwort": "B",
+      "erklärung": "BitLocker steht ab Windows 10 Pro zur Verfügung; Home bietet es nicht."
+    },
+    "en": {
+      "question": "What is the most basic Windows edition that includes BitLocker?",
+      "options": { "A": "Home", "B": "Pro", "C": "Enterprise", "D": "Pro for Workstations" },
+      "answer": "B",
+      "explanation": "BitLocker first appears in Windows 10 Pro; higher editions inherit the feature."
+    }
+  },
+  {
+    "id": 125,
+    "de": {
+      "frage": "Datentariflimit erreicht, Telefon sehr langsam, Drittanbieter-GPS-App installiert. Was ist die WAHRSCHEINLICHSTE Ursache?",
+      "optionen": { "A": "App lädt Updates", "B": "App enthält Malware", "C": "App aktualisiert Kartendaten", "D": "GPS-Konflikt" },
+      "antwort": "B",
+      "erklärung": "Malware-In-App kann exzessiven Datenverkehr erzeugen und Systemressourcen beanspruchen, was sowohl Volumen als auch Performance beeinträchtigt."
+    },
+    "en": {
+      "question": "A corporate phone hits its data cap and slows down after installing a third-party GPS app. What is the MOST likely cause?",
+      "options": { "A": "The app is installing updates", "B": "The app contains malware", "C": "The app is updating maps", "D": "The app conflicts with built-in GPS" },
+      "answer": "B",
+      "explanation": "Malicious or poorly coded apps often consume excessive bandwidth and CPU, leading to both symptoms."
+    }
+  },
+  {
+    "id": 126,
+    "de": {
+      "frage": "USB-Mikrofon funktioniert in Windows, aber nicht in einer VoIP-App. Wie löst man das?",
+      "optionen": { "A": "Direkt an PC-Port anschließen", "B": "Mikrofonzugriff unter Datenschutz aktivieren", "C": "Gerätemanager-Neuinstallation", "D": "3,5-mm-Mikro anschließen" },
+      "antwort": "B",
+      "erklärung": "Windows 10 blockiert Mikrofonzugriff pro App; unter Einstellungen → Datenschutz → Mikrofon muss die Desktop-App freigegeben werden."
+    },
+    "en": {
+      "question": "A USB mic works in Voice Recorder but not in a third-party VoIP app. What should the technician do?",
+      "options": { "A": "Plug the mic directly into the PC", "B": "Enable microphone access under Windows Privacy settings", "C": "Remove and rescan the mic in Device Manager", "D": "Replace it with a 3.5 mm mic" },
+      "answer": "B",
+      "explanation": "Privacy settings can block desktop apps; enabling access fixes the issue without hardware changes."
+    }
+  },
+  {
+    "id": 127,
+    "de": {
+      "frage": "Welches Sicherheitsfeature ist für einen reisenden Mitarbeiter-Laptop AM WICHTIGSTEN?",
+      "optionen": { "A": "PIN-Login", "B": "Vierteljährlicher PW-Wechsel", "C": "Festplattenverschlüsselung", "D": "Physisches Schloss" },
+      "antwort": "C",
+      "erklärung": "Volle Laufwerksverschlüsselung schützt Daten bei Verlust oder Diebstahl des Geräts."
+    },
+    "en": {
+      "question": "Which security practice is BEST for a laptop used by a traveling employee?",
+      "options": { "A": "PIN-based login", "B": "Quarterly password changes", "C": "Hard-drive encryption", "D": "Physical laptop lock" },
+      "answer": "C",
+      "explanation": "Full-disk encryption keeps sensitive data safe even if the laptop is lost or stolen."
+    }
+  },
+  {
+    "id": 128,
+    "de": {
+      "frage": "Ein Benutzer im Büro kann auf keine Netzlaufwerke zugreifen, andere schon. WAHRSCHEINLICHSTE Ursache?",
+      "optionen": { "A": "Kein VPN verbunden", "B": "Dateiserver offline", "C": "Akkustand zu niedrig", "D": "Anmeldeskript fehlgeschlagen" },
+      "antwort": "D",
+      "erklärung": "Nur das Benutzerkonto ist betroffen; das Zuordnen erfolgt per Logon-Script, das offenbar nicht lief."
+    },
+    "en": {
+      "question": "A single office user cannot access any network drives; others can. What is the MOST likely reason?",
+      "options": { "A": "User not connected to VPN", "B": "File server is offline", "C": "Low battery prevents connection", "D": "Log-in script failed" },
+      "answer": "D",
+      "explanation": "Drive mappings are typically executed via a logon script; if it fails only that user loses the shares."
+    }
+  },
+  {
+    "id": 129,
+    "de": {
+      "frage": "Beim Online-Banking erscheint Warnung: Zertifikat für andere Adresse ausgestellt. Was soll der Techniker raten?",
+      "optionen": { "A": "Cache leeren und Bank kontaktieren", "B": "Seite schließen und Bank kontaktieren", "C": "Fortfahren und Bank kontaktieren", "D": "Browser updaten und Bank kontaktieren" },
+      "antwort": "B",
+      "erklärung": "Eine SSL-Fehlermeldung weist auf potenzielles MitM hin; der Nutzer sollte die Verbindung sofort beenden."
+    },
+    "en": {
+      "question": "A banking site shows a certificate for a different address. What should the user be instructed to do?",
+      "options": { "A": "Clear cache and contact the bank", "B": "Close the site and contact the bank", "C": "Proceed to the site and contact the bank", "D": "Update browser and contact the bank" },
+      "answer": "B",
+      "explanation": "The safest response to a certificate mismatch is to leave the site and verify with the institution."
+    }
+  },
+  {
+    "id": 130,
+    "de": {
+      "frage": "Internet Explorer leitet eine bekannte URL auf eine fremde Seite um. Welche Maßnahme behebt das WAHRSCHEINLICH am besten?",
+      "optionen": { "A": "OS updaten", "B": "Proxy-Einstellungen ändern", "C": "Browser neu installieren", "D": "Port-Forwarding aktivieren" },
+      "antwort": "B",
+      "erklärung": "Manipulierte Proxy-Einstellungen verursachen oft Redirects; das Entfernen/Zurücksetzen stellt normales Surfverhalten wieder her."
+    },
+    "en": {
+      "question": "IE redirects a known site to an unfamiliar one. Which action will MOST likely fix the issue?",
+      "options": { "A": "Update the OS", "B": "Change proxy settings", "C": "Reinstall the browser", "D": "Enable port forwarding" },
+      "answer": "B",
+      "explanation": "Malicious or incorrect proxy settings can hijack web traffic; resetting them restores proper routing."
+    }
+  }
+]

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./newQuiz.json";
+import questions2 from "./core2.json";
 
 export default function Quiz() {
   const [questions, setQuestions] = useState(questions2);
