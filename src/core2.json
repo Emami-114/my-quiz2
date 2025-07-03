@@ -3573,7 +3573,7 @@
         "C": "DDoS",
         "D": "Evil Twin"
       },
-      "antwort": "B",
+      "antwort": "D",
       "erklärung": "Vishing, auch bekannt als Voice-Phishing, ist eine Art von Social-Engineering-Angriff, bei dem der Angreifer das Opfer dazu verleitet, sensible Informationen über das Telefon preiszugeben. In diesem Fall verleitete der Angreifer den Benutzer dazu, Anmeldedaten für eine Website bereitzustellen."
     },
     "en": {
@@ -3584,7 +3584,7 @@
         "C": "DDoS",
         "D": "Evil twin"
       },
-      "answer": "B",
+      "answer": "D",
       "explanation": "Vishing, also known as voice phishing, is a type of social engineering attack where the attacker tricks the victim into divulging sensitive information over the phone. In this case, the attacker tricked the user into providing login credentials for a website."
     }
   },
