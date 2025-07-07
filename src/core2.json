@@ -94,13 +94,13 @@
     "de": {
       "frage": "Wenn ein Benutzer ein Problem meldet, erstellt der Techniker ein Ticket im Namen des Benutzers. Welche Vorgehensweise sollte der Techniker anwenden, damit das Ticket dem richtigen Benutzer zugeordnet bleibt?",
       "optionen": { "A": "Rückrufnummer des Benutzers ins Ticket eintragen", "B": "Ticket dem Power-User der Abteilung zuweisen", "C": "Ticket mit einer eindeutigen Benutzer-ID registrieren", "D": "Dem Benutzer eine eindeutige Ticketnummer zur späteren Referenz geben" },
-      "antwort": "D",
+      "antwort": "C",
       "erklärung": "Eine eindeutige Ticketnummer ermöglicht dem Benutzer, bei Rückfragen eindeutig auf sein Ticket zu verweisen und verhindert Verwechslungen."
     },
     "en": {
       "question": "When a user calls in to report an issue, a technician submits a ticket on the user's behalf. Which of the following practices should the technician use to make sure the ticket is associated with the correct user?",
       "options": { "A": "Have the user provide a callback phone number to be added to the ticket", "B": "Assign the ticket to the department's power user", "C": "Register the ticket with a unique user identifier", "D": "Provide the user with a unique ticket number that can be referenced on subsequent calls" },
-      "answer": "D",
+      "answer": "C",
       "explanation": "Giving the user a unique ticket number ensures any follow-up communication references the correct record."
     }
   },
@@ -469,13 +469,13 @@
     "de": {
       "frage": "Ein Techniker wurde beauftragt, die schnellste und sicherste Methode für die Anmeldung an Laptops zu verwenden. Welche der folgenden Anmeldeoptionen erfüllt diese Anforderungen?",
       "optionen": { "A": "PIN", "B": "Benutzername und Passwort", "C": "SSO", "D": "Fingerabdruck" },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Dies liegt daran, dass eine PIN eine schnelle und sichere Methode zur Anmeldung an Laptops ist und sicherer als ein Passwort, da sie nicht anfällig für Keylogger ist."
     },
     "en": {
       "question": "A technician has been tasked with using the fastest and most secure method of logging in to laptops. Which of the following log-in options meets these requirements?",
       "options": { "A": "PIN", "B": "Username and password", "C": "SSO", "D": "Fingerprint" },
-      "answer": "A",
+      "answer": "D",
       "explanation": "This is because a PIN is a fast and secure method of logging in to laptops, and it is more secure than a password because it is not susceptible to keyloggers."
     }
   },
@@ -484,13 +484,13 @@
     "de": {
       "frage": "Ein Techniker ersetzt den Prozessor in einem Desktop-Computer. Bevor der Computer geöffnet wird, möchte der Techniker sicherstellen, dass die internen Komponenten geschützt sind. Welche der folgenden Sicherheitsmaßnahmen würde die Komponenten im PC am BESTEN schützen? (Wählen Sie ZWEI aus).",
       "optionen": { "A": "Verwendung eines ESD-Armbands", "B": "Trennen des Computers von der Stromquelle", "C": "Platzieren des Netzteils in einer antistatischen Tasche", "D": "Sicherstellen einer ordnungsgemäßen Belüftung", "E": "Entfernen von Staub von den Lüftungslüftern", "F": "Sicherstellen, dass die Ausrüstung geerdet ist" },
-      "antwort": "A,C",
+      "antwort": "A,B",
       "erklärung": "Die zwei Sicherheitsmaßnahmen, die die Komponenten im PC am besten schützen würden, sind: Verwendung eines ESD-Armbands und Platzieren des Netzteils in einer antistatischen Tasche."
     },
     "en": {
       "question": "A technician is replacing the processor in a desktop computer prior to opening the computer, the technician wants to ensure the internal components are protected. Which of the following safety procedures would BEST protect the components in the PC? (Select TWO).",
       "options": { "A": "Utilizing an ESD strap", "B": "Disconnecting the computer from the power source", "C": "Placing the PSU in an antistatic bag", "D": "Ensuring proper ventilation", "E": "Removing dust from the ventilation fans", "F": "Ensuring equipment is grounded" },
-      "answer": "A,C",
+      "answer": "A,B",
       "explanation": "The two safety procedures that would best protect the components in the PC are: Utilizing an ESD strap and Placing the PSU in an antistatic bag."
     }
   },
@@ -499,13 +499,13 @@
     "de": {
       "frage": "Das Mobiltelefon eines Benutzers ist langsam geworden. Ein Systemadministrator hat mehrere schädliche Anwendungen auf dem Gerät entdeckt und das Telefon zurückgesetzt. Der Administrator hat MDM-Software installiert. Welche der folgenden Maßnahmen sollte der Administrator ergreifen, um das Gerät in Zukunft vor dieser Bedrohung zu schützen? (Wählen Sie ZWEI aus).",
       "optionen": { "A": "Verhindern eines Geräte-Roots", "B": "Deaktivieren der biometrischen Authentifizierung", "C": "Eine PIN auf dem Entsperrbildschirm verlangen", "D": "Entwicklermodus aktivieren", "E": "Installation von Drittanbieter-Anwendungen blockieren", "F": "GPS-Spoofing verhindern" },
-      "antwort": "C,E",
+      "antwort": "A,E",
       "erklärung": "Um das Gerät in Zukunft vor dieser Bedrohung zu schützen, sollte der Administrator eine PIN auf dem Entsperrbildschirm verlangen und die Installation von Drittanbieter-Anwendungen blockieren. Das Verlangen einer PIN auf dem Entsperrbildschirm kann helfen, unbefugten Zugriff auf das Gerät zu verhindern, während das Blockieren der Installation von Drittanbieter-Anwendungen dazu beitragen kann, die Installation schädlicher Anwendungen auf dem Gerät zu verhindern."
     },
     "en": {
       "question": "A user's mobile phone has become sluggish. A systems administrator discovered several malicious applications on the device and reset the phone. The administrator installed MDM software. Which of the following should the administrator do to help secure the device against this threat in the future? (Select TWO).",
       "options": { "A": "Prevent a device root", "B": "Disable biometric authentication", "C": "Require a PIN on the unlock screen", "D": "Enable developer mode", "E": "Block a third-party application installation", "F": "Prevent GPS spoofing" },
-      "answer": "C,E",
+      "answer": "A,E",
       "explanation": "To help secure the device against this threat in the future, the administrator should require a PIN on the unlock screen and block a third-party application installation. Requiring a PIN on the unlock screen can help to prevent unauthorized access to the device, while blocking third-party application installation can help to prevent malicious applications from being installed on the device."
     }
   },
@@ -629,13 +629,13 @@
     "de": {
       "frage": "Ein Helpdesk-Techniker behebt ein Problem an einer Workstation in einer SOHO-Umgebung, die über den normalen Systembaselines läuft. Der Techniker entdeckt ein unbekanntes ausführbares Programm mit einem zufälligen Namen, das auf dem System läuft. Der Techniker beendet den Prozess, und das System kehrt zum normalen Betrieb zurück. Der Techniker vermutet, dass es sich um eine infizierte Datei handelt, aber das Antivirus-Programm erkennt keine Bedrohung. Der Techniker befürchtet, dass andere Maschinen mit diesem unbekannten Virus infiziert sein könnten. Welche der folgenden Maßnahmen ist die EFFEKTIVSTE, um andere Maschinen im Netzwerk auf diese unbekannte Bedrohung zu überprüfen?",
       "optionen": { "A": "Ein Startskript ausführen, das Dateien nach Namen entfernt", "B": "Eine Probe an den Antivirus-Anbieter senden", "C": "Jede Maschine manuell überprüfen", "D": "Ausgehenden Netzwerkverkehr überwachen" },
-      "antwort": "C",
+      "antwort": "D",
       "erklärung": "Die effektivste Methode, um andere Maschinen im Netzwerk auf diese unbekannte Bedrohung zu überprüfen, besteht darin, jede Maschine manuell zu überprüfen. Dies kann helfen, andere Maschinen zu identifizieren, die möglicherweise mit dem unbekannten Virus infiziert sind, und ermöglicht deren Bereinigung."
     },
     "en": {
       "question": "A help desk technician is troubleshooting a workstation in a SOHO environment that is running above normal system baselines. The technician discovers an unknown executable with a random string name running on the system. The technician terminates the process, and the system returns to normal operation. The technician thinks the issue was an infected file, but the antivirus is not detecting a threat. The technician is concerned other machines may be infected with this unknown virus. Which of the following is the MOST effective way to check other machines on the network for this unknown threat?",
       "options": { "A": "Run a startup script that removes files by name", "B": "Provide a sample to the antivirus vendor", "C": "Manually check each machine", "D": "Monitor outbound network traffic" },
-      "answer": "C",
+      "answer": "D",
       "explanation": "The most effective way to check other machines on the network for this unknown threat is to manually check each machine. This can help to identify any other machines that may be infected with the unknown virus and allow them to be cleaned."
     }
   },
@@ -704,13 +704,13 @@
     "de": {
       "frage": "Welche der folgenden Maßnahmen bieten die BESTE Möglichkeit, den physischen Zugang zu einem Serverraum eines Rechenzentrums zu sichern? (Wählen Sie ZWEI aus).",
       "optionen": { "A": "Biometrisches Schloss", "B": "Ausweisleser", "C": "USB-Token", "D": "Videoüberwachung", "E": "Abschließbarer Rack", "F": "Zugangskontrollschleuse" },
-      "antwort": "A,B",
+      "antwort": "A,F",
       "erklärung": "Ein biometrisches Schloss erfordert, dass ein autorisierter Benutzer einen eindeutigen biometrischen Identifikator, wie z. B. einen Fingerabdruck, bereitstellt, um Zugang zum Serverraum zu erhalten. Ein Ausweisleser erfordert, dass ein autorisierter Benutzer eine Zugangskarte durchzieht, um Zugang zu erhalten. Beide Methoden stellen sicher, dass nur autorisiertes Personal Zugang zum Serverraum hat."
     },
     "en": {
       "question": "Which of the following provide the BEST way to secure physical access to a data center server room? (Select TWO).",
       "options": { "A": "Biometric lock", "B": "Badge reader", "C": "USB token", "D": "Video surveillance", "E": "Locking rack", "F": "Access control vestibule" },
-      "answer": "A,B",
+      "answer": "A,F",
       "explanation": "A biometric lock requires an authorized user to provide a unique biometric identifier, such as a fingerprint, in order to gain access to the server room. A badge reader requires an authorized user to swipe an access card in order to gain access. Both of these methods ensure that only authorized personnel are able to access the server room."
     }
   },
@@ -1076,7 +1076,7 @@
         "C": "NTFS",
         "D": "exFAT"
       },
-      "antwort": "C",
+      "antwort": "D",
       "erklärung": "Da Windows-Systeme FAT32 und NTFS 'out of the box' unterstützen und Linux eine Vielzahl von Dateisystemen einschließlich FAT32 und NTFS unterstützt, wird empfohlen, die Partition oder Festplatte, die geteilt werden soll, in FAT32 oder NTFS zu formatieren. Da FAT32 jedoch eine Dateigrößenbeschränkung von 4,2 GB hat, ist NTFS die bessere Wahl, wenn mit großen Dateien gearbeitet wird."
     },
     "en": {
@@ -1087,7 +1087,7 @@
         "C": "NTFS",
         "D": "exFAT"
       },
-      "answer": "C",
+      "answer": "D",
       "explanation": "Since Windows systems support FAT32 and NTFS 'out of the box' and Linux supports a whole range of them including FAT32 and NTFS, it is highly recommended to format the partition or disk you want to share in either FAT32 or NTFS, but since FAT32 has a file size limit of 4.2 GB, if you happen to work with huge files, then it is better you use NTFS."
     }
   },
