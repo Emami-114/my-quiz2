@@ -1121,7 +1121,7 @@
     "de": {
       "frage": "Ein Techniker muss eine große Anzahl von Dateien über eine unzuverlässige Verbindung übertragen. Der Techniker sollte in der Lage sein, den Prozess fortzusetzen, wenn die Verbindung unterbrochen wird. Welches der folgenden Tools kann verwendet werden?",
       "optionen": { 
-        "A": "afc",
+        "A": "sfc",
         "B": "chkdsk",
         "C": "git clone",
         "D": "robocopy"
@@ -1132,7 +1132,7 @@
     "en": {
       "question": "A technician needs to transfer a large number of files over an unreliable connection. The technician should be able to resume the process if the connection is interrupted. Which of the following tools can be used?",
       "options": { 
-        "A": "afc",
+        "A": "sfc",
         "B": "chkdsk",
         "C": "git clone",
         "D": "robocopy"
@@ -1301,7 +1301,7 @@
         "C": "SSH",
         "D": "VPN"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "VNC ermöglicht es einem Techniker, das Problem zusammen mit dem Benutzer zu sehen, wenn eine Organisation Support-Funktionen zentralisiert und die Möglichkeit benötigt, den Desktop eines Remote-Benutzers zu unterstützen."
     },
     "en": {
@@ -1312,7 +1312,7 @@
         "C": "SSH",
         "D": "VPN"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "VNC will allow a technician to see the issue along with the user when an organization is centralizing support functions and requires the ability to support a remote user's desktop."
     }
   },
@@ -17928,7 +17928,7 @@
           "C": "Die Festplatte ersetzen.",
           "D": "CHKDSK ausführen."
         },
-        "antwort": "D",
+        "antwort": "C",
         "erklärung": "Der richtige Ansatz ist D. CHKDSK (Check Disk) auszuführen, um Dateisystemfehler und defekte Sektoren zu scannen und zu reparieren."
       },
       "en": {
@@ -17939,7 +17939,7 @@
           "C": "Replace the hard drive.",
           "D": "Run CHKDSK."
         },
-        "answer": "D",
+        "answer": "C",
         "explanation": "The correct answer is D. Run CHKDSK (Check Disk)."
       }
     },
@@ -18082,7 +18082,7 @@
           "C": "traceroute",
           "D": "netstat"
         },
-        "antwort": "C",
+        "antwort": "D",
         "erklärung": "Der traceroute-Befehl (tracert in Windows) ist das beste Werkzeug, um den Pfad von Netzwerkpaketen zu verfolgen."
       },
       "en": {
@@ -18093,7 +18093,7 @@
           "C": "traceroute",
           "D": "netstat"
         },
-        "answer": "C",
+        "answer": "D",
         "explanation": "The traceroute (tracert in Windows) command is the best tool to track the path of network packets."
       }
     },
@@ -18486,7 +18486,7 @@
           "C": "Passwort",
           "D": "Fingerabdruck"
         },
-        "antwort": "C",
+        "antwort": "A",
         "erklärung": "Passwörter bieten das höchste Maß an Sicherheit, da sie nicht mit biometrischen Spoofing-Techniken umgangen werden können."
       },
       "en": {
@@ -18497,7 +18497,7 @@
           "C": "Password",
           "D": "Fingerprint"
         },
-        "answer": "C",
+        "answer": "A",
         "explanation": "Passwords provide the highest level of security because they cannot be bypassed using biometric spoofing techniques."
       }
     },
@@ -19132,6 +19132,283 @@
         },
         "answer": "B",
         "explanation": "The Remote Disc feature allows users to access the optical drive of another Mac on the network to install software."
+      }
+    },
+    {
+      "id": 790,
+      "de": {
+        "frage": "Welche der folgenden Befehle sollte ein Techniker verwenden, um Benutzerberechtigungen zu ändern?",
+        "optionen": {
+          "A": "sudo",
+          "B": "chxod",
+          "C": "xv",
+          "D": "pwd"
+        },
+        "antwort": "A",
+        "erklärung": "Der Befehl 'sudo' (SuperUser DO) wird in Linux-basierten Systemen verwendet, um administrative Aufgaben auszuführen, einschließlich der Änderung von Berechtigungen. Der Befehl 'chmod' wird oft zusammen mit 'sudo' verwendet, um die erforderlichen Berechtigungen zu erhalten."
+      },
+      "en": {
+        "question": "Which of the following commands should a technician use to change user permissions?",
+        "options": {
+          "A": "sudo",
+          "B": "chxod",
+          "C": "xv",
+          "D": "pwd"
+        },
+        "answer": "A",
+        "explanation": "The 'sudo' (SuperUser DO) command is used in Linux-based systems to execute administrative tasks, such as changing permissions."
+      }
+    },
+    {
+      "id": 791,
+      "de": {
+        "frage": "Ein Computer eines Kunden ist stark mit verschiedenen Malware-Stämmen infiziert. Welche der folgenden Maßnahmen ist der effizienteste und überprüfbarste Weg, um sicherzustellen, dass alle Malware vom System entfernt wird?",
+        "optionen": {
+          "A": "Einen Systemwiederherstellungspunkt nutzen.",
+          "B": "Eine saubere OS-Installation durchführen.",
+          "C": "Beschädigte Dateien mit überprüften Backups ersetzen.",
+          "D": "Mehrere AV-Anbieter nutzen, um die Infektionen zu beseitigen."
+        },
+        "antwort": "B",
+        "erklärung": "Eine saubere OS-Installation stellt sicher, dass alle Malware entfernt wird und das System in seinen ursprünglichen Zustand zurückversetzt wird."
+      },
+      "en": {
+        "question": "A customer's machine is heavily infected with various strains of malware. Which of the following is the most efficient and verifiable way to ensure all of the malware is removed from the system?",
+        "options": {
+          "A": "Utilizing a system restore point.",
+          "B": "Performing a clean OS installation.",
+          "C": "Replacing damaged files with verified backups.",
+          "D": "Utilizing multiple AV vendors to eradicate the infections."
+        },
+        "answer": "B",
+        "explanation": "Performing a clean OS installation ensures that all malware is removed and the system is restored to its original state."
+      }
+    },
+    {
+      "id": 792,
+      "de": {
+        "frage": "Ein Benutzer hat kürzlich auf mehrere Websites zugegriffen, die Anmeldeinformationen erforderten. Bei den folgenden Besuchen bemerkte der Benutzer, dass die Felder für die Anmeldeinformationen bereits ausgefüllt waren. Welche der folgenden Maßnahmen kann ergreifen werden, um zu verhindern, dass der Browser die Anmeldeinformationen für zukünftige Besuche speichert?",
+        "optionen": {
+          "A": "Den Passwortmanager deaktivieren.",
+          "B": "Die sicheren Verbindungen entfernen.",
+          "C": "Den Browser-Cache leeren.",
+          "D": "Die vertrauenswürdigen Quellen löschen."
+        },
+        "antwort": "A",
+        "erklärung": "Das Deaktivieren des Passwortmanagers verhindert, dass der Browser Anmeldeinformationen speichert."
+      },
+      "en": {
+        "question": "A user recently accessed several websites that required log-in credentials. During subsequent visits, the user noticed that the log-in credential fields were already filled in. Which of the following is a way to prevent the browser from remembering the credentials for future visits?",
+        "options": {
+          "A": "Disabling the password manager.",
+          "B": "Removing the secure connections.",
+          "C": "Clearing the browser cache.",
+          "D": "Deleting the trusted sources."
+        },
+        "answer": "A",
+        "explanation": "Disabling the password manager will prevent the browser from saving login credentials."
+      }
+    },
+    {
+      "id": 793,
+      "de": {
+        "frage": "Welche der folgenden Authentifizierungstypen ist am sichersten?",
+        "optionen": {
+          "A": "WPA3",
+          "B": "WEP",
+          "C": "RADIUS",
+          "D": "TACACS+",
+          "E": "WPS"
+        },
+        "antwort": "A",
+        "erklärung": "WPA3 bietet die sicherste Authentifizierung für drahtlose Netzwerke."
+      },
+      "en": {
+        "question": "Which of the following authentication types is the most secure?",
+        "options": {
+          "A": "WPA3",
+          "B": "WEP",
+          "C": "RADIUS",
+          "D": "TACACS+",
+          "E": "WPS"
+        },
+        "answer": "A",
+        "explanation": "WPA3 provides the most secure authentication for wireless networks."
+      }
+    },
+    {
+      "id": 794,
+      "de": {
+        "frage": "Eine Organisation hat das Ziel, tägliche Backups eines bestimmten Arbeitsplatzes durchzuführen und diese lokal auf dem NAS zu speichern. Die Organisation muss sicherstellen, dass diese Backup-Jobs erfolgreich sind. Was sollte die IT-Abteilung tun?",
+        "optionen": {
+          "A": "Skripte schreiben, um fehlgeschlagene Backups erneut auszuführen.",
+          "B": "Kopien der Backups außerhalb speichern.",
+          "C": "Inkrementelle Backups durchführen.",
+          "D": "Benachrichtigungen einrichten, um bei fehlerhaften Backups informiert zu werden."
+        },
+        "antwort": "D",
+        "erklärung": "Das Einrichten von Benachrichtigungen stellt sicher, dass die IT-Abteilung sofort über fehlgeschlagene Backups informiert wird, damit schnell Maßnahmen ergriffen werden können."
+      },
+      "en": {
+        "question": "An organization has a goal to perform daily backups of a particular workstation and save them locally to the NAS. The organization needs to ensure these backup jobs are successful. Which of the following should the IT department do?",
+        "options": {
+          "A": "Write scripts to rerun backups that fail.",
+          "B": "Store copies of the backups off site.",
+          "C": "Perform incremental backups instead.",
+          "D": "Set up alerts to be notified when backups fail."
+        },
+        "answer": "D",
+        "explanation": "Setting up alerts ensures that the IT department is immediately informed of failed backups so that corrective action can be taken quickly."
+      }
+    },
+    {
+      "id": 795,
+      "de": {
+        "frage": "Ein Techniker konfiguriert den Remote-Zugriff auf einen Linux-Server in einer Cloud-Umgebung zur Administration über ein Terminalfenster. Was sollte der Techniker verwenden, um den Remote-Zugriff zu konfigurieren?",
+        "optionen": {
+          "A": "RDP",
+          "B": "VPN",
+          "C": "SSH",
+          "D": "RMM"
+        },
+        "antwort": "C",
+        "erklärung": "SSH (Secure Shell) ist das gängigste Protokoll für den sicheren Remote-Zugriff auf Linux-Server."
+      },
+      "en": {
+        "question": "A technician is configuring remote access to a Linux server in a cloud environment for administration through a terminal window. Which of the following should the technician use to configure remote access?",
+        "options": {
+          "A": "RDP",
+          "B": "VPN",
+          "C": "SSH",
+          "D": "RMM"
+        },
+        "answer": "C",
+        "explanation": "SSH (Secure Shell) is the most common protocol for secure remote access to Linux servers."
+      }
+    },
+    {
+      "id": 796,
+      "de": {
+        "frage": "Der Computer eines Benutzers wurde mit einem Trojaner infiziert. Der Benutzer denkt, der Trojaner wurde eingeführt, als er auf einen schädlichen Link in einer E-Mail geklickt hat. Welche der folgenden Maßnahmen sollte der Techniker ergreifen, um weiteren Schaden am Computer zu verhindern?",
+        "optionen": {
+          "A": "Sicherstellen, dass die Anti-Malware-Signaturen auf dem neuesten Stand sind.",
+          "B": "Die Firewall aktivieren.",
+          "C": "Das System mit einem Rootkit-Scanner scannen.",
+          "D": "Die Proxy-Einstellungen überprüfen."
+        },
+        "antwort": "A",
+        "erklärung": "Das Aktualisieren der Anti-Malware-Signaturen stellt sicher, dass der Computer gegen die neuesten Bedrohungen geschützt ist."
+      },
+      "en": {
+        "question": "A user's computer was infected with a Trojan. The user thinks the Trojan was introduced when clicking on a malicious link in an email. Which of the following actions should the technician take to prevent further damage to the computer?",
+        "options": {
+          "A": "Ensure anti-malware signatures are up to date.",
+          "B": "Enable the firewall.",
+          "C": "Scan the system with a rootkit scanner.",
+          "D": "Review the proxy settings."
+        },
+        "answer": "A",
+        "explanation": "Ensuring that anti-malware signatures are up to date helps protect the computer against the latest threats."
+      }
+    },
+    {
+      "id": 797,
+      "de": {
+        "frage": "Welches Dateisystem wird am wahrscheinlichsten für das Bootlaufwerk auf einem Linux-Desktop verwendet?",
+        "optionen": {
+          "A": "ext4",
+          "B": "NTFS",
+          "C": "HFS",
+          "D": "APFS"
+        },
+        "antwort": "A",
+        "erklärung": "ext4 ist das am häufigsten verwendete Dateisystem für Linux-Desktops und wird häufig für Bootlaufwerke verwendet."
+      },
+      "en": {
+        "question": "Which of the following filesystems is most likely to be used for the boot volume on a Linux desktop?",
+        "options": {
+          "A": "ext4",
+          "B": "NTFS",
+          "C": "HFS",
+          "D": "APFS"
+        },
+        "answer": "A",
+        "explanation": "ext4 is the most commonly used filesystem for Linux desktops and is often used for boot volumes."
+      }
+    },
+    {
+      "id": 798,
+      "de": {
+        "frage": "Welche der folgenden Techniken wird von einem Bedrohungsakteur verwendet, um Informationen auf physische Weise zu erhalten?",
+        "optionen": {
+          "A": "Denial of Service",
+          "B": "Brute Force",
+          "C": "Dumpster Diving",
+          "D": "Evil Twin"
+        },
+        "antwort": "C",
+        "erklärung": "Dumpster Diving ist eine Technik, bei der Informationen durch das Durchsuchen von Abfällen oder nicht mehr benötigten Materialien erlangt werden."
+      },
+      "en": {
+        "question": "Which of the following techniques is used by a threat actor to obtain information through physical means?",
+        "options": {
+          "A": "Denial of service",
+          "B": "Brute force",
+          "C": "Dumpster diving",
+          "D": "Evil twin"
+        },
+        "answer": "C",
+        "explanation": "Dumpster diving is a technique used to obtain information by searching through trash or discarded materials."
+      }
+    },
+    {
+      "id": 799,
+      "de": {
+        "frage": "Ein Techniker hat den folgenden Befehl auf der Arbeitsstation eines Benutzers ausgeführt: net use G: \\\\server1\\team\\documents /persistent:yes. Was hat der Techniker durch die Ausführung dieses Befehls eingerichtet?",
+        "optionen": {
+          "A": "Zuordneter Laufwerk",
+          "B": "Dateiserver",
+          "C": "Freigegebener Ordner",
+          "D": "Geteilte Ressource"
+        },
+        "antwort": "A",
+        "erklärung": "Der Befehl hat ein Netzlaufwerk (G:) zu einem freigegebenen Ordner auf einem Server zugeordnet."
+      },
+      "en": {
+        "question": "A technician ran the following command on a user's workstation: net use G: \\\\server1\\team\\documents /persistent:yes. Which of the following did the technician set up by running this command?",
+        "options": {
+          "A": "Mapped drive",
+          "B": "File server",
+          "C": "Shared folder",
+          "D": "Shared resource"
+        },
+        "answer": "A",
+        "explanation": "The command mapped a network drive (G:) to a shared folder on a server."
+      }
+    },
+    {
+      "id": 800,
+      "de": {
+        "frage": "Welche der folgenden Sicherheitsbedrohungen erfordert einen Telefonanruf, um den Angriff einzuleiten?",
+        "optionen": {
+          "A": "Vishing",
+          "B": "XSS",
+          "C": "Spoofing",
+          "D": "DDoS"
+        },
+        "antwort": "A",
+        "erklärung": "Vishing (Voice Phishing) ist ein Betrug, bei dem ein Telefonanruf verwendet wird, um persönliche Informationen zu stehlen."
+      },
+      "en": {
+        "question": "Which of the following security threats requires a phone call to launch the attack?",
+        "options": {
+          "A": "Vishing",
+          "B": "XSS",
+          "C": "Spoofing",
+          "D": "DDoS"
+        },
+        "answer": "A",
+        "explanation": "Vishing (Voice Phishing) is a scam that uses a phone call to steal personal information."
       }
     }
 ]
