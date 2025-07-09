@@ -1378,7 +1378,7 @@
         "C": "Prüfen, ob der Akku ausreichend geladen ist",
         "D": "Eine starke Internetverbindung über Wi-Fi oder Mobilfunk bestätigen"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Da keine Fehlermeldungen auf dem Gerät angezeigt werden, sollte der Techniker prüfen, ob der Akku ausreichend geladen ist. Wenn der Akku schwach ist, hat das Gerät möglicherweise nicht genug Energie, um das Update abzuschließen."
     },
     "en": {
@@ -1389,7 +1389,7 @@
         "C": "Check if the battery is sufficiently charged",
         "D": "Confirm a strong internet connection is available using Wi-Fi or cellular data"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "Since there are no error messages on the device, the technician should check if the battery is sufficiently charged. If the battery is low, the device may not have enough power to complete the update."
     }
   },
@@ -1453,7 +1453,7 @@
         "C": "ls",
         "D": "sudo"
       },
-      "antwort": "D",
+      "antwort": "A",
       "erklärung": "Der Linux-Befehl, der zur Installation einer Anwendung verwendet wird, ist sudo. Der sudo-Befehl ermöglicht es Benutzern, Programme mit den Sicherheitsrechten eines anderen Benutzers, wie dem Root-Benutzer, auszuführen. Dies ist notwendig, um Anwendungen zu installieren, da es administrative Rechte erfordert."
     },
     "en": {
@@ -1464,7 +1464,7 @@
         "C": "ls",
         "D": "sudo"
       },
-      "answer": "D",
+      "answer": "A",
       "explanation": "The Linux command used to install an application is sudo. The sudo command allows users to run programs with the security privileges of another user, such as the root user. This is necessary to install applications because it requires administrative privileges."
     }
   },
@@ -1528,7 +1528,7 @@
         "C": "Adware",
         "D": "Fehlende Systemdateien"
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "Der wahrscheinlichste Grund dafür, dass der Antivirus-Schutz auf einem Firmen-Laptop veraltet ist, sind fehlgeschlagene OS-Updates. Antivirus-Software ist auf das Betriebssystem angewiesen, um ordnungsgemäß zu funktionieren. Wenn das Betriebssystem nicht auf dem neuesten Stand ist, funktioniert die Antivirus-Software möglicherweise nicht ordnungsgemäß und kann möglicherweise nicht die neuesten Virendefinitionen und Updates empfangen."
     },
     "en": {
@@ -1539,7 +1539,7 @@
         "C": "Adware",
         "D": "Missing system files"
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "The most likely reason for the antivirus protection on a company laptop being out of date is failed OS updates. Antivirus software relies on the operating system to function properly. If the operating system is not up-to-date, the antivirus software may not function properly and may not be able to receive the latest virus definitions and updates."
     }
   },
@@ -1778,7 +1778,7 @@
         "C": "Abhörversuche werden verhindert",
         "D": "Rogue Access Points werden sich nicht verbinden"
       },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Multi-Faktor-Authentifizierung wird für Wi-Fi erzwungen, nachdem ein Client-Zertifikat für Wi-Fi-Zugang für alle Geräte in einer Organisation bereitgestellt wurde."
     },
     "en": {
@@ -1789,7 +1789,7 @@
         "C": "Eavesdropping attempts will be prevented",
         "D": "Rogue access points will not connect"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "Multifactor authentication will be forced for Wi-Fi after deploying a client certificate to be used for Wi-Fi access for all devices in an organization."
     }
   },
@@ -2084,7 +2084,7 @@
         "C": "Benutzername und Passwort",
         "D": "Smart Card und Passwort"
       },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Smart Card und Passwort ist ein Beispiel für Zwei-Faktor-Authentifizierung (2FA), nicht Multi-Faktor-Authentifizierung (MFA). MFA erfordert zwei oder mehr Authentifizierungsfaktoren. Fingerabdruck-Scan und Netzhaut-Scan sind beide biometrische Faktoren, aber verschiedene Arten."
     },
     "en": {
@@ -2095,7 +2095,7 @@
         "C": "Username and password",
         "D": "Smart card and password"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "Smart card and password is an example of two-factor authentication (2FA), not multi-factor authentication (MFA). MFA requires two or more authentication factors. Fingerprint scan and retina scan are both biometric factors but different types."
     }
   },
@@ -2186,7 +2186,7 @@
         "C": "Inkrementelles Backup",
         "D": "Vollständiges Backup"
       },
-      "antwort": "D",
+      "antwort": "A",
       "erklärung": "Um diese Aufgabe zu erfüllen, sollte der Techniker eine vollständige Backup-Methode verwenden. Ein vollständiges Backup benötigt nur zwei Sätze von Bändern zur Wiederherstellung, da es alle Daten von der Workstation sichert. Bei einem differenziellen Backup müssen die Backups mehrmals über einen Zeitraum durchgeführt werden, daher wären mehr Bänder zur Wiederherstellung der Daten erforderlich."
     },
     "en": {
@@ -2197,7 +2197,7 @@
         "C": "Incremental backup",
         "D": "Full backup"
       },
-      "answer": "D",
+      "answer": "A",
       "explanation": "To accomplish this task, the technician should use a Full backup method. A full backup only requires two sets of tapes to restore because it backs up all the data from the workstation. With a differential backup, the backups need to be taken multiple times over a period of time, so more tapes would be needed to restore the data."
     }
   },
@@ -2211,7 +2211,7 @@
         "C": "VNC",
         "D": "MSRA"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Der Administrator kann Virtual Network Computing (VNC) verwenden, um den Server effektiv zu troubleshooten. VNC ist ein grafisches Desktop-Sharing-System, das es dem Administrator ermöglicht, den Desktop eines Linux-Servers remote zu steuern."
     },
     "en": {
@@ -2222,7 +2222,7 @@
         "C": "VNC",
         "D": "MSRA"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "The administrator can use Virtual Network Computing (VNC) to troubleshoot the server effectively. VNC is a graphical desktop sharing system that allows the administrator to remotely control the desktop of a Linux server."
     }
   },
@@ -2390,7 +2390,7 @@
         "C": "Ein vorgelagerter Internetdienstanbieter hatte Verbindungsprobleme",
         "D": "Die Zeit oder das Datum war nicht mit der Website synchronisiert"
       },
-      "antwort": "B",
+      "antwort": "D",
       "erklärung": "Die wahrscheinlichste Ursache dieses Problems ist, dass ein Router falsch konfiguriert wurde und Traffic blockierte. Dies würde erklären, warum Remote-Benutzer, die nicht mit Unternehmensressourcen verbunden waren, keine Probleme hatten."
     },
     "en": {
@@ -2401,7 +2401,7 @@
         "C": "An upstream internet service provider was flapping",
         "D": "The time or date was not in sync with the website"
       },
-      "answer": "B",
+      "answer": "D",
       "explanation": "The most likely cause of this issue is that a router was misconfigured and was blocking traffic. This would explain why remote users who were not connected to corporate resources did not have any issues."
     }
   },
@@ -2465,7 +2465,7 @@
         "C": "Die GPS-Anwendung aktualisiert ihre Geodaten",
         "D": "Die GPS-Anwendung steht in Konflikt mit dem eingebauten GPS"
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "Die GPS-Anwendung enthält Malware. Die Drittanbieter-GPS-Anwendung ist wahrscheinlich die Ursache für die langsame Leistung des Telefons. Die Anwendung könnte Malware enthalten, die Systemressourcen verbraucht und das Telefon verlangsamt. Der Benutzer sollte die Anwendung deinstallieren und einen Malware-Scan auf dem Telefon durchführen."
     },
     "en": {
@@ -2476,7 +2476,7 @@
         "C": "The GPS application is updating its geospatial map data",
         "D": "The GPS application is conflicting with the built-in GPS"
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "The GPS application contains malware. The third-party GPS application is likely the cause of the slow performance of the phone. The application may contain malware that is using up system resources and slowing down the phone. The user should uninstall the application and run a malware scan on the phone."
     }
   },
@@ -2590,7 +2590,7 @@
         "C": "Den Browser neu installieren",
         "D": "Port-Weiterleitung aktivieren"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Die Neuinstallation des Browsers würde das Problem höchstwahrscheinlich lösen. Dies würde alle schädliche Software oder Add-ons entfernen, die das Problem verursachen könnten, und den Browser auf seine Standardeinstellungen zurücksetzen."
     },
     "en": {
@@ -2601,7 +2601,7 @@
         "C": "Reinstalling the browser",
         "D": "Enabling port forwarding"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "Reinstalling the browser would most likely solve the issue. This would remove any malicious software or add-ons that may be causing the issue and restore the browser to its default settings."
     }
   },
@@ -2640,7 +2640,7 @@
         "C": "SSH-Zugriff mit SSH-Schlüsseln",
         "D": "VNC mit Benutzername und Passwort"
       },
-      "antwort": "B",
+      "antwort": "D",
       "erklärung": "Apple Remote Desktop ist eine Remote-Access-Lösung, die es einem Benutzer ermöglicht, von seinem Windows-Arbeitsplatz auf einen anderen macOS-Computer zuzugreifen und ihn zu steuern. Es bietet eine grafische Benutzeroberfläche, sodass der Analyst einfach auf die Server-Software zugreifen kann, die auf dem macOS-Server läuft."
     },
     "en": {
@@ -2651,7 +2651,7 @@
         "C": "SSH access with SSH keys",
         "D": "VNC with username and password"
       },
-      "answer": "B",
+      "answer": "D",
       "explanation": "Apple Remote Desktop is a remote access solution that allows a user to access and control another macOS computer from their Windows workstation. It provides a graphical user interface so that the analyst can easily access the server software running on the macOS server."
     }
   },
@@ -2765,7 +2765,7 @@
         "C": "Systemdatei-Checker zur Überprüfung auf geänderte Windows-Dateien",
         "D": "Ereignisanzeige zur Identifizierung von Fehlern"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Systemdatei-Checker zur Überprüfung auf geänderte Windows-Dateien. Der Systemdatei-Checker (SFC) ist ein Windows-Dienstprogramm, das verwendet werden kann, um nach beschädigten Windows-Systemdateien zu suchen und diese wiederherzustellen. SFC kann verwendet werden, um geänderte oder beschädigte Systemdateien zu erkennen und zu reparieren."
     },
     "en": {
@@ -2776,7 +2776,7 @@
         "C": "System File Checker to check for modified Windows files",
         "D": "Event Viewer to identify errors"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "System File Checker to check for modified Windows files. System File Checker (SFC) is a Windows utility that can be used to scan for and restore corrupt Windows system files. SFC can be used to detect and fix any modified or corrupted system files on a computer."
     }
   },
@@ -3073,7 +3073,7 @@
         "C": "Beauftragung eines automatisierten Rückrufsystems",
         "D": "Einreichung von Tickets per E-Mail"
       },
-      "antwort": "A",
+      "antwort": "B",
       "erklärung": "Ein Support-Portal ist ein Online-System, das es Kunden ermöglicht, auf Kundenservice-Tools zuzugreifen, Anfragen zu stellen und Status-Updates anzuzeigen sowie auf Informationen wie Anleitungen, FAQs und andere Self-Service-Ressourcen zuzugreifen. Dies wäre die beste Lösung für den Service Desk, da es ihnen ermöglichen würde, das Volumen der Anfragen einfach zu verwalten, indem Kunden ihre eigenen Anfragen stellen und den Status ihrer Anfragen einsehen können."
     },
     "en": {
@@ -3084,7 +3084,7 @@
         "C": "Commissioning an automated callback system",
         "D": "Submitting tickets through email"
       },
-      "answer": "A",
+      "answer": "B",
       "explanation": "A support portal is an online system that allows customers to access customer service tools, submit requests and view status updates, as well as access information such as how-to guides, FAQs, and other self-service resources. This would be the best solution for the service desk, as it would allow them to easily manage the volume of requests by allowing customers to submit their own requests and view the status of their requests."
     }
   },
@@ -3098,7 +3098,7 @@
         "C": "Physische Zerstörung",
         "D": "Container für Kunststoff-Recycling"
       },
-      "antwort": "D",
+      "antwort": "C",
       "erklärung": "Bei der Entsorgung nicht-konformer Ethernet-Karten ist die umweltfreundlichste Option die Verwendung eines Containers für Kunststoff-Recycling. Diese Methode ist der effektivste Weg, um die Menge an Abfall zu reduzieren, die auf Deponien geschickt wird, und sie hilft auch dabei, die Menge an Energie zu reduzieren, die bei der Produktion neuer Materialien verwendet wird."
     },
     "en": {
@@ -3109,7 +3109,7 @@
         "C": "Physical destruction",
         "D": "Dumpster for recycling plastics"
       },
-      "answer": "D",
+      "answer": "C",
       "explanation": "When disposing of non-compliant Ethernet cards, the most environmentally friendly option is to use a dumpster for recycling plastics. This method is the most effective way to reduce the amount of waste that is sent to landfills, and it also helps to reduce the amount of energy used in the production of new materials."
     }
   },
@@ -17245,7 +17245,7 @@
           "C": "Indizierungsoptionen",
           "D": "Administrative Werkzeuge"
         },
-        "antwort": "D",
+        "antwort": "A",
         "erklärung": "Die richtige Antwort ist Administrative Werkzeuge (Option D), die den Zugriff auf mehrere Systemdienstprogramme ermöglichen."
       },
       "en": {
@@ -17256,7 +17256,7 @@
           "C": "Indexing Options",
           "D": "Administrative Tools"
         },
-        "answer": "D",
+        "answer": "A",
         "explanation": "The correct answer is Administrative Tools (Option D), which provides access to several system utilities."
       }
     },
@@ -18842,7 +18842,7 @@
           "C": "Ende der Lebensdauer",
           "D": "NTFS-Korruption"
         },
-        "antwort": "A",
+        "antwort": "C",
         "erklärung": "Die Benachrichtigung deutet darauf hin, dass die mittlere Zeit zwischen Ausfällen (MTBF) überschritten wurde."
       },
       "en": {
@@ -18853,7 +18853,7 @@
           "C": "End-of-life",
           "D": "NTFS corruption"
         },
-        "answer": "A",
+        "answer": "C",
         "explanation": "The notification suggests that the Mean Time Between Failures (MTBF) has been exceeded."
       }
     },
