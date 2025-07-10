@@ -3173,7 +3173,7 @@
         "C": "Die Akzeptanz durch den Endbenutzer überprüfen.",
         "D": "Die gewonnenen Erkenntnisse dokumentieren."
       },
-      "antwort": "A",
+      "antwort": "B",
       "erklärung": "Bevor Änderungen am System vorgenommen werden, ist es wichtig, die mit der Änderung verbundenen Risiken zu bewerten und festzustellen, ob sich die Implementierung lohnt. Die Risikoanalyse umfasst die Identifizierung potenzieller Risiken, die Bewertung ihrer Wahrscheinlichkeit und Auswirkungen sowie die Festlegung von Maßnahmen zur Risikominderung. Es ist wichtig, diesen Schritt vorzunehmen, bevor Änderungen vorgenommen werden, da dies dem Administrator ermöglicht, eine fundierte Entscheidung darüber zu treffen, ob die Änderung umgesetzt werden sollte."
     },
     "en": {
@@ -3184,7 +3184,7 @@
         "C": "Verify end user acceptance.",
         "D": "Document the lessons learned."
       },
-      "answer": "A",
+      "answer": "B",
       "explanation": "Before making any changes to the system, it is important to assess the risks associated with the change and determine whether it is worth implementing. Risk analysis involves identifying potential risks, assessing their likelihood and impact, and determining what steps can be taken to mitigate them. It is important to perform this step before making any changes, as this allows the administrator to make an informed decision about whether or not the change should be implemented."
     }
   },
@@ -3273,7 +3273,7 @@
         "C": "Einen Imaging-USB für jeden PC erstellen.",
         "D": "Die Software von der Website des Anbieters installieren."
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Das Speichern von Software auf einer externen Festplatte und die Installation auf jedem einzelnen PC ist die ineffizienteste Methode. Diese Methode erfordert manuelle Eingriffe an jedem PC, und es besteht ein höheres Risiko für Fehler oder Inkonsistenzen zwischen den PCs. Zudem müsste dieser Prozess bei zukünftigen Updates oder Neuinstallationen auf jedem PC wiederholt werden."
     },
     "en": {
@@ -3284,7 +3284,7 @@
         "C": "Create an imaging USB for each PC.",
         "D": "Install the software from the vendor's website."
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "Saving software to an external hard drive and installing it on each individual PC is the most inefficient method. This method requires manual intervention on each PC, and there is a higher risk of error or inconsistencies between PCs. Additionally, if the software needs to be updated or reinstalled in the future, this process would need to be repeated on each PC."
     }
   },
@@ -3548,7 +3548,7 @@
         "C": "Im abgesicherten Modus booten",
         "D": "Einen Scan planen"
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "Obwohl das Aktualisieren der Anti-Malware-Software und das Durchführen von Scans wichtige Schritte beim Entfernen von Malware sind, reichen sie möglicherweise nicht aus, um die Malware dauerhaft zu entfernen, wenn der Benutzer weiterhin Verhaltensweisen zeigt, die das System anfällig machen, wie das Herunterladen unbekannter Dateien oder das Besuchen bösartiger Websites. Daher ist die Schulung des Benutzers in sicheren Computing-Praktiken der beste Weg, um zukünftige Infektionen zu verhindern und die Malware dauerhaft zu entfernen."
     },
     "en": {
@@ -3559,7 +3559,7 @@
         "C": "Booting into safe mode",
         "D": "Scheduling a scan"
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "Although updating the anti-malware software and running scans are important steps in removing malware, they may not be sufficient to permanently remove the malware if the user keeps engaging in behaviors that leave the system vulnerable, such as downloading unknown files or visiting malicious websites. Therefore, educating the user on safe computing practices is the best way to prevent future infections and permanently remove the malware."
     }
   },
@@ -3623,7 +3623,7 @@
         "C": "Abhörversuche werden verhindert",
         "D": "Rogue Access Points werden sich nicht verbinden"
       },
-      "antwort": "B",
+      "antwort": "D",
       "erklärung": "Die Sicherheitsvorteile, die nach der Bereitstellung eines Client-Zertifikats für den Wi-Fi-Zugang für alle Geräte in einer Organisation realisiert werden, bestehen darin, dass der gesamte Wi-Fi-Verkehr während der Übertragung verschlüsselt wird. Das bedeutet, dass alle über das Wi-Fi-Netzwerk übertragenen Daten vor Abhörversuchen geschützt sind. Rogue Access Points werden sich nicht mit dem Netzwerk verbinden, weil sie das Client-Zertifikat nicht haben."
     },
     "en": {
@@ -3634,7 +3634,7 @@
         "C": "Eavesdropping attempts will be prevented",
         "D": "Rogue access points will not connect"
       },
-      "answer": "B",
+      "answer": "D",
       "explanation": "The security benefits realized after deploying a client certificate to be used for Wi-Fi access for all devices in an organization are that all Wi-Fi traffic will be encrypted in transit. This means that any data transmitted over the Wi-Fi network will be protected from eavesdropping attempts. Rogue access points will not connect to the network because they will not have the client certificate."
     }
   },
@@ -3650,7 +3650,7 @@
         "E": "Ein Benutzer kann das Telefon nach dem Besuch eines Theaterstücks nicht finden",
         "F": "Ein Benutzer vergaß das Telefon in einem Taxi, und der Fahrer rief das Unternehmen an, um das Gerät zurückzugeben"
       },
-      "antwort": "E,F",
+      "antwort": "E,D",
       "erklärung": "Remote-Wipe-Funktionen werden verwendet, um alle Daten auf einem mobilen Gerät aus der Ferne zu löschen. Dies kann in Situationen nützlich sein, in denen ein Gerät verloren oder gestohlen wird oder wenn sensible Daten von einem Gerät entfernt werden müssen. Remote-Wipe-Funktionen werden höchstwahrscheinlich in den folgenden Szenarien verwendet: E. Ein Benutzer kann das Telefon nach dem Besuch eines Theaterstücks nicht finden. F. Ein Benutzer vergaß das Telefon in einem Taxi, und der Fahrer rief das Unternehmen an, um das Gerät zurückzugeben."
     },
     "en": {
@@ -3663,7 +3663,7 @@
         "E": "A user cannot locate the phone after attending a play at a theater",
         "F": "A user forgot the phone in a taxi, and the driver called the company to return the device"
       },
-      "answer": "E,F",
+      "answer": "E,D",
       "explanation": "Remote wipe capabilities are used to erase all data on a mobile device remotely. This can be useful in situations where a device is lost or stolen, or when sensitive data needs to be removed from a device. Remote wipe capabilities are most likely to be used in the following scenarios: E. A user cannot locate the phone after attending a play at a theater. F. A user forgot the phone in a taxi, and the driver called the company to return the device."
     }
   },
@@ -3752,7 +3752,7 @@
         "C": "Kontosperrung",
         "D": "Eingeschränkte Benutzerberechtigungen"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Ein Techniker, der einen neuen Laptop einrichtet, muss sicherstellen, dass Benutzer keine virtuellen Maschinen installieren können, wie die Sicherheitsrichtlinie des Unternehmens besagt. Eine Möglichkeit, Benutzer daran zu hindern, virtuelle Technologie zu aktivieren, ist die Implementierung von Secure Boot. Secure Boot ist eine Funktion der UEFI-Firmware, die sicherstellt, dass das System nur mit Firmware bootet, der vom Hersteller vertraut wird. Es überprüft die Signatur aller Bootloader, Betriebssysteme und Treiber, bevor sie ausgeführt werden, und verhindert unbefugte Änderungen am Boot-Prozess."
     },
     "en": {
@@ -3763,7 +3763,7 @@
         "C": "Account lockout",
         "D": "Restricted user permissions"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "A technician setting up a new laptop must ensure that users cannot install virtual machines as the company's security policy states. One way to prevent users from enabling virtual technology is by implementing Secure Boot. Secure Boot is a feature of UEFI firmware that ensures the system only boots using firmware that is trusted by the manufacturer. It verifies the signature of all bootloaders, operating systems, and drivers before running them, preventing any unauthorized modifications to the boot process."
     }
   },
@@ -3777,7 +3777,7 @@
         "C": "Status des Flugmodus",
         "D": "System-Betriebszeit"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Der Techniker sollte zuerst die Wi-Fi-Verbindungsgeschwindigkeit überprüfen, um dieses Problem zu beheben. Langsame Web-Browsing-Geschwindigkeit auf einem Mobiltelefon kann durch eine langsame Wi-Fi-Verbindung verursacht werden. Der Techniker sollte die Wi-Fi-Verbindungsgeschwindigkeit überprüfen, um sicherzustellen, dass sie schnell genug ist, um Web-Browsing zu unterstützen. Wenn die Wi-Fi-Verbindungsgeschwindigkeit langsam ist, sollte der Techniker das Wi-Fi-Netzwerk troubleshooten, um das Problem zu identifizieren und zu lösen."
     },
     "en": {
@@ -3788,7 +3788,7 @@
         "C": "Status of airplane mode",
         "D": "System uptime"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "The technician should check the Wi-Fi connection speed first to troubleshoot this issue. Slow web browsing speed on a mobile phone can be caused by a slow Wi-Fi connection. The technician should check the Wi-Fi connection speed to ensure that it is fast enough to support web browsing. If the Wi-Fi connection speed is slow, the technician should troubleshoot the Wi-Fi network to identify and resolve the issue."
     }
   },
@@ -3877,7 +3877,7 @@
         "C": "IP-Filterung",
         "D": "Inhaltsfilterung"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Wenn Kunden nach der Installation eines neuen SOHO-Routers nicht auf die vom Unternehmen gehostete öffentliche Website zugreifen können, sollte das Unternehmen nach Firmware-Updates suchen. Firmware-Updates können Bugs und Kompatibilitätsprobleme beheben, die Kunden daran hindern könnten, auf die Website zuzugreifen. Das Unternehmen sollte auch sicherstellen, dass der Router ordnungsgemäß konfiguriert ist, um Traffic zur Website zu ermöglichen."
     },
     "en": {
@@ -3888,7 +3888,7 @@
         "C": "IP filtering",
         "D": "Content filtering"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "If customers are unable to access the company-hosted public website after installing a new SOHO router, the company should check for firmware updates. Firmware updates can fix bugs and compatibility issues that may be preventing customers from accessing the website. The company should also ensure that the router is properly configured to allow traffic to the website."
     }
   },
@@ -4752,7 +4752,7 @@
         "C": "Die sensiblen Informationen löschen, bevor der Computer das Gebäude verlässt",
         "D": "Genehmigung vom Manager einholen"
       },
-      "antwort": "D",
+      "antwort": "B",
       "erklärung": "Der nächste Schritt, den der Techniker unternehmen sollte, bevor er den Computer für die Reparatur außer Haus bringt, ist die Genehmigung vom Manager einzuholen. Die Genehmigung vom Manager einzuholen ist wichtig, weil es sicherstellt, dass der Techniker die Erlaubnis und Genehmigung hat, den Computer von den Räumlichkeiten zu entfernen und die Reparaturarbeiten außer Haus durchzuführen. Die Genehmigung vom Manager einzuholen kann auch dabei helfen, den Grund und die Dauer der Reparatur zu dokumentieren und zu kommunizieren und Missverständnisse oder Konflikte mit dem Benutzer oder der Organisation zu vermeiden. Das Entfernen der Festplatte und dann das Senden des Computers zur Reparatur ist möglicherweise nicht durchführbar oder notwendig, wenn das Problem nicht mit der Festplatte zusammenhängt oder wenn die Festplatte wesentliche Daten oder Software für die Reparatur enthält. Das Prüfen von Unternehmensrichtlinien zur Orientierung kann ein guter Schritt sein, ersetzt aber nicht die Genehmigung vom Manager, der für den Computer und seine Daten verantwortlich ist. Das Löschen der sensiblen Informationen, bevor der Computer das Gebäude verlässt, ist möglicherweise nicht möglich oder ratsam, wenn das Problem den Zugriff auf die Daten verhindert oder wenn die Daten für Fehlerbehebungs- oder Wiederherstellungszwecke benötigt werden."
     },
     "en": {
@@ -4763,7 +4763,7 @@
         "C": "Delete the sensitive information before the computer leaves the building",
         "D": "Get authorization from the manager"
       },
-      "answer": "D",
+      "answer": "B",
       "explanation": "The next step that the technician should do before taking the computer off site for repair is to get authorization from the manager. Getting authorization from the manager is important because it ensures that the technician has permission and approval to remove the computer from the premises and perform the repair work off site. Getting authorization from the manager can also help document and communicate the reason and duration of the repair and avoid any misunderstanding or conflict with the user or the organization. Removing the HDD and then sending the computer for repair may not be feasible or necessary if the issue is not related to the HDD or if the HDD contains essential data or software for the repair. Checking corporate policies for guidance may be a good step but it does not replace getting authorization from the manager who is responsible for the computer and its data. Deleting the sensitive information before the computer leaves the building may not be possible or advisable if the issue prevents access to the data or if the data is needed for troubleshooting or recovery purposes."
     }
   },
@@ -5454,7 +5454,7 @@
           "C": "Verwendung von Bildschirmsperren",
           "D": "Deaktivierung unnötiger Dienste"
         },
-        "antwort": "B",
+        "antwort": "C",
         "erklärung": "Die Einschränkung der Benutzerberechtigungen ist eine Methode zur Schaffung einer sichereren Umgebung für die Finanzabteilung in einer Nicht-Domänenumgebung."
       },
       "en": {
@@ -5465,7 +5465,7 @@
           "C": "Using screen locks",
           "D": "Disabling unnecessary services"
         },
-        "answer": "B",
+        "answer": "C",
         "explanation": "Restricting user permissions is a method of creating a more secure environment for the finance department in a non-domain environment."
       }
     },
@@ -5481,7 +5481,7 @@
           "E": "Material Safety Data Sheet",
           "F": "Aufbewahrungsvorschriften"
         },
-        "antwort": "B",
+        "antwort": "B,D",
         "erklärung": "Beweiskette und Datenintegrität sind zwei Optionen, die bei der Erhaltung von Daten von einer Festplatte für forensische Analysen berücksichtigt werden sollten."
       },
       "en": {
@@ -5494,7 +5494,7 @@
           "E": "Material safety data sheet",
           "F": "Retention requirements"
         },
-        "answer": "B",
+        "answer": "B,D",
         "explanation": "Chain of custody and data integrity are two options that should most likely be considered when preserving data from a hard drive for forensic analysis."
       }
     },
@@ -5808,7 +5808,7 @@
           "C": "Einen neuen Netzwerkadapter hinzufügen.",
           "D": "Den Netzwerkadapter zurücksetzen."
         },
-        "antwort": "D",
+        "antwort": "B",
         "erklärung": "Das Zurücksetzen des Netzwerkadapters ist der beste Weg, um die Änderungen an der Hosts-Datei anzuwenden."
       },
       "en": {
@@ -5819,7 +5819,7 @@
           "C": "Add a new network adapter.",
           "D": "Reset the network adapter."
         },
-        "answer": "D",
+        "answer": "B",
         "explanation": "Resetting the network adapter is the best way to apply the changes made to the hosts file on a few PCs."
       }
     },
@@ -5858,7 +5858,7 @@
           "C": "Programme und Funktionen",
           "D": "Wiederherstellung"
         },
-        "antwort": "D",
+        "antwort": "C",
         "erklärung": "Wiederherstellung ist ein Windows 10-Dienstprogramm, das verwendet werden kann, um das Problem eines fehlgeschlagenen Updates zu beheben."
       },
       "en": {
@@ -5869,7 +5869,7 @@
           "C": "Programs and Features",
           "D": "Recovery"
         },
-        "answer": "D",
+        "answer": "C",
         "explanation": "Recovery is a Windows 10 utility that can be used to address the concern of a failed update that prevents an application from launching."
       }
     },
