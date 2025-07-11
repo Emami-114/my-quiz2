@@ -6716,7 +6716,7 @@
           "C": "Primäres Konto und Passwort",
           "D": "Sekundäres Konto und Wiederherstellungscode"
         },
-        "antwort": "D",
+        "antwort": "C",
         "erklärung": "Ein sekundäres Konto und ein Wiederherstellungscode werden verwendet, um das primäre Konto und Passwort auf einem iPhone zurückzusetzen, nachdem es aufgrund fehlgeschlagener Anmeldeversuche gesperrt wurde."
       },
       "en": {
@@ -6727,7 +6727,7 @@
           "C": "Primary account and password",
           "D": "Secondary account and recovery code"
         },
-        "answer": "D",
+        "answer": "C",
         "explanation": "A secondary account and recovery code are used to reset the primary account and password on an iPhone after it has been locked."
       }
     },
@@ -7070,7 +7070,7 @@
           "E": "Den Speicher der Anwendung leeren",
           "F": "Mobile Device Management deaktivieren"
         },
-        "antwort": "A,E",
+        "antwort": "D,E",
         "erklärung": "Die Deinstallation und Neuinstallation der Anwendung kann das Problem lösen, da sie beschädigte oder fehlende Dateien oder Einstellungen beheben kann."
       },
       "en": {
@@ -7083,7 +7083,7 @@
           "E": "Clearing the application storage",
           "F": "Disabling mobile device management"
         },
-        "answer": "A,E",
+        "answer": "D,E",
         "explanation": "Uninstalling and reinstalling the application can resolve the issue of it crashing immediately on an Android tablet."
       }
     },
@@ -7122,7 +7122,7 @@
           "C": "Voll",
           "D": "Differenziell"
         },
-        "antwort": "B",
+        "antwort": "D",
         "erklärung": "Ein synthetisches Backup ist ein Backup-Typ, der ein Backup aller Daten auf dem System bereitstellt und dabei die geringsten Auswirkungen auf das Netzwerk hat."
       },
       "en": {
@@ -7133,7 +7133,7 @@
           "C": "Full",
           "D": "Differential"
         },
-        "answer": "B",
+        "answer": "D",
         "explanation": "A synthetic backup is a backup type that provides a backup for all data on the system while providing the lowest impact to the network."
       }
     },
@@ -7522,7 +7522,7 @@
           "C": "Virtuelles privates Netzwerk",
           "D": "Dateiübertragungssoftware"
         },
-        "antwort": "A",
+        "antwort": "C",
         "erklärung": "Screen-Sharing-Software ist ein Werkzeug, das es einem Techniker ermöglicht, den Bildschirm eines Benutzers aus der Ferne zu sehen und zu steuern."
       },
       "en": {
@@ -7533,7 +7533,7 @@
           "C": "Virtual private network",
           "D": "File transfer software"
         },
-        "answer": "A",
+        "answer": "C",
         "explanation": "Screen-sharing software is a tool that allows a technician to remotely view and control a user’s screen over the internet."
       }
     },
