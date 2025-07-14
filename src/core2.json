@@ -7422,7 +7422,7 @@
           "C": "Untersuchen, wie die bösartige Software installiert wurde.",
           "D": "Den Computer neu installieren."
         },
-        "antwort": "B",
+        "antwort": "A",
         "erklärung": "Einen Malware-Scan auf bösartige Software durchführen ist der erste Schritt, den ein Support-Techniker unternehmen sollte."
       },
       "en": {
@@ -7433,7 +7433,7 @@
           "C": "Investigate how malicious software was installed.",
           "D": "Reimage the computer."
         },
-        "answer": "B",
+        "answer": "A",
         "explanation": "Running an antivirus scan for malicious software is the first step that a support technician should do when a user reports a virus on a PC."
       }
     },
@@ -8086,7 +8086,7 @@
           "C": "Datenträgerbereinigung",
           "D": "Datenträgerdefragmentierung"
         },
-        "antwort": "A",
+        "antwort": "C",
         "erklärung": "Die Datenträgerverwaltung ist ein Werkzeug, das es Benutzern ermöglicht, Partitionen auf Festplatten zu erstellen, zu formatieren und zu verwalten."
       },
       "en": {
@@ -8097,7 +8097,7 @@
           "C": "Disk Cleanup",
           "D": "Disk Defragmenter"
         },
-        "answer": "A",
+        "answer": "C",
         "explanation": "Disk Management is a tool that allows users to create, format, delete, shrink, extend, and manage partitions on hard drives."
       }
     },
@@ -8417,7 +8417,7 @@
           "C": "Niedrigformatierung",
           "D": "Recycling"
         },
-        "antwort": "A",
+        "antwort": "B",
         "erklärung": "Zerschreddern ist eine Methode zur Datenvernichtung, die die Festplatte physisch zerstört, um sicherzustellen, dass die Daten nicht wiederhergestellt werden können."
       },
       "en": {
@@ -8428,7 +8428,7 @@
           "C": "Low-level formatting",
           "D": "Recycling"
         },
-        "answer": "A",
+        "answer": "B",
         "explanation": "Shredding is a data destruction method that physically destroys the hard drive by cutting it into small pieces."
       }
     },
@@ -8645,7 +8645,7 @@
           "F": "Die Antivirendefinitionen aktualisieren.",
           "G": "Benutzerberechtigungen einschränken."
         },
-        "antwort": "E,G",
+        "antwort": "E,F",
         "erklärung": "Das Deaktivieren von AutoRun kann verhindern, dass ein USB-Laufwerk mit bösartiger Software heimlich Malware installiert."
       },
       "en": {
@@ -8659,7 +8659,7 @@
           "F": "Update the antivirus definitions.",
           "G": "Restrict user permissions."
         },
-        "answer": "E,G",
+        "answer": "E,F",
         "explanation": "Disabling AutoRun can prevent a USB drive containing malicious software from covertly installing malware."
       }
     },
@@ -8673,7 +8673,7 @@
           "C": "Open-Source-Lizenz",
           "D": "Nicht ablaufende Lizenz"
         },
-        "antwort": "B",
+        "antwort": "C",
         "erklärung": "Eine Lizenz für die kommerzielle Nutzung ermöglicht es einer Organisation, mehrere Kopien eines Softwareprodukts mit einem einzigen Lizenzschlüssel zu kaufen und zu verwenden."
       },
       "en": {
@@ -8684,7 +8684,7 @@
           "C": "Open-source license",
           "D": "Non-expiring license"
         },
-        "answer": "B",
+        "answer": "C",
         "explanation": "A corporate use license allows an organization to purchase and use multiple copies of a software product with a single license key."
       }
     },
@@ -9081,7 +9081,7 @@
           "E": "Bildschirmsperre aktivieren",
           "F": "Lokale Administratorkonten deaktivieren"
         },
-        "antwort": "B,E",
+        "antwort": "D,E",
         "erklärung": "Das Aktivieren der Bildschirmsperre und das Einschränken der Anmeldezeiten sind Sicherheitsmaßnahmen, um den Zugriff auf Computer durch unbeaufsichtigte Auftragnehmer zu verhindern."
       },
       "en": {
@@ -9094,7 +9094,7 @@
           "E": "Enabling a screen lock",
           "F": "Disabling local administrator accounts"
         },
-        "answer": "B,E",
+        "answer": "D,E",
         "explanation": "Restricting log-in times and enabling a screen lock are security measures that can prevent unauthorized access."
       }
     },
@@ -9158,7 +9158,7 @@
           "C": "Synthetisch",
           "D": "Inkremental"
         },
-        "antwort": "A",
+        "antwort": "B",
         "erklärung": "Ein vollständiges Backup benötigt keine vorherigen Backups, was es zur besten Wahl für eine schnelle Wiederherstellung macht."
       },
       "en": {
@@ -9169,7 +9169,7 @@
           "C": "Synthetic",
           "D": "Incremental"
         },
-        "answer": "A",
+        "answer": "B",
         "explanation": "A full backup does not depend on any previous backups and is the best choice for fast recovery."
       }
     },
@@ -9185,7 +9185,7 @@
           "E": "Das Gerät neu starten.",
           "F": "Das Betriebssystem aktualisieren."
         },
-        "antwort": "C,D",
+        "antwort": "C,A",
         "erklärung": "Die Deinstallation aller kürzlich installierten Anwendungen und das Planen eines Antivirus-Scans sind die besten Schritte zur Behebung der Sicherheitsbedenken."
       },
       "en": {
@@ -9198,7 +9198,7 @@
           "E": "Reboot the device.",
           "F": "Update the OS."
         },
-        "answer": "C,D",
+        "answer": "C,A",
         "explanation": "Uninstalling recently installed applications and scheduling an antivirus scan can help address malware concerns."
       }
     },
@@ -9587,7 +9587,7 @@
           "C": "Low-Level-Wiping",
           "D": "Löschen"
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Low-Level-Wiping überschreibt alle Daten auf der Festplatte und macht eine Wiederherstellung unmöglich."
       },
       "en": {
@@ -9598,7 +9598,7 @@
           "C": "Low-level wiping",
           "D": "Deleting"
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "Low-level wiping overwrites all data on a hard drive, making recovery impossible."
       }
     },
@@ -9712,7 +9712,7 @@
           "C": "Untersuchen, wie das System mit Malware infiziert wurde.",
           "D": "Einen Systemwiederherstellungspunkt erstellen."
         },
-        "antwort": "A",
+        "antwort": "D",
         "erklärung": "Die Aufklärung des Endbenutzers über bewährte Sicherheitspraktiken ist wichtig, um zukünftige Infektionen zu verhindern."
       },
       "en": {
@@ -9723,7 +9723,7 @@
           "C": "Investigate how the system was infected with malware.",
           "D": "Create a system restore point."
         },
-        "answer": "A",
+        "answer": "D",
         "explanation": "Educating the end user on best practices for security is crucial to prevent future infections."
       }
     },
@@ -9759,9 +9759,10 @@
         "optionen": {
           "A": "Um Aufgaben zu automatisieren und den manuellen Aufwand zu reduzieren",
           "B": "Um die Komplexität des Computersystems zu abstrahieren",
-          "C": "Um das Programm in eine ausführbare Datei zu kompilieren"
+          "C": "Um das Programm in eine ausführbare Datei zu kompilieren",
+          "D": "So kompilieren Sie das Programm in eine ausführbare Datei"
         },
-        "antwort": "B",
+        "antwort": "A",
         "erklärung": "Skriptsprachen werden verwendet, um spezifische Aufgaben zu automatisieren und Prozesse zu vereinfachen."
       },
       "en": {
@@ -9769,9 +9770,10 @@
         "options": {
           "A": "To automate tasks and reduce the amount of manual labor",
           "B": "To abstract the complexity of the computer system",
-          "C": "To compile the program into an executable file"
+          "C": "To compile the program into an executable file",
+          "D": "To compile the program into an executable file"
         },
-        "answer": "B",
+        "answer": "A",
         "explanation": "Scripting languages are used to write small programs that perform specific tasks."
       }
     },
