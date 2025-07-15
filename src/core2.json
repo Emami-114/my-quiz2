@@ -10848,7 +10848,7 @@
           "D": "Die Zwei-Faktor-Authentifizierung aktivieren.",
           "E": "Einen Malware-Scanner installieren."
         },
-        "antwort": "A",
+        "antwort": "D",
         "erklärung": "Der Benutzer sollte nur Anrufe von bekannten Personen annehmen, um Betrug zu vermeiden."
       },
       "en": {
@@ -10860,7 +10860,7 @@
           "D": "Enable two-factor authentication.",
           "E": "Install a malware scanner."
         },
-        "answer": "A",
+        "answer": "D",
         "explanation": "The user should only accept calls from known contacts to avoid falling for a tech support scam."
       }
     },
@@ -10924,7 +10924,7 @@
           "C": "Das infizierte System quarantänisieren.",
           "D": "Die Anti-Malware aktualisieren."
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Das Quarantänisieren des infizierten Systems verhindert die Ausbreitung der Infektion."
       },
       "en": {
@@ -10935,7 +10935,7 @@
           "C": "Quarantine the infected system.",
           "D": "Update the anti-malware."
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "Quarantining the infected system prevents further spread of the infection."
       }
     },
@@ -11025,7 +11025,7 @@
           "B": "perfmon.msc",
           "C": "devmgmt.msc"
         },
-        "antwort": "C",
+        "antwort": "A",
         "erklärung": "devmgmt.msc öffnet den Geräte-Manager, um Treiberprobleme zu beheben."
       },
       "en": {
@@ -11035,7 +11035,7 @@
           "B": "perfmon.msc",
           "C": "devmgmt.msc"
         },
-        "answer": "C",
+        "answer": "A",
         "explanation": "The devmgmt.msc snap-in opens Device Manager to manage hardware drivers."
       }
     },
@@ -11199,7 +11199,7 @@
           "C": "Zertifikate anzeigen und dann das Zertifikat installieren.",
           "D": "Die Website weiterhin aufrufen."
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Der Benutzer kann die Zertifikatsdetails anzeigen und es auf dem Gerät installieren, um es dem vertrauenswürdigen Stammzertifikatsspeicher hinzuzufügen."
       },
       "en": {
@@ -11210,7 +11210,7 @@
           "C": "Select View Certificates and then Install Certificate.",
           "D": "Continue to access the website."
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "The user can view the certificate details and install it on the device to add it to the trusted root certificate store."
       }
     },
@@ -11274,7 +11274,7 @@
           "C": "Insekten können in das Rechenzentrum eindringen.",
           "D": "Staubpartikel können die Maschinen verstopfen."
         },
-        "antwort": "B",
+        "antwort": "D",
         "erklärung": "Ein Filtersystem ist wichtig, um die Luftfeuchtigkeit zu kontrollieren und Korrosion an Metallkomponenten zu verhindern."
       },
       "en": {
@@ -11285,7 +11285,7 @@
           "C": "Insects can invade the data center.",
           "D": "Dust particles can clog the machines."
         },
-        "answer": "B",
+        "answer": "D",
         "explanation": "A filtration system controls humidity and prevents corrosion on metal components."
       }
     },
@@ -11478,7 +11478,7 @@
           "C": "Die fehlerhafte Software neu installieren und aktualisieren.",
           "D": "Die Seitendateigröße verringern."
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Die wahrscheinlichste Ursache für die Abstürze ist, dass die Software inkompatibel oder beschädigt ist. Eine Neuinstallation kann helfen."
       },
       "en": {
@@ -11489,7 +11489,7 @@
           "C": "Reinstall and update the failing software.",
           "D": "Decrease the page file size."
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "Reinstalling and updating the software can fix issues related to incompatibility or corruption."
       }
     },
@@ -11530,7 +11530,7 @@
           "C": "SSH aktivieren.",
           "D": "Den Computer neu starten."
         },
-        "antwort": "B",
+        "antwort": "A",
         "erklärung": "Der Entwicklermodus erfordert eine Internetverbindung, um die notwendigen Pakete herunterzuladen."
       },
       "en": {
@@ -11541,7 +11541,7 @@
           "C": "Enable SSH.",
           "D": "Reboot computer."
         },
-        "answer": "B",
+        "answer": "A",
         "explanation": "Ensuring internet connectivity is essential for downloading the necessary packages for Developer Mode."
       }
     },
@@ -11682,7 +11682,7 @@
           "C": "Die Windows-Ereignisanzeige inspizieren.",
           "D": "Eine physische Bestandsaufnahme des Geräts durchführen."
         },
-        "antwort": "B",
+        "antwort": "A",
         "erklärung": "Die Isolation der Maschine vom Netzwerk verhindert die Ausbreitung des bösartigen Datenverkehrs und hilft, Beweise zu sichern."
       },
       "en": {
@@ -11693,7 +11693,7 @@
           "C": "Inspect the Windows Event Viewer.",
           "D": "Take a physical inventory of the device."
         },
-        "answer": "B",
+        "answer": "A",
         "explanation": "Isolating the machine from the network helps preserve evidence and prevents further malicious activity."
       }
     },
@@ -11859,7 +11859,7 @@
           "C": "Primäres Konto und Passwort",
           "D": "Wiederherstellungskontakt und Wiederherstellungsschlüssel"
         },
-        "antwort": "D",
+        "antwort": "C",
         "erklärung": "Um auf das gesperrte iPhone zuzugreifen, benötigt der Benutzer den Wiederherstellungskontakt und den Wiederherstellungsschlüssel."
       },
       "en": {
@@ -11870,7 +11870,7 @@
           "C": "Primary account and password",
           "D": "Recovery contact and recovery key"
         },
-        "answer": "D",
+        "answer": "C",
         "explanation": "The user needs to use the recovery contact and recovery key to restore access to the device."
       }
     },
@@ -12764,7 +12764,7 @@
           "C": "Ipstat",
           "D": "Ipoptions"
         },
-        "antwort": "A",
+        "antwort": "D",
         "erklärung": "Der Befehl ipr wird in Linux verwendet, um Druckaufträge zu verwalten, einschließlich der Festlegung des Standarddruckers."
       },
       "en": {
@@ -12775,7 +12775,7 @@
           "C": "Ipstat",
           "D": "Ipoptions"
         },
-        "answer": "A",
+        "answer": "D",
         "explanation": "The ipr command is used in Linux to manage print jobs, including setting the default printer."
       }
     },
@@ -12891,7 +12891,7 @@
           "C": "Flugmodus",
           "D": "Digitizer-Kalibrierung"
         },
-        "antwort": "A",
+        "antwort": "B",
         "erklärung": "Die internen Antennenverbindungen könnten während der Reparatur gestört oder getrennt worden sein, was die Wi-Fi-Konnektivität beeinträchtigt."
       },
       "en": {
@@ -12902,7 +12902,7 @@
           "C": "Airplane mode",
           "D": "Digitizer calibration"
         },
-        "answer": "A",
+        "answer": "B",
         "explanation": "The internal antenna connections may have been disturbed during the repair process, affecting Wi-Fi connectivity."
       }
     },
@@ -13737,7 +13737,7 @@
           "B": "802.1X",
           "C": "Statische IP"
         },
-        "antwort": "B",
+        "antwort": "A",
         "erklärung": "WPA3 ist das neueste Sicherheitszertifizierungsprogramm zur Sicherung drahtloser Netzwerke."
       },
       "en": {
@@ -13747,7 +13747,7 @@
           "B": "802.1X",
           "C": "Static IP"
         },
-        "answer": "B",
+        "answer": "A",
         "explanation": "WPA3 is the latest security certification program developed by the Wi-Fi Alliance to secure wireless networks."
       }
     },
@@ -13786,7 +13786,7 @@
           "C": "Die Installation erfordert administrative Rechte.",
           "D": "Der Speicherplatz ist unzureichend."
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Die Fehlermeldung deutet darauf hin, dass die Installation administrative Rechte erfordert."
       },
       "en": {
@@ -13797,7 +13797,7 @@
           "C": "The installation requires administrative rights.",
           "D": "The disk space is inadequate."
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "The most likely reason for the error message is that the installation requires administrative rights."
       }
     },
@@ -14300,7 +14300,7 @@
           "C": "Die Vererbung im obersten Ordner deaktivieren und die Berechtigungen manuell für jede Datei und jeden Unterordner festlegen.",
           "D": "Die Vererbung nur für den angeforderten Ordner deaktivieren, die angeforderten Berechtigungen festlegen und dann die Vererbung unter den untergeordneten Ordnern aktivieren."
         },
-        "antwort": "D",
+        "antwort": "A",
         "erklärung": "Die Deaktivierung der Vererbung für den spezifischen Ordner und das Festlegen der angeforderten Berechtigungen gewährleistet, dass nur das unmittelbare Team Zugriff hat."
       },
       "en": {
@@ -14311,7 +14311,7 @@
           "C": "Turn off inheritance at the top-level folder and set permissions to each file and subfolder manually.",
           "D": "Turn off inheritance on the requested folder only, set the requested permissions, and then turn on inheritance under the child folders."
         },
-        "answer": "D",
+        "answer": "A",
         "explanation": "Turning off inheritance on the specific folder requested by the manager and setting the requested permissions ensures that only the immediate team has access to the confidential material."
       }
     },
@@ -14327,7 +14327,7 @@
           "E": "Stellen Sie das Betriebssystem wieder her, während Sie die Benutzerdaten behalten.",
           "F": "Setzen Sie WMI zurück und registrieren Sie die System-DLLs neu."
         },
-        "antwort": "B,C",
+        "antwort": "D,C",
         "erklärung": "Das Aktualisieren der lokalen WSUS-Einstellungen und das Löschen des Windows Update-Caches sind effektive Schritte zur Behebung von Problemen mit Windows 10-Updates."
       },
       "en": {
@@ -14340,7 +14340,7 @@
           "E": "Reimage the operating system while retaining user files.",
           "F": "Reset WMI and re-register system .dlls."
         },
-        "answer": "B,C",
+        "answer": "D,C",
         "explanation": "Refreshing local WSUS settings and deleting the Windows Update cache are effective steps in resolving issues with Windows 10 not installing updates."
       }
     },
@@ -15708,7 +15708,7 @@
           "C": "Die Vererbung im obersten Ordner deaktivieren und die Berechtigungen manuell für jede Datei und jeden Unterordner festlegen.",
           "D": "Die Vererbung nur für den angeforderten Ordner deaktivieren, die angeforderten Berechtigungen festlegen und dann die Vererbung für die untergeordneten Ordner aktivieren."
         },
-        "antwort": "D",
+        "antwort": "A",
         "erklärung": "Das Deaktivieren der Vererbung für diesen spezifischen Ordner ermöglicht es, eindeutige Berechtigungen festzulegen, während diese Berechtigungen an die untergeordneten Elemente weitergegeben werden können."
       },
       "en": {
@@ -15719,7 +15719,7 @@
           "C": "Turn off inheritance at the top-level folder and set permissions to each file and subfolder manually.",
           "D": "Turn off inheritance on the requested folder only, set the requested permissions, and then turn on inheritance under the child folders."
         },
-        "answer": "D",
+        "answer": "A",
         "explanation": "This ensures the specific folder has unique permissions while allowing those permissions to propagate to its children."
       }
     },
@@ -16290,7 +16290,7 @@
           "D": "Shredding",
           "E": "Low-Level-Formatierung"
         },
-        "antwort": "A",
+        "antwort": "C",
         "erklärung": "Bohren ist eine Methode, um die Festplatte physisch zu beschädigen, jedoch keine sichere Methode, um sicherzustellen, dass Daten nicht wiederhergestellt werden können."
       },
       "en": {
@@ -16302,7 +16302,7 @@
           "D": "Shredding",
           "E": "Low-level formatting"
         },
-        "answer": "A",
+        "answer": "C",
         "explanation": "Drilling is a method of physically damaging the hard drive, making it inoperable."
       }
     },
@@ -16395,7 +16395,7 @@
           "C": "Intrusion Detection Systeme nutzen",
           "D": "Daten regelmäßig sichern"
         },
-        "antwort": "C",
+        "antwort": "B",
         "erklärung": "Intrusion Detection Systeme (IDS) überwachen den Netzwerkverkehr auf bösartige Aktivitäten und benachrichtigen Administratoren, was hilft, Malware-Infektionen zu verhindern, bevor sie das Netzwerk erheblich beeinträchtigen können."
       },
       "en": {
@@ -16406,7 +16406,7 @@
           "C": "Utilizing Intrusion detection systems",
           "D": "Backing up data regularly"
         },
-        "answer": "C",
+        "answer": "B",
         "explanation": "Intrusion Detection Systems (IDS) monitor network traffic for malicious activities and alert administrators."
       }
     },
