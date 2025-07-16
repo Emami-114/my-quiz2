@@ -18592,7 +18592,7 @@
           "C": "PIN-Code-Bildschirmverriegelung",
           "D": "Geräteverschlüsselung"
         },
-        "antwort": "D",
+        "antwort": "C",
         "erklärung": "Die Geräteverschlüsselung stellt sicher, dass selbst wenn jemand physischen Zugriff auf das Smartphone erhält, sie ohne den Verschlüsselungsschlüssel nicht auf den Inhalt zugreifen können."
       },
       "en": {
@@ -18603,7 +18603,7 @@
           "C": "PIN code screen lock",
           "D": "Device encryption"
         },
-        "answer": "D",
+        "answer": "C",
         "explanation": "Device encryption ensures that even if someone gains physical access to the smartphone, they cannot access its contents without the encryption key."
       }
     },
