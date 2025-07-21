@@ -1,0 +1,852 @@
+[
+  {
+    "id": 1,
+    "de": {
+      "frage": "Welche Aussage beschreibt am besten den Unterschied zwischen einem Client-Server-Netzwerk und einem Peer-to-Peer-Netzwerk?",
+      "optionen": {
+        "A": "Peer-to-Peer-Netzwerke verwenden keine Betriebssysteme.",
+        "B": "In Client-Server-Netzwerken agieren alle Geräte ausschließlich als Clients.",
+        "C": "In Peer-to-Peer-Netzwerken agieren Hosts sowohl als Clients als auch als Server.",
+        "D": "Client-Server-Netzwerke erfordern keine Serverhardware."
+      },
+      "antwort": "C",
+      "erklärung": "In einem Peer-to-Peer-Netzwerk kann jeder Host gleichzeitig als Client und Server fungieren. Die Verwaltung ist dezentralisiert."
+    },
+    "en": {
+      "question": "Which statement best describes the difference between a client-server network and a peer-to-peer network?",
+      "options": {
+        "A": "Peer-to-peer networks do not use operating systems.",
+        "B": "In client-server networks, all devices act only as clients.",
+        "C": "In peer-to-peer networks, hosts act as both clients and servers.",
+        "D": "Client-server networks do not require server hardware."
+      },
+      "answer": "C",
+      "explanation": "In a peer-to-peer network, each host can act as both client and server. It is a decentralized model with distributed management."
+    }
+  },
+  {
+    "id": 2,
+    "de": {
+      "frage": "Was ist ein Endsystem im Kontext eines Netzwerks?",
+      "optionen": {
+        "A": "Ein Gerät, das nur Daten weiterleitet",
+        "B": "Ein Gerät, das als Switch oder Router fungiert",
+        "C": "Ein Gerät, das Daten sendet und empfängt",
+        "D": "Ein virtueller Server innerhalb eines Rechenzentrums"
+      },
+      "antwort": "C",
+      "erklärung": "Endsysteme – auch Hosts genannt – sind Knoten im Netzwerk, die Daten senden und empfangen. Sie stehen im Gegensatz zu Zwischenknoten, die Daten nur weiterleiten."
+    },
+    "en": {
+      "question": "What is an end system in the context of a network?",
+      "options": {
+        "A": "A device that only forwards data",
+        "B": "A device acting as a switch or router",
+        "C": "A device that sends and receives data",
+        "D": "A virtual server inside a datacenter"
+      },
+      "answer": "C",
+      "explanation": "End systems—also called hosts—are network nodes that send and receive data, as opposed to intermediate nodes that only forward traffic."
+    }
+  },
+  {
+    "id": 3,
+    "de": {
+      "frage": "Welche Aussage trifft auf Netzwerk-Appliances zu?",
+      "optionen": {
+        "A": "Sie sind immer physische Geräte und können nicht virtualisiert werden.",
+        "B": "Es handelt sich um spezialisierte Systeme, die bestimmte Netzwerkfunktionen ausführen.",
+        "C": "Sie dienen ausschließlich der Speicherung von Daten.",
+        "D": "Sie laufen ausschließlich unter Windows oder macOS."
+      },
+      "antwort": "B",
+      "erklärung": "Netzwerk-Appliances sind spezialisierte Systeme, die bestimmte Netzwerkfunktionen übernehmen – etwa Routing, Switching, Sicherheit oder Lastverteilung. Sie können physisch oder virtuell sein."
+    },
+    "en": {
+      "question": "Which statement is true about network appliances?",
+      "options": {
+        "A": "They are always physical devices and cannot be virtualized.",
+        "B": "They are specialized systems designed to perform specific network functions.",
+        "C": "They are only used for storing data.",
+        "D": "They only run on Windows or macOS."
+      },
+      "answer": "B",
+      "explanation": "Network appliances are specialized systems designed to perform specific roles such as routing, switching, security, or load balancing. They can be deployed physically or virtually."
+    }
+  },
+  {
+    "id": 4,
+    "de": {
+      "frage": "Welche Netzwerktechnologie ermöglicht es entfernten Geräten, sicher einem lokalen Netzwerk beizutreten?",
+      "optionen": {
+        "A": "QoS",
+        "B": "DNS",
+        "C": "VPN",
+        "D": "DHCP"
+      },
+      "antwort": "C",
+      "erklärung": "VPNs (Virtual Private Networks) bieten sichere Verbindungen, über die entfernte Geräte auf lokale Netzwerke zugreifen können, als wären sie vor Ort."
+    },
+    "en": {
+      "question": "Which network technology allows remote devices to securely join a local network?",
+      "options": {
+        "A": "QoS",
+        "B": "DNS",
+        "C": "VPN",
+        "D": "DHCP"
+      },
+      "answer": "C",
+      "explanation": "VPNs (Virtual Private Networks) provide secure connections that allow remote devices to access local networks as if they were on-site."
+    }
+  },
+    {
+    "id": 5,
+    "de": {
+      "frage": "Was beschreibt hauptsächlich den Unterschied zwischen einem LAN und einem WAN?",
+      "optionen": {
+        "A": "Die Art der verwendeten IP-Adressen",
+        "B": "Die Anzahl der Server im Netzwerk",
+        "C": "Die Größe und geografische Ausdehnung des Netzwerks",
+        "D": "Die Art der verwendeten Betriebssysteme"
+      },
+      "antwort": "C",
+      "erklärung": "LANs sind auf einen geografisch begrenzten Bereich beschränkt, während WANs Netzwerke über große Entfernungen verbinden. Die Größe bezieht sich auf die Anzahl der Knoten, die Ausdehnung auf die geografische Verteilung."
+    },
+    "en": {
+      "question": "What primarily distinguishes a LAN from a WAN?",
+      "options": {
+        "A": "The type of IP addresses used",
+        "B": "The number of servers in the network",
+        "C": "The size and geographical scope of the network",
+        "D": "The type of operating systems used"
+      },
+      "answer": "C",
+      "explanation": "LANs are confined to a limited geographical area, while WANs connect networks over large distances. Size refers to the number of nodes, and scope refers to geographical distribution."
+    }
+  },
+  {
+    "id": 6,
+    "de": {
+      "frage": "Welcher Netztyp besteht typischerweise aus mehreren LANs, die über große Entfernungen hinweg verbunden sind?",
+      "optionen": {
+        "A": "SOHO-Netzwerk",
+        "B": "Datacenter",
+        "C": "WAN",
+        "D": "SME-Netzwerk"
+      },
+      "antwort": "C",
+      "erklärung": "Ein WAN verbindet mehrere LANs über große Entfernungen und kann auch Datacenter oder entfernte Standorte einbeziehen."
+    },
+    "en": {
+      "question": "Which type of network typically consists of multiple LANs connected over long distances?",
+      "options": {
+        "A": "SOHO network",
+        "B": "Datacenter",
+        "C": "WAN",
+        "D": "SME network"
+      },
+      "answer": "C",
+      "explanation": "A WAN connects multiple LANs across long distances and can include datacenters or remote sites."
+    }
+  },
+  {
+    "id": 7,
+    "de": {
+      "frage": "Was ist ein typisches Merkmal eines SOHO-Netzwerks?",
+      "optionen": {
+        "A": "Es nutzt mehrere Unternehmensrouter und strukturierte Verkabelung.",
+        "B": "Es ist auf große Unternehmen mit Tausenden von Benutzern ausgelegt.",
+        "C": "Es verwendet oft einen einzelnen Router/Switch/AP für die Konnektivität.",
+        "D": "Es besteht nur aus Servern ohne Client-Geräte."
+      },
+      "antwort": "C",
+      "erklärung": "Ein SOHO-Netzwerk verwendet oft einen einzigen Internet-Router, Switch oder Access Point zur Verbindung mehrerer Geräte."
+    },
+    "en": {
+      "question": "What is a typical characteristic of a SOHO network?",
+      "options": {
+        "A": "It uses multiple enterprise routers and structured cabling.",
+        "B": "It is designed for large enterprises with thousands of users.",
+        "C": "It often uses a single router/switch/AP for connectivity.",
+        "D": "It consists only of servers with no client devices."
+      },
+      "answer": "C",
+      "explanation": "A SOHO network often relies on a single Internet router, switch, or access point to connect multiple devices."
+    }
+  },
+   {
+    "id": 8,
+    "de": {
+      "frage": "Was beschreibt die physische Topologie eines Netzwerks?",
+      "optionen": {
+        "A": "Wie Daten zwischen den Knoten fließen",
+        "B": "Wie die Knoten im Netzwerk logisch miteinander verbunden sind",
+        "C": "Die tatsächliche Platzierung von Knoten und deren Verbindung durch Übertragungsmedien",
+        "D": "Die Art der verwendeten IP-Adressen"
+      },
+      "antwort": "C",
+      "erklärung": "Die physische Topologie beschreibt die Platzierung und Verbindung der Knoten durch physische Kabel oder Funktechnologien."
+    },
+    "en": {
+      "question": "What does the physical topology of a network describe?",
+      "options": {
+        "A": "How data flows between nodes",
+        "B": "How nodes are logically connected",
+        "C": "The actual placement of nodes and their connection by transmission media",
+        "D": "The type of IP addresses used"
+      },
+      "answer": "C",
+      "explanation": "Physical topology describes the layout and interconnection of nodes using physical transmission media like cables or wireless links."
+    }
+  },
+  {
+    "id": 9,
+    "de": {
+      "frage": "Was ist eine Punkt-zu-Punkt-Verbindung (Point-to-Point Link)?",
+      "optionen": {
+        "A": "Eine Verbindung zwischen einem Knoten und mehreren Geräten gleichzeitig",
+        "B": "Ein logisches Layout, bei dem Daten über Broadcast verteilt werden",
+        "C": "Eine 1:1-Verbindung zwischen genau zwei Geräten",
+        "D": "Eine Verbindung über mehrere Switche zu vielen Empfängern"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Punkt-zu-Punkt-Verbindung stellt eine direkte, exklusive Verbindung zwischen genau zwei Geräten dar, unabhängig davon, ob sie physisch oder logisch ist."
+    },
+    "en": {
+      "question": "What is a point-to-point link?",
+      "options": {
+        "A": "A connection between one node and multiple devices at once",
+        "B": "A logical layout where data is broadcast",
+        "C": "A 1:1 connection between exactly two devices",
+        "D": "A link across multiple switches to many receivers"
+      },
+      "answer": "C",
+      "explanation": "A point-to-point link is a direct and exclusive connection between exactly two devices, whether physical or logical."
+    }
+  },
+  {
+    "id": 10,
+    "de": {
+      "frage": "Welche Aussage beschreibt die logische Topologie eines Netzwerks am besten?",
+      "optionen": {
+        "A": "Sie beschreibt die Art der IP-Adressierung im Netzwerk.",
+        "B": "Sie beschreibt, wie die Knoten physisch durch Kabel verbunden sind.",
+        "C": "Sie beschreibt den Datenfluss zwischen den Knoten unabhängig von der physischen Verbindung.",
+        "D": "Sie bezieht sich auf die Reihenfolge, in der Geräte installiert werden."
+      },
+      "antwort": "C",
+      "erklärung": "Die logische Topologie beschreibt den Pfad, den Datenpakete zwischen Geräten nehmen – unabhängig davon, wie die Geräte physisch verbunden sind."
+    },
+    "en": {
+      "question": "Which statement best describes the logical topology of a network?",
+      "options": {
+        "A": "It describes the type of IP addressing in the network.",
+        "B": "It describes how nodes are physically connected by cables.",
+        "C": "It describes the data flow between nodes regardless of physical connection.",
+        "D": "It refers to the order in which devices are installed."
+      },
+      "answer": "C",
+      "explanation": "Logical topology refers to how data moves between devices on the network, regardless of their actual physical layout."
+    }
+  },
+   {
+    "id": 11,
+    "de": {
+      "frage": "Was ist ein Hauptvorteil der Sterntopologie in einem lokalen Netzwerk?",
+      "optionen": {
+        "A": "Sie erfordert keine zentralen Geräte",
+        "B": "Sie sendet Daten direkt an alle Endpunkte",
+        "C": "Sie ist leicht zu konfigurieren und zu warten, da alle Verbindungen über einen zentralen Punkt laufen",
+        "D": "Sie ist für WANs optimiert"
+      },
+      "antwort": "C",
+      "erklärung": "In einer Sterntopologie läuft alle Kommunikation über ein zentrales Gerät wie einen Switch oder Router. Dies erleichtert die Fehlerbehebung und Überwachung."
+    },
+    "en": {
+      "question": "What is a main advantage of the star topology in a local network?",
+      "options": {
+        "A": "It does not require central devices",
+        "B": "It broadcasts data directly to all endpoints",
+        "C": "It is easy to configure and maintain since all connections go through a central point",
+        "D": "It is optimized for WANs"
+      },
+      "answer": "C",
+      "explanation": "In a star topology, all communication flows through a central device like a switch or router, making it easier to troubleshoot and monitor."
+    }
+  },
+  {
+    "id": 12,
+    "de": {
+      "frage": "Wie unterscheidet sich eine Hub-and-Spoke-Topologie typischerweise von einer Sterntopologie?",
+      "optionen": {
+        "A": "Sie verwendet keine zentralen Geräte",
+        "B": "Sie ist nur für drahtlose Netzwerke geeignet",
+        "C": "Sie wird vorwiegend in WANs eingesetzt, während die Sterntopologie typischerweise in LANs verwendet wird",
+        "D": "Sie verbindet Endpunkte direkt ohne Vermittlungsstelle"
+      },
+      "antwort": "C",
+      "erklärung": "Obwohl die physische Struktur ähnlich ist, wird die Hub-and-Spoke-Topologie typischerweise in Weitverkehrsnetzen (WANs) mit entfernten Standorten eingesetzt."
+    },
+    "en": {
+      "question": "How does a hub-and-spoke topology typically differ from a star topology?",
+      "options": {
+        "A": "It does not use central devices",
+        "B": "It is only suitable for wireless networks",
+        "C": "It is mainly used in WANs, while star topology is typical for LANs",
+        "D": "It connects endpoints directly without mediation"
+      },
+      "answer": "C",
+      "explanation": "While the physical layout is similar, hub-and-spoke topology is mainly applied in wide area networks (WANs) with remote sites."
+    }
+  },
+   {
+    "id": 13,
+    "de": {
+      "frage": "Warum ist eine vollständige Mesh-Topologie in großen Netzwerken normalerweise unpraktisch?",
+      "optionen": {
+        "A": "Weil sie keine Redundanz bietet",
+        "B": "Weil sie nur für drahtlose Netzwerke geeignet ist",
+        "C": "Weil die Anzahl der Verbindungen exponentiell mit der Anzahl der Knoten wächst",
+        "D": "Weil nur zwei Geräte gleichzeitig verbunden werden können"
+      },
+      "antwort": "C",
+      "erklärung": "In einer vollständigen Mesh-Topologie wächst die Anzahl der benötigten Verbindungen nach der Formel n(n–1)/2. Das macht sie bei vielen Knoten sehr komplex und kostenintensiv."
+    },
+    "en": {
+      "question": "Why is a full mesh topology typically impractical in large networks?",
+      "options": {
+        "A": "Because it provides no redundancy",
+        "B": "Because it is only suitable for wireless networks",
+        "C": "Because the number of links grows exponentially with the number of nodes",
+        "D": "Because only two devices can be connected at a time"
+      },
+      "answer": "C",
+      "explanation": "In a full mesh, the number of required links follows the formula n(n–1)/2, making it complex and expensive as the number of nodes increases."
+    }
+  },
+  {
+    "id": 14,
+    "de": {
+      "frage": "Welche Aussage beschreibt am besten den Vorteil einer Mesh-Topologie?",
+      "optionen": {
+        "A": "Sie minimiert die Anzahl der benötigten Verbindungen",
+        "B": "Sie erhöht die Redundanz durch alternative Pfade bei einem Verbindungsfehler",
+        "C": "Sie benötigt keine zentrale Vermittlungsstelle",
+        "D": "Sie wird ausschließlich in LANs eingesetzt"
+      },
+      "antwort": "B",
+      "erklärung": "Ein großer Vorteil von Mesh-Topologien ist die hohe Ausfallsicherheit, da bei einem Link-Ausfall alternative Wege zur Verfügung stehen."
+    },
+    "en": {
+      "question": "Which statement best describes the advantage of a mesh topology?",
+      "options": {
+        "A": "It minimizes the number of required links",
+        "B": "It increases redundancy through alternative paths in case of link failure",
+        "C": "It requires no central mediation device",
+        "D": "It is used only in LANs"
+      },
+      "answer": "B",
+      "explanation": "Mesh topologies provide high fault tolerance and redundancy since alternate routes between nodes are available if a link fails."
+    }
+  },
+  {
+    "id": 15,
+    "de": {
+      "frage": "Welches Hauptproblem tritt bei einer Bus-Topologie auf, wenn ein Kabel beschädigt wird?",
+      "optionen": {
+        "A": "Nur das betroffene Gerät verliert die Verbindung",
+        "B": "Die Netzwerkkommunikation wird zwischen allen Geräten unterbrochen",
+        "C": "Die Datenübertragung wird einfach an einen anderen Pfad umgeleitet",
+        "D": "Nur der Datenverkehr zum nächsten Gerät ist betroffen"
+      },
+      "antwort": "B",
+      "erklärung": "In einer Bus-Topologie führt ein Kabelbruch dazu, dass die Terminierung verloren geht. Dadurch wird die Kommunikation im gesamten Netzwerk gestört."
+    },
+    "en": {
+      "question": "What is the main issue caused by a cable break in a bus topology?",
+      "options": {
+        "A": "Only the affected device loses connectivity",
+        "B": "Communication between all devices on the network is disrupted",
+        "C": "Data transmission is rerouted through another path",
+        "D": "Only traffic to the next device is affected"
+      },
+      "answer": "B",
+      "explanation": "In a bus topology, a cable break disrupts termination, preventing communication across the entire network."
+    }
+  },
+  {
+    "id": 16,
+    "de": {
+      "frage": "Welche Herausforderung besteht bei der Fehlerbehebung in einem Ringnetzwerk?",
+      "optionen": {
+        "A": "Die Ringstruktur funktioniert nur bei drahtloser Verbindung",
+        "B": "Ein Ringnetzwerk verwendet keine Wiederholer",
+        "C": "Ein einzelner Knotenfehler kann die Kommunikation im gesamten Ring unterbrechen",
+        "D": "Die Netzwerkausrüstung muss nicht terminiert werden"
+      },
+      "antwort": "C",
+      "erklärung": "In einer Ring-Topologie wird das Signal von Knoten zu Knoten weitergereicht. Ein defekter Knoten oder Kabelbruch kann die Kommunikation für nachfolgende Knoten unterbrechen."
+    },
+    "en": {
+      "question": "What is a troubleshooting challenge in a ring network?",
+      "options": {
+        "A": "Ring structure only works with wireless connections",
+        "B": "A ring network does not use repeaters",
+        "C": "A single node failure can disrupt communication for all downstream nodes",
+        "D": "Network equipment does not require termination"
+      },
+      "answer": "C",
+      "explanation": "In a ring topology, signals are passed from node to node. A single node or cable failure can break communication for the rest of the ring."
+    }
+  },
+  {
+    "id": 17,
+    "de": {
+      "frage": "Was beschreibt den Begriff 'Encapsulation' im Zusammenhang mit Netzwerkprotokollen?",
+      "optionen": {
+        "A": "Die Konvertierung von analogen in digitale Signale",
+        "B": "Die Zuweisung von IP-Adressen zu Netzwerkgeräten",
+        "C": "Das Hinzufügen von Protokoll-Headern auf jeder OSI-Schicht, um Daten für die Übertragung vorzubereiten",
+        "D": "Die physische Verbindung von zwei Netzwerkknoten"
+      },
+      "antwort": "C",
+      "erklärung": "Encapsulation ist der Prozess, bei dem jede OSI-Schicht einen eigenen Header zu den Daten hinzufügt, um sie korrekt an das Ziel zu übertragen."
+    },
+    "en": {
+      "question": "What does the term 'encapsulation' refer to in the context of network protocols?",
+      "options": {
+        "A": "Converting analog signals into digital format",
+        "B": "Assigning IP addresses to network devices",
+        "C": "Adding protocol headers at each OSI layer to prepare data for transmission",
+        "D": "Physically connecting two network nodes"
+      },
+      "answer": "C",
+      "explanation": "Encapsulation is the process of adding protocol-specific headers at each OSI layer to ensure proper data delivery to the destination."
+    }
+  },
+  {
+    "id": 18,
+    "de": {
+      "frage": "Wie interagieren Protokolle in verschiedenen Schichten des OSI-Modells miteinander?",
+      "optionen": {
+        "A": "Nur Protokolle derselben Schicht kommunizieren direkt miteinander",
+        "B": "Jede Schicht bietet Dienste für die darüberliegende Schicht und nutzt die Dienste der darunterliegenden Schicht",
+        "C": "Protokolle überspringen mittlere Schichten, um die Geschwindigkeit zu erhöhen",
+        "D": "Nur die Anwendungsschicht kommuniziert mit der physikalischen Schicht"
+      },
+      "antwort": "B",
+      "erklärung": "Im OSI-Modell interagiert jede Schicht mit ihrer direkt darüberliegenden und darunterliegenden Schicht – dies wird als Adjacent Layer Interaction bezeichnet."
+    },
+    "en": {
+      "question": "How do protocols at different layers of the OSI model interact with each other?",
+      "options": {
+        "A": "Only protocols at the same layer communicate directly",
+        "B": "Each layer provides services to the layer above and uses services from the layer below",
+        "C": "Protocols skip middle layers to increase speed",
+        "D": "Only the application layer communicates with the physical layer"
+      },
+      "answer": "B",
+      "explanation": "In the OSI model, each layer interacts with the one above and below it—this is called adjacent layer interaction."
+    }
+  },
+   {
+    "id": 19,
+    "de": {
+      "frage": "Welche Aufgabe hat die physische Schicht (Layer 1) im OSI-Modell?",
+      "optionen": {
+        "A": "Die Übertragung und den Empfang von Signalen, die Bits repräsentieren",
+        "B": "Die Steuerung des Datenflusses zwischen Anwendungen",
+        "C": "Die Verschlüsselung von Daten für die Netzwerksicherheit",
+        "D": "Die logische Adressierung von Geräten im Netzwerk"
+      },
+      "antwort": "A",
+      "erklärung": "Die physische Schicht ist verantwortlich für die Übertragung und den Empfang von elektrischen, optischen oder Funk-Signalen, die Datenbits darstellen."
+    },
+    "en": {
+      "question": "What is the function of the Physical layer (Layer 1) in the OSI model?",
+      "options": {
+        "A": "Transmission and receipt of signals representing bits",
+        "B": "Controlling data flow between applications",
+        "C": "Encrypting data for network security",
+        "D": "Logical addressing of devices on the network"
+      },
+      "answer": "A",
+      "explanation": "The Physical layer is responsible for transmitting and receiving electrical, optical, or radio signals that represent bits of data."
+    }
+  },
+  {
+    "id": 20,
+    "de": {
+      "frage": "Welches Gerät arbeitet auf der physischen Schicht und verstärkt Signale, um die Reichweite eines Netzwerks zu vergrößern?",
+      "optionen": {
+        "A": "Router",
+        "B": "Repeater",
+        "C": "Switch",
+        "D": "Firewall"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Repeater arbeitet auf der physischen Schicht, indem er elektronische Signale verstärkt und so die maximale Übertragungsdistanz erweitert."
+    },
+    "en": {
+      "question": "Which device operates at the Physical layer and amplifies signals to extend the range of a network?",
+      "options": {
+        "A": "Router",
+        "B": "Repeater",
+        "C": "Switch",
+        "D": "Firewall"
+      },
+      "answer": "B",
+      "explanation": "A repeater operates at the Physical layer by amplifying electronic signals, extending the maximum transmission distance."
+    }
+  },
+    {
+    "id": 21,
+    "de": {
+      "frage": "Welche Hauptfunktion hat die Data Link Schicht (Layer 2) im OSI-Modell?",
+      "optionen": {
+        "A": "Übertragung von Daten zwischen Knoten im gleichen logischen Segment mithilfe von Hardwareadressen",
+        "B": "Verschlüsselung der Daten für die Sicherheit",
+        "C": "Zuweisung von IP-Adressen zu Geräten",
+        "D": "Routing von Daten zwischen Netzwerken"
+      },
+      "antwort": "A",
+      "erklärung": "Die Data Link Schicht ist verantwortlich für die Datenübertragung zwischen Knoten im selben logischen Segment unter Verwendung von Hardwareadressen und organisiert die Daten in Frames."
+    },
+    "en": {
+      "question": "What is the primary function of the Data Link layer (Layer 2) in the OSI model?",
+      "options": {
+        "A": "Transferring data between nodes on the same logical segment using hardware addresses",
+        "B": "Encrypting data for security",
+        "C": "Assigning IP addresses to devices",
+        "D": "Routing data between networks"
+      },
+      "answer": "A",
+      "explanation": "The Data Link layer is responsible for transferring data between nodes within the same logical segment using hardware addresses and organizing data into frames."
+    }
+  },
+  {
+    "id": 22,
+    "de": {
+      "frage": "Welches Gerät arbeitet auf der Data Link Schicht und verbindet physische Netzwerkteile, um die Netzwerkeffizienz zu erhöhen?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Router",
+        "C": "Firewall",
+        "D": "Modem"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Switch arbeitet auf Layer 2, verbindet mehrere Netzwerksegmente und erstellt effiziente Verbindungen zwischen Knoten durch Weiterleitung von Frames basierend auf Hardwareadressen."
+    },
+    "en": {
+      "question": "Which device operates at the Data Link layer and connects physical network segments to improve network efficiency?",
+      "options": {
+        "A": "Switch",
+        "B": "Router",
+        "C": "Firewall",
+        "D": "Modem"
+      },
+      "answer": "A",
+      "explanation": "A switch operates at Layer 2, connecting multiple network segments and creating efficient connections between nodes by forwarding frames based on hardware addresses."
+    }
+  },
+   {
+    "id": 23,
+    "de": {
+      "frage": "Welche Hauptaufgabe übernimmt die Network-Schicht (Layer 3) im OSI-Modell?",
+      "optionen": {
+        "A": "Verschlüsselung von Daten zwischen Netzwerken",
+        "B": "Adressierung und Weiterleitung von Datenpaketen über verschiedene Netzwerke hinweg",
+        "C": "Bereitstellung von Hardware-Adressen innerhalb eines Segments",
+        "D": "Verwaltung von kabellosen Netzwerken"
+      },
+      "antwort": "B",
+      "erklärung": "Die Network-Schicht ist dafür zuständig, Datenpakete anhand logischer Adressen (z. B. IP-Adressen) über verschiedene Netzwerke hinweg weiterzuleiten."
+    },
+    "en": {
+      "question": "What is the primary function of the Network layer (Layer 3) in the OSI model?",
+      "options": {
+        "A": "Encrypting data between networks",
+        "B": "Addressing and routing packets across different networks",
+        "C": "Providing hardware addresses within a segment",
+        "D": "Managing wireless networks"
+      },
+      "answer": "B",
+      "explanation": "The Network layer is responsible for routing packets between different networks using logical addressing, such as IP addresses."
+    }
+  },
+  {
+    "id": 24,
+    "de": {
+      "frage": "Welches Gerät arbeitet hauptsächlich auf Layer 3 des OSI-Modells?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Modem",
+        "C": "Router",
+        "D": "Repeater"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Router arbeitet auf Layer 3 und leitet Datenpakete basierend auf logischen Netzwerkadressen an ihr Zielnetzwerk weiter."
+    },
+    "en": {
+      "question": "Which device primarily operates at Layer 3 of the OSI model?",
+      "options": {
+        "A": "Switch",
+        "B": "Modem",
+        "C": "Router",
+        "D": "Repeater"
+      },
+      "answer": "C",
+      "explanation": "A router operates at Layer 3 and forwards data packets between networks based on logical network addresses."
+    }
+  },
+   {
+    "id": 25,
+    "de": {
+      "frage": "Welche Funktion übernimmt die Transportschicht (Layer 4) im OSI-Modell unter anderem?",
+      "optionen": {
+        "A": "Zuweisung von MAC-Adressen zu Netzwerkgeräten",
+        "B": "Routing von Paketen zwischen Netzwerken",
+        "C": "Identifikation von Netzwerk-Anwendungen über Portnummern",
+        "D": "Modulation von elektrischen Signalen"
+      },
+      "antwort": "C",
+      "erklärung": "Die Transportschicht identifiziert verschiedene Netzwerkdienste durch Portnummern, z. B. HTTP mit Port 80 oder E-Mail mit Port 25."
+    },
+    "en": {
+      "question": "Which is one of the functions performed by the Transport layer (Layer 4) in the OSI model?",
+      "options": {
+        "A": "Assigning MAC addresses to network devices",
+        "B": "Routing packets between networks",
+        "C": "Identifying network applications using port numbers",
+        "D": "Modulating electrical signals"
+      },
+      "answer": "C",
+      "explanation": "The Transport layer identifies different network services using port numbers, such as HTTP with port 80 or email with port 25."
+    }
+  },
+  {
+    "id": 26,
+    "de": {
+      "frage": "Was bedeutet zuverlässige Datenübertragung auf der Transportschicht?",
+      "optionen": {
+        "A": "Daten werden nur über drahtlose Medien übertragen",
+        "B": "Alle Pakete werden gleichzeitig gesendet",
+        "C": "Verlorene oder beschädigte Pakete werden erneut übertragen",
+        "D": "Nur eine Anwendung kann gleichzeitig Daten senden"
+      },
+      "antwort": "C",
+      "erklärung": "Die zuverlässige Datenübertragung bedeutet, dass verlorene oder beschädigte Datenpakete erneut gesendet werden, um eine vollständige Übertragung sicherzustellen."
+    },
+    "en": {
+      "question": "What does reliable data delivery mean at the Transport layer?",
+      "options": {
+        "A": "Data is only transmitted via wireless media",
+        "B": "All packets are sent simultaneously",
+        "C": "Lost or corrupted packets are retransmitted",
+        "D": "Only one application can transmit data at a time"
+      },
+      "answer": "C",
+      "explanation": "Reliable data delivery means that lost or damaged packets are retransmitted to ensure complete and accurate delivery."
+    }
+  },
+   {
+    "id": 27,
+    "de": {
+      "frage": "Welche Aufgabe erfüllt die Sitzungsschicht (Layer 5) im OSI-Modell?",
+      "optionen": {
+        "A": "Sie wandelt Zeichencodierungen wie ASCII in Unicode um.",
+        "B": "Sie verwaltet den Aufbau, die Steuerung und den Abbau von Kommunikationssitzungen.",
+        "C": "Sie ermöglicht Verschlüsselung und Komprimierung der Daten.",
+        "D": "Sie stellt physischen Zugriff auf das Übertragungsmedium bereit."
+      },
+      "antwort": "B",
+      "erklärung": "Layer 5 (Sitzungsschicht) verwaltet Dialoge (Sessions) zwischen Geräten: Aufbau, Verwaltung und Abbau."
+    },
+    "en": {
+      "question": "What is the role of the Session layer (Layer 5) in the OSI model?",
+      "options": {
+        "A": "It converts character encodings like ASCII to Unicode.",
+        "B": "It manages the establishment, control, and termination of communication sessions.",
+        "C": "It provides encryption and compression of data.",
+        "D": "It provides physical access to the transmission medium."
+      },
+      "answer": "B",
+      "explanation": "Layer 5 (Session) handles the setup, management, and teardown of communication sessions between devices."
+    }
+  },
+  {
+    "id": 28,
+    "de": {
+      "frage": "Welche Funktion wird typischerweise der Darstellungsschicht (Layer 6) zugeordnet?",
+      "optionen": {
+        "A": "Adressierung von Netzwerkpaketen",
+        "B": "Verschlüsselung und Komprimierung von Daten",
+        "C": "Verwaltung der Datenübertragung in einer Session",
+        "D": "Routing zwischen Netzwerken"
+      },
+      "antwort": "B",
+      "erklärung": "Layer 6 übernimmt Aufgaben wie Zeichensatzumwandlung, Datenkompression und in manchen Fällen Verschlüsselung."
+    },
+    "en": {
+      "question": "Which function is typically associated with the Presentation layer (Layer 6)?",
+      "options": {
+        "A": "Addressing of network packets",
+        "B": "Encryption and compression of data",
+        "C": "Managing data transfer within a session",
+        "D": "Routing between networks"
+      },
+      "answer": "B",
+      "explanation": "The Presentation layer handles tasks such as character encoding translation, data compression, and in some cases, encryption."
+    }
+  },
+  {
+    "id": 29,
+    "de": {
+      "frage": "Welche Aussagen über die Anwendungsschicht (Layer 7) sind korrekt? (Mehrfachauswahl möglich)",
+      "optionen": {
+        "A": "Sie kapselt andere Protokolle für die Übertragung.",
+        "B": "Sie stellt Funktionen wie E-Mail, Webzugriff und Verzeichnisdienste bereit.",
+        "C": "Sie kommuniziert direkt mit Softwareanwendungen auf dem Host.",
+        "D": "Sie stellt physikalische Verbindungen zwischen Hosts her."
+      },
+      "antwort": ["B", "C"],
+      "erklärung": "Layer 7 stellt direkte Schnittstellen zu Programmen wie Webbrowsern oder E-Mail-Clients bereit und bietet nutzbare Netzwerkdienste. Sie kapselt keine anderen Protokolle und ist nicht für physikalische Verbindungen zuständig."
+    },
+    "en": {
+      "question": "Which of the following statements about the Application layer (Layer 7) are correct? (Select all that apply)",
+      "options": {
+        "A": "It encapsulates other protocols for transmission.",
+        "B": "It provides functions such as email, web access, and directory services.",
+        "C": "It interacts directly with software applications on the host.",
+        "D": "It establishes physical connections between hosts."
+      },
+      "answer": ["B", "C"],
+      "explanation": "Layer 7 provides services like email and web access and interfaces directly with user applications. It does not encapsulate other protocols or manage physical connections."
+    }
+  },
+   {
+    "id": 30,
+    "de": {
+      "frage": "Welches der folgenden Geräte arbeitet auf Schicht 1 (Physical Layer) des OSI-Modells?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Hub",
+        "C": "Router",
+        "D": "Firewall"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Hub ist ein Gerät auf der Physical Layer. Er überträgt elektrische Signale, ohne sie zu interpretieren."
+    },
+    "en": {
+      "question": "Which of the following devices operates at Layer 1 (Physical Layer) of the OSI model?",
+      "options": {
+        "A": "Switch",
+        "B": "Hub",
+        "C": "Router",
+        "D": "Firewall"
+      },
+      "answer": "B",
+      "explanation": "A hub operates at the Physical Layer. It transmits raw bits without interpreting any addressing or content."
+    }
+  },
+  {
+    "id": 31,
+    "de": {
+      "frage": "Was ist ein typisches Gerät der Sicherungsschicht (Layer 2) im OSI-Modell?",
+      "optionen": {
+        "A": "Router",
+        "B": "Access Point",
+        "C": "Webserver",
+        "D": "Transceiver"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Access Point arbeitet auf Layer 2 und verwendet MAC-Adressen, um Geräte im LAN zu verbinden."
+    },
+    "en": {
+      "question": "Which of the following is a typical Layer 2 (Data Link) device in the OSI model?",
+      "options": {
+        "A": "Router",
+        "B": "Access Point",
+        "C": "Web Server",
+        "D": "Transceiver"
+      },
+      "answer": "B",
+      "explanation": "An Access Point operates at Layer 2 and uses MAC addresses to connect devices in a LAN."
+    }
+  },
+  {
+    "id": 32,
+    "de": {
+      "frage": "Welche zwei Geräte arbeiten auf Schicht 3 (Network Layer)? (Mehrfachauswahl möglich)",
+      "optionen": {
+        "A": "Firewall",
+        "B": "Switch",
+        "C": "Router",
+        "D": "Bridge"
+      },
+      "antwort": ["A", "C"],
+      "erklärung": "Ein Router ist ein typisches Layer-3-Gerät. Auch einfache Firewalls, die IP-Adressen filtern, operieren auf Layer 3."
+    },
+    "en": {
+      "question": "Which two devices operate at Layer 3 (Network Layer)? (Select all that apply)",
+      "options": {
+        "A": "Firewall",
+        "B": "Switch",
+        "C": "Router",
+        "D": "Bridge"
+      },
+      "answer": ["A", "C"],
+      "explanation": "A router is a standard Layer 3 device, and basic firewalls that filter IP traffic also operate at Layer 3."
+    }
+  },
+  {
+    "id": 33,
+    "de": {
+      "frage": "Welcher Gerätetyp kann auf Schicht 4 (Transport Layer) arbeiten?",
+      "optionen": {
+        "A": "Multilayer Switch",
+        "B": "Transceiver",
+        "C": "Bridge",
+        "D": "Hub"
+      },
+      "antwort": "A",
+      "erklärung": "Multilayer Switches können Ports, Sessions und Protokolle bis Layer 4 auswerten – z. B. zum Load Balancing."
+    },
+    "en": {
+      "question": "Which type of device can operate at Layer 4 (Transport Layer)?",
+      "options": {
+        "A": "Multilayer Switch",
+        "B": "Transceiver",
+        "C": "Bridge",
+        "D": "Hub"
+      },
+      "answer": "A",
+      "explanation": "Multilayer switches can operate at Layer 4, analyzing port numbers and sessions for load balancing."
+    }
+  },
+  {
+    "id": 34,
+    "de": {
+      "frage": "Welche Geräte oder Konzepte sind typischerweise den Schichten 5 bis 7 zugeordnet? (Mehrfachauswahl möglich)",
+      "optionen": {
+        "A": "Application Protocols wie HTTP und FTP",
+        "B": "Firewall mit Zustandserkennung (Stateful Firewall)",
+        "C": "Hub",
+        "D": "Multilayer Switch"
+      },
+      "antwort": ["A", "B", "D"],
+      "erklärung": "HTTP und FTP gehören zu Layer 7. Stateful Firewalls können Sessions (Layer 5) verfolgen, und Multilayer Switches können bis in obere Schichten analysieren."
+    },
+    "en": {
+      "question": "Which devices or concepts are typically associated with Layers 5 through 7? (Select all that apply)",
+      "options": {
+        "A": "Application protocols like HTTP and FTP",
+        "B": "Stateful firewall",
+        "C": "Hub",
+        "D": "Multilayer Switch"
+      },
+      "answer": ["A", "B", "D"],
+      "explanation": "HTTP and FTP are Layer 7 protocols. Stateful firewalls track sessions (Layer 5), and multilayer switches can analyze upper-layer data."
+    }
+  }
+]
