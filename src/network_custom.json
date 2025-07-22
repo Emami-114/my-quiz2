@@ -848,5 +848,263 @@
       "answer": ["A", "B", "D"],
       "explanation": "HTTP and FTP are Layer 7 protocols. Stateful firewalls track sessions (Layer 5), and multilayer switches can analyze upper-layer data."
     }
+  },
+  {
+  "id": 35,
+  "de": {
+    "frage": "Was beschreibt am BESTEN den Begriff 'Demarkationspunkt' im Kontext der Telekommunikation?",
+    "optionen": {
+      "A": "Die maximale Datenübertragungsrate, die vom ISP erreicht werden kann",
+      "B": "Der zentrale Knotenpunkt, an dem sich alle ISPs verbinden und Daten austauschen",
+      "C": "Das Protokoll zur Verschlüsselung von Daten über das Internet",
+      "D": "Der Punkt, an dem die Verkabelung des Telekommunikationsanbieters in die Kundenräume eintritt"
+    },
+    "antwort": ["D"],
+    "erklärung": "Der Demarkationspunkt ist die physische Grenze, an der die Verantwortung vom Telekommunikationsanbieter auf den Kunden übergeht – meist dort, wo die Verkabelung das Gebäude des Kunden erreicht."
+  },
+  "en": {
+    "question": "Which of the following BEST describes a demarcation point in the context of telecommunications?",
+    "options": {
+      "A": "The maximum data transfer rate achievable by the ISP",
+      "B": "The central hub where all ISPs connect and exchange data",
+      "C": "The protocol used for encrypting data over the Internet",
+      "D": "The point at which the telco's cabling enters the customer premises"
+    },
+    "answer": ["D"],
+    "explanation": "The demarcation point is the physical boundary where the responsibility shifts from the telecom provider to the customer—typically where the provider’s cabling reaches the customer’s building."
   }
+},
+{
+  "id": 36,
+  "de": {
+    "frage": "Welche der folgenden Funktionen implementiert ein SOHO-Router auf Schicht 2, um seine Adapter der physikalischen Schicht zu nutzen? (Wählen Sie zwei aus.)",
+    "optionen": {
+      "A": "Ethernet-Switch",
+      "B": "DHCP-Server",
+      "C": "Firewall",
+      "D": "Network Address Translation (NAT)",
+      "E": "Wireless Access Point"
+    },
+    "antwort": ["A", "E"],
+    "erklärung": "Ein SOHO-Router nutzt einen eingebauten Ethernet-Switch, um kabelgebundene Geräte auf Layer 2 zu verbinden, und einen Wireless Access Point, um drahtlose Geräte ebenfalls auf Layer 2 zu verbinden. DHCP, NAT und Firewalls arbeiten auf höheren Schichten."
+  },
+  "en": {
+    "question": "Which of the following functions does a SOHO router implement at layer 2 to make use of its Physical layer adapters? (Select two.)",
+    "options": {
+      "A": "Ethernet switch",
+      "B": "DHCP server",
+      "C": "Firewall",
+      "D": "Network Address Translation (NAT)",
+      "E": "Wireless access point"
+    },
+    "answer": ["A", "E"],
+    "explanation": "A SOHO router uses an integrated Ethernet switch to connect wired devices on layer 2 and a wireless access point to connect wireless devices—also on layer 2. DHCP, NAT, and firewalls operate at higher layers."
+  }
+},
+{
+  "id": 37,
+  "de": {
+    "frage": "Was verwenden Internetdienstanbieter (ISPs), um Verbindungen zwischen ihren Netzwerken innerhalb eines Internet Exchange Point (IXP)-Rechenzentrums herzustellen?",
+    "optionen": {
+      "A": "NFC (Near Field Communication)",
+      "B": "Bluetooth-Verbindung",
+      "C": "Transit- und Peering-Vereinbarungen",
+      "D": "Peer-to-Peer-Dateifreigabe"
+    },
+    "antwort": ["C"],
+    "erklärung": "ISPs nutzen Transit- und Peering-Vereinbarungen, um ihre Netzwerke an einem IXP zu verbinden. Dies ermöglicht den effizienten Austausch von Datenverkehr zwischen den Netzen. NFC, Bluetooth und Peer-to-Peer werden für diese Zwecke nicht verwendet."
+  },
+  "en": {
+    "question": "What do Internet Service Providers (ISPs) use to establish links between their networks within an Internet eXchange Point (IXP) data center?",
+    "options": {
+      "A": "NFC (Near Field Communication)",
+      "B": "Bluetooth connectivity",
+      "C": "Transit and peering arrangements",
+      "D": "Peer-to-peer file sharing"
+    },
+    "answer": ["C"],
+    "explanation": "ISPs use transit and peering arrangements to interconnect their networks at an IXP, enabling efficient data exchange. NFC, Bluetooth, and peer-to-peer sharing are unrelated to this infrastructure function."
+  }
+},
+{
+  "id": 38,
+  "de": {
+    "frage": "Ein freiberuflicher Fotograf richtet ein Heimbüro ein. Er muss einen Desktop, ein Laptop, einen Netzwerkdrucker und gelegentlich Geräte von Gästen mit dem Internet und miteinander verbinden, um Dateien zu teilen und zu drucken.\n\nWelche Art von Netzwerk ist für dieses Szenario am BESTEN geeignet?",
+    "optionen": {
+      "A": "CAN (Campus Area Network)",
+      "B": "SOHO (Small Office/Home Office) Netzwerk",
+      "C": "MAN (Metropolitan Area Network)",
+      "D": "PAN (Personal Area Network)"
+    },
+    "antwort": ["B"],
+    "erklärung": "Ein SOHO-Netzwerk ist ideal für kleine Umgebungen wie ein Heimbüro. Es ermöglicht die Verbindung mehrerer Geräte mit dem Internet und untereinander. CANs, MANs und PANs sind für größere oder speziellere Umgebungen gedacht."
+  },
+  "en": {
+    "question": "A freelance photographer is setting up a home office. They need to connect a desktop, a laptop, a network printer, and occasionally, guests' devices to the Internet and to each other for file sharing and printing.\n\nWhich type of network is MOST suitable for this scenario?",
+    "options": {
+      "A": "CAN (Campus Area Network)",
+      "B": "SOHO (Small Office/Home Office) Network",
+      "C": "MAN (Metropolitan Area Network)",
+      "D": "PAN (Personal Area Network)"
+    },
+    "answer": ["B"],
+    "explanation": "A SOHO network is ideal for small environments like a home office. It enables multiple devices to connect to the internet and to each other. CANs, MANs, and PANs are designed for larger or more specialized use cases."
+  }
+},
+{
+  "id": 39,
+  "de": {
+    "frage": "Wie wird auf Schicht 4 des OSI-Modells jede Anwendung identifiziert, um eine korrekte Weiterleitung und Zustellung der Daten zu ermöglichen?",
+    "optionen": {
+      "A": "Durch die Verwendung von Verschlüsselungsalgorithmen",
+      "B": "Durch eine eindeutige Portnummer, die der Anwendung zugewiesen ist",
+      "C": "Durch die MAC-Adresse des Zielgeräts",
+      "D": "Durch den eindeutigen Benutzernamen und das Passwort der Anwendung"
+    },
+    "antwort": ["B"],
+    "erklärung": "Auf Schicht 4 (Transportschicht) wird jede Anwendung durch eine eindeutige Portnummer identifiziert, die sicherstellt, dass die Daten korrekt dem jeweiligen Dienst zugeordnet werden."
+  },
+  "en": {
+    "question": "At layer 4 of the OSI model, how is each application identified to facilitate proper routing and delivery of data?",
+    "options": {
+      "A": "Through the use of encryption algorithms",
+      "B": "By a unique port number assigned to the application",
+      "C": "By the MAC address of the destination device",
+      "D": "Through the application's unique username and password"
+    },
+    "answer": ["B"],
+    "explanation": "At Layer 4 (Transport Layer), each application is identified by a unique port number, which ensures data is delivered to the correct service or application."
+  }
+},
+{
+  "id": 40,
+  "de": {
+    "frage": "Ein kleines Büro/Home-Office (SOHO)-Netzwerk ist so konfiguriert, dass es den privaten IP-Adressbereich 192.168.1.0/24 verwendet. Welche der folgenden IP-Adressen wäre die BESTE Wahl für den Router in diesem Netzwerk?",
+    "optionen": {
+      "A": "203.0.113.1",
+      "B": "192.168.1.1",
+      "C": "192.168.1.255",
+      "D": "192.168.2.1"
+    },
+    "antwort": ["B"],
+    "erklärung": "Die Adresse 192.168.1.1 liegt im selben privaten Subnetz 192.168.1.0/24 und ist eine typische Standard-Gateway-Adresse für SOHO-Router."
+  },
+  "en": {
+    "question": "A small office/home office (SOHO) network is configured to use the private IP address range of 192.168.1.0/24. Which of the following IP addresses would be the MOST appropriate for the router?",
+    "options": {
+      "A": "203.0.113.1",
+      "B": "192.168.1.1",
+      "C": "192.168.1.255",
+      "D": "192.168.2.1"
+    },
+    "answer": ["B"],
+    "explanation": "The address 192.168.1.1 is within the same private subnet 192.168.1.0/24 and is commonly used as the default gateway address for SOHO routers."
+  }
+},
+{
+  "id": 41,
+  "de": {
+    "frage": "Welche der folgenden Mengen stellt korrekt die möglichen Werte dar, die jede Ziffer in der hexadezimalen Schreibweise annehmen kann?",
+    "optionen": {
+      "A": "1 bis 10",
+      "B": "0 bis 9 und A bis F",
+      "C": "0 bis 9 und A bis E",
+      "D": "0 bis 7"
+    },
+    "antwort": ["B"],
+    "erklärung": "Hexadezimalzahlen verwenden die Ziffern 0 bis 9 sowie die Buchstaben A bis F, um Werte von 0 bis 15 darzustellen."
+  },
+  "en": {
+    "question": "Which of the following sets correctly represents the possible values that can be represented by each digit in hexadecimal notation?",
+    "options": {
+      "A": "1 through 10",
+      "B": "0 through 9 and A through F",
+      "C": "0 through 9 and A through E",
+      "D": "0 through 7"
+    },
+    "answer": ["B"],
+    "explanation": "Hexadecimal digits represent values from 0 to 9 and A to F, corresponding to decimal 0 through 15."
+  }
+},
+{
+  "id": 42,
+  "de": {
+    "frage": "Wie lautet die Dezimalform der folgenden binären IP-Adresse?\n\n11001101.00111001.10101001.01000010",
+    "optionen": {
+      "A": "238.90.202.99",
+      "B": "205.57.169.66",
+      "C": "190.42.154.51",
+      "D": "206.58.170.67"
+    },
+    "antwort": ["B"],
+    "erklärung": "Die binären Oktette entsprechen den Dezimalwerten 205 (11001101), 57 (00111001), 169 (10101001) und 66 (01000010)."
+  },
+  "en": {
+    "question": "What is the decimal form of the following binary IP address?\n\n11001101.00111001.10101001.01000010",
+    "options": {
+      "A": "238.90.202.99",
+      "B": "205.57.169.66",
+      "C": "190.42.154.51",
+      "D": "206.58.170.67"
+    },
+    "answer": ["B"],
+    "explanation": "The binary octets correspond to decimal values 205 (11001101), 57 (00111001), 169 (10101001), and 66 (01000010)."
+  }
+},
+{
+  "id": 43,
+  "de": {
+    "frage": "Was ist die EFFEKTIVSTE Methode, um die Verwaltungsoberfläche eines SOHO-Routers zu schützen?",
+    "optionen": {
+      "A": "Konfiguration eines starken Administratorkennworts",
+      "B": "Aktivierung von UPnP (Universal Plug and Play)",
+      "C": "Deaktivierung der Firewall",
+      "D": "Automatische Annahme von Firmware-Updates"
+    },
+    "antwort": ["A"],
+    "erklärung": "Ein starkes Administratorkennwort schützt die Verwaltungsoberfläche effektiv vor unbefugtem Zugriff."
+  },
+  "en": {
+    "question": "What is the MOST effective method for protecting the management interface of a SOHO router?",
+    "options": {
+      "A": "Configuring a strong administrative account passphrase",
+      "B": "Enabling UPnP (Universal Plug and Play)",
+      "C": "Disabling the firewall",
+      "D": "Setting the router to automatically accept firmware updates"
+    },
+    "answer": ["A"],
+    "explanation": "A strong administrative password effectively protects the management interface from unauthorized access."
+  }
+},
+{
+  "id": 44,
+  "de": {
+    "frage": "Welche der folgenden Schnittstellen stellt ein SOHO-Router auf der Physical Layer (Schicht 1) des OSI-Modells bereit? (Wähle drei)",
+    "optionen": {
+      "A": "Radioantennen für die drahtlose Signalübertragung",
+      "B": "VGA-Anschlüsse für Videoausgabe",
+      "C": "RJ-45-Anschlüsse für ein lokales kabelgebundenes Netzwerk",
+      "D": "USB-Anschlüsse für direkte Computerverbindung",
+      "E": "SATA-Anschlüsse für interne Speicherverbindung",
+      "F": "WAN-Anschluss für die Verbindung zum Internetdienstanbieter (ISP)",
+      "G": "HDMI-Anschlüsse für Multimedia-Streaming"
+    },
+    "antwort": ["A", "C", "F"],
+    "erklärung": "SOHO-Router bieten Radioantennen für WLAN, RJ-45-Anschlüsse für LAN-Kabel und einen WAN-Port für die ISP-Verbindung als physische Schnittstellen."
+  },
+  "en": {
+    "question": "Which of the following interfaces does a SOHO router provide at the Physical Layer of the OSI model? (Select three)",
+    "options": {
+      "A": "Radio antennas for wireless signal transmission",
+      "B": "VGA ports for video output",
+      "C": "RJ-45 ports for a local cabled network",
+      "D": "USB ports for direct computer connection",
+      "E": "SATA ports for internal storage connection",
+      "F": "WAN port for Internet Service Provider (ISP) connection",
+      "G": "HDMI ports for multimedia streaming"
+    },
+    "answer": ["A", "C", "F"],
+    "explanation": "SOHO routers provide radio antennas for wireless communication, RJ-45 ports for LAN cabling, and a WAN port to connect to the ISP as physical layer interfaces."
+  }
+}
 ]
