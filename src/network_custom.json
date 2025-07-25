@@ -1144,7 +1144,7 @@
       "C": "Halbduplex-Übertragung",
       "D": "Multiplex-Übertragung"
     },
-    "antwort": ["C"],
+    "antwort": "C",
     "erklärung": "Ein contention-basiertes MAC-System wie klassisches Ethernet (z. B. mit Hubs) verwendet typischerweise Halbduplex-Übertragung, bei der Daten nur abwechselnd gesendet oder empfangen werden können, nicht gleichzeitig."
   },
   "en": {
@@ -1155,7 +1155,7 @@
       "C": "Half-duplex transmission",
       "D": "Multiplex transmission"
     },
-    "answer": ["C"],
+    "answer": "C",
     "explanation": "A contention-based MAC system like traditional Ethernet (especially when using hubs) typically supports half-duplex transmission, where data can be either sent or received at a time, but not both simultaneously."
   }
 },
@@ -1169,7 +1169,7 @@
       "C": "Einfacheres Spleißen",
       "D": "Haltbarer"
     },
-    "antwort": ["B"],
+    "antwort": "B",
     "erklärung": "Glasfaserkabel bieten eine wesentlich höhere Bandbreite und ermöglichen dadurch schnellere Datenübertragung über längere Distanzen als Kupferkabel."
   },
   "en": {
@@ -1180,7 +1180,7 @@
       "C": "Easier to splice",
       "D": "More durable"
     },
-    "answer": ["B"],
+    "answer": "B",
     "explanation": "Fiber optic cables provide significantly higher bandwidth, enabling faster data transmission over longer distances compared to copper cables."
   }
 },
@@ -1194,7 +1194,7 @@
       "C": "Autonegotiation auf allen Netzwerkgeräten implementieren.",
       "D": "Das Glasfaser-Backbone bis zu jeder neuen Arbeitsstation erweitern."
     },
-    "antwort": ["A"],
+    "antwort": "A",
     "erklärung": "Das Ersetzen von Hubs durch Switches verbessert die Netzwerkleistung deutlich, da Switches Kollisionsdomänen eliminieren und eine effizientere Datenübertragung ermöglichen – besonders wichtig bei der Integration vieler neuer Geräte."
   },
   "en": {
@@ -1205,7 +1205,7 @@
       "C": "Implement autonegotiation on all network devices.",
       "D": "Extend the fiber optic backbone to each new workstation."
     },
-    "answer": ["A"],
+    "answer": "A",
     "explanation": "Replacing hubs with switches significantly improves network performance by eliminating collision domains and enabling more efficient data transmission, which is especially important when adding many new devices."
   }
 },
@@ -1219,7 +1219,7 @@
       "C": "Alle Cat-5-Kabel durch Glasfaserkabel ersetzen",
       "D": "Switches durch Hubs ersetzen"
     },
-    "antwort": ["B"],
+    "antwort": "B",
     "erklärung": "Das Aktivieren des Vollduplexmodus auf allen Geräten verhindert Kollisionen und erlaubt gleichzeitiges Senden und Empfangen von Daten, was die Leistung bei Fast Ethernet erheblich steigert."
   },
   "en": {
@@ -1230,7 +1230,7 @@
       "C": "Replace all Cat 5 cables with fiber optic cables",
       "D": "Replace switches with hubs"
     },
-    "answer": ["B"],
+    "answer": "B",
     "explanation": "Enabling full-duplex mode on all devices eliminates collisions and allows simultaneous sending and receiving of data, which significantly improves performance in Fast Ethernet networks."
   }
 },
@@ -1244,7 +1244,7 @@
       "C": "Höherfrequente Signalübertragung",
       "D": "Verwendung von Hubs statt Switches"
     },
-    "antwort": ["A"],
+    "antwort": "A",
     "erklärung": "Autonegotiation ermöglicht es Geräten, die beste gemeinsame Geschwindigkeit und Duplex-Einstellung auszuhandeln, einschließlich der Unterstützung älterer 10-Mbit/s-Geräte."
   },
   "en": {
@@ -1255,7 +1255,7 @@
       "C": "Higher frequency signaling",
       "D": "Use of hubs instead of switches"
     },
-    "answer": ["A"],
+    "answer": "A",
     "explanation": "Autonegotiation allows devices to agree on the highest common speed and duplex setting, including support for older 10 Mbps devices."
   }
 },
@@ -1300,7 +1300,7 @@
       "C": "Funktioniert mit 1 Gbps (1000), verwendet Basisbandsignalübertragung (BASE) und wird mit Koaxialkabel implementiert.",
       "D": "Liefert eine Geschwindigkeit von 10 Gbps (10G), verwendet ein Breitbandsignal (BROAD) und basiert auf drahtloser Übertragung."
     },
-    "antwort": ["B"],
+    "antwort": "B",
     "erklärung": "10BASE-T steht für 10 Mbps Übertragungsgeschwindigkeit (10), Basisbandsignal (BASE), und Twisted-Pair-Kupferkabel (T)."
   },
   "en": {
@@ -1311,7 +1311,7 @@
       "C": "Functions at 1 Gbps (1000), employs baseband signal transmission (BASE), and is implemented with coaxial cabling",
       "D": "Delivers a speed of 10 Gbps (10G), uses a broadband signal (BROAD), and relies on wireless transmission"
     },
-    "answer": ["B"],
+    "answer": "B",
     "explanation": "10BASE-T refers to a 10 Mbps data rate (10), baseband signaling (BASE), and twisted pair copper cabling (T)."
   }
 },
@@ -1325,7 +1325,7 @@
       "C": "Eine Methode zur Sicherung von Netzwerkdaten durch Verschlüsselung der Informationen vor der Übertragung",
       "D": "Die physische Infrastruktur wie Kabel und Switches, die zur Datenübertragung in einem Netzwerk verwendet wird"
     },
-    "antwort": ["B"],
+    "antwort": "B",
     "erklärung": "Die Modulation eines Mediums zur Übertragung von Daten bedeutet, dass Signale durch elektrische Ströme, Infrarotlicht oder Funkwellen kodiert und übermittelt werden. Dies beschreibt die eigentliche Signalübertragung am besten."
   },
   "en": {
@@ -1336,7 +1336,7 @@
       "C": "A method of securing network data by encrypting the information before transmission",
       "D": "The physical infrastructure, such as cables and switches, used to transmit data in a network"
     },
-    "answer": ["B"],
+    "answer": "B",
     "explanation": "Modulating a transmission medium means encoding signals as electric current, infrared light, or radio waves. This is the core process of transmitting data in a network."
   }
 },
@@ -1350,7 +1350,7 @@
       "C": "Um dem Standard für alle Neuinstallationen zu entsprechen",
       "D": "Um die Verwendung von Glasfaserkabeln zu vermeiden"
     },
-    "antwort": ["B"],
+    "antwort": "B",
     "erklärung": "10/40 GbE-Ethernet wird eingesetzt, um Netzwerke mit sehr hohen Bandbreitenanforderungen zu unterstützen, wie z. B. bei Rechenzentren oder großen Datenmengen im Unternehmensumfeld."
   },
   "en": {
@@ -1361,8 +1361,262 @@
       "C": "To meet the standard for all new installations",
       "D": "To avoid using fiber optic cable"
     },
-    "answer": ["B"],
+    "answer": "B",
     "explanation": "10/40 GbE Ethernet is deployed to support very high bandwidth requirements, such as in data centers or environments with large volumes of network traffic."
+  }
+},
+{
+  "id": 55,
+  "de": {
+    "frage": "Was ist der Hauptunterschied zwischen geschirmten Kabeln (screened cabling) und vollständig geschirmten Kabeln (fully shielded cabling)?",
+    "optionen": {
+      "A": "Geschirmte Kabel verwenden nur eine geflochtene äußere Abschirmung.",
+      "B": "Vollständig geschirmte Kabel verwenden paarweise Folienabschirmung ohne äußere Abschirmung.",
+      "C": "Geschirmte Kabel haben eine dünne äußere Folienschirmung um alle Paare.",
+      "D": "Vollständig geschirmte Kabel haben überhaupt keine Abschirmung."
+    },
+    "antwort": "C",
+    "erklärung": "Geschirmte Kabel (screened) haben eine einfache äußere Abschirmung, meist eine Folie oder ein Geflecht, um alle Adernpaare. Vollständig geschirmte Kabel (fully shielded) verfügen über eine zusätzliche Abschirmung jedes einzelnen Adernpaares, meist in Form von Folien, sowie eine äußere Gesamtschirmung."
+  },
+  "en": {
+    "question": "What is the main difference between screened cabling and fully shielded cabling?",
+    "options": {
+      "A": "Screened cabling uses a braided outer screen only.",
+      "B": "Fully shielded cabling uses foil-shielded pairs without an outer shield.",
+      "C": "Screened cabling has one thin outer foil shield around all pairs.",
+      "D": "Fully shielded cabling has no shielding at all."
+    },
+    "answer": "C",
+    "explanation": "Screened cabling typically includes a single outer foil shield around all wire pairs. Fully shielded cabling includes foil shields around each individual pair in addition to an overall outer shield."
+  }
+},
+{
+  "id": 56,
+  "de": {
+    "frage": "Welche Art von Leiterdraht wird typischerweise für Kabel verwendet, die hinter Wänden oder durch Kanäle verlaufen?",
+    "optionen": {
+      "A": "Litzenleiter (Stranded)",
+      "B": "Massivleiter (Solid)",
+      "C": "Koaxialkabel (Coaxial)",
+      "D": "Glasfaserkabel (Fiber optic)"
+    },
+    "antwort": "B",
+    "erklärung": "Massivleiter (Solid) werden typischerweise für feste Installationen verwendet, z. B. hinter Wänden oder in Kabelkanälen, da sie stabiler und weniger anfällig für Brüche bei unbewegten Anwendungen sind."
+  },
+  "en": {
+    "question": "Which type of conductor wire is typically used for cables that run behind walls or through ducts?",
+    "options": {
+      "A": "Stranded",
+      "B": "Solid",
+      "C": "Coaxial",
+      "D": "Fiber optic"
+    },
+    "answer": "B",
+    "explanation": "Solid conductor wires are commonly used for in-wall or duct installations because they provide better durability and signal performance for fixed installations compared to stranded wires."
+  }
+},
+{
+  "id": 57,
+  "de": {
+    "frage": "Was ist der Hauptzweck des Verdrillens der Adernpaare in einem ungeschirmten Twisted-Pair-Kabel (UTP)?",
+    "optionen": {
+      "A": "Um das Kabel flexibler zu machen",
+      "B": "Um äußere Störungen und Übersprechen zu reduzieren",
+      "C": "Um die Dicke des Kabels zu erhöhen",
+      "D": "Um das Kabel zur einfacheren Identifizierung farblich zu kennzeichnen"
+    },
+    "antwort": "B",
+    "erklärung": "Das Verdrillen der Adernpaare in einem UTP-Kabel dient dazu, elektromagnetische Störungen (EMI) und Übersprechen zwischen den Paaren zu minimieren."
+  },
+  "en": {
+    "question": "What is the primary purpose of twisting the pairs in an unshielded twisted pair (UTP) cable?",
+    "options": {
+      "A": "To make the cable more flexible",
+      "B": "To reduce external interference and crosstalk",
+      "C": "To increase the cable's thickness",
+      "D": "To color-code the cable for easier identification"
+    },
+    "answer": "B",
+    "explanation": "Twisting the wire pairs in a UTP cable helps cancel out electromagnetic interference and reduces crosstalk between the pairs, improving signal integrity."
+  }
+},
+{
+  "id": 58,
+  "de": {
+    "frage": "Welche der folgenden Aussagen treffen auf RJ45-Steckverbinder zu? (Wählen Sie zwei aus.)",
+    "optionen": {
+      "A": "Sie sind in der Form identisch mit RJ11-Steckverbindern.",
+      "B": "Sie unterstützen bis zu 8 Positionen und 8 Kontakte.",
+      "C": "Sie werden hauptsächlich in Telefonsystemen verwendet.",
+      "D": "Sie haben einen Kunststoffhalteclip.",
+      "E": "Sie sind für die Verwendung mit einadrigen Kupferkabeln ausgelegt."
+    },
+    "antwort": ["B", "D"],
+    "erklärung": "RJ45-Stecker haben einen Kunststoffhalteclip zur Sicherung und verfügen über 8 Positionen und 8 Kontakte (8P8C), was sie ideal für Ethernet-Netzwerke macht."
+  },
+  "en": {
+    "question": "Which of the following are true characteristics of RJ45 connectors? (Select two.)",
+    "options": {
+      "A": "They are identical in form to RJ11 connectors.",
+      "B": "They support up to 8 positions and 8 contacts.",
+      "C": "They are primarily used for telephone systems.",
+      "D": "They have a plastic retaining clip.",
+      "E": "They are designed for use with single-pair copper cables."
+    },
+    "answer": ["B", "D"],
+    "explanation": "RJ45 connectors feature a plastic retaining clip and support 8 positions and 8 contacts (8P8C), making them suitable for Ethernet networking."
+  }
+},
+{
+  "id": 59,
+  "de": {
+    "frage": "Was ist die Hauptfunktion der beiden mittleren Kontakte in einem RJ11-Stecker in einem Telefonsystem?",
+    "optionen": {
+      "A": "Sie versorgen das Telefon mit Strom.",
+      "B": "Sie übertragen den Wählton und die Sprachverbindung.",
+      "C": "Sie sind für zukünftige technologische Entwicklungen reserviert.",
+      "D": "Sie verbessern die Signalqualität für Internetverbindungen."
+    },
+    "antwort": "B",
+    "erklärung": "Die mittleren zwei Kontakte in einem RJ11-Stecker übertragen typischerweise den Wählton und die Sprachdaten in einem analogen Telefonsystem."
+  },
+  "en": {
+    "question": "In a telephone system, what is the primary function of the center two contacts in an RJ11 connector?",
+    "options": {
+      "A": "They are used to provide power to the telephone unit.",
+      "B": "They carry the dial tone and voice circuit.",
+      "C": "They are reserved for future technological advancements.",
+      "D": "They enhance the signal quality for internet connections."
+    },
+    "answer": "B",
+    "explanation": "The center two contacts in an RJ11 connector typically carry the dial tone and analog voice circuit in a standard telephone system."
+  }
+},
+{
+  "id": 60,
+  "de": {
+    "frage": "Du verlegst neue Kabel in deinem Gebäude für einige neue Büros. Das Gebäude hat eine Zwischendecke, die die Beleuchtung aufnimmt und als Luftweg für Heizung und Klimaanlage dient. Du möchtest deine Ethernet-Kabel in diesem Bereich verlegen.\n\nWelcher Kabeltyp muss verwendet werden?",
+    "optionen": {
+      "A": "Plenum-zertifiziertes Kabel",
+      "B": "Cat 5e oder Cat 6a Kabel",
+      "C": "Glasfaserkabel",
+      "D": "STP-Kabel"
+    },
+    "antwort": "A",
+    "erklärung": "In Lüftungsräumen wie Zwischendecken muss Plenum-zertifiziertes Kabel verwendet werden, da es flammenhemmend ist und bei einem Brand weniger giftige Dämpfe abgibt."
+  },
+  "en": {
+    "question": "You're adding new wires in your building for some new offices. The building has a false ceiling that holds the lights and provides an air path for heating and air conditioning. You'd like to run your Ethernet cables in this area.\n\nWhich type of cable must you use?",
+    "options": {
+      "A": "Plenum-rated cable",
+      "B": "Cat 5e or Cat 6a cables",
+      "C": "Fiber optic cables",
+      "D": "STP cables"
+    },
+    "answer": "A",
+    "explanation": "Plenum-rated cables are required in air-handling spaces like false ceilings because they are made with fire-retardant jackets that emit less toxic smoke in case of fire."
+  }
+},
+{
+  "id": 61,
+  "de": {
+    "frage": "Welche der folgenden Aussagen ist wahr bezüglich der Verwendung von Plenum-zertifizierten Kabeln anstelle von Riser-zertifizierten Kabeln?",
+    "optionen": {
+      "A": "Plenum-zertifizierte Kabel dürfen niemals anstelle von Riser-zertifizierten Kabeln verwendet werden, da sie unterschiedliche Brandschutzstandards haben.",
+      "B": "Plenum-zertifizierte Kabel dürfen anstelle von Riser-zertifizierten Kabeln verwendet werden, aber nicht umgekehrt.",
+      "C": "Riser- und Plenum-zertifizierte Kabel sind ohne Einschränkungen austauschbar.",
+      "D": "Die Verwendung von Plenum-zertifizierten Kabeln anstelle von Riser-zertifizierten Kabeln verringert die Gesamtbandbreite des Netzwerks."
+    },
+    "antwort": "B",
+    "erklärung": "Plenum-Kabel erfüllen strengere Brandschutzanforderungen und können sicher in vertikalen Schächten verwendet werden, in denen auch Riser-Kabel eingesetzt werden. Umgekehrt ist dies aus Sicherheitsgründen jedoch nicht erlaubt."
+  },
+  "en": {
+    "question": "Which of the following statements is true regarding the use of plenum-rated cables in place of riser-rated cables?",
+    "options": {
+      "A": "Plenum-rated cables can never be used in place of riser-rated cables due to their different fire safety standards.",
+      "B": "Plenum-rated cables can be used in place of riser-rated cables, but not vice versa.",
+      "C": "Riser-rated and plenum-rated cables are interchangeable with no restrictions.",
+      "D": "Using plenum-rated cables in place of riser-rated cables reduces the overall bandwidth of the network."
+    },
+    "answer": "B",
+    "explanation": "Plenum-rated cables meet stricter fire safety requirements and can be used where riser-rated cables are allowed. However, the reverse is not permitted due to fire code compliance."
+  }
+},
+{
+  "id": 62,
+  "de": {
+    "frage": "Was ist eine typische Verwendung von Twinaxial-Kabeln?",
+    "optionen": {
+      "A": "Telefonverkabelung im Wohnbereich",
+      "B": "Rechenzentrumsverbindungen",
+      "C": "Außenbeleuchtungssysteme",
+      "D": "Audioanlagen in Fahrzeugen"
+    },
+    "antwort": "B",
+    "erklärung": "Twinaxial-Kabel (Twinax) werden häufig für Hochgeschwindigkeitsverbindungen in Rechenzentren verwendet, insbesondere für kurze Verbindungen wie Direct Attach Copper (DAC) in Server-Racks."
+  },
+  "en": {
+    "question": "Which of the following is a typical use of twinaxial cables?",
+    "options": {
+      "A": "Residential telephone wiring",
+      "B": "Data center interconnects",
+      "C": "Outdoor lighting systems",
+      "D": "Automotive audio systems"
+    },
+    "answer": "B",
+    "explanation": "Twinaxial cables (Twinax) are commonly used for high-speed connections in data centers, particularly for short-distance links like Direct Attach Copper (DAC) within server racks."
+  }
+},
+{
+  "id": 63,
+  "de": {
+    "frage": "Welche der folgenden sind typische Verwendungen von RG-59-Koaxialkabeln?",
+    "optionen": {
+      "A": "Vernetzung in Fahrzeugen",
+      "B": "Ferntelekommunikation über große Entfernungen",
+      "C": "Audio-/Videoanwendungen",
+      "D": "Videoüberwachung (CCTV)",
+      "E": "Highspeed-Internetverbindungen"
+    },
+    "antwort": ["C", "D"],
+    "erklärung": "RG-59-Kabel werden häufig für Videoanwendungen wie CCTV-Systeme und einfache Audio-/Videoverbindungen verwendet. Sie sind jedoch nicht für Hochgeschwindigkeitsinternet oder Langstreckenkommunikation geeignet."
+  },
+  "en": {
+    "question": "Which of the following are typical uses of RG-59 coax cable?",
+    "options": {
+      "A": "In-vehicle networking",
+      "B": "Long-distance telecommunication",
+      "C": "Audio/video applications",
+      "D": "Closed circuit TV (CCTV)",
+      "E": "High-speed internet connections"
+    },
+    "answer": ["C", "D"],
+    "explanation": "RG-59 cables are commonly used for video applications such as CCTV systems and basic audio/video connectivity. However, they are not suitable for high-speed internet or long-distance telecommunication."
+  }
+},
+{
+  "id": 64,
+  "de": {
+    "frage": "Welche Organisationen haben Kategorien von Kabelstandards für Twisted-Pair-Kabel erstellt, um die Auswahl eines geeigneten Qualitätskabels zu erleichtern?",
+    "optionen": {
+      "A": "IEEE und IETF",
+      "B": "ANSI und TIA/EIA",
+      "C": "ISO und IEC",
+      "D": "ITU und ETSI"
+    },
+    "antwort": "B",
+    "erklärung": "ANSI und TIA/EIA sind die Organisationen, die die Kabelkategorien für Twisted-Pair-Kabel definiert haben, um Qualitätsstandards und Kompatibilität sicherzustellen."
+  },
+  "en": {
+    "question": "Which organizations have created categories of cable standards for twisted pair to simplify the selection of a suitable quality cable?",
+    "options": {
+      "A": "IEEE and IETF",
+      "B": "ANSI and TIA/EIA",
+      "C": "ISO and IEC",
+      "D": "ITU and ETSI"
+    },
+    "answer": "B",
+    "explanation": "ANSI and TIA/EIA are the organizations that defined cable categories for twisted-pair cables to ensure quality standards and compatibility."
   }
 }
 ]
