@@ -1618,5 +1618,382 @@
     "answer": "B",
     "explanation": "ANSI and TIA/EIA are the organizations that defined cable categories for twisted-pair cables to ensure quality standards and compatibility."
   }
+},
+{
+  "id": 65,
+  "de": {
+    "frage": "Was ist der Hauptzweck von Wavelength Division Multiplexing (WDM)?",
+    "optionen": {
+      "A": "Um die Bandbreite einzelner Kanäle zu reduzieren",
+      "B": "Um mehrere Kanäle über ein oder zwei Glasfasern bereitzustellen",
+      "C": "Um die Latenz der Datenübertragung zu erhöhen",
+      "D": "Um die gesamte Datenübertragungsrate zu verringern"
+    },
+    "antwort": "B",
+    "erklärung": "Wavelength Division Multiplexing (WDM) ermöglicht die gleichzeitige Übertragung mehrerer Datenströme über dieselbe Glasfaser, indem unterschiedliche Lichtwellenlängen (Farben) verwendet werden."
+  },
+  "en": {
+    "question": "What is the primary purpose of Wavelength Division Multiplexing (WDM)?",
+    "options": {
+      "A": "To reduce the bandwidth of individual channels",
+      "B": "To provision multiple channels over one or two strands of fiber",
+      "C": "To increase the latency of data transmission",
+      "D": "To decrease the overall data transmission rate"
+    },
+    "answer": "B",
+    "explanation": "Wavelength Division Multiplexing (WDM) allows multiple data streams to be transmitted simultaneously over the same fiber by using different wavelengths (colors) of light."
+  }
+},
+{
+  "id": 66,
+  "de": {
+    "frage": "Was ist ein Hauptunterschied zwischen Dense Wavelength Division Multiplexing (DWDM) und CWDM?",
+    "optionen": {
+      "A": "DWDM unterstützt weniger Kanäle als CWDM.",
+      "B": "DWDM benötigt weniger präzise Laser als CWDM.",
+      "C": "DWDM bietet eine größere Anzahl von Kanälen mit viel geringerer Kanalabstand.",
+      "D": "DWDM wird typischerweise für kürzere Übertragungsdistanzen verwendet als CWDM."
+    },
+    "antwort": "C",
+    "erklärung": "DWDM (Dense Wavelength Division Multiplexing) nutzt engere Kanalabstände als CWDM, wodurch deutlich mehr Kanäle auf einer einzelnen Faser übertragen werden können."
+  },
+  "en": {
+    "question": "What is a major difference when comparing Dense Wavelength Division Multiplexing (DWDM) to CWDM?",
+    "options": {
+      "A": "DWDM supports fewer channels than CWDM.",
+      "B": "DWDM requires less precise lasers than CWDM.",
+      "C": "DWDM provisions greater numbers of channels with much less spacing between each channel.",
+      "D": "DWDM is typically used for shorter distance transmissions than CWDM."
+    },
+    "answer": "C",
+    "explanation": "DWDM provisions a greater number of closely spaced channels compared to CWDM, allowing for significantly more data to be transmitted over a single fiber."
+  }
+},
+{
+  "id": 67,
+  "de": {
+    "frage": "Was verwendet Bidirectional Wavelength Division Multiplexing (BiDi), um Sende- und Empfangssignale über denselben Glasfaserstrang zu übertragen?",
+    "optionen": {
+      "A": "Identische Wellenlängen für Sende- und Empfangssignale",
+      "B": "Leicht verschobene Wellenlängen für Sende- und Empfangssignale",
+      "C": "Erhöhte Sendeleistung nur für Tx-Signale",
+      "D": "Verminderte Empfangsleistung nur für Rx-Signale"
+    },
+    "antwort": "B",
+    "erklärung": "BiDi nutzt unterschiedliche, leicht versetzte Wellenlängen für Tx und Rx, damit beide Richtungen gleichzeitig über denselben Glasfaserstrang übertragen werden können."
+  },
+  "en": {
+    "question": "What does Bidirectional Wavelength Division Multiplexing (BiDi) use to support transmit and receive signals over the same strand of fiber?",
+    "options": {
+      "A": "Identical wavelengths for Tx and Rx signals",
+      "B": "Slightly shifted wavelengths for Tx and Rx signals",
+      "C": "Increased power levels for Tx signals only",
+      "D": "Decreased power levels for Rx signals only"
+    },
+    "answer": "B",
+    "explanation": "BiDi uses slightly different wavelengths for transmit (Tx) and receive (Rx) signals so they can travel simultaneously over the same strand of fiber."
+  }
+},
+{
+  "id": 68,
+  "de": {
+    "frage": "Wie verhält sich ein MPO-Stecker mit 24 oder 32 Fasern im Vergleich zum Platzbedarf eines Duplex-LC-Paars?",
+    "optionen": {
+      "A": "Er benötigt mehr Platz als ein Duplex-LC-Paar.",
+      "B": "Er hat den gleichen Platzbedarf wie ein Duplex-LC-Paar.",
+      "C": "Er ist nur für Singlemode-Fasern geeignet.",
+      "D": "Er ist doppelt so groß wie ein Duplex-LC-Paar."
+    },
+    "antwort": "B",
+    "erklärung": "Ein MPO-Stecker mit hoher Faserdichte kann 24 oder 32 Fasern im selben Formfaktor wie ein Duplex-LC-Paar unterbringen, wodurch er sich ideal für platzsparende Installationen eignet."
+  },
+  "en": {
+    "question": "How does an MPO connector capable of carrying 24 or 32 fibers compare in footprint to a duplex LC pair?",
+    "options": {
+      "A": "It requires more space than a duplex LC pair.",
+      "B": "It has the same footprint as a duplex LC pair.",
+      "C": "It is only suitable for single-mode fibers.",
+      "D": "It is twice as large as a duplex LC pair."
+    },
+    "answer": "B",
+    "explanation": "An MPO connector designed for high fiber count (24 or 32 fibers) offers the same physical footprint as a duplex LC pair, making it ideal for high-density installations."
+  }
+},
+{
+  "id": 69,
+  "de": {
+    "frage": "Wie viele Glasfasern werden für eine 40-Gbit/s-Verbindung benötigt, die aus 4 x 10-Gbit/s-Lanes mit Multi-fiber Push On (MPO)-Steckern besteht?",
+    "optionen": {
+      "A": "4 Fasern",
+      "B": "8 Fasern",
+      "C": "12 Fasern",
+      "D": "16 Fasern"
+    },
+    "antwort": "C",
+    "erklärung": "Für eine 40-Gbit/s-Verbindung über MPO-Stecker mit 4 x 10-Gbit/s-Lanes werden typischerweise 12 Fasern benötigt: 4 Fasern für die Übertragung, 4 für den Empfang und 4 ungenutzte Fasern zur Unterstützung des physischen Layouts."
+  },
+  "en": {
+    "question": "How many fiber strands are required for a 40 Gbps link comprising 4 x 10 Gbps lanes using Multi-fiber Push On (MPO) connectors?",
+    "options": {
+      "A": "4 strands",
+      "B": "8 strands",
+      "C": "12 strands",
+      "D": "16 strands"
+    },
+    "answer": "C",
+    "explanation": "A 40 Gbps link using MPO connectors with 4 x 10 Gbps lanes typically requires 12 fibers: 4 for transmitting, 4 for receiving, and 4 unused for alignment and form factor support."
+  }
+},
+{
+  "id": 70,
+  "de": {
+    "frage": "Was ist der Hauptzweck der Verwendung von Glasfaser-Verteilerfeldern in einem Glasfasernetzwerk?",
+    "optionen": {
+      "A": "Um die Signalstärke der Glasfaserkabel zu erhöhen",
+      "B": "Bereitstellung eines zentralen Ortes zum Anschließen und Verwalten von Glasfaserkabeln",
+      "C": "Um elektrische Signale in optische Signale umzuwandeln",
+      "D": "Um die Übertragungsgeschwindigkeit im Netzwerk zu erhöhen"
+    },
+    "antwort": "B",
+    "erklärung": "Glasfaser-Verteilerfelder dienen als zentrale Sammelpunkte zur Organisation, Verwaltung und einfachen Wartung von Glasfaserverbindungen in einem Netzwerk."
+  },
+  "en": {
+    "question": "What is the primary purpose of using fiber distribution panels in a fiber optic network?",
+    "options": {
+      "A": "To increase the signal strength of the fiber optic cables",
+      "B": "To provide a centralized location for connecting and managing fiber optic cables",
+      "C": "To convert electrical signals into optical signals",
+      "D": "To enhance the speed of data transmission over the network"
+    },
+    "answer": "B",
+    "explanation": "Fiber distribution panels serve as centralized points for organizing, managing, and maintaining fiber optic connections within a network."
+  }
+},
+{
+  "id": 71,
+  "de": {
+    "frage": "Welcher Kabeltyp wird in einem Glasfasernetzwerk verwendet, um die Verbindung vom Wandanschluss zur Netzwerkkarte (NIC) und vom Patchpanel zum Switch-Port herzustellen?",
+    "optionen": {
+      "A": "Koaxialkabel",
+      "B": "Twisted-Pair-Kabel",
+      "C": "Glasfaser-Patchkabel",
+      "D": "HDMI-Kabel"
+    },
+    "antwort": "C",
+    "erklärung": "Glasfaser-Patchkabel werden verwendet, um Verbindungen in Glasfasernetzwerken zwischen Wandanschlüssen, Patchpanels und Netzwerkgeräten wie Switches oder NICs herzustellen."
+  },
+  "en": {
+    "question": "What type of cable is used to complete the link from the wall port to the Network Interface Card (NIC) and from the patch panel to the switch port in a fiber optic network?",
+    "options": {
+      "A": "Coaxial cable",
+      "B": "Twisted pair cable",
+      "C": "Fiber patch cable",
+      "D": "HDMI cable"
+    },
+    "answer": "C",
+    "explanation": "Fiber patch cables are used to connect wall outlets, patch panels, and network equipment such as switches and NICs in a fiber optic network."
+  }
+},
+{
+  "id": 72,
+  "de": {
+    "frage": "Was ist ein charakteristisches Merkmal des UltraPhysical Contact (UPC) Schliff-Typs bei Glasfasersteckverbindern?",
+    "optionen": {
+      "A": "UPC-Steckverbinder sind in einem Winkel geschliffen, um die Rückreflexion zu minimieren.",
+      "B": "UPC-Steckverbinder haben eine matte Oberfläche zur Verbesserung der Signalübertragung.",
+      "C": "UPC-Steckverbinder sind feiner poliert als PC-Stecker und reduzieren dadurch die Rückreflexion.",
+      "D": "UPC-Steckverbinder benötigen keine Politur, da sie eine einfache Kontaktoberfläche verwenden."
+    },
+    "antwort": "C",
+    "erklärung": "UPC (UltraPhysical Contact) Steckverbinder haben eine hochwertigere Politur als PC (Physical Contact), was die Rückreflexion reduziert und somit eine bessere Signalqualität ermöglicht."
+  },
+  "en": {
+    "question": "What is a characteristic feature of UltraPhysical Contact (UPC) finishing type for fiber optic connectors?",
+    "options": {
+      "A": "UPC connectors are polished at an angle to minimize back reflection.",
+      "B": "UPC connectors have a matte finish to enhance signal transmission.",
+      "C": "UPC connectors are polished to a higher standard than PC, reducing back reflection.",
+      "D": "UPC connectors do not require polishing as they use a basic contact finish."
+    },
+    "answer": "C",
+    "explanation": "UPC (UltraPhysical Contact) connectors are polished to a higher standard than PC connectors, which reduces back reflection and improves signal quality."
+  }
+},
+{
+  "id": 73,
+  "de": {
+    "frage": "Was fordert der TIA/EIA-Verkabelungsstandard in Bezug auf die Polarität von Glasfaser-Patchkabeln?",
+    "optionen": {
+      "A": "Eine gerade Anzahl von Elementen im Link, z. B. zwei Patchkabel und zwei feste Verbindungen",
+      "B": "Keine Anforderung an Crossover in den Link-Elementen",
+      "C": "Eine direkte Verbindung ohne Verwendung von Patchkabeln",
+      "D": "Eine ungerade Anzahl von Elementen im Link, z. B. zwei Patchkabel und eine feste Verbindung"
+    },
+    "antwort": "D",
+    "erklärung": "Der TIA/EIA-Standard verlangt für die korrekte Polarität eine ungerade Anzahl von Verbindungselementen (z. B. zwei Patchkabel + eine permanente Verbindung), damit Tx auf Rx endet und umgekehrt."
+  },
+  "en": {
+    "question": "What does the TIA/EIA cabling standard require for fiber patch cord polarity?",
+    "options": {
+      "A": "An even number of elements in the link, such as two patch cords and two permanent links",
+      "B": "No requirement for crossover in the link elements",
+      "C": "A direct connection without the use of patch cords",
+      "D": "An odd number of elements in the link, such as two patch cords and a permanent link"
+    },
+    "answer": "D",
+    "explanation": "The TIA/EIA standard requires an odd number of link elements (e.g., two patch cords and one permanent link) to maintain correct polarity so that Tx connects to Rx and vice versa."
+  }
+},
+{
+  "id": 74,
+  "de": {
+    "frage": "Wie kann man bei Glasfaser-Patchkabeln die übertragenen optischen Signale erkennen?",
+    "optionen": {
+      "A": "Indem man auf ein deutliches Geräusch hört, das vom Glasfaserkabel ausgeht",
+      "B": "Indem man die Temperaturänderung an der Kabeloberfläche fühlt",
+      "C": "Indem man durch eine Smartphone-Kamera helle weiße Lichtpunkte beobachtet",
+      "D": "Indem man das Gewicht des Glasfaserkabels misst"
+    },
+    "antwort": "C",
+    "erklärung": "Optische Signale können durch Beobachtung von hellem Licht (Lichtemission) an den Enden des Glasfaserkabels, z. B. mit einer Smartphone-Kamera, erkannt werden."
+  },
+  "en": {
+    "question": "How can you identify transmitted optical signals when working with fiber optic patch cords?",
+    "options": {
+      "A": "By listening for a distinct sound emitted by the fiber optic cable",
+      "B": "By feeling the temperature change on the surface of the cable",
+      "C": "By observing bright white spots through a smartphone camera",
+      "D": "By measuring the weight of the fiber optic cable"
+    },
+    "answer": "C",
+    "explanation": "Optical signals can be detected by observing bright light emissions at the ends of fiber optic cables, for example, using a smartphone camera."
+  }
+},
+{
+  "id": 75,
+  "de": {
+    "frage": "Sie müssen ein Glasfaserkabel ersetzen, das zwei Switches verbindet. Das vorhandene Kabel verwendet LC-Stecker, deren Ferrule eine leichte Schräge aufweist. Welchen Poliergrad sollten Sie für das Ersatzkabel verwenden?",
+    "optionen": {
+      "A": "Physical Contact (PC) Politur",
+      "B": "Ultra Physical Contact (UPC) Politur",
+      "C": "Angled Physical Contact (APC) Politur",
+      "D": "Flat Physical Contact Politur"
+    },
+    "antwort": "C",
+    "erklärung": "Eine schräge (angulare) Ferrule weist auf eine Angled Physical Contact (APC) Politur hin, die für reduzierte Rückreflexionen bei Glasfaserverbindungen sorgt."
+  },
+  "en": {
+    "question": "You need to replace a fiber optic cable connecting two switches. The existing cable uses LC connectors with a ferrule that has a slight slant. Which polish grade should you use for the replacement cable?",
+    "options": {
+      "A": "Physical Contact (PC) polish",
+      "B": "Ultra Physical Contact (UPC) polish",
+      "C": "Angled Physical Contact (APC) polish",
+      "D": "Flat Physical Contact polish"
+    },
+    "answer": "C",
+    "explanation": "A ferrule with a slight angle indicates an Angled Physical Contact (APC) polish, which reduces back reflection in fiber optic connections."
+  }
+},
+{
+  "id": 76,
+  "de": {
+    "frage": "Eine militärische Anlage modernisiert ihre Netzwerkinfrastruktur. Welcher von AT&T entwickelte Glasfasersteckertyp war früher bei Multimode-Netzen in kommerziellen oder militärischen Anlagen wegen seiner Schnellkupplung mit Bajonettverschluss sehr verbreitet, gilt aber bei Nachrüstungen nicht mehr als Standard?",
+    "optionen": {
+      "A": "Mechanical Transfer Registered Jack (MTRJ)",
+      "B": "Local Connector (LC)",
+      "C": "Straight Tip (ST)",
+      "D": "Subscriber Connector (SC)"
+    },
+    "antwort": "C",
+    "erklärung": "Der Straight Tip (ST) Stecker wurde wegen seiner Bajonett-Schnellkupplung früher häufig verwendet, gilt aber heute nicht mehr als Standard bei modernen Netzwerken."
+  },
+  "en": {
+    "question": "A military installation is upgrading its network infrastructure. Which fiber optic connector type developed by AT&T was once very common for multimode networks in commercial or military installations due to its quick-connecting bayonet, but is no longer considered standard when retrofitting?",
+    "options": {
+      "A": "Mechanical Transfer Registered Jack (MTRJ)",
+      "B": "Local Connector (LC)",
+      "C": "Straight Tip (ST)",
+      "D": "Subscriber Connector (SC)"
+    },
+    "answer": "C",
+    "explanation": "The Straight Tip (ST) connector, known for its bayonet quick-connect, was widely used in the past but is no longer the standard in retrofitting."
+  }
+},
+{
+  "id": 77,
+  "de": {
+    "frage": "Welcher Glasfasersteckertyp ist für seine kleine Bauform bekannt und wird häufig für Gigabit Ethernet sowie 10/40 GbE eingesetzt?",
+    "optionen": {
+      "A": "Straight Tip (ST)",
+      "B": "Subscriber Connector (SC)",
+      "C": "Local Connector (LC)",
+      "D": "Mini-MT"
+    },
+    "antwort": "C",
+    "erklärung": "Der Local Connector (LC) ist bekannt für seine kompakte Bauform und wird weit verbreitet in Gigabit Ethernet und 10/40 GbE Netzwerken verwendet."
+  },
+  "en": {
+    "question": "Which fiber optic connector is known for its small form factor and is widely adopted for Gigabit Ethernet and 10/40 GbE?",
+    "options": {
+      "A": "Straight Tip (ST)",
+      "B": "Subscriber Connector (SC)",
+      "C": "Local Connector (LC)",
+      "D": "Mini-MT"
+    },
+    "answer": "C",
+    "explanation": "The Local Connector (LC) is known for its small form factor and is widely used in Gigabit Ethernet and 10/40 GbE networks."
+  }
+},
+{
+  "id": 78,
+  "de": {
+    "frage": "Welche der folgenden Aussagen trifft auf Singlemode-Glasfaserkabel in Netzwerken zu?",
+    "optionen": {
+      "A": "Es ist für Lichtquellen mit 850 nm und 1300 nm optimiert.",
+      "B": "Der zentrale Kern ist kleiner als bei Standard-Multimode-Glasfaserkabeln.",
+      "C": "Es hat kürzere Segmentlängen als Multimode-Glasfaserkabel.",
+      "D": "Es ist kostengünstiger als Multimode-Glasfaserkabel."
+    },
+    "antwort": "B",
+    "erklärung": "Singlemode-Glasfaserkabel haben einen kleineren Kern als Multimode-Kabel und sind für längere Distanzen optimiert."
+  },
+  "en": {
+    "question": "Which of the following is true about single-mode fiber optic network cabling?",
+    "options": {
+      "A": "It's optimized for 850 nm and 1300 nm light sources.",
+      "B": "Its central core is smaller than the standard multi-mode fiber optic cabling core.",
+      "C": "It has shorter segment lengths than multi-mode fiber optic cabling.",
+      "D": "It's less expensive than multi-mode fiber optic cabling."
+    },
+    "answer": "B",
+    "explanation": "Single-mode fiber optic cables have a smaller core than multi-mode cables and are optimized for longer distances."
+  }
+},
+{
+  "id": 79,
+  "de": {
+    "frage": "Für welche der folgenden Wellenlängen ist Multimode-Glasfaser ausgelegt?",
+    "optionen": {
+      "A": "850 nm und 1300 nm",
+      "B": "1310 nm und 1550 nm",
+      "C": "850 nm und 1310 nm",
+      "D": "1300 nm und 1550 nm"
+    },
+    "antwort": "A",
+    "erklärung": "Multimode-Glasfaserkabel sind typischerweise für 850 nm und 1300 nm Wellenlängen ausgelegt."
+  },
+  "en": {
+    "question": "Multi-mode fiber is designed to operate at which of the following wavelengths?",
+    "options": {
+      "A": "850 nm and 1300 nm",
+      "B": "1310 nm and 1550 nm",
+      "C": "850 nm and 1310 nm",
+      "D": "1300 nm and 1550 nm"
+    },
+    "answer": "A",
+    "explanation": "Multi-mode fiber optic cables are typically designed to operate at 850 nm and 1300 nm wavelengths."
+  }
 }
+
+
 ]
