@@ -1106,5 +1106,263 @@
     "answer": ["A", "C", "F"],
     "explanation": "SOHO routers provide radio antennas for wireless communication, RJ-45 ports for LAN cabling, and a WAN port to connect to the ISP as physical layer interfaces."
   }
+},
+{
+  "id": 45,
+  "de": {
+    "frage": "Was sind die Folgen, wenn in einem auf Konkurrenz basierenden MAC-System (wie bei Ethernet) weitere Knoten zum Netzwerk hinzugefügt werden? (Wähle zwei)",
+    "optionen": {
+      "A": "Die effektive Datenrate wird reduziert.",
+      "B": "Kollisionen treten häufiger auf.",
+      "C": "Das Netzwerk wird abhörsicher.",
+      "D": "Das Netzwerk wechselt automatisch zu einem Token-Ring-MAC-System.",
+      "E": "Alle Geräte im Netzwerk erhalten automatisch ein Geschwindigkeitsupgrade."
+    },
+    "antwort": ["A", "B"],
+    "erklärung": "In einem contention-basierten MAC-System wie Ethernet führen mehr Teilnehmer zu mehr potenziellen Kollisionen und einer reduzierten effektiven Bandbreite durch Wiederholungen und Wartezeiten."
+  },
+  "en": {
+    "question": "In a contention-based MAC system, such as that used by Ethernet, what are the consequences of adding more nodes to the network? (Select two)",
+    "options": {
+      "A": "The effective data rate is reduced.",
+      "B": "Collisions become more frequent.",
+      "C": "The network becomes immune to eavesdropping.",
+      "D": "The network automatically switches to a token ring MAC system.",
+      "E": "All devices on the network receive an automatic speed upgrade."
+    },
+    "answer": ["A", "B"],
+    "explanation": "In contention-based MAC systems like Ethernet, adding more nodes increases the chance of collisions and reduces effective throughput due to increased backoff and retransmissions."
+  }
+},
+{
+  "id": 46,
+  "de": {
+    "frage": "Welche Art der Übertragung ist mit dem auf Konkurrenz basierenden MAC-System möglich, das von Ethernet verwendet wird?",
+    "optionen": {
+      "A": "Vollduplex-Übertragung",
+      "B": "Simplex-Übertragung",
+      "C": "Halbduplex-Übertragung",
+      "D": "Multiplex-Übertragung"
+    },
+    "antwort": ["C"],
+    "erklärung": "Ein contention-basiertes MAC-System wie klassisches Ethernet (z. B. mit Hubs) verwendet typischerweise Halbduplex-Übertragung, bei der Daten nur abwechselnd gesendet oder empfangen werden können, nicht gleichzeitig."
+  },
+  "en": {
+    "question": "What type of transmission is available with the contention-based MAC system utilized by Ethernet?",
+    "options": {
+      "A": "Full-duplex transmission",
+      "B": "Simplex transmission",
+      "C": "Half-duplex transmission",
+      "D": "Multiplex transmission"
+    },
+    "answer": ["C"],
+    "explanation": "A contention-based MAC system like traditional Ethernet (especially when using hubs) typically supports half-duplex transmission, where data can be either sent or received at a time, but not both simultaneously."
+  }
+},
+{
+  "id": 47,
+  "de": {
+    "frage": "Was ist der Hauptvorteil der Verwendung von Glasfaserkabeln gegenüber Kupferkabeln?",
+    "optionen": {
+      "A": "Geringere Kosten",
+      "B": "Höhere Bandbreite",
+      "C": "Einfacheres Spleißen",
+      "D": "Haltbarer"
+    },
+    "antwort": ["B"],
+    "erklärung": "Glasfaserkabel bieten eine wesentlich höhere Bandbreite und ermöglichen dadurch schnellere Datenübertragung über längere Distanzen als Kupferkabel."
+  },
+  "en": {
+    "question": "What is the main advantage of using fiber optic cable over copper cable?",
+    "options": {
+      "A": "Lower cost",
+      "B": "Higher bandwidth",
+      "C": "Easier to splice",
+      "D": "More durable"
+    },
+    "answer": ["B"],
+    "explanation": "Fiber optic cables provide significantly higher bandwidth, enabling faster data transmission over longer distances compared to copper cables."
+  }
+},
+{
+  "id": 48,
+  "de": {
+    "frage": "Eine Schule plant die Erweiterung ihres Netzwerks, um neue Klassenzimmer und Verwaltungsbüros zu integrieren. Das bestehende Netzwerk basiert auf dem 100BASE-TX-Fast-Ethernet-Standard mit einer Kombination aus Hubs und Switches sowie UTP-basierten Horizontalverkabelungen und Glasfaser-Backbones. Die Erweiterung erfordert 50 neue Arbeitsstationen, die über verschiedene Standorte verteilt sind – einige bis zu 90 Meter entfernt. Was sollte das IT-Team prioritär umsetzen, um die Integration der neuen Arbeitsstationen in das bestehende Netzwerk am effektivsten zu gestalten?",
+    "optionen": {
+      "A": "Alle vorhandenen Hubs durch Switches ersetzen, um Kollisionen zu reduzieren.",
+      "B": "Glasfaserkabel für alle neuen horizontalen Verbindungen verwenden.",
+      "C": "Autonegotiation auf allen Netzwerkgeräten implementieren.",
+      "D": "Das Glasfaser-Backbone bis zu jeder neuen Arbeitsstation erweitern."
+    },
+    "antwort": ["A"],
+    "erklärung": "Das Ersetzen von Hubs durch Switches verbessert die Netzwerkleistung deutlich, da Switches Kollisionsdomänen eliminieren und eine effizientere Datenübertragung ermöglichen – besonders wichtig bei der Integration vieler neuer Geräte."
+  },
+  "en": {
+    "question": "A school is planning to expand its network to accommodate new classrooms and administrative offices. The existing network infrastructure is based on the 100BASE-TX Fast Ethernet standard with a combination of hubs and switches, utilizing both UTP-based horizontal links and fiber optic backbones. The expansion requires 50 new workstations, some up to 90 meters away from the nearest network device. What should the IT team prioritize to most effectively integrate the new workstations into the existing 100BASE-TX Fast Ethernet network?",
+    "options": {
+      "A": "Replace all existing hubs with switches to reduce collisions.",
+      "B": "Use fiber optic cables for all new horizontal links.",
+      "C": "Implement autonegotiation on all network devices.",
+      "D": "Extend the fiber optic backbone to each new workstation."
+    },
+    "answer": ["A"],
+    "explanation": "Replacing hubs with switches significantly improves network performance by eliminating collision domains and enabling more efficient data transmission, which is especially important when adding many new devices."
+  }
+},
+{
+  "id": 49,
+  "de": {
+    "frage": "Ein Netzwerkadministrator stellt fest, dass die Datenübertragungsraten zwischen Geräten in einem 100BASE-TX-Fast-Ethernet-Netzwerk nicht die erwarteten 100 Mbit/s erreichen. Das Netzwerk verwendet Switches, und alle Geräte unterstützen Fast Ethernet. Was sollte der Administrator aktivieren, um die Datenrate auf die erwarteten 100 Mbit/s zu verbessern?",
+    "optionen": {
+      "A": "Autonegotiation auf allen Geräten",
+      "B": "Vollduplexmodus auf allen Geräten",
+      "C": "Alle Cat-5-Kabel durch Glasfaserkabel ersetzen",
+      "D": "Switches durch Hubs ersetzen"
+    },
+    "antwort": ["B"],
+    "erklärung": "Das Aktivieren des Vollduplexmodus auf allen Geräten verhindert Kollisionen und erlaubt gleichzeitiges Senden und Empfangen von Daten, was die Leistung bei Fast Ethernet erheblich steigert."
+  },
+  "en": {
+    "question": "A network administrator notices that the data transfer rates between devices in a 100BASE-TX Fast Ethernet network are not reaching the expected 100 Mbps. The network uses switches, and all devices support Fast Ethernet. What could the network administrator enable to improve the data transfer rates to the expected 100 Mbps?",
+    "options": {
+      "A": "Autonegotiation on all devices",
+      "B": "Full-duplex mode on all devices",
+      "C": "Replace all Cat 5 cables with fiber optic cables",
+      "D": "Replace switches with hubs"
+    },
+    "answer": ["B"],
+    "explanation": "Enabling full-duplex mode on all devices eliminates collisions and allows simultaneous sending and receiving of data, which significantly improves performance in Fast Ethernet networks."
+  }
+},
+{
+  "id": 50,
+  "de": {
+    "frage": "Ein Unternehmen aktualisiert seine veraltete Netzwerkinfrastruktur. Das bestehende Netzwerk basiert auf 100BASE-TX Fast Ethernet mit einer Mischung aus Hubs und Switches. Der IT-Manager möchte die Netzwerkleistung verbessern und gleichzeitig die Kompatibilität mit älteren Geräten aufrechterhalten, die nur 10-Mbit/s-Ethernet-Schnittstellen unterstützen. Welche Funktion sollten die neuen Netzwerkgeräte unbedingt unterstützen, um die Kompatibilität mit älteren Geräten zu gewährleisten?",
+    "optionen": {
+      "A": "Autonegotiation",
+      "B": "Vollduplex-Übertragungen",
+      "C": "Höherfrequente Signalübertragung",
+      "D": "Verwendung von Hubs statt Switches"
+    },
+    "antwort": ["A"],
+    "erklärung": "Autonegotiation ermöglicht es Geräten, die beste gemeinsame Geschwindigkeit und Duplex-Einstellung auszuhandeln, einschließlich der Unterstützung älterer 10-Mbit/s-Geräte."
+  },
+  "en": {
+    "question": "A company is upgrading its legacy network infrastructure. The existing network is based on 100BASE-TX Fast Ethernet with a mix of hubs and switches. The IT manager wants to improve network performance while maintaining compatibility with older devices that only support 10 Mbps Ethernet interfaces. What feature should the IT manager ensure the new network devices support to maintain compatibility with older devices?",
+    "options": {
+      "A": "Autonegotiation",
+      "B": "Full-duplex transmissions",
+      "C": "Higher frequency signaling",
+      "D": "Use of hubs instead of switches"
+    },
+    "answer": ["A"],
+    "explanation": "Autonegotiation allows devices to agree on the highest common speed and duplex setting, including support for older 10 Mbps devices."
+  }
+},
+{
+  "id": 51,
+  "de": {
+    "frage": "Welche der folgenden Aussagen beschreiben korrekt die Komponenten der Konvention zur Benennung von Ethernet-Medien-Spezifikationen? (Mehrfachauswahl möglich)",
+    "optionen": {
+      "A": "Die maximale Anzahl unterstützter Verbindungen.",
+      "B": "Die Geschwindigkeit oder Bitrate in Megabit pro Sekunde (Mbps) oder Gigabit pro Sekunde (Gbps).",
+      "C": "Der verwendete Fehlerkorrekturtyp.",
+      "D": "Die Farbcodierung der Verkabelung.",
+      "E": "Die maximal zulässige Entfernung zwischen Geräten.",
+      "F": "Ein Bezeichner für den Medientyp.",
+      "G": "Der Signalmodus (Basisband oder Breitband)."
+    },
+    "antwort": ["B", "F", "G"],
+    "erklärung": "Ethernet-Namenskonventionen beinhalten typischerweise die Übertragungsgeschwindigkeit (z. B. 100BASE-T), die maximale Kabellänge (z. B. 100 m), den Medientyp (z. B. T für Twisted Pair) und den Signalmodus (z. B. BASE für Basisband)."
+  },
+  "en": {
+    "question": "Which of the following correctly describes the components of the convention used in naming Ethernet media specifications? (Select three.)",
+    "options": {
+      "A": "The maximum number of connections supported.",
+      "B": "The speed or bit rate in megabits per second (Mbps) or gigabits per second (Gbps).",
+      "C": "The type of error correction used.",
+      "D": "The color coding of the cabling.",
+      "E": "The maximum allowable distance between devices.",
+      "F": "A designator for the media type.",
+      "G": "The signal mode (baseband or broadband)."
+    },
+    "answer": ["B", "F", "G"],
+    "explanation": "Ethernet media naming conventions typically include the transmission speed (e.g., 100BASE-T), the maximum cable length (e.g., 100 meters), the media type (e.g., T for twisted pair), and the signal mode (e.g., BASE for baseband)."
+  }
+},
+{
+  "id": 52,
+  "de": {
+    "frage": "Welche der folgenden Aussagen beschreibt am besten ein 10BASE-T-Netzwerkkabel?",
+    "optionen": {
+      "A": "Arbeitet mit 100 Mbps (100), verwendet Breitbandsignalübertragung (BROAD) und nutzt Glasfaserkabel.",
+      "B": "Funktioniert mit 10 Mbps (10), verwendet ein Basisbandsignal (BASE) und läuft über verdrillte Kupferkabel.",
+      "C": "Funktioniert mit 1 Gbps (1000), verwendet Basisbandsignalübertragung (BASE) und wird mit Koaxialkabel implementiert.",
+      "D": "Liefert eine Geschwindigkeit von 10 Gbps (10G), verwendet ein Breitbandsignal (BROAD) und basiert auf drahtloser Übertragung."
+    },
+    "antwort": ["B"],
+    "erklärung": "10BASE-T steht für 10 Mbps Übertragungsgeschwindigkeit (10), Basisbandsignal (BASE), und Twisted-Pair-Kupferkabel (T)."
+  },
+  "en": {
+    "question": "Which of the following best describes 10BASE-T network cabling?",
+    "options": {
+      "A": "Operates at 100 Mbps (100), uses broadband signal transmission (BROAD), and utilizes fiber optic cabling",
+      "B": "Works at 10 Mbps (10), uses a baseband signal (BASE), and runs over twisted pair copper cabling",
+      "C": "Functions at 1 Gbps (1000), employs baseband signal transmission (BASE), and is implemented with coaxial cabling",
+      "D": "Delivers a speed of 10 Gbps (10G), uses a broadband signal (BROAD), and relies on wireless transmission"
+    },
+    "answer": ["B"],
+    "explanation": "10BASE-T refers to a 10 Mbps data rate (10), baseband signaling (BASE), and twisted pair copper cabling (T)."
+  }
+},
+{
+  "id": 53,
+  "de": {
+    "frage": "Die Datenübertragung in Netzwerken erfolgt durch die Modulation von Eigenschaften eines Übertragungsmediums zur Codierung eines Signals.\n\nWelche der folgenden Aussagen beschreibt diesen Prozess am BESTEN?",
+    "optionen": {
+      "A": "Der Prozess der Umwandlung digitaler Signale in analoge Signale zur Übertragung über Telefonleitungen",
+      "B": "Die Übertragung von Signalen als elektrischer Strom, Infrarotlicht oder Funkwellen",
+      "C": "Eine Methode zur Sicherung von Netzwerkdaten durch Verschlüsselung der Informationen vor der Übertragung",
+      "D": "Die physische Infrastruktur wie Kabel und Switches, die zur Datenübertragung in einem Netzwerk verwendet wird"
+    },
+    "antwort": ["B"],
+    "erklärung": "Die Modulation eines Mediums zur Übertragung von Daten bedeutet, dass Signale durch elektrische Ströme, Infrarotlicht oder Funkwellen kodiert und übermittelt werden. Dies beschreibt die eigentliche Signalübertragung am besten."
+  },
+  "en": {
+    "question": "Network data transfer works by modulating the properties of a transmission medium to encode a signal.\n\nWhich of the following BEST describes that process?",
+    "options": {
+      "A": "The process of converting digital signals into analog signals for transmission over telephone lines",
+      "B": "The transmission of signals as electric current, infrared light, or radio waves",
+      "C": "A method of securing network data by encrypting the information before transmission",
+      "D": "The physical infrastructure, such as cables and switches, used to transmit data in a network"
+    },
+    "answer": ["B"],
+    "explanation": "Modulating a transmission medium means encoding signals as electric current, infrared light, or radio waves. This is the core process of transmitting data in a network."
+  }
+},
+{
+  "id": 54,
+  "de": {
+    "frage": "Aus welchem Grund könnte ein Unternehmen 10/40 GbE-Ethernet in seinem Netzwerk einsetzen?",
+    "optionen": {
+      "A": "Um die gesamten Netzwerkkosten zu senken",
+      "B": "Um sehr hohe Bandbreiten-Datenübertragungen zu unterstützen",
+      "C": "Um dem Standard für alle Neuinstallationen zu entsprechen",
+      "D": "Um die Verwendung von Glasfaserkabeln zu vermeiden"
+    },
+    "antwort": ["B"],
+    "erklärung": "10/40 GbE-Ethernet wird eingesetzt, um Netzwerke mit sehr hohen Bandbreitenanforderungen zu unterstützen, wie z. B. bei Rechenzentren oder großen Datenmengen im Unternehmensumfeld."
+  },
+  "en": {
+    "question": "For what reason might a company deploy 10/40 GbE Ethernet in its network?",
+    "options": {
+      "A": "To reduce overall network costs",
+      "B": "To support very high bandwidth data transfers",
+      "C": "To meet the standard for all new installations",
+      "D": "To avoid using fiber optic cable"
+    },
+    "answer": ["B"],
+    "explanation": "10/40 GbE Ethernet is deployed to support very high bandwidth requirements, such as in data centers or environments with large volumes of network traffic."
+  }
 }
 ]
