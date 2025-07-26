@@ -1993,7 +1993,606 @@
     "answer": "A",
     "explanation": "Multi-mode fiber optic cables are typically designed to operate at 850 nm and 1300 nm wavelengths."
   }
+},
+{
+  "id": 80,
+  "de": {
+    "frage": "Was ist der Zweck der Verwendung eines Hot-Aisle/Cold-Aisle-Layouts in einem Rechenzentrum?",
+    "optionen": {
+      "A": "Um die Dichte der Server in einem Rack zu erhöhen",
+      "B": "Um die physische Sicherheit der Server zu verbessern",
+      "C": "Um die Kühleffizienz zu maximieren",
+      "D": "Um das Kabelmanagement zu vereinfachen"
+    },
+    "antwort": "C",
+    "erklärung": "Ein Hot-Aisle/Cold-Aisle-Layout trennt warme und kalte Luftströme, um die Effizienz der Kühlung im Rechenzentrum zu maximieren."
+  },
+  "en": {
+    "question": "What is the purpose of using a hot aisle/cold aisle layout in a data center?",
+    "options": {
+      "A": "To increase the density of servers in a rack",
+      "B": "To enhance physical security of the servers",
+      "C": "To maximize cooling efficiency",
+      "D": "To simplify cable management"
+    },
+    "answer": "C",
+    "explanation": "A hot aisle/cold aisle layout separates warm and cool airflow to maximize cooling efficiency in the data center."
+  }
+},
+{
+  "id": 81,
+  "de": {
+    "frage": "Welche der folgenden Aussagen zur Installation von rackmontierten Geräten ist korrekt?",
+    "optionen": {
+      "A": "Geräte sollten immer ganz oben im Rack installiert werden, um den Zugriff zu erleichtern.",
+      "B": "Geräte können direkt in das Rack geschraubt werden, wenn nur wenig Wartung erforderlich ist.",
+      "C": "Alle Geräte müssen aus Sicherheitsgründen mit Schienensätzen installiert werden.",
+      "D": "Nicht standardisierte Komponenten dürfen unter keinen Umständen in Racks installiert werden."
+    },
+    "antwort": "B",
+    "erklärung": "Die Verwendung von Schienensätzen (Rail Kits) ist wichtig für die sichere Installation, einfache Wartung und Belastungsverteilung bei rackmontierten Geräten."
+  },
+  "en": {
+    "question": "Which of the following is a correct statement about the installation of rack-mounted appliances?",
+    "options": {
+      "A": "Appliances should always be installed on the topmost rack for easy access.",
+      "B": "Appliances can be screwed directly into the rack if there is little need for maintenance.",
+      "C": "All appliances must be installed using rail kits for safety reasons.",
+      "D": "Non-standard components cannot be installed in racks under any circumstances."
+    },
+    "answer": "B",
+    "explanation": "Using rail kits is essential for safe installation, easier maintenance, and proper weight distribution of rack-mounted appliances."
+  }
+},
+{
+  "id": 82,
+  "de": {
+    "frage": "Was ist die Hauptfunktion von Abdeckblenden (Blanking Plates) in einem Racksystem?",
+    "optionen": {
+      "A": "Zur zusätzlichen Unterstützung der Geräte",
+      "B": "Zur Verbesserung des Luftstroms",
+      "C": "Zur optischen Aufwertung des Racks",
+      "D": "Zur Erhöhung der Tragfähigkeit des Racks"
+    },
+    "antwort": "B",
+    "erklärung": "Abdeckblenden helfen, den Luftstrom im Rack zu lenken und Hotspots zu vermeiden, indem sie verhindern, dass kalte Luft ungenutzt durch leere Einschübe entweicht."
+  },
+  "en": {
+    "question": "What is the primary function of blanking plates in a rack system?",
+    "options": {
+      "A": "To provide additional support to the equipment",
+      "B": "To improve airflow",
+      "C": "To enhance the aesthetic appearance of the rack",
+      "D": "To increase the rack's weight capacity"
+    },
+    "answer": "B",
+    "explanation": "Blanking plates help direct airflow within the rack and prevent hot spots by stopping cold air from escaping through unused slots."
+  }
+},
+{
+  "id": 83,
+  "de": {
+    "frage": "Was ist eine Hauptfunktion einer Stromverteilungseinheit (Power Distribution Unit, PDU) in einem Rechenzentrum?",
+    "optionen": {
+      "A": "Um die Spannung zu jedem Rack zu verringern",
+      "B": "Um eine drahtlose Stromversorgung für Server bereitzustellen",
+      "C": "Um Strom an mehrere Geräte in einem Rack zu verteilen",
+      "D": "Um Wechselstrom in Gleichstrom für Server umzuwandeln"
+    },
+    "antwort": "C",
+    "erklärung": "Eine PDU dient zur Verteilung von Strom an mehrere Geräte in einem Rack und stellt sicher, dass alle Komponenten zuverlässig mit Energie versorgt werden."
+  },
+  "en": {
+    "question": "What is a primary function of a Power Distribution Unit (PDU) in a data center?",
+    "options": {
+      "A": "To decrease the voltage supplied to each rack",
+      "B": "To provide a wireless power supply to servers",
+      "C": "To distribute power to multiple devices in a rack",
+      "D": "To convert AC power to DC power for server use"
+    },
+    "answer": "C",
+    "explanation": "A PDU distributes electrical power to multiple devices within a rack, ensuring consistent power delivery across all connected equipment."
+  }
+},
+{
+  "id": 84,
+  "en": {
+    "question": "You have purchased a solar backup power device to provide temporary electrical power to critical systems in your data center should the power provided by the electrical utility company go out. The solar panel array captures sunlight, converts it into direct current (DC), and stores it in large batteries.\n\nThe power supplies on the servers, switches, and routers in your data center require alternating current (AC) to operate.\n\nWhich electrical device should you implement to convert the DC power stored in the batteries into AC power that can be used in the data center?",
+    "options": {
+      "A": "Inverter",
+      "B": "Transformer",
+      "C": "Capacitor",
+      "D": "Transistor"
+    },
+    "answer": "A",
+    "explanation": "An inverter is an electrical device that converts direct current (DC) from batteries into alternating current (AC), which is required by most data center equipment."
+  },
+  "de": {
+    "frage": "Sie haben ein solarbetriebenes Notstromgerät gekauft, um kritische Systeme in Ihrem Rechenzentrum bei einem Stromausfall der öffentlichen Stromversorgung vorübergehend mit Strom zu versorgen. Das Solarpanel fängt Sonnenlicht ein, wandelt es in Gleichstrom (DC) um und speichert ihn in großen Batterien.\n\nDie Netzteile der Server, Switches und Router in Ihrem Rechenzentrum benötigen jedoch Wechselstrom (AC), um zu funktionieren.\n\nWelches elektrische Gerät sollten Sie einsetzen, um den in den Batterien gespeicherten Gleichstrom in Wechselstrom umzuwandeln, der im Rechenzentrum verwendet werden kann?",
+    "optionen": {
+      "A": "Wechselrichter (Inverter)",
+      "B": "Transformator",
+      "C": "Kondensator",
+      "D": "Transistor"
+    },
+    "antwort": "A",
+    "erklärung": "Ein Wechselrichter (Inverter) wandelt Gleichstrom (DC) aus den Batterien in Wechselstrom (AC) um, der von den Geräten im Rechenzentrum benötigt wird."
+  }
+},
+{
+  "id": 85,
+  "en": {
+    "question": "For a rack containing equipment that draws 2000 watts in total on a 240 VAC circuit, what is the amperage?",
+    "options": {
+      "A": "8.3 Amps",
+      "B": "16.6 Amps",
+      "C": "4.2 Amps",
+      "D": "12.5 Amps"
+    },
+    "answer": "A",
+    "explanation": "To calculate amperage, use the formula: Amps = Watts / Volts. So, 2000 watts ÷ 240 volts = 8.33 amps. Therefore, the correct answer is approximately 8.3 Amps."
+  },
+  "de": {
+    "frage": "Ein Rack enthält Geräte, die insgesamt 2000 Watt an einem 240-VAC-Stromkreis verbrauchen. Wie hoch ist die Stromstärke (Ampere)?",
+    "optionen": {
+      "A": "8,3 Ampere",
+      "B": "16,6 Ampere",
+      "C": "4,2 Ampere",
+      "D": "12,5 Ampere"
+    },
+    "antwort": "A",
+    "erklärung": "Die Stromstärke berechnet sich nach der Formel: Ampere = Watt / Volt. Also: 2000 Watt ÷ 240 Volt = 8,33 Ampere. Die korrekte Antwort ist daher etwa 8,3 Ampere."
+  }
+},
+{
+  "id": 86,
+  "de": {
+    "frage": "Welcher Typ von Sprinkleranlage hält Wasser unter hohem Druck und gibt Wasser ab, wenn sie durch Hitze ausgelöst wird?",
+    "optionen": {
+      "A": "Trockenrohrsystem (Dry-pipe)",
+      "B": "Voraktionssystem (Pre-action)",
+      "C": "Nassrohrsystem (Wet-pipe)",
+      "D": "Halon"
+    },
+    "antwort": "C",
+    "erklärung": "Das Nassrohrsystem hält Wasser unter hohem Druck bereit und gibt es frei, wenn die Sprinkler durch Hitze aktiviert werden."
+  },
+  "en": {
+    "question": "What type of sprinkler system holds water at high pressure and discharges water when triggered by heat?",
+    "options": {
+      "A": "Dry-pipe",
+      "B": "Pre-action",
+      "C": "Wet-pipe",
+      "D": "Halon"
+    },
+    "answer": "C",
+    "explanation": "The wet-pipe system holds water at high pressure and releases it when the sprinkler is triggered by heat."
+  }
+},
+{
+  "id": 87,
+  "de": {
+    "frage": "Welchen Vorteil haben gasbasierte Brandbekämpfungssysteme, wie Clean Agents, gegenüber wasserbasierten Systemen?",
+    "optionen": {
+      "A": "Sie verursachen keinen erheblichen Wasserschaden.",
+      "B": "Sie sind hauptsächlich für den Einsatz im Freien geeignet.",
+      "C": "Sie verursachen keine Kurzschlüsse in elektrischen Systemen und hinterlassen keine Rückstände.",
+      "D": "Sie sind oft umweltschädlich."
+    },
+    "antwort": "C",
+    "erklärung": "Gasbasierte Systeme wie Clean Agents vermeiden Kurzschlüsse und hinterlassen keine Rückstände, was sie ideal für empfindliche Elektronik macht."
+  },
+  "en": {
+    "question": "What advantage do gas-based fire suppression systems, such as clean agents, have over water-based systems?",
+    "options": {
+      "A": "They do not cause significant water damage.",
+      "B": "They are primarily effective in outdoor settings.",
+      "C": "They do not short circuit electrical systems and leave no residue.",
+      "D": "They are often environmentally damaging."
+    },
+    "answer": "C",
+    "explanation": "Gas-based systems like clean agents avoid short circuits and leave no residue, making them ideal for sensitive electronics."
+  }
+},
+{
+  "id": 88,
+  "en": {
+    "question": "In a high-rise office building, the fire alarm system detects smoke on one of the floors. The building is equipped with a sophisticated fire suppression system that includes automatic smoke detectors, manual alarm points, and a combination of wet-pipe and pre-action sprinkler systems. The fire is located in a storage room filled with paper products, which is adjacent to the server room. Given the situation, which immediate action should the building's fire safety team prioritize to effectively manage the fire while minimizing potential damage to the server room?",
+    "options": {
+      "A": "Activate the wet-pipe sprinkler system throughout the entire building.",
+      "B": "Use portable Class A fire extinguishers to control the fire in the storage room.",
+      "C": "Immediately release the clean agent fire suppression system in the server room.",
+      "D": "Manually activate the pre-action sprinkler system in the storage room only."
+    },
+    "answer": "B",
+    "explanation": "Manually activating the pre-action sprinkler system in the storage room targets the fire area directly while minimizing water damage risk to the adjacent server room."
+  },
+  "de": {
+    "frage": "In einem Hochhaus erkennt die Brandmeldeanlage Rauch auf einem der Stockwerke. Das Gebäude ist mit einem ausgeklügelten Brandbekämpfungssystem ausgestattet, das automatische Rauchmelder, manuelle Alarmstellen sowie eine Kombination aus Nass- und Voraktionssprinkleranlagen umfasst. Das Feuer befindet sich in einem Lagerraum voller Papierprodukte, der an den Serverraum grenzt. Welche Sofortmaßnahme sollte das Brandschutzteam ergreifen, um das Feuer effektiv zu bekämpfen und gleichzeitig mögliche Schäden am Serverraum zu minimieren?",
+    "optionen": {
+      "A": "Aktivierung der Nasssprinkleranlage im gesamten Gebäude.",
+      "B": "Einsatz tragbarer Brandlöscher der Klasse A zur Brandbekämpfung im Lagerraum.",
+      "C": "Sofortige Auslösung des gasbasierten Löschsystems im Serverraum.",
+      "D": "Manuelle Aktivierung der Voraktionssprinkleranlage nur im Lagerraum."
+    },
+    "antwort": "B",
+    "erklaerung": "Die manuelle Aktivierung der Voraktionssprinkleranlage im Lagerraum richtet sich gezielt auf den Brandherd und minimiert gleichzeitig das Risiko von Wasserschäden im angrenzenden Serverraum."
+  }
+},
+{
+  "id": 89,
+  "en": {
+    "question": "A network administrator is troubleshooting connectivity issues in a newly installed network segment. After running tests with a wire map tester, one cable is identified as having a \"split pair\" fault. The administrator needs to understand the nature of this fault to address the issue.\n\nWhat characterizes a \"split pair\" fault identified by a wire map tester?",
+    "options": {
+      "A": "The cable is not fully inserted into the tester, leading to inaccurate results.",
+      "B": "One of the cable's pairs is transmitting data at a slower rate than the others.",
+      "C": "Both ends of a single wire in one pair are wired to terminals belonging to a different pair.",
+      "D": "The cable's shielding has been compromised, reducing its effectiveness against interference."
+    },
+    "answer": "C",
+    "explanation": "A split pair occurs when wires from different twisted pairs are connected together at both ends, which can pass continuity tests but causes significant signal interference and cross-talk. It's a common wiring error."
+  },
+  "de": {
+    "frage": "Ein Netzwerkadministrator behebt Verbindungsprobleme in einem neu installierten Netzwerksegment. Nach Tests mit einem Wiremap-Tester wird bei einem Kabel ein Fehler namens „Split Pair“ festgestellt. Der Administrator muss verstehen, worin dieser Fehler besteht, um ihn zu beheben.\n\nWas kennzeichnet einen „Split Pair“-Fehler, der von einem Wiremap-Tester erkannt wird?",
+    "optionen": {
+      "A": "Das Kabel ist nicht vollständig in den Tester eingesteckt, was zu ungenauen Ergebnissen führt.",
+      "B": "Ein Adernpaar überträgt Daten mit einer langsameren Geschwindigkeit als die anderen.",
+      "C": "Beide Enden eines Drahts aus einem Paar sind an Anschlüsse eines anderen Paares angeschlossen.",
+      "D": "Die Abschirmung des Kabels ist beschädigt, wodurch seine Wirksamkeit gegen Störungen verringert wird."
+    },
+    "antwort": "C",
+    "erklaerung": "Ein „Split Pair“-Fehler tritt auf, wenn Drähte aus unterschiedlichen verdrillten Paaren an beiden Enden miteinander verbunden sind. Dies kann bei einem Durchgangstest bestehen, verursacht jedoch erhebliche Signalstörungen und Übersprechen. Es handelt sich um einen häufigen Verdrahtungsfehler."
+  }
+},
+{
+  "id": 90,
+  "en": {
+    "question": "What is the primary purpose of a wire map tester?",
+    "options": {
+      "A": "To measure the length of a cable",
+      "B": "To detect improper termination issues",
+      "C": "To increase the signal strength in a cable",
+      "D": "To identify the type of cable used"
+    },
+    "answer": "B",
+    "explanation": "A wire map tester is primarily used to detect wiring faults such as improper terminations, crossed wires, open circuits, and split pairs. It ensures that cable pairs are correctly connected from end to end."
+  },
+  "de": {
+    "frage": "Was ist der Hauptzweck eines Wiremap-Testers?",
+    "optionen": {
+      "A": "Die Länge eines Kabels zu messen",
+      "B": "Fehlerhafte Anschlussprobleme zu erkennen",
+      "C": "Die Signalstärke in einem Kabel zu erhöhen",
+      "D": "Den Kabeltyp zu identifizieren"
+    },
+    "antwort": "B",
+    "erklaerung": "Ein Wiremap-Tester wird hauptsächlich verwendet, um Verdrahtungsfehler wie fehlerhafte Abschlüsse, vertauschte Adern, Unterbrechungen und Split-Pair-Fehler zu erkennen. Er stellt sicher, dass die Adernpaare korrekt von einem Ende zum anderen verbunden sind."
+  }
+},
+{
+  "id": 91,
+  "en": {
+    "question": "What is the first step in troubleshooting cable issues?",
+    "options": {
+      "A": "Update the network adapter drivers",
+      "B": "Reseat the cable",
+      "C": "Physical inspection of the cable",
+      "D": "Replace the network adapter"
+    },
+    "answer": "C",
+    "explanation": "The first step in troubleshooting cable issues is to perform a physical inspection of the cable to look for visible damage, loose connections, or wear. This helps quickly identify obvious problems before moving to more technical diagnostics."
+  },
+  "de": {
+    "frage": "Was ist der erste Schritt bei der Fehlerbehebung von Kabelproblemen?",
+    "optionen": {
+      "A": "Die Treiber des Netzwerkadapters aktualisieren",
+      "B": "Das Kabel neu einstecken",
+      "C": "Physikalische Inspektion des Kabels",
+      "D": "Den Netzwerkadapter austauschen"
+    },
+    "antwort": "C",
+    "erklaerung": "Der erste Schritt bei der Fehlerbehebung von Kabelproblemen ist eine physikalische Inspektion des Kabels, um sichtbare Schäden, lose Verbindungen oder Abnutzung zu erkennen. So können offensichtliche Probleme schnell identifiziert werden, bevor technische Diagnosen durchgeführt werden."
+  }
+},
+{
+  "id": 92,
+  "en": {
+    "question": "What is the primary consequence of connecting single mode fiber to multimode fiber?",
+    "options": {
+      "A": "Increased signal strength",
+      "B": "Enhanced data security",
+      "C": "Catastrophic signal loss of up to 99%",
+      "D": "Improved fiber alignment"
+    },
+    "answer": "C",
+    "explanation": "Connecting single mode fiber (SMF) to multimode fiber (MMF) causes significant signal loss, often up to 99%, due to the mismatch in core sizes and transmission modes. This results in poor optical coupling and degraded network performance."
+  },
+  "de": {
+    "frage": "Was ist die Hauptfolge, wenn Singlemode-Fasern mit Multimode-Fasern verbunden werden?",
+    "optionen": {
+      "A": "Erhöhte Signalstärke",
+      "B": "Verbesserte Datensicherheit",
+      "C": "Katastrophaler Signalverlust von bis zu 99 %",
+      "D": "Verbesserte Faseranpassung"
+    },
+    "antwort": "C",
+    "erklaerung": "Das Verbinden von Singlemode-Fasern (SMF) mit Multimode-Fasern (MMF) führt zu erheblichen Signalverlusten – oft bis zu 99 % – aufgrund der unterschiedlichen Kerndurchmesser und Übertragungsarten. Dies führt zu einer schlechten optischen Kopplung und verschlechterter Netzwerkleistung."
+  }
+},
+{
+  "id": 93,
+  "en": {
+    "question": "You are preparing to deploy a new fiber optic link that requires minimal signal loss and very low back-reflection due to the sensitivity of the connected equipment.\n\nWhich type of connector polish should you ensure is used for this installation?",
+    "options": {
+      "A": "Ultra Physical Contact (UPC)",
+      "B": "Physical Contact (PC)",
+      "C": "Angled Physical Contact (APC)",
+      "D": "Straight Physical Contact (SPC)"
+    },
+    "answer": "C",
+    "explanation": "Angled Physical Contact (APC) connectors are specifically designed to provide extremely low back-reflection (return loss), typically better than -60 dB. They feature an 8-degree angled endface, making them ideal for high-precision applications such as in high-speed or analog fiber optic systems."
+  },
+  "de": {
+    "frage": "Sie bereiten die Installation einer neuen Glasfaserverbindung vor, die minimalen Signalverlust und sehr geringe Rückreflexion erfordert, da die angeschlossenen Geräte sehr empfindlich sind.\n\nWelcher Steckertyp mit Politur sollte für diese Installation unbedingt verwendet werden?",
+    "optionen": {
+      "A": "Ultra Physical Contact (UPC)",
+      "B": "Physical Contact (PC)",
+      "C": "Angled Physical Contact (APC)",
+      "D": "Straight Physical Contact (SPC)"
+    },
+    "antwort": "C",
+    "erklaerung": "Angled Physical Contact (APC)-Steckverbinder sind speziell darauf ausgelegt, eine extrem geringe Rückreflexion (Return Loss) zu bieten – typischerweise besser als -60 dB. Sie verfügen über eine 8-Grad-Winkelpolitur und eignen sich ideal für hochpräzise Anwendungen wie Hochgeschwindigkeits- oder analoge Glasfasersysteme."
+  }
+},
+{
+  "id": 94,
+  "en": {
+    "question": "What does Power Sum Crosstalk measure?",
+    "options": {
+      "A": "The total interference from all other cables in a bundle",
+      "B": "Crosstalk on the transmit pairs at the receiver end",
+      "C": "The suitability of a cable for Gigabit and 10 GbE Ethernet applications",
+      "D": "The difference between insertion loss and Far End Crosstalk (FEXT)"
+    },
+    "answer": "C",
+    "explanation": "Power Sum Crosstalk measures the total crosstalk (interference) affecting a single wire pair, caused by the combined signals from all other pairs in the same cable. This measurement is critical for high-speed Ethernet standards like Gigabit and 10 Gigabit Ethernet, which use all pairs simultaneously."
+  },
+  "de": {
+    "frage": "Was misst Power Sum Crosstalk?",
+    "optionen": {
+      "A": "Die gesamte Störung durch alle anderen Kabel in einem Bündel",
+      "B": "Übersprechen auf den Sendepaaren am Empfangsende",
+      "C": "Die Eignung eines Kabels für Gigabit- und 10-GbE-Ethernet-Anwendungen",
+      "D": "Den Unterschied zwischen Einfügungsverlust und Far-End-Crosstalk (FEXT)"
+    },
+    "antwort": "C",
+    "erklaerung": "Power Sum Crosstalk misst das gesamte Übersprechen (Störungen), das ein einzelnes Adernpaar betrifft, verursacht durch die kombinierten Signale aller anderen Paare im selben Kabel. Diese Messung ist entscheidend für Ethernet-Standards mit hoher Geschwindigkeit wie Gigabit- und 10-Gigabit-Ethernet, die alle Paare gleichzeitig verwenden."
+  }
+},
+{
+  "id": 95,
+  "en": {
+    "question": "During a routine network audit, a technician discovers that the ethernet cables running next to the electrical power lines are experiencing higher error rates than those routed separately.\n\nWhat is the most likely explanation for the increased error rates in these cables?",
+    "options": {
+      "A": "The ethernet cables are too long.",
+      "B": "The proximity to power lines is causing increased Attenuation.",
+      "C": "The cables are experiencing Alien Crosstalk from the power lines.",
+      "D": "The ethernet cables are of poor quality."
+    },
+    "answer": "C",
+    "explanation": "Alien Crosstalk refers to electromagnetic interference from external sources, such as nearby electrical power lines, that induce noise into adjacent Ethernet cables. This type of interference can significantly increase error rates in affected cables."
+  },
+  "de": {
+    "frage": "Während einer routinemäßigen Netzwerkaudit stellt ein Techniker fest, dass die Ethernet-Kabel, die in der Nähe von Stromleitungen verlaufen, höhere Fehlerraten aufweisen als diejenigen, die separat verlegt wurden.\n\nWas ist die wahrscheinlichste Erklärung für die erhöhten Fehlerraten in diesen Kabeln?",
+    "optionen": {
+      "A": "Die Ethernet-Kabel sind zu lang.",
+      "B": "Die Nähe zu Stromleitungen verursacht eine erhöhte Dämpfung.",
+      "C": "Die Kabel erfahren Alien Crosstalk von den Stromleitungen.",
+      "D": "Die Ethernet-Kabel sind von schlechter Qualität."
+    },
+    "antwort": "C",
+    "erklaerung": "Alien Crosstalk bezieht sich auf elektromagnetische Störungen von externen Quellen, wie nahegelegenen Stromleitungen, die Rauschen in benachbarte Ethernet-Kabel induzieren. Diese Art von Störung kann die Fehlerraten in den betroffenen Kabeln erheblich erhöhen."
+  }
+},
+{
+  "id": 96,
+  "en": {
+    "question": "You are a network technician tasked with setting up a new office network. After laying out all the necessary cables and making the connections, you encounter intermittent connectivity issues in some parts of the office. You suspect there might be issues with the cable runs or the terminations.\n\nTo diagnose and resolve these issues, what is your next step?",
+    "options": {
+      "A": "Ignore the intermittent connectivity issues and proceed with setting up end user devices, hoping the problem resolves itself.",
+      "B": "Use a cable tester to diagnose the issues by checking for cable conditions, crosstalk, attenuation, noise, resistance, and other characteristics.",
+      "C": "Replace all the cables in the office with new ones without testing the existing installations.",
+      "D": "Manually inspect each cable for visible signs of damage without using any testing tools."
+    },
+    "answer": "B",
+    "explanation": "Using a cable tester is the most effective and efficient way to diagnose issues such as poor terminations, attenuation, crosstalk, and physical damage. It provides quantitative and qualitative results to help identify and resolve connectivity problems."
+  },
+  "de": {
+    "frage": "Sie sind Netzwerktechniker und sollen ein neues Büronetzwerk einrichten. Nachdem Sie alle notwendigen Kabel verlegt und die Verbindungen hergestellt haben, treten in einigen Bereichen des Büros intermittierende Verbindungsprobleme auf. Sie vermuten, dass es Probleme mit den Kabelstrecken oder den Abschlüssen geben könnte.\n\nWas ist der nächste Schritt zur Diagnose und Behebung dieser Probleme?",
+    "optionen": {
+      "A": "Ignorieren Sie die intermittierenden Verbindungsprobleme und fahren Sie mit der Einrichtung der Endgeräte fort, in der Hoffnung, dass sich das Problem von selbst löst.",
+      "B": "Verwenden Sie ein Kabeltestgerät, um die Probleme zu diagnostizieren, indem Sie den Zustand der Kabel, Crosstalk, Dämpfung, Rauschen, Widerstand und andere Merkmale überprüfen.",
+      "C": "Ersetzen Sie alle Kabel im Büro durch neue, ohne die vorhandenen Installationen zu testen.",
+      "D": "Untersuchen Sie jedes Kabel manuell auf sichtbare Schäden, ohne Testwerkzeuge zu verwenden."
+    },
+    "antwort": "B",
+    "erklaerung": "Die Verwendung eines Kabeltestgeräts ist der effektivste und effizienteste Weg, um Probleme wie schlechte Abschlüsse, Dämpfung, Crosstalk und physische Schäden zu diagnostizieren. Es liefert quantitative und qualitative Ergebnisse, um Verbindungsprobleme zu identifizieren und zu beheben."
+  }
+},
+{
+  "id": 97,
+  "en": {
+    "question": "What does the term \"speed\" refer to in the context of network performance?",
+    "options": {
+      "A": "The color coding of Ethernet cables for different network segments",
+      "B": "The physical durability of network cables",
+      "C": "The time it takes for a packet to travel from its source to its destination, also known as latency",
+      "D": "The maximum capacity of a network switch"
+    },
+    "answer": "C",
+    "explanation": "In networking, 'speed' often refers to the time it takes for data to travel from source to destination—this is known as latency. However, the term can sometimes also refer to bandwidth, so context matters. In this case, the best match is latency."
+  },
+  "de": {
+    "frage": "Was bedeutet der Begriff \"Geschwindigkeit\" im Zusammenhang mit der Netzwerkleistung?",
+    "optionen": {
+      "A": "Die Farbcodierung von Ethernet-Kabeln für verschiedene Netzwerksegmente",
+      "B": "Die physische Haltbarkeit von Netzwerkkabeln",
+      "C": "Die Zeit, die ein Paket benötigt, um von der Quelle zum Ziel zu gelangen, auch bekannt als Latenz",
+      "D": "Die maximale Kapazität eines Netzwerkschalters"
+    },
+    "antwort": "C",
+    "erklaerung": "Im Netzwerkbereich bezieht sich der Begriff 'Geschwindigkeit' häufig auf die Zeit, die Daten benötigen, um von der Quelle zum Ziel zu gelangen – also die Latenz. Manchmal meint man damit auch die Bandbreite, daher kommt es auf den Kontext an. In diesem Fall passt Latenz am besten."
+  }
+},
+{
+  "id": 98,
+  "en": {
+    "question": "What is the primary purpose of using different signaling and encoding methods in data transmission?",
+    "options": {
+      "A": "To increase the physical size of the data packets being transmitted",
+      "B": "To represent more than one bit per symbol, thereby increasing efficiency",
+      "C": "To decrease the baud rate for longer distance transmissions",
+      "D": "To simplify the data transmission process"
+    },
+    "answer": "B",
+    "explanation": "Different signaling and encoding methods are used to improve the efficiency of data transmission. By representing multiple bits with each symbol, more data can be transmitted over the same bandwidth."
+  },
+  "de": {
+    "frage": "Was ist der Hauptzweck der Verwendung unterschiedlicher Signal- und Codierungsmethoden bei der Datenübertragung?",
+    "optionen": {
+      "A": "Um die physische Größe der übertragenen Datenpakete zu vergrößern",
+      "B": "Um mehr als ein Bit pro Symbol darzustellen und so die Effizienz zu steigern",
+      "C": "Um die Baudrate für längere Übertragungsstrecken zu verringern",
+      "D": "Um den Datenübertragungsprozess zu vereinfachen"
+    },
+    "antwort": "B",
+    "erklaerung": "Unterschiedliche Signal- und Codierungsmethoden werden verwendet, um die Effizienz der Datenübertragung zu verbessern. Wenn mehrere Bits pro Symbol dargestellt werden, kann mehr Datenvolumen bei gleicher Bandbreite übertragen werden."
+  }
+},
+{
+  "id": 99,
+  "en": {
+    "question": "What does the term \"channel link\" refer to in the context of Ethernet connectivity?",
+    "options": {
+      "A": "The wireless connection between a host and the network",
+      "B": "The software configuration that enables network communication",
+      "C": "The entire cable path, including patch cords and the permanent link",
+      "D": "The protocol used for encrypting data over the network"
+    },
+    "answer": "C",
+    "explanation": "A channel link in Ethernet connectivity includes all cabling components from the device to the network, such as patch cords, horizontal cabling, and permanent links."
+  },
+  "de": {
+    "frage": "Wofür steht der Begriff „Channel Link“ im Zusammenhang mit Ethernet-Verbindungen?",
+    "optionen": {
+      "A": "Die drahtlose Verbindung zwischen einem Host und dem Netzwerk",
+      "B": "Die Softwarekonfiguration, die die Netzwerkkommunikation ermöglicht",
+      "C": "Der gesamte Kabelweg, einschließlich Patchkabel und permanentem Link",
+      "D": "Das Protokoll zur Verschlüsselung von Daten im Netzwerk"
+    },
+    "antwort": "C",
+    "erklaerung": "Ein Channel Link bei Ethernet-Verbindungen umfasst alle Verkabelungskomponenten vom Gerät bis zum Netzwerk, einschließlich Patchkabeln, horizontaler Verkabelung und permanenten Links."
+  }
+},
+{
+  "id": 100,
+  "en": {
+    "question": "Which cable category is recommended by TIA/EIA for use in healthcare facilities?",
+    "options": {
+      "A": "Cat 5e",
+      "B": "Cat 6",
+      "C": "Cat 6A",
+      "D": "Cat 7"
+    },
+    "answer": "C",
+    "explanation": "TIA/EIA recommends Cat 6A cable for healthcare facilities due to its better performance and reduced crosstalk, which is critical in sensitive environments."
+  },
+  "de": {
+    "frage": "Welche Kabelkategorie wird von TIA/EIA für den Einsatz in Gesundheitseinrichtungen empfohlen?",
+    "optionen": {
+      "A": "Cat 5e",
+      "B": "Cat 6",
+      "C": "Cat 6A",
+      "D": "Cat 7"
+    },
+    "antwort": "C",
+    "erklaerung": "TIA/EIA empfiehlt Cat 6A Kabel für Gesundheitseinrichtungen aufgrund seiner besseren Leistung und geringeren Übersprechungen, was in sensiblen Umgebungen wichtig ist."
+  }
+},
+{
+  "id": 101,
+  "en": {
+    "question": "What is the maximum allowed insertion loss for Cat 5e at 100 MHz?",
+    "options": {
+      "A": "21.7 dB",
+      "B": "24 dB",
+      "C": "10 dB",
+      "D": "30 dB"
+    },
+    "answer": "B",
+    "explanation": "The maximum allowed insertion loss for Cat 5e cable at 100 MHz is 21.7 dB according to TIA/EIA standards."
+  },
+  "de": {
+    "frage": "Wie hoch ist der maximal zulässige Einfügedämpfungsverlust (Insertion Loss) für Cat 5e bei 100 MHz?",
+    "optionen": {
+      "A": "21,7 dB",
+      "B": "24 dB",
+      "C": "10 dB",
+      "D": "30 dB"
+    },
+    "antwort": "B",
+    "erklaerung": "Der maximal zulässige Einfügedämpfungsverlust für Cat 5e Kabel bei 100 MHz beträgt gemäß TIA/EIA-Standards 21,7 dB."
+  }
+},
+{
+  "id": 102,
+  "en": {
+    "question": "Which of the following can be a source of Electromagnetic Interference (EMI)?",
+    "options": {
+      "A": "Fiber optic cables transmitting data",
+      "B": "Battery-powered digital watches",
+      "C": "Electrical power cables",
+      "D": "Plastic insulating materials"
+    },
+    "answer": "C",
+    "explanation": "Electrical power cables can emit electromagnetic fields that interfere with nearby electronic devices, causing Electromagnetic Interference (EMI)."
+  },
+  "de": {
+    "frage": "Welche der folgenden Optionen kann eine Quelle elektromagnetischer Störungen (EMI) sein?",
+    "optionen": {
+      "A": "Glasfaserkabel, die Daten übertragen",
+      "B": "Batteriebetriebene Digitaluhren",
+      "C": "Elektrische Stromkabel",
+      "D": "Kunststoff-Isoliermaterialien"
+    },
+    "antwort": "C",
+    "erklaerung": "Elektrische Stromkabel können elektromagnetische Felder aussenden, die nahegelegene elektronische Geräte stören und elektromagnetische Interferenzen (EMI) verursachen."
+  }
+},
+{
+  "id": 103,
+  "en": {
+    "question": "During a network upgrade, you decide to replace older Cat 5e cables with Cat 6 cables to support higher data rates. The new cables are installed along the same path as the old ones, which includes a 250-meter run from the server room to the far end of the building.\n\nAfter the upgrade, you notice that the network performance has not improved and, in some cases, has worsened.\n\nWhat is the most likely reason for this issue?",
+    "options": {
+      "A": "The new Cat 6 cables are too resistant to EMI, causing signal reflection.",
+      "B": "The 250-meter cable run exceeds the maximum length for optimal signal transmission, leading to attenuation.",
+      "C": "The Cat 6 cables are incompatible with the existing network equipment.",
+      "D": "The installation disturbed the building's electrical wiring, causing new sources of EMI."
+    },
+    "answer": "B",
+    "explanation": "The maximum recommended length for Cat 5e and Cat 6 Ethernet cables is 100 meters. A 250-meter run exceeds this limit, causing signal attenuation and degradation, which leads to poor network performance."
+  },
+  "de": {
+    "frage": "Während eines Netzwerkausbaus ersetzen Sie ältere Cat 5e-Kabel durch Cat 6-Kabel, um höhere Datenraten zu unterstützen. Die neuen Kabel werden auf demselben Weg wie die alten verlegt, einschließlich eines 250 Meter langen Kabelabschnitts vom Serverraum bis zum entferntesten Gebäudeteil.\n\nNach dem Upgrade stellen Sie fest, dass sich die Netzwerkleistung nicht verbessert hat und sich in einigen Fällen sogar verschlechtert hat.\n\nWas ist die wahrscheinlichste Ursache für dieses Problem?",
+    "optionen": {
+      "A": "Die neuen Cat 6-Kabel sind zu widerstandsfähig gegen EMI und verursachen Signalreflexionen.",
+      "B": "Die 250 Meter lange Kabellänge überschreitet die maximale Länge für optimale Signalübertragung und führt zu Dämpfung.",
+      "C": "Die Cat 6-Kabel sind mit der bestehenden Netzwerkausrüstung inkompatibel.",
+      "D": "Die Installation hat die elektrische Verkabelung des Gebäudes gestört und neue EMI-Quellen verursacht."
+    },
+    "antwort": "B",
+    "erklaerung": "Die maximal empfohlene Länge für Cat 5e- und Cat 6-Ethernet-Kabel beträgt 100 Meter. Ein 250 Meter langer Kabelabschnitt überschreitet diese Grenze, was zu Signalabschwächung und Leistungsverlust führt."
+  }
 }
-
 
 ]
