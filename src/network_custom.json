@@ -2593,6 +2593,381 @@
     "antwort": "B",
     "erklaerung": "Die maximal empfohlene Länge für Cat 5e- und Cat 6-Ethernet-Kabel beträgt 100 Meter. Ein 250 Meter langer Kabelabschnitt überschreitet diese Grenze, was zu Signalabschwächung und Leistungsverlust führt."
   }
+},
+{
+  "id": 104,
+  "en": {
+    "question": "A network engineer is troubleshooting a newly installed fiber optic network that is experiencing significant signal loss. Upon inspection, it is discovered that the network uses duplex single mode fiber, but the installed transceivers are designed for multimode fiber with LEDs.\n\nWhat is the MOST likely cause of the signal loss?",
+    "options": {
+      "A": "The transceivers are operating at the wrong temperature.",
+      "B": "The transceivers are not compatible with the single mode fiber.",
+      "C": "The fiber optic cables are too long for the network design.",
+      "D": "The network is using an incorrect wavelength for transmission."
+    },
+    "answer": "B",
+    "explanation": "Multimode transceivers with LEDs are not compatible with single mode fiber. Single mode fiber requires laser-based transceivers due to its smaller core size and different light propagation characteristics. Using the wrong type results in significant signal loss."
+  },
+  "de": {
+    "frage": "Ein Netzwerktechniker behebt Probleme in einem neu installierten Glasfasernetzwerk, das erhebliche Signalverluste aufweist. Bei der Überprüfung wird festgestellt, dass das Netzwerk Duplex-Singlemode-Fasern verwendet, jedoch Transceiver installiert wurden, die für Multimode-Fasern mit LEDs ausgelegt sind.\n\nWas ist die WAHRSCHEINLICHSTE Ursache für den Signalverlust?",
+    "optionen": {
+      "A": "Die Transceiver arbeiten bei der falschen Temperatur.",
+      "B": "Die Transceiver sind nicht mit der Singlemode-Faser kompatibel.",
+      "C": "Die Glasfaserkabel sind zu lang für das Netzdesign.",
+      "D": "Im Netzwerk wird eine falsche Wellenlänge für die Übertragung verwendet."
+    },
+    "antwort": "B",
+    "erklaerung": "Multimode-Transceiver mit LEDs sind nicht mit Singlemode-Fasern kompatibel. Aufgrund des kleineren Kernquerschnitts und der anderen Lichtausbreitungseigenschaften von Singlemode-Fasern sind laserbasierte Transceiver erforderlich. Die falsche Transceiver-Wahl führt zu erheblichen Signalverlusten."
+  }
+},
+{
+  "id": 105,
+  "en": {
+    "question": "What is an optical link budget?",
+    "options": {
+      "A": "The financial cost of setting up a fiber optic network",
+      "B": "The total length of fiber optic cable used in a network",
+      "C": "The amount of loss suffered by all components along a fiber transmission path",
+      "D": "The maximum data transfer rate of a fiber optic connection"
+    },
+    "answer": "C",
+    "explanation": "An optical link budget is the total allowable loss from all components in a fiber optic link, including connectors, splices, and the fiber itself. It ensures that the transmitted signal remains above the receiver's sensitivity threshold."
+  },
+  "de": {
+    "frage": "Was ist ein optisches Link-Budget?",
+    "optionen": {
+      "A": "Die finanziellen Kosten für den Aufbau eines Glasfasernetzwerks",
+      "B": "Die Gesamtlänge des im Netzwerk verwendeten Glasfaserkabels",
+      "C": "Der Verlust, der durch alle Komponenten entlang eines Glasfaserübertragungspfads entsteht",
+      "D": "Die maximale Datenübertragungsrate einer Glasfaserverbindung"
+    },
+    "antwort": "C",
+    "erklaerung": "Ein optisches Link-Budget beschreibt den gesamten zulässigen Verlust durch alle Komponenten in einer Glasfaserverbindung, einschließlich Steckverbindungen, Spleißen und dem Kabel selbst. Es stellt sicher, dass das Signal über der Empfindlichkeitsschwelle des Empfängers bleibt."
+  }
+},
+{
+  "id": 106,
+  "en": {
+    "question": "Which optical wavelengths are typically supported by different transceivers?",
+    "options": {
+      "A": "650 nm, 850 nm, and 1300 nm",
+      "B": "850 nm, 1300 nm, and 1550 nm",
+      "C": "900 nm, 1200 nm, and 1600 nm",
+      "D": "700 nm, 950 nm, and 1450 nm"
+    },
+    "answer": "B",
+    "explanation": "Common transceivers used in fiber optic networks typically support optical wavelengths of 850 nm (used in multimode fiber), 1300 nm, and 1550 nm (both used in single-mode fiber), as these correspond to low-attenuation transmission windows."
+  },
+  "de": {
+    "frage": "Welche optischen Wellenlängen werden typischerweise von verschiedenen Transceivern unterstützt?",
+    "optionen": {
+      "A": "650 nm, 850 nm und 1300 nm",
+      "B": "850 nm, 1300 nm und 1550 nm",
+      "C": "900 nm, 1200 nm und 1600 nm",
+      "D": "700 nm, 950 nm und 1450 nm"
+    },
+    "antwort": "B",
+    "erklaerung": "Typische Transceiver in Glasfasernetzwerken unterstützen Wellenlängen von 850 nm (für Multimode-Fasern), 1300 nm und 1550 nm (für Singlemode-Fasern), da diese Wellenlängenbereiche geringe Dämpfungsverluste aufweisen."
+  }
+},
+{
+  "id": 107,
+  "en": {
+    "question": "Which type of laser is typically used with single mode fiber transceivers?",
+    "options": {
+      "A": "LED",
+      "B": "VCSEL",
+      "C": "Laser diodes",
+      "D": "Incandescent bulbs"
+    },
+    "answer": "C",
+    "explanation": "Laser diodes are typically used with single mode fiber transceivers due to their ability to emit coherent light with a narrow spectral width, which is ideal for long-distance and high-speed communication."
+  },
+  "de": {
+    "frage": "Welcher Lasertyp wird typischerweise mit Singlemode-Fasertransceivern verwendet?",
+    "optionen": {
+      "A": "LED",
+      "B": "VCSEL",
+      "C": "Laserdioden",
+      "D": "Glühbirnen"
+    },
+    "antwort": "C",
+    "erklaerung": "Laserdioden werden typischerweise mit Singlemode-Fasertransceivern verwendet, da sie kohärentes Licht mit schmaler spektraler Breite erzeugen können – ideal für Fern- und Hochgeschwindigkeitskommunikation."
+  }
+},
+{
+  "id": 108,
+  "en": {
+    "question": "What is the function of duplex fiber deployment?",
+    "options": {
+      "A": "It uses a single strand for both transmit and receive.",
+      "B": "It uses two strands for transmit (Tx) and receive (Rx).",
+      "C": "It uses multiple strands to implement Tx and Rx channels.",
+      "D": "It implements multiple channels distinguished by wavelengths."
+    },
+    "answer": "B",
+    "explanation": "Duplex fiber deployment uses two strands of fiber optic cable: one for transmitting (Tx) and one for receiving (Rx), enabling full-duplex communication."
+  },
+  "de": {
+    "frage": "Was ist die Funktion einer Duplex-Glasfaserverbindung?",
+    "optionen": {
+      "A": "Sie verwendet eine einzelne Faser für Senden und Empfangen.",
+      "B": "Sie verwendet zwei Fasern für Senden (Tx) und Empfangen (Rx).",
+      "C": "Sie verwendet mehrere Fasern zur Implementierung von Tx- und Rx-Kanälen.",
+      "D": "Sie implementiert mehrere Kanäle, die durch Wellenlängen unterschieden werden."
+    },
+    "antwort": "B",
+    "erklaerung": "Eine Duplex-Glasfaserverbindung nutzt zwei Fasern – eine zum Senden (Tx) und eine zum Empfangen (Rx) – und ermöglicht so eine Vollduplex-Kommunikation."
+  }
+},
+{
+  "id": 109,
+  "en": {
+    "question": "Which of the following is a unique identifier for each Ethernet network interface port?",
+    "options": {
+      "A": "IP address",
+      "B": "MAC address",
+      "C": "Serial number",
+      "D": "Model number"
+    },
+    "answer": "B",
+    "explanation": "The MAC (Media Access Control) address is a unique hardware identifier assigned to each Ethernet network interface port."
+  },
+  "de": {
+    "frage": "Welche der folgenden Optionen ist ein eindeutiger Bezeichner für jeden Ethernet-Netzwerkschnittstellenanschluss?",
+    "optionen": {
+      "A": "IP-Adresse",
+      "B": "MAC-Adresse",
+      "C": "Seriennummer",
+      "D": "Modellnummer"
+    },
+    "antwort": "B",
+    "erklaerung": "Die MAC-Adresse (Media Access Control) ist eine eindeutige Hardwarekennung, die jedem Ethernet-Netzwerkschnittstellenanschluss zugewiesen wird."
+  }
+},
+{
+  "id": 110,
+  "en": {
+    "question": "What type of cabling do most Ethernet adapters designed for use with copper cabling now support?",
+    "options": {
+      "A": "Coaxial cable",
+      "B": "Gigabit Ethernet",
+      "C": "HDMI cable",
+      "D": "USB cable"
+    },
+    "answer": "B",
+    "explanation": "Most modern Ethernet adapters designed for copper cabling support Gigabit Ethernet, which typically uses twisted-pair copper cables such as Cat 5e or higher."
+  },
+  "de": {
+    "frage": "Welche Art von Verkabelung unterstützen die meisten Ethernet-Adapter, die für die Verwendung mit Kupferverkabelung entwickelt wurden?",
+    "optionen": {
+      "A": "Koaxialkabel",
+      "B": "Gigabit Ethernet",
+      "C": "HDMI-Kabel",
+      "D": "USB-Kabel"
+    },
+    "antwort": "B",
+    "erklaerung": "Die meisten modernen Ethernet-Adapter für Kupferverkabelung unterstützen Gigabit Ethernet, das üblicherweise Twisted-Pair-Kupferkabel wie Cat 5e oder höher verwendet."
+  }
+},
+{
+  "id": 111,
+  "en": {
+    "question": "What is the primary purpose of a Multi-Source Agreement (MSA) in the context of modular transceivers?",
+    "options": {
+      "A": "To ensure compatibility between transceivers from different vendors",
+      "B": "To increase the data transmission speed of transceivers",
+      "C": "To decrease the cost of transceivers",
+      "D": "To standardize the size of transceivers"
+    },
+    "answer": "A",
+    "explanation": "An MSA is an industry agreement that defines standards to ensure interoperability and compatibility of modular transceivers from different manufacturers."
+  },
+  "de": {
+    "frage": "Was ist der Hauptzweck eines Multi-Source Agreement (MSA) im Kontext modularer Transceiver?",
+    "optionen": {
+      "A": "Sicherstellung der Kompatibilität zwischen Transceivern verschiedener Hersteller",
+      "B": "Erhöhung der Datenübertragungsgeschwindigkeit von Transceivern",
+      "C": "Senkung der Kosten von Transceivern",
+      "D": "Standardisierung der Größe von Transceivern"
+    },
+    "antwort": "A",
+    "erklaerung": "Ein MSA ist eine Branchenvereinbarung, die Standards definiert, um die Interoperabilität und Kompatibilität modularer Transceiver unterschiedlicher Hersteller sicherzustellen."
+  }
+},
+{
+  "id": 112,
+  "en": {
+    "question": "Which type of connectors do SFP transceivers use?",
+    "options": {
+      "A": "RJ-45",
+      "B": "LC",
+      "C": "SC",
+      "D": "MPO"
+    },
+    "answer": "B",
+    "explanation": "SFP transceivers commonly use LC connectors for fiber optic connections due to their small form factor and reliability."
+  },
+  "de": {
+    "frage": "Welche Art von Steckern verwenden SFP-Transceiver?",
+    "optionen": {
+      "A": "RJ-45",
+      "B": "LC",
+      "C": "SC",
+      "D": "MPO"
+    },
+    "antwort": "B",
+    "erklaerung": "SFP-Transceiver verwenden üblicherweise LC-Stecker für Glasfaserverbindungen aufgrund ihrer kleinen Bauform und Zuverlässigkeit."
+  }
+},
+{
+  "id": 113,
+  "en": {
+    "question": "A network administrator is configuring a new network interface card (NIC) for a server in a data center. The NIC has a default MAC address of 00:1A:2B:3C:4D:5E. However, due to specific network policies, the administrator needs to change this to a locally administered address.\n\nWhich of the following addresses could the administrator use to comply with this policy?",
+    "options": {
+      "A": "02:1A:2B:3C:4D:5E",
+      "B": "AA:BB:CC:DD:EE:FF",
+      "C": "00:1A:2B:3C:4D:5F",
+      "D": "FF:FF:FF:FF:FF:FF"
+    },
+    "answer": "A",
+    "explanation": "A locally administered MAC address is indicated by setting the second least significant bit of the first byte to 1. Address 02:1A:2B:3C:4D:5E complies with this rule, while the default and other options do not."
+  },
+  "de": {
+    "frage": "Ein Netzwerkadministrator konfiguriert eine neue Netzwerkkarte (NIC) für einen Server im Rechenzentrum. Die NIC hat eine Standard-MAC-Adresse von 00:1A:2B:3C:4D:5E. Aufgrund spezifischer Netzwerkrichtlinien muss der Administrator diese jedoch auf eine lokal verwaltete Adresse ändern.\n\nWelche der folgenden Adressen könnte der Administrator verwenden, um diese Richtlinie einzuhalten?",
+    "optionen": {
+      "A": "02:1A:2B:3C:4D:5E",
+      "B": "AA:BB:CC:DD:EE:FF",
+      "C": "00:1A:2B:3C:4D:5F",
+      "D": "FF:FF:FF:FF:FF:FF"
+    },
+    "antwort": "A",
+    "erklaerung": "Eine lokal verwaltete MAC-Adresse wird durch Setzen des zweitniedrigsten Bits des ersten Bytes auf 1 angezeigt. Die Adresse 02:1A:2B:3C:4D:5E entspricht dieser Regel, während die Standardadresse und andere Optionen dies nicht tun."
+  }
+},
+{
+  "id": 114,
+  "en": {
+    "question": "What does a MAC address of ff:ff:ff:ff:ff:ff signify?",
+    "options": {
+      "A": "A unicast transmission",
+      "B": "A multicast transmission",
+      "C": "A broadcast transmission",
+      "D": "An invalid MAC address"
+    },
+    "answer": "C",
+    "explanation": "The MAC address ff:ff:ff:ff:ff:ff is the broadcast address, meaning that the frame is sent to all devices on the local network segment."
+  },
+  "de": {
+    "frage": "Was bedeutet eine MAC-Adresse von ff:ff:ff:ff:ff:ff?",
+    "optionen": {
+      "A": "Eine Unicast-Übertragung",
+      "B": "Eine Multicast-Übertragung",
+      "C": "Eine Broadcast-Übertragung",
+      "D": "Eine ungültige MAC-Adresse"
+    },
+    "antwort": "C",
+    "erklaerung": "Die MAC-Adresse ff:ff:ff:ff:ff:ff ist die Broadcast-Adresse, was bedeutet, dass das Frame an alle Geräte im lokalen Netzwerksegment gesendet wird."
+  }
+},
+{
+  "id": 115,
+  "en": {
+    "question": "Which of the following BEST describes a MAC address?",
+    "options": {
+      "A": "A procedure that maps a dynamic IP address to a static physical machine address",
+      "B": "A logical grouping of computers through segmentation",
+      "C": "A 48-bit number that serves as a unique identifier for network devices",
+      "D": "A set of computers and devices connected in one physical area"
+    },
+    "answer": "C",
+    "explanation": "A MAC address is a 48-bit hardware address assigned to network interfaces to uniquely identify devices on a network."
+  },
+  "de": {
+    "frage": "Welche der folgenden Aussagen beschreibt am besten eine MAC-Adresse?",
+    "optionen": {
+      "A": "Ein Verfahren, das eine dynamische IP-Adresse einer statischen physischen Maschinenadresse zuordnet",
+      "B": "Eine logische Gruppierung von Computern durch Segmentierung",
+      "C": "Eine 48-Bit-Nummer, die als eindeutiger Identifikator für Netzwerkgeräte dient",
+      "D": "Eine Gruppe von Computern und Geräten, die in einem physischen Bereich verbunden sind"
+    },
+    "antwort": "C",
+    "erklaerung": "Eine MAC-Adresse ist eine 48-Bit-Hardwareadresse, die Netzwerkinterfaces zugewiesen wird, um Geräte im Netzwerk eindeutig zu identifizieren."
+  }
+},
+{
+  "id": 116,
+  "en": {
+    "question": "What does the EtherType field in an Ethernet frame specify?",
+    "options": {
+      "A": "The length of the frame",
+      "B": "The type of protocol in the frame payload",
+      "C": "The source address of the frame",
+      "D": "The error checking method used"
+    },
+    "answer": "B",
+    "explanation": "The EtherType field indicates which protocol is encapsulated in the payload of the Ethernet frame, such as IPv4 or IPv6."
+  },
+  "de": {
+    "frage": "Was gibt das EtherType-Feld in einem Ethernet-Frame an?",
+    "optionen": {
+      "A": "Die Länge des Frames",
+      "B": "Den Typ des Protokolls im Frame-Nutzlast",
+      "C": "Die Quelladresse des Frames",
+      "D": "Die verwendete Fehlerprüfmethode"
+    },
+    "antwort": "B",
+    "erklaerung": "Das EtherType-Feld gibt an, welches Protokoll in der Nutzlast des Ethernet-Frames gekapselt ist, z. B. IPv4 oder IPv6."
+  }
+},
+{
+  "id": 117,
+  "en": {
+    "question": "What is the purpose of the preamble and Start Frame Delimiter (SFD) in an Ethernet frame?",
+    "options": {
+      "A": "To indicate the beginning of a frame and synchronize clocking between sender and receiver",
+      "B": "To specify the destination address of the frame",
+      "C": "To determine the type of protocol being used in the payload",
+      "D": "To perform error checking on the frame"
+    },
+    "answer": "A",
+    "explanation": "The preamble and Start Frame Delimiter (SFD) are used to mark the start of the frame and help synchronize the timing (clocking) between the sender and receiver to ensure proper data interpretation."
+  },
+  "de": {
+    "frage": "Was ist der Zweck des Präambels und des Start Frame Delimiters (SFD) in einem Ethernet-Frame?",
+    "optionen": {
+      "A": "Den Beginn eines Frames anzuzeigen und die Taktung zwischen Sender und Empfänger zu synchronisieren",
+      "B": "Die Zieladresse des Frames anzugeben",
+      "C": "Den Protokolltyp im Payload zu bestimmen",
+      "D": "Eine Fehlerprüfung am Frame durchzuführen"
+    },
+    "antwort": "A",
+    "erklaerung": "Das Präambel und der Start Frame Delimiter (SFD) markieren den Beginn des Frames und helfen, die Taktung zwischen Sender und Empfänger zu synchronisieren, um eine korrekte Dateninterpretation sicherzustellen."
+  }
+},
+{
+  "id": 118,
+  "en": {
+    "question": "How is the EtherType value used to distinguish between payload type and frame length?",
+    "options": {
+      "A": "EtherTypes are values of 0x0600 or greater to indicate protocol type; values less than this indicate payload length.",
+      "B": "EtherTypes are always used to indicate frame length, regardless of the value.",
+      "C": "EtherTypes are always used to indicate payload type, regardless of the value.",
+      "D": "EtherTypes values less than 0x0600 indicate protocol type; values greater than this indicate payload length."
+    },
+    "answer": "A",
+    "explanation": "In Ethernet frames, values of 0x0600 or higher in the EtherType field indicate the protocol type, while values less than 0x0600 represent the length of the payload."
+  },
+  "de": {
+    "frage": "Wie wird der EtherType-Wert verwendet, um zwischen Payload-Typ und Frame-Länge zu unterscheiden?",
+    "optionen": {
+      "A": "EtherTypes mit Werten von 0x0600 oder höher zeigen den Protokolltyp an; Werte darunter geben die Payload-Länge an.",
+      "B": "EtherTypes werden immer zur Anzeige der Frame-Länge verwendet, unabhängig vom Wert.",
+      "C": "EtherTypes werden immer zur Anzeige des Payload-Typs verwendet, unabhängig vom Wert.",
+      "D": "EtherType-Werte unter 0x0600 zeigen den Protokolltyp an; Werte darüber geben die Länge an."
+    },
+    "antwort": "A",
+    "erklaerung": "Im Ethernet-Frame zeigen Werte von 0x0600 oder höher im EtherType-Feld den Protokolltyp an, während Werte unter 0x0600 die Länge der Nutzlast darstellen."
+  }
 }
 
 ]
