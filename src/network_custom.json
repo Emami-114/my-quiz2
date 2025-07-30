@@ -2216,7 +2216,7 @@
       "D": "Manuelle Aktivierung der Voraktionssprinkleranlage nur im Lagerraum."
     },
     "antwort": "B",
-    "erklaerung": "Die manuelle Aktivierung der Voraktionssprinkleranlage im Lagerraum richtet sich gezielt auf den Brandherd und minimiert gleichzeitig das Risiko von Wasserschäden im angrenzenden Serverraum."
+    "erklärung": "Die manuelle Aktivierung der Voraktionssprinkleranlage im Lagerraum richtet sich gezielt auf den Brandherd und minimiert gleichzeitig das Risiko von Wasserschäden im angrenzenden Serverraum."
   }
 },
 {
@@ -2241,7 +2241,7 @@
       "D": "Die Abschirmung des Kabels ist beschädigt, wodurch seine Wirksamkeit gegen Störungen verringert wird."
     },
     "antwort": "C",
-    "erklaerung": "Ein „Split Pair“-Fehler tritt auf, wenn Drähte aus unterschiedlichen verdrillten Paaren an beiden Enden miteinander verbunden sind. Dies kann bei einem Durchgangstest bestehen, verursacht jedoch erhebliche Signalstörungen und Übersprechen. Es handelt sich um einen häufigen Verdrahtungsfehler."
+    "erklärung": "Ein „Split Pair“-Fehler tritt auf, wenn Drähte aus unterschiedlichen verdrillten Paaren an beiden Enden miteinander verbunden sind. Dies kann bei einem Durchgangstest bestehen, verursacht jedoch erhebliche Signalstörungen und Übersprechen. Es handelt sich um einen häufigen Verdrahtungsfehler."
   }
 },
 {
@@ -2266,7 +2266,7 @@
       "D": "Den Kabeltyp zu identifizieren"
     },
     "antwort": "B",
-    "erklaerung": "Ein Wiremap-Tester wird hauptsächlich verwendet, um Verdrahtungsfehler wie fehlerhafte Abschlüsse, vertauschte Adern, Unterbrechungen und Split-Pair-Fehler zu erkennen. Er stellt sicher, dass die Adernpaare korrekt von einem Ende zum anderen verbunden sind."
+    "erklärung": "Ein Wiremap-Tester wird hauptsächlich verwendet, um Verdrahtungsfehler wie fehlerhafte Abschlüsse, vertauschte Adern, Unterbrechungen und Split-Pair-Fehler zu erkennen. Er stellt sicher, dass die Adernpaare korrekt von einem Ende zum anderen verbunden sind."
   }
 },
 {
@@ -2291,7 +2291,7 @@
       "D": "Den Netzwerkadapter austauschen"
     },
     "antwort": "C",
-    "erklaerung": "Der erste Schritt bei der Fehlerbehebung von Kabelproblemen ist eine physikalische Inspektion des Kabels, um sichtbare Schäden, lose Verbindungen oder Abnutzung zu erkennen. So können offensichtliche Probleme schnell identifiziert werden, bevor technische Diagnosen durchgeführt werden."
+    "erklärung": "Der erste Schritt bei der Fehlerbehebung von Kabelproblemen ist eine physikalische Inspektion des Kabels, um sichtbare Schäden, lose Verbindungen oder Abnutzung zu erkennen. So können offensichtliche Probleme schnell identifiziert werden, bevor technische Diagnosen durchgeführt werden."
   }
 },
 {
@@ -2316,7 +2316,7 @@
       "D": "Verbesserte Faseranpassung"
     },
     "antwort": "C",
-    "erklaerung": "Das Verbinden von Singlemode-Fasern (SMF) mit Multimode-Fasern (MMF) führt zu erheblichen Signalverlusten – oft bis zu 99 % – aufgrund der unterschiedlichen Kerndurchmesser und Übertragungsarten. Dies führt zu einer schlechten optischen Kopplung und verschlechterter Netzwerkleistung."
+    "erklärung": "Das Verbinden von Singlemode-Fasern (SMF) mit Multimode-Fasern (MMF) führt zu erheblichen Signalverlusten – oft bis zu 99 % – aufgrund der unterschiedlichen Kerndurchmesser und Übertragungsarten. Dies führt zu einer schlechten optischen Kopplung und verschlechterter Netzwerkleistung."
   }
 },
 {
@@ -2341,7 +2341,7 @@
       "D": "Straight Physical Contact (SPC)"
     },
     "antwort": "C",
-    "erklaerung": "Angled Physical Contact (APC)-Steckverbinder sind speziell darauf ausgelegt, eine extrem geringe Rückreflexion (Return Loss) zu bieten – typischerweise besser als -60 dB. Sie verfügen über eine 8-Grad-Winkelpolitur und eignen sich ideal für hochpräzise Anwendungen wie Hochgeschwindigkeits- oder analoge Glasfasersysteme."
+    "erklärung": "Angled Physical Contact (APC)-Steckverbinder sind speziell darauf ausgelegt, eine extrem geringe Rückreflexion (Return Loss) zu bieten – typischerweise besser als -60 dB. Sie verfügen über eine 8-Grad-Winkelpolitur und eignen sich ideal für hochpräzise Anwendungen wie Hochgeschwindigkeits- oder analoge Glasfasersysteme."
   }
 },
 {
@@ -2366,7 +2366,7 @@
       "D": "Den Unterschied zwischen Einfügungsverlust und Far-End-Crosstalk (FEXT)"
     },
     "antwort": "C",
-    "erklaerung": "Power Sum Crosstalk misst das gesamte Übersprechen (Störungen), das ein einzelnes Adernpaar betrifft, verursacht durch die kombinierten Signale aller anderen Paare im selben Kabel. Diese Messung ist entscheidend für Ethernet-Standards mit hoher Geschwindigkeit wie Gigabit- und 10-Gigabit-Ethernet, die alle Paare gleichzeitig verwenden."
+    "erklärung": "Power Sum Crosstalk misst das gesamte Übersprechen (Störungen), das ein einzelnes Adernpaar betrifft, verursacht durch die kombinierten Signale aller anderen Paare im selben Kabel. Diese Messung ist entscheidend für Ethernet-Standards mit hoher Geschwindigkeit wie Gigabit- und 10-Gigabit-Ethernet, die alle Paare gleichzeitig verwenden."
   }
 },
 {
@@ -2391,7 +2391,7 @@
       "D": "Die Ethernet-Kabel sind von schlechter Qualität."
     },
     "antwort": "C",
-    "erklaerung": "Alien Crosstalk bezieht sich auf elektromagnetische Störungen von externen Quellen, wie nahegelegenen Stromleitungen, die Rauschen in benachbarte Ethernet-Kabel induzieren. Diese Art von Störung kann die Fehlerraten in den betroffenen Kabeln erheblich erhöhen."
+    "erklärung": "Alien Crosstalk bezieht sich auf elektromagnetische Störungen von externen Quellen, wie nahegelegenen Stromleitungen, die Rauschen in benachbarte Ethernet-Kabel induzieren. Diese Art von Störung kann die Fehlerraten in den betroffenen Kabeln erheblich erhöhen."
   }
 },
 {
@@ -2416,7 +2416,7 @@
       "D": "Untersuchen Sie jedes Kabel manuell auf sichtbare Schäden, ohne Testwerkzeuge zu verwenden."
     },
     "antwort": "B",
-    "erklaerung": "Die Verwendung eines Kabeltestgeräts ist der effektivste und effizienteste Weg, um Probleme wie schlechte Abschlüsse, Dämpfung, Crosstalk und physische Schäden zu diagnostizieren. Es liefert quantitative und qualitative Ergebnisse, um Verbindungsprobleme zu identifizieren und zu beheben."
+    "erklärung": "Die Verwendung eines Kabeltestgeräts ist der effektivste und effizienteste Weg, um Probleme wie schlechte Abschlüsse, Dämpfung, Crosstalk und physische Schäden zu diagnostizieren. Es liefert quantitative und qualitative Ergebnisse, um Verbindungsprobleme zu identifizieren und zu beheben."
   }
 },
 {
@@ -2441,7 +2441,7 @@
       "D": "Die maximale Kapazität eines Netzwerkschalters"
     },
     "antwort": "C",
-    "erklaerung": "Im Netzwerkbereich bezieht sich der Begriff 'Geschwindigkeit' häufig auf die Zeit, die Daten benötigen, um von der Quelle zum Ziel zu gelangen – also die Latenz. Manchmal meint man damit auch die Bandbreite, daher kommt es auf den Kontext an. In diesem Fall passt Latenz am besten."
+    "erklärung": "Im Netzwerkbereich bezieht sich der Begriff 'Geschwindigkeit' häufig auf die Zeit, die Daten benötigen, um von der Quelle zum Ziel zu gelangen – also die Latenz. Manchmal meint man damit auch die Bandbreite, daher kommt es auf den Kontext an. In diesem Fall passt Latenz am besten."
   }
 },
 {
@@ -2466,7 +2466,7 @@
       "D": "Um den Datenübertragungsprozess zu vereinfachen"
     },
     "antwort": "B",
-    "erklaerung": "Unterschiedliche Signal- und Codierungsmethoden werden verwendet, um die Effizienz der Datenübertragung zu verbessern. Wenn mehrere Bits pro Symbol dargestellt werden, kann mehr Datenvolumen bei gleicher Bandbreite übertragen werden."
+    "erklärung": "Unterschiedliche Signal- und Codierungsmethoden werden verwendet, um die Effizienz der Datenübertragung zu verbessern. Wenn mehrere Bits pro Symbol dargestellt werden, kann mehr Datenvolumen bei gleicher Bandbreite übertragen werden."
   }
 },
 {
@@ -2491,7 +2491,7 @@
       "D": "Das Protokoll zur Verschlüsselung von Daten im Netzwerk"
     },
     "antwort": "C",
-    "erklaerung": "Ein Channel Link bei Ethernet-Verbindungen umfasst alle Verkabelungskomponenten vom Gerät bis zum Netzwerk, einschließlich Patchkabeln, horizontaler Verkabelung und permanenten Links."
+    "erklärung": "Ein Channel Link bei Ethernet-Verbindungen umfasst alle Verkabelungskomponenten vom Gerät bis zum Netzwerk, einschließlich Patchkabeln, horizontaler Verkabelung und permanenten Links."
   }
 },
 {
@@ -2516,7 +2516,7 @@
       "D": "Cat 7"
     },
     "antwort": "C",
-    "erklaerung": "TIA/EIA empfiehlt Cat 6A Kabel für Gesundheitseinrichtungen aufgrund seiner besseren Leistung und geringeren Übersprechungen, was in sensiblen Umgebungen wichtig ist."
+    "erklärung": "TIA/EIA empfiehlt Cat 6A Kabel für Gesundheitseinrichtungen aufgrund seiner besseren Leistung und geringeren Übersprechungen, was in sensiblen Umgebungen wichtig ist."
   }
 },
 {
@@ -2541,7 +2541,7 @@
       "D": "30 dB"
     },
     "antwort": "B",
-    "erklaerung": "Der maximal zulässige Einfügedämpfungsverlust für Cat 5e Kabel bei 100 MHz beträgt gemäß TIA/EIA-Standards 21,7 dB."
+    "erklärung": "Der maximal zulässige Einfügedämpfungsverlust für Cat 5e Kabel bei 100 MHz beträgt gemäß TIA/EIA-Standards 21,7 dB."
   }
 },
 {
@@ -2566,7 +2566,7 @@
       "D": "Kunststoff-Isoliermaterialien"
     },
     "antwort": "C",
-    "erklaerung": "Elektrische Stromkabel können elektromagnetische Felder aussenden, die nahegelegene elektronische Geräte stören und elektromagnetische Interferenzen (EMI) verursachen."
+    "erklärung": "Elektrische Stromkabel können elektromagnetische Felder aussenden, die nahegelegene elektronische Geräte stören und elektromagnetische Interferenzen (EMI) verursachen."
   }
 },
 {
@@ -2591,7 +2591,7 @@
       "D": "Die Installation hat die elektrische Verkabelung des Gebäudes gestört und neue EMI-Quellen verursacht."
     },
     "antwort": "B",
-    "erklaerung": "Die maximal empfohlene Länge für Cat 5e- und Cat 6-Ethernet-Kabel beträgt 100 Meter. Ein 250 Meter langer Kabelabschnitt überschreitet diese Grenze, was zu Signalabschwächung und Leistungsverlust führt."
+    "erklärung": "Die maximal empfohlene Länge für Cat 5e- und Cat 6-Ethernet-Kabel beträgt 100 Meter. Ein 250 Meter langer Kabelabschnitt überschreitet diese Grenze, was zu Signalabschwächung und Leistungsverlust führt."
   }
 },
 {
@@ -2616,7 +2616,7 @@
       "D": "Im Netzwerk wird eine falsche Wellenlänge für die Übertragung verwendet."
     },
     "antwort": "B",
-    "erklaerung": "Multimode-Transceiver mit LEDs sind nicht mit Singlemode-Fasern kompatibel. Aufgrund des kleineren Kernquerschnitts und der anderen Lichtausbreitungseigenschaften von Singlemode-Fasern sind laserbasierte Transceiver erforderlich. Die falsche Transceiver-Wahl führt zu erheblichen Signalverlusten."
+    "erklärung": "Multimode-Transceiver mit LEDs sind nicht mit Singlemode-Fasern kompatibel. Aufgrund des kleineren Kernquerschnitts und der anderen Lichtausbreitungseigenschaften von Singlemode-Fasern sind laserbasierte Transceiver erforderlich. Die falsche Transceiver-Wahl führt zu erheblichen Signalverlusten."
   }
 },
 {
@@ -2641,7 +2641,7 @@
       "D": "Die maximale Datenübertragungsrate einer Glasfaserverbindung"
     },
     "antwort": "C",
-    "erklaerung": "Ein optisches Link-Budget beschreibt den gesamten zulässigen Verlust durch alle Komponenten in einer Glasfaserverbindung, einschließlich Steckverbindungen, Spleißen und dem Kabel selbst. Es stellt sicher, dass das Signal über der Empfindlichkeitsschwelle des Empfängers bleibt."
+    "erklärung": "Ein optisches Link-Budget beschreibt den gesamten zulässigen Verlust durch alle Komponenten in einer Glasfaserverbindung, einschließlich Steckverbindungen, Spleißen und dem Kabel selbst. Es stellt sicher, dass das Signal über der Empfindlichkeitsschwelle des Empfängers bleibt."
   }
 },
 {
@@ -2666,7 +2666,7 @@
       "D": "700 nm, 950 nm und 1450 nm"
     },
     "antwort": "B",
-    "erklaerung": "Typische Transceiver in Glasfasernetzwerken unterstützen Wellenlängen von 850 nm (für Multimode-Fasern), 1300 nm und 1550 nm (für Singlemode-Fasern), da diese Wellenlängenbereiche geringe Dämpfungsverluste aufweisen."
+    "erklärung": "Typische Transceiver in Glasfasernetzwerken unterstützen Wellenlängen von 850 nm (für Multimode-Fasern), 1300 nm und 1550 nm (für Singlemode-Fasern), da diese Wellenlängenbereiche geringe Dämpfungsverluste aufweisen."
   }
 },
 {
@@ -2691,7 +2691,7 @@
       "D": "Glühbirnen"
     },
     "antwort": "C",
-    "erklaerung": "Laserdioden werden typischerweise mit Singlemode-Fasertransceivern verwendet, da sie kohärentes Licht mit schmaler spektraler Breite erzeugen können – ideal für Fern- und Hochgeschwindigkeitskommunikation."
+    "erklärung": "Laserdioden werden typischerweise mit Singlemode-Fasertransceivern verwendet, da sie kohärentes Licht mit schmaler spektraler Breite erzeugen können – ideal für Fern- und Hochgeschwindigkeitskommunikation."
   }
 },
 {
@@ -2716,7 +2716,7 @@
       "D": "Sie implementiert mehrere Kanäle, die durch Wellenlängen unterschieden werden."
     },
     "antwort": "B",
-    "erklaerung": "Eine Duplex-Glasfaserverbindung nutzt zwei Fasern – eine zum Senden (Tx) und eine zum Empfangen (Rx) – und ermöglicht so eine Vollduplex-Kommunikation."
+    "erklärung": "Eine Duplex-Glasfaserverbindung nutzt zwei Fasern – eine zum Senden (Tx) und eine zum Empfangen (Rx) – und ermöglicht so eine Vollduplex-Kommunikation."
   }
 },
 {
@@ -2741,7 +2741,7 @@
       "D": "Modellnummer"
     },
     "antwort": "B",
-    "erklaerung": "Die MAC-Adresse (Media Access Control) ist eine eindeutige Hardwarekennung, die jedem Ethernet-Netzwerkschnittstellenanschluss zugewiesen wird."
+    "erklärung": "Die MAC-Adresse (Media Access Control) ist eine eindeutige Hardwarekennung, die jedem Ethernet-Netzwerkschnittstellenanschluss zugewiesen wird."
   }
 },
 {
@@ -2766,7 +2766,7 @@
       "D": "USB-Kabel"
     },
     "antwort": "B",
-    "erklaerung": "Die meisten modernen Ethernet-Adapter für Kupferverkabelung unterstützen Gigabit Ethernet, das üblicherweise Twisted-Pair-Kupferkabel wie Cat 5e oder höher verwendet."
+    "erklärung": "Die meisten modernen Ethernet-Adapter für Kupferverkabelung unterstützen Gigabit Ethernet, das üblicherweise Twisted-Pair-Kupferkabel wie Cat 5e oder höher verwendet."
   }
 },
 {
@@ -2791,7 +2791,7 @@
       "D": "Standardisierung der Größe von Transceivern"
     },
     "antwort": "A",
-    "erklaerung": "Ein MSA ist eine Branchenvereinbarung, die Standards definiert, um die Interoperabilität und Kompatibilität modularer Transceiver unterschiedlicher Hersteller sicherzustellen."
+    "erklärung": "Ein MSA ist eine Branchenvereinbarung, die Standards definiert, um die Interoperabilität und Kompatibilität modularer Transceiver unterschiedlicher Hersteller sicherzustellen."
   }
 },
 {
@@ -2816,7 +2816,7 @@
       "D": "MPO"
     },
     "antwort": "B",
-    "erklaerung": "SFP-Transceiver verwenden üblicherweise LC-Stecker für Glasfaserverbindungen aufgrund ihrer kleinen Bauform und Zuverlässigkeit."
+    "erklärung": "SFP-Transceiver verwenden üblicherweise LC-Stecker für Glasfaserverbindungen aufgrund ihrer kleinen Bauform und Zuverlässigkeit."
   }
 },
 {
@@ -2841,7 +2841,7 @@
       "D": "FF:FF:FF:FF:FF:FF"
     },
     "antwort": "A",
-    "erklaerung": "Eine lokal verwaltete MAC-Adresse wird durch Setzen des zweitniedrigsten Bits des ersten Bytes auf 1 angezeigt. Die Adresse 02:1A:2B:3C:4D:5E entspricht dieser Regel, während die Standardadresse und andere Optionen dies nicht tun."
+    "erklärung": "Eine lokal verwaltete MAC-Adresse wird durch Setzen des zweitniedrigsten Bits des ersten Bytes auf 1 angezeigt. Die Adresse 02:1A:2B:3C:4D:5E entspricht dieser Regel, während die Standardadresse und andere Optionen dies nicht tun."
   }
 },
 {
@@ -2866,7 +2866,7 @@
       "D": "Eine ungültige MAC-Adresse"
     },
     "antwort": "C",
-    "erklaerung": "Die MAC-Adresse ff:ff:ff:ff:ff:ff ist die Broadcast-Adresse, was bedeutet, dass das Frame an alle Geräte im lokalen Netzwerksegment gesendet wird."
+    "erklärung": "Die MAC-Adresse ff:ff:ff:ff:ff:ff ist die Broadcast-Adresse, was bedeutet, dass das Frame an alle Geräte im lokalen Netzwerksegment gesendet wird."
   }
 },
 {
@@ -2891,7 +2891,7 @@
       "D": "Eine Gruppe von Computern und Geräten, die in einem physischen Bereich verbunden sind"
     },
     "antwort": "C",
-    "erklaerung": "Eine MAC-Adresse ist eine 48-Bit-Hardwareadresse, die Netzwerkinterfaces zugewiesen wird, um Geräte im Netzwerk eindeutig zu identifizieren."
+    "erklärung": "Eine MAC-Adresse ist eine 48-Bit-Hardwareadresse, die Netzwerkinterfaces zugewiesen wird, um Geräte im Netzwerk eindeutig zu identifizieren."
   }
 },
 {
@@ -2916,7 +2916,7 @@
       "D": "Die verwendete Fehlerprüfmethode"
     },
     "antwort": "B",
-    "erklaerung": "Das EtherType-Feld gibt an, welches Protokoll in der Nutzlast des Ethernet-Frames gekapselt ist, z. B. IPv4 oder IPv6."
+    "erklärung": "Das EtherType-Feld gibt an, welches Protokoll in der Nutzlast des Ethernet-Frames gekapselt ist, z. B. IPv4 oder IPv6."
   }
 },
 {
@@ -2941,7 +2941,7 @@
       "D": "Eine Fehlerprüfung am Frame durchzuführen"
     },
     "antwort": "A",
-    "erklaerung": "Das Präambel und der Start Frame Delimiter (SFD) markieren den Beginn des Frames und helfen, die Taktung zwischen Sender und Empfänger zu synchronisieren, um eine korrekte Dateninterpretation sicherzustellen."
+    "erklärung": "Das Präambel und der Start Frame Delimiter (SFD) markieren den Beginn des Frames und helfen, die Taktung zwischen Sender und Empfänger zu synchronisieren, um eine korrekte Dateninterpretation sicherzustellen."
   }
 },
 {
@@ -2966,7 +2966,7 @@
       "D": "EtherType-Werte unter 0x0600 zeigen den Protokolltyp an; Werte darüber geben die Länge an."
     },
     "antwort": "A",
-    "erklaerung": "Im Ethernet-Frame zeigen Werte von 0x0600 oder höher im EtherType-Feld den Protokolltyp an, während Werte unter 0x0600 die Länge der Nutzlast darstellen."
+    "erklärung": "Im Ethernet-Frame zeigen Werte von 0x0600 oder höher im EtherType-Feld den Protokolltyp an, während Werte unter 0x0600 die Länge der Nutzlast darstellen."
   }
 },
 {
@@ -2991,7 +2991,7 @@
       "D": "Er vereinfacht das Netzwerkmanagement, da mehrere Switches als eine Einheit verwaltet werden können."
     },
     "antwort": "D",
-    "erklaerung": "Stapelbare Switches können miteinander verbunden und als eine Einheit verwaltet werden, was die Konfiguration und Wartung im Vergleich zu einzelnen, nicht stapelbaren Switches deutlich vereinfacht."
+    "erklärung": "Stapelbare Switches können miteinander verbunden und als eine Einheit verwaltet werden, was die Konfiguration und Wartung im Vergleich zu einzelnen, nicht stapelbaren Switches deutlich vereinfacht."
   }
 },
 {
@@ -3016,7 +3016,7 @@
       "D": "SOHO-Switch"
     },
     "antwort": "B",
-    "erklaerung": "Verwaltete Switches werden in Unternehmensnetzwerken eingesetzt, da sie erweiterte Funktionen wie VLANs, QoS, SNMP-Überwachung und Verkehrssteuerung bieten, die für das Management großer und komplexer Netzwerke erforderlich sind."
+    "erklärung": "Verwaltete Switches werden in Unternehmensnetzwerken eingesetzt, da sie erweiterte Funktionen wie VLANs, QoS, SNMP-Überwachung und Verkehrssteuerung bieten, die für das Management großer und komplexer Netzwerke erforderlich sind."
   }
 },
 {
@@ -3041,7 +3041,7 @@
       "D": "do copy running-config startup-config"
     },
     "antwort": "B",
-    "erklaerung": "Der Befehl `configure terminal` wird verwendet, um den Global Configuration-Modus auf einem Cisco-Switch zu betreten. In diesem Modus können Konfigurationsänderungen wie das Einrichten von Schnittstellen, VLANs und Routingprotokollen vorgenommen werden."
+    "erklärung": "Der Befehl `configure terminal` wird verwendet, um den Global Configuration-Modus auf einem Cisco-Switch zu betreten. In diesem Modus können Konfigurationsänderungen wie das Einrichten von Schnittstellen, VLANs und Routingprotokollen vorgenommen werden."
   }
 },
 {
@@ -3066,7 +3066,7 @@
       "D": "Der Switch-Port wird deaktiviert, wenn das angeschlossene Gerät keine Gigabit-Geschwindigkeit unterstützt."
     },
     "antwort": "A",
-    "erklaerung": "Autonegotiation ermöglicht es einem Switch-Port und dem angeschlossenen Gerät, die bestmögliche Geschwindigkeit und den besten Duplex-Modus zu ermitteln und zu konfigurieren, die von beiden unterstützt werden – für optimale Leistung und Kompatibilität."
+    "erklärung": "Autonegotiation ermöglicht es einem Switch-Port und dem angeschlossenen Gerät, die bestmögliche Geschwindigkeit und den besten Duplex-Modus zu ermitteln und zu konfigurieren, die von beiden unterstützt werden – für optimale Leistung und Kompatibilität."
   }
 },
 {
@@ -3091,7 +3091,7 @@
       "D": "Die Leistung des Switches wird erheblich reduziert."
     },
     "antwort": "C",
-    "erklaerung": "Wenn VLANs (Virtual Local Area Networks) auf einem Switch konfiguriert werden, segmentieren sie das Netzwerk logisch in mehrere Broadcast-Domänen. Das verbessert die Sicherheit und reduziert den Broadcast-Verkehr innerhalb jeder VLAN."
+    "erklärung": "Wenn VLANs (Virtual Local Area Networks) auf einem Switch konfiguriert werden, segmentieren sie das Netzwerk logisch in mehrere Broadcast-Domänen. Das verbessert die Sicherheit und reduziert den Broadcast-Verkehr innerhalb jeder VLAN."
   }
 },
 {
@@ -3116,7 +3116,7 @@
       "D": "Hub"
     },
     "antwort": "A",
-    "erklaerung": "Ein Switch ist die geeignete Aufrüstung eines Hubs, da er die Kollisionsdomänen für jedes angeschlossene Gerät isolieren kann und höhere Geschwindigkeiten wie Gigabit-Ethernet unterstützt. Hubs senden den gesamten Datenverkehr an alle Ports und arbeiten mit geringerer Geschwindigkeit, was sie für moderne Netzwerke ineffizient macht."
+    "erklärung": "Ein Switch ist die geeignete Aufrüstung eines Hubs, da er die Kollisionsdomänen für jedes angeschlossene Gerät isolieren kann und höhere Geschwindigkeiten wie Gigabit-Ethernet unterstützt. Hubs senden den gesamten Datenverkehr an alle Ports und arbeiten mit geringerer Geschwindigkeit, was sie für moderne Netzwerke ineffizient macht."
   }
 },
 {
@@ -3141,7 +3141,7 @@
       "D": "Bitübertragungsschicht"
     },
     "antwort": "D",
-    "erklaerung": "Ein Hub arbeitet auf der Bitübertragungsschicht (Schicht 1) des OSI-Modells. Er leitet elektrische Signale einfach an alle angeschlossenen Ports weiter, ohne den Inhalt oder das Ziel der Daten zu berücksichtigen."
+    "erklärung": "Ein Hub arbeitet auf der Bitübertragungsschicht (Schicht 1) des OSI-Modells. Er leitet elektrische Signale einfach an alle angeschlossenen Ports weiter, ohne den Inhalt oder das Ziel der Daten zu berücksichtigen."
   }
 },
 {
@@ -3166,7 +3166,7 @@
       "D": "Es erhöht die Datenübertragungsgeschwindigkeit des Hubs."
     },
     "antwort": "C",
-    "erklaerung": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) wird in Hub-basierten Ethernet-Netzwerken verwendet, um zu steuern, wann Geräte senden dürfen. Es hilft, Datenkollisionen zu vermeiden, und verwaltet die erneute Übertragung bei Kollisionen."
+    "erklärung": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) wird in Hub-basierten Ethernet-Netzwerken verwendet, um zu steuern, wann Geräte senden dürfen. Es hilft, Datenkollisionen zu vermeiden, und verwaltet die erneute Übertragung bei Kollisionen."
   }
 },
 {
@@ -3191,11 +3191,11 @@
       "D": "Die Ethernet-Bridge ermöglicht Segment A die Nutzung von IP-Adressen aus Segment B."
     },
     "antwort": "B",
-    "erklaerung": "Eine Ethernet-Bridge verbindet zwei Netzwerksegmente und filtert den Datenverkehr, um unnötige Übertragungen zwischen den Segmenten zu reduzieren. Diese Isolation hilft, zu verhindern, dass hoher Datenverkehr in einem Segment das andere beeinträchtigt, und verbessert so die Netzwerkeffizienz."
+    "erklärung": "Eine Ethernet-Bridge verbindet zwei Netzwerksegmente und filtert den Datenverkehr, um unnötige Übertragungen zwischen den Segmenten zu reduzieren. Diese Isolation hilft, zu verhindern, dass hoher Datenverkehr in einem Segment das andere beeinträchtigt, und verbessert so die Netzwerkeffizienz."
   }
 },
 {
-  "id": 161,
+  "id": 128,
   "en": {
     "question": "What distinguishes a collision domain from a broadcast domain?",
     "options": {
@@ -3216,7 +3216,7 @@
       "D": "Kollisionsdomänen können sich über mehrere Router erstrecken, während Broadcastdomänen auf einen einzelnen Switch begrenzt sind."
     },
     "antwort": "B",
-    "erklaerung": "Eine Kollisionsdomäne ist ein Netzwerksegment, in dem Datenpakete kollidieren können, weil Geräte dasselbe physische Medium teilen. Bridges und Switches segmentieren Kollisionsdomänen. Eine Broadcastdomäne definiert den Bereich, in dem Broadcast-Frames weitergeleitet werden, und wird typischerweise durch Router begrenzt."
+    "erklärung": "Eine Kollisionsdomäne ist ein Netzwerksegment, in dem Datenpakete kollidieren können, weil Geräte dasselbe physische Medium teilen. Bridges und Switches segmentieren Kollisionsdomänen. Eine Broadcastdomäne definiert den Bereich, in dem Broadcast-Frames weitergeleitet werden, und wird typischerweise durch Router begrenzt."
   }
 }
 ]
