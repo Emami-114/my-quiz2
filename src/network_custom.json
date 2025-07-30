@@ -2968,6 +2968,255 @@
     "antwort": "A",
     "erklaerung": "Im Ethernet-Frame zeigen Werte von 0x0600 oder höher im EtherType-Feld den Protokolltyp an, während Werte unter 0x0600 die Länge der Nutzlast darstellen."
   }
+},
+{
+  "id": 119,
+  "en": {
+    "question": "What advantage does a stackable switch offer over a non-stackable switch?",
+    "options": {
+      "A": "It cannot be managed as a single unit.",
+      "B": "It offers fewer ports.",
+      "C": "It allows for physical stacking only, without any management benefits.",
+      "D": "It simplifies network management by allowing multiple switches to be managed as a single unit."
+    },
+    "answer": "D",
+    "explanation": "Stackable switches can be interconnected and managed as a single entity, simplifying configuration and maintenance compared to non-stackable switches, which must be managed individually."
+  },
+  "de": {
+    "frage": "Welchen Vorteil bietet ein stapelbarer Switch gegenüber einem nicht stapelbaren Switch?",
+    "optionen": {
+      "A": "Er kann nicht als eine Einheit verwaltet werden.",
+      "B": "Er bietet weniger Ports.",
+      "C": "Er erlaubt nur das physische Stapeln ohne Verwaltungsnutzen.",
+      "D": "Er vereinfacht das Netzwerkmanagement, da mehrere Switches als eine Einheit verwaltet werden können."
+    },
+    "antwort": "D",
+    "erklaerung": "Stapelbare Switches können miteinander verbunden und als eine Einheit verwaltet werden, was die Konfiguration und Wartung im Vergleich zu einzelnen, nicht stapelbaren Switches deutlich vereinfacht."
+  }
+},
+{
+  "id": 120,
+  "en": {
+    "question": "Which type of switch is typically used in a corporate network environment?",
+    "options": {
+      "A": "Unmanaged switch",
+      "B": "Managed switch",
+      "C": "Desktop switch",
+      "D": "SOHO switch"
+    },
+    "answer": "B",
+    "explanation": "Managed switches are commonly used in corporate environments because they offer advanced features such as VLANs, QoS, SNMP monitoring, and traffic control, which are essential for managing large and complex networks."
+  },
+  "de": {
+    "frage": "Welcher Switchtyp wird typischerweise in einer Unternehmensnetzwerkumgebung verwendet?",
+    "optionen": {
+      "A": "Unverwalteter Switch",
+      "B": "Verwalteter Switch",
+      "C": "Desktop-Switch",
+      "D": "SOHO-Switch"
+    },
+    "antwort": "B",
+    "erklaerung": "Verwaltete Switches werden in Unternehmensnetzwerken eingesetzt, da sie erweiterte Funktionen wie VLANs, QoS, SNMP-Überwachung und Verkehrssteuerung bieten, die für das Management großer und komplexer Netzwerke erforderlich sind."
+  }
+},
+{
+  "id": 121,
+  "en": {
+    "question": "What command is used to enter the Global Configuration mode on a Cisco switch?",
+    "options": {
+      "A": "enable",
+      "B": "configure terminal",
+      "C": "interface GigabitEthernet0/1",
+      "D": "do copy running-config startup-config"
+    },
+    "answer": "B",
+    "explanation": "The command `configure terminal` is used to enter Global Configuration mode on a Cisco switch, where you can then make configuration changes such as setting up interfaces, VLANs, and routing protocols."
+  },
+  "de": {
+    "frage": "Welcher Befehl wird verwendet, um den Global Configuration-Modus auf einem Cisco-Switch zu betreten?",
+    "optionen": {
+      "A": "enable",
+      "B": "configure terminal",
+      "C": "interface GigabitEthernet0/1",
+      "D": "do copy running-config startup-config"
+    },
+    "antwort": "B",
+    "erklaerung": "Der Befehl `configure terminal` wird verwendet, um den Global Configuration-Modus auf einem Cisco-Switch zu betreten. In diesem Modus können Konfigurationsänderungen wie das Einrichten von Schnittstellen, VLANs und Routingprotokollen vorgenommen werden."
+  }
+},
+{
+  "id": 122,
+  "en": {
+    "question": "What is the primary benefit of configuring a switch port to \"autonegotiate\" speed and duplex settings?",
+    "options": {
+      "A": "It allows the switch port to automatically adjust to the highest possible speed and duplex mode based on the capabilities of the connected device.",
+      "B": "It restricts the switch port to operate only at the lowest possible speed for compatibility with older devices.",
+      "C": "It manually sets the switch port to operate at a fixed speed and duplex mode, disregarding the capabilities of the connected device.",
+      "D": "It disables the switch port from connecting to devices that do not support gigabit speeds."
+    },
+    "answer": "A",
+    "explanation": "Autonegotiation allows a switch port and the connected device to determine and configure the best possible speed and duplex mode supported by both, ensuring optimal performance and compatibility."
+  },
+  "de": {
+    "frage": "Was ist der Hauptvorteil der Konfiguration eines Switch-Ports auf \"Autonegotiation\" für Geschwindigkeit und Duplex-Einstellungen?",
+    "optionen": {
+      "A": "Der Switch-Port passt sich automatisch an die höchstmögliche Geschwindigkeit und den bestmöglichen Duplex-Modus an, basierend auf den Fähigkeiten des angeschlossenen Geräts.",
+      "B": "Der Switch-Port wird auf die niedrigstmögliche Geschwindigkeit beschränkt, um mit älteren Geräten kompatibel zu sein.",
+      "C": "Der Switch-Port wird manuell auf eine feste Geschwindigkeit und einen festen Duplex-Modus eingestellt, unabhängig von den Fähigkeiten des angeschlossenen Geräts.",
+      "D": "Der Switch-Port wird deaktiviert, wenn das angeschlossene Gerät keine Gigabit-Geschwindigkeit unterstützt."
+    },
+    "antwort": "A",
+    "erklaerung": "Autonegotiation ermöglicht es einem Switch-Port und dem angeschlossenen Gerät, die bestmögliche Geschwindigkeit und den besten Duplex-Modus zu ermitteln und zu konfigurieren, die von beiden unterstützt werden – für optimale Leistung und Kompatibilität."
+  }
+},
+{
+  "id": 123,
+  "en": {
+    "question": "What happens when VLANs are configured on a switch?",
+    "options": {
+      "A": "The switch operates in half-duplex mode.",
+      "B": "The switch can only support legacy network cards.",
+      "C": "The switch divides the network into multiple broadcast domains.",
+      "D": "The switch's performance is significantly reduced."
+    },
+    "answer": "C",
+    "explanation": "When VLANs (Virtual Local Area Networks) are configured on a switch, they logically segment the network into multiple broadcast domains. This improves security and reduces broadcast traffic within each VLAN."
+  },
+  "de": {
+    "frage": "Was passiert, wenn VLANs auf einem Switch konfiguriert werden?",
+    "optionen": {
+      "A": "Der Switch arbeitet im Halbduplex-Modus.",
+      "B": "Der Switch kann nur Legacy-Netzwerkkarten unterstützen.",
+      "C": "Der Switch unterteilt das Netzwerk in mehrere Broadcast-Domänen.",
+      "D": "Die Leistung des Switches wird erheblich reduziert."
+    },
+    "antwort": "C",
+    "erklaerung": "Wenn VLANs (Virtual Local Area Networks) auf einem Switch konfiguriert werden, segmentieren sie das Netzwerk logisch in mehrere Broadcast-Domänen. Das verbessert die Sicherheit und reduziert den Broadcast-Verkehr innerhalb jeder VLAN."
+  }
+},
+{
+  "id": 124,
+  "en": {
+    "question": "A network technician wants to upgrade the company's hub to isolate collision domains from each other and allow for Gigabit Ethernet.\n\nWhich solution would help the technician to accomplish this?",
+    "options": {
+      "A": "Switch",
+      "B": "Network Adapters",
+      "C": "Router",
+      "D": "Hub"
+    },
+    "answer": "A",
+    "explanation": "A switch is the appropriate upgrade from a hub because it can isolate collision domains for each connected device and supports higher speeds like Gigabit Ethernet. Hubs broadcast traffic to all ports and operate at lower speeds, making them inefficient for modern networks."
+  },
+  "de": {
+    "frage": "Ein Netzwerktechniker möchte den Hub des Unternehmens aufrüsten, um Kollisionsdomänen voneinander zu isolieren und Gigabit-Ethernet zu ermöglichen.\n\nWelche Lösung würde dem Techniker dabei helfen?",
+    "optionen": {
+      "A": "Switch",
+      "B": "Netzwerkadapter",
+      "C": "Router",
+      "D": "Hub"
+    },
+    "antwort": "A",
+    "erklaerung": "Ein Switch ist die geeignete Aufrüstung eines Hubs, da er die Kollisionsdomänen für jedes angeschlossene Gerät isolieren kann und höhere Geschwindigkeiten wie Gigabit-Ethernet unterstützt. Hubs senden den gesamten Datenverkehr an alle Ports und arbeiten mit geringerer Geschwindigkeit, was sie für moderne Netzwerke ineffizient macht."
+  }
+},
+{
+  "id": 125,
+  "en": {
+    "question": "At which layer of the OSI model does a hub operate?",
+    "options": {
+      "A": "Application Layer",
+      "B": "Network Layer",
+      "C": "Data Link Layer",
+      "D": "Physical Layer"
+    },
+    "answer": "D",
+    "explanation": "A hub operates at the Physical Layer (Layer 1) of the OSI model. It simply forwards electrical signals to all connected ports without any regard for the content or destination of the data."
+  },
+  "de": {
+    "frage": "Auf welcher Schicht des OSI-Modells arbeitet ein Hub?",
+    "optionen": {
+      "A": "Anwendungsschicht",
+      "B": "Netzwerkschicht",
+      "C": "Sicherungsschicht",
+      "D": "Bitübertragungsschicht"
+    },
+    "antwort": "D",
+    "erklaerung": "Ein Hub arbeitet auf der Bitübertragungsschicht (Schicht 1) des OSI-Modells. Er leitet elektrische Signale einfach an alle angeschlossenen Ports weiter, ohne den Inhalt oder das Ziel der Daten zu berücksichtigen."
+  }
+},
+{
+  "id": 126,
+  "en": {
+    "question": "What is the role of the CSMA/CD protocol in a hub-based Ethernet network?",
+    "options": {
+      "A": "It encrypts data to prevent unauthorized access.",
+      "B": "It assigns IP addresses to devices connected to the hub.",
+      "C": "It manages the timing of data transmissions to avoid collisions.",
+      "D": "It increases the data transmission speed of the hub."
+    },
+    "answer": "C",
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) is used in hub-based Ethernet networks to manage when devices are allowed to transmit on the network. It helps avoid data collisions and manages retransmissions when collisions occur."
+  },
+  "de": {
+    "frage": "Welche Rolle spielt das CSMA/CD-Protokoll in einem Hub-basierten Ethernet-Netzwerk?",
+    "optionen": {
+      "A": "Es verschlüsselt Daten, um unbefugten Zugriff zu verhindern.",
+      "B": "Es weist Geräten, die mit dem Hub verbunden sind, IP-Adressen zu.",
+      "C": "Es steuert das Timing der Datenübertragung, um Kollisionen zu vermeiden.",
+      "D": "Es erhöht die Datenübertragungsgeschwindigkeit des Hubs."
+    },
+    "antwort": "C",
+    "erklaerung": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) wird in Hub-basierten Ethernet-Netzwerken verwendet, um zu steuern, wann Geräte senden dürfen. Es hilft, Datenkollisionen zu vermeiden, und verwaltet die erneute Übertragung bei Kollisionen."
+  }
+},
+{
+  "id": 127,
+  "en": {
+    "question": "A network administrator is tasked with improving the efficiency of a corporate network that consists of two segments: Segment A, which is heavily utilized by data-intensive applications, and Segment B, which is used primarily for light office work.\n\nThe administrator notices that when Segment A is under heavy load, it significantly impacts the performance of Segment B. To address this issue, the administrator is considering installing an Ethernet bridge between the two segments.\n\nWhich of the following outcomes should the network administrator expect after installing an Ethernet bridge between Segment A and Segment B?",
+    "options": {
+      "A": "The Ethernet bridge will increase the bandwidth available to Segment B.",
+      "B": "The Ethernet bridge will prevent traffic from Segment A from impacting the performance of Segment B.",
+      "C": "The Ethernet bridge will combine Segment A and Segment B into a single collision domain.",
+      "D": "The Ethernet bridge will enable Segment A to use IP addresses from Segment B."
+    },
+    "answer": "B",
+    "explanation": "An Ethernet bridge connects two network segments and filters traffic to reduce unnecessary data transmissions between segments. This isolation helps prevent heavy traffic on one segment from affecting the other, improving overall network efficiency."
+  },
+  "de": {
+    "frage": "Ein Netzwerkadministrator soll die Effizienz eines Firmennetzwerks verbessern, das aus zwei Segmenten besteht: Segment A, das stark von datenintensiven Anwendungen genutzt wird, und Segment B, das hauptsächlich für leichte Büroarbeiten verwendet wird.\n\nDer Administrator stellt fest, dass bei hoher Auslastung von Segment A die Leistung von Segment B deutlich beeinträchtigt wird. Um dieses Problem zu lösen, erwägt der Administrator, eine Ethernet-Bridge zwischen den beiden Segmenten zu installieren.\n\nWelche der folgenden Auswirkungen sollte der Netzwerkadministrator nach der Installation einer Ethernet-Bridge zwischen Segment A und Segment B erwarten?",
+    "optionen": {
+      "A": "Die Ethernet-Bridge erhöht die verfügbare Bandbreite für Segment B.",
+      "B": "Die Ethernet-Bridge verhindert, dass der Datenverkehr von Segment A die Leistung von Segment B beeinträchtigt.",
+      "C": "Die Ethernet-Bridge kombiniert Segment A und Segment B zu einer einzigen Kollisionsdomäne.",
+      "D": "Die Ethernet-Bridge ermöglicht Segment A die Nutzung von IP-Adressen aus Segment B."
+    },
+    "antwort": "B",
+    "erklaerung": "Eine Ethernet-Bridge verbindet zwei Netzwerksegmente und filtert den Datenverkehr, um unnötige Übertragungen zwischen den Segmenten zu reduzieren. Diese Isolation hilft, zu verhindern, dass hoher Datenverkehr in einem Segment das andere beeinträchtigt, und verbessert so die Netzwerkeffizienz."
+  }
+},
+{
+  "id": 161,
+  "en": {
+    "question": "What distinguishes a collision domain from a broadcast domain?",
+    "options": {
+      "A": "Collision domains are established by routers, while broadcast domains are established by switches.",
+      "B": "Collision domains are about physically shared media, and their borders are established by bridges and switches.",
+      "C": "Broadcast domains require a layer 2 broadcast address to be established.",
+      "D": "Collision domains can span multiple routers, while broadcast domains are limited to a single switch."
+    },
+    "answer": "B",
+    "explanation": "A collision domain refers to a network segment where data packets can collide because devices share the same physical medium, and bridges and switches segment collision domains. A broadcast domain defines the scope within which broadcast frames are forwarded, typically bounded by routers."
+  },
+  "de": {
+    "frage": "Was unterscheidet eine Kollisionsdomäne von einer Broadcastdomäne?",
+    "optionen": {
+      "A": "Kollisionsdomänen werden von Routern gebildet, während Broadcastdomänen von Switches gebildet werden.",
+      "B": "Kollisionsdomänen beziehen sich auf physisch gemeinsam genutzte Medien, und ihre Grenzen werden durch Bridges und Switches festgelegt.",
+      "C": "Broadcastdomänen erfordern eine Layer-2-Broadcast-Adresse, um gebildet zu werden.",
+      "D": "Kollisionsdomänen können sich über mehrere Router erstrecken, während Broadcastdomänen auf einen einzelnen Switch begrenzt sind."
+    },
+    "antwort": "B",
+    "erklaerung": "Eine Kollisionsdomäne ist ein Netzwerksegment, in dem Datenpakete kollidieren können, weil Geräte dasselbe physische Medium teilen. Bridges und Switches segmentieren Kollisionsdomänen. Eine Broadcastdomäne definiert den Bereich, in dem Broadcast-Frames weitergeleitet werden, und wird typischerweise durch Router begrenzt."
+  }
 }
-
 ]
