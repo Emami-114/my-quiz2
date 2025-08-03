@@ -3289,7 +3289,7 @@
         "C": "PoE",
         "D": "802.1x"
       },
-      "antwort":  "B",
+      "antwort": "B",
       "erklärung": "Der Spanning-Tree-Protokoll verhindert Switch-Schleifen und stellt sicher, dass zwischen jedem zweiten Switch nur ein aktivierter Pfad existiert."
     },
     "en": {
@@ -3350,7 +3350,7 @@
         "C": "Increased number of port states",
         "D": "Outages lasting tens of seconds"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "RSTP improves upon the original 802.1D STP by aggregating multiple states into a single state, leading to faster convergence times."
     }
   },
@@ -3389,7 +3389,7 @@
         "C": "show spanning-tree",
         "D": "view spanning-tree configuration"
       },
-      "antwort":  "C",
+      "antwort": "C",
       "erklärung": "Das Kommando show spanning-tree wird verwendet, um die aktuelle Spanning Tree Protocol-Konfiguration auf einem Cisco-Switch anzuzeigen."
     },
     "en": {
@@ -3475,7 +3475,7 @@
         "C": "To encrypt the data being transmitted to the device",
         "D": "To test the strength of the Ethernet cable"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "The detection phase in a PoE switch identifies whether the connected device is PoE-enabled and determines its power consumption."
     }
   },
@@ -3500,7 +3500,7 @@
         "C": "802.3z and 802.3ab",
         "D": "802.1Q and 802.1p"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "The two IEEE standards, which were initially defined for Power over Ethernet (PoE) and later combined into the 802.3-2018 standard, are 802.3af and 802.3at."
     }
   },
@@ -3525,7 +3525,7 @@
         "C": "To replace wireless connections with wired connections",
         "D": "To increase the cost of network infrastructure"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "The primary purpose of link aggregation/NIC teaming is to combine multiple network connections into a single logical connection."
     }
   },
@@ -3539,7 +3539,7 @@
         "C": "Wenn nur zwei Netzwerk-Interfaces kombiniert werden",
         "D": "Wenn alle physischen Verbindungen in der Aggregation drahtlose Verbindungen sind"
       },
-      "antwort":  "A",
+      "antwort": "A",
       "erklärung": "Link-Aggregation wird als redundant angesehen, wenn das Geschäftsanwendungsprozess von der gesamten Geschwindigkeit des verbundenen Links und einer Port-Fehler abhängt."
     },
     "en": {
@@ -3600,7 +3600,7 @@
         "C": "To support a data payload of exactly 1518 bytes",
         "D": "To eliminate the need for error checking"
       },
-      "answer":  "A",
+      "answer": "A",
       "explanation": "Jumbo frames are used to increase the maximum transmission unit (MTU) for efficiency."
     }
   },
@@ -3666,7 +3666,7 @@
         "C": "9018 bytes",
         "D": "18 bytes"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "The maximum data payload in a standard Ethernet frame is 1500 bytes. The total frame size (including header) is 1518 bytes. Jumbo frames can increase the payload to up to 9000 bytes."
     }
   },
@@ -3705,7 +3705,7 @@
         "C": "Deaktivieren Sie das Spanning Tree Protocol.",
         "D": "Fügen Sie mehr Switches zum Netzwerk hinzu."
       },
-      "antwort":  "B",
+      "antwort": "B",
       "erklärung": "Wenn ein Port durch den Spanning Tree Protocol (STP) geschlossen wird, sollte man physische Ports überprüfen, um Schleifenverbindungen zu identifizieren. STP schließt Ports automatisch, um Schleifen zu vermeiden, aber physische Fehler wie doppelte Kabelverbindungen können die Ursache sein."
     },
     "en": {
@@ -3716,7 +3716,7 @@
         "C": "Disable the spanning tree protocol.",
         "D": "Add more switches to the network."
       },
-      "answer":"B",
+      "answer": "B",
       "explanation": "If a port is shut down by the Spanning Tree Protocol (STP) due to a loop, physical ports should be inspected to identify looped connections. STP blocks ports to prevent loops, but physical misconfigurations like duplicate cable connections can cause the issue."
     }
   },
@@ -3766,7 +3766,7 @@
         "C": "It delivers power over all four pairs of wires in the cable.",
         "D": "It is only compatible with the original PoE standard."
       },
-      "answer":  "C",
+      "answer": "C",
       "explanation": "The 'four-pair' mode in Power Over Ethernet (PoE) technology means that power is delivered over all four pairs of wires in the cable. This allows for higher power delivery capacity, which is essential for devices like IP cameras or VoIP phones. The original PoE standard (802.3af) used only two pairs, while the 'four-pair' mode (e.g., in the 802.3bt standard) was developed for higher power requirements."
     }
   },
@@ -3780,7 +3780,7 @@
         "C": "Zur Identifizierung der MAC-Adressen, die einem bestimmten Switch-Port zugeordnet sind",
         "D": "Zum Zurücksetzen der MAC-Adressentabelle auf dem Switch"
       },
-      "antwort":  "C",
+      "antwort": "C",
       "erklärung": "Der Befehl 'show mac address-table' wird verwendet, um die Zuordnung von MAC-Adressen zu bestimmten Switch-Ports anzuzeigen. Dies hilft bei der Fehlerbehebung, indem man prüfen kann, ob Geräte korrekt an Ports angeschlossen sind und ob es ungewöhnliche MAC-Adressen gibt, die auf Schleifen oder Anschlussprobleme hinweisen."
     },
     "en": {
@@ -3791,7 +3791,7 @@
         "C": "To identify the MAC addresses associated with a particular switch port",
         "D": "To reset the MAC address table on the switch"
       },
-      "answer":  "C",
+      "answer": "C",
       "explanation": "The 'show mac address-table' command is primarily used to identify the MAC addresses associated with specific switch ports. This helps in troubleshooting by verifying if devices are correctly connected to ports and detecting any unusual MAC addresses that may indicate loops or connection issues."
     }
   },
@@ -3829,7 +3829,7 @@
         "C": "Der Port wird durch den Spanning-Tree-Algorithmus blockiert.",
         "D": "Ein Fehler wurde erkannt."
       },
-      "antwort":  "D",
+      "antwort": "D",
       "erklärung": "Ein blinkendes gelbes LED auf einem Switch-Port deutet darauf hin, dass der Port durch den Spanning-Tree-Algorithmus blockiert ist. Dies geschieht, um Schleifen im Netzwerk zu verhindern. Ein gelbes LED kann auch auf eine Warnung hinweisen, z. B. bei ungewöhnlichem Datenverkehr oder temporären Problemen. Ein rotes LED würde typischerweise auf einen Fehler hinweisen, während ein grünes LED auf eine normale Verbindung deutet."
     },
     "en": {
@@ -3940,7 +3940,7 @@
         "C": "The switch's current operational status",
         "D": "The list of errors logged by the switch"
       },
-      "answer":  "B",
+      "answer": "B",
       "explanation": "The 'show startup-config' command displays the saved configuration that the switch will use upon the next reboot. This configuration is stored in NVRAM and is loaded at each boot. The 'running-config' (shown by 'show running-config') is the current configuration stored in RAM. The other options refer to different commands (e.g., 'show version' for operational status or 'show logging' for error messages)."
     }
   },
@@ -4006,10 +4006,10 @@
         "E": "Schädliche Netzwerkkabel automatisch reparieren."
       },
       "antwort": [
-      "B",
-      "D"
-    ],
-    "erklärung": "Uninterruptible Power Supplies (UPSs) ermöglichen folgende Aktionen während Stromanomalien:\n\n- B (Switch to a secondary power source): Ein UPS nutzt eine Batterie als sekundäre Stromquelle, um den Betrieb zu gewährleisten, wenn die Hauptstromversorgung ausfällt.\n- D (Shut down the system gracefully): Ein UPS ermöglicht einen geplanten Herunterfahren des Systems, um Datenverlust und Hardware-Schäden zu vermeiden.\n\nDie anderen Optionen sind nicht Funktionen eines UPSs: A ist falsch, da ein UPS keine dauerhafte Stromquelle ersetzt; C ist falsch, da ein UPS keine Leistungserhöhung der Server bietet; E ist falsch, da ein UPS keine Netzwerkkabel repariert."
+        "B",
+        "D"
+      ],
+      "erklärung": "Uninterruptible Power Supplies (UPSs) ermöglichen folgende Aktionen während Stromanomalien:\n\n- B (Switch to a secondary power source): Ein UPS nutzt eine Batterie als sekundäre Stromquelle, um den Betrieb zu gewährleisten, wenn die Hauptstromversorgung ausfällt.\n- D (Shut down the system gracefully): Ein UPS ermöglicht einen geplanten Herunterfahren des Systems, um Datenverlust und Hardware-Schäden zu vermeiden.\n\nDie anderen Optionen sind nicht Funktionen eines UPSs: A ist falsch, da ein UPS keine dauerhafte Stromquelle ersetzt; C ist falsch, da ein UPS keine Leistungserhöhung der Server bietet; E ist falsch, da ein UPS keine Netzwerkkabel repariert."
     },
     "en": {
       "frage": "What actions does the use of Uninterruptible Power Supplies (UPSs) allow for during power anomalies in enterprise sites? (Select two.)",
@@ -4038,7 +4038,7 @@
         "D": "Installieren Sie zusätzliche Kühlungssysteme für den Switch."
       },
       "antwort": "B",
-    "erklärung": "Wenn ein Netzwerkswitch als mögliche Ursache von Netzwerkproblemen vermutet wird, ist die Analyse der Netzwerktopologie der zentrale Schritt. Dies hilft, betroffene Benutzer und Geräte zu identifizieren und die Auswirkungen des Problems einzuschränken. Die anderen Optionen sind nicht direkt relevant: A ist eine radikale Maßnahme, die nicht standardmäßig zur Diagnose gehört; C bezieht sich auf eine Bandbreitenproblematik, nicht auf eine Ursache des Problems; D ist eine Wartungsmaßnahme und nicht direkt zur Ursachenanalyse. Daher ist B die korrekte Antwort."
+      "erklärung": "Wenn ein Netzwerkswitch als mögliche Ursache von Netzwerkproblemen vermutet wird, ist die Analyse der Netzwerktopologie der zentrale Schritt. Dies hilft, betroffene Benutzer und Geräte zu identifizieren und die Auswirkungen des Problems einzuschränken. Die anderen Optionen sind nicht direkt relevant: A ist eine radikale Maßnahme, die nicht standardmäßig zur Diagnose gehört; C bezieht sich auf eine Bandbreitenproblematik, nicht auf eine Ursache des Problems; D ist eine Wartungsmaßnahme und nicht direkt zur Ursachenanalyse. Daher ist B die korrekte Antwort."
     },
     "en": {
       "frage": "Which of the following should you consider when suspecting a network switch is the cause of network issues?",
@@ -4050,6 +4050,256 @@
       },
       "answer": "B",
       "explanation": "When suspecting a network switch as the potential cause of network issues, analyzing the network topology is the key step. This helps identify affected users and devices and narrow down the impact of the problem. The other options are not directly relevant: A is a drastic measure that is not standard for diagnosis; C relates to a bandwidth issue, not a root cause; D is a maintenance action and not directly related to root cause analysis. Therefore, B is the correct answer."
-    }  
+    }
+  },
+  {
+    "id": 159,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen Unicast- und Broadcast-Adressierung?",
+      "optionen": {
+        "A": "Unicast-Adressierung sendet Daten an einen einzelnen Empfänger, während Broadcast-Adressierung Daten an alle Empfänger innerhalb eines Netzwerks sendet.",
+        "B": "Unicast-Adressierung sendet Daten an alle Empfänger innerhalb eines Netzwerks, während Broadcast-Adressierung Daten an einen einzelnen Empfänger sendet.",
+        "C": "Unicast-Adressierung erfordert eine besondere Konfiguration auf Routern, während Broadcast-Adressierung dies nicht tut.",
+        "D": "Unicast-Adressierung verwendet die MAC-Adresse ff:ff:ff:ff:ff:ff, während Broadcast-Adressierung individuelle MAC-Adressen verwendet."
+      },
+      "antwort": "A",
+      "erklärung": "Unicast-Adressierung bezeichnet die Übertragung von Daten an einen einzelnen Zielrecipienten, während Broadcast-Adressierung Daten an alle Geräte in einem Netzwerk sendet. Dies ist der grundlegende Unterschied zwischen den beiden Adressierungsarten."
+    },
+    "en": {
+      "question": "What is the primary difference between unicast and broadcast addressing?",
+      "options": {
+        "A": "Unicast addressing sends data to a single recipient, while broadcast addressing sends data to all recipients within a network.",
+        "B": "Unicast addressing sends data to all recipients within a network, while broadcast addressing sends data to a single recipient.",
+        "C": "Unicast addressing requires a special configuration on routers, while broadcast addressing does not.",
+        "D": "Unicast addressing uses the MAC address ff:ff:ff:ff:ff:ff, while broadcast addressing uses individual MAC addresses."
+      },
+      "answer": "A",
+      "explanation": "Unicast addressing refers to sending data to a single recipient, whereas broadcast addressing sends data to all devices within a network. This is the fundamental distinction between the two addressing types."
+    }
+  },
+  {
+    "id": 160,
+    "de": {
+      "frage": "In welcher Situation würde ein Host Broadcast-Adressierung verwenden?",
+      "optionen": {
+        "A": "Beim Senden eines Pakets an einen spezifischen Host außerhalb seines lokalen Netzwerks",
+        "B": "Beim Aktualisieren seiner eigenen IP-Adresse",
+        "C": "Beim Versuch, alle Hosts in seinem lokalen Netzwerk oder Subnetz zu entdecken",
+        "D": "Beim Aufbau einer sicheren Verbindung mit einem einzelnen Empfänger"
+      },
+      "antwort": "C",
+      "erklärung": "Broadcast-Adressierung wird verwendet, um Geräte in der lokalen Netzwerkumgebung zu finden. Der Host sendet ein Broadcast-Signal an die Adresse ff:ff:ff:ff:ff:ff, das von allen Geräten in der gleichen Subnetzmaske empfangen wird."
+    },
+    "en": {
+      "question": "In which scenario would a host use broadcast addressing?",
+      "options": {
+        "A": "When sending a packet to a specific host outside its local network",
+        "B": "When updating its own IP address",
+        "C": "When attempting to discover all hosts within its local network or subnet",
+        "D": "When establishing a secure connection with a single recipient"
+      },
+      "answer": "C",
+      "explanation": "Broadcast addressing is used to discover devices within the local network. The host sends a broadcast signal to the address ff:ff:ff:ff:ff:ff, which is received by all devices in the same subnet."
+    }
+  },
+  {
+    "id": 161,
+    "de": {
+      "frage": "Welche der folgenden Optionen ermöglicht es, dass dieselbe IP-Adresse mehreren Schnittstellen zugewiesen wird?",
+      "optionen": {
+        "A": "Unicast",
+        "B": "Multicast",
+        "C": "Broadcast",
+        "D": "Anycast"
+      },
+      "antwort": "D",
+      "erklärung": "Anycast ist eine IP-Adressierungsform, bei der dieselbe IP-Adresse mehreren Schnittstellen zugewiesen werden kann. Diese Technik wird verwendet, um Daten an den nächstgelegenen oder besten Empfänger zu senden. Unicast adressiert ein einzelnes Gerät, Multicast adressiert eine Gruppe, und Broadcast adressiert alle Geräte in einem Netzwerk."
+    },
+    "en": {
+      "question": "Which of the following allows the same IP address to be assigned to multiple interfaces?",
+      "options": {
+        "A": "Unicast",
+        "B": "Multicast",
+        "C": "Broadcast",
+        "D": "Anycast"
+      },
+      "answer": "D",
+      "explanation": "Anycast is an IP addressing method that allows the same IP address to be assigned to multiple interfaces. It is used to route traffic to the nearest or best recipient. Unicast targets a single device, Multicast targets a group, and Broadcast targets all devices in a network."
+    }
+  },
+  {
+    "id": 162,
+    "de": {
+      "frage": "Welche Art von Adresse ist die IP-Adresse 232.111.255.250?",
+      "optionen": {
+        "A": "Unicast",
+        "B": "Multicast",
+        "C": "Broadcast",
+        "D": "Private"
+      },
+      "antwort": "B",
+      "erklärung": "Die IP-Adresse 232.111.255.250 gehört zum Multicast-Adressbereich (224.0.0.0 – 239.255.255.255). Multicast-Adressen werden verwendet, um Daten an mehrere Empfänger gleichzeitig zu senden. Broadcast-Adressen sind nur die Adresse 255.255.255.255, und private Adressen sind in den Bereichen 10.0.0.0/8, 172.16.0.0/12 oder 192.168.0.0/16 reserviert."
+    },
+    "en": {
+      "question": "What type of address is the IP address 232.111.255.250?",
+      "options": {
+        "A": "Unicast",
+        "B": "Multicast",
+        "C": "Broadcast",
+        "D": "Private"
+      },
+      "answer": "B",
+      "explanation": "The IP address 232.111.255.250 falls within the multicast address range (224.0.0.0 – 239.255.255.255). Multicast addresses are used to send data to multiple recipients simultaneously. Broadcast addresses are only the address 255.255.255.255, and private addresses are reserved in the ranges 10.0.0.0/8, 172.16.0.0/12, or 192.168.0.0/16."
+    }
+  },
+  {
+    "id": 163,
+    "de": {
+      "frage": "Welche Funktion hat das Feld 'Protocol' im IPv4-Header?",
+      "optionen": {
+        "A": "Gibt die Version des Internetprotokolls an",
+        "B": "Gibt den Typ der im Payload verpackten Daten an",
+        "C": "Gibt die Größe des Headers an",
+        "D": "Gibt die Gesamtkenngröße des Pakets an"
+      },
+      "antwort": "B",
+      "erklärung": "Das 'Protocol'-Feld im IPv4-Header gibt an, welcher Transportprotokolltyp (z. B. TCP, UDP) die Daten im Payload verwendet. Es hilft dem Empfänger, die Daten mit dem richtigen Protokoll zu verarbeiten."
+    },
+    "en": {
+      "question": "What is the function of the Protocol field in the IPv4 header?",
+      "options": {
+        "A": "Indicates the version of the Internet Protocol in use",
+        "B": "Specifies the type of data encapsulated in the payload",
+        "C": "Indicates the size of the header",
+        "D": "Specifies the total packet size"
+      },
+      "answer": "B",
+      "explanation": "The 'Protocol' field in the IPv4 header specifies the type of transport protocol (e.g., TCP, UDP) used to encapsulate the data in the payload. This allows the receiving host to process the data with the correct protocol."
+    }
+  },
+  {
+    "id": 164,
+    "de": {
+      "frage": "Welche ist die maximale theoretische Größe eines IPv4-Pakets?",
+      "optionen": {
+        "A": "1.500 Byte",
+        "B": "65.535 Byte",
+        "C": "32 Bit",
+        "D": "1.500 Bit"
+      },
+      "antwort": "B",
+      "erklärung": "Die maximale theoretische Größe eines IPv4-Pakets beträgt 65.535 Byte, da das Feld 'Total Length' im IPv4-Header 16 Bit umfasst und somit bis zu 65.535 Byte darstellen kann. Die übliche MTU (Maximum Transmission Unit) für Ethernet ist 1.500 Byte, aber der theoretische Grenzwert ist höher."
+    },
+    "en": {
+      "question": "What is the maximum theoretical size of an IPv4 packet?",
+      "options": {
+        "A": "1,500 bytes",
+        "B": "65,535 bytes",
+        "C": "32 bits",
+        "D": "1,500 bits"
+      },
+      "answer": "B",
+      "explanation": "The maximum theoretical size of an IPv4 packet is 65,535 bytes, as the 'Total Length' field in the IPv4 header is 16 bits long and can represent values up to 65,535 bytes. While the typical MTU for Ethernet is 1,500 bytes, the theoretical maximum is higher."
+    }
+  },
+  {
+    "id": 165,
+    "de": {
+      "frage": "Routingdaten zwischen Computern in einem Netzwerk erfordert mehrere Abbildungen zwischen verschiedenen Adressen.\n\nWelche der folgenden Aussagen ist wahr?",
+      "optionen": {
+        "A": "Hosts verwenden ARP, um bekannte IP-Adressen in MAC-Adressen zu auflösen.",
+        "B": "Routers verwenden DNS, um die MAC-Adressen von disklosen Workstations in IP-Adressen zu auflösen, basierend auf der Information in anderen Routern' Routingtabellen.",
+        "C": "Disklose Workstations verwenden ARP, um einen Server zu fragen, um eine IP-Adresse zu erhalten.",
+        "D": "ICMP lässt Router den allgemeinen Netzwerkbroadcast umgehen, indem es eine dynamische Tabelle von IP-zu-MAC-Adresszuordnungen bereitstellt."
+      },
+      "antwort": "A",
+      "erklärung": "ARP (Address Resolution Protocol) wird verwendet, um eine bekannte IP-Adresse in die entsprechende MAC-Adresse zu übersetzen, um direkte Kommunikation im lokalen Netzwerk zu ermöglichen. Die anderen Optionen sind falsch: DNS wird nicht für MAC-Adressen verwendet, disklose Workstations erhalten ihre IP-Adressen über BOOTP oder DHCP, und ICMP ist nicht für die Bereitstellung von IP-zu-MAC-Zuordnungen zuständig."
+    },
+    "en": {
+      "question": "Routing data between computers on a network requires several mappings between different addresses.\n\nWhich of the following statements is true?",
+      "options": {
+        "A": "Hosts use ARP to resolve known IP addresses into MAC addresses.",
+        "B": "Routers use DNS to resolve MAC addresses of diskless workstations into IP addresses based on the information contained in other routers' routing tables.",
+        "C": "Diskless workstations use ARP to ask a server for an IP address.",
+        "D": "ICMP lets routers bypass the general network broadcast by providing a dynamic table of IP-to-MAC address mappings."
+      },
+      "answer": "A",
+      "explanation": "ARP (Address Resolution Protocol) is used to translate a known IP address into the corresponding MAC address to enable direct communication within a local network. The other options are incorrect: DNS is not used for MAC addresses, diskless workstations obtain IP addresses via BOOTP or DHCP, and ICMP is not responsible for providing IP-to-MAC mappings."
+    }
+  },
+  {
+    "id": 166,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Verwendung von ARP-Nachrichten in der Netzwerk-Kommunikation korrekt?",
+      "optionen": {
+        "A": "ARP-Nachrichten werden sowohl mit Ethernet- als auch mit Wi-Fi-Netzwerken verwendet, um IP-Adressen in MAC-Adressen zu auflösen.",
+        "B": "ARP-Nachrichten werden ausschließlich mit Ethernet-Netzwerken verwendet, um IPv4-Adressen in Hardware-MAC-Adressen zu auflösen.",
+        "C": "ARP-Nachrichten können mit jedem Netzwerktyp, einschließlich Ethernet, Wi-Fi und Bluetooth, verwendet werden, um Domainnamen in IP-Adressen zu auflösen.",
+        "D": "ARP ist ein Protokoll, das verwendet wird, um Datenpakete vor der Übertragung über Ethernet-Netzwerke zu verschlüsseln."
+      },
+      "antwort": "B",
+      "erklärung": "ARP (Address Resolution Protocol) wird verwendet, um IP-Adressen in die entsprechenden MAC-Adressen zu übersetzen, um direkte Kommunikation im lokalen Netzwerk zu ermöglichen. Es funktioniert sowohl in Ethernet- als auch in Wi-Fi-Netzwerken, da diese beide auf der Datenlink-Schicht (Layer 2) basieren. Option B ist falsch, da ARP nicht ausschließlich für Ethernet reserviert ist. Option C ist falsch, da ARP keine Domainnamen auflöst (dies erfolgt über DNS). Option D ist falsch, da ARP keine Verschlüsselung von Datenpaketen bereitstellt."
+    },
+    "en": {
+      "question": "Which of the following statements accurately describes the use of ARP messaging in network communication?",
+      "options": {
+        "A": "ARP messages are used with both Ethernet and Wi-Fi networks to resolve IP addresses to MAC addresses.",
+        "B": "ARP messages are exclusively used with Ethernet networks to resolve IPv4 addresses to hardware MAC addresses.",
+        "C": "ARP messages can be used with any type of network, including Ethernet, Wi-Fi, and Bluetooth, to resolve domain names to IP addresses.",
+        "D": "ARP is a protocol used to encrypt data packets before they are sent over Ethernet networks."
+      },
+      "answer": "B",
+      "explanation": "ARP (Address Resolution Protocol) is used to translate IP addresses into their corresponding MAC addresses to enable direct communication within a local network. It works with both Ethernet and Wi-Fi networks, as these operate at the data link layer (Layer 2). Option B is incorrect because ARP is not exclusive to Ethernet. Option C is incorrect because ARP does not resolve domain names (this is handled by DNS). Option D is incorrect because ARP does not encrypt data packets."
+    }
+  },
+  {
+    "id": 167,
+    "de": {
+      "frage": "Welche Rolle spielt ein Router in einem Netzwerk mit mehreren Subnetzen?",
+      "optionen": {
+        "A": "Er leitet Frames innerhalb eines Subnetzes weiter.",
+        "B": "Er verschlüsselt Daten für alle Subnetze.",
+        "C": "Er leitet Pakete zwischen Subnetzen weiter.",
+        "D": "Er weist Geräten MAC-Adressen zu."
+      },
+      "antwort": "C",
+      "erklärung": "Ein Router spielt in einem Netzwerk mit mehreren Subnetzen die Rolle, Pakete zwischen diesen Subnetzen weiterzuleiten. Dabei nutzt er Routing-Tabellen, um den besten Pfad für die Datenübertragung zu bestimmen. Switches (Layer 2) leiten Frames innerhalb eines Subnetzes, Verschlüsselung erfolgt durch andere Protokolle (z. B. TLS/SSL), und MAC-Adressen werden von Switches oder DHCP-Servern vergeben."
+    },
+    "en": {
+      "question": "What role does a router play in a network with multiple subnets?",
+      "options": {
+        "A": "It forwards frames within a subnet.",
+        "B": "It encrypts data for all subnets.",
+        "C": "It forwards packets between subnets.",
+        "D": "It assigns MAC addresses to devices."
+      },
+      "answer": "C",
+      "explanation": "A router's primary role in a multi-subnet network is to forward packets between subnets using routing tables to determine the optimal path. Switches handle frame forwarding within a subnet, encryption is managed by other protocols (e.g., TLS/SSL), and MAC addresses are assigned by switches or DHCP servers."
+    }
+  },
+  {
+    "id": 168,
+    "de": {
+      "frage": "Was ist die primäre Funktion der Weiterleitung im Layer 3 eines Netzwerks?",
+      "optionen": {
+        "A": "Das Weiterleiten von Frames basierend auf MAC-Adressen",
+        "B": "Das Routing von Paketen basierend auf IP-Adressen",
+        "C": "Die Verschlüsselung von Daten für sichere Übertragung",
+        "D": "Die Komprimierung von Daten, um Bandbreite zu sparen"
+      },
+      "antwort": "B",
+      "erklärung": "Die Weiterleitung im Layer 3 (Network Layer) erfolgt basierend auf IP-Adressen, um Pakete zwischen verschiedenen Netzwerken oder Subnetzen zu routen. Layer 2 (Data Link Layer) verwendet MAC-Adressen für das Weiterleiten von Frames, Verschlüsselung und Komprimierung sind Funktionen von höheren Schichten (z. B. Transport oder Anwendungsschicht)."
+    },
+    "en": {
+      "question": "What is the primary function of forwarding at Layer 3 in a network?",
+      "options": {
+        "A": "Forwarding frames based on MAC addresses",
+        "B": "Routing packets based on IP addresses",
+        "C": "Encrypting data for secure transmission",
+        "D": "Compressing data to save bandwidth"
+      },
+      "answer": "B",
+      "explanation": "Forwarding at Layer 3 (Network Layer) is primarily based on IP addresses to route packets between different networks or subnets. Layer 2 (Data Link Layer) uses MAC addresses for frame forwarding, while encryption and compression are functions of higher layers (e.g., Transport or Application layer)."
+    }
   }
 ]
