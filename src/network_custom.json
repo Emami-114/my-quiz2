@@ -4303,525 +4303,944 @@
     }
   },
   {
-  "id": 169,
-  "de": {
-    "frage": "Sie richten einen neuen Switch für ein kleines Büro ein. Der Switch soll verschiedene Geräte – darunter Computer, Drucker und einen Router – verbinden. Aus Sicherheitsgründen möchten Sie an den Ports, die mit Computern verbunden sind, Port Security aktivieren.\n\nWelcher der folgenden Befehle aktiviert Port Security beispielsweise an Port GigabitEthernet 0/1?",
-    "optionen": {
-      "A": "switchport mode access",
-      "B": "switchport port-security",
-      "C": "interface GigabitEthernet 0/1",
-      "D": "switchport mode trunk"
+    "id": 169,
+    "de": {
+      "frage": "Sie richten einen neuen Switch für ein kleines Büro ein. Der Switch soll verschiedene Geräte – darunter Computer, Drucker und einen Router – verbinden. Aus Sicherheitsgründen möchten Sie an den Ports, die mit Computern verbunden sind, Port Security aktivieren.\n\nWelcher der folgenden Befehle aktiviert Port Security beispielsweise an Port GigabitEthernet 0/1?",
+      "optionen": {
+        "A": "switchport mode access",
+        "B": "switchport port-security",
+        "C": "interface GigabitEthernet 0/1",
+        "D": "switchport mode trunk"
+      },
+      "antwort": "B",
+      "erklärung": "Port Security wird auf einer Schnittstelle eingeschaltet, nachdem Sie in den Interface-Konfigurationsmodus gewechselt sind. Der Befehl switchport port-security aktiviert die Funktion auf dem aktuellen Interface."
     },
-    "antwort": "B",
-    "erklärung": "Port Security wird auf einer Schnittstelle eingeschaltet, nachdem Sie in den Interface-Konfigurationsmodus gewechselt sind. Der Befehl switchport port-security aktiviert die Funktion auf dem aktuellen Interface."
+    "en": {
+      "question": "You are configuring a new switch for a small office. The switch needs to connect to various devices, including computers, printers, and a router. For security reasons, you decide to enable port security on the ports connected to computers.\n\nWhich of the following commands should you use to enable port security on, for example, port GigabitEthernet 0/1?",
+      "options": {
+        "A": "switchport mode access",
+        "B": "switchport port-security",
+        "C": "interface GigabitEthernet 0/1",
+        "D": "switchport mode trunk"
+      },
+      "answer": "B",
+      "explanation": "After entering interface-configuration mode, the switchport port-security command turns on Port Security for that interface."
+    }
   },
-  "en": {
-    "question": "You are configuring a new switch for a small office. The switch needs to connect to various devices, including computers, printers, and a router. For security reasons, you decide to enable port security on the ports connected to computers.\n\nWhich of the following commands should you use to enable port security on, for example, port GigabitEthernet 0/1?",
-    "options": {
-      "A": "switchport mode access",
-      "B": "switchport port-security",
-      "C": "interface GigabitEthernet 0/1",
-      "D": "switchport mode trunk"
+  {
+    "id": 170,
+    "de": {
+      "frage": "Wie verarbeitet ein Hub eine Unicast-Übertragung?",
+      "optionen": {
+        "A": "Er sendet die Übertragung direkt an die Zieladresse, ohne zu broadcasten.",
+        "B": "Er verwirft die Übertragung, wenn er die Zieladresse nicht erkennt.",
+        "C": "Er broadcastet die Übertragung an alle angeschlossenen Geräte.",
+        "D": "Er verschlüsselt die Übertragung, bevor er sie an das Ziel sendet."
+      },
+      "antwort": "C",
+      "erklärung": "Ein Hub arbeitet auf OSI-Layer 1 und besitzt keinerlei Intelligenz zur Adressauswertung. Er wiederholt jedes eingehende Signal auf allen anderen Ports. Dadurch wird selbst eine Unicast-Übertragung an alle angeschlossenen Geräte gesendet."
     },
-    "answer": "B",
-    "explanation": "After entering interface-configuration mode, the switchport port-security command turns on Port Security for that interface."
-  }
-},
-{
-  "id": 170,
-  "de": {
-    "frage": "Wie verarbeitet ein Hub eine Unicast-Übertragung?",
-    "optionen": {
-      "A": "Er sendet die Übertragung direkt an die Zieladresse, ohne zu broadcasten.",
-      "B": "Er verwirft die Übertragung, wenn er die Zieladresse nicht erkennt.",
-      "C": "Er broadcastet die Übertragung an alle angeschlossenen Geräte.",
-      "D": "Er verschlüsselt die Übertragung, bevor er sie an das Ziel sendet."
-    },
-    "antwort": "C",
-    "erklärung": "Ein Hub arbeitet auf OSI-Layer 1 und besitzt keinerlei Intelligenz zur Adressauswertung. Er wiederholt jedes eingehende Signal auf allen anderen Ports. Dadurch wird selbst eine Unicast-Übertragung an alle angeschlossenen Geräte gesendet."
+    "en": {
+      "question": "How does a hub handle a unicast transmission?",
+      "options": {
+        "A": "It sends the transmission directly to the destination address without broadcasting.",
+        "B": "It discards the transmission if it does not recognize the destination address.",
+        "C": "It broadcasts the transmission to all connected devices.",
+        "D": "It encrypts the transmission before sending it to the destination."
+      },
+      "answer": "C",
+      "explanation": "A hub operates at OSI Layer 1 and has no intelligence to inspect destination addresses. It simply repeats any incoming signal out every other port, so even a unicast transmission is broadcast to all connected devices."
+    }
   },
-  "en": {
-    "question": "How does a hub handle a unicast transmission?",
-    "options": {
-      "A": "It sends the transmission directly to the destination address without broadcasting.",
-      "B": "It discards the transmission if it does not recognize the destination address.",
-      "C": "It broadcasts the transmission to all connected devices.",
-      "D": "It encrypts the transmission before sending it to the destination."
+  {
+    "id": 171,
+    "de": {
+      "frage": "Wie wird die Höhe eines Racks gemessen?",
+      "optionen": {
+        "A": "In Zoll",
+        "B": "In Zentimetern",
+        "C": "In \"U\"-Einheiten",
+        "D": "In Metern"
+      },
+      "antwort": "C",
+      "erklärung": "Die Höhe von IT- und Server-Racks wird üblicherweise in Rack Units (U) angegeben. Eine Rack Unit entspricht 1,75 Zoll (44,45 mm)."
     },
-    "answer": "C",
-    "explanation": "A hub operates at OSI Layer 1 and has no intelligence to inspect destination addresses. It simply repeats any incoming signal out every other port, so even a unicast transmission is broadcast to all connected devices."
-  }
-},
-{
-  "id": 171,
-  "de": {
-    "frage": "Wie wird die Höhe eines Racks gemessen?",
-    "optionen": {
-      "A": "In Zoll",
-      "B": "In Zentimetern",
-      "C": "In \"U\"-Einheiten",
-      "D": "In Metern"
-    },
-    "antwort": "C",
-    "erklärung": "Die Höhe von IT- und Server-Racks wird üblicherweise in Rack Units (U) angegeben. Eine Rack Unit entspricht 1,75 Zoll (44,45 mm)."
+    "en": {
+      "question": "How is rack height measured?",
+      "options": {
+        "A": "In inches",
+        "B": "In centimeters",
+        "C": "In \"U\" units",
+        "D": "In meters"
+      },
+      "answer": "C",
+      "explanation": "The height of IT and server racks is commonly specified in rack units (U). One rack unit equals 1.75 in (44.45 mm)."
+    }
   },
-  "en": {
-    "question": "How is rack height measured?",
-    "options": {
-      "A": "In inches",
-      "B": "In centimeters",
-      "C": "In \"U\" units",
-      "D": "In meters"
+  {
+    "id": 172,
+    "de": {
+      "frage": "Welche Schritte sollten Sie zuerst unternehmen, wenn Sie Überhitzungsprobleme bei Netzwerkgeräten beheben? (Wählen Sie zwei.)",
+      "optionen": {
+        "A": "Die Netzwerklast verringern",
+        "B": "Die IP-Adresse der Geräte ändern",
+        "C": "Für gute Luftzirkulation an Ein- und Auslässen sorgen",
+        "D": "Zusätzlichen Arbeitsspeicher in die Geräte einbauen",
+        "E": "Die Geräte von direktem Sonnenlicht fernhalten"
+      },
+      "antwort": [
+        "C",
+        "E"
+      ],
+      "erklärung": "Die wichtigsten ersten Maßnahmen gegen Überhitzung sind eine gute Luftzirkulation sicherzustellen und die Geräte vor direkter Sonneneinstrahlung zu schützen."
     },
-    "answer": "C",
-    "explanation": "The height of IT and server racks is commonly specified in rack units (U). One rack unit equals 1.75 in (44.45 mm)."
-  }
-},
-{
-  "id": 172,
-  "de": {
-    "frage": "Welche Schritte sollten Sie zuerst unternehmen, wenn Sie Überhitzungsprobleme bei Netzwerkgeräten beheben? (Wählen Sie zwei.)",
-    "optionen": {
-      "A": "Die Netzwerklast verringern",
-      "B": "Die IP-Adresse der Geräte ändern",
-      "C": "Für gute Luftzirkulation an Ein- und Auslässen sorgen",
-      "D": "Zusätzlichen Arbeitsspeicher in die Geräte einbauen",
-      "E": "Die Geräte von direktem Sonnenlicht fernhalten"
-    },
-    "antwort": ["C", "E"],
-    "erklärung": "Die wichtigsten ersten Maßnahmen gegen Überhitzung sind eine gute Luftzirkulation sicherzustellen und die Geräte vor direkter Sonneneinstrahlung zu schützen."
+    "en": {
+      "question": "What steps should you take first when troubleshooting overheating issues with network devices? (Select two.)",
+      "options": {
+        "A": "Decrease the network load",
+        "B": "Change the IP address of the devices",
+        "C": "Ensure good airflow around intake and outlet vents",
+        "D": "Install additional RAM in the devices",
+        "E": "Keep the devices away from direct sunlight"
+      },
+      "answer": [
+        "C",
+        "E"
+      ],
+      "explanation": "The first steps to address overheating are to ensure adequate airflow at intake and exhaust vents and to keep devices out of direct sunlight."
+    }
   },
-  "en": {
-    "question": "What steps should you take first when troubleshooting overheating issues with network devices? (Select two.)",
-    "options": {
-      "A": "Decrease the network load",
-      "B": "Change the IP address of the devices",
-      "C": "Ensure good airflow around intake and outlet vents",
-      "D": "Install additional RAM in the devices",
-      "E": "Keep the devices away from direct sunlight"
+  {
+    "id": 173,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Funktion der Sitzungsschicht (Layer 5) im OSI-Modell korrekt?",
+      "optionen": {
+        "A": "Die Sitzungsschicht ist für das Routing von Paketen über verschiedene Netzwerke verantwortlich.",
+        "B": "Die Sitzungsschicht sorgt für die physische Übertragung von Daten über das Netzwerkmedium.",
+        "C": "Die Sitzungsschicht verwaltet den Aufbau, die Steuerung und die Beendigung eines Dialogs zwischen Client und Server.",
+        "D": "Die Sitzungsschicht wird für die Zeichensatzkonvertierung verwendet, beispielsweise zwischen ASCII und Unicode."
+      },
+      "antwort": "C",
+      "erklärung": "Layer 5 stellt Mechanismen bereit, um Sitzungen zwischen Endsystemen einzurichten, aufrechtzuerhalten und ordnungsgemäß zu beenden. Dadurch wird der Dialogfluss zwischen Anwendungen gesteuert."
     },
-    "answer": ["C", "E"],
-    "explanation": "The first steps to address overheating are to ensure adequate airflow at intake and exhaust vents and to keep devices out of direct sunlight."
-  }
-},
-{
-  "id": 173,
-  "de": {
-    "frage": "Welche der folgenden Aussagen beschreibt die Funktion der Sitzungsschicht (Layer 5) im OSI-Modell korrekt?",
-    "optionen": {
-      "A": "Die Sitzungsschicht ist für das Routing von Paketen über verschiedene Netzwerke verantwortlich.",
-      "B": "Die Sitzungsschicht sorgt für die physische Übertragung von Daten über das Netzwerkmedium.",
-      "C": "Die Sitzungsschicht verwaltet den Aufbau, die Steuerung und die Beendigung eines Dialogs zwischen Client und Server.",
-      "D": "Die Sitzungsschicht wird für die Zeichensatzkonvertierung verwendet, beispielsweise zwischen ASCII und Unicode."
-    },
-    "antwort": "C",
-    "erklärung": "Layer 5 stellt Mechanismen bereit, um Sitzungen zwischen Endsystemen einzurichten, aufrechtzuerhalten und ordnungsgemäß zu beenden. Dadurch wird der Dialogfluss zwischen Anwendungen gesteuert."
+    "en": {
+      "question": "Which of the following statements accurately describes the function of the Session layer (Layer 5) in the OSI model?",
+      "options": {
+        "A": "The Session layer is responsible for routing packets across different networks.",
+        "B": "The Session layer provides the physical transmission of data over network media.",
+        "C": "The Session layer administers the process of establishing, managing, and terminating a dialog between client and server.",
+        "D": "The Session layer is used for character set conversion, such as between ASCII and Unicode."
+      },
+      "answer": "C",
+      "explanation": "Layer 5 supplies mechanisms to establish, control, and gracefully terminate sessions between end systems, thereby governing the dialog between applications."
+    }
   },
-  "en": {
-    "question": "Which of the following statements accurately describes the function of the Session layer (Layer 5) in the OSI model?",
-    "options": {
-      "A": "The Session layer is responsible for routing packets across different networks.",
-      "B": "The Session layer provides the physical transmission of data over network media.",
-      "C": "The Session layer administers the process of establishing, managing, and terminating a dialog between client and server.",
-      "D": "The Session layer is used for character set conversion, such as between ASCII and Unicode."
+  {
+    "id": 174,
+    "de": {
+      "frage": "Ein Netzwerkadministrator führt auf einem Cisco-Switch den Befehl show mac address-table aus und sieht mehrere dynamische Einträge.\n\nWas bedeuten dynamische Einträge in der MAC-Adress-Tabelle?",
+      "optionen": {
+        "A": "Der Switch wurde manuell mit bestimmten MAC-Adressen konfiguriert.",
+        "B": "Der Switch hat MAC-Adressen durch den Empfang von Frames erlernt.",
+        "C": "Der Switch erlebt gerade einen Broadcast-Storm.",
+        "D": "Die MAC-Adress-Tabelle des Switches ist beschädigt."
+      },
+      "antwort": "B",
+      "erklärung": "Dynamische Einträge zeigen an, dass der Switch MAC-Adressen automatisch erlernt hat: Er liest die Quell-MAC jeder eingehenden Ethernet-Frame aus und trägt sie zusammen mit VLAN und Port in die Tabelle ein."
     },
-    "answer": "C",
-    "explanation": "Layer 5 supplies mechanisms to establish, control, and gracefully terminate sessions between end systems, thereby governing the dialog between applications."
-  }
-},
-{
-  "id": 174,
-  "de": {
-    "frage": "Ein Netzwerkadministrator führt auf einem Cisco-Switch den Befehl show mac address-table aus und sieht mehrere dynamische Einträge.\n\nWas bedeuten dynamische Einträge in der MAC-Adress-Tabelle?",
-    "optionen": {
-      "A": "Der Switch wurde manuell mit bestimmten MAC-Adressen konfiguriert.",
-      "B": "Der Switch hat MAC-Adressen durch den Empfang von Frames erlernt.",
-      "C": "Der Switch erlebt gerade einen Broadcast-Storm.",
-      "D": "Die MAC-Adress-Tabelle des Switches ist beschädigt."
-    },
-    "antwort": "B",
-    "erklärung": "Dynamische Einträge zeigen an, dass der Switch MAC-Adressen automatisch erlernt hat: Er liest die Quell-MAC jeder eingehenden Ethernet-Frame aus und trägt sie zusammen mit VLAN und Port in die Tabelle ein."
+    "en": {
+      "question": "A network administrator uses the show mac address-table command on a Cisco switch and notices several dynamic entries.\n\nWhat does the presence of dynamic entries in the MAC address table signify?",
+      "options": {
+        "A": "The switch is manually configured with specific MAC addresses.",
+        "B": "The switch has learned MAC addresses through the reception of frames.",
+        "C": "The switch is experiencing a broadcast storm.",
+        "D": "The switch's MAC address table is corrupted."
+      },
+      "answer": "B",
+      "explanation": "Dynamic entries indicate that the switch has automatically learned MAC addresses: it reads the source MAC of every incoming Ethernet frame and records it—along with VLAN and port—in the table."
+    }
   },
-  "en": {
-    "question": "A network administrator uses the show mac address-table command on a Cisco switch and notices several dynamic entries.\n\nWhat does the presence of dynamic entries in the MAC address table signify?",
-    "options": {
-      "A": "The switch is manually configured with specific MAC addresses.",
-      "B": "The switch has learned MAC addresses through the reception of frames.",
-      "C": "The switch is experiencing a broadcast storm.",
-      "D": "The switch's MAC address table is corrupted."
+  {
+    "id": 175,
+    "de": {
+      "frage": "Sie fertigen Netzwerkkabel an und montieren an beiden Enden RJ45-Stecker.\n\nWelches Werkzeug benötigen Sie, um diese Aufgabe zu erledigen?",
+      "optionen": {
+        "A": "Crimp-Werkzeug",
+        "B": "Auflegewerkzeug",
+        "C": "LEC",
+        "D": "Patchpanel"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Crimp-Werkzeug presst die Adern des Kabels in die Kontakte des RJ45-Steckers und fixiert zugleich die Zugentlastung – damit ist es das essenzielle Werkzeug für diese Arbeit."
     },
-    "answer": "B",
-    "explanation": "Dynamic entries indicate that the switch has automatically learned MAC addresses: it reads the source MAC of every incoming Ethernet frame and records it—along with VLAN and port—in the table."
-  }
-},
-{
-  "id": 175,
-  "de": {
-    "frage": "Sie fertigen Netzwerkkabel an und montieren an beiden Enden RJ45-Stecker.\n\nWelches Werkzeug benötigen Sie, um diese Aufgabe zu erledigen?",
-    "optionen": {
-      "A": "Crimp-Werkzeug",
-      "B": "Auflegewerkzeug",
-      "C": "LEC",
-      "D": "Patchpanel"
-    },
-    "antwort": "A",
-    "erklärung": "Ein Crimp-Werkzeug presst die Adern des Kabels in die Kontakte des RJ45-Steckers und fixiert zugleich die Zugentlastung – damit ist es das essenzielle Werkzeug für diese Arbeit."
+    "en": {
+      "question": "You are building network cables and attaching RJ45 connectors to each end.\n\nWhich tool do you need to complete this task?",
+      "options": {
+        "A": "Crimping tool",
+        "B": "Punch down tool",
+        "C": "LEC",
+        "D": "Patch panel"
+      },
+      "answer": "A",
+      "explanation": "A crimping tool presses the cable conductors into the contacts of the RJ45 plug and secures the strain-relief clip, making it the essential tool for attaching RJ45 connectors."
+    }
   },
-  "en": {
-    "question": "You are building network cables and attaching RJ45 connectors to each end.\n\nWhich tool do you need to complete this task?",
-    "options": {
-      "A": "Crimping tool",
-      "B": "Punch down tool",
-      "C": "LEC",
-      "D": "Patch panel"
+  {
+    "id": 176,
+    "de": {
+      "frage": "Ein Netzwerktechniker möchte den Hub des Unternehmens aufrüsten, um Kollisionsdomänen voneinander zu isolieren und Gigabit-Ethernet zu ermöglichen.\n\nWelche Lösung hilft dem Techniker dabei?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Netzwerkadapter",
+        "C": "Router",
+        "D": "Hub"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Switch segmentiert jeden Port in eine eigene Kollisionsdomäne und unterstützt heute typischerweise Gigabit-Ethernet oder schneller."
     },
-    "answer": "A",
-    "explanation": "A crimping tool presses the cable conductors into the contacts of the RJ45 plug and secures the strain-relief clip, making it the essential tool for attaching RJ45 connectors."
-  }
-},
-{
-  "id": 176,
-  "de": {
-    "frage": "Ein Netzwerktechniker möchte den Hub des Unternehmens aufrüsten, um Kollisionsdomänen voneinander zu isolieren und Gigabit-Ethernet zu ermöglichen.\n\nWelche Lösung hilft dem Techniker dabei?",
-    "optionen": {
-      "A": "Switch",
-      "B": "Netzwerkadapter",
-      "C": "Router",
-      "D": "Hub"
-    },
-    "antwort": "A",
-    "erklärung": "Ein Switch segmentiert jeden Port in eine eigene Kollisionsdomäne und unterstützt heute typischerweise Gigabit-Ethernet oder schneller."
+    "en": {
+      "question": "A network technician wants to upgrade the company's hub to isolate collision domains from each other and allow for Gigabit Ethernet.\n\nWhich solution would help the technician to accomplish this?",
+      "options": {
+        "A": "Switch",
+        "B": "Network Adapters",
+        "C": "Router",
+        "D": "Hub"
+      },
+      "answer": "A",
+      "explanation": "A switch creates a separate collision domain on every port and typically supports Gigabit Ethernet, meeting both requirements."
+    }
   },
-  "en": {
-    "question": "A network technician wants to upgrade the company's hub to isolate collision domains from each other and allow for Gigabit Ethernet.\n\nWhich solution would help the technician to accomplish this?",
-    "options": {
-      "A": "Switch",
-      "B": "Network Adapters",
-      "C": "Router",
-      "D": "Hub"
+  {
+    "id": 177,
+    "de": {
+      "frage": "Welche Kombination bildet die drei Elemente des Feuerdreiecks korrekt ab?",
+      "optionen": {
+        "A": "Sauerstoff, Hitze und Wasser",
+        "B": "Sauerstoff, Elektrizität und Brennstoff",
+        "C": "Sauerstoff, Hitze und Brennstoff",
+        "D": "Hitze, Brennstoff und Kohlendioxid"
+      },
+      "antwort": "C",
+      "erklärung": "Das klassische Feuerdreieck besteht aus Sauerstoff, Hitze und Brennstoff. Fehlt eines dieser drei Elemente, kann keine Verbrennung entstehen oder weiter bestehen."
     },
-    "answer": "A",
-    "explanation": "A switch creates a separate collision domain on every port and typically supports Gigabit Ethernet, meeting both requirements."
-  }
-},
-{
-  "id": 177,
-  "de": {
-    "frage": "Welche Kombination bildet die drei Elemente des Feuerdreiecks korrekt ab?",
-    "optionen": {
-      "A": "Sauerstoff, Hitze und Wasser",
-      "B": "Sauerstoff, Elektrizität und Brennstoff",
-      "C": "Sauerstoff, Hitze und Brennstoff",
-      "D": "Hitze, Brennstoff und Kohlendioxid"
-    },
-    "antwort": "C",
-    "erklärung": "Das klassische Feuerdreieck besteht aus Sauerstoff, Hitze und Brennstoff. Fehlt eines dieser drei Elemente, kann keine Verbrennung entstehen oder weiter bestehen."
+    "en": {
+      "question": "Which combination correctly represents the three elements of the fire triangle?",
+      "options": {
+        "A": "Oxygen, heat, and water",
+        "B": "Oxygen, electricity, and fuel",
+        "C": "Oxygen, heat, and fuel",
+        "D": "Heat, fuel, and carbon dioxide"
+      },
+      "answer": "C",
+      "explanation": "The classic fire triangle is made up of oxygen, heat, and fuel. Remove any one of these, and combustion cannot start or continue."
+    }
   },
-  "en": {
-    "question": "Which combination correctly represents the three elements of the fire triangle?",
-    "options": {
-      "A": "Oxygen, heat, and water",
-      "B": "Oxygen, electricity, and fuel",
-      "C": "Oxygen, heat, and fuel",
-      "D": "Heat, fuel, and carbon dioxide"
+  {
+    "id": 178,
+    "de": {
+      "frage": "Sie überwachen ein Netzwerk-Upgrade für ein mittelständisches Unternehmen. Das Upgrade beinhaltet den Wechsel von Cat 5e- zu Cat 6-Kabeln, um ein neues VoIP-System zu unterstützen und die Datenraten zu erhöhen. Während der Installation müssen Signal­integrität, richtige Erdung/Abschirmung und die Herstellung vieler Patchkabel beachtet werden.\n\nWelche Strategie gewährleistet am BESTEN ein erfolgreiches Upgrade unter Berücksichtigung dieser Punkte?",
+      "optionen": {
+        "A": "Begrenzen Sie das Entdrillen der Cat 6-Paare auf ≤0,375 Zoll (1 cm), verwenden Sie Metallclips über freiliegenden Abschirmungen und nutzen Sie eine Crimpzange mit modularen Einsätzen für Patchkabel.",
+        "B": "Erhöhen Sie das Entdrillen der Paare, verzichten Sie auf Metallclips und verwenden Sie ein Auflegewerkzeug zur Herstellung von Patchkabeln.",
+        "C": "Nutzen Sie eine Standard-Crimpzange für alle Anschlüsse und beheben Sie Signalprobleme erst nach der Installation mit Testern.",
+        "D": "Verwenden Sie ausschließlich ein Abisolierwerkzeug und ignorieren Sie Entdrillen- und Abschirmungsanforderungen."
+      },
+      "antwort": "A",
+      "erklärung": "Option A bewahrt die Paarverdrillung, stellt Abschirmung/ Erdung sicher und ermöglicht effiziente Patchkabel-Herstellung."
     },
-    "answer": "C",
-    "explanation": "The classic fire triangle is made up of oxygen, heat, and fuel. Remove any one of these, and combustion cannot start or continue."
-  }
-},
-{
-  "id": 178,
-  "de": {
-    "frage": "Sie überwachen ein Netzwerk-Upgrade für ein mittelständisches Unternehmen. Das Upgrade beinhaltet den Wechsel von Cat 5e- zu Cat 6-Kabeln, um ein neues VoIP-System zu unterstützen und die Datenraten zu erhöhen. Während der Installation müssen Signal­integrität, richtige Erdung/Abschirmung und die Herstellung vieler Patchkabel beachtet werden.\n\nWelche Strategie gewährleistet am BESTEN ein erfolgreiches Upgrade unter Berücksichtigung dieser Punkte?",
-    "optionen": {
-      "A": "Begrenzen Sie das Entdrillen der Cat 6-Paare auf ≤0,375 Zoll (1 cm), verwenden Sie Metallclips über freiliegenden Abschirmungen und nutzen Sie eine Crimpzange mit modularen Einsätzen für Patchkabel.",
-      "B": "Erhöhen Sie das Entdrillen der Paare, verzichten Sie auf Metallclips und verwenden Sie ein Auflegewerkzeug zur Herstellung von Patchkabeln.",
-      "C": "Nutzen Sie eine Standard-Crimpzange für alle Anschlüsse und beheben Sie Signalprobleme erst nach der Installation mit Testern.",
-      "D": "Verwenden Sie ausschließlich ein Abisolierwerkzeug und ignorieren Sie Entdrillen- und Abschirmungsanforderungen."
-    },
-    "antwort": "A",
-    "erklärung": "Option A bewahrt die Paarverdrillung, stellt Abschirmung/ Erdung sicher und ermöglicht effiziente Patchkabel-Herstellung."
+    "en": {
+      "question": "You are overseeing a network upgrade moving from Cat 5e to Cat 6 cabling for VoIP and faster data rates. The team must maintain signal integrity, proper grounding/shielding, and create many custom patch cords.\n\nWhich strategy BEST ensures a successful upgrade while addressing these concerns?",
+      "options": {
+        "A": "Limit untwisting of Cat 6 pairs to ≤0.375 in (1 cm), use metal clips over exposed shields on IDCs, and employ a crimper with modular dies for patch cords.",
+        "B": "Increase untwisting for flexibility, avoid metal clips, and use a punch-down tool for patch cords.",
+        "C": "Use a standard crimper for all terminations and fix signal issues later with testers.",
+        "D": "Focus solely on a wire stripper, ignoring untwisting and shielding requirements."
+      },
+      "answer": "A",
+      "explanation": "Option A preserves pair integrity, maintains shielding/grounding, and streamlines compliant patch-cord production."
+    }
   },
-  "en": {
-    "question": "You are overseeing a network upgrade moving from Cat 5e to Cat 6 cabling for VoIP and faster data rates. The team must maintain signal integrity, proper grounding/shielding, and create many custom patch cords.\n\nWhich strategy BEST ensures a successful upgrade while addressing these concerns?",
-    "options": {
-      "A": "Limit untwisting of Cat 6 pairs to ≤0.375 in (1 cm), use metal clips over exposed shields on IDCs, and employ a crimper with modular dies for patch cords.",
-      "B": "Increase untwisting for flexibility, avoid metal clips, and use a punch-down tool for patch cords.",
-      "C": "Use a standard crimper for all terminations and fix signal issues later with testers.",
-      "D": "Focus solely on a wire stripper, ignoring untwisting and shielding requirements."
+  {
+    "id": 179,
+    "de": {
+      "frage": "Wenn die Sicherungsschicht Daten kapselt, fügt sie Header-Informationen hinzu. Welche Headerfelder gehören dazu? (Wählen Sie drei.)",
+      "optionen": {
+        "A": "Fenstergröße",
+        "B": "Quell-Hardware-Adresse",
+        "C": "Sequenznummer",
+        "D": "Prüfsumme zur Fehlerprüfung",
+        "E": "Verschlüsselungstyp",
+        "F": "TTL (Time to Live)",
+        "G": "Ziel-Hardware-Adresse"
+      },
+      "antwort": [
+        "B",
+        "D",
+        "G"
+      ],
+      "erklärung": "Die Sicherungsschicht fügt Quell- und Ziel-MAC-Adressen sowie eine Frame-Check-Sequence (Prüfsumme) hinzu. Fenstergröße/Sequenznummer sind Transport-Layer-Felder, TTL gehört zum Network-Layer."
     },
-    "answer": "A",
-    "explanation": "Option A preserves pair integrity, maintains shielding/grounding, and streamlines compliant patch-cord production."
-  }
-},
-{
-  "id": 179,
-  "de": {
-    "frage": "Wenn die Sicherungsschicht Daten kapselt, fügt sie Header-Informationen hinzu. Welche Headerfelder gehören dazu? (Wählen Sie drei.)",
-    "optionen": {
-      "A": "Fenstergröße",
-      "B": "Quell-Hardware-Adresse",
-      "C": "Sequenznummer",
-      "D": "Prüfsumme zur Fehlerprüfung",
-      "E": "Verschlüsselungstyp",
-      "F": "TTL (Time to Live)",
-      "G": "Ziel-Hardware-Adresse"
-    },
-    "antwort": ["B", "D", "G"],
-    "erklärung": "Die Sicherungsschicht fügt Quell- und Ziel-MAC-Adressen sowie eine Frame-Check-Sequence (Prüfsumme) hinzu. Fenstergröße/Sequenznummer sind Transport-Layer-Felder, TTL gehört zum Network-Layer."
+    "en": {
+      "question": "When the Data Link layer encapsulates data, it adds header information. Which fields are included? (Select three.)",
+      "options": {
+        "A": "Window size",
+        "B": "Source hardware address",
+        "C": "Sequence number",
+        "D": "Checksum for basic error checking",
+        "E": "Encryption type",
+        "F": "TTL (Time to Live)",
+        "G": "Destination hardware address"
+      },
+      "answer": [
+        "B",
+        "D",
+        "G"
+      ],
+      "explanation": "The Data Link layer adds source and destination MAC addresses and a Frame Check Sequence checksum. Window size and sequence number are Transport layer; TTL is Network layer."
+    }
   },
-  "en": {
-    "question": "When the Data Link layer encapsulates data, it adds header information. Which fields are included? (Select three.)",
-    "options": {
-      "A": "Window size",
-      "B": "Source hardware address",
-      "C": "Sequence number",
-      "D": "Checksum for basic error checking",
-      "E": "Encryption type",
-      "F": "TTL (Time to Live)",
-      "G": "Destination hardware address"
+  {
+    "id": 180,
+    "de": {
+      "frage": "Was sollten Sie vor der Eskalation eines Troubleshooting-Problems können? (Wählen Sie zwei.)",
+      "optionen": {
+        "A": "Die grundlegenden Fakten klar an die Person kommunizieren können, an die Sie den Vorfall weiterleiten.",
+        "B": "Warten, bis sich das Problem von selbst löst.",
+        "C": "Das Problem sofort eskalieren, ohne Troubleshooting zu versuchen.",
+        "D": "Systemeinstellungen zufällig ändern, um vielleicht eine Lösung zu finden.",
+        "E": "Die grundlegenden Fakten zum Problem feststellen."
+      },
+      "antwort": [
+        "A",
+        "E"
+      ],
+      "erklärung": "Vor einer Eskalation sollten Sie die Fakten ermittelt und sie klar weitergeben können."
     },
-    "answer": ["B", "D", "G"],
-    "explanation": "The Data Link layer adds source and destination MAC addresses and a Frame Check Sequence checksum. Window size and sequence number are Transport layer; TTL is Network layer."
-  }
-},
-{
-  "id": 180,
-  "de": {
-    "frage": "Was sollten Sie vor der Eskalation eines Troubleshooting-Problems können? (Wählen Sie zwei.)",
-    "optionen": {
-      "A": "Die grundlegenden Fakten klar an die Person kommunizieren können, an die Sie den Vorfall weiterleiten.",
-      "B": "Warten, bis sich das Problem von selbst löst.",
-      "C": "Das Problem sofort eskalieren, ohne Troubleshooting zu versuchen.",
-      "D": "Systemeinstellungen zufällig ändern, um vielleicht eine Lösung zu finden.",
-      "E": "Die grundlegenden Fakten zum Problem feststellen."
-    },
-    "antwort": ["A", "E"],
-    "erklärung": "Vor einer Eskalation sollten Sie die Fakten ermittelt und sie klar weitergeben können."
+    "en": {
+      "question": "Before escalating a troubleshooting problem, what should you be able to do? (Select two.)",
+      "options": {
+        "A": "Be able to communicate the basic facts clearly to the person to whom you are referring the incident.",
+        "B": "Wait for the problem to resolve itself before taking any action.",
+        "C": "Immediately escalate the problem without attempting any troubleshooting.",
+        "D": "Change system settings randomly in hopes of stumbling upon a solution.",
+        "E": "Establish the basic facts surrounding the problem."
+      },
+      "answer": [
+        "A",
+        "E"
+      ],
+      "explanation": "Before escalation, establish the problem’s basic facts and communicate them clearly to the next tier."
+    }
   },
-  "en": {
-    "question": "Before escalating a troubleshooting problem, what should you be able to do? (Select two.)",
-    "options": {
-      "A": "Be able to communicate the basic facts clearly to the person to whom you are referring the incident.",
-      "B": "Wait for the problem to resolve itself before taking any action.",
-      "C": "Immediately escalate the problem without attempting any troubleshooting.",
-      "D": "Change system settings randomly in hopes of stumbling upon a solution.",
-      "E": "Establish the basic facts surrounding the problem."
+  {
+    "id": 181,
+    "de": {
+      "frage": "Welche Informationen sind am WICHTIGSTEN in einem Troubleshooting-Ticket? (Wählen Sie drei.)",
+      "optionen": {
+        "A": "Wer verantwortlich ist",
+        "B": "Persönliche Meinung des Erstellers zur Ursache",
+        "C": "Lieblings-Troubleshooting-Tool des Technikers",
+        "D": "Marke der Ausrüstung",
+        "E": "Vollständige Beschreibung der Lösung",
+        "F": "Vollständige Beschreibung des Problems",
+        "G": "Kontaktdaten des Kunden"
+      },
+      "antwort": [
+        "A",
+        "E",
+        "F"
+      ],
+      "erklärung": "Ein Ticket sollte klar festhalten, wer verantwortlich ist, was das Problem war und wie es gelöst wurde."
     },
-    "answer": ["A", "E"],
-    "explanation": "Before escalation, establish the problem’s basic facts and communicate them clearly to the next tier."
-  }
-},
-{
-  "id": 181,
-  "de": {
-    "frage": "Welche Informationen sind am WICHTIGSTEN in einem Troubleshooting-Ticket? (Wählen Sie drei.)",
-    "optionen": {
-      "A": "Wer verantwortlich ist",
-      "B": "Persönliche Meinung des Erstellers zur Ursache",
-      "C": "Lieblings-Troubleshooting-Tool des Technikers",
-      "D": "Marke der Ausrüstung",
-      "E": "Vollständige Beschreibung der Lösung",
-      "F": "Vollständige Beschreibung des Problems",
-      "G": "Kontaktdaten des Kunden"
-    },
-    "antwort": ["A", "E", "F"],
-    "erklärung": "Ein Ticket sollte klar festhalten, wer verantwortlich ist, was das Problem war und wie es gelöst wurde."
+    "en": {
+      "question": "Which of the following items of information are the MOST critical to include on a troubleshooting ticket? (Select three.)",
+      "options": {
+        "A": "Who is responsible",
+        "B": "The ticket creator's personal opinion on the cause",
+        "C": "The favorite troubleshooting tool of the technician",
+        "D": "The brand of equipment being used",
+        "E": "A complete description of the solution",
+        "F": "A complete description of the problem",
+        "G": "The customer's contact information"
+      },
+      "answer": [
+        "A",
+        "E",
+        "F"
+      ],
+      "explanation": "A ticket must record responsibility, a full problem description, and a complete solution description for clear resolution tracking."
+    }
   },
-  "en": {
-    "question": "Which of the following items of information are the MOST critical to include on a troubleshooting ticket? (Select three.)",
-    "options": {
-      "A": "Who is responsible",
-      "B": "The ticket creator's personal opinion on the cause",
-      "C": "The favorite troubleshooting tool of the technician",
-      "D": "The brand of equipment being used",
-      "E": "A complete description of the solution",
-      "F": "A complete description of the problem",
-      "G": "The customer's contact information"
+  {
+    "id": 182,
+    "de": {
+      "frage": "Was ist die Funktion einer Duplex-Glasfaser-Verkabelung?",
+      "optionen": {
+        "A": "Es wird ein einzelner Lichtwellenleiter für Senden und Empfangen verwendet.",
+        "B": "Es werden zwei Lichtwellenleiter für Senden (Tx) und Empfangen (Rx) verwendet.",
+        "C": "Es werden mehrere Lichtwellenleiter eingesetzt, um Tx- und Rx-Kanäle zu implementieren.",
+        "D": "Es werden mehrere Kanäle anhand verschiedener Wellenlängen unterschieden."
+      },
+      "antwort": "B",
+      "erklärung": "Bei einer Duplex-Faser verlaufen zwei Fasern nebeneinander: Eine ist ausschließlich für das Senden (Tx), die andere ausschließlich für das Empfangen (Rx) reserviert. So ist gleichzeitig bidirektionale Kommunikation möglich."
     },
-    "answer": ["A", "E", "F"],
-    "explanation": "A ticket must record responsibility, a full problem description, and a complete solution description for clear resolution tracking."
-  }
-},
-{
-  "id": 182,
-  "de": {
-    "frage": "Was ist die Funktion einer Duplex-Glasfaser-Verkabelung?",
-    "optionen": {
-      "A": "Es wird ein einzelner Lichtwellenleiter für Senden und Empfangen verwendet.",
-      "B": "Es werden zwei Lichtwellenleiter für Senden (Tx) und Empfangen (Rx) verwendet.",
-      "C": "Es werden mehrere Lichtwellenleiter eingesetzt, um Tx- und Rx-Kanäle zu implementieren.",
-      "D": "Es werden mehrere Kanäle anhand verschiedener Wellenlängen unterschieden."
-    },
-    "antwort": "B",
-    "erklärung": "Bei einer Duplex-Faser verlaufen zwei Fasern nebeneinander: Eine ist ausschließlich für das Senden (Tx), die andere ausschließlich für das Empfangen (Rx) reserviert. So ist gleichzeitig bidirektionale Kommunikation möglich."
+    "en": {
+      "question": "What is the function of duplex fiber deployment?",
+      "options": {
+        "A": "It uses a single strand for both transmit and receive.",
+        "B": "It uses two strands for transmit (Tx) and receive (Rx).",
+        "C": "It uses multiple strands to implement Tx and Rx channels.",
+        "D": "It implements multiple channels distinguished by wavelengths."
+      },
+      "answer": "B",
+      "explanation": "In a duplex fiber setup, two separate fibers run in parallel—one dedicated to transmit (Tx) and the other to receive (Rx)—enabling simultaneous bidirectional communication."
+    }
   },
-  "en": {
-    "question": "What is the function of duplex fiber deployment?",
-    "options": {
-      "A": "It uses a single strand for both transmit and receive.",
-      "B": "It uses two strands for transmit (Tx) and receive (Rx).",
-      "C": "It uses multiple strands to implement Tx and Rx channels.",
-      "D": "It implements multiple channels distinguished by wavelengths."
+  {
+    "id": 183,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt am BESTEN die Anwendung des Divide-and-Conquer-Ansatzes des OSI-Modells beim Troubleshooting von Netzproblemen?",
+      "optionen": {
+        "A": "Den Troubleshooting-Prozess auf der physikalischen Schicht (Layer 1) beginnen und jede Schicht der Reihe nach bis zur Anwendungsschicht (Layer 7) überprüfen.",
+        "B": "Ausschließlich auf der Anwendungsschicht (Layer 7) fokussieren, um Softwareprobleme zu identifizieren, bevor die Netzwerkinfrastruktur geprüft wird.",
+        "C": "Die wahrscheinlichste Schicht anhand der Symptome und ersten Informationen identifizieren und dann je nach Bedarf im OSI-Modell nach oben oder unten arbeiten, um das Problem zu isolieren und zu lösen.",
+        "D": "Alle Schichten des OSI-Modells gleichzeitig prüfen, um Netzwerkprobleme schnell ohne Berücksichtigung der logischen Reihenfolge der Schichten zu erkennen und zu lösen."
+      },
+      "antwort": "C",
+      "erklärung": "Der Divide-and-Conquer-Ansatz beginnt typischerweise in der Mitte des OSI-Modells (meist Netzwerk- oder Transportschicht). Abhängig vom Testergebnis arbeitet man anschließend nach oben oder unten, um die Fehlerquelle schnell einzugrenzen und zu beheben."
     },
-    "answer": "B",
-    "explanation": "In a duplex fiber setup, two separate fibers run in parallel—one dedicated to transmit (Tx) and the other to receive (Rx)—enabling simultaneous bidirectional communication."
-  }
-},
-{
-  "id": 183,
-  "de": {
-    "frage": "Welche der folgenden Aussagen beschreibt am BESTEN die Anwendung des Divide-and-Conquer-Ansatzes des OSI-Modells beim Troubleshooting von Netzproblemen?",
-    "optionen": {
-      "A": "Den Troubleshooting-Prozess auf der physikalischen Schicht (Layer 1) beginnen und jede Schicht der Reihe nach bis zur Anwendungsschicht (Layer 7) überprüfen.",
-      "B": "Ausschließlich auf der Anwendungsschicht (Layer 7) fokussieren, um Softwareprobleme zu identifizieren, bevor die Netzwerkinfrastruktur geprüft wird.",
-      "C": "Die wahrscheinlichste Schicht anhand der Symptome und ersten Informationen identifizieren und dann je nach Bedarf im OSI-Modell nach oben oder unten arbeiten, um das Problem zu isolieren und zu lösen.",
-      "D": "Alle Schichten des OSI-Modells gleichzeitig prüfen, um Netzwerkprobleme schnell ohne Berücksichtigung der logischen Reihenfolge der Schichten zu erkennen und zu lösen."
-    },
-    "antwort": "C",
-    "erklärung": "Der Divide-and-Conquer-Ansatz beginnt typischerweise in der Mitte des OSI-Modells (meist Netzwerk- oder Transportschicht). Abhängig vom Testergebnis arbeitet man anschließend nach oben oder unten, um die Fehlerquelle schnell einzugrenzen und zu beheben."
+    "en": {
+      "question": "Which of the following MOST correctly describes using the divide-and-conquer approach of the OSI model for troubleshooting network issues?",
+      "options": {
+        "A": "Starting the troubleshooting process at the Physical Layer (Layer 1) and sequentially checking each layer until the Application Layer (Layer 7) is reached",
+        "B": "Focusing solely on the Application Layer (Layer 7) to identify and resolve any software-related issues before considering network infrastructure problems",
+        "C": "Identifying the most likely layer causing the issue based on symptoms and preliminary information, then working either up or down the OSI model as needed to isolate and resolve the problem",
+        "D": "Checking all layers of the OSI model simultaneously to quickly identify and resolve network issues without considering the logical order of the layers"
+      },
+      "answer": "C",
+      "explanation": "The divide-and-conquer approach typically starts in the middle of the OSI model (usually the network or transport layer). Depending on test results, you then move up or down the stack to efficiently isolate and resolve the problem."
+    }
   },
-  "en": {
-    "question": "Which of the following MOST correctly describes using the divide-and-conquer approach of the OSI model for troubleshooting network issues?",
-    "options": {
-      "A": "Starting the troubleshooting process at the Physical Layer (Layer 1) and sequentially checking each layer until the Application Layer (Layer 7) is reached",
-      "B": "Focusing solely on the Application Layer (Layer 7) to identify and resolve any software-related issues before considering network infrastructure problems",
-      "C": "Identifying the most likely layer causing the issue based on symptoms and preliminary information, then working either up or down the OSI model as needed to isolate and resolve the problem",
-      "D": "Checking all layers of the OSI model simultaneously to quickly identify and resolve network issues without considering the logical order of the layers"
+  {
+    "id": 184,
+    "de": {
+      "frage": "Was ist die Funktion eines Nicht-Designated-Ports in einem Netzwerk mit Spanning Tree Protocol (STP)?",
+      "optionen": {
+        "A": "Als primäres Gateway für die Kommunikation zwischen Netzwerken dienen",
+        "B": "Allen Multicast-Verkehr weiterleiten, um die Netzwerkeffizienz zu erhöhen",
+        "C": "Netzwerkschleifen verhindern, indem unnötige Verkehrspfade blockiert werden",
+        "D": "Redundanz bereitstellen, indem er als Backup für den Root-Port fungiert"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Nicht-Designated-Port ist weder Root- noch Designated-Port. Er verbleibt im Blocking-Zustand, leitet keinen Datenverkehr weiter und verhindert so Layer-2-Schleifen."
     },
-    "answer": "C",
-    "explanation": "The divide-and-conquer approach typically starts in the middle of the OSI model (usually the network or transport layer). Depending on test results, you then move up or down the stack to efficiently isolate and resolve the problem."
-  }
-},
-{
-  "id": 184,
-  "de": {
-    "frage": "Was ist die Funktion eines Nicht-Designated-Ports in einem Netzwerk mit Spanning Tree Protocol (STP)?",
-    "optionen": {
-      "A": "Als primäres Gateway für die Kommunikation zwischen Netzwerken dienen",
-      "B": "Allen Multicast-Verkehr weiterleiten, um die Netzwerkeffizienz zu erhöhen",
-      "C": "Netzwerkschleifen verhindern, indem unnötige Verkehrspfade blockiert werden",
-      "D": "Redundanz bereitstellen, indem er als Backup für den Root-Port fungiert"
-    },
-    "antwort": "C",
-    "erklärung": "Ein Nicht-Designated-Port ist weder Root- noch Designated-Port. Er verbleibt im Blocking-Zustand, leitet keinen Datenverkehr weiter und verhindert so Layer-2-Schleifen."
+    "en": {
+      "question": "What is the purpose of a non-designated port in a network utilizing the Spanning Tree Protocol (STP)?",
+      "options": {
+        "A": "To serve as the primary gateway for inter-network communication",
+        "B": "To forward all multicast traffic to ensure network efficiency",
+        "C": "To prevent network loops by blocking unnecessary traffic paths",
+        "D": "To provide redundancy by acting as a backup for the root port"
+      },
+      "answer": "C",
+      "explanation": "A non-designated port is a port that is neither a root port nor a designated port. It is kept in the blocking state to prevent Layer-2 loops and therefore does not forward traffic."
+    }
   },
-  "en": {
-    "question": "What is the purpose of a non-designated port in a network utilizing the Spanning Tree Protocol (STP)?",
-    "options": {
-      "A": "To serve as the primary gateway for inter-network communication",
-      "B": "To forward all multicast traffic to ensure network efficiency",
-      "C": "To prevent network loops by blocking unnecessary traffic paths",
-      "D": "To provide redundancy by acting as a backup for the root port"
+  {
+    "id": 185,
+    "de": {
+      "frage": "Bei der Entscheidung zwischen kabelgebundenen und kabellosen Access Points in einem Unternehmen: Auf welcher Schicht des OSI-Modells wird diese Entscheidung hauptsächlich getroffen?",
+      "optionen": {
+        "A": "Sitzungsschicht (Session Layer)",
+        "B": "Sicherungsschicht (Data Link Layer)",
+        "C": "Physische Schicht (Physical Layer)",
+        "D": "Netzwerkschicht (Network Layer)"
+      },
+      "antwort": "C",
+      "erklärung": "Die Wahl zwischen kabelgebundenen (Kupfer/Fiber) und kabellosen (Wi-Fi) Access Points betrifft das Übertragungsmedium selbst. Medien- und Signalfragen sind Aufgaben der **physischen Schicht**, weshalb Layer 1 hier ausschlaggebend ist."
     },
-    "answer": "C",
-    "explanation": "A non-designated port is a port that is neither a root port nor a designated port. It is kept in the blocking state to prevent Layer-2 loops and therefore does not forward traffic."
-  }
-},
-{
-  "id": 185,
-  "de": {
-    "frage": "Bei der Entscheidung zwischen kabelgebundenen und kabellosen Access Points in einem Unternehmen: Auf welcher Schicht des OSI-Modells wird diese Entscheidung hauptsächlich getroffen?",
-    "optionen": {
-      "A": "Sitzungsschicht (Session Layer)",
-      "B": "Sicherungsschicht (Data Link Layer)",
-      "C": "Physische Schicht (Physical Layer)",
-      "D": "Netzwerkschicht (Network Layer)"
-    },
-    "antwort": "C",
-    "erklärung": "Die Wahl zwischen kabelgebundenen (Kupfer/Fiber) und kabellosen (Wi-Fi) Access Points betrifft das Übertragungsmedium selbst. Medien- und Signalfragen sind Aufgaben der **physischen Schicht**, weshalb Layer 1 hier ausschlaggebend ist."
+    "en": {
+      "question": "An organization must choose between wired and wireless access points. Which OSI layer does this decision primarily concern?",
+      "options": {
+        "A": "Session layer",
+        "B": "Data link layer",
+        "C": "Physical layer",
+        "D": "Network layer"
+      },
+      "answer": "C",
+      "explanation": "Selecting between wired (copper/fiber) and wireless (Wi-Fi) access points is fundamentally about the transmission medium. Media and signal characteristics are handled at the **Physical layer**, so Layer 1 is the key consideration."
+    }
   },
-  "en": {
-    "question": "An organization must choose between wired and wireless access points. Which OSI layer does this decision primarily concern?",
-    "options": {
-      "A": "Session layer",
-      "B": "Data link layer",
-      "C": "Physical layer",
-      "D": "Network layer"
+  {
+    "id": 186,
+    "de": {
+      "frage": "Welche Schnittstellen bietet ein SOHO-Router auf der physischen Schicht des OSI-Modells? (Wählen Sie drei.)",
+      "optionen": {
+        "A": "Radioantennen für drahtlose Übertragung",
+        "B": "USB-Anschlüsse für direkte PC-Verbindung",
+        "C": "RJ-45-Ports für ein verkabeltes LAN",
+        "D": "WAN-Port für den ISP-Anschluss",
+        "E": "SATA-Anschlüsse für interne Speicher",
+        "F": "HDMI-Anschlüsse für Multimedia",
+        "G": "VGA-Ausgänge für Video"
+      },
+      "antwort": [
+        "A",
+        "C",
+        "D"
+      ],
+      "erklärung": "Auf Layer 1 stellt der Router Funkantennen für WLAN, RJ-45-Ports fürs kabelgebundene LAN und einen WAN-Port für die Anbindung an den ISP bereit."
     },
-    "answer": "C",
-    "explanation": "Selecting between wired (copper/fiber) and wireless (Wi-Fi) access points is fundamentally about the transmission medium. Media and signal characteristics are handled at the **Physical layer**, so Layer 1 is the key consideration."
-  }
-},
-{
-  "id": 186,
-  "de": {
-    "frage": "Welche Schnittstellen bietet ein SOHO-Router auf der physischen Schicht des OSI-Modells? (Wählen Sie drei.)",
-    "optionen": {
-      "A": "Radioantennen für drahtlose Übertragung",
-      "B": "USB-Anschlüsse für direkte PC-Verbindung",
-      "C": "RJ-45-Ports für ein verkabeltes LAN",
-      "D": "WAN-Port für den ISP-Anschluss",
-      "E": "SATA-Anschlüsse für interne Speicher",
-      "F": "HDMI-Anschlüsse für Multimedia",
-      "G": "VGA-Ausgänge für Video"
-    },
-    "antwort": ["A", "C", "D"],
-    "erklärung": "Auf Layer 1 stellt der Router Funkantennen für WLAN, RJ-45-Ports fürs kabelgebundene LAN und einen WAN-Port für die Anbindung an den ISP bereit."
+    "en": {
+      "question": "Which interfaces does a SOHO router provide at the Physical Layer of the OSI model? (Select three.)",
+      "options": {
+        "A": "Radio antennas for wireless signal transmission",
+        "B": "USB ports for direct computer connection",
+        "C": "RJ-45 ports for a local cabled network",
+        "D": "WAN port for Internet Service Provider (ISP) connection",
+        "E": "SATA ports for internal storage connection",
+        "F": "HDMI ports for multimedia streaming",
+        "G": "VGA ports for video output"
+      },
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "explanation": "At Layer 1, the router offers antennas for Wi-Fi, RJ-45 ports for wired LAN, and a WAN port for ISP connectivity."
+    }
   },
-  "en": {
-    "question": "Which interfaces does a SOHO router provide at the Physical Layer of the OSI model? (Select three.)",
-    "options": {
-      "A": "Radio antennas for wireless signal transmission",
-      "B": "USB ports for direct computer connection",
-      "C": "RJ-45 ports for a local cabled network",
-      "D": "WAN port for Internet Service Provider (ISP) connection",
-      "E": "SATA ports for internal storage connection",
-      "F": "HDMI ports for multimedia streaming",
-      "G": "VGA ports for video output"
+  {
+    "id": 187,
+    "de": {
+      "frage": "Welcher Befehl wird verwendet, um manuell Geschwindigkeit und Duplex-Modus eines Switch-Ports auf 100 Mbit/s und Halbduplex einzustellen?",
+      "optionen": {
+        "A": "speed 100; duplex half",
+        "B": "speed auto; duplex auto",
+        "C": "speed 1000; duplex full",
+        "D": "switchport mode access"
+      },
+      "antwort": "A",
+      "erklärung": "Mit dem Befehl „speed 100“ wird die Port-Geschwindigkeit fest auf 100 Mbit/s gesetzt; „duplex half“ konfiguriert den Port gleichzeitig auf Halbduplex-Betrieb."
     },
-    "answer": ["A", "C", "D"],
-    "explanation": "At Layer 1, the router offers antennas for Wi-Fi, RJ-45 ports for wired LAN, and a WAN port for ISP connectivity."
-  }
-},
-{
-  "id": 187,
-  "de": {
-    "frage": "Welcher Befehl wird verwendet, um manuell Geschwindigkeit und Duplex-Modus eines Switch-Ports auf 100 Mbit/s und Halbduplex einzustellen?",
-    "optionen": {
-      "A": "speed 100; duplex half",
-      "B": "speed auto; duplex auto",
-      "C": "speed 1000; duplex full",
-      "D": "switchport mode access"
-    },
-    "antwort": "A",
-    "erklärung": "Mit dem Befehl „speed 100“ wird die Port-Geschwindigkeit fest auf 100 Mbit/s gesetzt; „duplex half“ konfiguriert den Port gleichzeitig auf Halbduplex-Betrieb."
+    "en": {
+      "question": "Which command is used to manually set the speed and duplex mode of a switch port to 100 Mbps and half-duplex?",
+      "options": {
+        "A": "speed 100; duplex half",
+        "B": "speed auto; duplex auto",
+        "C": "speed 1000; duplex full",
+        "D": "switchport mode access"
+      },
+      "answer": "A",
+      "explanation": "The command “speed 100” forces the port to 100 Mbps, and “duplex half” sets the port to half-duplex mode."
+    }
   },
-  "en": {
-    "question": "Which command is used to manually set the speed and duplex mode of a switch port to 100 Mbps and half-duplex?",
-    "options": {
-      "A": "speed 100; duplex half",
-      "B": "speed auto; duplex auto",
-      "C": "speed 1000; duplex full",
-      "D": "switchport mode access"
+  {
+    "id": 188,
+    "de": {
+      "frage": "Während eines Netzwerkaudits stellen Sie fest, dass ein Switch-Port, der mit einem Server verbunden ist, Geschwindigkeit und Duplex auf Autonegotiation eingestellt hat. Der Server unterstützt 1 Gbit/s Voll-Duplex, dennoch treten Leistungsprobleme auf. Sie wollen die Einstellungen manuell anpassen.\n\nWelche Befehlsfolge sollten Sie für den Port GigabitEthernet 0/2 verwenden?",
+      "optionen": {
+        "A": "speed 1000; duplex full",
+        "B": "speed auto; duplex auto",
+        "C": "interface GigabitEthernet 0/2; speed 1000; duplex full",
+        "D": "switchport speed 1000; switchport duplex full"
+      },
+      "antwort": "C",
+      "erklärung": "Zuerst müssen Sie in den Interface-Konfigurationsmodus wechseln (interface GigabitEthernet 0/2). Anschließend setzen Sie mit speed 1000 und duplex full die Geschwindigkeit auf 1 Gbit/s und den Duplex-Modus auf Voll-Duplex."
     },
-    "answer": "A",
-    "explanation": "The command “speed 100” forces the port to 100 Mbps, and “duplex half” sets the port to half-duplex mode."
-  }
-},
-{
-  "id": 188,
-  "de": {
-    "frage": "Während eines Netzwerkaudits stellen Sie fest, dass ein Switch-Port, der mit einem Server verbunden ist, Geschwindigkeit und Duplex auf Autonegotiation eingestellt hat. Der Server unterstützt 1 Gbit/s Voll-Duplex, dennoch treten Leistungsprobleme auf. Sie wollen die Einstellungen manuell anpassen.\n\nWelche Befehlsfolge sollten Sie für den Port GigabitEthernet 0/2 verwenden?",
-    "optionen": {
-      "A": "speed 1000; duplex full",
-      "B": "speed auto; duplex auto",
-      "C": "interface GigabitEthernet 0/2; speed 1000; duplex full",
-      "D": "switchport speed 1000; switchport duplex full"
-    },
-    "antwort": "C",
-    "erklärung": "Zuerst müssen Sie in den Interface-Konfigurationsmodus wechseln (interface GigabitEthernet 0/2). Anschließend setzen Sie mit speed 1000 und duplex full die Geschwindigkeit auf 1 Gbit/s und den Duplex-Modus auf Voll-Duplex."
+    "en": {
+      "question": "During a network audit, you discover that a switch port connected to a server is set to autonegotiate speed and duplex. The server supports 1 Gbps full-duplex, yet performance issues are observed. You plan to configure the settings manually.\n\nWhich set of commands should you use for port GigabitEthernet 0/2?",
+      "options": {
+        "A": "speed 1000; duplex full",
+        "B": "speed auto; duplex auto",
+        "C": "interface GigabitEthernet 0/2; speed 1000; duplex full",
+        "D": "switchport speed 1000; switchport duplex full"
+      },
+      "answer": "C",
+      "explanation": "Enter interface configuration mode (interface GigabitEthernet 0/2), then use speed 1000 and duplex full to force 1 Gbps full-duplex operation."
+    }
   },
-  "en": {
-    "question": "During a network audit, you discover that a switch port connected to a server is set to autonegotiate speed and duplex. The server supports 1 Gbps full-duplex, yet performance issues are observed. You plan to configure the settings manually.\n\nWhich set of commands should you use for port GigabitEthernet 0/2?",
-    "options": {
-      "A": "speed 1000; duplex full",
-      "B": "speed auto; duplex auto",
-      "C": "interface GigabitEthernet 0/2; speed 1000; duplex full",
-      "D": "switchport speed 1000; switchport duplex full"
+  {
+    "id": 189,
+    "de": {
+      "frage": "Wie können IP-Konfigurationswerte in einer Windows-Umgebung Hosts zugewiesen werden?",
+      "optionen": {
+        "A": "Nur manuell",
+        "B": "Nur dynamisch",
+        "C": "Entweder statisch oder dynamisch",
+        "D": "Weder statisch noch dynamisch"
+      },
+      "antwort": "C",
+      "erklärung": "In Windows kann man IP-Adressen und andere IP-Konfigurationswerte entweder statisch per Hand eintragen oder dynamisch über DHCP beziehen, daher ist Antwort C korrekt."
     },
-    "answer": "C",
-    "explanation": "Enter interface configuration mode (interface GigabitEthernet 0/2), then use speed 1000 and duplex full to force 1 Gbps full-duplex operation."
+    "en": {
+      "question": "How can IP configuration values be assigned to hosts in a Windows environment?",
+      "options": {
+        "A": "Manually only",
+        "B": "Dynamically only",
+        "C": "Either statically or dynamically",
+        "D": "Neither statically nor dynamically"
+      },
+      "answer": "C",
+      "explanation": "Windows hosts can receive IP configuration values either through manual (static) entry or dynamically via DHCP, so option C is correct."
+    }
+  },
+  {
+    "id": 190,
+    "de": {
+      "frage": "Wie kann in Windows die IP-Konfiguration für einen Ethernet-Adapter eingestellt werden?",
+      "optionen": {
+        "A": "Nur über den GUI-Eigenschaften-Dialog",
+        "B": "Nur mit netsh-Befehlen",
+        "C": "Entweder über den GUI-Eigenschaften-Dialog oder mit netsh-Befehlen",
+        "D": "Weder über den GUI-Eigenschaften-Dialog noch mit netsh-Befehlen"
+      },
+      "antwort": "C",
+      "erklärung": "Unter Windows lassen sich die IP-Einstellungen eines Netzwerkadapters sowohl über die grafische Oberfläche (Netzwerk- und Freigabecenter → Adaptereinstellungen → Eigenschaften) als auch über die Kommandozeile mit netsh konfigurieren. Daher ist Antwort C korrekt."
+    },
+    "en": {
+      "question": "In Windows, how can the IP configuration for an Ethernet adapter be set?",
+      "options": {
+        "A": "Using the GUI Properties dialog only",
+        "B": "Using netsh commands only",
+        "C": "Either using the GUI Properties dialog or netsh commands",
+        "D": "Neither using the GUI Properties dialog nor netsh commands"
+      },
+      "answer": "C",
+      "explanation": "Windows allows you to configure an Ethernet adapter's IP settings either through the graphical Properties dialog or via the command-line tool netsh, so option C is correct."
+    }
+  },
+  {
+    "id": 191,
+    "de": {
+      "frage": "Sie haben die Netzwerkadresse 132.66.0.0 mit der Subnetzmaske 255.255.224.0.\nWelche der folgenden Adressen sind gültige Subnetzadressen? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "132.66.192.0",
+        "B": "132.130.0.0",
+        "C": "132.98.0.0",
+        "D": "132.66.96.0",
+        "E": "132.66.255.0"
+      },
+      "antwort": [
+        "A",
+        "D"
+      ],
+      "erklärung": "Die Maske 255.255.224.0 entspricht /19, d. h. die Subnetz­schritte im dritten Oktett betragen 32 (256 − 224 = 32). Gültige Subnetzadressen beginnen deshalb bei 0 und steigern sich in 32er-Schritten: 0, 32, 64, 96, 128, 160, 192, 224. Von den Optionen erfüllen nur 132.66.96.0 und 132.66.192.0 diese Bedingung."
+    },
+    "en": {
+      "question": "You have a network address of 132.66.0.0 and a subnet mask of 255.255.224.0.\nWhich of the following are valid subnet addresses? (Select two.)",
+      "options": {
+        "A": "132.66.192.0",
+        "B": "132.130.0.0",
+        "C": "132.98.0.0",
+        "D": "132.66.96.0",
+        "E": "132.66.255.0"
+      },
+      "answer": [
+        "A",
+        "D"
+      ],
+      "explanation": "A mask of 255.255.224.0 is /19, giving a subnet increment of 32 in the third octet (256 − 224 = 32). Valid subnets therefore start at 0 and increase by 32: 0, 32, 64, 96, 128, 160, 192, 224. Only 132.66.96.0 and 132.66.192.0 fall on those boundaries."
+    }
+  },
+  {
+    "id": 192,
+    "de": {
+      "frage": "Welche Lösung behebt die Unflexibilität von Subnetzmasken, die sich nur an ganzen Oktettgrenzen orientieren, im IP-Networking?",
+      "optionen": {
+        "A": "Dynamische IP-Adressvergabe",
+        "B": "Aufteilung von Netzwerken in Subnetze",
+        "C": "Erhöhung der IP-Adressanzahl durch IPv6",
+        "D": "Anwendung von Quality-of-Service-Protokollen (QoS)"
+      },
+      "antwort": "B",
+      "erklärung": "Durch das Subnetting (variable Länge der Subnetzmaske/CIDR) können Netzwerke flexibler aufgeteilt werden, ohne sich auf ganze Oktettgrenzen beschränken zu müssen."
+    },
+    "en": {
+      "question": "What solution addresses the inflexibility of using whole octet boundaries for subnet masks in IP networking?",
+      "options": {
+        "A": "Using dynamic IP addressing",
+        "B": "Dividing networks into subnetworks or subnets",
+        "C": "Increasing the number of IP addresses with IPv6",
+        "D": "Applying Quality of Service (QoS) protocols"
+      },
+      "answer": "B",
+      "explanation": "Subnetting (using variable-length subnet masks/CIDR) allows networks to be divided more flexibly, removing the restriction of whole-octet boundaries."
+    }
+  },
+  {
+    "id": 193,
+    "de": {
+      "frage": "Warum kann die erste Adresse in einem IP-Netzwerk keinem Host zugewiesen werden?",
+      "optionen": {
+        "A": "Sie ist für die Subnetzmaske reserviert.",
+        "B": "Sie wird als Broadcast-Adresse verwendet.",
+        "C": "Sie ist die Netzwerkadresse.",
+        "D": "Sie ist für das Standard-Gateway reserviert."
+      },
+      "antwort": "C",
+      "erklärung": "In jedem IP-Subnetz ist die erste Adresse die Netzwerkadresse (alle Host-Bits auf 0). Diese Adresse identifiziert das gesamte Subnetz und darf daher nicht einem einzelnen Host zugewiesen werden."
+    },
+    "en": {
+      "question": "Why can the first address in an IP network not be assigned to a host?",
+      "options": {
+        "A": "It is reserved for the subnet mask.",
+        "B": "It is used as the broadcast address.",
+        "C": "It is the network address.",
+        "D": "It is reserved for the default gateway."
+      },
+      "answer": "C",
+      "explanation": "In every IP subnet the first address (all host bits set to 0) is the network address, which identifies the subnet itself, so it cannot be assigned to an individual host."
+    }
+  },
+  {
+    "id": 194,
+    "de": {
+      "frage": "Was passiert mit der Anzahl verfügbarer Host-Adressen, wenn der Subnetzmaske ein Bit hinzugefügt wird?",
+      "optionen": {
+        "A": "Sie verdoppelt sich.",
+        "B": "Sie bleibt gleich.",
+        "C": "Sie verringert sich ungefähr um die Hälfte.",
+        "D": "Sie vervierfacht sich."
+      },
+      "antwort": "C",
+      "erklärung": "Wird die Subnetzmaske um ein Bit verlängert, steht ein Bit weniger für Host-Adressen zur Verfügung. Dadurch halbiert sich die Anzahl möglicher Host-Adressen (abzüglich Netzwerk- und Broadcast-Adresse)."
+    },
+    "en": {
+      "question": "What happens to the number of available host addresses when a bit is added to the subnet mask?",
+      "options": {
+        "A": "It doubles.",
+        "B": "It remains the same.",
+        "C": "It approximately halves.",
+        "D": "It increases by a factor of four."
+      },
+      "answer": "C",
+      "explanation": "Adding one bit to the subnet mask removes one bit from the host portion. With one fewer host bit, the number of host addresses is roughly cut in half (minus the network and broadcast addresses)."
+    }
+  },
+  {
+    "id": 195,
+    "de": {
+      "frage": "Was ist der Hauptzweck einer Netzmaske (Netmask) in der IPv4-Adressierung?",
+      "optionen": {
+        "A": "Die Hardwareadresse des Geräts zu identifizieren",
+        "B": "Die IP-Adresse zu Sicherheitszwecken zu verschlüsseln",
+        "C": "Zwischen der Netzwerk-ID und der Host-ID innerhalb einer IP-Adresse zu unterscheiden",
+        "D": "Die Geschwindigkeit der Netzpaketübertragung zu erhöhen"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Netzmaske trennt den Netzwerkteil einer IPv4-Adresse vom Hostteil. Damit lässt sich erkennen, zu welchem Subnetz eine Adresse gehört und welche Bits für individuelle Hosts reserviert sind."
+    },
+    "en": {
+      "question": "What is the primary purpose of a network mask (netmask) in IPv4 addressing?",
+      "options": {
+        "A": "To identify the device's hardware address",
+        "B": "To encrypt the IP address for security purposes",
+        "C": "To distinguish between the network ID and the host ID within an IP address",
+        "D": "To increase the speed of network packet delivery"
+      },
+      "answer": "C",
+      "explanation": "A netmask separates the network portion of an IPv4 address from the host portion, allowing devices to determine which subnet an address belongs to and which bits identify individual hosts."
+    }
+  },
+  {
+    "id": 196,
+    "de": {
+      "frage": "Ein Netzwerkadministrator möchte eine Subnetzmaske mit 62 nutzbaren Adressen verwenden.\nWelche der folgenden Subnetzmasken sollte der Administrator wählen?",
+      "optionen": {
+        "A": "255.255.255.192",
+        "B": "255.255.255.240",
+        "C": "255.255.255.224",
+        "D": "255.255.255.128"
+      },
+      "antwort": "A",
+      "erklärung": "Die Maske 255.255.255.192 entspricht /26. Damit bleiben 6 Host-Bits (2^6 = 64 Gesamtadressen). Zieht man Netzwerk- und Broadcastadresse ab, bleiben 62 nutzbare Hostadressen übrig."
+    },
+    "en": {
+      "question": "A network administrator wants to use a subnet mask that provides 62 usable host addresses.\nWhich of the following subnet masks should the administrator use?",
+      "options": {
+        "A": "255.255.255.192",
+        "B": "255.255.255.240",
+        "C": "255.255.255.224",
+        "D": "255.255.255.128"
+      },
+      "answer": "A",
+      "explanation": "The subnet mask 255.255.255.192 is a /26 mask. With 6 host bits it yields 2^6 = 64 total addresses; subtracting the network and broadcast addresses leaves 62 usable host addresses."
+    }
+  },
+  {
+    "id": 197,
+    "de": {
+      "frage": "Was ist der Zweck der persistenten Konfiguration im Linux-Networking?",
+      "optionen": {
+        "A": "Netzwerkeinstellungen zu konfigurieren, die nur während der aktuellen Sitzung gelten",
+        "B": "Netzwerkeinstellungen sofort anzuwenden, ohne einen Neustart",
+        "C": "Netzwerkeinstellungen zu konfigurieren, die nach einem Neustart oder einer Neuinitialisierung eines Netzwerkadapters angewendet werden",
+        "D": "Die laufende Konfiguration bis zum nächsten Neustart vorübergehend zu überschreiben"
+      },
+      "antwort": "C",
+      "erklärung": "Persistente Konfigurationen werden in Konfigurationsdateien gespeichert (z. B. /etc/network/interfaces oder ifcfg-). Diese Dateien werden beim Systemstart oder beim erneuten Aktivieren des Adapters eingelesen, sodass die Einstellungen auch nach einem Reboot oder einer Reinitialisierung erhalten bleiben."
+    },
+    "en": {
+      "question": "What is the purpose of the persistent configuration in Linux networking?",
+      "options": {
+        "A": "To configure network settings that are applied only during the current session",
+        "B": "To apply network settings immediately without rebooting",
+        "C": "To configure network settings that are applied after a reboot or reinitialization of a network adapter",
+        "D": "To temporarily override the running configuration until the next reboot"
+      },
+      "answer": "C",
+      "explanation": "Persistent configuration is stored in files such as /etc/network/interfaces or ifcfg-. These files are read at boot time or when the interface is brought up again, so the settings survive reboots and adapter reinitializations."
+    }
+  },
+  {
+    "id": 198,
+    "de": {
+      "frage": "Welches ist das klassische Benennungsschema für Ethernet-Schnittstellen unter Linux?",
+      "optionen": {
+        "A": "en0, en1, en2",
+        "B": "eth0, eth1, eth2",
+        "C": "wlan0, wlan1, wlan2",
+        "D": "wlan0, wlan1, wlan2"
+      },
+      "antwort": "B",
+      "erklärung": "Traditionell wurden Ethernet-Adapter in Linux als eth0, eth1, eth2 usw. bezeichnet. Erst neuere Distributionen verwenden alternative, vorhersagbare Namen wie enp0s3 oder eno1."
+    },
+    "en": {
+      "question": "What is the classic naming scheme for Ethernet interfaces in Linux?",
+      "options": {
+        "A": "en0, en1, en2",
+        "B": "eth0, eth1, eth2",
+        "C": "wlan0, wlan1, wlan2",
+        "D": "wlan0, wlan1, wlan2"
+      },
+      "answer": "B",
+      "explanation": "Historically, Linux named Ethernet adapters eth0, eth1, eth2, and so on. Newer predictable interface names (e.g., enp0s3, eno1) were introduced later."
+    }
+  },
+  {
+    "id": 199,
+    "de": {
+      "frage": "Was stellt jedes Oktett in einer IPv4-Adresse in der Binärdarstellung dar?",
+      "optionen": {
+        "A": "Ein Dezimalwert zwischen 0 und 255",
+        "B": "Ein Hexadezimalwert",
+        "C": "Eine eindeutige Netzwerkkennung",
+        "D": "Eine spezifische Hardwareadresse"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Oktett besteht aus 8 Bits. In der Binärdarstellung repräsentieren diese Bits einen Dezimalwert im Bereich von 0 bis 255, der als Teil der IPv4-Adresse verwendet wird."
+    },
+    "en": {
+      "question": "What does each octet in an IPv4 address represent in binary notation?",
+      "options": {
+        "A": "A decimal value between 0 and 255",
+        "B": "A hexadecimal value",
+        "C": "A unique network identifier",
+        "D": "A specific hardware address"
+      },
+      "answer": "A",
+      "explanation": "Each octet is 8 bits long; in binary it represents a decimal value from 0 to 255, which forms one portion of the IPv4 address."
+    }
+  },
+  {
+    "id": 200,
+    "de": {
+      "frage": "Auf der Netzwerkschicht (Layer 3) werden Quell- und Ziel-IP-Adressen verwendet, um was zu tun?",
+      "optionen": {
+        "A": "Den Netzwerkzugriff basierend auf Gerätetypen steuern",
+        "B": "Pakete an das richtige Ziel weiterleiten",
+        "C": "Geräten im Netzwerk spezielle Funktionen zuweisen",
+        "D": "Netzwerkverkehr und Datennutzung überwachen"
+      },
+      "antwort": "B",
+      "erklärung": "Auf Layer 3 lesen Router die Quell- und Ziel-IP-Adressen, um zu entscheiden, wohin ein Paket als Nächstes gesendet werden muss. Dadurch gelangt das Paket zum vorgesehenen Empfänger."
+    },
+    "en": {
+      "question": "At the Network layer, what are IP source and destination addresses used to do?",
+      "options": {
+        "A": "Control access to the network based on device types",
+        "B": "Forward packets to the proper destination",
+        "C": "Assign specific functions to devices within the network",
+        "D": "Monitor network traffic and data usage"
+      },
+      "answer": "B",
+      "explanation": "Layer-3 devices (routers) examine the IP source and destination addresses to decide where to send a packet next, ensuring it reaches its intended destination."
+    }
+  },
+  {
+    "id": 201,
+    "de": {
+      "frage": "Ein Systemadministrator untersucht Kommunikationsprobleme auf einem Server.\nWenn sich die Ziel-IPv4-Adresse in einem anderen IP-Netz oder Subnetz befindet, wohin sendet der Host den Datenverkehr?",
+      "optionen": {
+        "A": "CAM",
+        "B": "SFD",
+        "C": "MTRJ",
+        "D": "Standard-Gateway"
+      },
+      "antwort": "D",
+      "erklärung": "Befindet sich das Zielnetz außerhalb des eigenen Subnetzes, leitet der Host die Pakete an das konfigurierte Standard-Gateway weiter, das für die Weiterleitung in andere Netze zuständig ist."
+    },
+    "en": {
+      "question": "A systems administrator is investigating communication issues on a server.\nIf the destination IPv4 address is on a different IP network or subnet, where will the host send the traffic?",
+      "options": {
+        "A": "CAM",
+        "B": "SFD",
+        "C": "MTRJ",
+        "D": "Default gateway"
+      },
+      "answer": "D",
+      "explanation": "When the destination IPv4 address is on a different network, the host forwards the traffic to its configured default gateway, which routes packets to other networks."
+    }
+  },
+  {
+    "id": 202,
+    "de": {
+      "frage": "Was ermöglichen dynamische Routing-Protokolle Routern?",
+      "optionen": {
+        "A": "IP-Adressen dynamisch zuweisen.",
+        "B": "Informationen über bekannte Netzwerke und mögliche Pfade austauschen.",
+        "C": "Datenpakete zur sicheren Übertragung verschlüsseln.",
+        "D": "Die Geschwindigkeit der Paketübertragung erhöhen."
+      },
+      "antwort": "B",
+      "erklärung": "Dynamische Routing-Protokolle (z. B. OSPF, RIP, EIGRP) lassen Router Routing-Informationen austauschen, sodass sie automatisch erfahren, welche Netzwerke erreichbar sind und über welche Pfade Daten dorthin gelangen können."
+    },
+    "en": {
+      "question": "What can dynamic routing protocols allow routers to do?",
+      "options": {
+        "A": "Assign IP addresses dynamically.",
+        "B": "Share information about known networks and possible paths.",
+        "C": "Encrypt data packets for secure transmission.",
+        "D": "Increase the speed of packet delivery."
+      },
+      "answer": "B",
+      "explanation": "Dynamic routing protocols (e.g., OSPF, RIP, EIGRP) let routers exchange routing information so they automatically learn which networks exist and the best paths to reach them."
+    }
+  },
+  {
+    "id": 203,
+    "de": {
+      "frage": "Ein Host hat die Adresse 100.55.177.99/16. Welche der folgenden Adressen ist die Broadcast-Adresse dieses Subnetzes?",
+      "optionen": {
+        "A": "255.255.0.0",
+        "B": "255.255.255.0",
+        "C": "100.55.255.255",
+        "D": "100.255.255.255"
+      },
+      "antwort": "C",
+      "erklärung": "Mit der Präfixlänge /16 bilden die ersten beiden Oktette (100.55) den Netzwerkteil. Für die Broadcast-Adresse werden alle Host-Bits auf 1 gesetzt, also 100.55.255.255."
+    },
+    "en": {
+      "question": "A host has an address of 100.55.177.99/16. Which of the following is the broadcast address for the subnet?",
+      "options": {
+        "A": "255.255.0.0",
+        "B": "255.255.255.0",
+        "C": "100.55.255.255",
+        "D": "100.255.255.255"
+      },
+      "answer": "C",
+      "explanation": "With a /16 mask, the first two octets (100.55) are the network portion. Setting all host bits to 1 gives the broadcast address 100.55.255.255."
+    }
   }
-}
 ]
