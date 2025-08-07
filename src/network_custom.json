@@ -5244,482 +5244,1135 @@
     }
   },
   {
-"id": 204,
-"de": {
-"frage": "Warum gilt VLSM als ergänzende Technik zum Supernetting?",
-"optionen": {
-"A": "Weil es die Zuweisung von IP-Adressen an ISPs ermöglicht",
-"B": "Weil es das Netzwerkdesign vereinfacht",
-"C": "Weil es eine effizientere IP-Adresszuweisung ermöglicht",
-"D": "Weil es den IPv4-Adressraum vergrößert"
-},
-"antwort": "C",
-"erklärung": "VLSM erlaubt es, innerhalb eines Supernetzes Subnetze mit variablen Längen zu nutzen, sodass Adressblöcke exakt an den tatsächlichen Bedarf angepasst werden können. Dadurch wird die Nutzung des vorhandenen IP-Adressraums optimiert und das Supernetting sinnvoll ergänzt."
-},
-"en": {
-"question": "Why is VLSM considered a complementary technique to supernetting?",
-"options": {
-"A": "Because it allows for the allocation of IP addresses to ISPs",
-"B": "Because it simplifies network design",
-"C": "Because it allows for more efficient IP address allocation",
-"D": "Because it increases the IPv4 address space"
-},
-"answer": "C",
-"explanation": "VLSM lets you create variable-length subnets within a supernet, matching address block sizes to actual requirements. This leads to more efficient use of the existing IP address space, making it an ideal complement to supernetting."
-}
-},
-{
-"id": 205,
-"de": {
-"frage": "Was ist der Hauptvorteil der Verwendung von VLSM gegenüber der traditionellen Subnetzmaskierung fester Länge?",
-"optionen": {
-"A": "Es vereinfacht die Routingtabelle.",
-"B": "Es ermöglicht die Verwendung derselben Subnetzmaske im gesamten Netzwerk.",
-"C": "Es reduziert die Anzahl verschwendeter IP-Adressen.",
-"D": "Es erhöht die Gesamtzahl verfügbarer IP-Adressen."
-},
-"antwort": "C",
-"erklärung": "Mit VLSM können Subnetze in variablen Größen definiert werden, sodass jedem Netz genau so viele Adressen zugewiesen werden, wie tatsächlich benötigt werden. Dadurch werden ungenutzte (verschwendete) IP-Adressen stark reduziert, was der größte Vorteil gegenüber festen, gleich langen Subnetzmasken ist."
-},
-"en": {
-"question": "What is the main advantage of using VLSM over traditional fixed-length subnet masking?",
-"options": {
-"A": "It simplifies the routing table.",
-"B": "It allows for the use of the same subnet mask throughout the network.",
-"C": "It reduces the number of wasted IP addresses.",
-"D": "It increases the total number of available IP addresses."
-},
-"answer": "C",
-"explanation": "VLSM lets you create subnets of variable sizes, assigning just the right number of addresses to each network segment. This minimizes unused (wasted) IP addresses, which is the main advantage over fixed, equal-length subnet masks."
-}
-},
-{
-"id": 206,
-"de": {
-"frage": "Welcher der folgenden IP-Adressbereiche bzw. IP-Adressen ist speziell für die Verwendung in Dokumentationen und Beispielen reserviert?",
-"optionen": {
-"A": "172.16.0.0/12",
-"B": "192.0.2.0/24",
-"C": "224.0.0.0 bis 239.255.255.255",
-"D": "127.0.0.0 bis 127.255.255.255"
-},
-"antwort": "B",
-"erklärung": "Der Adressblock 192.0.2.0/24 ist laut RFC 5737 ausdrücklich für Dokumentations- und Beispielzwecke reserviert. Er kann gefahrlos in Anleitungen, Büchern oder Präsentationen genutzt werden, ohne reale Netzwerke zu beeinträchtigen."
-},
-"en": {
-"question": "Which of the following IP address ranges or addresses is specifically set aside for use in documentation and examples?",
-"options": {
-"A": "172.16.0.0/12",
-"B": "192.0.2.0/24",
-"C": "224.0.0.0 through 239.255.255.255",
-"D": "127.0.0.0 to 127.255.255.255"
-},
-"answer": "B",
-"explanation": "The 192.0.2.0/24 address block is explicitly reserved by RFC 5737 for documentation and example purposes. It can be safely used in guides, books, or presentations without affecting real networks."
-}
-},
-{
-"id": 207,
-"de": {
-"frage": "Welcher Prozess ermöglicht Hosts mit privaten IP-Adressen den Zugriff auf das Internet?",
-"optionen": {
-"A": "Dynamic Host Configuration Protocol (DHCP)",
-"B": "Network Address Translation (NAT)",
-"C": "Domain Name System (DNS)",
-"D": "Internet Protocol Security (IPsec)"
-},
-"antwort": "B",
-"erklärung": "Network Address Translation (NAT) übersetzt private, nicht öffentlich routbare IP-Adressen in eine oder mehrere öffentliche IP-Adressen. Dadurch können interne Hosts mit privaten Adressen Verbindungen zum Internet herstellen und Antworten empfangen."
-},
-"en": {
-"question": "Which process allows hosts using private IP addresses to access the Internet?",
-"options": {
-"A": "Dynamic Host Configuration Protocol (DHCP)",
-"B": "Network Address Translation (NAT)",
-"C": "Domain Name System (DNS)",
-"D": "Internet Protocol Security (IPsec)"
-},
-"answer": "B",
-"explanation": "Network Address Translation (NAT) converts private, non-routable IP addresses into one or more public IP addresses. This translation lets internal hosts with private addresses initiate connections to the Internet and receive replies."
-}
-},
-{
-"id": 208,
-"de": {
-"frage": "Beim Subnetting der Netzwerkadresse 172.30.0.0/16, um 12 Subnetze zu unterstützen, welche neue Subnetzmaske im Punkt-Dezimal-Format ergibt sich?",
-"optionen": {
-"A": "255.255.255.0",
-"B": "255.255.240.0",
-"C": "255.255.248.0",
-"D": "255.255.0.0"
-},
-"antwort": "B",
-"erklärung": "Für mindestens 12 Subnetze werden 4 zusätzliche Subnetzbits benötigt (2^4 = 16). Die ursprüngliche /16-Maske wird daher auf /20 erweitert, was der Maske 255.255.240.0 entspricht."
-},
-"en": {
-"question": "When subnetting the network address 172.30.0.0/16 to support 12 subnets, what is the new subnet mask in dotted decimal format?",
-"options": {
-"A": "255.255.255.0",
-"B": "255.255.240.0",
-"C": "255.255.248.0",
-"D": "255.255.0.0"
-},
-"answer": "B",
-"explanation": "To create at least 12 subnets, you need 4 additional subnet bits (2^4 = 16). Adding these to the original /16 mask results in a /20 mask, which is 255.255.240.0."
-}
-},
-{
-"id": 209,
-"de": {
-"frage": "Woran sollten Sie bei Subnetzberechnungen denken? (Wählen Sie zwei Antworten.)",
-"optionen": {
-"A": "Verwenden Sie stets dieselbe Subnetzmaske für jedes Subnetz, um die Berechnungen zu vereinfachen.",
-"B": "Denken Sie in Bezug auf die Anzahl der Maskenbits.",
-"C": "Merken Sie sich die Dezimalwerte für die Anzahl der auf 1 gesetzten Bits in einem Oktett einer Maske.",
-"D": "Subnetzberechnungen sind überflüssig, wenn Sie DHCP einsetzen.",
-"E": "Die Subnetzmaske kann eine beliebige, möglichst kompliziert aussehende Zahl sein."
-},
-"antwort": ["B", "C"],
-"erklärung": "Bei Subnetzberechnungen ist es am hilfreichsten, (1) in Maskenbits zu denken – also zu wissen, wie viele Bits einer Adresse zur Netz- bzw. Host-Kennung gehören – und (2) die Dezimalwerte der möglichen Bitmuster in einem Oktett (128, 192, 224, 240, 248, 252, 254, 255) auswendig zu kennen. Diese beiden Regeln beschleunigen die Berechnungen erheblich. Die anderen Aussagen sind falsch oder irreführend."
-},
-"en": {
-"question": "When performing subnet calculations, what should you remember? (Select two.)",
-"options": {
-"A": "Always use the same subnet mask for every subnet to simplify calculations.",
-"B": "Think in terms of the number of mask bits.",
-"C": "Memorize the decimal values for the number of bits set to 1 in an octet within a mask.",
-"D": "Subnet calculations are unnecessary if you use DHCP.",
-"E": "The subnet mask can be any random set of numbers as long as it looks complex."
-},
-"answer": ["B", "C"],
-"explanation": "For accurate subnetting, (1) think in mask bits—know exactly how many bits are used for the network and host portions—and (2) memorize the decimal values for the possible bit patterns in an octet (128, 192, 224, 240, 248, 252, 254, 255). These two practices make subnet calculations quick and reliable. The other statements are incorrect or misleading."
-}
-},
-{
-"id": 210,
-"de": {
-"frage": "Welche der folgenden IP-Adressen sind Class-C-Adressen? (Wählen Sie zwei.)",
-"optionen": {
-"A": "125.166.11.0",
-"B": "223.16.5.0",
-"C": "240.0.0.0",
-"D": "189.189.5.2",
-"E": "192.15.5.55"
-},
-"antwort": ["B", "E"],
-"erklärung": "Class-C-Adressen haben das erste Oktett im Bereich 192–223. Daher gehören 223.16.5.0 und 192.15.5.55 zur Klasse C."
-},
-"en": {
-"question": "Which of the following IP addresses are Class C addresses? (Select two.)",
-"options": {
-"A": "125.166.11.0",
-"B": "223.16.5.0",
-"C": "240.0.0.0",
-"D": "189.189.5.2",
-"E": "192.15.5.55"
-},
-"answer": ["B", "E"],
-"explanation": "Class C addresses have a first octet in the range 192–223. Therefore, 223.16.5.0 and 192.15.5.55 are Class C addresses."
-}
-},
-{
-"id": 211,
-"de": {
-"frage": "Sie konfigurieren die IP-Adresse für einen Host und sollen die Adresse 192.160.99.110/16 verwenden.\nWelche Subnetzmaske würden Sie verwenden?",
-"optionen": {
-"A": "255.0.0.0",
-"B": "255.255.0.0",
-"C": "255.255.252.0",
-"D": "255.255.255.0"
-},
-"antwort": "B",
-"erklärung": "Die CIDR-Notation /16 bedeutet, dass die ersten 16 Bits der Adresse für das Netzwerk reserviert sind. Das entspricht der Subnetzmaske 255.255.0.0."
-},
-"en": {
-"question": "You're configuring the IP address for a host and have been asked to use the address 192.160.99.110/16. Which subnet mask value would you use?",
-"options": {
-"A": "255.0.0.0",
-"B": "255.255.0.0",
-"C": "255.255.252.0",
-"D": "255.255.255.0"
-},
-"answer": "B",
-"explanation": "The /16 CIDR suffix indicates that the first 16 bits are the network portion of the address. This corresponds to the subnet mask 255.255.0.0."
-}
-},
-{
-"id": 212,
-"de": {
-"frage": "Wie nutzen Router außerhalb des Netzwerks CIDR?",
-"optionen": {
-"A": "Indem sie das /22-Präfix verwenden, um das Routing zu vereinfachen und die Komplexität ihrer Routingtabellen zu verringern",
-"B": "Indem sie Datenpakete auf Basis der CIDR-Notation verschlüsseln",
-"C": "Indem sie dynamische IP-Adressen für Geräte im Netzwerk vergeben",
-"D": "Indem sie direkt die internen Subnetzkonfigurationen des LAN verwalten"
-},
-"antwort": "A",
-"erklärung": "Externe Router bündeln mit CIDR mehrere zusammenhängende Netze zu einem größeren Präfix (z. B. /22). Diese Routen­aggregation reduziert die Anzahl der Einträge in ihren Routingtabellen und vereinfacht das Routing."
-},
-"en": {
-"question": "How do routers external to the network utilize CIDR?",
-"options": {
-"A": "By using the /22 prefix to simplify routing and reduce the complexity of their routing tables",
-"B": "By encrypting data packets based on the CIDR notation",
-"C": "By assigning dynamic IP addresses to devices within the network",
-"D": "By directly managing the LAN's internal subnet configurations"
-},
-"answer": "A",
-"explanation": "External routers apply CIDR route summarization, advertising a single aggregated prefix (e.g., /22) instead of many smaller routes. This reduces routing-table size and streamlines routing decisions."
-}
-},
-{
-"id": 213,
-"de": {
-"frage": "Was zeigt der TTL-Wert in der Ausgabe des Befehls ping an?",
-"optionen": {
-"A": "Die Verschlüsselungsstufe des Pakets",
-"B": "Die Anzahl der Hops, die das Paket bis zum Ziel benötigt hat",
-"C": "Die Geschwindigkeit der Netzwerkverbindung",
-"D": "Die Nutzlastgröße des Pakets"
-},
-"antwort": "B",
-"erklärung": "TTL (Time To Live) legt fest, wie viele Router-Hops ein IP-Paket maximal durchlaufen darf. Jeder Router dekrementiert den Wert um 1; erreicht er 0, wird das Paket verworfen. Der in der ping-Antwort angezeigte TTL-Rest erlaubt daher Rückschlüsse auf die Anzahl der bereits durchlaufenen Hops."
-},
-"en": {
-"question": "What does the TTL value in the ping command output indicate?",
-"options": {
-"A": "The encryption level of the packet",
-"B": "The number of hops it took for the packet to reach its destination",
-"C": "The speed of the network connection",
-"D": "The packet's payload size"
-},
-"answer": "B",
-"explanation": "TTL (Time To Live) sets the maximum number of router hops an IP packet can traverse. Each router decrements the TTL by 1; when it reaches 0, the packet is discarded. The TTL value shown in a ping reply therefore reflects how many hops the packet has already taken."
-}
-},
-{
-"id": 214,
-"de": {
-"frage": "Ein Benutzer hat Probleme, einen entfernten Webserver zu erreichen. Sie lassen ihn unter Windows den Befehl ping 203.0.113.10 ausführen, woraufhin folgende Ausgabe gemeldet wird:\n\nPinging 203.0.113.10 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 203.0.113.10:\n Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)\n\nEin Traceroute zeigt, dass die Pakete die IP-Adresse direkt vor 203.0.113.10 erfolgreich erreichen.\n\nWas ist die WAHRSCHEINLICHSTE Ursache des Problems?",
-"optionen": {
-"A": "Die Netzwerkkarte des Arbeitsplatzrechners hat ein defektes Kabel und kann keine Netzwerkgeräte erreichen.",
-"B": "Auf dem Rechner des Benutzers ist eine DNS-Einstellung falsch konfiguriert, wodurch die Kommunikation verhindert wird.",
-"C": "Der Zielserver 203.0.113.10 ist nicht per ICMP erreichbar; vermutlich blockiert eine Firewall oder Sicherheitseinstellung die Pakete.",
-"D": "Das Standard-Gateway des Rechners ist falsch konfiguriert und verhindert jegliche ausgehende Kommunikation."
-},
-"antwort": "C",
-"erklärung": "Da das Traceroute bis zum vorletzten Hop gelangt, ist der Netzwerkpfad intakt und das Gateway funktioniert. Die 100% Paketverluste bei ping weisen darauf hin, dass der Zielhost oder dessen Firewall ICMP-Echo-Pakete verwirft. Somit ist am wahrscheinlichsten, dass der Server 203.0.113.10 ICMP blockiert oder selbst offline ist."
-},
-"en": {
-"question": "A user is having trouble reaching a remote web server. You ask them to run ping 203.0.113.10 from their Windows workstation, and they report the following output:\n\nPinging 203.0.113.10 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 203.0.113.10:\n Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)\n\nA traceroute shows that packets successfully reach the IP address just before 203.0.113.10.\n\nWhat is the MOST likely cause of the problem?",
-"options": {
-"A": "The workstation's network adapter has a faulty cable and cannot reach any network devices.",
-"B": "There is a misconfigured DNS setting on the user's workstation preventing communication.",
-"C": "The destination server, 203.0.113.10, is not reachable, likely because a firewall or security setting is dropping ICMP packets.",
-"D": "The workstation's default gateway is misconfigured, preventing any outbound communication."
-},
-"answer": "C",
-"explanation": "The traceroute reaches the hop right before the destination, proving the network path and gateway are working. The 100% packet loss with ping suggests that the target host or its firewall is discarding ICMP echo requests. Therefore, the most likely cause is that the server 203.0.113.10 is blocking or not responding to ICMP."
-}
-},
-{
-"id": 215,
-"de": {
-"frage": "Welcher Ping-Schalter zwingt das Tool dazu, den IPv6-Hosteintrag abzufragen?",
-"optionen": {
-"A": "-4",
-"B": "-6",
-"C": "-t",
-"D": "-c"
-},
-"antwort": "B",
-"erklärung": "Der Schalter -6 erzwingt, dass ping IPv6 verwendet und somit den AAAA-Eintrag (IPv6-Hosteintrag) einer Adresse abfragt. Der Schalter -4 wählt IPv4, -t führt einen Dauer-Ping aus, und -c wird in Linux/Unix zum Festlegen der Paketanzahl genutzt."
-},
-"en": {
-"question": "Which ping switch forces the tool to query the IPv6 host record?",
-"options": {
-"A": "-4",
-"B": "-6",
-"C": "-t",
-"D": "-c"
-},
-"answer": "B",
-"explanation": "The -6 switch forces ping to use IPv6, causing it to query the AAAA (IPv6 host) record. The -4 switch selects IPv4, -t sends pings continuously, and -c specifies the packet count on Linux/Unix systems."
-}
-},
-{
-"id": 216,
-"de": {
-"frage": "Ein Helpdesk-Techniker behebt Probleme auf einem Windows-Client. Welchen Befehl sollte der Techniker verwenden, um die aktuelle IP-Adresse zu löschen, damit eine neue zugewiesen werden kann?",
-"optionen": {
-"A": "ipconfig /flushdns",
-"B": "ipconfig /all",
-"C": "ipconfig /release",
-"D": "ipconfig /renew"
-},
-"antwort": "C",
-"erklärung": "Der Befehl 'ipconfig /release' gibt die momentan vom DHCP-Server zugewiesene IP-Adresse frei und löscht sie aus der Konfiguration. Anschließend kann mit 'ipconfig /renew' oder automatisch eine neue Adresse bezogen werden."
-},
-"en": {
-"question": "A helpdesk technician is troubleshooting issues on a Windows client. Which command should the technician use to clear the current IP address so that a new one can be assigned?",
-"options": {
-"A": "ipconfig /flushdns",
-"B": "ipconfig /all",
-"C": "ipconfig /release",
-"D": "ipconfig /renew"
-},
-"answer": "C",
-"explanation": "The command 'ipconfig /release' releases the current DHCP lease, removing the existing IP configuration so the client can obtain a new address."
-}
-},
-{
-"id": 217,
-"de": {
-"frage": "Sie verwalten ein Netzwerk mit mehreren internen Subnetzen. Sie schließen einen Arbeitsplatzrechner an das Subnetz 192.168.1.0/24 an. Dieser Rechner kann mit keinem anderen Host im Netzwerk kommunizieren. Sie führen ipconfig /all aus und sehen Folgendes:\n\nEthernet-Adapter LAN-Verbindung:\n Connection-specific DNS Suffix . : mydomain.local\n Description . . . . . . . . . . : Broadcom network adapter\n Physical Address. . . . . . . . : 00-AA-BB-CC-74-EF\n DHCP Enabled . . . . . . . . . : No\n Autoconfiguration Enabled . . . : Yes\n IPv4 Address . . . . . . . . . : 192.168.2.102 (Preferred)\n Subnet Mask . . . . . . . . . : 255.255.255.0\n Default Gateway . . . . . . . . : 192.168.1.1\n DNS Servers . . . . . . . . . . : 192.168.2.20\n\nWas ist die WAHRSCHEINLICHSTE Ursache des Problems?",
-"optionen": {
-"A": "Falsche Subnetzmaske",
-"B": "Falsches Standardgateway",
-"C": "Falsche IP-Adresse",
-"D": "Falsche DNS-Server-Adresse"
-},
-"antwort": "C",
-"erklärung": "Der Rechner befindet sich physisch im Subnetz 192.168.1.0/24, hat aber die Adresse 192.168.2.102/24 konfiguriert. Da Host und Gateway in unterschiedlichen Netzen liegen, können keine Pakete zugestellt werden. Die IP-Adresse ist daher falsch."
-},
-"en": {
-"question": "You manage a network that has multiple internal subnets. You connect a workstation to the 192.168.1.0/24 subnet. This workstation cannot communicate with any other host on the network. You run ipconfig /all and see the following:\n\nEthernet adapter Local Area Connection:\n Connection-specific DNS Suffix : mydomain.local\n Description . . . . . . . . . : Broadcom network adapter\n Physical Address . . . . . . . : 00-AA-BB-CC-74-EF\n DHCP Enabled . . . . . . . . . : No\n Autoconfiguration Enabled . . : Yes\n IPv4 Address . . . . . . . . . : 192.168.2.102 (Preferred)\n Subnet Mask . . . . . . . . . : 255.255.255.0\n Default Gateway . . . . . . . : 192.168.1.1\n DNS Servers . . . . . . . . . : 192.168.2.20\n\nWhat is the MOST likely cause of the problem?",
-"options": {
-"A": "Incorrect subnet mask",
-"B": "Incorrect default gateway",
-"C": "Incorrect IP address",
-"D": "Incorrect DNS server address"
-},
-"answer": "C",
-"explanation": "The workstation is physically connected to the 192.168.1.0/24 network but configured with 192.168.2.102/24. Because the host and its gateway are in different subnets, communication fails. Therefore, the IP address is incorrect."
-}
-},
-{
-"id": 218,
-"de": {
-"frage": "Sie beheben ein Verbindungsproblem auf einem Linux-Server. Eine Verbindung zu einem anderen System im lokalen Netzwerk funktioniert, zu einem Server in einem entfernten Netzwerk jedoch nicht. Sie vermuten, dass das Standard-Gateway falsch konfiguriert ist.\n\nWelches der folgenden Werkzeuge würden Sie verwenden, um die Standard-Gateway-Informationen auf dem Linux-Server anzuzeigen?",
-"optionen": {
-"A": "ipconfig",
-"B": "Telnet",
-"C": "route",
-"D": "dig"
-},
-"antwort": "C",
-"erklärung": "Der Befehl 'route' (oder 'ip route show') zeigt die Routingtabelle des Linux-Kernels an. Darin erscheint eine Zeile mit dem Eintrag 'default', der das aktuell konfigurierte Standard-Gateway angibt. Die anderen Optionen liefern diese Information nicht."
-},
-"en": {
-"question": "You are troubleshooting a connectivity problem on a Linux server. You can reach another system on the local network but not a server on a remote network. You suspect that the system's default gateway is configured incorrectly.\n\nWhich of the following would you use to view the default gateway information on the Linux server?",
-"options": {
-"A": "ipconfig",
-"B": "Telnet",
-"C": "route",
-"D": "dig"
-},
-"answer": "C",
-"explanation": "The 'route' command (or 'ip route show') displays the Linux kernel's routing table, including the line labeled 'default' that identifies the configured default gateway. The other tools do not show this information."
-}
-},
-{
-"id": 219,
-"de": {
-"frage": "Wozu dient der Befehl „ip -s link“?",
-"optionen": {
-"A": "Zum Hinzufügen oder Löschen von IP-Adressen",
-"B": "Zum Aktivieren oder Deaktivieren von Schnittstellen",
-"C": "Zum Anzeigen von Schnittstellenstatistiken",
-"D": "Zum Konfigurieren von Firewall-Regeln"
-},
-"antwort": "C",
-"erklärung": "Der Befehl „ip link“ zeigt Details zu den Netzwerkschnittstellen an. Mit dem Zusatz „-s“ (stats) werden darüber hinaus Paket- und Fehlerstatistiken für jede Schnittstelle ausgegeben. So lassen sich schnell Traffic- und Fehlerzähler überwachen."
-},
-"en": {
-"question": "What is the purpose of the 'ip -s link' command?",
-"options": {
-"A": "To add or delete IP addresses",
-"B": "To enable or disable interfaces",
-"C": "To report interface statistics",
-"D": "To configure firewall rules"
-},
-"answer": "C",
-"explanation": "The 'ip link' command shows details about network interfaces, and the '-s' (stats) option adds per-interface packet and error statistics. It is used to view traffic and error counters for each interface."
-}
-},
-{
-"id": 220,
-"de": {
-"frage": "Was ist der Unterschied zwischen einem ARP-Cache und der MAC-Adressentabelle eines Switches?",
-"optionen": {
-"A": "Ein ARP-Cache ordnet IP-Adressen MAC-Adressen zu, während eine MAC-Adressentabelle Ports MAC-Adressen zuordnet.",
-"B": "Ein ARP-Cache wird von Routern verwendet, während eine MAC-Adressentabelle von Switches verwendet wird.",
-"C": "Ein ARP-Cache weist IP-Adressen zu, während eine MAC-Adressentabelle MAC-Adressen zuweist.",
-"D": "Ein ARP-Cache verschlüsselt Daten, während eine MAC-Adressentabelle dies nicht tut."
-},
-"antwort": "A",
-"erklärung": "Der ARP-Cache eines Hosts enthält Zuordnungen zwischen Layer-3-Adressen (IP) und Layer-2-Adressen (MAC). Die MAC-Adressentabelle (CAM-Tabelle) eines Switches verknüpft dagegen MAC-Adressen mit den physischen Ports, an denen sie gelernt wurden, um Frames korrekt weiterzuleiten."
-},
-"en": {
-"question": "What is the difference between an ARP cache and a switch's MAC address table?",
-"options": {
-"A": "An ARP cache maps IP addresses to MAC addresses, while a MAC address table maps ports to MAC addresses.",
-"B": "An ARP cache is used by routers, while a MAC address table is used by switches.",
-"C": "An ARP cache assigns IP addresses, while a MAC address table assigns MAC addresses.",
-"D": "An ARP cache encrypts data, while a MAC address table does not."
-},
-"answer": "A",
-"explanation": "A host's ARP cache stores Layer-3 to Layer-2 mappings—IP addresses to MAC addresses. A switch's MAC address (CAM) table, in contrast, maps learned MAC addresses to the physical switch ports they were seen on so the switch can forward frames properly."
-}
-},
-{
-"id": 221,
-"de": {
-"frage": "Was ist der Hauptunterschied zwischen dynamischem Lernen und statischer Konfiguration in Netzgeräten?",
-"optionen": {
-"A": "Dynamisches Lernen ermöglicht es Netzgeräten, MAC-Adressen automatisch zu lernen und zu speichern, während bei statischer Konfiguration MAC-Adressen manuell eingetragen werden müssen.",
-"B": "Dynamisches Lernen verschlüsselt den Netzwerkverkehr, während statische Konfiguration dies nicht tut.",
-"C": "Statische Konfiguration erlaubt automatische Firmware-Updates von Geräten, während dynamisches Lernen dies nicht ermöglicht.",
-"D": "Dynamisches Lernen weist Geräten IP-Adressen zu, während statische Konfiguration zur Zuweisung von MAC-Adressen verwendet wird."
-},
-"antwort": "A",
-"erklärung": "Switches und andere Layer-2-Geräte können MAC-Adressen dynamisch über eingehende Frames lernen und in ihrer CAM-Tabelle speichern. Bei statischer Konfiguration muss der Administrator die MAC-Port-Zuordnung manuell eintragen; sie ändert sich nicht automatisch."
-},
-"en": {
-"question": "What is the primary difference between dynamic learning and static configuration in network devices?",
-"options": {
-"A": "Dynamic learning allows network devices to automatically learn and store MAC addresses, while static configuration requires manual entry of MAC addresses.",
-"B": "Dynamic learning encrypts network traffic, while static configuration does not.",
-"C": "Static configuration allows for automatic updates to device firmware, while dynamic learning does not.",
-"D": "Dynamic learning assigns IP addresses to devices, while static configuration is used for assigning MAC addresses."
-},
-"answer": "A",
-"explanation": "Switches and other Layer-2 devices can dynamically learn MAC addresses from incoming frames and populate their CAM tables automatically. With static configuration, the administrator manually assigns MAC-to-port mappings, and they do not change on their own."
-}
-},
-{
-"id": 222,
-"de": {
-"frage": "Was ist der Zweck des Zwischenspeicherns von ARP-Ergebnissen?",
-"optionen": {
-"A": "Die Verschlüsselungsstufe von Datenpaketen zu erhöhen",
-"B": "Die Menge des ARP-Verkehrs im Netzwerk zu verringern",
-"C": "Statischen IP-Adressen Geräten zuzuweisen",
-"D": "Die Geschwindigkeit des Routing-Prozesses zu erhöhen"
-},
-"antwort": "B",
-"erklärung": "Durch das Zwischenspeichern der IP-zu-MAC-Zuordnungen im ARP-Cache müssen Hosts nicht für jedes Paket einen neuen ARP-Broadcast senden. Das reduziert die Anzahl der ARP-Anfragen und verringert so den ARP-Verkehr im Netzwerk erheblich."
-},
-"en": {
-"question": "What is the purpose of caching ARP results?",
-"options": {
-"A": "To increase the encryption level of data packets",
-"B": "To reduce the amount of ARP traffic on the network",
-"C": "To assign static IP addresses to devices",
-"D": "To increase the speed of the routing process"
-},
-"answer": "B",
-"explanation": "By storing IP-to-MAC mappings in the ARP cache, a host can reuse the information instead of broadcasting a new ARP request for every packet. This greatly reduces the volume of ARP traffic on the network."
-}
-}
+    "id": 204,
+    "de": {
+      "frage": "Warum gilt VLSM als ergänzende Technik zum Supernetting?",
+      "optionen": {
+        "A": "Weil es die Zuweisung von IP-Adressen an ISPs ermöglicht",
+        "B": "Weil es das Netzwerkdesign vereinfacht",
+        "C": "Weil es eine effizientere IP-Adresszuweisung ermöglicht",
+        "D": "Weil es den IPv4-Adressraum vergrößert"
+      },
+      "antwort": "C",
+      "erklärung": "VLSM erlaubt es, innerhalb eines Supernetzes Subnetze mit variablen Längen zu nutzen, sodass Adressblöcke exakt an den tatsächlichen Bedarf angepasst werden können. Dadurch wird die Nutzung des vorhandenen IP-Adressraums optimiert und das Supernetting sinnvoll ergänzt."
+    },
+    "en": {
+      "question": "Why is VLSM considered a complementary technique to supernetting?",
+      "options": {
+        "A": "Because it allows for the allocation of IP addresses to ISPs",
+        "B": "Because it simplifies network design",
+        "C": "Because it allows for more efficient IP address allocation",
+        "D": "Because it increases the IPv4 address space"
+      },
+      "answer": "C",
+      "explanation": "VLSM lets you create variable-length subnets within a supernet, matching address block sizes to actual requirements. This leads to more efficient use of the existing IP address space, making it an ideal complement to supernetting."
+    }
+  },
+  {
+    "id": 205,
+    "de": {
+      "frage": "Was ist der Hauptvorteil der Verwendung von VLSM gegenüber der traditionellen Subnetzmaskierung fester Länge?",
+      "optionen": {
+        "A": "Es vereinfacht die Routingtabelle.",
+        "B": "Es ermöglicht die Verwendung derselben Subnetzmaske im gesamten Netzwerk.",
+        "C": "Es reduziert die Anzahl verschwendeter IP-Adressen.",
+        "D": "Es erhöht die Gesamtzahl verfügbarer IP-Adressen."
+      },
+      "antwort": "C",
+      "erklärung": "Mit VLSM können Subnetze in variablen Größen definiert werden, sodass jedem Netz genau so viele Adressen zugewiesen werden, wie tatsächlich benötigt werden. Dadurch werden ungenutzte (verschwendete) IP-Adressen stark reduziert, was der größte Vorteil gegenüber festen, gleich langen Subnetzmasken ist."
+    },
+    "en": {
+      "question": "What is the main advantage of using VLSM over traditional fixed-length subnet masking?",
+      "options": {
+        "A": "It simplifies the routing table.",
+        "B": "It allows for the use of the same subnet mask throughout the network.",
+        "C": "It reduces the number of wasted IP addresses.",
+        "D": "It increases the total number of available IP addresses."
+      },
+      "answer": "C",
+      "explanation": "VLSM lets you create subnets of variable sizes, assigning just the right number of addresses to each network segment. This minimizes unused (wasted) IP addresses, which is the main advantage over fixed, equal-length subnet masks."
+    }
+  },
+  {
+    "id": 206,
+    "de": {
+      "frage": "Welcher der folgenden IP-Adressbereiche bzw. IP-Adressen ist speziell für die Verwendung in Dokumentationen und Beispielen reserviert?",
+      "optionen": {
+        "A": "172.16.0.0/12",
+        "B": "192.0.2.0/24",
+        "C": "224.0.0.0 bis 239.255.255.255",
+        "D": "127.0.0.0 bis 127.255.255.255"
+      },
+      "antwort": "B",
+      "erklärung": "Der Adressblock 192.0.2.0/24 ist laut RFC 5737 ausdrücklich für Dokumentations- und Beispielzwecke reserviert. Er kann gefahrlos in Anleitungen, Büchern oder Präsentationen genutzt werden, ohne reale Netzwerke zu beeinträchtigen."
+    },
+    "en": {
+      "question": "Which of the following IP address ranges or addresses is specifically set aside for use in documentation and examples?",
+      "options": {
+        "A": "172.16.0.0/12",
+        "B": "192.0.2.0/24",
+        "C": "224.0.0.0 through 239.255.255.255",
+        "D": "127.0.0.0 to 127.255.255.255"
+      },
+      "answer": "B",
+      "explanation": "The 192.0.2.0/24 address block is explicitly reserved by RFC 5737 for documentation and example purposes. It can be safely used in guides, books, or presentations without affecting real networks."
+    }
+  },
+  {
+    "id": 207,
+    "de": {
+      "frage": "Welcher Prozess ermöglicht Hosts mit privaten IP-Adressen den Zugriff auf das Internet?",
+      "optionen": {
+        "A": "Dynamic Host Configuration Protocol (DHCP)",
+        "B": "Network Address Translation (NAT)",
+        "C": "Domain Name System (DNS)",
+        "D": "Internet Protocol Security (IPsec)"
+      },
+      "antwort": "B",
+      "erklärung": "Network Address Translation (NAT) übersetzt private, nicht öffentlich routbare IP-Adressen in eine oder mehrere öffentliche IP-Adressen. Dadurch können interne Hosts mit privaten Adressen Verbindungen zum Internet herstellen und Antworten empfangen."
+    },
+    "en": {
+      "question": "Which process allows hosts using private IP addresses to access the Internet?",
+      "options": {
+        "A": "Dynamic Host Configuration Protocol (DHCP)",
+        "B": "Network Address Translation (NAT)",
+        "C": "Domain Name System (DNS)",
+        "D": "Internet Protocol Security (IPsec)"
+      },
+      "answer": "B",
+      "explanation": "Network Address Translation (NAT) converts private, non-routable IP addresses into one or more public IP addresses. This translation lets internal hosts with private addresses initiate connections to the Internet and receive replies."
+    }
+  },
+  {
+    "id": 208,
+    "de": {
+      "frage": "Beim Subnetting der Netzwerkadresse 172.30.0.0/16, um 12 Subnetze zu unterstützen, welche neue Subnetzmaske im Punkt-Dezimal-Format ergibt sich?",
+      "optionen": {
+        "A": "255.255.255.0",
+        "B": "255.255.240.0",
+        "C": "255.255.248.0",
+        "D": "255.255.0.0"
+      },
+      "antwort": "B",
+      "erklärung": "Für mindestens 12 Subnetze werden 4 zusätzliche Subnetzbits benötigt (2^4 = 16). Die ursprüngliche /16-Maske wird daher auf /20 erweitert, was der Maske 255.255.240.0 entspricht."
+    },
+    "en": {
+      "question": "When subnetting the network address 172.30.0.0/16 to support 12 subnets, what is the new subnet mask in dotted decimal format?",
+      "options": {
+        "A": "255.255.255.0",
+        "B": "255.255.240.0",
+        "C": "255.255.248.0",
+        "D": "255.255.0.0"
+      },
+      "answer": "B",
+      "explanation": "To create at least 12 subnets, you need 4 additional subnet bits (2^4 = 16). Adding these to the original /16 mask results in a /20 mask, which is 255.255.240.0."
+    }
+  },
+  {
+    "id": 209,
+    "de": {
+      "frage": "Woran sollten Sie bei Subnetzberechnungen denken? (Wählen Sie zwei Antworten.)",
+      "optionen": {
+        "A": "Verwenden Sie stets dieselbe Subnetzmaske für jedes Subnetz, um die Berechnungen zu vereinfachen.",
+        "B": "Denken Sie in Bezug auf die Anzahl der Maskenbits.",
+        "C": "Merken Sie sich die Dezimalwerte für die Anzahl der auf 1 gesetzten Bits in einem Oktett einer Maske.",
+        "D": "Subnetzberechnungen sind überflüssig, wenn Sie DHCP einsetzen.",
+        "E": "Die Subnetzmaske kann eine beliebige, möglichst kompliziert aussehende Zahl sein."
+      },
+      "antwort": [
+        "B",
+        "C"
+      ],
+      "erklärung": "Bei Subnetzberechnungen ist es am hilfreichsten, (1) in Maskenbits zu denken – also zu wissen, wie viele Bits einer Adresse zur Netz- bzw. Host-Kennung gehören – und (2) die Dezimalwerte der möglichen Bitmuster in einem Oktett (128, 192, 224, 240, 248, 252, 254, 255) auswendig zu kennen. Diese beiden Regeln beschleunigen die Berechnungen erheblich. Die anderen Aussagen sind falsch oder irreführend."
+    },
+    "en": {
+      "question": "When performing subnet calculations, what should you remember? (Select two.)",
+      "options": {
+        "A": "Always use the same subnet mask for every subnet to simplify calculations.",
+        "B": "Think in terms of the number of mask bits.",
+        "C": "Memorize the decimal values for the number of bits set to 1 in an octet within a mask.",
+        "D": "Subnet calculations are unnecessary if you use DHCP.",
+        "E": "The subnet mask can be any random set of numbers as long as it looks complex."
+      },
+      "answer": [
+        "B",
+        "C"
+      ],
+      "explanation": "For accurate subnetting, (1) think in mask bits—know exactly how many bits are used for the network and host portions—and (2) memorize the decimal values for the possible bit patterns in an octet (128, 192, 224, 240, 248, 252, 254, 255). These two practices make subnet calculations quick and reliable. The other statements are incorrect or misleading."
+    }
+  },
+  {
+    "id": 210,
+    "de": {
+      "frage": "Welche der folgenden IP-Adressen sind Class-C-Adressen? (Wählen Sie zwei.)",
+      "optionen": {
+        "A": "125.166.11.0",
+        "B": "223.16.5.0",
+        "C": "240.0.0.0",
+        "D": "189.189.5.2",
+        "E": "192.15.5.55"
+      },
+      "antwort": [
+        "B",
+        "E"
+      ],
+      "erklärung": "Class-C-Adressen haben das erste Oktett im Bereich 192–223. Daher gehören 223.16.5.0 und 192.15.5.55 zur Klasse C."
+    },
+    "en": {
+      "question": "Which of the following IP addresses are Class C addresses? (Select two.)",
+      "options": {
+        "A": "125.166.11.0",
+        "B": "223.16.5.0",
+        "C": "240.0.0.0",
+        "D": "189.189.5.2",
+        "E": "192.15.5.55"
+      },
+      "answer": [
+        "B",
+        "E"
+      ],
+      "explanation": "Class C addresses have a first octet in the range 192–223. Therefore, 223.16.5.0 and 192.15.5.55 are Class C addresses."
+    }
+  },
+  {
+    "id": 211,
+    "de": {
+      "frage": "Sie konfigurieren die IP-Adresse für einen Host und sollen die Adresse 192.160.99.110/16 verwenden.\nWelche Subnetzmaske würden Sie verwenden?",
+      "optionen": {
+        "A": "255.0.0.0",
+        "B": "255.255.0.0",
+        "C": "255.255.252.0",
+        "D": "255.255.255.0"
+      },
+      "antwort": "B",
+      "erklärung": "Die CIDR-Notation /16 bedeutet, dass die ersten 16 Bits der Adresse für das Netzwerk reserviert sind. Das entspricht der Subnetzmaske 255.255.0.0."
+    },
+    "en": {
+      "question": "You're configuring the IP address for a host and have been asked to use the address 192.160.99.110/16. Which subnet mask value would you use?",
+      "options": {
+        "A": "255.0.0.0",
+        "B": "255.255.0.0",
+        "C": "255.255.252.0",
+        "D": "255.255.255.0"
+      },
+      "answer": "B",
+      "explanation": "The /16 CIDR suffix indicates that the first 16 bits are the network portion of the address. This corresponds to the subnet mask 255.255.0.0."
+    }
+  },
+  {
+    "id": 212,
+    "de": {
+      "frage": "Wie nutzen Router außerhalb des Netzwerks CIDR?",
+      "optionen": {
+        "A": "Indem sie das /22-Präfix verwenden, um das Routing zu vereinfachen und die Komplexität ihrer Routingtabellen zu verringern",
+        "B": "Indem sie Datenpakete auf Basis der CIDR-Notation verschlüsseln",
+        "C": "Indem sie dynamische IP-Adressen für Geräte im Netzwerk vergeben",
+        "D": "Indem sie direkt die internen Subnetzkonfigurationen des LAN verwalten"
+      },
+      "antwort": "A",
+      "erklärung": "Externe Router bündeln mit CIDR mehrere zusammenhängende Netze zu einem größeren Präfix (z. B. /22). Diese Routen­aggregation reduziert die Anzahl der Einträge in ihren Routingtabellen und vereinfacht das Routing."
+    },
+    "en": {
+      "question": "How do routers external to the network utilize CIDR?",
+      "options": {
+        "A": "By using the /22 prefix to simplify routing and reduce the complexity of their routing tables",
+        "B": "By encrypting data packets based on the CIDR notation",
+        "C": "By assigning dynamic IP addresses to devices within the network",
+        "D": "By directly managing the LAN's internal subnet configurations"
+      },
+      "answer": "A",
+      "explanation": "External routers apply CIDR route summarization, advertising a single aggregated prefix (e.g., /22) instead of many smaller routes. This reduces routing-table size and streamlines routing decisions."
+    }
+  },
+  {
+    "id": 213,
+    "de": {
+      "frage": "Was zeigt der TTL-Wert in der Ausgabe des Befehls ping an?",
+      "optionen": {
+        "A": "Die Verschlüsselungsstufe des Pakets",
+        "B": "Die Anzahl der Hops, die das Paket bis zum Ziel benötigt hat",
+        "C": "Die Geschwindigkeit der Netzwerkverbindung",
+        "D": "Die Nutzlastgröße des Pakets"
+      },
+      "antwort": "B",
+      "erklärung": "TTL (Time To Live) legt fest, wie viele Router-Hops ein IP-Paket maximal durchlaufen darf. Jeder Router dekrementiert den Wert um 1; erreicht er 0, wird das Paket verworfen. Der in der ping-Antwort angezeigte TTL-Rest erlaubt daher Rückschlüsse auf die Anzahl der bereits durchlaufenen Hops."
+    },
+    "en": {
+      "question": "What does the TTL value in the ping command output indicate?",
+      "options": {
+        "A": "The encryption level of the packet",
+        "B": "The number of hops it took for the packet to reach its destination",
+        "C": "The speed of the network connection",
+        "D": "The packet's payload size"
+      },
+      "answer": "B",
+      "explanation": "TTL (Time To Live) sets the maximum number of router hops an IP packet can traverse. Each router decrements the TTL by 1; when it reaches 0, the packet is discarded. The TTL value shown in a ping reply therefore reflects how many hops the packet has already taken."
+    }
+  },
+  {
+    "id": 214,
+    "de": {
+      "frage": "Ein Benutzer hat Probleme, einen entfernten Webserver zu erreichen. Sie lassen ihn unter Windows den Befehl ping 203.0.113.10 ausführen, woraufhin folgende Ausgabe gemeldet wird:\n\nPinging 203.0.113.10 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 203.0.113.10:\n Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)\n\nEin Traceroute zeigt, dass die Pakete die IP-Adresse direkt vor 203.0.113.10 erfolgreich erreichen.\n\nWas ist die WAHRSCHEINLICHSTE Ursache des Problems?",
+      "optionen": {
+        "A": "Die Netzwerkkarte des Arbeitsplatzrechners hat ein defektes Kabel und kann keine Netzwerkgeräte erreichen.",
+        "B": "Auf dem Rechner des Benutzers ist eine DNS-Einstellung falsch konfiguriert, wodurch die Kommunikation verhindert wird.",
+        "C": "Der Zielserver 203.0.113.10 ist nicht per ICMP erreichbar; vermutlich blockiert eine Firewall oder Sicherheitseinstellung die Pakete.",
+        "D": "Das Standard-Gateway des Rechners ist falsch konfiguriert und verhindert jegliche ausgehende Kommunikation."
+      },
+      "antwort": "C",
+      "erklärung": "Da das Traceroute bis zum vorletzten Hop gelangt, ist der Netzwerkpfad intakt und das Gateway funktioniert. Die 100% Paketverluste bei ping weisen darauf hin, dass der Zielhost oder dessen Firewall ICMP-Echo-Pakete verwirft. Somit ist am wahrscheinlichsten, dass der Server 203.0.113.10 ICMP blockiert oder selbst offline ist."
+    },
+    "en": {
+      "question": "A user is having trouble reaching a remote web server. You ask them to run ping 203.0.113.10 from their Windows workstation, and they report the following output:\n\nPinging 203.0.113.10 with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 203.0.113.10:\n Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)\n\nA traceroute shows that packets successfully reach the IP address just before 203.0.113.10.\n\nWhat is the MOST likely cause of the problem?",
+      "options": {
+        "A": "The workstation's network adapter has a faulty cable and cannot reach any network devices.",
+        "B": "There is a misconfigured DNS setting on the user's workstation preventing communication.",
+        "C": "The destination server, 203.0.113.10, is not reachable, likely because a firewall or security setting is dropping ICMP packets.",
+        "D": "The workstation's default gateway is misconfigured, preventing any outbound communication."
+      },
+      "answer": "C",
+      "explanation": "The traceroute reaches the hop right before the destination, proving the network path and gateway are working. The 100% packet loss with ping suggests that the target host or its firewall is discarding ICMP echo requests. Therefore, the most likely cause is that the server 203.0.113.10 is blocking or not responding to ICMP."
+    }
+  },
+  {
+    "id": 215,
+    "de": {
+      "frage": "Welcher Ping-Schalter zwingt das Tool dazu, den IPv6-Hosteintrag abzufragen?",
+      "optionen": {
+        "A": "-4",
+        "B": "-6",
+        "C": "-t",
+        "D": "-c"
+      },
+      "antwort": "B",
+      "erklärung": "Der Schalter -6 erzwingt, dass ping IPv6 verwendet und somit den AAAA-Eintrag (IPv6-Hosteintrag) einer Adresse abfragt. Der Schalter -4 wählt IPv4, -t führt einen Dauer-Ping aus, und -c wird in Linux/Unix zum Festlegen der Paketanzahl genutzt."
+    },
+    "en": {
+      "question": "Which ping switch forces the tool to query the IPv6 host record?",
+      "options": {
+        "A": "-4",
+        "B": "-6",
+        "C": "-t",
+        "D": "-c"
+      },
+      "answer": "B",
+      "explanation": "The -6 switch forces ping to use IPv6, causing it to query the AAAA (IPv6 host) record. The -4 switch selects IPv4, -t sends pings continuously, and -c specifies the packet count on Linux/Unix systems."
+    }
+  },
+  {
+    "id": 216,
+    "de": {
+      "frage": "Ein Helpdesk-Techniker behebt Probleme auf einem Windows-Client. Welchen Befehl sollte der Techniker verwenden, um die aktuelle IP-Adresse zu löschen, damit eine neue zugewiesen werden kann?",
+      "optionen": {
+        "A": "ipconfig /flushdns",
+        "B": "ipconfig /all",
+        "C": "ipconfig /release",
+        "D": "ipconfig /renew"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl 'ipconfig /release' gibt die momentan vom DHCP-Server zugewiesene IP-Adresse frei und löscht sie aus der Konfiguration. Anschließend kann mit 'ipconfig /renew' oder automatisch eine neue Adresse bezogen werden."
+    },
+    "en": {
+      "question": "A helpdesk technician is troubleshooting issues on a Windows client. Which command should the technician use to clear the current IP address so that a new one can be assigned?",
+      "options": {
+        "A": "ipconfig /flushdns",
+        "B": "ipconfig /all",
+        "C": "ipconfig /release",
+        "D": "ipconfig /renew"
+      },
+      "answer": "C",
+      "explanation": "The command 'ipconfig /release' releases the current DHCP lease, removing the existing IP configuration so the client can obtain a new address."
+    }
+  },
+  {
+    "id": 217,
+    "de": {
+      "frage": "Sie verwalten ein Netzwerk mit mehreren internen Subnetzen. Sie schließen einen Arbeitsplatzrechner an das Subnetz 192.168.1.0/24 an. Dieser Rechner kann mit keinem anderen Host im Netzwerk kommunizieren. Sie führen ipconfig /all aus und sehen Folgendes:\n\nEthernet-Adapter LAN-Verbindung:\n Connection-specific DNS Suffix . : mydomain.local\n Description . . . . . . . . . . : Broadcom network adapter\n Physical Address. . . . . . . . : 00-AA-BB-CC-74-EF\n DHCP Enabled . . . . . . . . . : No\n Autoconfiguration Enabled . . . : Yes\n IPv4 Address . . . . . . . . . : 192.168.2.102 (Preferred)\n Subnet Mask . . . . . . . . . : 255.255.255.0\n Default Gateway . . . . . . . . : 192.168.1.1\n DNS Servers . . . . . . . . . . : 192.168.2.20\n\nWas ist die WAHRSCHEINLICHSTE Ursache des Problems?",
+      "optionen": {
+        "A": "Falsche Subnetzmaske",
+        "B": "Falsches Standardgateway",
+        "C": "Falsche IP-Adresse",
+        "D": "Falsche DNS-Server-Adresse"
+      },
+      "antwort": "C",
+      "erklärung": "Der Rechner befindet sich physisch im Subnetz 192.168.1.0/24, hat aber die Adresse 192.168.2.102/24 konfiguriert. Da Host und Gateway in unterschiedlichen Netzen liegen, können keine Pakete zugestellt werden. Die IP-Adresse ist daher falsch."
+    },
+    "en": {
+      "question": "You manage a network that has multiple internal subnets. You connect a workstation to the 192.168.1.0/24 subnet. This workstation cannot communicate with any other host on the network. You run ipconfig /all and see the following:\n\nEthernet adapter Local Area Connection:\n Connection-specific DNS Suffix : mydomain.local\n Description . . . . . . . . . : Broadcom network adapter\n Physical Address . . . . . . . : 00-AA-BB-CC-74-EF\n DHCP Enabled . . . . . . . . . : No\n Autoconfiguration Enabled . . : Yes\n IPv4 Address . . . . . . . . . : 192.168.2.102 (Preferred)\n Subnet Mask . . . . . . . . . : 255.255.255.0\n Default Gateway . . . . . . . : 192.168.1.1\n DNS Servers . . . . . . . . . : 192.168.2.20\n\nWhat is the MOST likely cause of the problem?",
+      "options": {
+        "A": "Incorrect subnet mask",
+        "B": "Incorrect default gateway",
+        "C": "Incorrect IP address",
+        "D": "Incorrect DNS server address"
+      },
+      "answer": "C",
+      "explanation": "The workstation is physically connected to the 192.168.1.0/24 network but configured with 192.168.2.102/24. Because the host and its gateway are in different subnets, communication fails. Therefore, the IP address is incorrect."
+    }
+  },
+  {
+    "id": 218,
+    "de": {
+      "frage": "Sie beheben ein Verbindungsproblem auf einem Linux-Server. Eine Verbindung zu einem anderen System im lokalen Netzwerk funktioniert, zu einem Server in einem entfernten Netzwerk jedoch nicht. Sie vermuten, dass das Standard-Gateway falsch konfiguriert ist.\n\nWelches der folgenden Werkzeuge würden Sie verwenden, um die Standard-Gateway-Informationen auf dem Linux-Server anzuzeigen?",
+      "optionen": {
+        "A": "ipconfig",
+        "B": "Telnet",
+        "C": "route",
+        "D": "dig"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl 'route' (oder 'ip route show') zeigt die Routingtabelle des Linux-Kernels an. Darin erscheint eine Zeile mit dem Eintrag 'default', der das aktuell konfigurierte Standard-Gateway angibt. Die anderen Optionen liefern diese Information nicht."
+    },
+    "en": {
+      "question": "You are troubleshooting a connectivity problem on a Linux server. You can reach another system on the local network but not a server on a remote network. You suspect that the system's default gateway is configured incorrectly.\n\nWhich of the following would you use to view the default gateway information on the Linux server?",
+      "options": {
+        "A": "ipconfig",
+        "B": "Telnet",
+        "C": "route",
+        "D": "dig"
+      },
+      "answer": "C",
+      "explanation": "The 'route' command (or 'ip route show') displays the Linux kernel's routing table, including the line labeled 'default' that identifies the configured default gateway. The other tools do not show this information."
+    }
+  },
+  {
+    "id": 219,
+    "de": {
+      "frage": "Wozu dient der Befehl „ip -s link“?",
+      "optionen": {
+        "A": "Zum Hinzufügen oder Löschen von IP-Adressen",
+        "B": "Zum Aktivieren oder Deaktivieren von Schnittstellen",
+        "C": "Zum Anzeigen von Schnittstellenstatistiken",
+        "D": "Zum Konfigurieren von Firewall-Regeln"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl „ip link“ zeigt Details zu den Netzwerkschnittstellen an. Mit dem Zusatz „-s“ (stats) werden darüber hinaus Paket- und Fehlerstatistiken für jede Schnittstelle ausgegeben. So lassen sich schnell Traffic- und Fehlerzähler überwachen."
+    },
+    "en": {
+      "question": "What is the purpose of the 'ip -s link' command?",
+      "options": {
+        "A": "To add or delete IP addresses",
+        "B": "To enable or disable interfaces",
+        "C": "To report interface statistics",
+        "D": "To configure firewall rules"
+      },
+      "answer": "C",
+      "explanation": "The 'ip link' command shows details about network interfaces, and the '-s' (stats) option adds per-interface packet and error statistics. It is used to view traffic and error counters for each interface."
+    }
+  },
+  {
+    "id": 220,
+    "de": {
+      "frage": "Was ist der Unterschied zwischen einem ARP-Cache und der MAC-Adressentabelle eines Switches?",
+      "optionen": {
+        "A": "Ein ARP-Cache ordnet IP-Adressen MAC-Adressen zu, während eine MAC-Adressentabelle Ports MAC-Adressen zuordnet.",
+        "B": "Ein ARP-Cache wird von Routern verwendet, während eine MAC-Adressentabelle von Switches verwendet wird.",
+        "C": "Ein ARP-Cache weist IP-Adressen zu, während eine MAC-Adressentabelle MAC-Adressen zuweist.",
+        "D": "Ein ARP-Cache verschlüsselt Daten, während eine MAC-Adressentabelle dies nicht tut."
+      },
+      "antwort": "A",
+      "erklärung": "Der ARP-Cache eines Hosts enthält Zuordnungen zwischen Layer-3-Adressen (IP) und Layer-2-Adressen (MAC). Die MAC-Adressentabelle (CAM-Tabelle) eines Switches verknüpft dagegen MAC-Adressen mit den physischen Ports, an denen sie gelernt wurden, um Frames korrekt weiterzuleiten."
+    },
+    "en": {
+      "question": "What is the difference between an ARP cache and a switch's MAC address table?",
+      "options": {
+        "A": "An ARP cache maps IP addresses to MAC addresses, while a MAC address table maps ports to MAC addresses.",
+        "B": "An ARP cache is used by routers, while a MAC address table is used by switches.",
+        "C": "An ARP cache assigns IP addresses, while a MAC address table assigns MAC addresses.",
+        "D": "An ARP cache encrypts data, while a MAC address table does not."
+      },
+      "answer": "A",
+      "explanation": "A host's ARP cache stores Layer-3 to Layer-2 mappings—IP addresses to MAC addresses. A switch's MAC address (CAM) table, in contrast, maps learned MAC addresses to the physical switch ports they were seen on so the switch can forward frames properly."
+    }
+  },
+  {
+    "id": 221,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen dynamischem Lernen und statischer Konfiguration in Netzgeräten?",
+      "optionen": {
+        "A": "Dynamisches Lernen ermöglicht es Netzgeräten, MAC-Adressen automatisch zu lernen und zu speichern, während bei statischer Konfiguration MAC-Adressen manuell eingetragen werden müssen.",
+        "B": "Dynamisches Lernen verschlüsselt den Netzwerkverkehr, während statische Konfiguration dies nicht tut.",
+        "C": "Statische Konfiguration erlaubt automatische Firmware-Updates von Geräten, während dynamisches Lernen dies nicht ermöglicht.",
+        "D": "Dynamisches Lernen weist Geräten IP-Adressen zu, während statische Konfiguration zur Zuweisung von MAC-Adressen verwendet wird."
+      },
+      "antwort": "A",
+      "erklärung": "Switches und andere Layer-2-Geräte können MAC-Adressen dynamisch über eingehende Frames lernen und in ihrer CAM-Tabelle speichern. Bei statischer Konfiguration muss der Administrator die MAC-Port-Zuordnung manuell eintragen; sie ändert sich nicht automatisch."
+    },
+    "en": {
+      "question": "What is the primary difference between dynamic learning and static configuration in network devices?",
+      "options": {
+        "A": "Dynamic learning allows network devices to automatically learn and store MAC addresses, while static configuration requires manual entry of MAC addresses.",
+        "B": "Dynamic learning encrypts network traffic, while static configuration does not.",
+        "C": "Static configuration allows for automatic updates to device firmware, while dynamic learning does not.",
+        "D": "Dynamic learning assigns IP addresses to devices, while static configuration is used for assigning MAC addresses."
+      },
+      "answer": "A",
+      "explanation": "Switches and other Layer-2 devices can dynamically learn MAC addresses from incoming frames and populate their CAM tables automatically. With static configuration, the administrator manually assigns MAC-to-port mappings, and they do not change on their own."
+    }
+  },
+  {
+    "id": 222,
+    "de": {
+      "frage": "Was ist der Zweck des Zwischenspeicherns von ARP-Ergebnissen?",
+      "optionen": {
+        "A": "Die Verschlüsselungsstufe von Datenpaketen zu erhöhen",
+        "B": "Die Menge des ARP-Verkehrs im Netzwerk zu verringern",
+        "C": "Statischen IP-Adressen Geräten zuzuweisen",
+        "D": "Die Geschwindigkeit des Routing-Prozesses zu erhöhen"
+      },
+      "antwort": "B",
+      "erklärung": "Durch das Zwischenspeichern der IP-zu-MAC-Zuordnungen im ARP-Cache müssen Hosts nicht für jedes Paket einen neuen ARP-Broadcast senden. Das reduziert die Anzahl der ARP-Anfragen und verringert so den ARP-Verkehr im Netzwerk erheblich."
+    },
+    "en": {
+      "question": "What is the purpose of caching ARP results?",
+      "options": {
+        "A": "To increase the encryption level of data packets",
+        "B": "To reduce the amount of ARP traffic on the network",
+        "C": "To assign static IP addresses to devices",
+        "D": "To increase the speed of the routing process"
+      },
+      "answer": "B",
+      "explanation": "By storing IP-to-MAC mappings in the ARP cache, a host can reuse the information instead of broadcasting a new ARP request for every packet. This greatly reduces the volume of ARP traffic on the network."
+    }
+  },
+  {
+    "id": 223,
+    "de": {
+      "frage": "Welche der folgenden Aussagen trifft auf den Adressbereich der IPv6-Global-Unicast-Adressen zu?",
+      "optionen": {
+        "A": "Sie entsprechen privaten IPv4-Adressen.",
+        "B": "Sie sind im Internet nicht routbar.",
+        "C": "Sie nehmen 1/8 des gesamten IPv6-Adressraums ein.",
+        "D": "Sie werden hauptsächlich zum Senden von Broadcasts verwendet."
+      },
+      "antwort": "C",
+      "erklärung": "IPv6-Global-Unicast-Adressen stammen aus dem Präfix 2000::/3. Da nur die ersten drei Bits auf 001 festgelegt sind, belegt dieser Bereich exakt 1/8 des gesamten 128-Bit-Adressraums. Diese Adressen sind öffentlich und weltweit routbar, daher treffen die anderen Aussagen nicht zu."
+    },
+    "en": {
+      "question": "Which of the following is true about the scope of IPv6 global unicast addresses?",
+      "options": {
+        "A": "They are equivalent to private IPv4 addresses.",
+        "B": "They are not routable over the Internet.",
+        "C": "They occupy 1/8th of the total IPv6 address space.",
+        "D": "They are primarily used for broadcasting messages."
+      },
+      "answer": "C",
+      "explanation": "IPv6 global unicast addresses are allocated from the 2000::/3 prefix. Because only the first three bits are fixed as 001, this range represents exactly 1/8 of the entire 128-bit IPv6 address space. These addresses are public and globally routable, so the other statements are incorrect."
+    }
+  },
+  {
+    "id": 224,
+    "de": {
+      "frage": "Was bewirkt das Umschalten (Flipping) des 7. Bits im ersten Oktett einer MAC-Adresse, wenn daraus eine EUI-64-Adresse gebildet wird?",
+      "optionen": {
+        "A": "Es zeigt an, dass die Adresse eine Multicast-Adresse ist.",
+        "B": "Es bedeutet, dass die Adresse nun privat ist.",
+        "C": "Es unterscheidet die modifizierte Adresse von der ursprünglichen MAC-Adresse.",
+        "D": "Es wandelt die Adresse in eine Link-Local-Adresse um."
+      },
+      "antwort": "C",
+      "erklärung": "Beim Erzeugen einer EUI-64-Adresse wird das Universal/Local-Bit (U/L-Bit) im ersten Oktett invertiert. Damit wird kenntlich gemacht, dass die so entstandene Schnittstellen-ID lokal vergeben ist und nicht mehr exakt der ursprünglich vom Hersteller vergebenen, global eindeutigen MAC-Adresse entspricht – sie ist also eindeutig von der Originaladresse unterscheidbar."
+    },
+    "en": {
+      "question": "What does flipping the 7th bit of the first octet in a MAC address to form an EUI-64 address accomplish?",
+      "options": {
+        "A": "It indicates that the address is multicast.",
+        "B": "It signifies that the address is now private.",
+        "C": "It differentiates the modified address from the original MAC address.",
+        "D": "It converts the address to a link-local address."
+      },
+      "answer": "C",
+      "explanation": "When creating an EUI-64 interface ID, the universal/local (U/L) bit in the first octet is inverted. Setting this bit to 1 marks the address as locally administered, distinguishing the new interface ID from the globally unique manufacturer-assigned MAC address."
+    }
+  },
+  {
+    "id": 225,
+    "de": {
+      "frage": "Welche der folgenden Methoden wird aufgrund ihrer Effizienz typischerweise für die Interoperabilität zwischen IPv4 und IPv6 bevorzugt?",
+      "optionen": {
+        "A": "Tunneling",
+        "B": "Dual Stack",
+        "C": "NAT64",
+        "D": "6to4-Automatictunneling"
+      },
+      "antwort": "B",
+      "erklärung": "Beim Dual-Stack-Betrieb unterstützen Hosts und Router sowohl IPv4 als auch IPv6 nativ. Es ist weder Kapselung (Tunneling) noch Protokollübersetzung (NAT64) erforderlich, sodass keine zusätzlichen Header / Latenzen entstehen. Daher gilt Dual Stack als die effizienteste und am besten interoperable Lösung."
+    },
+    "en": {
+      "question": "Which of the following is typically preferred for interoperability between IPv4 and IPv6 due to its efficiency?",
+      "options": {
+        "A": "Tunneling",
+        "B": "Dual Stack",
+        "C": "NAT64",
+        "D": "6to4 automatic tunneling"
+      },
+      "answer": "B",
+      "explanation": "In a dual-stack deployment, hosts and routers run both IPv4 and IPv6 natively. Because no encapsulation (tunneling) or protocol translation (NAT64) is required, there is no extra header overhead or latency, making dual stack the most efficient and preferred interoperability method."
+    }
+  },
+  {
+    "id": 226,
+    "de": {
+      "frage": "Welches Präfix verwenden 6to4-Adressen?",
+      "optionen": {
+        "A": "64:ff9b::/96",
+        "B": "2002::/16",
+        "C": "3544::/16",
+        "D": "6RD::/16"
+      },
+      "antwort": "B",
+      "erklärung": "Beim 6to4-Mechanismus wird die öffentliche IPv4-Adresse in ein IPv6-Präfix eingebettet, das immer mit 2002::/16 beginnt. Daher tragen alle 6to4-Adressen dieses Präfix."
+    },
+    "en": {
+      "question": "What prefix do 6to4 addresses use?",
+      "options": {
+        "A": "64:ff9b::/96",
+        "B": "2002::/16",
+        "C": "3544::/16",
+        "D": "6RD::/16"
+      },
+      "answer": "B",
+      "explanation": "The 6to4 transition mechanism embeds the public IPv4 address inside an IPv6 prefix that always starts with 2002::/16. Therefore, all 6to4 addresses use this prefix."
+    }
+  },
+  {
+    "id": 227,
+    "de": {
+      "frage": "Was bedeutet die klassenlose Schreibweise „/64“ in einer IPv6-Netzwerkadresse?",
+      "optionen": {
+        "A": "Die Adresse wird in 64 Subnetze unterteilt.",
+        "B": "Die ersten 64 Bits sind für das Netzwerkpräfix reserviert.",
+        "C": "Die ersten 64 Bits geben den Teil des globalen Routingpräfixes an.",
+        "D": "Die letzten 64 Bits werden für Multicast-Adressierung verwendet."
+      },
+      "antwort": "B",
+      "erklärung": "Die Zahl nach dem Schrägstrich gibt an, wie viele Bits von links gerechnet das Netzwerkpräfix bilden. Bei „/64“ sind das 64 Bits; die verbleibenden 64 Bits stehen der Schnittstellen-ID (Host-Anteil) zur Verfügung. /64 ist das Standardpräfix für ein einzelnes IPv6-Subnetz."
+    },
+    "en": {
+      "question": "What does the classless notation '/64' signify in an IPv6 network address?",
+      "options": {
+        "A": "The address is divided into 64 subnets.",
+        "B": "The first 64 bits are reserved for the network prefix.",
+        "C": "The first 64 bits specify the portion of 64 bits are the global routing prefix.",
+        "D": "The last 64 bits are used for multicast addressing."
+      },
+      "answer": "B",
+      "explanation": "The number after the slash indicates how many bits from the left make up the network prefix. With /64 the first 64 bits form the network prefix, leaving the remaining 64 bits for the interface ID (host portion). A /64 prefix is the standard size for a single IPv6 subnet."
+    }
+  },
+  {
+    "id": 228,
+    "de": {
+      "frage": "Was bedeutet in IPv6 ein Netzpräfix von /48?",
+      "optionen": {
+        "A": "Die ersten 48 Bits werden für die Netzwerkadressierung verwendet.",
+        "B": "Das Netzwerk verfügt über 48 Subnetze.",
+        "C": "Der Interface-Identifier ist 48 Bits lang.",
+        "D": "Die Adresse ist eine Multicast-Adresse."
+      },
+      "antwort": "A",
+      "erklärung": "Die Zahl nach dem Schrägstrich gibt an, wie viele der 128 Bits einer IPv6-Adresse das Netzwerkpräfix bilden. Bei /48 sind dies die ersten 48 Bits; die restlichen 80 Bits stehen für Subnetting (z. B. die üblichen 16 Bits für Subnetze) und für die 64-Bit-Interface-ID zur Verfügung."
+    },
+    "en": {
+      "question": "In IPv6, what does a network prefix of /48 indicate?",
+      "options": {
+        "A": "The first 48 bits are used for network addressing.",
+        "B": "The network has 48 subnets.",
+        "C": "The interface identifier is 48 bits long.",
+        "D": "The address is a multicast address."
+      },
+      "answer": "A",
+      "explanation": "The number after the slash tells how many of the 128 bits form the network prefix. With /48, the first 48 bits define the network; the remaining 80 bits can be split into subnet bits (commonly 16 bits) and the 64-bit interface ID."
+    }
+  },
+  {
+    "id": 229,
+    "de": {
+      "frage": "Was zeigen die ersten 8 Bits einer IPv6-Multicast-Adresse an?",
+      "optionen": {
+        "A": "Die Adresse liegt im Unicast-Bereich.",
+        "B": "Die Adresse liegt im Multicast-Bereich.",
+        "C": "Die Adresse ist für Anycast reserviert.",
+        "D": "Die Adresse wird für das Neighbor-Discovery-Protokoll verwendet."
+      },
+      "antwort": "B",
+      "erklärung": "IPv6-Multicast-Adressen beginnen immer mit den Bits 1111 1111 (0xFF). Dieses Bitmuster in den ersten 8 Bits kennzeichnet die Adresse eindeutig als Multicast-Adresse."
+    },
+    "en": {
+      "question": "What do the first 8 bits of an IPv6 multicast address indicate?",
+      "options": {
+        "A": "The address is within the unicast scope.",
+        "B": "The address is within the multicast scope.",
+        "C": "The address is reserved for anycast addressing.",
+        "D": "The address is used for Neighbor Discovery protocol."
+      },
+      "answer": "B",
+      "explanation": "IPv6 multicast addresses always start with the bit pattern 1111 1111 (0xFF). These first 8 bits identify the address as belonging to the multicast address space."
+    }
+  },
+  {
+    "id": 230,
+    "de": {
+      "frage": "Wie unterscheidet sich die IPv6-Anycast-Adressierung von der Multicast-Adressierung?",
+      "optionen": {
+        "A": "Anycast verwendet eine einzige Adresse für mehrere Schnittstellen weltweit.",
+        "B": "Anycast ermöglicht es, dass ein Paket von mehreren Quellen an eine einzige Schnittstelle gesendet wird.",
+        "C": "Multicast sendet ein Paket von einer einzigen Quelle an eine einzige Schnittstelle.",
+        "D": "Multicast verwendet einen speziellen Adressbereich nur für Routing-Protokolle."
+      },
+      "antwort": "A",
+      "erklärung": "Bei Anycast können mehrere Geräte dieselbe IPv6-Adresse erhalten; Router liefern ein an diese Adresse gerichtetes Paket stets an den topologisch nächstgelegenen Empfänger. Multicast hingegen verteilt ein Paket an alle Mitglieder einer Gruppe. Die zentrale Unterscheidung ist also, dass Anycast eine einzelne Adresse für mehrere Interfaces nutzt, das Paket jedoch nur einen Empfänger erreicht."
+    },
+    "en": {
+      "question": "How does IPv6 anycast addressing differ from multicast addressing?",
+      "options": {
+        "A": "Anycast uses a single address for multiple interfaces globally.",
+        "B": "Anycast allows a packet to be sent from multiple sources to a single interface.",
+        "C": "Multicast sends a packet from a single source to a single interface.",
+        "D": "Multicast uses a special range of addresses for routing protocols."
+      },
+      "answer": "A",
+      "explanation": "With anycast, the same IPv6 address can be assigned to several devices; routers deliver a packet sent to that address to the topologically nearest one. Multicast, by contrast, distributes a packet to all members of a group. Thus, anycast’s key difference is the use of a single address shared by multiple interfaces, with the packet ultimately reaching only one of them."
+    }
+  },
+  {
+    "id": 231,
+    "de": {
+      "frage": "Welche Aufgabe hat der Zonenindex (Scope-ID) bei einer IPv6-Link-Local-Adresse?",
+      "optionen": {
+        "A": "Die Adresse zu verschlüsseln",
+        "B": "Globale Routing-Informationen bereitzustellen",
+        "C": "Die Adresse eindeutig für ein bestimmtes Netzwerksegment (Link) zu machen",
+        "D": "Den Adressraum zu vergrößern"
+      },
+      "antwort": "C",
+      "erklärung": "Link-Local-Adressen sind nur innerhalb eines einzelnen Netzwerksegments gültig. Da ein Host mehrere Schnittstellen (Links) besitzen kann, wird ein Zonenindex – zum Beispiel '%eth0' oder '%3' – an die Adresse angehängt. Er kennzeichnet, auf welcher Schnittstelle bzw. in welcher Link-Zone die Adresse verwendet werden soll, und macht sie so eindeutig für genau diesen Link."
+    },
+    "en": {
+      "question": "What is the role of a zone index in IPv6 link-local addressing?",
+      "options": {
+        "A": "To encrypt the address",
+        "B": "To provide global routing information",
+        "C": "To make the address unique to a particular link",
+        "D": "To increase the address space"
+      },
+      "answer": "C",
+      "explanation": "IPv6 link-local addresses are valid only on a single network segment. Because a host may have multiple interfaces (links), a zone index—such as '%eth0' or '%3'—is appended to the address. This index specifies which interface (link zone) the address belongs to, making the address unique to that particular link."
+    }
+  },
+  {
+    "id": 232,
+    "de": {
+      "frage": "Was ist der Hauptzweck von IPv6-Link-Local-Adressen?",
+      "optionen": {
+        "A": "Globale Internet-Konnektivität bereitzustellen",
+        "B": "Die Kommunikation innerhalb eines einzelnen Subnetzes ohne Router zu ermöglichen",
+        "C": "Adressen für E-Mail-Server zuzuweisen",
+        "D": "Datenpakete für sichere Kommunikation zu verschlüsseln"
+      },
+      "antwort": "B",
+      "erklärung": "IPv6-Link-Local-Adressen (FE80::/10) sind nur auf dem jeweiligen Netzwerksegment gültig. Sie ermöglichen Hosts die direkte Kommunikation untereinander, z. B. für Neighbor Discovery oder automatische Konfiguration, ohne dass ein Router nötig ist."
+    },
+    "en": {
+      "question": "What is the primary purpose of IPv6 link-local addresses?",
+      "options": {
+        "A": "To provide global internet connectivity",
+        "B": "To enable communication within a single subnet without the need for a router",
+        "C": "To assign addresses for email servers",
+        "D": "To encrypt data packets for secure communication"
+      },
+      "answer": "B",
+      "explanation": "IPv6 link-local addresses (FE80::/10) are valid only on the local network segment. They let hosts communicate directly—e.g., for neighbor discovery and automatic configuration—without involving a router."
+    }
+  },
+  {
+    "id": 233,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Verwendung der kanonischen Notation (Compressed Format) bei IPv6-Adressen korrekt?",
+      "optionen": {
+        "A": "Die kanonische Notation erlaubt, mehrere zusammenhängende Serien von Nullen in einer IPv6-Adresse durch Doppelpunkte (::) zu ersetzen.",
+        "B": "Die kanonische Notation gestattet, alle Nullen in einer IPv6-Adresse – unabhängig von ihrer Position – zu entfernen.",
+        "C": "Die kanonische Notation erlaubt, führende Nullen in jedem 16-Bit-Block wegzulassen und genau eine zusammenhängende Nullserie durch zwei Doppelpunkte (::) zu ersetzen.",
+        "D": "Die kanonische Notation verlangt, dass alle Nullen in einer IPv6-Adresse vollständig ausgeschrieben werden, ohne irgendeine Kompression."
+      },
+      "antwort": "C",
+      "erklärung": "Bei der kanonischen bzw. komprimierten Schreibweise gemäß RFC 5952 dürfen (1) führende Nullen innerhalb jedes 16-Bit-Blocks weggelassen werden und (2) genau eine – und nur eine – durchgehende Sequenz von zusammenhängenden Nullblöcken durch „::“ ersetzt werden. Damit wird die Adresse verkürzt, ohne ihre Eindeutigkeit zu verlieren."
+    },
+    "en": {
+      "question": "Which of the following statements correctly describes the use of canonical notation in IPv6 addresses?",
+      "options": {
+        "A": "Canonical notation allows multiple contiguous series of zeros in an IPv6 address to be replaced by double colons (::).",
+        "B": "Canonical notation permits the removal of all zeros in an IPv6 address, regardless of their position.",
+        "C": "Canonical notation allows leading zeros in each 16-bit block of an IPv6 address to be omitted, and one contiguous series of zeros to be replaced by a double colon (::).",
+        "D": "Canonical notation requires that all zeros in an IPv6 address be explicitly represented, with no compression."
+      },
+      "answer": "C",
+      "explanation": "In canonical (compressed) IPv6 representation, as defined in RFC 5952, you may (1) drop leading zeros in each 16-bit block and (2) replace exactly one contiguous sequence of all-zero blocks with “::”. This shortens the notation while preserving the address’s uniqueness."
+    }
+  },
+  {
+    "id": 234,
+    "de": {
+      "frage": "Gegeben sei die IPv6-Adresse FE80:0000:0000:0055:0000:0000:000A:AB00.\n\nWelche der folgenden Schreibweisen sind gültige verkürzte Formen dieser Adresse? (Wählen Sie zwei.)",
+      "optionen": {
+        "A": "FE80:0000:0000:0055::000A:AB00",
+        "B": "FE80::0055::000A:AB",
+        "C": "FE80::55::A:AB00",
+        "D": "FE80::55::A:AB",
+        "E": "FE80::55:0000:0000:A:AB00"
+      },
+      "antwort": [
+        "A",
+        "E"
+      ],
+      "erklärung": "Eine IPv6-Adresse darf genau eine zusammenhängende Sequenz aus mindestens zwei 0000-Blöcken durch „::“ ersetzen. Außerdem können führende Nullen in jedem 16-Bit-Block weggelassen werden.\n\n- A ersetzt die beiden Blöcke 0000:0000 nach 0055 durch „::“ und behält die restlichen Blöcke unverändert – zulässig.\n- E ersetzt die Blöcke 0000:0000 nach FE80 durch „::“ und lässt führende Nullen weg (0055 → 55, 000A → A) – ebenfalls zulässig.\n\nDie Optionen B, C und D enthalten jeweils zwei „::“ und sind daher ungültig."
+    },
+    "en": {
+      "question": "Consider the IPv6 address FE80:0000:0000:0055:0000:0000:000A:AB00.\n\nWhich of the following are valid shortened forms of this address? (Select two.)",
+      "options": {
+        "A": "FE80:0000:0000:0055::000A:AB00",
+        "B": "FE80::0055::000A:AB",
+        "C": "FE80::55::A:AB00",
+        "D": "FE80::55::A:AB",
+        "E": "FE80::55:0000:0000:A:AB00"
+      },
+      "answer": [
+        "A",
+        "E"
+      ],
+      "explanation": "IPv6 compression rules allow exactly one contiguous sequence of two or more all-zero 16-bit blocks to be replaced by “::”. Leading zeros within each block may also be omitted.\n\n- Option A compresses the two 0000 blocks after 0055 into “::”; the rest remain unchanged—valid.\n- Option E compresses the first pair of 0000 blocks into “::” and drops leading zeros (0055 → 55, 000A → A)—also valid.\n\nOptions B, C, and D include two occurrences of “::”, which is not allowed, so they are invalid."
+    }
+  },
+  {
+    "id": 235,
+    "de": {
+      "frage": "Wie lautet die übliche Präfixnotation für global eindeutig routbare IPv6-Unicast-Adressen?",
+      "optionen": {
+        "A": "/32",
+        "B": "/48",
+        "C": "/64",
+        "D": "/128"
+      },
+      "antwort": "B",
+      "erklärung": "Für IPv6-Global-Unicast-Netze wird in der Praxis fast immer ein /64-Präfix verwendet: 64 Bits Netzwerkanteil plus 64 Bits Interface-ID. Dieses Format wird deshalb als der 'übliche' oder 'kanonische' Präfix-Längenwert für weltweit eindeutige Unicast-Netze angesehen."
+    },
+    "en": {
+      "question": "What prefix length is most commonly associated with globally unique IPv6 unicast addresses?",
+      "options": {
+        "A": "/32",
+        "B": "/48",
+        "C": "/64",
+        "D": "/128"
+      },
+      "answer": "B",
+      "explanation": "In practice, IPv6 global unicast networks are almost always assigned with a /64 prefix—64 bits for the network portion and 64 bits for the interface ID. Hence /64 is considered the standard prefix length for globally routable unicast networks."
+    }
+  },
+  {
+    "id": 236,
+    "de": {
+      "frage": "Wodurch ersetzt IPv6 das Options-Feld, das im IPv4-Header vorhanden ist?",
+      "optionen": {
+        "A": "Traffic Class",
+        "B": "Erweiterungs-Header (Extension headers)",
+        "C": "Hop Limit",
+        "D": "Flow Label"
+      },
+      "antwort": "B",
+      "erklärung": "IPv6 verzichtet im Basis-Header auf ein Options-Feld. Stattdessen werden optionale Informationen in eine Kette von Erweiterungs-Headern (Extension headers) ausgelagert, die nur bei Bedarf hinzugefügt werden. So bleibt der Grund-Header fest 40 Bytes lang, und zusätzliche Funktionen können modular angehängt werden."
+    },
+    "en": {
+      "question": "What does IPv6 use to replace the Options field found in IPv4 headers?",
+      "options": {
+        "A": "Traffic Class",
+        "B": "Extension headers",
+        "C": "Hop Limit",
+        "D": "Flow Label"
+      },
+      "answer": "B",
+      "explanation": "IPv6 eliminates the fixed Options field of the IPv4 header. Instead, any optional information is carried in a chain of extension headers that are inserted only when needed. This keeps the base IPv6 header a constant 40 bytes while allowing additional features to be added modularly."
+    }
+  },
+  {
+    "id": 237,
+    "de": {
+      "frage": "Welche der folgenden Bestandteile gehören zu einem IPv6-Paket? (Wählen Sie zwei.)",
+      "optionen": {
+        "A": "Hauptheader",
+        "B": "Prüfsumme",
+        "C": "TTL (Time to Live)",
+        "D": "Optionsfeld",
+        "E": "Erweiterungs-Header"
+      },
+      "antwort": [
+        "A",
+        "E"
+      ],
+      "erklärung": "Jedes IPv6-Paket besteht zwingend aus einem festen 40-Byte-Hauptheader. Optionale Informationen werden als separate Erweiterungs-Header angehängt. IPv6 enthält keine Header-Prüfsumme, verwendet anstelle von TTL das Feld „Hop Limit“ und besitzt kein eigenes Optionsfeld."
+    },
+    "en": {
+      "question": "Which of the following are elements of an IPv6 packet? (Select two.)",
+      "options": {
+        "A": "Main header",
+        "B": "Checksum",
+        "C": "TTL (Time to Live)",
+        "D": "Options field",
+        "E": "Extension headers"
+      },
+      "answer": [
+        "A",
+        "E"
+      ],
+      "explanation": "Every IPv6 packet starts with a fixed 40-byte main header. Additional optional information is carried in one or more extension headers. IPv6 has no header checksum, replaces TTL with the Hop Limit field, and no longer includes a dedicated Options field."
+    }
+  },
+  {
+    "id": 238,
+    "de": {
+      "frage": "Was wird bestätigt, wenn Sie die IP-Adresse des Standard-Gateways erfolgreich anpingen?",
+      "optionen": {
+        "A": "Dass der Netzwerkadapter ordnungsgemäß funktioniert",
+        "B": "Dass TCP/IP korrekt installiert und geladen ist",
+        "C": "Dass Sie mit einem anderen Host im lokalen Netzwerk kommunizieren können",
+        "D": "Dass die Routing-Infrastruktur korrekt konfiguriert ist"
+      },
+      "antwort": "C",
+      "erklärung": "Das Standard-Gateway befindet sich mit seiner Interface-Adresse im selben Subnetz wie der Host. Erhält man eine Antwort auf den Ping, zeigt das eindeutig, dass Frames das lokale Netz verlassen und wieder zurückkommen können – also dass die Kommunikation zu einem anderen Gerät im lokalen Netzwerk funktioniert. Andere Aussagen treffen nicht exakt diesen Punkt."
+    },
+    "en": {
+      "question": "What does successfully pinging the IP address of the default gateway verify?",
+      "options": {
+        "A": "That the network adapter is functioning properly",
+        "B": "That TCP/IP is installed and loaded correctly",
+        "C": "That you can communicate with another host on the local network",
+        "D": "That the routing infrastructure is correctly configured"
+      },
+      "answer": "C",
+      "explanation": "The default gateway’s interface IP is on the same subnet as the host. Receiving a ping reply from it proves that frames can leave the host and return on the local segment—verifying connectivity to another device on the local network. The other choices do not specifically test this."
+    }
+  },
+  {
+    "id": 239,
+    "de": {
+      "frage": "Warum könnte das Pingen entfernter Hosts fehlschlagen, obwohl die Netzwerkkonfiguration korrekt ist?",
+      "optionen": {
+        "A": "Die Loopback-Adresse antwortet nicht.",
+        "B": "Die IP-Adresse des lokalen Hosts ist falsch konfiguriert.",
+        "C": "ICMP wird durch eine Firewall oder andere Sicherheitssoftware blockiert.",
+        "D": "Das Standard-Gateway ist ausgefallen."
+      },
+      "antwort": "C",
+      "erklärung": "Auch wenn IP-Konfiguration, Routing und physische Verbindung in Ordnung sind, kann ein Ping scheitern, wenn Echo-Anfragen oder -Antworten von einer Host- oder Netzwerk-Firewall gefiltert werden. Viele Geräte blockieren ICMP aus Sicherheitsgründen."
+    },
+    "en": {
+      "question": "Why might pinging remote hosts fail even if the network configuration is correct?",
+      "options": {
+        "A": "The loopback address is not responding.",
+        "B": "The local host's IP address is incorrectly configured.",
+        "C": "ICMP is blocked by a firewall or other security software.",
+        "D": "The default gateway is down."
+      },
+      "answer": "C",
+      "explanation": "Even with proper IP configuration, routing, and cabling, ping can fail if ICMP echo requests or replies are filtered by a host-based firewall or other security device. Many systems block ICMP for security reasons."
+    }
+  },
+  {
+    "id": 240,
+    "de": {
+      "frage": "Was ist der erste Schritt in der allgemeinen Ping-Abfolge zur Fehlersuche bei Verbindungsproblemen?",
+      "optionen": {
+        "A": "Die IP-Adresse des lokalen Hosts anpingen.",
+        "B": "Die Loopback-Adresse anpingen.",
+        "C": "Die IP-Adresse des Standard-Gateways anpingen.",
+        "D": "Die IP-Adresse eines entfernten Hosts anpingen."
+      },
+      "antwort": "B",
+      "erklärung": "Der erste Diagnoseschritt ist das Anpingen der Loopback-Adresse (127.0.0.1 bzw. ::1). So wird geprüft, ob der TCP/IP-Stack des lokalen Systems ordnungsgemäß funktioniert, bevor weitere Netzwerkkomponenten getestet werden."
+    },
+    "en": {
+      "question": "What is the first step in the general ping sequence for identifying connectivity issues?",
+      "options": {
+        "A": "Ping the IP address of the local host.",
+        "B": "Ping the loopback address.",
+        "C": "Ping the IP address of the default gateway.",
+        "D": "Ping the IP address of a remote host."
+      },
+      "answer": "B",
+      "explanation": "The initial diagnostic step is to ping the loopback address (127.0.0.1 or ::1). This verifies that the local TCP/IP stack is functioning correctly before testing other network components."
+    }
+  },
+  {
+    "id": 241,
+    "de": {
+      "frage": "Was sollten Sie vermuten, wenn Sie einen lokalen Host nicht anpingen können und der Fehler „Destination unreachable“ angezeigt wird?",
+      "optionen": {
+        "A": "Falsche IP-Adresse oder Netzmaske in der IP-Konfiguration",
+        "B": "Der Netzwerkprotokoll-Stack muss neu installiert werden",
+        "C": "Der Standard-Gateway-Parameter auf dem lokalen Host ist falsch",
+        "D": "ICMP wird durch eine Firewall oder andere Sicherheitssoftware blockiert"
+      },
+      "antwort": "A",
+      "erklärung": "Die Meldung „Destination unreachable“ kommt typischerweise vom eigenen Host oder einem Router, wenn keine Route zum Ziel existiert. Auf einem lokalen Netz weist das meist auf eine falsche IP-Adresse oder eine nicht übereinstimmende Subnetzmaske hin, sodass der Host das Ziel nicht im selben Subnetz findet."
+    },
+    "en": {
+      "question": "What should you suspect if you cannot ping a local host and the error is 'destination unreachable'?",
+      "options": {
+        "A": "Incorrect IP address or netmask in the IP configuration",
+        "B": "The network protocol stack needs to be reinstalled",
+        "C": "The default gateway parameter on the local host is incorrect",
+        "D": "ICMP is blocked by a firewall or other security software"
+      },
+      "answer": "A",
+      "explanation": "A 'destination unreachable' message is typically generated by the local host or a router when no route to the destination exists. On a local network this usually means the IP address or subnet mask is wrong, preventing the host from recognizing the destination as being on the same subnet."
+    }
+  },
+  {
+    "id": 242,
+    "de": {
+      "frage": "Welches Problem tritt auf, wenn ein Host eine zu lange Subnetzmaske konfiguriert hat?",
+      "optionen": {
+        "A": "Der Host kann keinerlei Kommunikation empfangen.",
+        "B": "Der Host schickt Antworten an das falsche Netz, weil er denkt, dass sich die Kommunikationspartner in einem anderen Subnetz befinden.",
+        "C": "Der Host leitet seine Pakete weiterhin korrekt weiter, es gibt keine Probleme.",
+        "D": "Die IP-Adresse des Hosts wird automatisch geändert."
+      },
+      "antwort": "B",
+      "erklärung": "Ist die Subnetzmaske länger als vorgesehen, definiert sie einen kleineren Netzbereich. Adressen, die eigentlich im gleichen Subnetz liegen, erscheinen dem Host als fremdes Netz. Er sendet Antworten deshalb an das Gateway oder verwirft sie – die Pakete werden also fehlgeroutet."
+    },
+    "en": {
+      "question": "What issue arises when a host has an incorrect subnet mask that is longer than it should be?",
+      "options": {
+        "A": "The host cannot receive any communications.",
+        "B": "The host misroutes its replies, thinking communicating hosts are on a different subnet.",
+        "C": "The host correctly routes its replies without any issues.",
+        "D": "The host's IP address is automatically changed."
+      },
+      "answer": "B",
+      "explanation": "A subnet mask that is longer than intended defines a smaller network. Addresses that are actually on the same LAN appear to be on a different subnet, so the host sends its replies to the default gateway (or discards them) instead of sending them directly. The result is misrouted traffic."
+    }
+  },
+  {
+    "id": 243,
+    "de": {
+      "frage": "Sie haben Fehler auf den Schichten 1 (Physikalisch) und 2 (Data Link) ausgeschlossen und wollen nun IP-Konfigurationsprobleme beheben.\n\nWas ist der ERSTE Schritt?",
+      "optionen": {
+        "A": "Die Subnetzmaske des Hosts prüfen.",
+        "B": " 'ipconfig' bzw. 'ifconfig' ausführen, um die Host-Konfiguration zu überprüfen.",
+        "C": "Den Router neu starten.",
+        "D": "Netzwerkkabel austauschen."
+      },
+      "antwort": "B",
+      "erklärung": "Nachdem physische Verbindung und Link-Layer ausgeschlossen wurden, verschafft man sich zunächst einen vollständigen Überblick über die aktuelle IP-Konfiguration des Hosts. Das erfolgt mit 'ipconfig' (Windows) bzw. 'ifconfig/ip addr' (Linux/Unix). Erst auf Basis dieser Informationen prüft man dann einzelne Parameter wie Subnetzmaske, Gateway etc."
+    },
+    "en": {
+      "question": "You have ruled out problems at the Physical and Data Link layers and are now troubleshooting IP configuration issues.\n\nWhat is the FIRST step?",
+      "options": {
+        "A": "Check the host's subnet mask.",
+        "B": "Use ipconfig or ifconfig to verify the host configuration.",
+        "C": "Restart the router.",
+        "D": "Replace network cables."
+      },
+      "answer": "B",
+      "explanation": "Once Layer 1 and Layer 2 issues are ruled out, the next logical step is to view the host’s current IP settings in their entirety. Running ipconfig (Windows) or ifconfig/ip addr (Linux/Unix) provides that snapshot, allowing you to examine the subnet mask, default gateway, and other parameters before adjusting individual settings."
+    }
+  },
+  {
+    "id": 244,
+    "de": {
+      "frage": "In einem Subnetz mit einer /28-Maske – warum kann man sich nicht ausschließlich auf die ersten drei Oktette verlassen, um festzustellen, ob sich eine IP-Adresse im selben Subnetz befindet?",
+      "optionen": {
+        "A": "Weil die Subnetzmaske die ersten drei Oktette nicht beeinflusst",
+        "B": "Weil die Netzpräfix-Grenze innerhalb des letzten Oktetts liegt",
+        "C": "Weil die ersten drei Oktette in jedem Subnetz immer gleich sind",
+        "D": "Weil die /28-Maske nur für das letzte Oktett gilt"
+      },
+      "antwort": "B",
+      "erklärung": "Ein /28-Präfix umfasst 28 Bits: die kompletten ersten 24 Bits (drei Oktette) plus die ersten 4 Bits des letzten Oktetts. Da das Netz-/Host-Grenzbit innerhalb des vierten Oktetts verläuft, müssen auch dessen ersten vier Bits geprüft werden. Die ersten drei Oktette allein reichen daher nicht aus, um festzustellen, ob zwei Adressen im selben /28-Subnetz liegen."
+    },
+    "en": {
+      "question": "In a subnet with a /28 mask, why can't you rely solely on the first three octets to determine if an IP address is within the same subnet?",
+      "options": {
+        "A": "Because the subnet mask does not affect the first three octets",
+        "B": "Because the network prefix boundary lies within the last octet",
+        "C": "Because the first three octets are always the same in any subnet",
+        "D": "Because the /28 mask only applies to the last octet"
+      },
+      "answer": "B",
+      "explanation": "A /28 prefix is 28 bits long: the full first 24 bits (three octets) plus the first 4 bits of the last octet. Since the network/host boundary falls inside the fourth octet, you must evaluate those first four bits as well. Therefore, the first three octets alone are insufficient to decide whether two addresses are in the same /28 subnet."
+    }
+  },
+  {
+    "id": 245,
+    "de": {
+      "frage": "Sie überwachen den Netzwerkverkehr und stellen fest, dass ARP-Anfragen für eine bestimmte IP-Adresse Antworten von zwei unterschiedlichen MAC-Adressen erhalten.\n\nWas ist die WAHRSCHEINLICHSTE Ursache und wie sollten Sie weiter vorgehen, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Dies ist in Netzwerken mit mehreren Access Points normal; es ist kein Handeln erforderlich.",
+        "B": "Der Netzwerkswitch funktioniert nicht richtig; tauschen Sie den Switch sofort aus.",
+        "C": "Es könnte ein Problem mit doppelten MAC-Adressen vorliegen; verwenden Sie einen Protokollanalysator, um den ARP-Verkehr genauer zu untersuchen.",
+        "D": "Die IP-Adresse ist sowohl auf einer virtuellen Maschine als auch auf deren Host konfiguriert; weisen Sie die IP-Adresse nur einem Gerät zu."
+      },
+      "antwort": "C",
+      "erklärung": "Wenn zwei verschiedene MAC-Adressen ARP-Antworten für dieselbe IP-Adresse senden, bedeutet das fast immer, dass die IP doppelt vergeben ist. Häufig geschieht das, wenn eine virtuelle Maschine und ihr Host (oder zwei statisch konfigurierte Geräte) dieselbe IP erhalten. Lösen lässt sich das, indem man die Adresse nur einem Gerät zuweist und die Duplikate entfernt."
+    },
+    "en": {
+      "question": "You are monitoring network traffic and notice that ARP requests for a specific IP address are receiving responses from two different MAC addresses.\n\nWhat is the MOST likely cause of this issue, and how should you proceed to troubleshoot it?",
+      "options": {
+        "A": "This is a normal occurrence in networks with multiple access points; no action is needed.",
+        "B": "The network switch is malfunctioning; replace the switch immediately.",
+        "C": "There may be a duplicate MAC address issue; use a protocol analyzer to examine ARP traffic more closely.",
+        "D": "The IP address is configured on a virtual machine and its host; reassign the IP address to only one device."
+      },
+      "answer": "C",
+      "explanation": "If two different MAC addresses send ARP replies for the same IP address, it almost always means that the IP address is duplicated—commonly when both a virtual machine and its host (or two statically configured devices) share the same address. Resolve the issue by assigning the IP address to only one device and eliminating the duplicate."
+    }
+  },
+  {
+    "id": 246,
+    "de": {
+      "frage": "Was ist eine wahrscheinliche Ursache für doppelte MAC-Adressen in einem Netzwerk?",
+      "optionen": {
+        "A": "Ein fehlerhafter DHCP-Server",
+        "B": "Die Verwendung lokal vergebener MAC-Adressen",
+        "C": "Eine falsch konfigurierte Subnetzmaske",
+        "D": "Ein defektes Netzwerkkabel"
+      },
+      "antwort": "B",
+      "erklärung": "Werden die vom Hersteller vergebenen, weltweit eindeutigen MAC-Adressen manuell überschrieben (lokal administrierte Adressen), besteht die Gefahr, dass versehentlich die gleiche Adresse mehrfach eingesetzt wird. DHCP, Subnetzmasken oder Kabelfehler beeinflussen die MAC-Adresse hingegen nicht."
+    },
+    "en": {
+      "question": "What is a likely cause of duplicate MAC addresses on a network?",
+      "options": {
+        "A": "A malfunctioning DHCP server",
+        "B": "Use of locally administered addressing",
+        "C": "Incorrect subnet mask configuration",
+        "D": "A faulty network cable"
+      },
+      "answer": "B",
+      "explanation": "When administrators override factory-assigned, globally unique MAC addresses and assign their own locally administered addresses, they can inadvertently reuse the same value on multiple devices, creating duplicates. DHCP, subnet masks, and cabling issues do not generate duplicate MAC addresses."
+    }
+  },
+  {
+    "id": 247,
+    "de": {
+      "frage": "Wie können Sie Rechner mit doppelten IP-Adressen identifizieren?",
+      "optionen": {
+        "A": "Durch Neustart des Routers",
+        "B": "Mit Hilfe von „ping' und anschließend „arp -a', um die ARP-Cache-Tabelle auszuwerten",
+        "C": "Indem allen Geräten im Netzwerk neue IP-Adressen zugewiesen werden",
+        "D": "Durch Überprüfung aller physischen Netzwerkverbindungen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Ping auf die fragliche IP-Adresse sorgt dafür, dass deren Eintrag in den lokalen ARP-Cache übernommen wird. Mit „arp -a' lässt sich anschließend prüfen, welcher MAC-Adresse die IP aktuell zugeordnet ist. Ändert sich dieser Eintrag oder erscheinen zwei unterschiedliche MAC-Adressen für dieselbe IP, weist das klar auf doppelte IP-Adressen hin."
+    },
+    "en": {
+      "question": "How can you identify machines with duplicate IP addresses?",
+      "options": {
+        "A": "By restarting the router",
+        "B": "Using ping and then arp -a to examine the ARP cache table",
+        "C": "Assigning new IP addresses to all devices on the network",
+        "D": "Checking the physical connections of all network devices"
+      },
+      "answer": "B",
+      "explanation": "Pinging the suspected IP forces the address into the local ARP cache. Running 'arp -a' afterward lets you see which MAC address the IP is mapped to. If the mapping changes or two different MAC addresses appear for the same IP, you have located duplicate IP assignments on the network."
+    }
+  }
 ]
