@@ -6374,5 +6374,480 @@
       "answer": "B",
       "explanation": "Pinging the suspected IP forces the address into the local ARP cache. Running 'arp -a' afterward lets you see which MAC address the IP is mapped to. If the mapping changes or two different MAC addresses appear for the same IP, you have located duplicate IP assignments on the network."
     }
+  },
+  {
+    "id": 248,
+    "de": {
+      "frage": "Ein Netzwerktechniker verwendet traceroute in einem Unternehmensnetzwerk und nutzt ICMP „Time Exceeded“, um Router entlang eines Übertragungswegs zu identifizieren. Welches TCP/IP-Feature nutzt traceroute dafür?",
+      "optionen": {
+        "A": "Standardroute (Default Route)",
+        "B": "Fragmentierung",
+        "C": "Time To Live (TTL) Headerfeld",
+        "D": "Statische Route"
+      },
+      "antwort": "C",
+      "erklärung": "Traceroute setzt das Time To Live (TTL) Headerfeld schrittweise hoch. Jeder Router dekrementiert das TTL; wenn es 0 erreicht, sendet der Router eine ICMP „Time Exceeded“-Antwort zurück. So werden die einzelnen Hops identifiziert."
+    },
+    "en": {
+      "question": "A network technician is using traceroute on a corporate network, leveraging ICMP 'Time Exceeded' to identify routers along a delivery path. Which TCP/IP feature does traceroute use to accomplish this?",
+      "options": {
+        "A": "Default route",
+        "B": "Fragmentation",
+        "C": "Time To Live (TTL) header field",
+        "D": "Static route"
+      },
+      "answer": "C",
+      "explanation": "Traceroute manipulates the Time To Live (TTL) header field incrementally. Each router decrements the TTL; when it reaches 0, the router sends an ICMP Time Exceeded message, revealing that hop."
+    }
+  },
+  {
+    "id": 249,
+    "de": {
+      "frage": "Welcher Standard-Probenachrichtentyp wird vom Befehl tracert auf Windows-Systemen verwendet?",
+      "optionen": {
+        "A": "ICMP Echo Request",
+        "B": "TCP SYN",
+        "C": "UDP",
+        "D": "ARP Request"
+      },
+      "antwort": "A",
+      "erklärung": "Unter Windows verwendet tracert standardmäßig ICMP Echo Request-Pakete als Proben. Router, die das TTL auf 0 dekrementieren, antworten mit ICMP Time Exceeded, wodurch die Hops sichtbar werden."
+    },
+    "en": {
+      "question": "What is the default probe message type used by the tracert command on Windows systems?",
+      "options": {
+        "A": "ICMP Echo Request",
+        "B": "TCP SYN",
+        "C": "UDP",
+        "D": "ARP Request"
+      },
+      "answer": "A",
+      "explanation": "On Windows, tracert uses ICMP Echo Request packets as its default probes. Routers that decrement the TTL to 0 respond with ICMP Time Exceeded, revealing each hop."
+    }
+  },
+  {
+    "id": 250,
+    "de": {
+      "frage": "Welche Rolle hat der Parameter Gateway/Nächster Hop in einer Routing-Tabelle?",
+      "optionen": {
+        "A": "Er gibt das endgültige Ziel des Pakets an.",
+        "B": "Er identifiziert den physischen Standort des Routers.",
+        "C": "Er gibt den nächsten Router oder das Gateway auf dem Weg zum Ziel an.",
+        "D": "Er bestimmt die Geschwindigkeit, mit der das Paket weitergeleitet wird."
+      },
+      "antwort": "C",
+      "erklärung": "Der Eintrag Gateway/Nächster Hop zeigt auf den nächsten Router, an den das Paket gesendet werden muss, um das endgültige Ziel zu erreichen. Er ist nicht das Endziel selbst und hat nichts mit physischem Standort oder Weiterleitungsgeschwindigkeit zu tun."
+    },
+    "en": {
+      "question": "What is the role of the Gateway/next hop parameter in a routing table?",
+      "options": {
+        "A": "It specifies the final destination of the packet.",
+        "B": "It identifies the router's physical location.",
+        "C": "It indicates the next router or gateway along the path to the destination.",
+        "D": "It determines the speed at which the packet is forwarded."
+      },
+      "answer": "C",
+      "explanation": "The Gateway/next hop entry points to the next router to which the packet should be sent to reach the final destination. It is not the final destination itself and is unrelated to physical location or forwarding speed."
+    }
+  },
+  {
+    "id": 251,
+    "de": {
+      "frage": "Welcher Befehl gibt die aktive Routing-Tabelle aus und enthält Details wie Ziel (Destination), Gateway und die Quelle der Route?",
+      "optionen": {
+        "A": "show route",
+        "B": "route print",
+        "C": "ip route show",
+        "D": "show arp"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl „show route“ (z. B. auf Routern mit Junos oder ähnlichen Netzwerkbetriebssystemen) zeigt die aktive Routing-Tabelle inklusive Zielnetz, Next-Hop/Gateway und der Herkunft/Quelle der Route (z. B. direkt, statisch, OSPF, BGP). „route print“ (Windows) und „ip route show“ (Linux) zeigen ebenfalls Routen, jedoch ist hier die Option mit der expliziten Anzeige der Routenquelle im Netzwerkgeräte-Kontext gemeint. „show arp“ zeigt ARP-Einträge, nicht die Routing-Tabelle."
+    },
+    "en": {
+      "question": "Which command outputs the active routing table and includes details such as destination, gateway, and the source of the route?",
+      "options": {
+        "A": "show route",
+        "B": "route print",
+        "C": "ip route show",
+        "D": "show arp"
+      },
+      "answer": "A",
+      "explanation": "The “show route” command (e.g., on routers running Junos or similar NOS) displays the active routing table, including destination, next hop/gateway, and the route's source/origin (e.g., direct, static, OSPF, BGP). While “route print” (Windows) and “ip route show” (Linux) also display routes, this option explicitly includes route source in the network device context. “show arp” lists ARP entries, not routing information."
+    }
+  },
+  {
+    "id": 252,
+    "de": {
+      "frage": "Welche der folgenden Optionen beschreibt am besten eine direkt verbundene Route in einer Routing-Tabelle?",
+      "optionen": {
+        "A": "Eine Route, die manuell hinzugefügt wird und manuelle Aktualisierungen erfordert",
+        "B": "Eine Route für Subnetze und IP-Netzwerke, die nicht direkt an den Router angeschlossen sind",
+        "C": "Eine Route, die automatisch für jede aktive Router-Schnittstelle hinzugefügt wird und Subnetze repräsentiert, für die der Router eine lokale Schnittstelle besitzt",
+        "D": "Eine spezielle Art von statischer Route, die als Gateway of Last Resort dient"
+      },
+      "antwort": "C",
+      "erklärung": "Direkt verbundene Routen werden automatisch erzeugt, sobald eine Schnittstelle aktiv ist und ein Subnetz konfiguriert hat. Sie kennzeichnen Netze, die unmittelbar an den Router angeschlossen sind, ohne dass manuelle Konfiguration oder ein Next-Hop erforderlich ist."
+    },
+    "en": {
+      "question": "Which of the following best describes a directly connected route in a routing table?",
+      "options": {
+        "A": "A route that is manually added and requires manual updates",
+        "B": "A route for subnets and IP networks that are not directly attached to the router",
+        "C": "A route that is automatically added for each active router interface, representing subnets for which the router has a local interface",
+        "D": "A special type of static route that serves as the gateway of last resort"
+      },
+      "answer": "C",
+      "explanation": "Directly connected routes are automatically created when an interface is up and has an IP/subnet configured. They represent networks that are directly attached to the router, requiring no next-hop configuration."
+    }
+  },
+  {
+    "id": 253,
+    "de": {
+      "frage": "Was ist der Zweck, jeder Schnittstelle eines Routers eine IP-Konfiguration zuzuweisen?",
+      "optionen": {
+        "A": "Den Router vor externen Bedrohungen zu schützen",
+        "B": "Dem Router die Erfüllung seiner Routing-Funktion zu ermöglichen",
+        "C": "Die Speicherkapazität des Routers zu erhöhen",
+        "D": "Die Rechenleistung des Routers zu verbessern"
+      },
+      "antwort": "B",
+      "erklärung": "Eine IP-Konfiguration pro Schnittstelle ermöglicht dem Router, Netze zu identifizieren, an ihnen teilzunehmen und Pakete zwischen ihnen zu routen. Ohne IP-Adressen und zugehörige Einstellungen (z. B. Subnetzmaske) kann der Router keine Next-Hops bestimmen oder Routing-Entscheidungen treffen."
+    },
+    "en": {
+      "question": "What is the purpose of applying an IP configuration to each interface on a router?",
+      "options": {
+        "A": "To secure the router from external threats",
+        "B": "To enable the router to serve its function in routing data",
+        "C": "To increase the storage capacity of the router",
+        "D": "To enhance the processing power of the router"
+      },
+      "answer": "B",
+      "explanation": "Assigning an IP configuration to each interface allows the router to participate in networks and route packets between them. Without IP addresses and related settings (e.g., subnet mask), the router cannot determine next hops or make routing decisions."
+    }
+  },
+  {
+    "id": 254,
+    "de": {
+      "frage": "Was ist der Zweck der Inspektion der ARP-Cache-Tabelle?",
+      "optionen": {
+        "A": "Die Routing-Tabelle des Geräts anzeigen",
+        "B": "Doppelte IP-Adressen und Fehlkonfigurationen entdecken",
+        "C": "Die IP-Adresse des Geräts ändern",
+        "D": "Den Speicher des Routers erhöhen"
+      },
+      "antwort": "B",
+      "erklärung": "Die ARP-Cache-Tabelle zeigt die Zuordnung von IP- zu MAC-Adressen. Durch ihre Überprüfung lassen sich Probleme wie doppelte IPs, falsche MAC-Zuordnungen oder ARP-Fehlkonfigurationen erkennen. Sie dient nicht zum Ändern der Geräte-IP, zum Erhöhen des Speichers oder zum Anzeigen der Routing-Tabelle."
+    },
+    "en": {
+      "question": "What is the purpose of inspecting the ARP cache table?",
+      "options": {
+        "A": "To view the device's routing table",
+        "B": "To discover duplicate IP addresses and misconfigurations",
+        "C": "To modify the device's IP address",
+        "D": "To increase the router's memory"
+      },
+      "answer": "B",
+      "explanation": "The ARP cache lists IP-to-MAC address mappings. Inspecting it helps identify issues such as duplicate IPs, incorrect MAC mappings, or ARP misconfigurations. It is not used to change the device’s IP, increase memory, or view the routing table."
+    }
+  },
+  {
+    "id": 255,
+    "de": {
+      "frage": "Was stellt das Time to Live (TTL) Headerfeld in einem Paket dar?",
+      "optionen": {
+        "A": "Die maximale Anzahl von Routern, die das Paket passieren kann",
+        "B": "Die maximale Entfernung, die das Paket zurücklegen kann",
+        "C": "Die maximale Zeit, die das Paket im Netzwerk existieren kann",
+        "D": "Die dem Paket zugewiesene Priorität für die Datenübertragung"
+      },
+      "antwort": "A",
+      "erklärung": "Das TTL-Feld gibt die maximale Anzahl an Hops (Routern) an, die ein Paket durchlaufen darf. Jeder Router dekrementiert den TTL-Wert um 1; erreicht er 0, wird das Paket verworfen und typischerweise eine ICMP Time Exceeded-Nachricht gesendet. Es misst keine physische Entfernung und ist keine Zeitangabe im wörtlichen Sinn."
+    },
+    "en": {
+      "question": "What does the Time to Live (TTL) header field represent in a packet?",
+      "options": {
+        "A": "The maximum number of routers the packet can pass through",
+        "B": "The maximum distance the packet can travel",
+        "C": "The maximum time the packet can exist on the network",
+        "D": "The priority assigned to the packet for data transmission"
+      },
+      "answer": "A",
+      "explanation": "The TTL field specifies the maximum number of hops (routers) a packet may traverse. Each router decrements TTL by 1; when it reaches 0, the packet is discarded and typically an ICMP Time Exceeded message is sent. It does not measure physical distance and is not a literal time value."
+    }
+  },
+  {
+    "id": 256,
+    "de": {
+      "frage": "Wie behandelt IPv6 die Paketfragmentierung im Vergleich zu IPv4?",
+      "optionen": {
+        "A": "IPv6 erlaubt Routern, die Fragmentierung durchzuführen.",
+        "B": "IPv6 verlangt vom Host, eine Path-MTU-Entdeckung (PMTUD) durchzuführen.",
+        "C": "IPv6 erhöht die MTU, um Fragmentierung zu vermeiden.",
+        "D": "IPv6 verwendet ein anderes Headerfeld zur Verwaltung der Fragmentierung."
+      },
+      "antwort": "B",
+      "erklärung": "In IPv6 fragmentieren Router keine Pakete mehr. Stattdessen müssen die sendenden Hosts Path MTU Discovery (PMTUD) verwenden und die Paketgröße entsprechend anpassen. Fragmentierung kann nur vom Quellhost mit dem IPv6-Fragment-Header erfolgen, nicht unterwegs durch Router."
+    },
+    "en": {
+      "question": "How does IPv6 handle packet fragmentation differently from IPv4?",
+      "options": {
+        "A": "IPv6 allows routers to perform fragmentation.",
+        "B": "IPv6 requires the host to perform path MTU discovery.",
+        "C": "IPv6 increases the MTU to avoid fragmentation.",
+        "D": "IPv6 uses a different header field for fragmentation management."
+      },
+      "answer": "B",
+      "explanation": "In IPv6, routers do not fragment packets. Sending hosts must use Path MTU Discovery (PMTUD) and adjust packet sizes accordingly. Fragmentation can only be done by the source host using the IPv6 Fragment header, not by routers along the path."
+    }
+  },
+  {
+    "id": 257,
+    "de": {
+      "frage": "Was passiert in RIP, wenn ein Router ein Update mit einer Route zu einem Netzwerk erhält, das ihm bereits bekannt ist?",
+      "optionen": {
+        "A": "Er ignoriert das Update.",
+        "B": "Er ersetzt seine bestehende Route nur, wenn die Hop-Anzahl niedriger ist.",
+        "C": "Er ersetzt immer seine bestehende Route durch die neue.",
+        "D": "Er erhöht die Hop-Anzahl seiner bestehenden Route um 1."
+      },
+      "antwort": "B",
+      "erklärung": "RIP wählt Routen basierend auf der geringsten Hop-Anzahl. Erhält der Router ein Update für ein bereits bekanntes Ziel, übernimmt er die neue Route nur, wenn deren Metrik (Hop-Count) niedriger ist als die der bestehenden Route, oder wenn sie von demselben Nachbarn mit unverändertem Hop-Count kommt und der Timer erneuert werden muss."
+    },
+    "en": {
+      "question": "In RIP, what happens when a router receives an update that includes a route to a network it already knows about?",
+      "options": {
+        "A": "It ignores the update.",
+        "B": "It replaces its existing route with the new one only if the hop count is lower.",
+        "C": "It always replaces its existing route with the new one.",
+        "D": "It increments the hop count of its existing route by 1."
+      },
+      "answer": "B",
+      "explanation": "RIP selects routes based on the lowest hop count. If an update advertises a known destination, the router adopts it only if the metric (hop count) is lower than the current one, or refreshes the existing route if it’s from the same neighbor with an equal metric."
+    }
+  },
+  {
+    "id": 258,
+    "de": {
+      "frage": "Was ist der wichtigste Unterschied zwischen Link-State- und Distance-Vector-Protokollen?",
+      "optionen": {
+        "A": "Distance-Vector-Protokolle erlauben jedem Knoten, eine Kopie der vollständigen Netzwerktopologie zu halten.",
+        "B": "Link-State-Protokolle verlassen sich auf direkt verbundene Nachbarn für Informationen über entfernte Netzwerke.",
+        "C": "Link-State-Protokolle erlauben jedem Knoten, eine Kopie der vollständigen Netzwerktopologie zu halten.",
+        "D": "Distance-Vector-Protokolle verwenden einen Shortest-Path-First-Algorithmus."
+      },
+      "antwort": "C",
+      "erklärung": "Bei Link-State-Protokollen (z. B. OSPF, IS-IS) bildet jeder Router durch den Austausch von LSAs eine vollständige Sicht der Topologie und berechnet Pfade mit SPF (Dijkstra). Distance-Vector-Protokolle (z. B. RIP) kennen nur die Richtung (Next Hop) und Metrik zu Zielen, basierend auf Informationen direkt verbundener Nachbarn, ohne die gesamte Topologie zu halten."
+    },
+    "en": {
+      "question": "What is the principal difference between link state and distance vector protocols?",
+      "options": {
+        "A": "Distance vector protocols allow each node to hold a copy of the complete network topology.",
+        "B": "Link state protocols rely on directly connected neighbors for information about remote networks.",
+        "C": "Link state protocols allow each node to hold a copy of the complete network topology.",
+        "D": "Distance vector protocols use a shortest path first algorithm."
+      },
+      "answer": "C",
+      "explanation": "In link state protocols (e.g., OSPF, IS-IS), each router builds a complete view of the topology via LSAs and computes paths using SPF (Dijkstra). Distance vector protocols (e.g., RIP) only know next hops and metrics learned from directly connected neighbors, without maintaining the full topology."
+    }
+  },
+  {
+    "id": 259,
+    "de": {
+      "frage": "Welche Art von Routingsystem wird OSPF betrachtet?",
+      "optionen": {
+        "A": "Flach (Flat)",
+        "B": "Hierarchisch",
+        "C": "Linear",
+        "D": "Zirkulär"
+      },
+      "antwort": "B",
+      "erklärung": "OSPF ist hierarchisch aufgebaut: Es verwendet Areas (z. B. Backbone Area 0 und weitere Areas), um die Topologie zu strukturieren, Routingtabellen zu skalieren und die Konvergenz zu beschleunigen."
+    },
+    "en": {
+      "question": "What type of routing system is OSPF considered to be?",
+      "options": {
+        "A": "Flat",
+        "B": "Hierarchical",
+        "C": "Linear",
+        "D": "Circular"
+      },
+      "answer": "B",
+      "explanation": "OSPF is hierarchical: it uses areas (e.g., backbone Area 0 and additional areas) to structure the topology, improve scalability, and speed up convergence."
+    }
+  },
+  {
+    "id": 260,
+    "de": {
+      "frage": "Was ist der Zweck der Hello-Nachrichten in EIGRP?",
+      "optionen": {
+        "A": "Routing-Updates übertragen",
+        "B": "Die Konnektivität mit Nachbarn bestätigen",
+        "C": "Datenpakete verschlüsseln",
+        "D": "Routern IP-Adressen zuweisen"
+      },
+      "antwort": "B",
+      "erklärung": "EIGRP sendet periodisch Hello-Nachrichten, um Nachbarschaften zu entdecken und die Erreichbarkeit (Adjacency) zu überwachen. Bleiben Hellos aus, gilt der Nachbar als down. Sie dienen nicht der Übertragung von Routing-Updates, Verschlüsselung oder IP-Adresszuweisung."
+    },
+    "en": {
+      "question": "What is the purpose of hello messaging in EIGRP?",
+      "options": {
+        "A": "To transmit routing updates",
+        "B": "To confirm connectivity with its neighbors",
+        "C": "To encrypt data packets",
+        "D": "To assign IP addresses to routers"
+      },
+      "answer": "B",
+      "explanation": "EIGRP periodically sends hello messages to discover neighbors and monitor reachability (adjacency). If hellos stop, the neighbor is considered down. They are not used for routing updates, encryption, or IP address assignment."
+    }
+  },
+  {
+    "id": 261,
+    "de": {
+      "frage": "Was war der Hauptgrund für die Entwicklung von Enhanced IGRP (EIGRP)?",
+      "optionen": {
+        "A": "Den TCP/IP-Stack zu ersetzen",
+        "B": "Ein Routing-Protokoll für Inter-Domain-Routing bereitzustellen",
+        "C": "Beschränkungen von IGRP zu beheben, z. B. fehlende Unterstützung für klassenloses Adressieren",
+        "D": "Die Sicherheitsfunktionen von Routing-Protokollen zu verbessern"
+      },
+      "antwort": "C",
+      "erklärung": "EIGRP wurde entwickelt, um die Grenzen von IGRP zu überwinden, darunter fehlende Unterstützung für klassenloses Routing (VLSM/CIDR) und modernere Metriken/Konvergenzmechanismen. EIGRP ist ein fortgeschrittenes, classless Distance-Vector/Hybrid-Protokoll und nicht für Inter-Domain-Routing oder als Ersatz für TCP/IP gedacht."
+    },
+    "en": {
+      "question": "What was the primary reason for the development of Enhanced IGRP (EIGRP)?",
+      "options": {
+        "A": "To replace the TCP/IP protocol",
+        "B": "To provide a routing protocol for inter-domain routing",
+        "C": "To address limitations in IGRP, such as lack of support for classless addressing",
+        "D": "To improve the security features of routing protocols"
+      },
+      "answer": "C",
+      "explanation": "EIGRP was developed to overcome IGRP’s limitations, notably the lack of support for classless routing (VLSM/CIDR), and to provide enhanced metrics and faster convergence. It is not intended to replace TCP/IP or serve as an inter-domain routing protocol."
+    }
+  },
+  {
+    "id": 262,
+    "de": {
+      "frage": "Was passiert, wenn die Datenbank eines Routing-Protokolls mehr als eine Route zum selben Zielpräfix enthält?",
+      "optionen": {
+        "A": "Der Router wählt die Route mit der höchsten Kostenmetrik.",
+        "B": "Der Router wählt zufällig eine der Routen aus.",
+        "C": "Der Pfad mit der niedrigsten Kostenmetrik wird verwendet.",
+        "D": "Alle Routen werden gleichzeitig zur Lastverteilung genutzt."
+      },
+      "antwort": "C",
+      "erklärung": "Router wählen grundsätzlich die Route mit der niedrigsten Kostenmetrik (best path). Nur wenn mehrere gleichwertige Routen mit identischer Metrik existieren und das Gerät/Protokoll Equal-Cost Multipath (ECMP) unterstützt, können mehrere Routen parallel zur Lastverteilung genutzt werden."
+    },
+    "en": {
+      "question": "What happens when a routing protocol's database contains more than one route to the same destination prefix?",
+      "options": {
+        "A": "The router selects the route with the highest cost metric.",
+        "B": "The router randomly selects one of the routes for use.",
+        "C": "The path with the lowest cost metric is used.",
+        "D": "All routes are used simultaneously to balance the load."
+      },
+      "answer": "C",
+      "explanation": "Routers select the best path based on the lowest cost metric. Only when multiple routes have equal cost and the device/protocol supports Equal-Cost Multipath (ECMP) will multiple routes be used concurrently for load balancing."
+    }
+  },
+  {
+    "id": 263,
+    "de": {
+      "frage": "Was kann in einem dynamischen Routing-Netzwerk Konvergenzprobleme verursachen?",
+      "optionen": {
+        "A": "Ein stabiles Netzwerk ohne Änderungen",
+        "B": "Eine flapppende (flatternde) Schnittstelle",
+        "C": "Konsistente Routing-Informationen auf allen Routern",
+        "D": "Die Verwendung statischer Routing-Protokolle"
+      },
+      "antwort": "B",
+      "erklärung": "Eine flapppende Schnittstelle führt zu häufigen Zustandsänderungen, was ständige Neuberechnungen und Updates auslöst und die Konvergenz verzögert. Ein stabiles Netzwerk und konsistente Informationen fördern die Konvergenz; statisches Routing ist nicht dynamisch und verursacht keine Protokoll-Konvergenzprobleme."
+    },
+    "en": {
+      "question": "What can cause convergence problems in a dynamic routing network?",
+      "options": {
+        "A": "A stable network with no changes",
+        "B": "A flapping interface",
+        "C": "Consistent routing information across all routers",
+        "D": "The use of static routing protocols"
+      },
+      "answer": "B",
+      "explanation": "A flapping interface triggers frequent state changes, causing constant recalculations and updates that delay convergence. Stable networks and consistent information promote convergence; static routing is not dynamic and does not create protocol convergence issues."
+    }
+  },
+  {
+    "id": 264,
+    "de": {
+      "frage": "Welches Protokoll verwendet BGP für seinen Betrieb?",
+      "optionen": {
+        "A": "UDP",
+        "B": "ICMP",
+        "C": "TCP",
+        "D": "ARP"
+      },
+      "antwort": "C",
+      "erklärung": "BGP nutzt TCP, speziell Port 179, um zuverlässige Sitzungen zwischen Peers aufrechtzuerhalten. UDP, ICMP und ARP werden für andere Zwecke verwendet und sind nicht das Transportprotokoll für BGP."
+    },
+    "en": {
+      "question": "What protocol does BGP use for its operation?",
+      "options": {
+        "A": "UDP",
+        "B": "ICMP",
+        "C": "TCP",
+        "D": "ARP"
+      },
+      "answer": "C",
+      "explanation": "BGP uses TCP, specifically port 179, to maintain reliable sessions between peers. UDP, ICMP, and ARP serve other purposes and are not the transport protocol for BGP."
+    }
+  },
+  {
+    "id": 265,
+    "de": {
+      "frage": "Unter welchen der folgenden Umstände würden Sie BGP im Firmennetz implementieren und Routen mit Internet-Routern austauschen?",
+      "optionen": {
+        "A": "Wenn das Netzwerk mehr als 15 Hops hat",
+        "B": "Wenn das Netzwerk mit öffentlichen Adressen mit dem Internet verbunden ist",
+        "C": "Wenn das Netzwerk über mehrere ISPs mit dem Internet verbunden ist",
+        "D": "Wenn das Netzwerk mehr als 15 Areas hat und IPv6 verwendet"
+      },
+      "antwort": "C",
+      "erklärung": "BGP wird typischerweise eingesetzt, wenn ein Unternehmen Multihoming mit mehreren ISPs nutzt, um Pfadauswahl, Redundanz und Lastverteilung zu steuern. Öffentliche Adressierung allein erfordert kein BGP, und Hop-/Area-Anzahlen sind hierfür nicht ausschlaggebend."
+    },
+    "en": {
+      "question": "Under which of the following circumstances might you implement BGP on your company network and share routes with internet routers?",
+      "options": {
+        "A": "If the network has over 15 hops",
+        "B": "If the network is connected to the Internet using public addressing",
+        "C": "If the network is connected to the Internet using multiple ISPs",
+        "D": "If the network has over 15 areas and uses IPv6"
+      },
+      "answer": "C",
+      "explanation": "BGP is typically used when an organization is multihomed to multiple ISPs to control path selection, provide redundancy, and load-balance. Public addressing alone does not require BGP, and hop/area counts are not determining factors."
+    }
+  },
+  {
+    "id": 266,
+    "de": {
+      "frage": "Wenn ein Router zwei Routen zum gleichen Ziel mit identischen Präfixlängen aus demselben Routing-Protokoll hat, wie wählt er aus, welche Route verwendet wird?",
+      "optionen": {
+        "A": "Durch Auswahl der Route mit der größten Paketgröße",
+        "B": "Durch Wahl der Route mit der niedrigsten Metrik",
+        "C": "Durch Bevorzugung der Route mit dem kürzesten Präfix",
+        "D": "Durch Verwendung des Administrative-Distance-(AD)-Werts"
+      },
+      "antwort": "B",
+      "erklärung": "Bei gleichen Präfixlängen und demselben Protokoll entscheidet die Protokollmetrik: Der Pfad mit der niedrigsten Metrik wird gewählt. Administrative Distance wird nur zwischen unterschiedlichen Protokollen verglichen, nicht innerhalb desselben."
+    },
+    "en": {
+      "question": "If a router has two routes to the same destination with identical prefix lengths from the same routing protocol, how does it choose which route to use?",
+      "options": {
+        "A": "By selecting the route with the largest packet size",
+        "B": "By choosing the route with the lowest metric",
+        "C": "By preferring the route with the shortest prefix",
+        "D": "By using the Administrative Distance (AD) value"
+      },
+      "answer": "B",
+      "explanation": "When prefix lengths and the routing protocol are the same, the protocol metric decides: the path with the lowest metric is selected. Administrative Distance is used only to compare routes learned from different protocols, not within the same one."
+    }
   }
 ]
