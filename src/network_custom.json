@@ -6849,5 +6849,382 @@
       "answer": "B",
       "explanation": "When prefix lengths and the routing protocol are the same, the protocol metric decides: the path with the lowest metric is selected. Administrative Distance is used only to compare routes learned from different protocols, not within the same one."
     }
+  },
+  {
+    "id": 267,
+    "de": {
+      "frage": "Was passiert mit den Paketen, die aus dem Internet in einer PAT-Konfiguration zurückkommen?",
+      "optionen": {
+        "A": "Sie werden verworfen, wenn sie keiner bestehenden Portzuordnung entsprechen.",
+        "B": "Sie werden an alle internen Hosts gesendet (Broadcast).",
+        "C": "Sie werden einer Rückwärtszuordnung unterzogen, um die ursprüngliche IP-Adresse und die Portnummer einzusetzen.",
+        "D": "Sie werden in einem Puffer gespeichert, bis der richtige Host sie anfordert."
+      },
+      "antwort": "C",
+      "erklärung": "In einer Port Address Translation (PAT)-Konfiguration wird eingehender Datenverkehr anhand der Portnummer auf die ursprüngliche interne IP-Adresse und Portnummer zurückübersetzt. Dies ermöglicht es, dass die Pakete dem richtigen internen Host zugestellt werden."
+    },
+    "en": {
+      "question": "What happens to the packets returned from the Internet in a PAT configuration?",
+      "options": {
+        "A": "They are discarded if they do not match an existing port mapping.",
+        "B": "They are broadcast to all internal hosts.",
+        "C": "They undergo reverse mapping to insert the original IP address and port number.",
+        "D": "They are stored in a buffer until the correct host requests them."
+      },
+      "answer": "C",
+      "explanation": "In a Port Address Translation (PAT) configuration, incoming traffic is reverse mapped using the port number to restore the original internal IP address and port. This ensures the packets are delivered to the correct internal host."
+    }
+  },
+  {
+    "id": 268,
+    "de": {
+      "frage": "Was ist die Hauptfunktion von Port Address Translation (PAT)?",
+      "optionen": {
+        "A": "Jedem internen Host eine eindeutige öffentliche IP-Adresse zuweisen",
+        "B": "Mehrere private IP-Adressen auf eine einzige öffentliche IP-Adresse abbilden",
+        "C": "Unerwünschten Datenverkehr aus dem Internet blockieren",
+        "D": "Datenpakete zur sicheren Übertragung über das Internet verschlüsseln"
+      },
+      "antwort": "B",
+      "erklärung": "Die Hauptfunktion von PAT besteht darin, mehrere private IP-Adressen mithilfe unterschiedlicher Portnummern auf eine einzige öffentliche IP-Adresse abzubilden. Dies ermöglicht die gemeinsame Nutzung einer öffentlichen IP-Adresse durch viele interne Geräte."
+    },
+    "en": {
+      "question": "What is the primary function of Port Address Translation (PAT)?",
+      "options": {
+        "A": "To allocate a unique public IP address to each internal host",
+        "B": "To map multiple private IP addresses onto a single public IP address",
+        "C": "To block unwanted traffic from the Internet",
+        "D": "To encrypt data packets for secure transmission over the Internet"
+      },
+      "answer": "B",
+      "explanation": "The primary function of PAT is to map multiple private IP addresses to a single public IP address using different port numbers. This allows many internal devices to share one public IP address."
+    }
+  },
+  {
+    "id": 269,
+    "de": {
+      "frage": "Welcher der folgenden Begriffe ist ein anderer Ausdruck für Port Address Translation (PAT)?",
+      "optionen": {
+        "A": "Dynamisches NAT",
+        "B": "Statisches NAT",
+        "C": "NAT-Überladung",
+        "D": "ARP-Spoofing"
+      },
+      "antwort": "C",
+      "erklärung": "Port Address Translation (PAT) wird auch als NAT-Überladung bezeichnet. Dabei werden mehrere private IP-Adressen durch unterschiedliche Portnummern auf eine einzige öffentliche IP-Adresse abgebildet."
+    },
+    "en": {
+      "question": "Which of the following is another term for Port Address Translation (PAT)?",
+      "options": {
+        "A": "Dynamic NAT",
+        "B": "Static NAT",
+        "C": "NAT overloading",
+        "D": "ARP spoofing"
+      },
+      "answer": "C",
+      "explanation": "Port Address Translation (PAT) is also known as NAT overloading. It maps multiple private IP addresses to a single public IP address by using different port numbers."
+    }
+  },
+  {
+    "id": 270,
+    "de": {
+      "frage": "In welcher der folgenden Tabellen speichert ein NAT-Router die Portnummern und deren zugehörige private IP-Adresszuordnungen?",
+      "optionen": {
+        "A": "Routing-Tabelle",
+        "B": "MAC-Adress-Tabelle",
+        "C": "Übersetzungstabelle",
+        "D": "ARP-Tabelle"
+      },
+      "antwort": "C",
+      "erklärung": "Ein NAT-Router speichert die Zuordnungen zwischen öffentlichen Portnummern und internen privaten IP-Adressen in einer Übersetzungstabelle. Diese wird verwendet, um eingehende und ausgehende Pakete korrekt zuzuordnen."
+    },
+    "en": {
+      "question": "In which of the following tables does a NAT router store port numbers and their associated private IP address mappings?",
+      "options": {
+        "A": "Routing table",
+        "B": "MAC address table",
+        "C": "Translation table",
+        "D": "ARP table"
+      },
+      "answer": "C",
+      "explanation": "A NAT router stores mappings between public port numbers and internal private IP addresses in a translation table. This table is used to correctly route incoming and outgoing packets."
+    }
+  },
+  {
+    "id": 271,
+    "de": {
+      "frage": "Du hast ein kleines Heimnetzwerk, das mit dem Internet verbunden ist. In deinem Heimnetzwerk befindet sich ein Server mit der IP-Adresse 192.168.55.199/16. Du hast nur eine einzige öffentliche Adresse, die von allen Hosts in deinem privaten Netzwerk gemeinsam genutzt wird.\n\nDu möchtest den Server als Webserver konfigurieren und es Internet-Hosts ermöglichen, diesen zu kontaktieren, um eine persönliche Website zu besuchen.\n\nWas solltest du verwenden, um den Zugriff in dieser Konfiguration zu ermöglichen?",
+      "optionen": {
+        "A": "Statisches NAT",
+        "B": "Dynamisches NAT",
+        "C": "DNS-A-Record",
+        "D": "DNS-CNAME-Record",
+        "E": "Multicast"
+      },
+      "antwort": "A",
+      "erklärung": "Um Internet-Hosts den Zugriff auf einen internen Server hinter einer gemeinsamen öffentlichen IP-Adresse zu ermöglichen, wird Statisches NAT verwendet. Dabei wird eine bestimmte öffentliche IP-Adresse oder ein Port dauerhaft einer internen privaten IP-Adresse zugeordnet, sodass eingehender Datenverkehr gezielt an den Server weitergeleitet wird."
+    },
+    "en": {
+      "question": "You have a small home network that is connected to the Internet. On your home network, you have a server with the IP address 192.168.55.199/16. You have a single public address that is shared by all hosts on your private network.\n\nYou want to configure the server as a web server and allow Internet hosts to contact the server to browse a personal website.\n\nWhat should you use to allow access to this configuration?",
+      "options": {
+        "A": "Static NAT",
+        "B": "Dynamic NAT",
+        "C": "DNS A record",
+        "D": "DNS CNAME record",
+        "E": "Multicast"
+      },
+      "answer": "A",
+      "explanation": "To allow Internet hosts to access an internal server behind a shared public IP address, you use Static NAT. This maps a specific public IP address or port permanently to an internal private IP address, enabling incoming traffic to be directed to the correct server."
+    }
+  },
+  {
+    "id": 272,
+    "de": {
+      "frage": "Kate, eine Netzwerkadministratorin, hat die Aufgabe, im Budget des Unternehmens zu bleiben. Sie hat ein großes Netzwerk und möchte nicht mehr Geld als nötig für den Kauf und die Registrierung mehrerer öffentlicher IP-Adressen für jeden Host im Netzwerk ausgeben.\n\nWelche der folgenden Methoden könnte ihr helfen, Internetzugang bereitzustellen und gleichzeitig die Kosten niedrig zu halten sowie die Anzahl der zu kaufenden öffentlichen IP-Adressen zu reduzieren?",
+      "optionen": {
+        "A": "Layer-2-Switches verwenden",
+        "B": "Network Address Translation verwenden",
+        "C": "Layer-3-Switches verwenden",
+        "D": "PoE-Geräte verwenden"
+      },
+      "antwort": "B",
+      "erklärung": "Mit Network Address Translation (NAT) können mehrere private IP-Adressen im internen Netzwerk über eine oder wenige öffentliche IP-Adressen auf das Internet zugreifen. Dadurch reduziert sich die Anzahl der benötigten registrierten IP-Adressen und die Kosten bleiben niedrig."
+    },
+    "en": {
+      "question": "Kate, a network administrator, has been tasked with staying within the company budget. She has a large network and doesn't want to spend more than she needs to on purchasing and registering multiple public IP addresses for each of the hosts on her network.\n\nWhich of the following methods could help her provide internet access but also keep costs low and limit the number of registered IP addresses her organization needs to purchase?",
+      "options": {
+        "A": "Use Layer 2 switches.",
+        "B": "Use Network Address Translation.",
+        "C": "Use Layer 3 switches.",
+        "D": "Use PoE devices."
+      },
+      "answer": "B",
+      "explanation": "Network Address Translation (NAT) allows multiple private IP addresses inside the network to access the Internet using one or a few public IP addresses. This reduces the number of registered IP addresses needed and keeps costs low."
+    }
+  },
+  {
+    "id": 273,
+    "de": {
+      "frage": "Welches der folgenden Probleme hilft NAT zu lösen?",
+      "optionen": {
+        "A": "Den Mangel an IPv4-Adressen",
+        "B": "Die Registrierung von IP-Adressen bei einem ISP",
+        "C": "Den Mangel an IPv6-Adressen",
+        "D": "Probleme mit nicht richtig funktionierendem IPsec"
+      },
+      "antwort": "A",
+      "erklärung": "Network Address Translation (NAT) wurde entwickelt, um den Mangel an IPv4-Adressen zu entschärfen. Durch die Verwendung privater IP-Adressen im internen Netzwerk und die gemeinsame Nutzung weniger öffentlicher IP-Adressen können viele Geräte gleichzeitig auf das Internet zugreifen, ohne dass für jedes Gerät eine eigene öffentliche IPv4-Adresse benötigt wird."
+    },
+    "en": {
+      "question": "Which of the following problems does NAT help address?",
+      "options": {
+        "A": "The shortage of IPv4 addresses",
+        "B": "Registering IP addresses with an ISP",
+        "C": "The shortage of IPv6 addresses",
+        "D": "IPsec not working properly"
+      },
+      "answer": "A",
+      "explanation": "Network Address Translation (NAT) was developed to alleviate the shortage of IPv4 addresses. By using private IP addresses internally and sharing a small number of public IP addresses, many devices can access the Internet without each needing a unique public IPv4 address."
+    }
+  },
+  {
+    "id": 274,
+    "de": {
+      "frage": "Was ist die Hauptaufgabe eines Edge-Routers in einem Netzwerk?",
+      "optionen": {
+        "A": "Interne Netzwerke mit externen Netzwerken verbinden",
+        "B": "WLAN-Konnektivität für interne Benutzer bereitstellen",
+        "C": "Nur den internen Netzwerkverkehr verwalten",
+        "D": "Als Haupt-Firewall für das Netzwerk dienen"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Edge-Router befindet sich am Rand des Netzwerks und verbindet interne Netzwerke mit externen Netzwerken, wie dem Internet. Er fungiert als Schnittstelle zwischen dem lokalen Netz und der Außenwelt und übernimmt oft auch grundlegende Routing- und Sicherheitsfunktionen."
+    },
+    "en": {
+      "question": "What is the primary role of an edge router in a network?",
+      "options": {
+        "A": "To connect internal networks to external networks",
+        "B": "To provide Wi-Fi connectivity to internal users",
+        "C": "To manage internal network traffic only",
+        "D": "To serve as the main firewall for the network"
+      },
+      "answer": "A",
+      "explanation": "An edge router sits at the boundary of a network and connects internal networks to external networks, such as the Internet. It functions as a gateway between the local network and the outside world, often providing basic routing and security capabilities."
+    }
+  },
+  {
+    "id": 275,
+    "de": {
+      "frage": "Dein Unternehmen hat kürzlich seine Geschäftstätigkeit erweitert und eine neue Zweigstelle eröffnet. Als IT-Manager bist du damit beauftragt, die Netzwerkinfrastruktur für diesen neuen Standort einzurichten. Das Büro wird über das Internet mit dem Hauptrechenzentrum des Unternehmens verbunden, um auf zentrale Ressourcen zuzugreifen.\n\nDu musst einen Router auswählen, der den Datenverkehr zwischen dem lokalen Netzwerk (LAN) der Zweigstelle und dem Wide Area Network (WAN) für den Internetzugang effizient verwaltet.\n\nWelcher Routern-Typ wäre für diesen Zweck am besten geeignet?",
+      "optionen": {
+        "A": "Core-Router",
+        "B": "Edge-Router",
+        "C": "WLAN-Router",
+        "D": "Virtueller Router"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Edge-Router ist ideal, um lokales Netzwerk (LAN) und Weitverkehrsnetz (WAN) zu verbinden. Er sitzt am Rand des Netzwerks, verwaltet den Datenverkehr zwischen internen und externen Netzwerken und sorgt für effiziente Weiterleitung und grundlegende Sicherheitsfunktionen."
+    },
+    "en": {
+      "question": "Your company has recently expanded its operations and opened a new branch office. As the IT manager, you are tasked with setting up the network infrastructure for this new location. The office will connect to the company's main data center via the Internet for access to centralized resources.\n\nYou need to select a router that will manage the traffic between the branch office's local area network (LAN) and the wide area network (WAN) internet access efficiently.\n\nWhich type of router would be most suitable for this purpose?",
+      "options": {
+        "A": "Core router",
+        "B": "Edge router",
+        "C": "Wireless router",
+        "D": "Virtual router"
+      },
+      "answer": "B",
+      "explanation": "An edge router is ideal for connecting a local area network (LAN) to a wide area network (WAN). It sits at the edge of a network, managing traffic between internal and external networks, and provides efficient routing and basic security functions."
+    }
+  },
+  {
+    "id": 276,
+    "de": {
+      "frage": "Ein Netzwerktechniker betrachtet die Schnittstellen an einem Edge-Router. Dabei stößt der Techniker auf den Router eines Kunden.\n\nWie wird diese Seite der Schnittstelle genannt?",
+      "optionen": {
+        "A": "CE",
+        "B": "PE",
+        "C": "SOHO",
+        "D": "WAN"
+      },
+      "antwort": "A",
+      "erklärung": "CE steht für Customer Edge. Dies bezeichnet den Router oder die Geräte, die sich auf der Seite des Kunden befinden und direkt mit dem Provider Edge (PE) des Dienstanbieters verbunden sind."
+    },
+    "en": {
+      "question": "A network technician is looking at the interfaces on an edge router. The technician comes across a customer's router.\n\nWhat is this side of the interface called?",
+      "options": {
+        "A": "CE",
+        "B": "PE",
+        "C": "SOHO",
+        "D": "WAN"
+      },
+      "answer": "A",
+      "explanation": "CE stands for Customer Edge. This refers to the router or devices located on the customer's side that connect directly to the provider's Provider Edge (PE) router."
+    }
+  },
+  {
+    "id": 277,
+    "de": {
+      "frage": "Was ist ein Merkmal einer Firewall in einem Enterprise-Class-Router im Vergleich zu einer SOHO-Router-Firewall?",
+      "optionen": {
+        "A": "Sie ist günstiger.",
+        "B": "Sie unterstützt weniger Sitzungen.",
+        "C": "Sie kann deutlich mehr Sitzungen unterstützen.",
+        "D": "Sie ist weniger sicher."
+      },
+      "antwort": "C",
+      "erklärung": "Eine Enterprise-Class-Router-Firewall ist darauf ausgelegt, eine große Anzahl gleichzeitiger Sitzungen zu unterstützen, was für Unternehmensnetzwerke mit vielen Benutzern und hohem Datenverkehr entscheidend ist. SOHO-Router sind auf geringere Kapazitäten für kleine Netzwerke ausgelegt."
+    },
+    "en": {
+      "question": "What is a characteristic of an enterprise-class router firewall compared to a SOHO router firewall?",
+      "options": {
+        "A": "It is cheaper.",
+        "B": "It supports fewer sessions.",
+        "C": "It can support far more sessions.",
+        "D": "It is less secure."
+      },
+      "answer": "C",
+      "explanation": "An enterprise-class router firewall is designed to handle a large number of simultaneous sessions, which is essential for enterprise networks with many users and heavy traffic. SOHO routers are built for smaller capacities in small networks."
+    }
+  },
+  {
+    "id": 278,
+    "de": {
+      "frage": "Was ist ein wesentlicher Unterschied zwischen einer Appliance-Firewall und einer Router-Firewall?",
+      "optionen": {
+        "A": "Eine Appliance-Firewall kann mehr Datenverkehr verarbeiten.",
+        "B": "Eine Router-Firewall ist keine hardwarebasierte Lösung.",
+        "C": "Eine Appliance-Firewall erfüllt ausschließlich die Funktion einer Firewall.",
+        "D": "Eine Router-Firewall kann den Datenverkehr nicht überwachen."
+      },
+      "antwort": "C",
+      "erklärung": "Eine Appliance-Firewall ist ein dediziertes Gerät, das ausschließlich als Firewall fungiert. Im Gegensatz dazu ist eine Router-Firewall Teil eines Routers, der zusätzlich Routing-Aufgaben übernimmt."
+    },
+    "en": {
+      "question": "What is a key difference between an appliance firewall and a router firewall?",
+      "options": {
+        "A": "An appliance firewall can handle more traffic.",
+        "B": "A router firewall is not a hardware-based solution.",
+        "C": "An appliance firewall performs only the function of a firewall.",
+        "D": "A router firewall cannot monitor traffic."
+      },
+      "answer": "C",
+      "explanation": "An appliance firewall is a dedicated device that serves only as a firewall, whereas a router firewall is part of a router that also performs routing functions."
+    }
+  },
+  {
+    "id": 279,
+    "de": {
+      "frage": "Was macht eine Stateful-Inspection-Firewall, was eine Stateless-Firewall nicht macht?",
+      "optionen": {
+        "A": "Filtert Datenverkehr ausschließlich basierend auf IP-Adressen",
+        "B": "Verschlüsselt Datenpakete",
+        "C": "Hält zustandsbehaftete Informationen über die Verbindung zwischen zwei Hosts aufrecht",
+        "D": "Arbeitet auf Schicht 2 des OSI-Modells"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Stateful-Inspection-Firewall speichert den Zustand aktiver Verbindungen und überwacht den gesamten Sitzungsverlauf zwischen zwei Hosts. Dadurch kann sie den Kontext einer Verbindung berücksichtigen und Entscheidungen auf Basis des Sitzungsstatus treffen, was bei einer Stateless-Firewall nicht möglich ist."
+    },
+    "en": {
+      "question": "What does a stateful inspection firewall do that a stateless firewall does not?",
+      "options": {
+        "A": "Filters traffic based solely on IP addresses",
+        "B": "Encrypts data packets",
+        "C": "Maintains stateful information about the session established between two hosts",
+        "D": "Operates at Layer 2 of the OSI model"
+      },
+      "answer": "C",
+      "explanation": "A stateful inspection firewall keeps track of the state of active connections and monitors the entire session between two hosts. This allows it to make filtering decisions based on the context of a connection, which a stateless firewall cannot do."
+    }
+  },
+  {
+    "id": 280,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt Packet-Filtering-Firewalls am besten?",
+      "optionen": {
+        "A": "Sie verschlüsseln jedes Datenpaket.",
+        "B": "Sie inspizieren den Inhalt jedes Datenpakets.",
+        "C": "Sie inspizieren die Header von IP-Paketen und filtern basierend auf Regeln.",
+        "D": "Sie filtern nur ausgehenden Datenverkehr aus einem Netzwerk."
+      },
+      "antwort": "C",
+      "erklärung": "Packet-Filtering-Firewalls überprüfen die Header von IP-Paketen (z. B. Quell- und Ziel-IP-Adresse, Ports, Protokolltyp) und entscheiden basierend auf vordefinierten Regeln, ob der Datenverkehr zugelassen oder blockiert wird. Sie analysieren nicht den Inhalt der Pakete."
+    },
+    "en": {
+      "question": "Which of the following best describes packet filtering firewalls?",
+      "options": {
+        "A": "They encrypt each data packet.",
+        "B": "They inspect the content of each data packet.",
+        "C": "They inspect the headers of IP packets and filter based on rules.",
+        "D": "They only filter outgoing traffic from a network."
+      },
+      "answer": "C",
+      "explanation": "Packet filtering firewalls examine the headers of IP packets (such as source and destination IP addresses, ports, and protocol type) and decide whether to allow or block the traffic based on predefined rules. They do not analyze the actual content of the packets."
+    }
+  },
+  {
+    "id": 281,
+    "de": {
+      "frage": "Worauf bezieht sich das Filtern von Ingress- und Egress-Datenverkehr?",
+      "optionen": {
+        "A": "Filtern sowohl interner als auch externer E-Mails",
+        "B": "Steuern sowohl des eingehenden als auch des ausgehenden Netzwerkverkehrs",
+        "C": "Verschlüsseln von Daten, die ein Netzwerk betreten oder verlassen",
+        "D": "Überwachen der Internetnutzung und Bandbreite"
+      },
+      "antwort": "B",
+      "erklärung": "Ingress- und Egress-Filterung bezieht sich auf die Kontrolle und Filterung des ein- und ausgehenden Datenverkehrs in einem Netzwerk. Ingress-Filterung überprüft den eingehenden Verkehr, um bösartige oder unerwünschte Datenpakete zu blockieren, während Egress-Filterung den ausgehenden Verkehr kontrolliert, um Datenverlust oder die Kommunikation mit unerwünschten Zielen zu verhindern."
+    },
+    "en": {
+      "question": "What does ingress and egress traffic filtering refer to?",
+      "options": {
+        "A": "Filtering both internal and external emails",
+        "B": "Controlling both inbound and outbound network traffic",
+        "C": "Encrypting data entering and leaving a network",
+        "D": "Monitoring internet usage and bandwidth"
+      },
+      "answer": "B",
+      "explanation": "Ingress and egress traffic filtering refers to controlling and filtering both incoming and outgoing network traffic. Ingress filtering checks incoming traffic to block malicious or unwanted packets, while egress filtering monitors outgoing traffic to prevent data leaks or communication with prohibited destinations."
+    }
   }
 ]
