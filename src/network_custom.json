@@ -2589,7 +2589,7 @@
         "C": "10 dB",
         "D": "30 dB"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "The maximum allowed insertion loss for Cat 5e cable at 100 MHz is 21.7 dB according to TIA/EIA standards."
     },
     "de": {
@@ -2600,7 +2600,7 @@
         "C": "10 dB",
         "D": "30 dB"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Der maximal zulässige Einfügedämpfungsverlust für Cat 5e Kabel bei 100 MHz beträgt gemäß TIA/EIA-Standards 21,7 dB."
     }
   },
@@ -7225,6 +7225,381 @@
       },
       "answer": "B",
       "explanation": "Ingress and egress traffic filtering refers to controlling and filtering both incoming and outgoing network traffic. Ingress filtering checks incoming traffic to block malicious or unwanted packets, while egress filtering monitors outgoing traffic to prevent data leaks or communication with prohibited destinations."
+    }
+  },
+  {
+    "id": 282,
+    "de": {
+      "frage": "Was beinhaltet eine hierarchische Stern-Mesh-Topologie?",
+      "optionen": {
+        "A": "Ein einzelnes zentrales Gerät, das alle anderen Knoten verbindet",
+        "B": "Eine direkte Verbindung zwischen jedem Paar von Knoten im Netzwerk",
+        "C": "Knoten an der Spitze der Hierarchie, die zur Redundanz in einem Mesh konfiguriert sind",
+        "D": "Ein dezentrales Netzwerk ohne jegliche hierarchische Struktur"
+      },
+      "antwort": "C",
+      "erklärung": "In einer hierarchischen Stern-Mesh-Topologie sind die oberen Hierarchieebenen im Mesh verbunden, um Redundanz und Ausfallsicherheit zu gewährleisten, während untergeordnete Ebenen oft in Stern-Topologie organisiert sind."
+    },
+    "en": {
+      "question": "What does a hierarchical star-mesh topology involve?",
+      "options": {
+        "A": "A single central device connecting all other nodes",
+        "B": "A direct connection between every pair of nodes in the network",
+        "C": "Nodes at the top of the hierarchy configured in a mesh for redundancy",
+        "D": "A decentralized network without any hierarchical structure"
+      },
+      "answer": "C",
+      "explanation": "In a hierarchical star-mesh topology, the top-level nodes are connected in a mesh to provide redundancy and fault tolerance, while lower levels are often arranged in a star configuration."
+    }
+  },
+  {
+    "id": 283,
+    "de": {
+      "frage": "Was ist der Hauptzweck der Verwendung einer hybriden Topologie in modernen Netzwerken?",
+      "optionen": {
+        "A": "Um die Gesamtkosten der Netzwerkinfrastruktur zu senken",
+        "B": "Um das Netzwerkdesign und -management zu vereinfachen",
+        "C": "Um Redundanz und Ausfallsicherheit zu implementieren",
+        "D": "Um die Anzahl der Geräte im Netzwerk zu begrenzen"
+      },
+      "antwort": "C",
+      "erklärung": "Der Hauptzweck einer hybriden Topologie besteht darin, die Vorteile verschiedener Topologien zu kombinieren, um Redundanz und Ausfallsicherheit zu gewährleisten. So können Ausfälle einzelner Komponenten kompensiert und die Netzwerkverfügbarkeit erhöht werden."
+    },
+    "en": {
+      "question": "What is the primary purpose of using a hybrid topology in modern networks?",
+      "options": {
+        "A": "To reduce the overall cost of the network infrastructure",
+        "B": "To simplify network design and management",
+        "C": "To implement redundancy and fault tolerance",
+        "D": "To limit the number of devices in the network"
+      },
+      "answer": "C",
+      "explanation": "The primary purpose of a hybrid topology is to combine the benefits of multiple topologies to ensure redundancy and fault tolerance. This helps maintain network availability and compensate for the failure of individual components."
+    }
+  },
+  {
+    "id": 284,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen einem Router und einem Layer-3-Switch?",
+      "optionen": {
+        "A": "Ein Router verbindet Endgeräte mit dem Netzwerk.",
+        "B": "Ein Layer-3-Switch kann kein WAN-Routing durchführen.",
+        "C": "Ein Router stellt einen Hochgeschwindigkeits-Backbone für das Netzwerk bereit.",
+        "D": "Ein Layer-3-Switch baut eine vollständige Mesh-Topologie auf."
+      },
+      "antwort": "B",
+      "erklärung": "Der Hauptunterschied besteht darin, dass Router speziell für das Routing zwischen unterschiedlichen Netzwerken, einschließlich WAN-Verbindungen, entwickelt wurden, während Layer-3-Switches hauptsächlich für das Routing innerhalb von LANs eingesetzt werden und in der Regel kein WAN-Routing unterstützen."
+    },
+    "en": {
+      "question": "What is the primary difference between a router and a layer 3 switch?",
+      "options": {
+        "A": "A router connects end-user devices to the network.",
+        "B": "A layer 3 switch cannot perform WAN routing.",
+        "C": "A router provides a high-speed backbone for the network.",
+        "D": "A layer 3 switch establishes a full mesh topology."
+      },
+      "answer": "B",
+      "explanation": "The primary difference is that routers are designed to route between different networks, including WAN connections, while layer 3 switches are mainly used for routing within LANs and typically do not support WAN routing."
+    }
+  },
+  {
+    "id": 285,
+    "de": {
+      "frage": "Welche Schicht in der dreistufigen Netzwerk-Hierarchie ist für die Bereitstellung fehlertoleranter Verbindungen zwischen verschiedenen Access-Blöcken verantwortlich?",
+      "optionen": {
+        "A": "Access-Schicht",
+        "B": "Distributionsschicht",
+        "C": "Core-Schicht",
+        "D": "Drahtlose Access-Schicht"
+      },
+      "antwort": "B",
+      "erklärung": "In einer dreistufigen Netzwerkarchitektur ist die Distributionsschicht dafür zuständig, redundante und fehlertolerante Verbindungen zwischen den Access-Blöcken bereitzustellen. Sie dient als Vermittler zwischen der Zugriffsschicht und der Kernschicht und ist entscheidend für die Netzwerksicherheit, Richtliniensteuerung und Lastverteilung."
+    },
+    "en": {
+      "question": "Which layer in the three-tiered network hierarchy is responsible for providing fault-tolerant interconnections between different access blocks?",
+      "options": {
+        "A": "Access Layer",
+        "B": "Distribution Layer",
+        "C": "Core Layer",
+        "D": "Wireless Access Layer"
+      },
+      "answer": "B",
+      "explanation": "In a three-tier network architecture, the distribution layer is responsible for providing redundant and fault-tolerant interconnections between access blocks. It acts as an intermediary between the access layer and the core layer, playing a key role in network security, policy enforcement, and load balancing."
+    }
+  },
+  {
+    "id": 286,
+    "de": {
+      "frage": "Warum könnte sich ein mittelgroßes Netzwerk für ein Collapsed-Core-Modell entscheiden?",
+      "optionen": {
+        "A": "Um die Komplexität des Netzwerks zu erhöhen",
+        "B": "Um die Skalierbarkeit des Netzwerks zu verringern",
+        "C": "Um das Netzwerk zu vereinfachen, indem Kern- und Distributionsschicht kombiniert werden",
+        "D": "Um Verkehrspolitiken auf der Zugriffsschicht zu implementieren"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Collapsed-Core-Modell kombiniert die Kern- und die Distributionsschicht in einer einzigen Schicht. Dies reduziert die Komplexität und Kosten und eignet sich besonders für mittelgroße Netzwerke, in denen die vollständige Trennung der Schichten nicht unbedingt erforderlich ist."
+    },
+    "en": {
+      "question": "Why might a medium-sized network opt for a collapsed core model?",
+      "options": {
+        "A": "To increase the complexity of the network",
+        "B": "To decrease the scalability of the network",
+        "C": "To simplify the network by combining core and distribution layers",
+        "D": "To implement traffic policies at the access layer"
+      },
+      "answer": "C",
+      "explanation": "A collapsed core model combines the core and distribution layers into a single layer, reducing complexity and cost. This approach is well-suited for medium-sized networks where a full separation of the layers is not strictly necessary."
+    }
+  },
+  {
+    "id": 287,
+    "de": {
+      "frage": "Im Kontext von VoIP – was erleichtert das Cisco Discovery Protocol (CDP)?",
+      "optionen": {
+        "A": "Verschlüsselung des Sprachverkehrs",
+        "B": "Automatische Zuweisung der Voice-VLAN-ID an Telefone",
+        "C": "Umwandlung von analogen Sprachsignalen in digitale",
+        "D": "Reduzierung der Latenz im Sprachverkehr"
+      },
+      "antwort": "B",
+      "erklärung": "Im VoIP-Umfeld kann CDP von Cisco-Telefonen verwendet werden, um automatisch die korrekte Voice-VLAN-ID vom Switch zu erhalten. Dies vereinfacht die Bereitstellung und Konfiguration von IP-Telefonen erheblich."
+    },
+    "en": {
+      "question": "In the context of VoIP, what does the Cisco Discovery Protocol (CDP) facilitate?",
+      "options": {
+        "A": "Encryption of voice traffic",
+        "B": "Automatic assignment of voice VLAN ID to handsets",
+        "C": "Conversion of analog voice signals to digital",
+        "D": "Reduction of latency in voice traffic"
+      },
+      "answer": "B",
+      "explanation": "In a VoIP environment, CDP can be used by Cisco IP phones to automatically receive the correct voice VLAN ID from the switch. This streamlines the deployment and configuration of IP phones."
+    }
+  },
+  {
+    "id": 288,
+    "de": {
+      "frage": "Wie wird die Kommunikation zwischen VLANs ermöglicht?",
+      "optionen": {
+        "A": "Durch direkte Verbindung",
+        "B": "Über einen IP-Router oder einen Layer-3-fähigen Switch",
+        "C": "Durch Konfiguration der VLANs mit derselben ID",
+        "D": "Über eine Netzwerk-Firewall"
+      },
+      "antwort": "B",
+      "erklärung": "Die Kommunikation zwischen VLANs, bekannt als Inter-VLAN-Routing, wird durch den Einsatz eines IP-Routers oder eines Layer-3-Switches ermöglicht. Diese Geräte können Pakete zwischen verschiedenen VLANs routen, da VLANs voneinander logisch getrennt sind."
+    },
+    "en": {
+      "question": "How are communications between VLANs facilitated?",
+      "options": {
+        "A": "Through direct connection",
+        "B": "Through an IP router or layer 3 capable switch",
+        "C": "By configuring VLANs with the same ID",
+        "D": "Through a network firewall"
+      },
+      "answer": "B",
+      "explanation": "Communication between VLANs, known as inter-VLAN routing, is enabled through the use of an IP router or a layer 3 switch. These devices can route packets between separate VLANs, which are otherwise logically isolated from each other."
+    }
+  },
+  {
+    "id": 289,
+    "de": {
+      "frage": "Was ist die Standard-VLAN-ID auf einem Switch?",
+      "optionen": {
+        "A": "0",
+        "B": "1",
+        "C": "1001",
+        "D": "4094"
+      },
+      "antwort": "B",
+      "erklärung": "Auf den meisten Switches ist VLAN 1 das Standard-VLAN. Alle Ports sind standardmäßig diesem VLAN zugeordnet, solange keine andere Konfiguration vorgenommen wurde."
+    },
+    "en": {
+      "question": "What is the default VLAN ID on a switch?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "1001",
+        "D": "4094"
+      },
+      "answer": "B",
+      "explanation": "On most switches, VLAN 1 is the default VLAN. All ports are assigned to this VLAN by default unless reconfigured."
+    }
+  },
+  {
+    "id": 290,
+    "de": {
+      "frage": "Welche der folgenden Komponenten kann zur Erstellung eines virtuellen LANs verwendet werden?",
+      "optionen": {
+        "A": "Switch",
+        "B": "Router",
+        "C": "Gateway",
+        "D": "Hub"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Switch, der VLANs unterstützt, kann virtuelle LANs erstellen, indem er Ports logisch gruppiert. Dadurch können Netzwerke segmentiert und die Sicherheit sowie Leistung verbessert werden, ohne dass zusätzliche physische Geräte erforderlich sind."
+    },
+    "en": {
+      "question": "Which of the following can you use to create a virtual LAN?",
+      "options": {
+        "A": "Switch",
+        "B": "Router",
+        "C": "Gateway",
+        "D": "Hub"
+      },
+      "answer": "A",
+      "explanation": "A VLAN-capable switch can create virtual LANs by logically grouping ports. This allows network segmentation to improve security and performance without requiring additional physical devices."
+    }
+  },
+  {
+    "id": 291,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Funktion von Subnetting am besten?",
+      "optionen": {
+        "A": "Kombinieren mehrerer IP-Netzwerke zu einem einzigen Netzwerk",
+        "B": "Physische Aufteilung eines Netzwerks in kleinere Segmente",
+        "C": "Logische Aufteilung eines IP-Netzwerks in kleinere Subnetze",
+        "D": "Vergrößerung der Größe der Broadcast-Domain"
+      },
+      "antwort": "C",
+      "erklärung": "Subnetting ist der Prozess, bei dem ein IP-Netzwerk logisch in kleinere, leichter zu verwaltende Subnetze geteilt wird. Dies verbessert die Effizienz der IP-Adressnutzung, reduziert Broadcast-Traffic und erleichtert die Netzwerksicherheit sowie Verwaltung."
+    },
+    "en": {
+      "question": "Which of the following best describes the function of subnetting?",
+      "options": {
+        "A": "Combining multiple IP networks into a single network",
+        "B": "Physically dividing a network into smaller segments",
+        "C": "Logically dividing an IP network into smaller subnetworks",
+        "D": "Increasing the broadcast domain size"
+      },
+      "answer": "C",
+      "explanation": "Subnetting is the process of logically dividing an IP network into smaller, more manageable subnetworks. This improves IP address utilization efficiency, reduces broadcast traffic, and helps with network security and management."
+    }
+  },
+  {
+    "id": 292,
+    "de": {
+      "frage": "Was ist der Hauptzweck von Trunking in einem Netzwerk?",
+      "optionen": {
+        "A": "Einen Computer mit dem Internet verbinden",
+        "B": "Mehrere Switches miteinander verbinden und das Netzwerk-Backbone aufbauen",
+        "C": "Drahtlose Verbindungen durch kabelgebundene Verbindungen ersetzen",
+        "D": "Die Sicherheit des Netzwerks erhöhen"
+      },
+      "antwort": "B",
+      "erklärung": "Der Hauptzweck von Trunking ist es, mehrere Switches über eine einzige physische Verbindung zu verbinden, die den Datenverkehr mehrerer VLANs transportiert. Dadurch kann das Netzwerk-Backbone aufgebaut und VLAN-Konnektivität über mehrere Switches hinweg bereitgestellt werden."
+    },
+    "en": {
+      "question": "What is the primary purpose of trunking in a network?",
+      "options": {
+        "A": "To connect a computer to the Internet",
+        "B": "To interconnect multiple switches and build the network fabric",
+        "C": "To replace wireless connections with wired connections",
+        "D": "To increase the security of the network"
+      },
+      "answer": "B",
+      "explanation": "The primary purpose of trunking is to connect multiple switches using a single physical link that carries traffic for multiple VLANs. This enables building the network backbone and providing VLAN connectivity across switches."
+    }
+  },
+  {
+    "id": 293,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen getaggten und ungetaggten Ports in Bezug auf VLAN-Tags?",
+      "optionen": {
+        "A": "Getaggte Ports fügen allen ausgehenden Frames ein VLAN-Tag hinzu.",
+        "B": "Ungetaggte Ports können den Verkehr für mehrere VLANs transportieren.",
+        "C": "Getaggte Ports entfernen VLAN-Tags aus eingehenden Frames.",
+        "D": "Ungetaggte Ports fügen keine VLAN-Tags hinzu und entfernen sie auch nicht bei Frames innerhalb desselben VLANs."
+      },
+      "antwort": "D",
+      "erklärung": "Getaggte Ports (Trunk-Ports) versehen alle ausgehenden Frames mit einem VLAN-Tag, sodass mehrere VLANs über dieselbe physische Verbindung transportiert werden können. Ungetaggte Ports (Access-Ports) übertragen Frames ohne VLAN-Tag innerhalb eines einzelnen VLANs."
+    },
+    "en": {
+      "question": "What is the primary difference between tagged and untagged ports regarding VLAN tags?",
+      "options": {
+        "A": "Tagged ports add a VLAN tag to all outgoing frames.",
+        "B": "Untagged ports can transport traffic for multiple VLANs.",
+        "C": "Tagged ports strip VLAN tags from incoming frames.",
+        "D": "Untagged ports do not add or remove VLAN tags from frames within the same VLAN."
+      },
+      "answer": "D",
+      "explanation": "Tagged ports (trunk ports) add a VLAN tag to all outgoing frames so that multiple VLANs can be carried over the same physical connection. Untagged ports (access ports) send frames without VLAN tags for a single VLAN."
+    }
+  },
+  {
+    "id": 294,
+    "de": {
+      "frage": "Was ist ein „Router on a stick“?",
+      "optionen": {
+        "A": "Ein Router mit mehreren physischen Schnittstellen, die jeweils mit einem separaten VLAN verbunden sind",
+        "B": "Ein Router mit einer einzigen Schnittstelle, die mit einem Trunk-Port am Switch verbunden ist",
+        "C": "Ein WLAN-Router, der ausschließlich für VLAN-Verkehr verwendet wird",
+        "D": "Ein virtueller Router, der innerhalb eines Layer-3-Switches implementiert ist"
+      },
+      "antwort": "B",
+      "erklärung": "Ein „Router on a stick“ ist eine Netzwerkkonfiguration, bei der ein Router nur eine physische Schnittstelle besitzt, die als Trunk-Port mit einem Switch verbunden ist. Dieser Trunk transportiert den Verkehr mehrerer VLANs, und der Router führt das Inter-VLAN-Routing über Subinterfaces auf dieser einzelnen Verbindung durch."
+    },
+    "en": {
+      "question": "What is a \"router on a stick\"?",
+      "options": {
+        "A": "A router with multiple physical interfaces, each connected to a separate VLAN",
+        "B": "A router with a single interface connected to a trunk port on the switch",
+        "C": "A wireless router used exclusively for VLAN traffic",
+        "D": "A virtual router implemented within a Layer 3 switch"
+      },
+      "answer": "B",
+      "explanation": "A \"router on a stick\" is a network configuration where a router has only one physical interface connected to a switch via a trunk port. This trunk carries traffic from multiple VLANs, and the router performs inter-VLAN routing using subinterfaces on that single connection."
+    }
+  },
+  {
+    "id": 295,
+    "de": {
+      "frage": "Ein Netzwerkadministrator möchte einen Switch mit einem Voice- oder Auxiliary-VLAN einrichten, um den PC- und VoIP-Verkehr zu trennen, ohne einen Trunk-Port einrichten zu müssen. Welchen der folgenden Befehle sollte der Administrator zuerst ausführen?",
+      "optionen": {
+        "A": "interface GigabitEthernet0/0",
+        "B": "switchport mode access",
+        "C": "switchport access vlan 100",
+        "D": "switchport voice vlan 101"
+      },
+      "antwort": "A",
+      "erklärung": "Bevor Konfigurationsbefehle für einen bestimmten Switchport ausgeführt werden können, muss der Administrator zuerst den Interface-Konfigurationsmodus aufrufen. Dies geschieht durch den Befehl `interface GigabitEthernet0/0`, um anschließend VLAN- und Voice-VLAN-Einstellungen vorzunehmen."
+    },
+    "en": {
+      "question": "A network administrator wants to set up a switch with a voice or auxiliary VLAN to distinguish PC and VoIP traffic without having to set up a trunk port. Which of the following commands should the administrator perform first?",
+      "options": {
+        "A": "interface GigabitEthernet0/0",
+        "B": "switchport mode access",
+        "C": "switchport access vlan 100",
+        "D": "switchport voice vlan 101"
+      },
+      "answer": "A",
+      "explanation": "Before configuring VLAN or voice VLAN settings on a specific switch port, the administrator must first enter the interface configuration mode. This is done with the command `interface GigabitEthernet0/0` before applying VLAN configuration commands."
+    }
+  },
+  {
+    "id": 296,
+    "de": {
+      "frage": "Warum wird empfohlen, das native VLAN von seiner Standardeinstellung zu ändern?",
+      "optionen": {
+        "A": "Um die Erstellung weiterer VLANs zu ermöglichen",
+        "B": "Um das Risiko von VLAN-Hopping-Angriffen zu verringern",
+        "C": "Um die Geschwindigkeit des Netzwerks zu erhöhen",
+        "D": "Um Inter-VLAN-Routing zu aktivieren"
+      },
+      "antwort": "B",
+      "erklärung": "Das native VLAN ist in der Regel auf VLAN 1 voreingestellt, was ein bekanntes Ziel für VLAN-Hopping-Angriffe darstellt. Durch das Ändern des nativen VLANs auf eine andere, nicht standardmäßige VLAN-ID wird das Risiko solcher Angriffe reduziert und die Netzwerksicherheit erhöht."
+    },
+    "en": {
+      "question": "Why is it recommended to change the native VLAN from its default setting?",
+      "options": {
+        "A": "To allow for more VLANs to be created",
+        "B": "To reduce the risk of VLAN hopping attacks",
+        "C": "To increase the speed of the network",
+        "D": "To enable inter-VLAN routing"
+      },
+      "answer": "B",
+      "explanation": "The native VLAN is typically set to VLAN 1 by default, which is a known target for VLAN hopping attacks. Changing the native VLAN to a non-default VLAN ID helps reduce the risk of such attacks and improves network security."
     }
   }
 ]
