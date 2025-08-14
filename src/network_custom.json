@@ -7851,5 +7851,5 @@
       "answer": "C",
       "explanation": "In distance vector routing protocols like RIP, a poison route is used to mark a route as unreachable by setting its hop count to the maximum value (16 for RIP). This prevents other routers from using the route and helps avoid routing loops."
     }
-  },
+  }
 ]
