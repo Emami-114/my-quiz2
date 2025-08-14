@@ -7601,5 +7601,255 @@
       "answer": "B",
       "explanation": "The native VLAN is typically set to VLAN 1 by default, which is a known target for VLAN hopping attacks. Changing the native VLAN to a non-default VLAN ID helps reduce the risk of such attacks and improves network security."
     }
-  }
+  },
+  {
+    "id": 297,
+    "de": {
+      "frage": "Was sollte überprüft werden, wenn Sie während der VLAN-Fehlerbehebung keine Remote-Hosts anpingen können?",
+      "optionen": {
+        "A": "Dass die Firewall des Hosts deaktiviert ist",
+        "B": "Die Konfiguration des Switches und Routers",
+        "C": "Dass alle Geräte statische IP-Adressen haben",
+        "D": "Die Subnetzmaske aller Geräte im VLAN"
+      },
+      "antwort": "B",
+      "erklärung": "Wenn keine Remote-Hosts während der VLAN-Fehlerbehebung erreichbar sind, sollte zunächst die Konfiguration der Switches und Router überprüft werden. Fehlerhafte VLAN- oder Routing-Einstellungen sind oft die Ursache für Verbindungsprobleme."
+    },
+    "en": {
+      "question": "What should be verified if you cannot ping any remote hosts during VLAN troubleshooting?",
+      "options": {
+        "A": "That the host's firewall is disabled",
+        "B": "The switch and router configuration",
+        "C": "That all devices have static IP addresses",
+        "D": "The subnet mask of all devices in the VLAN"
+      },
+      "answer": "B",
+      "explanation": "If no remote hosts can be reached during VLAN troubleshooting, the switch and router configuration should be checked first. Incorrect VLAN or routing settings are often the cause of connectivity issues."
+    }
+  },
+  {
+    "id": 298,
+    "de": {
+      "frage": "Was ist der erste Schritt bei der Diagnose von VLAN-Zuweisungsproblemen mit dem Ping-Befehl?",
+      "optionen": {
+        "A": "Das Standardgateway anpingen.",
+        "B": "Einen Remote-Host oder Server anpingen.",
+        "C": "Die Loopback-Adresse und anschließend die eigene IP-Adresse anpingen.",
+        "D": "Einen anderen Host im selben VLAN/Subnetz anpingen."
+      },
+      "antwort": "C",
+      "erklärung": "Der erste Schritt bei der Diagnose von VLAN-Zuweisungsproblemen ist es, einen anderen Host im selben VLAN oder Subnetz anzupingen. So lässt sich feststellen, ob die lokale VLAN-Kommunikation funktioniert, bevor man externe Verbindungen überprüft."
+    },
+    "en": {
+      "question": "What is the first step in diagnosing VLAN assignment issues using ping?",
+      "options": {
+        "A": "Ping the default gateway.",
+        "B": "Ping a remote host or server.",
+        "C": "Ping the loopback address, then the host's own IP address.",
+        "D": "Ping another host on the same VLAN/subnet."
+      },
+      "answer": "C",
+      "explanation": "The first step in diagnosing VLAN assignment issues is to ping another host on the same VLAN or subnet. This helps determine if local VLAN communication is working before testing external connectivity."
+    }
+  },
+  {
+    "id": 299,
+    "de": {
+      "frage": "Was ist der Hauptzweck der Festlegung des Umfangs eines VLAN-Zuweisungsproblems?",
+      "optionen": {
+        "A": "Die Anzahl der VLANs im Netzwerk zu bestimmen",
+        "B": "Das spezifische Problem und seine Auswirkungen auf das Netzwerk zu identifizieren",
+        "C": "Allen Geräten im Netzwerk IP-Adressen zuzuweisen",
+        "D": "Das Standardgateway für alle VLANs zu konfigurieren"
+      },
+      "antwort": "B",
+      "erklärung": "Die Festlegung des Umfangs eines VLAN-Zuweisungsproblems hilft dabei, das genaue Problem zu identifizieren und zu verstehen, wie es sich auf den Netzwerkbetrieb auswirkt. So können gezielt weitere Diagnose- und Behebungsmaßnahmen eingeleitet werden."
+    },
+    "en": {
+      "question": "What is the primary purpose of establishing the scope of a VLAN assignment issue?",
+      "options": {
+        "A": "To determine the number of VLANs in the network",
+        "B": "To identify the specific problem and its impact on the network",
+        "C": "To assign IP addresses to all devices in the network",
+        "D": "To configure the default gateway for all VLANs"
+      },
+      "answer": "B",
+      "explanation": "Establishing the scope of a VLAN assignment issue helps pinpoint the exact problem and understand how it impacts network operations. This enables targeted troubleshooting and resolution steps."
+    }
+  },
+  {
+    "id": 300,
+    "de": {
+      "frage": "Was muss konfiguriert werden, wenn sich die DHCP-Dienste in einem anderen VLAN als die Client-Geräte befinden?",
+      "optionen": {
+        "A": "Eine statische Route auf dem DHCP-Server",
+        "B": "Ein DHCP-Relay",
+        "C": "Eine direkte physische Verbindung zwischen den VLANs",
+        "D": "Ein eindeutiger DNS-Server für jedes VLAN"
+      },
+      "antwort": "B",
+      "erklärung": "Befinden sich die DHCP-Dienste in einem anderen VLAN als die Clients, muss ein DHCP-Relay auf dem entsprechenden Router oder Layer-3-Switch konfiguriert werden. Dieses leitet DHCP-Anfragen von Clients über VLAN-Grenzen hinweg an den DHCP-Server weiter."
+    },
+    "en": {
+      "question": "What must be configured if DHCP services are located in a different VLAN from the client devices?",
+      "options": {
+        "A": "A static route on the DHCP server",
+        "B": "A DHCP relay",
+        "C": "A direct physical connection between VLANs",
+        "D": "A unique DNS server for each VLAN"
+      },
+      "answer": "B",
+      "explanation": "If DHCP services are in a different VLAN from the clients, a DHCP relay needs to be configured on the appropriate router or Layer 3 switch. This forwards DHCP requests from clients across VLAN boundaries to the DHCP server."
+    }
+  },
+  {
+    "id": 301,
+    "de": {
+      "frage": "Wenn Sie das Standardgateway eines Hosts anpingen können, aber keine Hosts in entfernten Netzwerken erreichen, was sollten Sie vermuten?",
+      "optionen": {
+        "A": "Ein DNS-Problem",
+        "B": "Ein Routing-Problem",
+        "C": "Ein Firewall-Problem",
+        "D": "Eine Kabelunterbrechung"
+      },
+      "antwort": "B",
+      "erklärung": "Wenn das Standardgateway erreichbar ist, aber keine Kommunikation mit Hosts in anderen Netzwerken möglich ist, deutet dies in der Regel auf ein Routing-Problem hin. Entweder fehlen Routingeinträge oder es gibt fehlerhafte Routen, die den Datenverkehr zu entfernten Netzwerken verhindern."
+    },
+    "en": {
+      "question": "If you can ping a host's default gateway but cannot ping hosts on remote networks, what should you suspect?",
+      "options": {
+        "A": "A DNS issue",
+        "B": "A routing issue",
+        "C": "A firewall issue",
+        "D": "A cable disconnection"
+      },
+      "answer": "B",
+      "explanation": "If the default gateway is reachable but hosts on remote networks are not, it usually indicates a routing issue. Either the routing table is incomplete or there are incorrect routes preventing traffic from reaching remote networks."
+    }
+  },
+  {
+    "id": 302,
+    "de": {
+      "frage": "Welche Routenwahl wird bevorzugt, wenn es Pfade zum selben Ziel mit unterschiedlichen Präfixlängen gibt?",
+      "optionen": {
+        "A": "Der Pfad mit der kürzesten Präfixlänge",
+        "B": "Der Pfad mit der längsten Präfixlänge",
+        "C": "Der Pfad mit dem höchsten Metrikwert",
+        "D": "Der Pfad mit der höchsten administrativen Distanz"
+      },
+      "antwort": "B",
+      "erklärung": "Wenn mehrere Routen zu demselben Ziel existieren, wird die Route mit der längsten Präfixlänge (also der spezifischeren Route) bevorzugt. Dies wird als Longest Prefix Match bezeichnet und ermöglicht eine gezieltere Weiterleitung."
+    },
+    "en": {
+      "question": "What is the preferred route selection when there are paths to the same destination with different prefix lengths?",
+      "options": {
+        "A": "The path with the shortest prefix length",
+        "B": "The path with the longest prefix length",
+        "C": "The path with the highest metric value",
+        "D": "The path with the highest administrative distance"
+      },
+      "answer": "B",
+      "explanation": "When multiple routes exist to the same destination, the route with the longest prefix length (i.e., the most specific route) is preferred. This is known as the Longest Prefix Match and ensures the most accurate forwarding decision."
+    }
+  },
+  {
+    "id": 303,
+    "de": {
+      "frage": "Welcher Faktor wird berücksichtigt, wenn es identische Pfade mit gleicher administrativer Distanz zu einem Ziel gibt?",
+      "optionen": {
+        "A": "Der Pfad mit dem höchsten Metrikwert",
+        "B": "Der Pfad mit dem niedrigsten Metrikwert",
+        "C": "Der Pfad mit der kürzesten Präfixlänge",
+        "D": "Der Pfad mit der aktuellsten Aktualisierung"
+      },
+      "antwort": "B",
+      "erklärung": "Wenn mehrere identische Routen mit gleicher administrativer Distanz existieren, wird die Route mit dem niedrigsten Metrikwert bevorzugt. Die Metrik dient als Maß für die „Kosten“ einer Route, wobei niedrigere Werte in der Regel für schnellere oder effizientere Wege stehen."
+    },
+    "en": {
+      "question": "What factor is considered when there are identical paths with equal administrative distances to a destination?",
+      "options": {
+        "A": "The path with the highest metric value",
+        "B": "The path with the lowest metric value",
+        "C": "The path with the shortest prefix length",
+        "D": "The path with the most recent update"
+      },
+      "answer": "B",
+      "explanation": "When multiple identical routes have the same administrative distance, the route with the lowest metric value is preferred. The metric serves as a measure of the 'cost' of a route, with lower values generally indicating faster or more efficient paths."
+    }
+  },
+  {
+    "id": 304,
+    "de": {
+      "frage": "Was verhindert der Split-Horizon-Mechanismus in Routing-Protokollen?",
+      "optionen": {
+        "A": "Dass ein Router eine Route an den Router zurückmeldet, von dem er sie gelernt hat",
+        "B": "Die Verwendung eines Standardgateways",
+        "C": "Die Konfiguration statischer Routen",
+        "D": "Die Ausbreitung von Routing-Schleifen durch erhöhte Hop-Zahlen"
+      },
+      "antwort": "A",
+      "erklärung": "Der Split-Horizon-Mechanismus verhindert, dass ein Router Routing-Informationen über eine Route an das Interface zurücksendet, von dem er die Route ursprünglich gelernt hat. Dies reduziert das Risiko von Routing-Schleifen in Distanzvektor-Protokollen."
+    },
+    "en": {
+      "question": "What does the split horizon mechanism prevent in routing protocols?",
+      "options": {
+        "A": "A router from advertising a route back to the router from which it was learned",
+        "B": "The use of a default gateway",
+        "C": "The configuration of static routes",
+        "D": "The propagation of routing loops through increased hop counts"
+      },
+      "answer": "A",
+      "explanation": "The split horizon mechanism prevents a router from sending routing information about a route back out of the interface from which it was learned. This helps reduce the possibility of routing loops in distance vector protocols."
+    }
+  },
+  {
+    "id": 305,
+    "de": {
+      "frage": "Was ist ein Symptom einer Routing-Schleife?",
+      "optionen": {
+        "A": "Verringerte Netzwerklatenz",
+        "B": "ICMP-Fehlermeldungen 'Time Exceeded'",
+        "C": "Erhöhte verfügbare Bandbreite",
+        "D": "Verringerte CPU-Auslastung auf Routern"
+      },
+      "antwort": "B",
+      "erklärung": "Ein häufiges Symptom einer Routing-Schleife sind ICMP-Fehlermeldungen vom Typ 'Time Exceeded'. Diese entstehen, wenn Pakete durch die Schleife zirkulieren, bis ihre TTL (Time to Live) abläuft und sie verworfen werden müssen."
+    },
+    "en": {
+      "question": "What is a symptom of a routing loop?",
+      "options": {
+        "A": "Decreased network latency",
+        "B": "ICMP Time Exceeded error messages",
+        "C": "Increased bandwidth availability",
+        "D": "Decreased CPU usage on routers"
+      },
+      "answer": "B",
+      "explanation": "A common symptom of a routing loop is ICMP 'Time Exceeded' error messages. These occur when packets circulate within the loop until their TTL (Time to Live) expires and they are discarded."
+    }
+  },
+  {
+    "id": 306,
+    "de": {
+      "frage": "Welche Wirkung hat eine Poison Route in Distanzvektor-Routingprotokollen?",
+      "optionen": {
+        "A": "Sie erhöht die Hop-Zahl auf das Maximum, um die Konvergenz zu beschleunigen.",
+        "B": "Sie kündigt eine Route mit einer Hop-Zahl von 16 an, um anzuzeigen, dass das Netzwerk erreichbar ist.",
+        "C": "Sie kündigt eine Route mit einer Hop-Zahl von 16 an, um anzuzeigen, dass das Netzwerk nicht erreichbar ist.",
+        "D": "Sie verringert die Hop-Zahl auf null, um anzuzeigen, dass das Netzwerk direkt verbunden ist."
+      },
+      "antwort": "C",
+      "erklärung": "In Distanzvektor-Routingprotokollen wie RIP wird eine Poison Route verwendet, um eine Route als nicht erreichbar zu kennzeichnen. Dies geschieht, indem die Hop-Zahl auf den Maximalwert (bei RIP 16) gesetzt wird. Dadurch wird verhindert, dass andere Router diese Route weiterhin verwenden, was Routing-Schleifen vermeidet."
+    },
+    "en": {
+      "question": "What is the effect of a poison route in distance vector routing protocols?",
+      "options": {
+        "A": "It increases the hop count to the maximum to speed up convergence.",
+        "B": "It advertises a route with a hop count of 16 to indicate the network is reachable.",
+        "C": "It advertises a route with a hop count of 16 to indicate the network is unreachable.",
+        "D": "It decreases the hop count to zero to indicate the network is directly connected."
+      },
+      "answer": "C",
+      "explanation": "In distance vector routing protocols like RIP, a poison route is used to mark a route as unreachable by setting its hop count to the maximum value (16 for RIP). This prevents other routers from using the route and helps avoid routing loops."
+    }
+  },
 ]
