@@ -709,10 +709,7 @@
         "C": "Sie kommuniziert direkt mit Softwareanwendungen auf dem Host.",
         "D": "Sie stellt physikalische Verbindungen zwischen Hosts her."
       },
-      "antwort": [
-        "B",
-        "C"
-      ],
+      "antwort": ["B", "C"],
       "erklärung": "Layer 7 stellt direkte Schnittstellen zu Programmen wie Webbrowsern oder E-Mail-Clients bereit und bietet nutzbare Netzwerkdienste. Sie kapselt keine anderen Protokolle und ist nicht für physikalische Verbindungen zuständig."
     },
     "en": {
@@ -723,10 +720,7 @@
         "C": "It interacts directly with software applications on the host.",
         "D": "It establishes physical connections between hosts."
       },
-      "answer": [
-        "B",
-        "C"
-      ],
+      "answer": ["B", "C"],
       "explanation": "Layer 7 provides services like email and web access and interfaces directly with user applications. It does not encapsulate other protocols or manage physical connections."
     }
   },
@@ -790,10 +784,7 @@
         "C": "Router",
         "D": "Bridge"
       },
-      "antwort": [
-        "A",
-        "C"
-      ],
+      "antwort": ["A", "C"],
       "erklärung": "Ein Router ist ein typisches Layer-3-Gerät. Auch einfache Firewalls, die IP-Adressen filtern, operieren auf Layer 3."
     },
     "en": {
@@ -804,10 +795,7 @@
         "C": "Router",
         "D": "Bridge"
       },
-      "answer": [
-        "A",
-        "C"
-      ],
+      "answer": ["A", "C"],
       "explanation": "A router is a standard Layer 3 device, and basic firewalls that filter IP traffic also operate at Layer 3."
     }
   },
@@ -846,11 +834,7 @@
         "C": "Hub",
         "D": "Multilayer Switch"
       },
-      "antwort": [
-        "A",
-        "B",
-        "D"
-      ],
+      "antwort": ["A", "B", "D"],
       "erklärung": "HTTP und FTP gehören zu Layer 7. Stateful Firewalls können Sessions (Layer 5) verfolgen, und Multilayer Switches können bis in obere Schichten analysieren."
     },
     "en": {
@@ -861,11 +845,7 @@
         "C": "Hub",
         "D": "Multilayer Switch"
       },
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
+      "answer": ["A", "B", "D"],
       "explanation": "HTTP and FTP are Layer 7 protocols. Stateful firewalls track sessions (Layer 5), and multilayer switches can analyze upper-layer data."
     }
   },
@@ -905,10 +885,7 @@
         "D": "Network Address Translation (NAT)",
         "E": "Wireless Access Point"
       },
-      "antwort": [
-        "A",
-        "E"
-      ],
+      "antwort": ["A", "E"],
       "erklärung": "Ein SOHO-Router nutzt einen eingebauten Ethernet-Switch, um kabelgebundene Geräte auf Layer 2 zu verbinden, und einen Wireless Access Point, um drahtlose Geräte ebenfalls auf Layer 2 zu verbinden. DHCP, NAT und Firewalls arbeiten auf höheren Schichten."
     },
     "en": {
@@ -920,10 +897,7 @@
         "D": "Network Address Translation (NAT)",
         "E": "Wireless access point"
       },
-      "answer": [
-        "A",
-        "E"
-      ],
+      "answer": ["A", "E"],
       "explanation": "A SOHO router uses an integrated Ethernet switch to connect wired devices on layer 2 and a wireless access point to connect wireless devices—also on layer 2. DHCP, NAT, and firewalls operate at higher layers."
     }
   },
@@ -1115,11 +1089,7 @@
         "F": "WAN-Anschluss für die Verbindung zum Internetdienstanbieter (ISP)",
         "G": "HDMI-Anschlüsse für Multimedia-Streaming"
       },
-      "antwort": [
-        "A",
-        "C",
-        "F"
-      ],
+      "antwort": ["A", "C", "F"],
       "erklärung": "SOHO-Router bieten Radioantennen für WLAN, RJ-45-Anschlüsse für LAN-Kabel und einen WAN-Port für die ISP-Verbindung als physische Schnittstellen."
     },
     "en": {
@@ -1133,11 +1103,7 @@
         "F": "WAN port for Internet Service Provider (ISP) connection",
         "G": "HDMI ports for multimedia streaming"
       },
-      "answer": [
-        "A",
-        "C",
-        "F"
-      ],
+      "answer": ["A", "C", "F"],
       "explanation": "SOHO routers provide radio antennas for wireless communication, RJ-45 ports for LAN cabling, and a WAN port to connect to the ISP as physical layer interfaces."
     }
   },
@@ -1152,10 +1118,7 @@
         "D": "Das Netzwerk wechselt automatisch zu einem Token-Ring-MAC-System.",
         "E": "Alle Geräte im Netzwerk erhalten automatisch ein Geschwindigkeitsupgrade."
       },
-      "antwort": [
-        "A",
-        "B"
-      ],
+      "antwort": ["A", "B"],
       "erklärung": "In einem contention-basierten MAC-System wie Ethernet führen mehr Teilnehmer zu mehr potenziellen Kollisionen und einer reduzierten effektiven Bandbreite durch Wiederholungen und Wartezeiten."
     },
     "en": {
@@ -1167,10 +1130,7 @@
         "D": "The network automatically switches to a token ring MAC system.",
         "E": "All devices on the network receive an automatic speed upgrade."
       },
-      "answer": [
-        "A",
-        "B"
-      ],
+      "answer": ["A", "B"],
       "explanation": "In contention-based MAC systems like Ethernet, adding more nodes increases the chance of collisions and reduces effective throughput due to increased backoff and retransmissions."
     }
   },
@@ -1312,11 +1272,7 @@
         "F": "Ein Bezeichner für den Medientyp.",
         "G": "Der Signalmodus (Basisband oder Breitband)."
       },
-      "antwort": [
-        "B",
-        "F",
-        "G"
-      ],
+      "antwort": ["B", "F", "G"],
       "erklärung": "Ethernet-Namenskonventionen beinhalten typischerweise die Übertragungsgeschwindigkeit (z. B. 100BASE-T), die maximale Kabellänge (z. B. 100 m), den Medientyp (z. B. T für Twisted Pair) und den Signalmodus (z. B. BASE für Basisband)."
     },
     "en": {
@@ -1330,11 +1286,7 @@
         "F": "A designator for the media type.",
         "G": "The signal mode (baseband or broadband)."
       },
-      "answer": [
-        "B",
-        "F",
-        "G"
-      ],
+      "answer": ["B", "F", "G"],
       "explanation": "Ethernet media naming conventions typically include the transmission speed (e.g., 100BASE-T), the maximum cable length (e.g., 100 meters), the media type (e.g., T for twisted pair), and the signal mode (e.g., BASE for baseband)."
     }
   },
@@ -1499,10 +1451,7 @@
         "D": "Sie haben einen Kunststoffhalteclip.",
         "E": "Sie sind für die Verwendung mit einadrigen Kupferkabeln ausgelegt."
       },
-      "antwort": [
-        "B",
-        "D"
-      ],
+      "antwort": ["B", "D"],
       "erklärung": "RJ45-Stecker haben einen Kunststoffhalteclip zur Sicherung und verfügen über 8 Positionen und 8 Kontakte (8P8C), was sie ideal für Ethernet-Netzwerke macht."
     },
     "en": {
@@ -1514,10 +1463,7 @@
         "D": "They have a plastic retaining clip.",
         "E": "They are designed for use with single-pair copper cables."
       },
-      "answer": [
-        "B",
-        "D"
-      ],
+      "answer": ["B", "D"],
       "explanation": "RJ45 connectors feature a plastic retaining clip and support 8 positions and 8 contacts (8P8C), making them suitable for Ethernet networking."
     }
   },
@@ -1632,10 +1578,7 @@
         "D": "Videoüberwachung (CCTV)",
         "E": "Highspeed-Internetverbindungen"
       },
-      "antwort": [
-        "C",
-        "D"
-      ],
+      "antwort": ["C", "D"],
       "erklärung": "RG-59-Kabel werden häufig für Videoanwendungen wie CCTV-Systeme und einfache Audio-/Videoverbindungen verwendet. Sie sind jedoch nicht für Hochgeschwindigkeitsinternet oder Langstreckenkommunikation geeignet."
     },
     "en": {
@@ -1647,10 +1590,7 @@
         "D": "Closed circuit TV (CCTV)",
         "E": "High-speed internet connections"
       },
-      "answer": [
-        "C",
-        "D"
-      ],
+      "answer": ["C", "D"],
       "explanation": "RG-59 cables are commonly used for video applications such as CCTV systems and basic audio/video connectivity. However, they are not suitable for high-speed internet or long-distance telecommunication."
     }
   },
@@ -3617,12 +3557,7 @@
         "F": "Quell-MAC-Adresse",
         "G": "EtherType-Feld"
       },
-      "antwort": [
-        "A",
-        "B",
-        "F",
-        "G"
-      ],
+      "antwort": ["A", "B", "F", "G"],
       "erklärung": "Die 18-Byte-Header-Komponenten umfassen die Ziel-MAC-Adresse, das Fehlerprüfungsfeld, die Quell-MAC-Adresse und das EtherType-Feld. Preamble, Framenummerierung und Datenlast-Indikator sind nicht Teil des Headers."
     },
     "en": {
@@ -3636,12 +3571,7 @@
         "F": "Source MAC address",
         "G": "EtherType field"
       },
-      "answer": [
-        "A",
-        "B",
-        "F",
-        "G"
-      ],
+      "answer": ["A", "B", "F", "G"],
       "explanation": "The 18-byte header components include the destination MAC address, error checking field, source MAC address, and EtherType field. Preamble, frame sequence number, and payload size indicator are not part of the header."
     }
   },
@@ -4005,10 +3935,7 @@
         "D": "Das System sanft herunterfahren.",
         "E": "Schädliche Netzwerkkabel automatisch reparieren."
       },
-      "antwort": [
-        "B",
-        "D"
-      ],
+      "antwort": ["B", "D"],
       "erklärung": "Uninterruptible Power Supplies (UPSs) ermöglichen folgende Aktionen während Stromanomalien:\n\n- B (Switch to a secondary power source): Ein UPS nutzt eine Batterie als sekundäre Stromquelle, um den Betrieb zu gewährleisten, wenn die Hauptstromversorgung ausfällt.\n- D (Shut down the system gracefully): Ein UPS ermöglicht einen geplanten Herunterfahren des Systems, um Datenverlust und Hardware-Schäden zu vermeiden.\n\nDie anderen Optionen sind nicht Funktionen eines UPSs: A ist falsch, da ein UPS keine dauerhafte Stromquelle ersetzt; C ist falsch, da ein UPS keine Leistungserhöhung der Server bietet; E ist falsch, da ein UPS keine Netzwerkkabel repariert."
     },
     "en": {
@@ -4020,10 +3947,7 @@
         "D": "Shut down the system gracefully.",
         "E": "Automatically repair damaged network cables."
       },
-      "answer": [
-        "B",
-        "D"
-      ],
+      "answer": ["B", "D"],
       "explanation": "Uninterruptible Power Supplies (UPSs) allow for the following actions during power anomalies:\n\n- B (Switch to a secondary power source): A UPS uses a battery as a secondary power source to maintain operation when the main power supply fails.\n- D (Shut down the system gracefully): A UPS allows for a planned shutdown of the system to prevent data loss and hardware damage.\n\nThe other options are not functions of a UPS: A is incorrect as a UPS does not permanently replace the main power source; C is incorrect as a UPS does not increase server processing power; E is incorrect as a UPS does not repair network cables."
     }
   },
@@ -4388,10 +4312,7 @@
         "D": "Zusätzlichen Arbeitsspeicher in die Geräte einbauen",
         "E": "Die Geräte von direktem Sonnenlicht fernhalten"
       },
-      "antwort": [
-        "C",
-        "E"
-      ],
+      "antwort": ["C", "E"],
       "erklärung": "Die wichtigsten ersten Maßnahmen gegen Überhitzung sind eine gute Luftzirkulation sicherzustellen und die Geräte vor direkter Sonneneinstrahlung zu schützen."
     },
     "en": {
@@ -4403,10 +4324,7 @@
         "D": "Install additional RAM in the devices",
         "E": "Keep the devices away from direct sunlight"
       },
-      "answer": [
-        "C",
-        "E"
-      ],
+      "answer": ["C", "E"],
       "explanation": "The first steps to address overheating are to ensure adequate airflow at intake and exhaust vents and to keep devices out of direct sunlight."
     }
   },
@@ -4573,11 +4491,7 @@
         "F": "TTL (Time to Live)",
         "G": "Ziel-Hardware-Adresse"
       },
-      "antwort": [
-        "B",
-        "D",
-        "G"
-      ],
+      "antwort": ["B", "D", "G"],
       "erklärung": "Die Sicherungsschicht fügt Quell- und Ziel-MAC-Adressen sowie eine Frame-Check-Sequence (Prüfsumme) hinzu. Fenstergröße/Sequenznummer sind Transport-Layer-Felder, TTL gehört zum Network-Layer."
     },
     "en": {
@@ -4591,11 +4505,7 @@
         "F": "TTL (Time to Live)",
         "G": "Destination hardware address"
       },
-      "answer": [
-        "B",
-        "D",
-        "G"
-      ],
+      "answer": ["B", "D", "G"],
       "explanation": "The Data Link layer adds source and destination MAC addresses and a Frame Check Sequence checksum. Window size and sequence number are Transport layer; TTL is Network layer."
     }
   },
@@ -4610,10 +4520,7 @@
         "D": "Systemeinstellungen zufällig ändern, um vielleicht eine Lösung zu finden.",
         "E": "Die grundlegenden Fakten zum Problem feststellen."
       },
-      "antwort": [
-        "A",
-        "E"
-      ],
+      "antwort": ["A", "E"],
       "erklärung": "Vor einer Eskalation sollten Sie die Fakten ermittelt und sie klar weitergeben können."
     },
     "en": {
@@ -4625,10 +4532,7 @@
         "D": "Change system settings randomly in hopes of stumbling upon a solution.",
         "E": "Establish the basic facts surrounding the problem."
       },
-      "answer": [
-        "A",
-        "E"
-      ],
+      "answer": ["A", "E"],
       "explanation": "Before escalation, establish the problem’s basic facts and communicate them clearly to the next tier."
     }
   },
@@ -4645,11 +4549,7 @@
         "F": "Vollständige Beschreibung des Problems",
         "G": "Kontaktdaten des Kunden"
       },
-      "antwort": [
-        "A",
-        "E",
-        "F"
-      ],
+      "antwort": ["A", "E", "F"],
       "erklärung": "Ein Ticket sollte klar festhalten, wer verantwortlich ist, was das Problem war und wie es gelöst wurde."
     },
     "en": {
@@ -4663,11 +4563,7 @@
         "F": "A complete description of the problem",
         "G": "The customer's contact information"
       },
-      "answer": [
-        "A",
-        "E",
-        "F"
-      ],
+      "answer": ["A", "E", "F"],
       "explanation": "A ticket must record responsibility, a full problem description, and a complete solution description for clear resolution tracking."
     }
   },
@@ -4784,11 +4680,7 @@
         "F": "HDMI-Anschlüsse für Multimedia",
         "G": "VGA-Ausgänge für Video"
       },
-      "antwort": [
-        "A",
-        "C",
-        "D"
-      ],
+      "antwort": ["A", "C", "D"],
       "erklärung": "Auf Layer 1 stellt der Router Funkantennen für WLAN, RJ-45-Ports fürs kabelgebundene LAN und einen WAN-Port für die Anbindung an den ISP bereit."
     },
     "en": {
@@ -4802,11 +4694,7 @@
         "F": "HDMI ports for multimedia streaming",
         "G": "VGA ports for video output"
       },
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
+      "answer": ["A", "C", "D"],
       "explanation": "At Layer 1, the router offers antennas for Wi-Fi, RJ-45 ports for wired LAN, and a WAN port for ISP connectivity."
     }
   },
@@ -4921,10 +4809,7 @@
         "D": "132.66.96.0",
         "E": "132.66.255.0"
       },
-      "antwort": [
-        "A",
-        "D"
-      ],
+      "antwort": ["A", "D"],
       "erklärung": "Die Maske 255.255.224.0 entspricht /19, d. h. die Subnetz­schritte im dritten Oktett betragen 32 (256 − 224 = 32). Gültige Subnetzadressen beginnen deshalb bei 0 und steigern sich in 32er-Schritten: 0, 32, 64, 96, 128, 160, 192, 224. Von den Optionen erfüllen nur 132.66.96.0 und 132.66.192.0 diese Bedingung."
     },
     "en": {
@@ -4936,10 +4821,7 @@
         "D": "132.66.96.0",
         "E": "132.66.255.0"
       },
-      "answer": [
-        "A",
-        "D"
-      ],
+      "answer": ["A", "D"],
       "explanation": "A mask of 255.255.224.0 is /19, giving a subnet increment of 32 in the third octet (256 − 224 = 32). Valid subnets therefore start at 0 and increase by 32: 0, 32, 64, 96, 128, 160, 192, 224. Only 132.66.96.0 and 132.66.192.0 fall on those boundaries."
     }
   },
@@ -5379,10 +5261,7 @@
         "D": "Subnetzberechnungen sind überflüssig, wenn Sie DHCP einsetzen.",
         "E": "Die Subnetzmaske kann eine beliebige, möglichst kompliziert aussehende Zahl sein."
       },
-      "antwort": [
-        "B",
-        "C"
-      ],
+      "antwort": ["B", "C"],
       "erklärung": "Bei Subnetzberechnungen ist es am hilfreichsten, (1) in Maskenbits zu denken – also zu wissen, wie viele Bits einer Adresse zur Netz- bzw. Host-Kennung gehören – und (2) die Dezimalwerte der möglichen Bitmuster in einem Oktett (128, 192, 224, 240, 248, 252, 254, 255) auswendig zu kennen. Diese beiden Regeln beschleunigen die Berechnungen erheblich. Die anderen Aussagen sind falsch oder irreführend."
     },
     "en": {
@@ -5394,10 +5273,7 @@
         "D": "Subnet calculations are unnecessary if you use DHCP.",
         "E": "The subnet mask can be any random set of numbers as long as it looks complex."
       },
-      "answer": [
-        "B",
-        "C"
-      ],
+      "answer": ["B", "C"],
       "explanation": "For accurate subnetting, (1) think in mask bits—know exactly how many bits are used for the network and host portions—and (2) memorize the decimal values for the possible bit patterns in an octet (128, 192, 224, 240, 248, 252, 254, 255). These two practices make subnet calculations quick and reliable. The other statements are incorrect or misleading."
     }
   },
@@ -5412,10 +5288,7 @@
         "D": "189.189.5.2",
         "E": "192.15.5.55"
       },
-      "antwort": [
-        "B",
-        "E"
-      ],
+      "antwort": ["B", "E"],
       "erklärung": "Class-C-Adressen haben das erste Oktett im Bereich 192–223. Daher gehören 223.16.5.0 und 192.15.5.55 zur Klasse C."
     },
     "en": {
@@ -5427,10 +5300,7 @@
         "D": "189.189.5.2",
         "E": "192.15.5.55"
       },
-      "answer": [
-        "B",
-        "E"
-      ],
+      "answer": ["B", "E"],
       "explanation": "Class C addresses have a first octet in the range 192–223. Therefore, 223.16.5.0 and 192.15.5.55 are Class C addresses."
     }
   },
@@ -6020,10 +5890,7 @@
         "D": "FE80::55::A:AB",
         "E": "FE80::55:0000:0000:A:AB00"
       },
-      "antwort": [
-        "A",
-        "E"
-      ],
+      "antwort": ["A", "E"],
       "erklärung": "Eine IPv6-Adresse darf genau eine zusammenhängende Sequenz aus mindestens zwei 0000-Blöcken durch „::“ ersetzen. Außerdem können führende Nullen in jedem 16-Bit-Block weggelassen werden.\n\n- A ersetzt die beiden Blöcke 0000:0000 nach 0055 durch „::“ und behält die restlichen Blöcke unverändert – zulässig.\n- E ersetzt die Blöcke 0000:0000 nach FE80 durch „::“ und lässt führende Nullen weg (0055 → 55, 000A → A) – ebenfalls zulässig.\n\nDie Optionen B, C und D enthalten jeweils zwei „::“ und sind daher ungültig."
     },
     "en": {
@@ -6035,10 +5902,7 @@
         "D": "FE80::55::A:AB",
         "E": "FE80::55:0000:0000:A:AB00"
       },
-      "answer": [
-        "A",
-        "E"
-      ],
+      "answer": ["A", "E"],
       "explanation": "IPv6 compression rules allow exactly one contiguous sequence of two or more all-zero 16-bit blocks to be replaced by “::”. Leading zeros within each block may also be omitted.\n\n- Option A compresses the two 0000 blocks after 0055 into “::”; the rest remain unchanged—valid.\n- Option E compresses the first pair of 0000 blocks into “::” and drops leading zeros (0055 → 55, 000A → A)—also valid.\n\nOptions B, C, and D include two occurrences of “::”, which is not allowed, so they are invalid."
     }
   },
@@ -6103,10 +5967,7 @@
         "D": "Optionsfeld",
         "E": "Erweiterungs-Header"
       },
-      "antwort": [
-        "A",
-        "E"
-      ],
+      "antwort": ["A", "E"],
       "erklärung": "Jedes IPv6-Paket besteht zwingend aus einem festen 40-Byte-Hauptheader. Optionale Informationen werden als separate Erweiterungs-Header angehängt. IPv6 enthält keine Header-Prüfsumme, verwendet anstelle von TTL das Feld „Hop Limit“ und besitzt kein eigenes Optionsfeld."
     },
     "en": {
@@ -6118,10 +5979,7 @@
         "D": "Options field",
         "E": "Extension headers"
       },
-      "answer": [
-        "A",
-        "E"
-      ],
+      "answer": ["A", "E"],
       "explanation": "Every IPv6 packet starts with a fixed 40-byte main header. Additional optional information is carried in one or more extension headers. IPv6 has no header checksum, replaces TTL with the Hop Limit field, and no longer includes a dedicated Options field."
     }
   },
@@ -7850,6 +7708,256 @@
       },
       "answer": "C",
       "explanation": "In distance vector routing protocols like RIP, a poison route is used to mark a route as unreachable by setting its hop count to the maximum value (16 for RIP). This prevents other routers from using the route and helps avoid routing loops."
+    }
+  },
+  {
+    "id": 307,
+    "de": {
+      "frage": "Was ist die Hauptaufgabe eines DHCPv6-Servers in einem IPv6-Netzwerk?",
+      "optionen": {
+        "A": "Den Standard-Gateway für Clients zu bestimmen",
+        "B": "Hostadressen mit geeigneten Netzwerkpräfixen zu generieren",
+        "C": "Zusätzliche Optionseinstellungen bereitzustellen",
+        "D": "Broadcast-Nachrichten für IPv6-Clients zu unterstützen"
+      },
+      "antwort": "C",
+      "erklärung": "Ein DHCPv6-Server wird in IPv6-Netzwerken hauptsächlich dazu verwendet, Clients zusätzliche Konfigurationsinformationen wie DNS-Server oder andere Netzwerkeinstellungen bereitzustellen. Die Zuweisung von Adressen erfolgt in IPv6 meist über Stateless Address Autoconfiguration (SLAAC), während DHCPv6 für ergänzende Optionen zuständig ist."
+    },
+    "en": {
+      "question": "What is the primary role of a DHCPv6 server in an IPv6 network?",
+      "options": {
+        "A": "To locate the default gateway for clients",
+        "B": "To generate host addresses with suitable network prefixes",
+        "C": "To provide additional option settings",
+        "D": "To support broadcast messages for IPv6 clients"
+      },
+      "answer": "C",
+      "explanation": "In IPv6 networks, DHCPv6 is mainly used to provide clients with additional configuration details, such as DNS servers and other network settings. Address assignment is usually handled via Stateless Address Autoconfiguration (SLAAC), while DHCPv6 complements it with extra options."
+    }
+  },
+  {
+    "id": 308,
+    "de": {
+      "frage": "Was passiert, wenn ein Windows-Host innerhalb eines bestimmten Zeitraums keine Antwort von einem DHCP-Server erhält?",
+      "optionen": {
+        "A": "Er fährt herunter, um Netzwerkkonflikte zu vermeiden.",
+        "B": "Er fordert den Benutzer auf, manuell eine IP-Adresse einzugeben.",
+        "C": "Er wählt zufällig eine Adresse aus dem APIPA-Bereich.",
+        "D": "Er sendet eine Broadcast-Anfrage zur manuellen Konfigurationshilfe."
+      },
+      "antwort": "C",
+      "erklärung": "Wenn ein Windows-Host keine Antwort vom DHCP-Server erhält, weist er sich automatisch eine Adresse aus dem Bereich der Automatic Private IP Addressing (APIPA) zu (169.254.x.x). Dies ermöglicht eine eingeschränkte Kommunikation im lokalen Netzwerk, bis der DHCP-Server verfügbar wird."
+    },
+    "en": {
+      "question": "What happens if a Windows host does not receive a response from a DHCP server within a given time frame?",
+      "options": {
+        "A": "It will shut down to prevent network conflicts.",
+        "B": "It will prompt the user to manually enter an IP address.",
+        "C": "It will select an address at random from the APIPA range.",
+        "D": "It will broadcast a request for manual configuration assistance."
+      },
+      "answer": "C",
+      "explanation": "If a Windows host does not receive a response from a DHCP server, it automatically assigns itself an address from the Automatic Private IP Addressing (APIPA) range (169.254.x.x). This allows limited local communication until the DHCP server becomes available."
+    }
+  },
+  {
+    "id": 309,
+    "de": {
+      "frage": "Welche IPv6-Autokonfigurationsmethode ermöglicht es einem Host, eine Link-Local-Adresse zu generieren und deren Eindeutigkeit zu überprüfen?",
+      "optionen": {
+        "A": "DHCPv6",
+        "B": "SLAAC",
+        "C": "Manuelle Konfiguration",
+        "D": "ARP"
+      },
+      "antwort": "B",
+      "erklärung": "Mit Stateless Address Autoconfiguration (SLAAC) kann ein IPv6-Host automatisch eine Link-Local-Adresse generieren und durch Duplicate Address Detection (DAD) sicherstellen, dass diese Adresse im Netzwerk eindeutig ist."
+    },
+    "en": {
+      "question": "Which IPv6 autoconfiguration method allows a host to generate a link-local address and verify its uniqueness?",
+      "options": {
+        "A": "DHCPv6",
+        "B": "SLAAC",
+        "C": "Manual configuration",
+        "D": "ARP"
+      },
+      "answer": "B",
+      "explanation": "With Stateless Address Autoconfiguration (SLAAC), an IPv6 host can automatically generate a link-local address and ensure its uniqueness using Duplicate Address Detection (DAD)."
+    }
+  },
+  {
+    "id": 310,
+    "de": {
+      "frage": "Welche Funktion des Neighbor Discovery Protocols (NDP) ermöglicht es einem Router, einem Host in einem IPv6-Netzwerk eine bessere Route zu einem bestimmten Ziel mitzuteilen?",
+      "optionen": {
+        "A": "Adressautokonfiguration",
+        "B": "Präfix-Erkennung",
+        "C": "Lokale Adressauflösung",
+        "D": "Redirect (Umleitung)"
+      },
+      "antwort": "D",
+      "erklärung": "Die Redirect-Funktion des Neighbor Discovery Protocol (NDP) erlaubt es einem Router, einem Host mitzuteilen, dass es eine effizientere Route zu einem bestimmten Zielnetzwerk über einen anderen Router gibt."
+    },
+    "en": {
+      "question": "Which Neighbor Discovery Protocol function enables a router to inform a host of a better route to a particular destination in an IPv6 network?",
+      "options": {
+        "A": "Address autoconfiguration",
+        "B": "Prefix discovery",
+        "C": "Local address resolution",
+        "D": "Redirection"
+      },
+      "answer": "D",
+      "explanation": "The Neighbor Discovery Protocol (NDP) redirection function allows a router to inform a host of a more efficient route to a specific destination network through another router."
+    }
+  },
+  {
+    "id": 311,
+    "de": {
+      "frage": "Welche Rolle spielen Router Advertisements (RAs) im IPv6-Adresskonfigurationsprozess?",
+      "optionen": {
+        "A": "Eine IP-Adresse von einem DHCPv6-Server anfordern",
+        "B": "Hosts über Netzwerkpräfixe und Autokonfigurationsoptionen informieren",
+        "C": "Datenpakete zwischen Hosts und Routern verschlüsseln",
+        "D": "Statische IP-Adressen an Geräte vergeben"
+      },
+      "antwort": "B",
+      "erklärung": "Router Advertisements (RAs) teilen IPv6-Hosts wichtige Informationen wie Netzwerkpräfixe, Standard-Gateway und Autokonfigurationsoptionen mit. Dadurch können Hosts ihre Adressen automatisch über SLAAC konfigurieren."
+    },
+    "en": {
+      "question": "What is the role of Router Advertisements (RAs) in the IPv6 address configuration process?",
+      "options": {
+        "A": "To request an IP address from a DHCPv6 server",
+        "B": "To inform hosts of network prefixes and autoconfiguration options",
+        "C": "To encrypt data packets sent between hosts and routers",
+        "D": "To assign static IP addresses to devices"
+      },
+      "answer": "B",
+      "explanation": "Router Advertisements (RAs) provide IPv6 hosts with essential information such as network prefixes, default gateway, and autoconfiguration options. This enables hosts to configure their addresses automatically using SLAAC."
+    }
+  },
+  {
+    "id": 312,
+    "de": {
+      "frage": "Welchen Zweck erfüllt es, wenn der DHCP-Relay DHCP-Frames mit einer Unicast-Adresse versieht?",
+      "optionen": {
+        "A": "Um direkt mit dem DHCP-Server zu kommunizieren, ohne Broadcasts zu verwenden",
+        "B": "Um die DHCP-Frames aus Sicherheitsgründen zu verschlüsseln",
+        "C": "Um den Frames IP-Adressen zuzuweisen",
+        "D": "Um die Frames über mehrere Subnetze zu broadcasten"
+      },
+      "antwort": "A",
+      "erklärung": "Ein DHCP-Relay versieht DHCP-Frames mit einer Unicast-Adresse, damit diese direkt an den DHCP-Server weitergeleitet werden können. Dadurch wird die Broadcast-Übertragung vermieden und die Kommunikation über Subnetzgrenzen hinweg ermöglicht."
+    },
+    "en": {
+      "question": "What is the purpose of applying a unicast address to DHCP frames by the DHCP relay?",
+      "options": {
+        "A": "To directly communicate with the DHCP server without broadcasting",
+        "B": "To encrypt the DHCP frames for security",
+        "C": "To assign IP addresses to the frames",
+        "D": "To broadcast the frames across multiple subnets"
+      },
+      "answer": "A",
+      "explanation": "A DHCP relay applies a unicast address to DHCP frames so they can be forwarded directly to the DHCP server. This avoids broadcasting and allows communication across subnet boundaries."
+    }
+  },
+  {
+    "id": 313,
+    "de": {
+      "frage": "Warum leiten Router normalerweise keine Broadcasts weiter?",
+      "optionen": {
+        "A": "Weil es zu IP-Adresskonflikten führen kann",
+        "B": "Um Netzwerkauslastung und Überlastung zu vermeiden",
+        "C": "Weil Router auf der Netzwerkschicht arbeiten",
+        "D": "Um die Netzwerksicherheit zu gewährleisten"
+      },
+      "antwort": "B",
+      "erklärung": "Router blockieren Broadcast-Verkehr standardmäßig, um die Netzwerkauslastung zu reduzieren. Broadcasts würden sonst alle Geräte in allen verbundenen Netzwerken erreichen und dadurch zu Netzwerküberlastungen führen."
+    },
+    "en": {
+      "question": "Why do routers normally not forward broadcast traffic?",
+      "options": {
+        "A": "Because it can lead to IP address conflicts",
+        "B": "To prevent network congestion",
+        "C": "Because routers operate at the network layer",
+        "D": "To ensure network security"
+      },
+      "answer": "B",
+      "explanation": "Routers block broadcast traffic by default to prevent excessive network congestion. Forwarding broadcasts would flood all connected networks and could cause network overload."
+    }
+  },
+  {
+    "id": 314,
+    "de": {
+      "frage": "Was macht einen Router RFC 1542-konform?",
+      "optionen": {
+        "A": "Die Fähigkeit, statische IP-Adressen zuzuweisen",
+        "B": "Die Fähigkeit, DHCP-Verkehr zwischen Subnetzen weiterzuleiten",
+        "C": "Die Funktion, allen Broadcast-Verkehr zu blockieren",
+        "D": "Die Fähigkeit, DHCP-Nachrichten zu verschlüsseln"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Router ist RFC 1542-konform, wenn er DHCP-Requests über Subnetzgrenzen hinweg weiterleiten kann. Diese Funktion ist notwendig, um Clients in Subnetzen ohne lokalen DHCP-Server mit IP-Adressen zu versorgen."
+    },
+    "en": {
+      "question": "What makes a router RFC 1542 compliant?",
+      "options": {
+        "A": "The ability to assign static IP addresses",
+        "B": "The capability to forward DHCP traffic between subnets",
+        "C": "The function to block all broadcast traffic",
+        "D": "The feature to encrypt DHCP messages"
+      },
+      "answer": "B",
+      "explanation": "A router is RFC 1542 compliant if it can forward DHCP requests across subnet boundaries. This capability allows clients in subnets without a local DHCP server to still obtain IP addresses."
+    }
+  },
+  {
+    "id": 315,
+    "de": {
+      "frage": "Welche empfohlene Maßnahme sollte vor der Neukonfiguration von DHCP-Server-Scope-Bereichen durchgeführt werden?",
+      "optionen": {
+        "A": "Die Leasingdauer erhöhen",
+        "B": "Die Leasingdauer verringern",
+        "C": "Den DHCP-Server vorübergehend deaktivieren",
+        "D": "Alle Netzwerknutzer über die Änderung informieren"
+      },
+      "antwort": "B",
+      "erklärung": "Vor der Neukonfiguration von DHCP-Scopes ist es empfehlenswert, die Lease-Dauer vorübergehend zu verringern. Dadurch geben Clients ihre alten Adressen schneller frei und können zeitnah neue Adressen aus den aktualisierten Scopes erhalten."
+    },
+    "en": {
+      "question": "What is a recommended action before reconfiguring DHCP server scopes?",
+      "options": {
+        "A": "Increase the lease duration.",
+        "B": "Lower the lease duration.",
+        "C": "Disable the DHCP server temporarily.",
+        "D": "Inform all network users about the change."
+      },
+      "answer": "B",
+      "explanation": "Before reconfiguring DHCP scopes, it is recommended to temporarily lower the lease duration. This ensures that clients release their old addresses faster and can quickly obtain updated addresses from the new scopes."
+    }
+  },
+  {
+    "id": 316,
+    "de": {
+      "frage": "Was könnte ein Symptom eines bösartigen Angriffs auf einen DHCP-Server sein?",
+      "optionen": {
+        "A": "Erhöhte Netzwerkgeschwindigkeit",
+        "B": "Erschöpfung des Adresspools",
+        "C": "Häufige Änderungen der IP-Adresse",
+        "D": "Verringerte Anzahl an DHCP-Anfragen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein typisches Symptom eines Angriffs auf einen DHCP-Server ist die Erschöpfung des Adresspools. Angreifer senden dabei massenhaft gefälschte DHCP-Anfragen, sodass keine freien IP-Adressen mehr für legitime Clients verfügbar sind."
+    },
+    "en": {
+      "question": "What might be a symptom of a malicious attack on a DHCP server?",
+      "options": {
+        "A": "Increased network speed",
+        "B": "Address pool exhaustion",
+        "C": "Frequent IP address changes",
+        "D": "Decreased number of DHCP requests"
+      },
+      "answer": "B",
+      "explanation": "A common symptom of a DHCP server attack is address pool exhaustion. Attackers flood the server with fake DHCP requests, consuming all available IP addresses so that legitimate clients cannot obtain one."
     }
   }
 ]
