@@ -7959,5 +7959,634 @@
       "answer": "B",
       "explanation": "A common symptom of a DHCP server attack is address pool exhaustion. Attackers flood the server with fake DHCP requests, consuming all available IP addresses so that legitimate clients cannot obtain one."
     }
+  },
+  {
+    "id": 317,
+    "de": {
+      "frage": "Ein Administrator verwendet DHCP und möchte die zentrale Verwaltung der IP-Adressierung beibehalten, muss jedoch sicherstellen, dass bestimmte Geräte mit Always-On-Funktionalität statische IP-Adresszuweisungen erhalten.\n\nWas ist die BESTE Lösung?",
+      "optionen": {
+        "A": "Statische Adressen direkt auf diesen Geräten konfigurieren",
+        "B": "Adressen aus einem speziell eingerichteten Ausschlussbereich zuweisen",
+        "C": "Reservierungen erstellen",
+        "D": "Scopes konfigurieren"
+      },
+      "antwort": "C",
+      "erklärung": "Die beste Lösung ist es, DHCP-Reservierungen zu erstellen. Damit wird sichergestellt, dass bestimmte Geräte immer die gleiche IP-Adresse erhalten, während die zentrale Verwaltung durch DHCP beibehalten wird."
+    },
+    "en": {
+      "question": "An administrator is using DHCP and wants to retain centralized management of IP addressing but needs to ensure that specific devices that supply always-on functionality have static IP address assignments.\n\nWhat is the BEST solution?",
+      "options": {
+        "A": "Configure static assignments on those devices.",
+        "B": "Assign addresses from a specially configured exclusion range.",
+        "C": "Create reservations.",
+        "D": "Configure scopes."
+      },
+      "answer": "C",
+      "explanation": "The best solution is to create DHCP reservations. This ensures that specific devices always receive the same IP address while retaining centralized management of IP addressing through the DHCP server."
+    }
+  },
+  {
+    "id": 318,
+    "de": {
+      "frage": "Was ist der erste Schritt im DHCP-Lease-Prozess?",
+      "optionen": {
+        "A": "DHCPDISCOVER",
+        "B": "DHCPOFFER",
+        "C": "DHCPREQUEST",
+        "D": "DHCPACK"
+      },
+      "antwort": "A",
+      "erklärung": "Der DHCP-Lease-Prozess beginnt mit einer DHCPDISCOVER-Nachricht. Dabei sendet der Client eine Broadcast-Anfrage, um verfügbare DHCP-Server im Netzwerk zu finden."
+    },
+    "en": {
+      "question": "What is the first step in the DHCP lease process?",
+      "options": {
+        "A": "DHCPDISCOVER",
+        "B": "DHCPOFFER",
+        "C": "DHCPREQUEST",
+        "D": "DHCPACK"
+      },
+      "answer": "A",
+      "explanation": "The DHCP lease process begins with a DHCPDISCOVER message. The client broadcasts this request to locate available DHCP servers in the network."
+    }
+  },
+  {
+    "id": 319,
+    "de": {
+      "frage": "Sie haben ein Netzwerk mit 50 Arbeitsstationen. Sie möchten die Arbeitsstationen automatisch mit IP-Adresse, Subnetzmaske und Standard-Gateway konfigurieren.\n\nWelches Gerät sollten Sie verwenden?",
+      "optionen": {
+        "A": "Gateway",
+        "B": "Router",
+        "C": "DHCP-Server",
+        "D": "DNS-Server"
+      },
+      "antwort": "C",
+      "erklärung": "Ein DHCP-Server wird verwendet, um Clients automatisch Netzwerkinformationen wie IP-Adresse, Subnetzmaske und Standard-Gateway bereitzustellen. Dadurch wird die zentrale Verwaltung erleichtert und manuelle Konfigurationsfehler werden vermieden."
+    },
+    "en": {
+      "question": "You have a network with 50 workstations. You want to automatically configure the workstations with the IP address, subnet mask, and default gateway values.\n\nWhich device should you use?",
+      "options": {
+        "A": "Gateway",
+        "B": "Router",
+        "C": "DHCP server",
+        "D": "DNS server"
+      },
+      "answer": "C",
+      "explanation": "A DHCP server is used to automatically provide clients with network configuration details such as IP address, subnet mask, and default gateway. This simplifies centralized management and helps avoid manual configuration errors."
+    }
+  },
+  {
+    "id": 320,
+    "de": {
+      "frage": "Was macht der Client, um sicherzustellen, dass die angebotene IP-Adresse nicht bereits verwendet wird?",
+      "optionen": {
+        "A": "Sendet ein DHCPDISCOVER-Paket",
+        "B": "Sendet ein DHCPOFFER-Paket",
+        "C": "Sendet eine ARP-Broadcast-Nachricht",
+        "D": "Sendet ein DHCPREQUEST-Paket"
+      },
+      "antwort": "C",
+      "erklärung": "Um sicherzustellen, dass die vom DHCP-Server angebotene IP-Adresse nicht bereits im Netzwerk in Gebrauch ist, führt der Client eine ARP-Abfrage (Gratuitous ARP) durch. Er sendet ein ARP-Broadcast, um zu prüfen, ob ein anderes Gerät diese Adresse bereits nutzt."
+    },
+    "en": {
+      "question": "What does the client do to ensure the offered IP address is not already in use?",
+      "options": {
+        "A": "Sends a DHCPDISCOVER packet",
+        "B": "Sends a DHCPOFFER packet",
+        "C": "Broadcasts an ARP message",
+        "D": "Sends a DHCPREQUEST packet"
+      },
+      "answer": "C",
+      "explanation": "To ensure that the IP address offered by the DHCP server is not already in use, the client performs an ARP check (Gratuitous ARP). It broadcasts an ARP message to detect whether another device is using that address."
+    }
+  },
+  {
+    "id": 321,
+    "de": {
+      "frage": "Welchen Zweck hat der T1-Timer im DHCP?",
+      "optionen": {
+        "A": "Die maximale Leasingdauer für eine IP-Adresse festlegen",
+        "B": "Signalisieren, wann ein Client mit der Erneuerung seines Leases beginnen soll",
+        "C": "Das Ablaufdatum eines IP-Adress-Leases angeben",
+        "D": "Die Häufigkeit der DHCP-Server-Updates festlegen"
+      },
+      "antwort": "B",
+      "erklärung": "Der T1-Timer im DHCP gibt den Zeitpunkt an, ab dem ein Client versucht, sein aktuelles Lease beim DHCP-Server zu erneuern. Typischerweise liegt dieser Zeitpunkt bei 50 % der Lease-Dauer."
+    },
+    "en": {
+      "question": "What is the purpose of the T1 timer in DHCP?",
+      "options": {
+        "A": "To define the maximum lease time for an IP address",
+        "B": "To signal when a client should start attempting to renew its lease",
+        "C": "To indicate the expiration time of an IP address lease",
+        "D": "To set the frequency of DHCP server updates"
+      },
+      "answer": "B",
+      "explanation": "The T1 timer in DHCP indicates when a client should start attempting to renew its current lease with the DHCP server. Typically, this occurs at 50% of the lease duration."
+    }
+  },
+  {
+    "id": 322,
+    "de": {
+      "frage": "Was ist die Folge einer langen DHCP-Lease-Zeit?",
+      "optionen": {
+        "A": "Erhöht den verfügbaren Adresspool des DHCP-Servers",
+        "B": "Verringert die Netzwerksicherheit",
+        "C": "Erfordert häufige Erneuerung des Leases",
+        "D": "Der verfügbare Adresspool des DHCP-Servers wird nicht häufig wieder aufgefüllt"
+      },
+      "antwort": "D",
+      "erklärung": "Eine lange DHCP-Lease-Zeit bedeutet, dass Clients ihre IP-Adressen für längere Zeit behalten. Dadurch wird der verfügbare Adresspool seltener freigegeben und steht neuen Clients weniger häufig zur Verfügung."
+    },
+    "en": {
+      "question": "What is the consequence of a long DHCP lease time?",
+      "options": {
+        "A": "Increases the DHCP server's available pool of IP addresses",
+        "B": "Decreases network security",
+        "C": "Requires frequent renewal of the lease",
+        "D": "The DHCP server's available pool of IP addresses is not replenished frequently"
+      },
+      "answer": "D",
+      "explanation": "A long DHCP lease time means that clients keep their IP addresses for extended periods. This reduces how often the available address pool is replenished, making fewer addresses available for new clients."
+    }
+  },
+  {
+    "id": 323,
+    "de": {
+      "frage": "Welche DHCP-Option gibt die IP-Adresse des Routers an?",
+      "optionen": {
+        "A": "DNS-Server",
+        "B": "Standard-Gateway",
+        "C": "DNS-Suffix",
+        "D": "NTP-Server"
+      },
+      "antwort": "B",
+      "erklärung": "Die DHCP-Option für das Standard-Gateway (Option 3) gibt den Clients die IP-Adresse des Routers an, über den sie das lokale Subnetz verlassen und mit anderen Netzwerken kommunizieren können."
+    },
+    "en": {
+      "question": "Which DHCP option specifies the IP address of the router?",
+      "options": {
+        "A": "DNS servers",
+        "B": "Default gateway",
+        "C": "DNS suffix",
+        "D": "NTP servers"
+      },
+      "answer": "B",
+      "explanation": "The DHCP option for the default gateway (Option 3) specifies the router’s IP address, allowing clients to communicate outside their local subnet and reach other networks."
+    }
+  },
+  {
+    "id": 324,
+    "de": {
+      "frage": "Welche Bedeutung hat es, einen DHCP-Server mit einem Bereich von IP-Adressen und Subnetzmasken zu konfigurieren?",
+      "optionen": {
+        "A": "Es ermöglicht dem Server, in mehreren Subnetzen gleichzeitig zu arbeiten.",
+        "B": "Es ermöglicht dem Server, Clients innerhalb eines bestimmten Subnetzes die passende IP-Konfiguration zuzuweisen.",
+        "C": "Es verschlüsselt die Daten, die zwischen Server und Clients übertragen werden.",
+        "D": "Es ermöglicht dem Server, als Router zu fungieren."
+      },
+      "antwort": "B",
+      "erklärung": "Durch die Konfiguration eines DHCP-Servers mit einem Bereich von IP-Adressen und Subnetzmasken (Scope) kann der Server Clients innerhalb dieses Subnetzes gültige und passende Netzwerkkonfigurationen zuweisen."
+    },
+    "en": {
+      "question": "What is the significance of configuring a DHCP server with a range of IP addresses and subnet masks?",
+      "options": {
+        "A": "It allows the server to operate in multiple subnets simultaneously.",
+        "B": "It enables the server to assign appropriate IP configurations to clients within a specific subnet.",
+        "C": "It encrypts the data transmitted between the server and clients.",
+        "D": "It allows the server to function as a router."
+      },
+      "answer": "B",
+      "explanation": "By configuring a DHCP server with a range of IP addresses and subnet masks (scope), the server can provide clients within that subnet with valid and appropriate network configurations."
+    }
+  },
+  {
+    "id": 325,
+    "de": {
+      "frage": "Was ist ein Scope im Kontext der DHCP-Server-Konfiguration?",
+      "optionen": {
+        "A": "Ein Werkzeug zur Überwachung des Netzwerkverkehrs",
+        "B": "Eine Reihe von Regeln zur Paketfilterung",
+        "C": "Ein Bereich von IP-Adressen und Optionen, der für ein einzelnes Subnetz konfiguriert ist",
+        "D": "Der physische Bereich, den ein drahtloser DHCP-Server abdecken kann"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Scope im DHCP-Kontext ist ein definierter Bereich von IP-Adressen und Konfigurationsoptionen, der für ein bestimmtes Subnetz eingerichtet wird. Clients in diesem Subnetz können daraus ihre IP-Adressen und Netzwerkeinstellungen beziehen."
+    },
+    "en": {
+      "question": "What is a scope in the context of DHCP server configuration?",
+      "options": {
+        "A": "A tool for monitoring network traffic",
+        "B": "A set of rules for filtering packets",
+        "C": "A range of IP addresses and options configured for a single subnet",
+        "D": "The physical range a wireless DHCP server can cover"
+      },
+      "answer": "C",
+      "explanation": "A scope in DHCP refers to a defined range of IP addresses and configuration options assigned to a specific subnet. Clients in that subnet can obtain their IP addresses and network settings from this scope."
+    }
+  },
+  {
+    "id": 326,
+    "de": {
+      "frage": "Warum muss sich ein DHCP-Server, ohne den Einsatz von Relays, im selben Subnetz wie seine Clients befinden?",
+      "optionen": {
+        "A": "Um die Netzwerklatenz zu verringern",
+        "B": "Um sicherzustellen, dass er IP-Adressen an die Clients vergeben kann",
+        "C": "Um den Netzwerksicherheitsrichtlinien zu entsprechen",
+        "D": "Um die Verarbeitungsgeschwindigkeit des Servers zu erhöhen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein DHCP-Server muss sich ohne Relay im gleichen Subnetz wie seine Clients befinden, da DHCP-Anfragen auf Broadcasts basieren, die nicht über Routergrenzen hinweg weitergeleitet werden. Nur so können Clients die IP-Adresszuweisung vom Server empfangen."
+    },
+    "en": {
+      "question": "Why must a DHCP server, without the use of relays, be placed in the same subnet as its clients?",
+      "options": {
+        "A": "To reduce network latency",
+        "B": "To ensure it can assign IP addresses to them",
+        "C": "To comply with network security policies",
+        "D": "To increase the server's processing speed"
+      },
+      "answer": "B",
+      "explanation": "A DHCP server must be in the same subnet as its clients if no relay is used, because DHCP relies on broadcast messages, which do not cross router boundaries. This ensures clients can receive their IP address assignments from the server."
+    }
+  },
+  {
+    "id": 327,
+    "de": {
+      "frage": "Welchen Zweck hat ein Socket im Kontext der Netzwerkkommunikation?",
+      "optionen": {
+        "A": "Um Daten, die über das Netzwerk gesendet werden, zu verschlüsseln",
+        "B": "Um eine physische Verbindung zwischen zwei Geräten herzustellen",
+        "C": "Um als eindeutiger Identifikator für eine Netzwerkverbindung zu dienen",
+        "D": "Um als Firewall zwischen Client und Server zu fungieren"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Socket ist eine Kombination aus IP-Adresse und Portnummer und dient als eindeutiger Identifikator für eine Netzwerkverbindung zwischen zwei Kommunikationspartnern. Er ermöglicht die Adressierung und Verwaltung von Verbindungen auf Transportebene."
+    },
+    "en": {
+      "question": "What is the purpose of a socket in the context of network communications?",
+      "options": {
+        "A": "To encrypt data being sent over the network",
+        "B": "To provide a physical connection between two devices",
+        "C": "To serve as a unique identifier for a network connection",
+        "D": "To act as a firewall between the client and server"
+      },
+      "answer": "C",
+      "explanation": "A socket is a combination of an IP address and a port number and serves as a unique identifier for a network connection between two communication endpoints. It allows addressing and managing connections at the transport layer."
+    }
+  },
+  {
+    "id": 328,
+    "de": {
+      "frage": "Welche Aussage beschreibt die Verwendung von Portnummern im TCP/IP-Netzwerk am BESTEN?",
+      "optionen": {
+        "A": "Portnummern sind optional und werden in modernen Netzwerken selten verwendet.",
+        "B": "Portnummern werden verwendet, um den physischen Standort von Geräten im Netzwerk zu identifizieren.",
+        "C": "Portnummern werden zusammen mit IP-Adressen verwendet, um Pakete an bestimmte Dienste oder Anwendungen zu leiten.",
+        "D": "Portnummern werden ausschließlich zur Verschlüsselung der Netzwerkommunikation verwendet."
+      },
+      "antwort": "C",
+      "erklärung": "Portnummern sind in TCP/IP-Netzwerken notwendig, um den Datenverkehr neben der IP-Adresse einem bestimmten Dienst oder einer Anwendung auf einem Endgerät zuzuordnen. Zusammen mit der IP-Adresse bilden sie die Grundlage für die Kommunikation auf Transportebene."
+    },
+    "en": {
+      "question": "Which statement BEST describes the use of port numbers in TCP/IP networking?",
+      "options": {
+        "A": "Port numbers are optional and rarely used in modern networking.",
+        "B": "Port numbers are used to identify the physical location of devices on a network.",
+        "C": "Port numbers are used in conjunction with IP addresses to direct packets to specific services or applications.",
+        "D": "Port numbers are used exclusively for encrypting network communications."
+      },
+      "answer": "C",
+      "explanation": "Port numbers in TCP/IP networking are essential for directing traffic, along with IP addresses, to the correct service or application on a device. They provide the foundation for communication at the transport layer."
+    }
+  },
+  {
+    "id": 329,
+    "de": {
+      "frage": "Wie wird eine Verbindung in einem TCP/IP-Netzwerk eindeutig identifiziert?",
+      "optionen": {
+        "A": "Nur durch die Server-Portnummer und IP-Adresse",
+        "B": "Nur durch die Client-Portnummer und IP-Adresse",
+        "C": "Durch die Kombination aus Server-Port und IP-Adresse sowie Client-Port und IP-Adresse",
+        "D": "Durch die MAC-Adressen der kommunizierenden Geräte"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Verbindung in einem TCP/IP-Netzwerk wird durch ein 4-Tupel eindeutig identifiziert: Quell-IP-Adresse, Quell-Portnummer, Ziel-IP-Adresse und Ziel-Portnummer. Diese Kombination stellt sicher, dass jede Verbindung eindeutig ist, selbst wenn mehrere Verbindungen zu demselben Server bestehen."
+    },
+    "en": {
+      "question": "How is a connection uniquely identified in a TCP/IP network?",
+      "options": {
+        "A": "By the server port and IP address only",
+        "B": "By the client port and IP address only",
+        "C": "By the combination of server port and IP address and client port and IP address",
+        "D": "By the MAC addresses of the communicating devices"
+      },
+      "answer": "C",
+      "explanation": "A TCP/IP connection is uniquely identified by a 4-tuple: source IP address, source port number, destination IP address, and destination port number. This ensures uniqueness even when multiple connections exist to the same server."
+    }
+  },
+  {
+    "id": 330,
+    "de": {
+      "frage": "Auf welcher Schicht des OSI-Modells arbeitet das Transmission Control Protocol (TCP)?",
+      "optionen": {
+        "A": "Anwendungsschicht",
+        "B": "Transportschicht",
+        "C": "Netzwerkschicht",
+        "D": "Sicherungsschicht"
+      },
+      "antwort": "B",
+      "erklärung": "TCP arbeitet auf der Transportschicht (Schicht 4) des OSI-Modells. Es stellt eine zuverlässige, verbindungsorientierte Kommunikation zwischen Endsystemen sicher, indem es Funktionen wie Fehlererkennung, Flusskontrolle und Segmentierung bereitstellt."
+    },
+    "en": {
+      "question": "What layer of the OSI model does the Transmission Control Protocol (TCP) operate at?",
+      "options": {
+        "A": "Application Layer",
+        "B": "Transport Layer",
+        "C": "Network Layer",
+        "D": "Data Link Layer"
+      },
+      "answer": "B",
+      "explanation": "TCP operates at the Transport Layer (Layer 4) of the OSI model. It provides reliable, connection-oriented communication between end systems with features such as error detection, flow control, and segmentation."
+    }
+  },
+  {
+    "id": 331,
+    "de": {
+      "frage": "Was verwendet TCP, um Daten aus der Anwendungsschicht zu unterteilen?",
+      "optionen": {
+        "A": "Frames",
+        "B": "Pakete",
+        "C": "Segmente",
+        "D": "Bits"
+      },
+      "antwort": "C",
+      "erklärung": "TCP teilt die Daten, die es von der Anwendungsschicht erhält, in kleinere Einheiten, sogenannte Segmente, auf. Diese Segmente enthalten Header-Informationen für die zuverlässige Übertragung und werden anschließend von IP in Pakete verpackt."
+    },
+    "en": {
+      "question": "What does TCP use to divide data from the Application layer?",
+      "options": {
+        "A": "Frames",
+        "B": "Packets",
+        "C": "Segments",
+        "D": "Bits"
+      },
+      "answer": "C",
+      "explanation": "TCP divides the data it receives from the Application layer into smaller units called segments. These segments include header information for reliable transmission and are later encapsulated into packets by IP."
+    }
+  },
+  {
+    "id": 332,
+    "de": {
+      "frage": "Ihr Computer tauscht Informationen mit einem Remote-Computer über das TCP/IP-Protokoll aus. Plötzlich funktioniert die Verbindung nicht mehr und scheint zu hängen.\n\nWelchen Befehl können Sie verwenden, um den Status der Ports auf Ihrem Computer zu überprüfen?",
+      "optionen": {
+        "A": "netstat",
+        "B": "ipconfig",
+        "C": "arp",
+        "D": "ping"
+      },
+      "antwort": "A",
+      "erklärung": "Mit dem Befehl **netstat** können Sie den aktuellen Status von TCP- und UDP-Ports auf einem Computer anzeigen. Er zeigt aktive Verbindungen, Listener-Ports und deren Status, was bei Verbindungsproblemen hilfreich ist."
+    },
+    "en": {
+      "question": "Your computer is sharing information with a remote computer using the TCP/IP protocol. Suddenly, the connection stops working and appears to hang.\n\nWhich command can you use to check the state of ports on your computer?",
+      "options": {
+        "A": "netstat",
+        "B": "ipconfig",
+        "C": "arp",
+        "D": "ping"
+      },
+      "answer": "A",
+      "explanation": "The **netstat** command can be used to display the current state of TCP and UDP ports on a computer. It shows active connections, listening ports, and their statuses, which is helpful when troubleshooting connectivity issues."
+    }
+  },
+  {
+    "id": 333,
+    "de": {
+      "frage": "Welchen Befehl würden Sie verwenden, um ausschließlich lauschende und hergestellte Internetverbindungen (TCP und UDP) anzuzeigen?",
+      "optionen": {
+        "A": "netstat -tua",
+        "B": "netstat -s",
+        "C": "netstat -o",
+        "D": "netstat -e"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl **netstat -tua** zeigt nur TCP- (**t**) und UDP- (**u**) Verbindungen sowie deren aktuellen Status (**a** für alle aktiven und lauschenden Verbindungen). Die anderen Optionen dienen für Statistik (-s), Prozess-IDs (-o) oder Schnittstellenstatistiken (-e)."
+    },
+    "en": {
+      "question": "Which command would you use to show listening and established Internet connections (TCP and UDP) only?",
+      "options": {
+        "A": "netstat -tua",
+        "B": "netstat -s",
+        "C": "netstat -o",
+        "D": "netstat -e"
+      },
+      "answer": "A",
+      "explanation": "The **netstat -tua** command displays only TCP (**t**) and UDP (**u**) connections along with their current status (**a** for all active and listening connections). The other options provide statistics (-s), process IDs (-o), or interface statistics (-e)."
+    }
+  },
+  {
+    "id": 334,
+    "de": {
+      "frage": "Welcher netstat-Schalter wird unter Linux verwendet, um Sockets nach IPv4- oder IPv6-Adressen zu filtern?",
+      "optionen": {
+        "A": "-4 oder -6",
+        "B": "-a",
+        "C": "-n",
+        "D": "-p"
+      },
+      "antwort": "A",
+      "erklärung": "Mit den Schaltern **-4** bzw. **-6** können unter Linux Sockets gezielt nach IPv4- oder IPv6-Adressen gefiltert werden. Dadurch ist es möglich, die Ausgaben von netstat je nach IP-Protokoll einzugrenzen."
+    },
+    "en": {
+      "question": "Which netstat switch is used to filter sockets by IPv4 or IPv6 addresses on Linux?",
+      "options": {
+        "A": "-4 or -6",
+        "B": "-a",
+        "C": "-n",
+        "D": "-p"
+      },
+      "answer": "A",
+      "explanation": "The **-4** and **-6** switches in netstat on Linux are used to filter sockets specifically by IPv4 or IPv6 addresses. This allows narrowing down the output based on the IP protocol in use."
+    }
+  },
+  {
+    "id": 335,
+    "de": {
+      "frage": "Welches TCP-Flag wird vom Client gesetzt, um den Drei-Wege-Handshake einzuleiten?",
+      "optionen": {
+        "A": "ACK",
+        "B": "SYN",
+        "C": "FIN",
+        "D": "RST"
+      },
+      "antwort": "B",
+      "erklärung": "Der TCP-Drei-Wege-Handshake beginnt, wenn der Client ein Segment mit gesetztem **SYN-Flag** an den Server sendet. Dies signalisiert den Verbindungsaufbau. Der Server antwortet darauf mit **SYN-ACK**, und schließlich sendet der Client ein **ACK**, um die Verbindung zu bestätigen."
+    },
+    "en": {
+      "question": "Which TCP flag is set by the client to initiate the three-way handshake?",
+      "options": {
+        "A": "ACK",
+        "B": "SYN",
+        "C": "FIN",
+        "D": "RST"
+      },
+      "answer": "B",
+      "explanation": "The TCP three-way handshake begins when the client sends a segment with the **SYN flag** set to the server. This signals the start of the connection. The server replies with **SYN-ACK**, and the client responds with an **ACK** to complete the handshake."
+    }
+  },
+  {
+    "id": 336,
+    "de": {
+      "frage": "Welches TCP-Flag wird sowohl vom Client als auch vom Server verwendet, um anzuzeigen, dass sie die Verbindung schließen möchten?",
+      "optionen": {
+        "A": "ACK",
+        "B": "SYN",
+        "C": "FIN",
+        "D": "RST"
+      },
+      "antwort": "C",
+      "erklärung": "Das **FIN-Flag** wird von sowohl Client als auch Server eingesetzt, um das Beenden einer TCP-Verbindung einzuleiten. Wenn eine Seite das FIN-Flag sendet, signalisiert sie, dass sie keine weiteren Daten mehr übertragen wird."
+    },
+    "en": {
+      "question": "Which TCP flag is used by both the client and server to indicate that they want to close the connection?",
+      "options": {
+        "A": "ACK",
+        "B": "SYN",
+        "C": "FIN",
+        "D": "RST"
+      },
+      "answer": "C",
+      "explanation": "The **FIN flag** is used by both the client and server to initiate the closing of a TCP connection. When one side sends a FIN-flagged segment, it indicates that it has no more data to transmit."
+    }
+  },
+  {
+    "id": 337,
+    "de": {
+      "frage": "Was könnte dazu führen, dass ein Host während einer TCP-Sitzung ein Reset (RST)-Segment sendet?",
+      "optionen": {
+        "A": "Der Host möchte eine neue TCP-Verbindung aufbauen.",
+        "B": "Der Host empfängt ein Segment in falscher Reihenfolge.",
+        "C": "Der Host entscheidet sich, die Sitzung abrupt zu beenden.",
+        "D": "Der Host empfängt ein ACK für ein unerwartetes Segment."
+      },
+      "antwort": "C",
+      "erklärung": "Ein TCP-Reset (RST) wird verwendet, wenn ein Host eine Verbindung sofort und abrupt beenden möchte. Dies kann geschehen, wenn ein Fehler auftritt, ein ungültiges Segment empfangen wird oder eine Portnummer nicht offen ist."
+    },
+    "en": {
+      "question": "What might cause a host to send a reset (RST) segment during a TCP session?",
+      "options": {
+        "A": "The host wishes to establish a new TCP connection.",
+        "B": "The host receives a segment out of order.",
+        "C": "The host decides to abruptly end the session.",
+        "D": "The host receives an ACK for an unexpected segment."
+      },
+      "answer": "C",
+      "explanation": "A TCP reset (RST) segment is used when a host wants to abruptly terminate a connection. This may occur if an error happens, an invalid segment is received, or when a connection is attempted on a closed port."
+    }
+  },
+  {
+    "id": 338,
+    "de": {
+      "frage": "Für welche Art von Anwendungen ist UDP besonders geeignet?",
+      "optionen": {
+        "A": "Anwendungen, die eine garantierte Zustellung erfordern",
+        "B": "Anwendungen, die große Datenmengen in jedem Paket senden",
+        "C": "Anwendungen, die kleine Datenmengen senden und keine Bestätigung erfordern",
+        "D": "Anwendungen, die umfangreiche Fehlerprüfung und -korrektur benötigen"
+      },
+      "antwort": "C",
+      "erklärung": "UDP eignet sich besonders für Anwendungen, die kleine Datenmengen übertragen und nicht auf Bestätigung oder garantierte Zustellung angewiesen sind, wie z. B. DNS-Anfragen, VoIP oder Video-Streaming. Der Vorteil liegt in der geringen Latenz und dem reduzierten Overhead."
+    },
+    "en": {
+      "question": "UDP is particularly suitable for which type of applications?",
+      "options": {
+        "A": "Applications that require guaranteed delivery",
+        "B": "Applications that send large amounts of data in each packet",
+        "C": "Applications that send small amounts of data and do not require acknowledgment",
+        "D": "Applications that require extensive error checking and correction"
+      },
+      "answer": "C",
+      "explanation": "UDP is best suited for applications that transmit small amounts of data and do not require acknowledgment or guaranteed delivery, such as DNS queries, VoIP, or video streaming. Its low latency and reduced overhead make it ideal in these cases."
+    }
+  },
+  {
+    "id": 339,
+    "de": {
+      "frage": "Welche Protokolle und Portnummern werden von DHCP verwendet? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "UDP 67",
+        "B": "UDP 123",
+        "C": "TCP 69",
+        "D": "TCP 123",
+        "E": "UDP 68",
+        "F": "UDP 69"
+      },
+      "antwort": ["A", "E"],
+      "erklärung": "DHCP verwendet **UDP-Port 67** für Nachrichten vom Client an den Server und **UDP-Port 68** für Nachrichten vom Server an den Client. Dies ermöglicht die automatische IP-Adresszuweisung in Netzwerken. Die anderen Ports gehören zu Protokollen wie NTP (123) oder TFTP (69)."
+    },
+    "en": {
+      "question": "Which protocols and port numbers are used by DHCP? (Select two.)",
+      "options": {
+        "A": "UDP 67",
+        "B": "UDP 123",
+        "C": "TCP 69",
+        "D": "TCP 123",
+        "E": "UDP 68",
+        "F": "UDP 69"
+      },
+      "answer": ["A", "E"],
+      "explanation": "DHCP uses **UDP port 67** for messages sent from clients to the server, and **UDP port 68** for messages from the server back to the clients. This enables automatic IP address allocation in networks. The other ports are used by protocols like NTP (123) or TFTP (69)."
+    }
+  },
+  {
+    "id": 340,
+    "de": {
+      "frage": "Ein Netzwerkadministrator betrachtet Paketmitschnitte aus dem Netzwerk und versucht, den E-Mail-Datenverkehr zu isolieren.\nWelche der folgenden Ports sollte der Netzwerkadministrator einbeziehen? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "TCP 25",
+        "B": "TCP 123",
+        "C": "TCP 143",
+        "D": "UDP 161"
+      },
+      "antwort": ["A", "C"],
+      "erklärung": "Für E-Mail-Datenverkehr sind wichtige Ports: **TCP 25 (SMTP)** für das Versenden von E-Mails und **TCP 143 (IMAP)** für den Zugriff auf Postfächer. Die anderen Ports gehören zu NTP (TCP 123) und SNMP (UDP 161), die nicht für E-Mail verwendet werden."
+    },
+    "en": {
+      "question": "A network administrator is looking at packet captures from the network and trying to isolate email traffic.\nWhich of the following should the network administrator include? (Select two.)",
+      "options": {
+        "A": "TCP 25",
+        "B": "TCP 123",
+        "C": "TCP 143",
+        "D": "UDP 161"
+      },
+      "answer": ["A", "C"],
+      "explanation": "For email traffic, the relevant ports include **TCP 25 (SMTP)** for sending emails and **TCP 143 (IMAP)** for accessing mailboxes. The other ports correspond to NTP (TCP 123) and SNMP (UDP 161), which are unrelated to email traffic."
+    }
+  },
+  {
+    "id": 341,
+    "de": {
+      "frage": "Sie haben kürzlich einen neuen Windows-Server installiert. Um die Systemzeitgenauigkeit sicherzustellen, haben Sie eine Anwendung installiert, die die Hardwareuhr des Servers mit einer externen Zeitquelle im Internet synchronisiert. Nun müssen Sie Ihre Netzwerk-Firewall so konfigurieren, dass der Zeitsynchronisationsverkehr zugelassen wird.\n\nWelchen Port sollten Sie höchstwahrscheinlich in der Firewall öffnen?",
+      "optionen": {
+        "A": "80",
+        "B": "119",
+        "C": "110",
+        "D": "123"
+      },
+      "antwort": "D",
+      "erklärung": "Für die Zeitsynchronisation über das **Network Time Protocol (NTP)** wird **UDP-Port 123** verwendet. Die anderen Ports gehören zu HTTP (80), NNTP (119) und POP3 (110), die nicht für die Zeitsynchronisation zuständig sind."
+    },
+    "en": {
+      "question": "You've recently installed a new Windows server. To ensure system time accuracy, you've loaded an application that synchronizes the hardware clock on the server with an external time source on the Internet. Now you must configure your network firewall to allow time synchronization traffic through.\n\nWhich of the following ports are you MOST likely to open on the firewall?",
+      "options": {
+        "A": "80",
+        "B": "119",
+        "C": "110",
+        "D": "123"
+      },
+      "answer": "D",
+      "explanation": "The **Network Time Protocol (NTP)** uses **UDP port 123** for time synchronization. The other ports belong to HTTP (80), NNTP (119), and POP3 (110), none of which are related to time synchronization."
+    }
   }
 ]
