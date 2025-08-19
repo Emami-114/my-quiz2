@@ -8588,5 +8588,630 @@
       "answer": "D",
       "explanation": "The **Network Time Protocol (NTP)** uses **UDP port 123** for time synchronization. The other ports belong to HTTP (80), NNTP (119), and POP3 (110), none of which are related to time synchronization."
     }
+  },
+  {
+  "id": 342,
+  "de": {
+    "frage": "Welche Art von Informationen enthält ein Root-DNS-Server?",
+    "optionen": {
+      "A": "Vollständige Informationen über alle Domains",
+      "B": "Nur Informationen über Ländercode-Domains",
+      "C": "Vollständige Informationen über Top-Level-Domain-Server",
+      "D": "Nur Informationen über Second-Level-Domains"
+    },
+    "antwort": "C",
+    "erklärung": "Ein Root-DNS-Server speichert keine vollständigen Informationen über alle Domains. Stattdessen verweist er auf die autoritativen Server der Top-Level-Domains (TLDs), wie .com, .org oder .de. Diese TLD-Server enthalten dann die weiteren Informationen zu den Second-Level-Domains."
+  },
+  "en": {
+    "question": "What type of information does a root DNS server contain?",
+    "options": {
+      "A": "Complete information about all domains",
+      "B": "Only information about country code domains",
+      "C": "Complete information about top-level domain servers",
+      "D": "Only information about second-level domains"
+    },
+    "answer": "C",
+    "explanation": "A root DNS server does not store complete information about all domains. Instead, it refers clients to the authoritative servers for top-level domains (TLDs), such as .com, .org, or .de. These TLD servers then provide further information about second-level domains."
   }
+},
+{
+  "id": 343,
+  "de": {
+    "frage": "Welches Protokoll verwendet Transport Layer Security (TLS), um DNS-Abfragen zu sichern?",
+    "optionen": {
+      "A": "DNS over HTTPS (DoH)",
+      "B": "DNS over TLS (DoT)",
+      "C": "DNS over SSL (DoS)",
+      "D": "Secure DNS (SDNS)"
+    },
+    "antwort": "B",
+    "erklärung": "DNS over TLS (DoT) ist ein Sicherheitsprotokoll, das DNS-Abfragen durch Verschlüsselung mit Transport Layer Security (TLS) schützt. Dadurch wird die Vertraulichkeit und Integrität von DNS-Daten gewährleistet."
+  },
+  "en": {
+    "question": "Which protocol uses Transport Layer Security (TLS) to secure DNS queries?",
+    "options": {
+      "A": "DNS over HTTPS (DoH)",
+      "B": "DNS over TLS (DoT)",
+      "C": "DNS over SSL (DoS)",
+      "D": "Secure DNS (SDNS)"
+    },
+    "answer": "B",
+    "explanation": "DNS over TLS (DoT) is a security protocol that protects DNS queries by encrypting them using Transport Layer Security (TLS). This ensures confidentiality and integrity of DNS data."
+  }
+},
+{
+  "id": 344,
+  "de": {
+    "frage": "Was passiert in DNSSEC, wenn der Zone Signing Key (ZSK) kompromittiert wird?",
+    "optionen": {
+      "A": "Die gesamte Domain muss offline genommen werden.",
+      "B": "Der Schlüssel wird widerrufen und ein neuer wird ausgestellt.",
+      "C": "DNSSEC wird unwirksam und muss deaktiviert werden.",
+      "D": "Der Key Signing Key (KSK) muss ebenfalls ersetzt werden."
+    },
+    "antwort": "B",
+    "erklärung": "Wenn der Zone Signing Key (ZSK) kompromittiert wird, muss er zurückgezogen und ein neuer erstellt werden. Der Key Signing Key (KSK) bleibt in der Regel unverändert, da er nur dazu dient, die ZSKs zu signieren. Daher wird nur der betroffene ZSK erneuert."
+  },
+  "en": {
+    "question": "In DNSSEC, what happens if the Zone Signing Key (ZSK) is compromised?",
+    "options": {
+      "A": "The entire domain must be taken offline.",
+      "B": "The key is revoked and a new one is issued.",
+      "C": "DNSSEC becomes ineffective and must be disabled.",
+      "D": "The Key Signing Key must also be replaced."
+    },
+    "answer": "B",
+    "explanation": "If the Zone Signing Key (ZSK) is compromised, it must be revoked and replaced with a new one. The Key Signing Key (KSK) usually remains unchanged, since its role is to sign ZSKs. Therefore, only the compromised ZSK needs to be renewed."
+  }
+},
+{
+  "id": 345,
+  "de": {
+    "frage": "Was identifiziert der Start of Authority (SOA) Record?",
+    "optionen": {
+      "A": "Die am häufigsten besuchte Domain in der Zone",
+      "B": "Den primären autoritativen Nameserver für die Zone",
+      "C": "Die sekundären Nameserver in der Zone",
+      "D": "Die dynamischen Resource Records in der Zone"
+    },
+    "antwort": "B",
+    "erklärung": "Ein SOA-Record (Start of Authority) definiert den primären autoritativen Nameserver einer Zone. Er enthält zudem administrative Informationen wie die E-Mail-Adresse des Verantwortlichen, die Seriennummer der Zonendatei und Parameter für Zone-Transfers und Caching."
+  },
+  "en": {
+    "question": "What does the Start of Authority (SOA) record identify?",
+    "options": {
+      "A": "The most frequently visited domain in the zone",
+      "B": "The primary authoritative name server for the zone",
+      "C": "The secondary name servers in the zone",
+      "D": "The dynamic resource records in the zone"
+    },
+    "answer": "B",
+    "explanation": "An SOA (Start of Authority) record specifies the primary authoritative name server for a zone. It also includes administrative information such as the responsible person's email, the zone file's serial number, and parameters for zone transfers and caching."
+  }
+},
+{
+  "id": 346,
+  "de": {
+    "frage": "Ein IT-Supporttechniker erhält einen Anruf von einem Benutzer, der sich beschwert, dass er die Website www.examplecorp.com nicht aufrufen kann. Der Benutzer hat bereits versucht, den Browser-Cache zu löschen und den Computer neu zu starten, jedoch ohne Erfolg.\nDer Techniker entscheidet sich, das Problem beginnend bei der DNS-Auflösung zu untersuchen.\nWelchen Schritt sollte der Techniker ZUERST unternehmen, um das Problem zu diagnostizieren?",
+    "optionen": {
+      "A": "Überprüfen, ob der Computer des Benutzers andere Domainnamen auflösen kann.",
+      "B": "Die Hosts-Datei des Benutzers direkt ändern, um die IP-Adresse für www.examplecorp.com einzutragen.",
+      "C": "Das Problem sofort ohne weitere Diagnose an den Netzwerkadministrator eskalieren.",
+      "D": "Den Benutzer anweisen, seinen lokalen DNS-Server zu umgehen, indem er die DNS-Einstellungen auf einen öffentlichen DNS-Dienst ändert."
+    },
+    "antwort": "A",
+    "erklärung": "Der erste Schritt bei der Diagnose von DNS-Problemen besteht darin, festzustellen, ob der Benutzer andere Domainnamen auflösen kann. Wenn dies funktioniert, liegt das Problem wahrscheinlich an der spezifischen Domain oder deren DNS-Einträgen. Wenn es nicht funktioniert, liegt möglicherweise ein generelles DNS- oder Netzwerkproblem vor. Andere Maßnahmen wie das Ändern der Hosts-Datei oder das Umstellen auf öffentliche DNS-Server sind sekundäre Schritte."
+  },
+  "en": {
+    "question": "An IT support technician receives a call from a user complaining that they cannot access the website www.examplecorp.com. The user has already tried clearing their browser cache and restarting their computer but to no avail.\nThe technician decides to troubleshoot the issue starting with DNS resolution.\nWhich of the following steps should the technician take FIRST to diagnose the problem?",
+    "options": {
+      "A": "Check to see if the user's computer can resolve other domain names.",
+      "B": "Directly modify the user's hosts file to include the IP address for www.examplecorp.com.",
+      "C": "Immediately escalate the issue to the network administrator without further diagnosis.",
+      "D": "Instruct the user to bypass their local DNS server by changing their DNS settings to a public DNS service."
+    },
+    "answer": "A",
+    "explanation": "The first step in DNS troubleshooting is to check whether the user's computer can resolve other domain names. If resolution works for other domains, the issue is specific to the problematic domain or its records. If no domains resolve, the issue may be with the local DNS server or network. Actions like modifying the hosts file or switching DNS servers should only be considered after basic diagnosis."
+  }
+},
+{
+  "id": 347,
+  "de": {
+    "frage": "Welche Domain wird für Reverse-DNS-Abfragen von IPv6-Adressen verwendet?",
+    "optionen": {
+      "A": "in-addr.arpa",
+      "B": "ipv6.arpa",
+      "C": "ip6.arpa",
+      "D": "reverse.ipv6"
+    },
+    "antwort": "C",
+    "erklärung": "Für IPv4 wird die Domain 'in-addr.arpa' für Reverse-DNS-Abfragen genutzt. Bei IPv6 erfolgt die Zuordnung von IP-Adressen zu Hostnamen über die spezielle Domain 'ip6.arpa'."
+  },
+  "en": {
+    "question": "What domain is used for reverse DNS querying of IPv6 addresses?",
+    "options": {
+      "A": "in-addr.arpa",
+      "B": "ipv6.arpa",
+      "C": "ip6.arpa",
+      "D": "reverse.ipv6"
+    },
+    "answer": "C",
+    "explanation": "For IPv4, the 'in-addr.arpa' domain is used for reverse DNS lookup. In IPv6, the 'ip6.arpa' domain is designated for mapping IP addresses back to hostnames."
+  }
+},
+{
+  "id": 348,
+  "de": {
+    "frage": "Ein Administrator hat einen Befehl ausgeführt und festgestellt, dass der FQDN eines Clients forbes.sales.realty.com lautet.\nWie lautet der Hostname des Clients?",
+    "optionen": {
+      "A": "com",
+      "B": "sales",
+      "C": "forbes",
+      "D": "realty"
+    },
+    "antwort": "C",
+    "erklärung": "Der Hostname ist der erste Teil des FQDN (Fully Qualified Domain Name). Im gegebenen Beispiel 'forbes.sales.realty.com' ist 'forbes' der Hostname, 'sales.realty.com' ist die Domainstruktur."
+  },
+  "en": {
+    "question": "An administrator ran a command and determined that the FQDN of a client is forbes.sales.realty.com.\nWhat is the hostname of the client?",
+    "options": {
+      "A": "com",
+      "B": "sales",
+      "C": "forbes",
+      "D": "realty"
+    },
+    "answer": "C",
+    "explanation": "The hostname is the leftmost portion of the Fully Qualified Domain Name (FQDN). In the example 'forbes.sales.realty.com,' 'forbes' is the hostname, while 'sales.realty.com' represents the domain hierarchy."
+  }
+},
+{
+  "id": 349,
+  "de": {
+    "frage": "Kann derselbe Domainname innerhalb verschiedener Top-Level-Domains registriert werden?",
+    "optionen": {
+      "A": "Ja, aber nur, wenn sie in unterschiedlichen Ländern liegen.",
+      "B": "Nein, sobald ein Domainname registriert ist, kann er nirgendwo anders verwendet werden.",
+      "C": "Ja, derselbe Domainname kann innerhalb verschiedener TLDs registriert werden.",
+      "D": "Nein, Domainnamen sind weltweit eindeutig und können nicht dupliziert werden."
+    },
+    "antwort": "C",
+    "erklärung": "Domainnamen müssen innerhalb eines Top-Level-Domains (TLD) eindeutig sein, jedoch nicht global über alle TLDs hinweg. Zum Beispiel können 'example.com' und 'example.org' von unterschiedlichen Personen oder Organisationen registriert werden."
+  },
+  "en": {
+    "question": "Can the same domain name be registered within different top-level domains?",
+    "options": {
+      "A": "Yes, but only if they are in different countries.",
+      "B": "No, once a domain name is registered, it cannot be used elsewhere.",
+      "C": "Yes, the same domain name can be registered within different TLDs.",
+      "D": "No, domain names are globally unique and cannot be duplicated."
+    },
+    "answer": "C",
+    "explanation": "Domain names must be unique within a given top-level domain (TLD), but they do not need to be globally unique across all TLDs. For example, 'example.com' and 'example.org' can be registered by different entities."
+  }
+},
+{
+  "id": 350,
+  "de": {
+    "frage": "Was benötigt ein MX-Record, um korrekt zu funktionieren?",
+    "optionen": {
+      "A": "Einen zugehörigen CNAME-Record",
+      "B": "Einen zugehörigen A- oder AAAA-Record",
+      "C": "Einen Prioritätswert von 10",
+      "D": "Verschlüsselung"
+    },
+    "antwort": "B",
+    "erklärung": "Ein MX-Record (Mail Exchange) verweist auf den Mailserver für eine Domain. Damit dieser Eintrag korrekt funktioniert, muss der Hostname, den der MX-Record angibt, in einem A- oder AAAA-Record aufgelöst werden können. Ein CNAME ist für Mailserver-Einträge nicht erlaubt."
+  },
+  "en": {
+    "question": "What does an MX record require to function correctly?",
+    "options": {
+      "A": "An associated CNAME record",
+      "B": "An associated A or AAAA record",
+      "C": "A priority value of 10",
+      "D": "Encryption"
+    },
+    "answer": "B",
+    "explanation": "An MX (Mail Exchange) record points to the mail server for a domain. For it to function properly, the hostname specified in the MX record must resolve to an IP address via an A or AAAA record. CNAME records are not permitted for mail servers."
+  }
+},
+{
+  "id": 351,
+  "de": {
+    "frage": "Was ist die Bedeutung des Prioritätswertes in MX-Records?",
+    "optionen": {
+      "A": "Bestimmt die Verschlüsselungsstufe",
+      "B": "Identifiziert die IP-Adresse des Mailservers",
+      "C": "Gibt den bevorzugten Server in einer Liste von Servern an",
+      "D": "Speichert Freitext"
+    },
+    "antwort": "C",
+    "erklärung": "Der Prioritätswert in einem MX-Record (Mail Exchange Record) gibt an, welcher Mailserver bevorzugt verwendet werden soll, wenn mehrere Mailserver für eine Domain definiert sind. Ein niedrigerer Wert bedeutet eine höhere Priorität."
+  },
+  "en": {
+    "question": "What is the significance of the priority value in MX records?",
+    "options": {
+      "A": "Determines the encryption level",
+      "B": "Identifies the email server's IP address",
+      "C": "Specifies the preferred server in a list of servers",
+      "D": "Stores free-form text"
+    },
+    "answer": "C",
+    "explanation": "The priority value in an MX (Mail Exchange) record indicates which mail server should be used first when multiple servers are available. A lower value means higher priority."
+  }
+},
+{
+  "id": 352,
+  "de": {
+    "frage": "Welche Rolle spielt ein Resolver im DNS?",
+    "optionen": {
+      "A": "Er hostet Zoneneinträge für interne und externe Domains.",
+      "B": "Er liefert falsche Namensauflösungen an Clients.",
+      "C": "Er führt rekursive Abfragen als Antwort auf Client-Anfragen durch.",
+      "D": "Er trennt interne von externen DNS-Zonen."
+    },
+    "antwort": "C",
+    "erklärung": "Ein DNS-Resolver (auch rekursiver Resolver genannt) ist ein Server, der Anfragen von Clients entgegennimmt und rekursive DNS-Abfragen durchführt, um die korrekte IP-Adresse für den angefragten Domainnamen zu finden. Er fragt dabei verschiedene Nameserver ab, bis die endgültige Antwort gefunden ist."
+  },
+  "en": {
+    "question": "What role does a resolver play in DNS?",
+    "options": {
+      "A": "It hosts zone records for internal and external domains.",
+      "B": "It supplies false name resolutions to clients.",
+      "C": "It performs recursive queries in response to client requests.",
+      "D": "It separates internal from external DNS zones."
+    },
+    "answer": "C",
+    "explanation": "A DNS resolver (also known as a recursive resolver) is a server that handles client requests by performing recursive DNS lookups. It queries the necessary name servers step by step until it retrieves the correct IP address for the requested domain name."
+  }
+},
+{
+  "id": 353,
+  "de": {
+    "frage": "Was ist die Hauptfunktion externer DNS-Zonen?",
+    "optionen": {
+      "A": "Die Sicherheit für die DNS-Verwaltung zu erleichtern",
+      "B": "Den Zugriff interner Clients auf interne Netzwerkressourcen zu ermöglichen",
+      "C": "Namensauflösungsdienste für Internet-Clients bereitzustellen, die auf öffentliche Dienste zugreifen müssen",
+      "D": "Rekursive Abfragen für interne DNS-Server durchzuführen"
+    },
+    "antwort": "C",
+    "erklärung": "Externe DNS-Zonen dienen dazu, öffentlichen Clients im Internet die Namensauflösung für Dienste wie Webseiten, E-Mail-Server oder andere öffentlich verfügbare Ressourcen bereitzustellen. Interne Ressourcen werden dagegen über interne DNS-Zonen verwaltet."
+  },
+  "en": {
+    "question": "What is the primary function of external DNS zones?",
+    "options": {
+      "A": "To facilitate security for DNS management",
+      "B": "To facilitate internal clients' access to internal network resources",
+      "C": "To provide name resolution services for Internet clients needing to access public services",
+      "D": "To perform recursive queries for internal DNS servers"
+    },
+    "answer": "C",
+    "explanation": "External DNS zones are designed to provide name resolution services for Internet clients that need access to public-facing services, such as websites, email servers, or any resource intended for public use. Internal DNS zones handle private, internal resources."
+  }
+},
+{
+  "id": 354,
+  "de": {
+    "frage": "Was ist der Zweck eines sekundären DNS-Servers?",
+    "optionen": {
+      "A": "Nur autoritative Antworten bereitzustellen",
+      "B": "Eine schreibgeschützte Kopie der Zone zu halten",
+      "C": "DNS-Einträge zu bearbeiten und zu aktualisieren",
+      "D": "Als primäre Quelle von DNS-Einträgen zu dienen"
+    },
+    "antwort": "B",
+    "erklärung": "Ein sekundärer DNS-Server enthält eine schreibgeschützte Kopie der Zonendaten, die er regelmäßig vom primären DNS-Server erhält. Sein Zweck ist es, Redundanz und Lastverteilung sicherzustellen, sodass die DNS-Auflösung weiterhin funktioniert, falls der primäre Server ausfällt."
+  },
+  "en": {
+    "question": "What is the purpose of a secondary DNS server?",
+    "options": {
+      "A": "To provide authoritative answers only",
+      "B": "To hold a read-only copy of the zone",
+      "C": "To edit and update DNS records",
+      "D": "To serve as the primary source of DNS records"
+    },
+    "answer": "B",
+    "explanation": "A secondary DNS server holds a read-only copy of the zone data, which it periodically obtains from the primary DNS server. Its purpose is to provide redundancy and load distribution, ensuring DNS resolution continues if the primary server becomes unavailable."
+  }
+},
+{
+  "id": 355,
+  "de": {
+    "frage": "Was ist der Zweck der Verwendung von Round-Robin-DNS?",
+    "optionen": {
+      "A": "Die DNS-Sicherheit zu erhöhen",
+      "B": "Die DNS-Abfragezeiten zu verkürzen",
+      "C": "Den Netzwerkverkehr auf mehrere Server zu verteilen",
+      "D": "Einen Backup-DNS-Server zu erstellen"
+    },
+    "antwort": "C",
+    "erklärung": "Round-Robin-DNS wird verwendet, um den eingehenden Netzwerkverkehr gleichmäßig auf mehrere Server zu verteilen. Dies erhöht die Verfügbarkeit und ermöglicht eine Lastverteilung, verbessert aber nicht direkt die Sicherheit oder die Geschwindigkeit von DNS-Abfragen."
+  },
+  "en": {
+    "question": "What is the purpose of using round robin DNS?",
+    "options": {
+      "A": "To increase DNS security",
+      "B": "To decrease DNS lookup times",
+      "C": "To distribute network traffic across multiple servers",
+      "D": "To create a backup DNS server"
+    },
+    "answer": "C",
+    "explanation": "Round robin DNS is used to distribute incoming network traffic across multiple servers. This approach improves availability and provides load balancing, but it does not directly improve DNS security or query speed."
+  }
+},
+{
+  "id": 356,
+  "de": {
+    "frage": "Was ist der Hauptzweck eines Address (A) Records im DNS?",
+    "optionen": {
+      "A": "Einen Domainnamen in eine E-Mail-Adresse auflösen",
+      "B": "Einen Hostnamen in eine IPv4-Adresse auflösen",
+      "C": "Den Datenverkehr auf eine andere Domain umleiten",
+      "D": "Einen Hostnamen in eine IPv6-Adresse auflösen"
+    },
+    "antwort": "B",
+    "erklärung": "Ein A-Record (Address Record) wird im DNS verwendet, um einen Hostnamen in eine IPv4-Adresse aufzulösen. Für IPv6-Adressen wird dagegen ein AAAA-Record verwendet."
+  },
+  "en": {
+    "question": "What is the primary purpose of an Address (A) record in DNS?",
+    "options": {
+      "A": "To resolve a domain name to an email address",
+      "B": "To resolve a host name to an IPv4 address",
+      "C": "To redirect traffic to another domain",
+      "D": "To resolve a host name to an IPv6 address"
+    },
+    "answer": "B",
+    "explanation": "An A (Address) record in DNS is used to resolve a hostname to an IPv4 address. For IPv6 addresses, the AAAA record type is used instead."
+  }
+},
+{
+  "id": 357,
+  "de": {
+    "frage": "Was ist der Zweck der Überprüfung lokaler Namens-Caches bei der Fehlersuche von Namensauflösungsproblemen?",
+    "optionen": {
+      "A": "Die DNS-Servereinträge zu aktualisieren",
+      "B": "Veraltete Einträge aus dem Webbrowser zu löschen",
+      "C": "Festzustellen, ob das Auflösungsproblem durch zwischengespeicherte Daten verursacht wird",
+      "D": "Die physische Netzwerkverbindung zu überprüfen"
+    },
+    "antwort": "C",
+    "erklärung": "Beim Troubleshooting von Namensauflösungsproblemen ist es wichtig, den lokalen Cache zu überprüfen, da zwischengespeicherte (möglicherweise veraltete) Einträge zu falschen oder fehlerhaften DNS-Antworten führen können. Dadurch lässt sich herausfinden, ob der Fehler aus dem Cache oder von einem externen DNS-Server stammt."
+  },
+  "en": {
+    "question": "What is the purpose of checking local name caches when troubleshooting name resolution issues?",
+    "options": {
+      "A": "To update the DNS server's records",
+      "B": "To clear outdated entries from the web browser",
+      "C": "To identify if the resolution issue is due to cached data",
+      "D": "To verify the physical network connection"
+    },
+    "answer": "C",
+    "explanation": "When troubleshooting name resolution issues, checking the local cache is important because cached (possibly outdated) entries can cause incorrect or failed DNS responses. This helps determine if the issue originates from cached data or from an external DNS server."
+  }
+},
+{
+  "id": 358,
+  "de": {
+    "frage": "Was wird getestet, wenn die HOSTS-Datei bearbeitet wird, um einen korrekten Namen- und IP-Adress-Eintrag hinzuzufügen?",
+    "optionen": {
+      "A": "Die Geschwindigkeit des DNS-Servers",
+      "B": "Die Genauigkeit der Webbrowser-Caches",
+      "C": "Ein Problem mit dem Namensauflösungsdienst",
+      "D": "Die Zuverlässigkeit der Netzwerkverbindung"
+    },
+    "antwort": "C",
+    "erklärung": "Durch das manuelle Hinzufügen eines Namens und der zugehörigen IP-Adresse in die HOSTS-Datei wird DNS umgangen. Wenn der Zugriff auf die Ressource danach funktioniert, liegt ein Problem mit dem DNS- oder Namensauflösungsdienst vor."
+  },
+  "en": {
+    "question": "What does editing the HOSTS file to add a correct name and IP address record test for?",
+    "options": {
+      "A": "The speed of the DNS server",
+      "B": "The accuracy of web browser caches",
+      "C": "A name resolution service problem",
+      "D": "The reliability of the network connection"
+    },
+    "answer": "C",
+    "explanation": "By manually adding a hostname and corresponding IP address into the HOSTS file, DNS resolution is bypassed. If the connection then works, it indicates that the issue lies within the DNS or name resolution service."
+  }
+},
+{
+  "id": 359,
+  "de": {
+    "frage": "Was sollte überprüft werden, wenn ein einzelner Client keine Namen auflösen kann?",
+    "optionen": {
+      "A": "Die Konfiguration des DHCP-Servers",
+      "B": "Die DNS-Server-Konfiguration des Clients",
+      "C": "Die physische Netzwerkverbindung des Servers",
+      "D": "Die Subnetzmaske des Clients"
+    },
+    "antwort": "B",
+    "erklärung": "Wenn nur ein einzelner Client Probleme mit der Namensauflösung hat, liegt die Ursache meist in einer falschen oder fehlenden DNS-Server-Konfiguration auf diesem Client. Globale Netzwerkeinstellungen wie der DHCP-Server oder die Subnetzmaske würden normalerweise mehrere Clients betreffen."
+  },
+  "en": {
+    "question": "What should be checked if a single client cannot resolve names?",
+    "options": {
+      "A": "The DHCP server configuration",
+      "B": "The client's DNS server configuration",
+      "C": "The physical network connection of the server",
+      "D": "The subnet mask of the client"
+    },
+    "answer": "B",
+    "explanation": "If only one client is experiencing name resolution issues, the problem is most likely due to a misconfigured or missing DNS server setting on that client. Network-wide settings like the DHCP server or subnet mask would typically affect multiple clients."
+  }
+},
+{
+  "id": 360,
+  "de": {
+    "frage": "Was wird typischerweise angezeigt, wenn ein Host einen Server über seine IP-Adresse, aber nicht über seinen Namen anpingen kann?",
+    "optionen": {
+      "A": "Der Server ist offline.",
+      "B": "Falsche Subnetzmasken-Konfiguration",
+      "C": "Falsche DNS-Konfiguration",
+      "D": "Defektes Netzwerkkabel"
+    },
+    "antwort": "C",
+    "erklärung": "Wenn ein Host einen Server über die IP-Adresse erreichen kann, bedeutet dies, dass die Netzwerkverbindung intakt ist. Wenn die Namensauflösung jedoch fehlschlägt, liegt die Ursache fast immer in einer falschen oder fehlenden DNS-Konfiguration."
+  },
+  "en": {
+    "question": "What is typically indicated when a host can ping a server by its IP address but not by its name?",
+    "options": {
+      "A": "The server is offline.",
+      "B": "Incorrect subnet mask configuration",
+      "C": "Incorrect DNS configuration",
+      "D": "Faulty network cable"
+    },
+    "answer": "C",
+    "explanation": "If a host can reach a server using its IP address, it indicates that the network connection is fine. However, failure to reach it by name almost always points to an incorrect or missing DNS configuration."
+  }
+},
+{
+  "id": 361,
+  "de": {
+    "frage": "Ein Benutzer meldet, dass er eine bestimmte Website im Internet nicht aufrufen kann.\nAuf dem Computer des Benutzers stellt ein Techniker fest, dass ein Ping-Test zum Webserver erfolgreich ist. Ein Traceroute-Test zeigt 17 Hops bis zum Ziel-Webserver.\nWas ist die WAHRSCHEINLICHSTE Ursache des Problems?",
+    "optionen": {
+      "A": "Falsche DNS-Server-Adresse",
+      "B": "Falsche Standard-Gateway-Adresse",
+      "C": "Falscher Subnetzmaskenwert",
+      "D": "Doppelte IP-Adressen"
+    },
+    "antwort": "A",
+    "erklärung": "Da der Ping-Test und der Traceroute-Test erfolgreich sind, funktioniert die grundlegende Netzverbindung und die Routen zum Ziel-Host sind intakt. Das Problem liegt höchstwahrscheinlich bei der Namensauflösung durch eine falsche DNS-Server-Adresse, die verhindert, dass die Website über ihren Domainnamen erreicht werden kann."
+  },
+  "en": {
+    "question": "A user reports that they cannot browse to a specific website on the Internet.\nFrom the user's computer, a computer tech finds that a ping test to the web server succeeds. A traceroute test shows 17 hops to the destination web server.\nWhat is the MOST likely cause of the problem?",
+    "options": {
+      "A": "Incorrect DNS server address",
+      "B": "Incorrect default gateway address",
+      "C": "Incorrect subnet mask value",
+      "D": "Duplicate IP addresses"
+    },
+    "answer": "A",
+    "explanation": "Since both ping and traceroute tests succeed, the network connection and routing to the destination host are working correctly. The most likely issue is incorrect DNS server settings, which prevent resolving the website's domain name even though the server is reachable by IP."
+  }
+},
+{
+  "id": 362,
+  "de": {
+    "frage": "Während einer Überprüfung externer DNS-Einträge müssen Sie die für Ihre öffentliche Domain example.com konfigurierten Mailserver überprüfen.\nWelchen nslookup-Befehl würden Sie verwenden, um diese Informationen zu erhalten?",
+    "optionen": {
+      "A": "nslookup -type=mx example.com",
+      "B": "nslookup -type=a example.com",
+      "C": "nslookup example.com",
+      "D": "nslookup -type=ns example.com"
+    },
+    "antwort": "A",
+    "erklärung": "Um die für eine Domain konfigurierten Mailserver anzuzeigen, wird beim nslookup-Befehl der Record-Typ *MX* angegeben. Der vollständige Befehl lautet: `nslookup -type=mx example.com`."
+  },
+  "en": {
+    "question": "During an audit of external DNS records, you need to verify the mail servers configured for your public domain example.com.\nWhich nslookup command would you use to find this information?",
+    "options": {
+      "A": "nslookup -type=mx example.com",
+      "B": "nslookup -type=a example.com",
+      "C": "nslookup example.com",
+      "D": "nslookup -type=ns example.com"
+    },
+    "answer": "A",
+    "explanation": "To view the mail servers configured for a domain, you must query the *MX* record type in nslookup. The correct command is: `nslookup -type=mx example.com`."
+  }
+},
+{
+  "id": 363,
+  "de": {
+    "frage": "Was ist das Ergebnis, wenn nslookup ohne Argumente ausgeführt wird?",
+    "optionen": {
+      "A": "Der Befehl zeigt die IP-Adresse des Hosts an.",
+      "B": "Der Befehl konfiguriert den Standard-DNS-Server.",
+      "C": "Das Tool wird im interaktiven Modus gestartet.",
+      "D": "Der Befehl zeigt alle DNS-Einträge des Hosts an."
+    },
+    "antwort": "C",
+    "erklärung": "Wird `nslookup` ohne Argumente ausgeführt, startet das Tool im interaktiven Modus. In diesem Modus können verschiedene DNS-Abfragen nacheinander direkt eingegeben werden (z. B. `set type=MX`, `example.com`)."
+  },
+  "en": {
+    "question": "What is the result of running nslookup without any arguments?",
+    "options": {
+      "A": "The command displays the host's IP address.",
+      "B": "The command configures the default DNS server.",
+      "C": "The tool is started in interactive mode.",
+      "D": "The command displays all DNS records for the host."
+    },
+    "answer": "C",
+    "explanation": "When `nslookup` is run without any arguments, it launches in interactive mode. In this mode, you can enter multiple DNS queries directly, such as `set type=MX` or querying specific domains."
+  }
+},
+{
+  "id": 364,
+  "de": {
+    "frage": "Welcher Befehl kann unter Windows verwendet werden, um den FQDN des lokalen Hosts anzuzeigen?",
+    "optionen": {
+      "A": "hostname --fqdn",
+      "B": "nslookup -type=fqdn",
+      "C": "ipconfig /all",
+      "D": "resolve-hostname"
+    },
+    "antwort": "C",
+    "erklärung": "Unter Windows zeigt der Befehl `ipconfig /all` detaillierte Netzwerkinformationen an, einschließlich des vollständigen qualifizierten Domainnamens (FQDN) des Hosts. Der Befehl `hostname --fqdn` ist hingegen für Linux/Unix-Systeme üblich."
+  },
+  "en": {
+    "question": "Which command can be used on Windows to display the FQDN of the local host?",
+    "options": {
+      "A": "hostname --fqdn",
+      "B": "nslookup -type=fqdn",
+      "C": "ipconfig /all",
+      "D": "resolve-hostname"
+    },
+    "answer": "C",
+    "explanation": "On Windows, the command `ipconfig /all` displays detailed network configuration information, including the Fully Qualified Domain Name (FQDN) of the local host. The `hostname --fqdn` command is typically used on Linux/Unix systems."
+  }
+},
+{
+  "id": 365,
+  "de": {
+    "frage": "Was ist der Hauptzweck des Befehlszeilen-Tools dig?",
+    "optionen": {
+      "A": "DNS-Server konfigurieren",
+      "B": "DNS-Server abfragen",
+      "C": "Netzwerkverkehr überwachen",
+      "D": "BIND-DNS-Serverkonfigurationen verwalten"
+    },
+    "antwort": "B",
+    "erklärung": "Das Tool `dig` (Domain Information Groper) wird primär verwendet, um DNS-Server abzufragen und Informationen zu Domainnamen, IP-Adressen und Ressourceneinträgen zu erhalten. Es ist ein wichtiges Werkzeug zur Diagnose und Fehlersuche bei DNS-Problemen."
+  },
+  "en": {
+    "question": "What is the primary purpose of the dig command-line tool?",
+    "options": {
+      "A": "To configure DNS servers",
+      "B": "To query DNS servers",
+      "C": "To monitor network traffic",
+      "D": "To manage BIND DNS server configurations"
+    },
+    "answer": "B",
+    "explanation": "The `dig` (Domain Information Groper) tool is mainly used to query DNS servers and obtain information about domain names, IP addresses, and resource records. It is an essential diagnostic tool for troubleshooting DNS issues."
+  }
+},
+{
+  "id": 366,
+  "de": {
+    "frage": "Wie kann man eine dig-Abfrage an einen spezifischen DNS-Server richten?",
+    "optionen": {
+      "A": "Durch die Verwendung der Option -s gefolgt von der IP-Adresse des Servers",
+      "B": "Durch Platzieren der IP-Adresse des DNS-Servers am Anfang des Befehls",
+      "C": "Durch die Verwendung des @-Symbols gefolgt vom FQDN oder der IP-Adresse des DNS-Servers",
+      "D": "Durch Angabe der DNS-Server-IP-Adresse in den Systemeinstellungen vor dem Ausführen von dig"
+    },
+    "antwort": "C",
+    "erklärung": "Bei der Verwendung von `dig` kann ein bestimmter DNS-Server gezielt mit dem `@`-Symbol angegeben werden, gefolgt von dessen FQDN oder IP-Adresse. Beispiel: `dig @8.8.8.8 example.com` fragt den Google-DNS-Server (8.8.8.8) nach dem Eintrag von `example.com` ab."
+  },
+  "en": {
+    "question": "How can you direct a dig query to a specific DNS server?",
+    "options": {
+      "A": "By using the -s option followed by the server's IP address",
+      "B": "By placing the DNS server's IP address at the beginning of the command",
+      "C": "By using the @ symbol followed by the DNS server's FQDN or IP address",
+      "D": "By specifying the DNS server's IP address in the system settings before running dig"
+    },
+    "answer": "C",
+    "explanation": "When using `dig`, a specific DNS server can be targeted by placing the `@` symbol before its FQDN or IP address. For example: `dig @8.8.8.8 example.com` queries the Google DNS server (8.8.8.8) for the record of `example.com`."
+  }
+}
 ]
