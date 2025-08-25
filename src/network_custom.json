@@ -9840,629 +9840,1003 @@
     }
   },
   {
-  "id": 392,
-  "de": {
-    "frage": "Was ist der Zweck der Verwendung eines tel:-URI-Schemas in SIP-Systemen?",
-    "optionen": {
-      "A": "Um ein Festnetz- oder Mobiltelefon anzurufen",
-      "B": "Um Sprachkommunikation zu verschlüsseln",
-      "C": "Um Geräten eindeutige Kennungen zuzuweisen",
-      "D": "Um Audiodaten für die Übertragung zu komprimieren"
+    "id": 392,
+    "de": {
+      "frage": "Was ist der Zweck der Verwendung eines tel:-URI-Schemas in SIP-Systemen?",
+      "optionen": {
+        "A": "Um ein Festnetz- oder Mobiltelefon anzurufen",
+        "B": "Um Sprachkommunikation zu verschlüsseln",
+        "C": "Um Geräten eindeutige Kennungen zuzuweisen",
+        "D": "Um Audiodaten für die Übertragung zu komprimieren"
+      },
+      "antwort": "A",
+      "erklärung": "Das tel:-URI-Schema wird in SIP-Systemen verwendet, um eine Telefonnummer darzustellen, die dann in ein tatsächliches Festnetz- oder Mobiltelefonnetz weitergeleitet werden kann. Es dient somit dazu, klassische Telefonnummern in VoIP-Umgebungen anzuwählen."
     },
-    "antwort": "A",
-    "erklärung": "Das tel:-URI-Schema wird in SIP-Systemen verwendet, um eine Telefonnummer darzustellen, die dann in ein tatsächliches Festnetz- oder Mobiltelefonnetz weitergeleitet werden kann. Es dient somit dazu, klassische Telefonnummern in VoIP-Umgebungen anzuwählen."
+    "en": {
+      "question": "What is the purpose of using a tel: URI scheme in SIP systems?",
+      "options": {
+        "A": "To dial a landline or cell phone",
+        "B": "To encrypt voice communications",
+        "C": "To assign unique identifiers to devices",
+        "D": "To compress audio data for transmission"
+      },
+      "answer": "A",
+      "explanation": "The tel: URI scheme in SIP systems is used to represent a telephone number, which can then be routed to the public switched telephone network (PSTN) to dial a landline or cell phone."
+    }
   },
-  "en": {
-    "question": "What is the purpose of using a tel: URI scheme in SIP systems?",
-    "options": {
-      "A": "To dial a landline or cell phone",
-      "B": "To encrypt voice communications",
-      "C": "To assign unique identifiers to devices",
-      "D": "To compress audio data for transmission"
+  {
+    "id": 393,
+    "de": {
+      "frage": "Welcher der folgenden Begriffe ist eine eindeutige Kennung, die von SIP-Endpunkten verwendet wird?",
+      "optionen": {
+        "A": "MAC-Adresse",
+        "B": "SIP-URI",
+        "C": "IP-Adresse",
+        "D": "DNS-Name"
+      },
+      "antwort": "B",
+      "erklärung": "Die SIP-URI (Uniform Resource Identifier) ist die eindeutige Kennung für SIP-Endpunkte. Sie funktioniert ähnlich wie eine E-Mail-Adresse und ermöglicht die klare Identifizierung und Adressierung eines Benutzers oder Geräts in einer SIP-Umgebung."
     },
-    "answer": "A",
-    "explanation": "The tel: URI scheme in SIP systems is used to represent a telephone number, which can then be routed to the public switched telephone network (PSTN) to dial a landline or cell phone."
-  }
-},
-{
-  "id": 393,
-  "de": {
-    "frage": "Welcher der folgenden Begriffe ist eine eindeutige Kennung, die von SIP-Endpunkten verwendet wird?",
-    "optionen": {
-      "A": "MAC-Adresse",
-      "B": "SIP-URI",
-      "C": "IP-Adresse",
-      "D": "DNS-Name"
-    },
-    "antwort": "B",
-    "erklärung": "Die SIP-URI (Uniform Resource Identifier) ist die eindeutige Kennung für SIP-Endpunkte. Sie funktioniert ähnlich wie eine E-Mail-Adresse und ermöglicht die klare Identifizierung und Adressierung eines Benutzers oder Geräts in einer SIP-Umgebung."
+    "en": {
+      "question": "Which of the following is a unique identifier used by SIP endpoints?",
+      "options": {
+        "A": "MAC address",
+        "B": "SIP URI",
+        "C": "IP address",
+        "D": "DNS name"
+      },
+      "answer": "B",
+      "explanation": "The SIP URI (Uniform Resource Identifier) is the unique identifier for SIP endpoints. It works similarly to an email address and allows clear identification and addressing of a user or device in a SIP environment."
+    }
   },
-  "en": {
-    "question": "Which of the following is a unique identifier used by SIP endpoints?",
-    "options": {
-      "A": "MAC address",
-      "B": "SIP URI",
-      "C": "IP address",
-      "D": "DNS name"
+  {
+    "id": 394,
+    "de": {
+      "frage": "Wie verwenden VoIP-Telefone VLAN-Tagging?",
+      "optionen": {
+        "A": "Um sicherzustellen, dass Sprach- und Datentraffic im selben Netzwerk kombiniert werden",
+        "B": "Um sicherzustellen, dass SIP-Steuerung und RTP-Mediaprotocolle vom normalen Datentraffic getrennt werden",
+        "C": "Um sämtlichen Datenverkehr außer VoIP-Kommunikation zu deaktivieren",
+        "D": "Um Videodatenverkehr Vorrang gegenüber Sprachverkehr zu geben"
+      },
+      "antwort": "B",
+      "erklärung": "VoIP-Telefone nutzen VLAN-Tagging, um Sprachverkehr von normalem Datentraffic zu trennen. Dadurch können SIP-Signalisierung und RTP-Mediastreams priorisiert werden, was die Sprachqualität verbessert und Störungen durch andere Netzwerkdaten vermeidet."
     },
-    "answer": "B",
-    "explanation": "The SIP URI (Uniform Resource Identifier) is the unique identifier for SIP endpoints. It works similarly to an email address and allows clear identification and addressing of a user or device in a SIP environment."
-  }
-},
-{
-  "id": 394,
-  "de": {
-    "frage": "Wie verwenden VoIP-Telefone VLAN-Tagging?",
-    "optionen": {
-      "A": "Um sicherzustellen, dass Sprach- und Datentraffic im selben Netzwerk kombiniert werden",
-      "B": "Um sicherzustellen, dass SIP-Steuerung und RTP-Mediaprotocolle vom normalen Datentraffic getrennt werden",
-      "C": "Um sämtlichen Datenverkehr außer VoIP-Kommunikation zu deaktivieren",
-      "D": "Um Videodatenverkehr Vorrang gegenüber Sprachverkehr zu geben"
-    },
-    "antwort": "B",
-    "erklärung": "VoIP-Telefone nutzen VLAN-Tagging, um Sprachverkehr von normalem Datentraffic zu trennen. Dadurch können SIP-Signalisierung und RTP-Mediastreams priorisiert werden, was die Sprachqualität verbessert und Störungen durch andere Netzwerkdaten vermeidet."
+    "en": {
+      "question": "How do VoIP phones use VLAN tagging?",
+      "options": {
+        "A": "To ensure that voice and data traffic are combined on the same network",
+        "B": "To ensure that SIP control and RTP media protocols are segregated from normal data traffic",
+        "C": "To disable all data traffic except for VoIP communication",
+        "D": "To prioritize video traffic over voice traffic"
+      },
+      "answer": "B",
+      "explanation": "VoIP phones use VLAN tagging to separate voice traffic from normal data traffic. This allows SIP signaling and RTP media streams to be prioritized, improving call quality and preventing interference from other network data."
+    }
   },
-  "en": {
-    "question": "How do VoIP phones use VLAN tagging?",
-    "options": {
-      "A": "To ensure that voice and data traffic are combined on the same network",
-      "B": "To ensure that SIP control and RTP media protocols are segregated from normal data traffic",
-      "C": "To disable all data traffic except for VoIP communication",
-      "D": "To prioritize video traffic over voice traffic"
+  {
+    "id": 395,
+    "de": {
+      "frage": "Wie unterscheiden VoIP-Telefone Datenverkehr von Sprachverkehr?",
+      "optionen": {
+        "A": "Durch die Verwendung separater physischer Leitungen für jede Verkehrsart",
+        "B": "Durch die Konfiguration separater VLAN-IDs für Daten- und Sprachverkehr",
+        "C": "Durch die Verwendung digitaler Zertifikate nur für Sprachverkehr",
+        "D": "Durch die Priorisierung von Sprachverkehr gegenüber Datenverkehr mittels PoE"
+      },
+      "antwort": "B",
+      "erklärung": "VoIP-Telefone verwenden unterschiedliche VLAN-IDs, um Sprach- vom Datenverkehr zu trennen. Dadurch kann der Sprachverkehr priorisiert und von normalen Datenpaketen isoliert werden, was zu besserer Sprachqualität und weniger Latenz führt."
     },
-    "answer": "B",
-    "explanation": "VoIP phones use VLAN tagging to separate voice traffic from normal data traffic. This allows SIP signaling and RTP media streams to be prioritized, improving call quality and preventing interference from other network data."
-  }
-},
-{
-  "id": 395,
-  "de": {
-    "frage": "Wie unterscheiden VoIP-Telefone Datenverkehr von Sprachverkehr?",
-    "optionen": {
-      "A": "Durch die Verwendung separater physischer Leitungen für jede Verkehrsart",
-      "B": "Durch die Konfiguration separater VLAN-IDs für Daten- und Sprachverkehr",
-      "C": "Durch die Verwendung digitaler Zertifikate nur für Sprachverkehr",
-      "D": "Durch die Priorisierung von Sprachverkehr gegenüber Datenverkehr mittels PoE"
-    },
-    "antwort": "B",
-    "erklärung": "VoIP-Telefone verwenden unterschiedliche VLAN-IDs, um Sprach- vom Datenverkehr zu trennen. Dadurch kann der Sprachverkehr priorisiert und von normalen Datenpaketen isoliert werden, was zu besserer Sprachqualität und weniger Latenz führt."
+    "en": {
+      "question": "How do VoIP phones distinguish data traffic from voice traffic?",
+      "options": {
+        "A": "By using separate physical links for each type of traffic",
+        "B": "By configuring separate VLAN IDs for data and voice traffic",
+        "C": "By using digital certificates for voice traffic only",
+        "D": "By prioritizing voice traffic over data traffic using PoE"
+      },
+      "answer": "B",
+      "explanation": "VoIP phones distinguish between data and voice traffic by using separate VLAN IDs. This separation allows voice traffic to be prioritized and isolated from standard data traffic, ensuring higher call quality and reduced latency."
+    }
   },
-  "en": {
-    "question": "How do VoIP phones distinguish data traffic from voice traffic?",
-    "options": {
-      "A": "By using separate physical links for each type of traffic",
-      "B": "By configuring separate VLAN IDs for data and voice traffic",
-      "C": "By using digital certificates for voice traffic only",
-      "D": "By prioritizing voice traffic over data traffic using PoE"
+  {
+    "id": 396,
+    "de": {
+      "frage": "Was ist ein wesentlicher Unterschied zwischen einer TDM-PBX und einer VoIP-PBX?",
+      "optionen": {
+        "A": "Eine TDM-PBX kann nur Voicemail unterstützen, während eine VoIP-PBX dies nicht kann.",
+        "B": "Eine TDM-PBX wird als herstellerspezifische Hardware geliefert, während eine VoIP-PBX auch als Software implementiert werden kann.",
+        "C": "Eine VoIP-PBX benötigt für jeden Anruf einen separaten Datenkanal, während eine TDM-PBX dies nicht tut.",
+        "D": "Eine TDM-PBX verwendet das Internet für alle Anrufe, während eine VoIP-PBX das PSTN nutzt."
+      },
+      "antwort": "B",
+      "erklärung": "Eine TDM-PBX (Time-Division Multiplexed PBX) ist in der Regel herstellerspezifische Hardware und stark an physische Telefonanlagen gebunden. Eine VoIP-PBX hingegen kann flexibel als Software auf Standardservern oder virtuellen Maschinen laufen, was Skalierbarkeit und geringere Abhängigkeit von bestimmter Hardware ermöglicht."
     },
-    "answer": "B",
-    "explanation": "VoIP phones distinguish between data and voice traffic by using separate VLAN IDs. This separation allows voice traffic to be prioritized and isolated from standard data traffic, ensuring higher call quality and reduced latency."
-  }
-},
-{
-  "id": 396,
-  "de": {
-    "frage": "Was ist ein wesentlicher Unterschied zwischen einer TDM-PBX und einer VoIP-PBX?",
-    "optionen": {
-      "A": "Eine TDM-PBX kann nur Voicemail unterstützen, während eine VoIP-PBX dies nicht kann.",
-      "B": "Eine TDM-PBX wird als herstellerspezifische Hardware geliefert, während eine VoIP-PBX auch als Software implementiert werden kann.",
-      "C": "Eine VoIP-PBX benötigt für jeden Anruf einen separaten Datenkanal, während eine TDM-PBX dies nicht tut.",
-      "D": "Eine TDM-PBX verwendet das Internet für alle Anrufe, während eine VoIP-PBX das PSTN nutzt."
-    },
-    "antwort": "B",
-    "erklärung": "Eine TDM-PBX (Time-Division Multiplexed PBX) ist in der Regel herstellerspezifische Hardware und stark an physische Telefonanlagen gebunden. Eine VoIP-PBX hingegen kann flexibel als Software auf Standardservern oder virtuellen Maschinen laufen, was Skalierbarkeit und geringere Abhängigkeit von bestimmter Hardware ermöglicht."
+    "en": {
+      "question": "What is a significant difference between a TDM PBX and a VoIP PBX?",
+      "options": {
+        "A": "A TDM PBX can only support voice mail, while a VoIP PBX cannot.",
+        "B": "A TDM PBX is supplied as vendor-specific hardware, while a VoIP PBX can be implemented as software.",
+        "C": "A VoIP PBX requires a separate data channel for each call, while a TDM PBX does not.",
+        "D": "A TDM PBX uses the Internet for all calls, while a VoIP PBX uses the PSTN."
+      },
+      "answer": "B",
+      "explanation": "A TDM PBX (Time-Division Multiplexed PBX) is usually vendor-specific hardware tied to physical telephony systems, whereas a VoIP PBX can be implemented as software on standard servers or virtual machines, offering greater scalability and flexibility."
+    }
   },
-  "en": {
-    "question": "What is a significant difference between a TDM PBX and a VoIP PBX?",
-    "options": {
-      "A": "A TDM PBX can only support voice mail, while a VoIP PBX cannot.",
-      "B": "A TDM PBX is supplied as vendor-specific hardware, while a VoIP PBX can be implemented as software.",
-      "C": "A VoIP PBX requires a separate data channel for each call, while a TDM PBX does not.",
-      "D": "A TDM PBX uses the Internet for all calls, while a VoIP PBX uses the PSTN."
+  {
+    "id": 397,
+    "de": {
+      "frage": "Was ist ein wesentlicher Vorteil der Verwendung von VoIP-Technologie gegenüber herkömmlichen PSTN-Leitungen?",
+      "optionen": {
+        "A": "Höhere Gesprächskosten",
+        "B": "Begrenzte Anrufweiterleitungsoptionen",
+        "C": "Möglichkeit, Sprache über IP-Netzwerke zu übertragen",
+        "D": "Erfordernis separater Sprach- und Datenkanäle"
+      },
+      "antwort": "C",
+      "erklärung": "Der entscheidende Vorteil von VoIP gegenüber PSTN ist die Fähigkeit, Sprache über IP-Netzwerke zu übertragen. Dies ermöglicht mehr Flexibilität, geringere Kosten, bessere Skalierbarkeit und die Integration zusätzlicher Dienste wie Videotelefonie oder Messaging."
     },
-    "answer": "B",
-    "explanation": "A TDM PBX (Time-Division Multiplexed PBX) is usually vendor-specific hardware tied to physical telephony systems, whereas a VoIP PBX can be implemented as software on standard servers or virtual machines, offering greater scalability and flexibility."
-  }
-},
-{
-  "id": 397,
-  "de": {
-    "frage": "Was ist ein wesentlicher Vorteil der Verwendung von VoIP-Technologie gegenüber herkömmlichen PSTN-Leitungen?",
-    "optionen": {
-      "A": "Höhere Gesprächskosten",
-      "B": "Begrenzte Anrufweiterleitungsoptionen",
-      "C": "Möglichkeit, Sprache über IP-Netzwerke zu übertragen",
-      "D": "Erfordernis separater Sprach- und Datenkanäle"
-    },
-    "antwort": "C",
-    "erklärung": "Der entscheidende Vorteil von VoIP gegenüber PSTN ist die Fähigkeit, Sprache über IP-Netzwerke zu übertragen. Dies ermöglicht mehr Flexibilität, geringere Kosten, bessere Skalierbarkeit und die Integration zusätzlicher Dienste wie Videotelefonie oder Messaging."
+    "en": {
+      "question": "What is a key advantage of using VoIP technology over traditional PSTN lines?",
+      "options": {
+        "A": "Higher call costs",
+        "B": "Limited call routing options",
+        "C": "Ability to transmit voice over IP networks",
+        "D": "Requirement for separate voice and data channels"
+      },
+      "answer": "C",
+      "explanation": "The key advantage of VoIP over PSTN is the ability to transmit voice over IP networks. This allows for greater flexibility, lower costs, better scalability, and integration of additional services such as video calls and messaging."
+    }
   },
-  "en": {
-    "question": "What is a key advantage of using VoIP technology over traditional PSTN lines?",
-    "options": {
-      "A": "Higher call costs",
-      "B": "Limited call routing options",
-      "C": "Ability to transmit voice over IP networks",
-      "D": "Requirement for separate voice and data channels"
+  {
+    "id": 398,
+    "de": {
+      "frage": "Was ist der Zweck des STARTTLS-Befehls in SMTP?",
+      "optionen": {
+        "A": "Um die Verbindung auf einen unsicheren Zustand herunterzustufen",
+        "B": "Um den gesamten Inhalt einer E-Mail-Nachricht zu verschlüsseln",
+        "C": "Um eine bestehende unsichere Verbindung auf TLS hochzustufen",
+        "D": "Um ein neues E-Mail-Konto zu erstellen"
+      },
+      "antwort": "C",
+      "erklärung": "Der STARTTLS-Befehl in SMTP wird verwendet, um eine bereits bestehende, unverschlüsselte Verbindung in eine TLS-verschlüsselte Verbindung umzuwandeln. Dadurch wird die Kommunikation sicherer, ohne dass eine neue Verbindung aufgebaut werden muss."
     },
-    "answer": "C",
-    "explanation": "The key advantage of VoIP over PSTN is the ability to transmit voice over IP networks. This allows for greater flexibility, lower costs, better scalability, and integration of additional services such as video calls and messaging."
-  }
-},
-{
-  "id": 398,
-  "de": {
-    "frage": "Was ist der Zweck des STARTTLS-Befehls in SMTP?",
-    "optionen": {
-      "A": "Um die Verbindung auf einen unsicheren Zustand herunterzustufen",
-      "B": "Um den gesamten Inhalt einer E-Mail-Nachricht zu verschlüsseln",
-      "C": "Um eine bestehende unsichere Verbindung auf TLS hochzustufen",
-      "D": "Um ein neues E-Mail-Konto zu erstellen"
-    },
-    "antwort": "C",
-    "erklärung": "Der STARTTLS-Befehl in SMTP wird verwendet, um eine bereits bestehende, unverschlüsselte Verbindung in eine TLS-verschlüsselte Verbindung umzuwandeln. Dadurch wird die Kommunikation sicherer, ohne dass eine neue Verbindung aufgebaut werden muss."
+    "en": {
+      "question": "What is the purpose of the STARTTLS command in SMTP?",
+      "options": {
+        "A": "To downgrade the connection to an unsecure state",
+        "B": "To encrypt the entire email message content",
+        "C": "To upgrade an existing unsecure connection to use TLS",
+        "D": "To create a new email account"
+      },
+      "answer": "C",
+      "explanation": "The STARTTLS command in SMTP is used to upgrade an existing unencrypted connection to a TLS-encrypted connection. This enhances security without requiring a new connection to be established."
+    }
   },
-  "en": {
-    "question": "What is the purpose of the STARTTLS command in SMTP?",
-    "options": {
-      "A": "To downgrade the connection to an unsecure state",
-      "B": "To encrypt the entire email message content",
-      "C": "To upgrade an existing unsecure connection to use TLS",
-      "D": "To create a new email account"
+  {
+    "id": 399,
+    "de": {
+      "frage": "Was verwendet SMTP, um die IP-Adresse des SMTP-Servers des Empfängers zu ermitteln?",
+      "optionen": {
+        "A": "Das E-Mail-Passwort des Empfängers",
+        "B": "Den Domain-Teil der E-Mail-Adresse des Empfängers",
+        "C": "Die IP-Adresse des Absenders",
+        "D": "Die physische Adresse des Empfängers"
+      },
+      "antwort": "B",
+      "erklärung": "SMTP verwendet den Domain-Namen in der E-Mail-Adresse des Empfängers (z. B. '@example.com'), um über DNS eine MX- oder A-Record-Abfrage durchzuführen. Dadurch wird die IP-Adresse des Mailservers des Empfängers ermittelt."
     },
-    "answer": "C",
-    "explanation": "The STARTTLS command in SMTP is used to upgrade an existing unencrypted connection to a TLS-encrypted connection. This enhances security without requiring a new connection to be established."
-  }
-},
-{
-  "id": 399,
-  "de": {
-    "frage": "Was verwendet SMTP, um die IP-Adresse des SMTP-Servers des Empfängers zu ermitteln?",
-    "optionen": {
-      "A": "Das E-Mail-Passwort des Empfängers",
-      "B": "Den Domain-Teil der E-Mail-Adresse des Empfängers",
-      "C": "Die IP-Adresse des Absenders",
-      "D": "Die physische Adresse des Empfängers"
-    },
-    "antwort": "B",
-    "erklärung": "SMTP verwendet den Domain-Namen in der E-Mail-Adresse des Empfängers (z. B. '@example.com'), um über DNS eine MX- oder A-Record-Abfrage durchzuführen. Dadurch wird die IP-Adresse des Mailservers des Empfängers ermittelt."
+    "en": {
+      "question": "What does SMTP use to discover the IP address of the recipient's SMTP server?",
+      "options": {
+        "A": "The recipient's email password",
+        "B": "The domain name part of the recipient's email address",
+        "C": "The sender's IP address",
+        "D": "The recipient's physical address"
+      },
+      "answer": "B",
+      "explanation": "SMTP uses the domain portion of the recipient's email address (e.g., '@example.com') to perform a DNS lookup for MX or A records. This resolves the IP address of the recipient's mail server."
+    }
   },
-  "en": {
-    "question": "What does SMTP use to discover the IP address of the recipient's SMTP server?",
-    "options": {
-      "A": "The recipient's email password",
-      "B": "The domain name part of the recipient's email address",
-      "C": "The sender's IP address",
-      "D": "The recipient's physical address"
+  {
+    "id": 400,
+    "de": {
+      "frage": "Welches Protokoll wird in einer Windows-Umgebung typischerweise verwendet, um auf Microsoft Exchange-Postfächer zuzugreifen?",
+      "optionen": {
+        "A": "IMAP",
+        "B": "SMTP",
+        "C": "MAPI",
+        "D": "HTTPS"
+      },
+      "antwort": "C",
+      "erklärung": "In Windows-Umgebungen greifen Outlook-Clients in der Regel über MAPI (Messaging Application Programming Interface) auf Exchange-Postfächer zu. MAPI ist speziell für den Zugriff auf Microsoft Exchange entwickelt und bietet erweiterte Funktionen wie Kalender, Kontakte und Aufgaben, die über IMAP oder SMTP nicht verfügbar sind."
     },
-    "answer": "B",
-    "explanation": "SMTP uses the domain portion of the recipient's email address (e.g., '@example.com') to perform a DNS lookup for MX or A records. This resolves the IP address of the recipient's mail server."
-  }
-},
-{
-  "id": 400,
-  "de": {
-    "frage": "Welches Protokoll wird in einer Windows-Umgebung typischerweise verwendet, um auf Microsoft Exchange-Postfächer zuzugreifen?",
-    "optionen": {
-      "A": "IMAP",
-      "B": "SMTP",
-      "C": "MAPI",
-      "D": "HTTPS"
-    },
-    "antwort": "C",
-    "erklärung": "In Windows-Umgebungen greifen Outlook-Clients in der Regel über MAPI (Messaging Application Programming Interface) auf Exchange-Postfächer zu. MAPI ist speziell für den Zugriff auf Microsoft Exchange entwickelt und bietet erweiterte Funktionen wie Kalender, Kontakte und Aufgaben, die über IMAP oder SMTP nicht verfügbar sind."
+    "en": {
+      "question": "In a Windows environment, which protocol is typically used to access Microsoft Exchange mailboxes?",
+      "options": {
+        "A": "IMAP",
+        "B": "SMTP",
+        "C": "MAPI",
+        "D": "HTTPS"
+      },
+      "answer": "C",
+      "explanation": "In Windows environments, Outlook clients typically use MAPI (Messaging Application Programming Interface) to access Exchange mailboxes. MAPI is specifically designed for Microsoft Exchange and supports advanced features such as calendars, contacts, and tasks, which are not available with IMAP or SMTP."
+    }
   },
-  "en": {
-    "question": "In a Windows environment, which protocol is typically used to access Microsoft Exchange mailboxes?",
-    "options": {
-      "A": "IMAP",
-      "B": "SMTP",
-      "C": "MAPI",
-      "D": "HTTPS"
+  {
+    "id": 401,
+    "de": {
+      "frage": "Was ist einer der Hauptzwecke des Internet Message Access Protocols (IMAP)?",
+      "optionen": {
+        "A": "E-Mails zu verschlüsseln",
+        "B": "E-Mails an Hosts zuzustellen, die permanent verfügbar sind",
+        "C": "Ein Postfach auf einem Server zu verwalten",
+        "D": "Eine Verbindung zu Webservern herzustellen"
+      },
+      "antwort": "C",
+      "erklärung": "IMAP (Internet Message Access Protocol) dient in erster Linie dazu, Postfächer auf einem Mailserver zu verwalten. Benutzer können E-Mails direkt auf dem Server lesen, verschieben oder löschen, ohne sie lokal herunterladen zu müssen. Dies ermöglicht den Zugriff auf dasselbe Postfach von verschiedenen Geräten aus."
     },
-    "answer": "C",
-    "explanation": "In Windows environments, Outlook clients typically use MAPI (Messaging Application Programming Interface) to access Exchange mailboxes. MAPI is specifically designed for Microsoft Exchange and supports advanced features such as calendars, contacts, and tasks, which are not available with IMAP or SMTP."
-  }
-},
-{
-  "id": 401,
-  "de": {
-    "frage": "Was ist einer der Hauptzwecke des Internet Message Access Protocols (IMAP)?",
-    "optionen": {
-      "A": "E-Mails zu verschlüsseln",
-      "B": "E-Mails an Hosts zuzustellen, die permanent verfügbar sind",
-      "C": "Ein Postfach auf einem Server zu verwalten",
-      "D": "Eine Verbindung zu Webservern herzustellen"
-    },
-    "antwort": "C",
-    "erklärung": "IMAP (Internet Message Access Protocol) dient in erster Linie dazu, Postfächer auf einem Mailserver zu verwalten. Benutzer können E-Mails direkt auf dem Server lesen, verschieben oder löschen, ohne sie lokal herunterladen zu müssen. Dies ermöglicht den Zugriff auf dasselbe Postfach von verschiedenen Geräten aus."
+    "en": {
+      "question": "What is one of the primary purposes of the Internet Message Access Protocol (IMAP)?",
+      "options": {
+        "A": "To encrypt email messages",
+        "B": "To deliver email to hosts that are permanently available",
+        "C": "To manage a mailbox on a server",
+        "D": "To connect to web servers"
+      },
+      "answer": "C",
+      "explanation": "IMAP (Internet Message Access Protocol) is primarily used to manage mailboxes on a mail server. Users can read, move, or delete emails directly on the server without downloading them locally, allowing consistent access to the same mailbox from multiple devices."
+    }
   },
-  "en": {
-    "question": "What is one of the primary purposes of the Internet Message Access Protocol (IMAP)?",
-    "options": {
-      "A": "To encrypt email messages",
-      "B": "To deliver email to hosts that are permanently available",
-      "C": "To manage a mailbox on a server",
-      "D": "To connect to web servers"
+  {
+    "id": 402,
+    "de": {
+      "frage": "Was misst das Recovery Time Objective (RTO) in der Notfallwiederherstellungsplanung?",
+      "optionen": {
+        "A": "Das maximal akzeptable Datenverlustvolumen",
+        "B": "Die Zeit, die benötigt wird, um einen Systemausfall zu erkennen",
+        "C": "Die Zeitspanne nach einer Katastrophe, innerhalb derer ein System wiederhergestellt sein muss",
+        "D": "Die Zeit, die für die Durchführung von Systemwartungen benötigt wird"
+      },
+      "antwort": "C",
+      "erklärung": "Das RTO (Recovery Time Objective) gibt den Zielzeitraum an, innerhalb dessen ein System nach einem Ausfall oder einer Katastrophe wieder funktionsfähig sein muss. Es beschreibt also, wie lange ein Unternehmen den Ausfall maximal tolerieren kann, bevor erhebliche Auswirkungen entstehen."
     },
-    "answer": "C",
-    "explanation": "IMAP (Internet Message Access Protocol) is primarily used to manage mailboxes on a mail server. Users can read, move, or delete emails directly on the server without downloading them locally, allowing consistent access to the same mailbox from multiple devices."
-  }
-},
-{
-  "id": 402,
-  "de": {
-    "frage": "Was misst das Recovery Time Objective (RTO) in der Notfallwiederherstellungsplanung?",
-    "optionen": {
-      "A": "Das maximal akzeptable Datenverlustvolumen",
-      "B": "Die Zeit, die benötigt wird, um einen Systemausfall zu erkennen",
-      "C": "Die Zeitspanne nach einer Katastrophe, innerhalb derer ein System wiederhergestellt sein muss",
-      "D": "Die Zeit, die für die Durchführung von Systemwartungen benötigt wird"
-    },
-    "antwort": "C",
-    "erklärung": "Das RTO (Recovery Time Objective) gibt den Zielzeitraum an, innerhalb dessen ein System nach einem Ausfall oder einer Katastrophe wieder funktionsfähig sein muss. Es beschreibt also, wie lange ein Unternehmen den Ausfall maximal tolerieren kann, bevor erhebliche Auswirkungen entstehen."
+    "en": {
+      "question": "What does Recovery Time Objective (RTO) measure in disaster recovery planning?",
+      "options": {
+        "A": "The maximum amount of data loss that is acceptable",
+        "B": "The time it takes to detect a system failure",
+        "C": "The time following a disaster within which a system must be restored",
+        "D": "The amount of time needed to perform system maintenance"
+      },
+      "answer": "C",
+      "explanation": "The RTO (Recovery Time Objective) defines the target timeframe within which a system must be restored after a failure or disaster. It reflects how long an organization can tolerate downtime before significant impact occurs."
+    }
   },
-  "en": {
-    "question": "What does Recovery Time Objective (RTO) measure in disaster recovery planning?",
-    "options": {
-      "A": "The maximum amount of data loss that is acceptable",
-      "B": "The time it takes to detect a system failure",
-      "C": "The time following a disaster within which a system must be restored",
-      "D": "The amount of time needed to perform system maintenance"
+  {
+    "id": 403,
+    "de": {
+      "frage": "Was bedeutet eine Verfügbarkeit von „fünf Neunen“ (99,999 %) in der Notfallwiederherstellung?",
+      "optionen": {
+        "A": "Das System ist zu 99,999 % der Zeit nicht verfügbar.",
+        "B": "Das System ist zu 99,999 % der Zeit verfügbar.",
+        "C": "Das System erfordert zu 99,999 % der Zeit Wartung.",
+        "D": "Das System kann sich in 99,999 % der Fälle von jeder Katastrophe erholen."
+      },
+      "antwort": "B",
+      "erklärung": "Eine Verfügbarkeit von 99,999 % („five-nines“) bedeutet, dass ein System praktisch durchgehend verfügbar ist – mit einer maximalen Ausfallzeit von nur etwa 5 Minuten pro Jahr. Dies stellt ein extrem hohes Maß an Zuverlässigkeit dar."
     },
-    "answer": "C",
-    "explanation": "The RTO (Recovery Time Objective) defines the target timeframe within which a system must be restored after a failure or disaster. It reflects how long an organization can tolerate downtime before significant impact occurs."
-  }
-},
-{
-  "id": 403,
-  "de": {
-    "frage": "Was bedeutet eine Verfügbarkeit von „fünf Neunen“ (99,999 %) in der Notfallwiederherstellung?",
-    "optionen": {
-      "A": "Das System ist zu 99,999 % der Zeit nicht verfügbar.",
-      "B": "Das System ist zu 99,999 % der Zeit verfügbar.",
-      "C": "Das System erfordert zu 99,999 % der Zeit Wartung.",
-      "D": "Das System kann sich in 99,999 % der Fälle von jeder Katastrophe erholen."
-    },
-    "antwort": "B",
-    "erklärung": "Eine Verfügbarkeit von 99,999 % („five-nines“) bedeutet, dass ein System praktisch durchgehend verfügbar ist – mit einer maximalen Ausfallzeit von nur etwa 5 Minuten pro Jahr. Dies stellt ein extrem hohes Maß an Zuverlässigkeit dar."
+    "en": {
+      "question": "What does an availability of 'five-nines' (99.999%) signify in disaster recovery?",
+      "options": {
+        "A": "The system is unavailable for 99.999% of the time.",
+        "B": "The system is available for 99.999% of the time.",
+        "C": "The system requires maintenance 99.999% of the time.",
+        "D": "The system can recover from any disaster in 99.999% of cases."
+      },
+      "answer": "B",
+      "explanation": "An availability of 99.999% ('five-nines') means that a system is essentially always available, with a maximum downtime of about 5 minutes per year. This represents an extremely high level of reliability."
+    }
   },
-  "en": {
-    "question": "What does an availability of 'five-nines' (99.999%) signify in disaster recovery?",
-    "options": {
-      "A": "The system is unavailable for 99.999% of the time.",
-      "B": "The system is available for 99.999% of the time.",
-      "C": "The system requires maintenance 99.999% of the time.",
-      "D": "The system can recover from any disaster in 99.999% of cases."
+  {
+    "id": 404,
+    "de": {
+      "frage": "Was ist die Hauptschwierigkeit bei gegenseitigen Vereinbarungen zur Notfallwiederherstellung?",
+      "optionen": {
+        "A": "Es ist zu teuer.",
+        "B": "Es ist einfach zu planen und einzurichten.",
+        "C": "Es ist komplex zu planen und einzurichten.",
+        "D": "Es bietet keine gegenseitige Unterstützung."
+      },
+      "antwort": "C",
+      "erklärung": "Gegenseitige Vereinbarungen (reciprocal arrangements) zur Notfallwiederherstellung sind schwer umzusetzen, da Abstimmungen, Ressourcenplanung und Testbarkeit sehr komplex werden. Zwei Organisationen müssen sicherstellen, dass im Katastrophenfall genügend Kapazitäten und kompatible Systeme bereitstehen – was den Planungs- und Einrichtungsaufwand erheblich erhöht."
     },
-    "answer": "B",
-    "explanation": "An availability of 99.999% ('five-nines') means that a system is essentially always available, with a maximum downtime of about 5 minutes per year. This represents an extremely high level of reliability."
-  }
-},
-{
-  "id": 404,
-  "de": {
-    "frage": "Was ist die Hauptschwierigkeit bei gegenseitigen Vereinbarungen zur Notfallwiederherstellung?",
-    "optionen": {
-      "A": "Es ist zu teuer.",
-      "B": "Es ist einfach zu planen und einzurichten.",
-      "C": "Es ist komplex zu planen und einzurichten.",
-      "D": "Es bietet keine gegenseitige Unterstützung."
-    },
-    "antwort": "C",
-    "erklärung": "Gegenseitige Vereinbarungen (reciprocal arrangements) zur Notfallwiederherstellung sind schwer umzusetzen, da Abstimmungen, Ressourcenplanung und Testbarkeit sehr komplex werden. Zwei Organisationen müssen sicherstellen, dass im Katastrophenfall genügend Kapazitäten und kompatible Systeme bereitstehen – was den Planungs- und Einrichtungsaufwand erheblich erhöht."
+    "en": {
+      "question": "What is the primary challenge of entering into reciprocal arrangements for disaster recovery?",
+      "options": {
+        "A": "It is too expensive.",
+        "B": "It is simple to plan and set up.",
+        "C": "It is complex to plan and set up.",
+        "D": "It does not provide mutual support."
+      },
+      "answer": "C",
+      "explanation": "Reciprocal arrangements for disaster recovery are difficult to implement because coordinating, planning resources, and ensuring testability is highly complex. Both organizations must guarantee sufficient capacity and system compatibility during a disaster, which makes setup and planning challenging."
+    }
   },
-  "en": {
-    "question": "What is the primary challenge of entering into reciprocal arrangements for disaster recovery?",
-    "options": {
-      "A": "It is too expensive.",
-      "B": "It is simple to plan and set up.",
-      "C": "It is complex to plan and set up.",
-      "D": "It does not provide mutual support."
+  {
+    "id": 405,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen einem Hot Site und einem Warm Site?",
+      "optionen": {
+        "A": "Ein Hot Site erfordert das Laden des aktuellsten Datensatzes.",
+        "B": "Ein Warm Site ist sofort einsatzbereit.",
+        "C": "Ein Hot Site ist ein leeres Gebäude.",
+        "D": "Ein Warm Site erfordert das Laden des aktuellsten Datensatzes."
+      },
+      "antwort": "D",
+      "erklärung": "Der Hauptunterschied besteht darin, dass ein Hot Site sofort einsatzbereit ist, da Systeme und aktuelle Daten bereits vorhanden sind. Ein Warm Site dagegen verfügt zwar über die notwendige Hardware und grundlegende Infrastruktur, benötigt jedoch das Laden der aktuellsten Daten, bevor es einsatzfähig ist."
     },
-    "answer": "C",
-    "explanation": "Reciprocal arrangements for disaster recovery are difficult to implement because coordinating, planning resources, and ensuring testability is highly complex. Both organizations must guarantee sufficient capacity and system compatibility during a disaster, which makes setup and planning challenging."
-  }
-},
-{
-  "id": 405,
-  "de": {
-    "frage": "Was ist der Hauptunterschied zwischen einem Hot Site und einem Warm Site?",
-    "optionen": {
-      "A": "Ein Hot Site erfordert das Laden des aktuellsten Datensatzes.",
-      "B": "Ein Warm Site ist sofort einsatzbereit.",
-      "C": "Ein Hot Site ist ein leeres Gebäude.",
-      "D": "Ein Warm Site erfordert das Laden des aktuellsten Datensatzes."
-    },
-    "antwort": "D",
-    "erklärung": "Der Hauptunterschied besteht darin, dass ein Hot Site sofort einsatzbereit ist, da Systeme und aktuelle Daten bereits vorhanden sind. Ein Warm Site dagegen verfügt zwar über die notwendige Hardware und grundlegende Infrastruktur, benötigt jedoch das Laden der aktuellsten Daten, bevor es einsatzfähig ist."
+    "en": {
+      "question": "What is the main difference between a hot site and a warm site?",
+      "options": {
+        "A": "A hot site requires the latest data set to be loaded.",
+        "B": "A warm site is ready to deploy immediately.",
+        "C": "A hot site is an empty building.",
+        "D": "A warm site requires the latest data set to be loaded."
+      },
+      "answer": "D",
+      "explanation": "The main difference is that a hot site is fully operational with systems and current data already in place, making it immediately available. A warm site has the required hardware and infrastructure but still needs the latest data set to be loaded before it can become fully functional."
+    }
   },
-  "en": {
-    "question": "What is the main difference between a hot site and a warm site?",
-    "options": {
-      "A": "A hot site requires the latest data set to be loaded.",
-      "B": "A warm site is ready to deploy immediately.",
-      "C": "A hot site is an empty building.",
-      "D": "A warm site requires the latest data set to be loaded."
+  {
+    "id": 406,
+    "de": {
+      "frage": "Wofür steht MTTF und wie unterscheidet es sich von MTBF?",
+      "optionen": {
+        "A": "Mean Time to Failure; MTTF wird für nicht reparierbare Komponenten verwendet, während MTBF für reparierbare gilt.",
+        "B": "Maximum Time to Fix; MTTF wird für reparierbare Komponenten verwendet, während MTBF für nicht reparierbare gilt.",
+        "C": "Mean Time to Fix; MTTF und MTBF sind austauschbare Begriffe.",
+        "D": "Maximum Time to Failure; MTTF wird verwendet, um die längste Betriebszeit vorherzusagen, während MTBF ein Durchschnitt ist."
+      },
+      "antwort": "A",
+      "erklärung": "MTTF (Mean Time to Failure) beschreibt die durchschnittliche Betriebsdauer bis zum Ausfall nicht reparierbarer Teile. MTBF (Mean Time Between Failures) wird für reparierbare Systeme verwendet und misst die durchschnittliche Zeit zwischen zwei aufeinanderfolgenden Ausfällen nach Reparaturen."
     },
-    "answer": "D",
-    "explanation": "The main difference is that a hot site is fully operational with systems and current data already in place, making it immediately available. A warm site has the required hardware and infrastructure but still needs the latest data set to be loaded before it can become fully functional."
-  }
-},
-{
-  "id": 406,
-  "de": {
-    "frage": "Wofür steht MTTF und wie unterscheidet es sich von MTBF?",
-    "optionen": {
-      "A": "Mean Time to Failure; MTTF wird für nicht reparierbare Komponenten verwendet, während MTBF für reparierbare gilt.",
-      "B": "Maximum Time to Fix; MTTF wird für reparierbare Komponenten verwendet, während MTBF für nicht reparierbare gilt.",
-      "C": "Mean Time to Fix; MTTF und MTBF sind austauschbare Begriffe.",
-      "D": "Maximum Time to Failure; MTTF wird verwendet, um die längste Betriebszeit vorherzusagen, während MTBF ein Durchschnitt ist."
-    },
-    "antwort": "A",
-    "erklärung": "MTTF (Mean Time to Failure) beschreibt die durchschnittliche Betriebsdauer bis zum Ausfall nicht reparierbarer Teile. MTBF (Mean Time Between Failures) wird für reparierbare Systeme verwendet und misst die durchschnittliche Zeit zwischen zwei aufeinanderfolgenden Ausfällen nach Reparaturen."
+    "en": {
+      "question": "What does MTTF stand for, and how is it different from MTBF?",
+      "options": {
+        "A": "Mean Time to Failure; MTTF is used for non-repairable components, while MTBF is for repairable ones.",
+        "B": "Maximum Time to Fix; MTTF is used for repairable components, while MTBF is for non-repairable ones.",
+        "C": "Mean Time to Fix; MTTF and MTBF are interchangeable terms.",
+        "D": "Maximum Time to Failure; MTTF is used for predicting the longest operational time, while MTBF is an average."
+      },
+      "answer": "A",
+      "explanation": "MTTF (Mean Time to Failure) represents the average operating time until failure for non-repairable components. MTBF (Mean Time Between Failures) is used for repairable systems and measures the average time between two consecutive failures after repairs."
+    }
   },
-  "en": {
-    "question": "What does MTTF stand for, and how is it different from MTBF?",
-    "options": {
-      "A": "Mean Time to Failure; MTTF is used for non-repairable components, while MTBF is for repairable ones.",
-      "B": "Maximum Time to Fix; MTTF is used for repairable components, while MTBF is for non-repairable ones.",
-      "C": "Mean Time to Fix; MTTF and MTBF are interchangeable terms.",
-      "D": "Maximum Time to Failure; MTTF is used for predicting the longest operational time, while MTBF is an average."
+  {
+    "id": 407,
+    "de": {
+      "frage": "Welche der folgenden Komponenten gehört NICHT zu einer vollständig redundanten Serverkonfiguration?",
+      "optionen": {
+        "A": "Mehrere Netzteile",
+        "B": "Eine einzelne Netzwerkkarte",
+        "C": "Redundanter Speicher",
+        "D": "Mehrere Lüfter"
+      },
+      "antwort": "B",
+      "erklärung": "Eine vollständig redundante Serverkonfiguration setzt auf Redundanz in allen kritischen Bereichen: Stromversorgung, Netzwerk, Speicher und Kühlung. Eine einzelne Netzwerkkarte stellt einen Single Point of Failure dar und gehört daher nicht zu einer redundanten Konfiguration."
     },
-    "answer": "A",
-    "explanation": "MTTF (Mean Time to Failure) represents the average operating time until failure for non-repairable components. MTBF (Mean Time Between Failures) is used for repairable systems and measures the average time between two consecutive failures after repairs."
-  }
-},
-{
-  "id": 407,
-  "de": {
-    "frage": "Welche der folgenden Komponenten gehört NICHT zu einer vollständig redundanten Serverkonfiguration?",
-    "optionen": {
-      "A": "Mehrere Netzteile",
-      "B": "Eine einzelne Netzwerkkarte",
-      "C": "Redundanter Speicher",
-      "D": "Mehrere Lüfter"
-    },
-    "antwort": "B",
-    "erklärung": "Eine vollständig redundante Serverkonfiguration setzt auf Redundanz in allen kritischen Bereichen: Stromversorgung, Netzwerk, Speicher und Kühlung. Eine einzelne Netzwerkkarte stellt einen Single Point of Failure dar und gehört daher nicht zu einer redundanten Konfiguration."
+    "en": {
+      "question": "Which of the following is NOT a component of a fully redundant server configuration?",
+      "options": {
+        "A": "Multiple power supplies",
+        "B": "Single network card",
+        "C": "Redundant storage",
+        "D": "Multiple cooling fans"
+      },
+      "answer": "B",
+      "explanation": "A fully redundant server configuration includes redundancy across all critical areas: power, network, storage, and cooling. A single network card introduces a single point of failure, so it is not part of a fully redundant setup."
+    }
   },
-  "en": {
-    "question": "Which of the following is NOT a component of a fully redundant server configuration?",
-    "options": {
-      "A": "Multiple power supplies",
-      "B": "Single network card",
-      "C": "Redundant storage",
-      "D": "Multiple cooling fans"
+  {
+    "id": 408,
+    "de": {
+      "frage": "Welcher Begriff wird in HSRP verwendet, um die Gruppe von Routern zu beschreiben, die zusammen als ein einzelnes Standard-Gateway arbeiten?",
+      "optionen": {
+        "A": "Active Group",
+        "B": "Standby Group",
+        "C": "Virtual Group",
+        "D": "Backup Group"
+      },
+      "antwort": "B",
+      "erklärung": "In HSRP (Hot Standby Router Protocol) wird eine Gruppe von Routern als 'Virtual Group' bezeichnet. Diese Router konfigurieren eine virtuelle IP- und MAC-Adresse, die Clients als Standard-Gateway verwenden. Innerhalb der Gruppe ist ein Router aktiv, während die anderen als Standby bereitstehen."
     },
-    "answer": "B",
-    "explanation": "A fully redundant server configuration includes redundancy across all critical areas: power, network, storage, and cooling. A single network card introduces a single point of failure, so it is not part of a fully redundant setup."
-  }
-},
-{
-  "id": 408,
-  "de": {
-    "frage": "Welcher Begriff wird in HSRP verwendet, um die Gruppe von Routern zu beschreiben, die zusammen als ein einzelnes Standard-Gateway arbeiten?",
-    "optionen": {
-      "A": "Active Group",
-      "B": "Standby Group",
-      "C": "Virtual Group",
-      "D": "Backup Group"
-    },
-    "antwort": "B",
-    "erklärung": "In HSRP (Hot Standby Router Protocol) wird eine Gruppe von Routern als 'Virtual Group' bezeichnet. Diese Router konfigurieren eine virtuelle IP- und MAC-Adresse, die Clients als Standard-Gateway verwenden. Innerhalb der Gruppe ist ein Router aktiv, während die anderen als Standby bereitstehen."
+    "en": {
+      "question": "In HSRP, what term is used to describe the group of routers configured to work together as a single default gateway?",
+      "options": {
+        "A": "Active group",
+        "B": "Standby group",
+        "C": "Virtual group",
+        "D": "Backup group"
+      },
+      "answer": "B",
+      "explanation": "In HSRP (Hot Standby Router Protocol), the group of routers working together as a single default gateway is called a 'Virtual Group'. The group shares a virtual IP and MAC address, which clients use as their gateway. One router is active, and others remain in standby mode."
+    }
   },
-  "en": {
-    "question": "In HSRP, what term is used to describe the group of routers configured to work together as a single default gateway?",
-    "options": {
-      "A": "Active group",
-      "B": "Standby group",
-      "C": "Virtual group",
-      "D": "Backup group"
+  {
+    "id": 409,
+    "de": {
+      "frage": "Welches FHRP ist für eine Active/Standby-Konfiguration ausgelegt?",
+      "optionen": {
+        "A": "GLBP",
+        "B": "VRRP",
+        "C": "HSRP",
+        "D": "OSPF"
+      },
+      "antwort": "C",
+      "erklärung": "HSRP (Hot Standby Router Protocol) ist ein First Hop Redundancy Protocol, das in einer Active/Standby-Konfiguration arbeitet. Ein Router übernimmt die aktive Rolle und leitet den gesamten Traffic, während der andere im Standby bleibt und bei Ausfall des aktiven Routers übernimmt."
     },
-    "answer": "B",
-    "explanation": "In HSRP (Hot Standby Router Protocol), the group of routers working together as a single default gateway is called a 'Virtual Group'. The group shares a virtual IP and MAC address, which clients use as their gateway. One router is active, and others remain in standby mode."
-  }
-},
-{
-  "id": 409,
-  "de": {
-    "frage": "Welches FHRP ist für eine Active/Standby-Konfiguration ausgelegt?",
-    "optionen": {
-      "A": "GLBP",
-      "B": "VRRP",
-      "C": "HSRP",
-      "D": "OSPF"
-    },
-    "antwort": "C",
-    "erklärung": "HSRP (Hot Standby Router Protocol) ist ein First Hop Redundancy Protocol, das in einer Active/Standby-Konfiguration arbeitet. Ein Router übernimmt die aktive Rolle und leitet den gesamten Traffic, während der andere im Standby bleibt und bei Ausfall des aktiven Routers übernimmt."
+    "en": {
+      "question": "Which FHRP is designed to work in an active/standby configuration?",
+      "options": {
+        "A": "GLBP",
+        "B": "VRRP",
+        "C": "HSRP",
+        "D": "OSPF"
+      },
+      "answer": "C",
+      "explanation": "HSRP (Hot Standby Router Protocol) is a First Hop Redundancy Protocol that operates in an active/standby configuration. One router serves as active and forwards all traffic, while another remains in standby to take over if the active router fails."
+    }
   },
-  "en": {
-    "question": "Which FHRP is designed to work in an active/standby configuration?",
-    "options": {
-      "A": "GLBP",
-      "B": "VRRP",
-      "C": "HSRP",
-      "D": "OSPF"
+  {
+    "id": 410,
+    "de": {
+      "frage": "Was ist eine virtuelle IP im Kontext von Hochverfügbarkeits-Clustern?",
+      "optionen": {
+        "A": "Eine eindeutige IP-Adresse, die jedem Knoten im Cluster zugewiesen ist.",
+        "B": "Eine gemeinsame oder 'floating' Adresse, die für den Zugriff auf den vom Cluster bereitgestellten Dienst verwendet wird.",
+        "C": "Die private IP-Adresse, die für die Verwaltung der Clusterknoten verwendet wird.",
+        "D": "Eine IP-Adresse, die ausschließlich für Lastverteilung verwendet wird."
+      },
+      "antwort": "B",
+      "erklärung": "Eine virtuelle IP (VIP) ist eine gemeinsam genutzte oder 'floating' Adresse, die in Hochverfügbarkeits-Clustern verwendet wird. Unabhängig davon, welcher Knoten aktiv ist, greifen Clients über diese IP auf den Dienst zu. Im Falle eines Failovers wird die VIP automatisch auf den nächsten aktiven Knoten verschoben."
     },
-    "answer": "C",
-    "explanation": "HSRP (Hot Standby Router Protocol) is a First Hop Redundancy Protocol that operates in an active/standby configuration. One router serves as active and forwards all traffic, while another remains in standby to take over if the active router fails."
-  }
-},
-{
-  "id": 410,
-  "de": {
-    "frage": "Was ist eine virtuelle IP im Kontext von Hochverfügbarkeits-Clustern?",
-    "optionen": {
-      "A": "Eine eindeutige IP-Adresse, die jedem Knoten im Cluster zugewiesen ist.",
-      "B": "Eine gemeinsame oder 'floating' Adresse, die für den Zugriff auf den vom Cluster bereitgestellten Dienst verwendet wird.",
-      "C": "Die private IP-Adresse, die für die Verwaltung der Clusterknoten verwendet wird.",
-      "D": "Eine IP-Adresse, die ausschließlich für Lastverteilung verwendet wird."
-    },
-    "antwort": "B",
-    "erklärung": "Eine virtuelle IP (VIP) ist eine gemeinsam genutzte oder 'floating' Adresse, die in Hochverfügbarkeits-Clustern verwendet wird. Unabhängig davon, welcher Knoten aktiv ist, greifen Clients über diese IP auf den Dienst zu. Im Falle eines Failovers wird die VIP automatisch auf den nächsten aktiven Knoten verschoben."
+    "en": {
+      "question": "What is a virtual IP in the context of high availability clusters?",
+      "options": {
+        "A": "A unique IP address assigned to each node in the cluster.",
+        "B": "A shared or floating address used to access the service provided by the cluster.",
+        "C": "The private IP address used for the management of cluster nodes.",
+        "D": "An IP address used exclusively for load balancing."
+      },
+      "answer": "B",
+      "explanation": "A virtual IP (VIP) in high availability clusters is a shared or floating address used to access the service provided by the cluster. Clients always connect through this VIP, and in the event of a failover, the VIP is automatically reassigned to the active node."
+    }
   },
-  "en": {
-    "question": "What is a virtual IP in the context of high availability clusters?",
-    "options": {
-      "A": "A unique IP address assigned to each node in the cluster.",
-      "B": "A shared or floating address used to access the service provided by the cluster.",
-      "C": "The private IP address used for the management of cluster nodes.",
-      "D": "An IP address used exclusively for load balancing."
+  {
+    "id": 411,
+    "de": {
+      "frage": "Was geschieht in einer Active-Active-Clusterkonfiguration im Falle eines Failovers?",
+      "optionen": {
+        "A": "Die Arbeitslast des ausgefallenen Knotens wird nicht übernommen, und das System geht offline.",
+        "B": "Die Arbeitslast des ausgefallenen Knotens wird auf die verbleibenden Knoten verschoben.",
+        "C": "Die verbleibenden Knoten werden heruntergefahren, um Datenkorruption zu verhindern.",
+        "D": "Das System kauft automatisch einen neuen Knoten und fügt ihn dem Cluster hinzu."
+      },
+      "antwort": "B",
+      "erklärung": "In einer Active-Active-Clusterkonfiguration sind alle Knoten gleichzeitig aktiv und teilen sich die Arbeitslast. Kommt es zu einem Failover, übernehmen die verbleibenden aktiven Knoten automatisch die Arbeitslast des ausgefallenen Knotens, um die Dienste weiterhin verfügbar zu halten."
     },
-    "answer": "B",
-    "explanation": "A virtual IP (VIP) in high availability clusters is a shared or floating address used to access the service provided by the cluster. Clients always connect through this VIP, and in the event of a failover, the VIP is automatically reassigned to the active node."
-  }
-},
-{
-  "id": 411,
-  "de": {
-    "frage": "Was geschieht in einer Active-Active-Clusterkonfiguration im Falle eines Failovers?",
-    "optionen": {
-      "A": "Die Arbeitslast des ausgefallenen Knotens wird nicht übernommen, und das System geht offline.",
-      "B": "Die Arbeitslast des ausgefallenen Knotens wird auf die verbleibenden Knoten verschoben.",
-      "C": "Die verbleibenden Knoten werden heruntergefahren, um Datenkorruption zu verhindern.",
-      "D": "Das System kauft automatisch einen neuen Knoten und fügt ihn dem Cluster hinzu."
-    },
-    "antwort": "B",
-    "erklärung": "In einer Active-Active-Clusterkonfiguration sind alle Knoten gleichzeitig aktiv und teilen sich die Arbeitslast. Kommt es zu einem Failover, übernehmen die verbleibenden aktiven Knoten automatisch die Arbeitslast des ausgefallenen Knotens, um die Dienste weiterhin verfügbar zu halten."
+    "en": {
+      "question": "In an active-active cluster configuration, what happens in the event of a failover?",
+      "options": {
+        "A": "The workload of the failed node is not shifted, and the system goes offline.",
+        "B": "The workload of the failed node is shifted onto the remaining node(s).",
+        "C": "The remaining nodes are shut down to prevent data corruption.",
+        "D": "The system automatically purchases and adds a new node to the cluster."
+      },
+      "answer": "B",
+      "explanation": "In an active-active cluster configuration, all nodes are active and share the workload. When a failover occurs, the remaining active nodes automatically take over the workload of the failed node to maintain service availability."
+    }
   },
-  "en": {
-    "question": "In an active-active cluster configuration, what happens in the event of a failover?",
-    "options": {
-      "A": "The workload of the failed node is not shifted, and the system goes offline.",
-      "B": "The workload of the failed node is shifted onto the remaining node(s).",
-      "C": "The remaining nodes are shut down to prevent data corruption.",
-      "D": "The system automatically purchases and adds a new node to the cluster."
+  {
+    "id": 412,
+    "de": {
+      "frage": "Wo wird ein Load Balancer typischerweise in einer Netzwerktopologie platziert?",
+      "optionen": {
+        "A": "Zwischen dem Client-Netzwerk und dem Internet",
+        "B": "Zwischen dem Internet und den Anwendungsservern",
+        "C": "Direkt auf den Anwendungsservern",
+        "D": "Innerhalb des Client-Netzwerks"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Load Balancer wird typischerweise zwischen dem Internet (oder externen Clients) und den Anwendungsservern platziert. Er verteilt den eingehenden Datenverkehr gleichmäßig auf die Server, um Überlastungen zu vermeiden, Redundanz zu ermöglichen und die Verfügbarkeit zu erhöhen."
     },
-    "answer": "B",
-    "explanation": "In an active-active cluster configuration, all nodes are active and share the workload. When a failover occurs, the remaining active nodes automatically take over the workload of the failed node to maintain service availability."
-  }
-},
-{
-  "id": 412,
-  "de": {
-    "frage": "Wo wird ein Load Balancer typischerweise in einer Netzwerktopologie platziert?",
-    "optionen": {
-      "A": "Zwischen dem Client-Netzwerk und dem Internet",
-      "B": "Zwischen dem Internet und den Anwendungsservern",
-      "C": "Direkt auf den Anwendungsservern",
-      "D": "Innerhalb des Client-Netzwerks"
-    },
-    "antwort": "B",
-    "erklärung": "Ein Load Balancer wird typischerweise zwischen dem Internet (oder externen Clients) und den Anwendungsservern platziert. Er verteilt den eingehenden Datenverkehr gleichmäßig auf die Server, um Überlastungen zu vermeiden, Redundanz zu ermöglichen und die Verfügbarkeit zu erhöhen."
+    "en": {
+      "question": "Where is a load balancer typically placed in a network topology?",
+      "options": {
+        "A": "Between the client network and the Internet",
+        "B": "Between the Internet and the application servers",
+        "C": "Directly on the application servers",
+        "D": "Within the client network"
+      },
+      "answer": "B",
+      "explanation": "A load balancer is typically placed between the Internet (or external clients) and the application servers. It distributes incoming traffic across multiple servers to prevent overloads, provide redundancy, and maintain high availability."
+    }
   },
-  "en": {
-    "question": "Where is a load balancer typically placed in a network topology?",
-    "options": {
-      "A": "Between the client network and the Internet",
-      "B": "Between the Internet and the application servers",
-      "C": "Directly on the application servers",
-      "D": "Within the client network"
+  {
+    "id": 413,
+    "de": {
+      "frage": "Was unterscheidet einen Layer-7-Switch von einem Layer-4-Switch beim Load Balancing?",
+      "optionen": {
+        "A": "Ein Layer-7-Switch arbeitet auf der Netzwerkschicht.",
+        "B": "Ein Layer-7-Switch trifft Weiterleitungsentscheidungen basierend auf Anwendungsdaten.",
+        "C": "Ein Layer-7-Switch wird ausschließlich zur Verschlüsselung von Datenverkehr verwendet.",
+        "D": "Ein Layer-7-Switch erhöht die Speicherkapazität von Servern."
+      },
+      "antwort": "B",
+      "erklärung": "Ein Layer-4-Switch trifft Entscheidungen basierend auf Transportprotokollen wie TCP/UDP und Portnummern. Ein Layer-7-Switch hingegen analysiert Daten auf Anwendungsebene (z. B. HTTP-Header, URLs, Cookies), um intelligentes Load Balancing und inhaltsbasierte Weiterleitung zu ermöglichen."
     },
-    "answer": "B",
-    "explanation": "A load balancer is typically placed between the Internet (or external clients) and the application servers. It distributes incoming traffic across multiple servers to prevent overloads, provide redundancy, and maintain high availability."
-  }
-},
-{
-  "id": 413,
-  "de": {
-    "frage": "Was unterscheidet einen Layer-7-Switch von einem Layer-4-Switch beim Load Balancing?",
-    "optionen": {
-      "A": "Ein Layer-7-Switch arbeitet auf der Netzwerkschicht.",
-      "B": "Ein Layer-7-Switch trifft Weiterleitungsentscheidungen basierend auf Anwendungsdaten.",
-      "C": "Ein Layer-7-Switch wird ausschließlich zur Verschlüsselung von Datenverkehr verwendet.",
-      "D": "Ein Layer-7-Switch erhöht die Speicherkapazität von Servern."
-    },
-    "antwort": "B",
-    "erklärung": "Ein Layer-4-Switch trifft Entscheidungen basierend auf Transportprotokollen wie TCP/UDP und Portnummern. Ein Layer-7-Switch hingegen analysiert Daten auf Anwendungsebene (z. B. HTTP-Header, URLs, Cookies), um intelligentes Load Balancing und inhaltsbasierte Weiterleitung zu ermöglichen."
+    "en": {
+      "question": "What distinguishes a Layer 7 switch from a Layer 4 switch in load balancing?",
+      "options": {
+        "A": "Layer 7 switch operates at the network layer.",
+        "B": "Layer 7 switch makes forwarding decisions based on application-level data.",
+        "C": "Layer 7 switch is used exclusively for encrypting data traffic.",
+        "D": "Layer 7 switch increases the storage capacity of servers."
+      },
+      "answer": "B",
+      "explanation": "A Layer 4 switch makes decisions based on transport protocols such as TCP/UDP and port numbers. In contrast, a Layer 7 switch analyzes application-level data (e.g., HTTP headers, URLs, cookies) to enable intelligent load balancing and content-based forwarding."
+    }
   },
-  "en": {
-    "question": "What distinguishes a Layer 7 switch from a Layer 4 switch in load balancing?",
-    "options": {
-      "A": "Layer 7 switch operates at the network layer.",
-      "B": "Layer 7 switch makes forwarding decisions based on application-level data.",
-      "C": "Layer 7 switch is used exclusively for encrypting data traffic.",
-      "D": "Layer 7 switch increases the storage capacity of servers."
+  {
+    "id": 414,
+    "de": {
+      "frage": "Was ist die Bedeutung von Validierungstests in der Notfallwiederherstellung?",
+      "optionen": {
+        "A": "Um den Marktanteil des Unternehmens zu erhöhen",
+        "B": "Um sicherzustellen, dass Dienste wiederhergestellt werden können",
+        "C": "Um die finanzielle Gesundheit des Unternehmens zu bewerten",
+        "D": "Um die Wirksamkeit von Marketingstrategien zu beurteilen"
+      },
+      "antwort": "B",
+      "erklärung": "Validierungstests in der Notfallwiederherstellung sind entscheidend, um zu überprüfen, ob Systeme und Dienste nach einem Ausfall erfolgreich wiederhergestellt werden können. Sie bestätigen die Funktionsfähigkeit des Wiederherstellungsplans und stellen sicher, dass Ausfallzeiten minimiert werden."
     },
-    "answer": "B",
-    "explanation": "A Layer 4 switch makes decisions based on transport protocols such as TCP/UDP and port numbers. In contrast, a Layer 7 switch analyzes application-level data (e.g., HTTP headers, URLs, cookies) to enable intelligent load balancing and content-based forwarding."
-  }
-},
-{
-  "id": 414,
-  "de": {
-    "frage": "Was ist die Bedeutung von Validierungstests in der Notfallwiederherstellung?",
-    "optionen": {
-      "A": "Um den Marktanteil des Unternehmens zu erhöhen",
-      "B": "Um sicherzustellen, dass Dienste wiederhergestellt werden können",
-      "C": "Um die finanzielle Gesundheit des Unternehmens zu bewerten",
-      "D": "Um die Wirksamkeit von Marketingstrategien zu beurteilen"
-    },
-    "antwort": "B",
-    "erklärung": "Validierungstests in der Notfallwiederherstellung sind entscheidend, um zu überprüfen, ob Systeme und Dienste nach einem Ausfall erfolgreich wiederhergestellt werden können. Sie bestätigen die Funktionsfähigkeit des Wiederherstellungsplans und stellen sicher, dass Ausfallzeiten minimiert werden."
+    "en": {
+      "question": "What is the significance of conducting validation tests in disaster recovery?",
+      "options": {
+        "A": "To increase the company's market share",
+        "B": "To ensure services can be restored",
+        "C": "To evaluate the company's financial health",
+        "D": "To assess the effectiveness of marketing strategies"
+      },
+      "answer": "B",
+      "explanation": "Validation tests in disaster recovery are essential for verifying that systems and services can be successfully restored after an outage. They confirm the effectiveness of the recovery plan and ensure that downtime is minimized."
+    }
   },
-  "en": {
-    "question": "What is the significance of conducting validation tests in disaster recovery?",
-    "options": {
-      "A": "To increase the company's market share",
-      "B": "To ensure services can be restored",
-      "C": "To evaluate the company's financial health",
-      "D": "To assess the effectiveness of marketing strategies"
+  {
+    "id": 415,
+    "de": {
+      "frage": "Worauf konzentriert sich die Notfallwiederherstellung (Disaster Recovery)?",
+      "optionen": {
+        "A": "Auf die Expansion des Unternehmens in neue Märkte",
+        "B": "Auf das Umschalten von Diensten auf Failover-Systeme oder -Standorte",
+        "C": "Auf die Erhöhung der Mitarbeiterzahl",
+        "D": "Auf die Entwicklung neuer Produkte"
+      },
+      "antwort": "B",
+      "erklärung": "Die Notfallwiederherstellung (Disaster Recovery) konzentriert sich darauf, Dienste im Falle eines Ausfalls schnell wiederherzustellen. Dies geschieht durch das Umschalten auf Failover-Systeme oder alternative Standorte, um Betriebsunterbrechungen zu minimieren."
     },
-    "answer": "B",
-    "explanation": "Validation tests in disaster recovery are essential for verifying that systems and services can be successfully restored after an outage. They confirm the effectiveness of the recovery plan and ensure that downtime is minimized."
-  }
-},
-{
-  "id": 415,
-  "de": {
-    "frage": "Worauf konzentriert sich die Notfallwiederherstellung (Disaster Recovery)?",
-    "optionen": {
-      "A": "Auf die Expansion des Unternehmens in neue Märkte",
-      "B": "Auf das Umschalten von Diensten auf Failover-Systeme oder -Standorte",
-      "C": "Auf die Erhöhung der Mitarbeiterzahl",
-      "D": "Auf die Entwicklung neuer Produkte"
-    },
-    "antwort": "B",
-    "erklärung": "Die Notfallwiederherstellung (Disaster Recovery) konzentriert sich darauf, Dienste im Falle eines Ausfalls schnell wiederherzustellen. Dies geschieht durch das Umschalten auf Failover-Systeme oder alternative Standorte, um Betriebsunterbrechungen zu minimieren."
+    "en": {
+      "question": "What does disaster recovery focus on?",
+      "options": {
+        "A": "Expanding the business to new markets",
+        "B": "Switching services to failover systems or sites",
+        "C": "Increasing the number of employees",
+        "D": "Developing new products"
+      },
+      "answer": "B",
+      "explanation": "Disaster recovery focuses on restoring services after a failure by switching to failover systems or alternate sites. Its purpose is to minimize downtime and maintain business continuity."
+    }
   },
-  "en": {
-    "question": "What does disaster recovery focus on?",
-    "options": {
-      "A": "Expanding the business to new markets",
-      "B": "Switching services to failover systems or sites",
-      "C": "Increasing the number of employees",
-      "D": "Developing new products"
+  {
+    "id": 416,
+    "de": {
+      "frage": "Was ist der Zweck einer Business Impact Analysis (BIA) in der Kontinuitätsplanung?",
+      "optionen": {
+        "A": "Die profitabelsten Geschäftsbereiche zu identifizieren",
+        "B": "Das Risiko von Unterbrechungen für primäre Geschäftsprozesse zu identifizieren",
+        "C": "Die Auswirkungen neuer Mitarbeiter auf das Unternehmen zu bewerten",
+        "D": "Die Wirksamkeit von Verkaufsstrategien zu evaluieren"
+      },
+      "antwort": "B",
+      "erklärung": "Eine Business Impact Analysis (BIA) dient dazu, die möglichen Auswirkungen von Unterbrechungen auf kritische Geschäftsprozesse zu identifizieren und zu bewerten. Damit liefert sie die Grundlage für Notfall- und Kontinuitätspläne, die sicherstellen, dass die wichtigsten Funktionen schnell wiederhergestellt werden können."
     },
-    "answer": "B",
-    "explanation": "Disaster recovery focuses on restoring services after a failure by switching to failover systems or alternate sites. Its purpose is to minimize downtime and maintain business continuity."
-  }
-},
-{
-  "id": 416,
-  "de": {
-    "frage": "Was ist der Zweck einer Business Impact Analysis (BIA) in der Kontinuitätsplanung?",
-    "optionen": {
-      "A": "Die profitabelsten Geschäftsbereiche zu identifizieren",
-      "B": "Das Risiko von Unterbrechungen für primäre Geschäftsprozesse zu identifizieren",
-      "C": "Die Auswirkungen neuer Mitarbeiter auf das Unternehmen zu bewerten",
-      "D": "Die Wirksamkeit von Verkaufsstrategien zu evaluieren"
-    },
-    "antwort": "B",
-    "erklärung": "Eine Business Impact Analysis (BIA) dient dazu, die möglichen Auswirkungen von Unterbrechungen auf kritische Geschäftsprozesse zu identifizieren und zu bewerten. Damit liefert sie die Grundlage für Notfall- und Kontinuitätspläne, die sicherstellen, dass die wichtigsten Funktionen schnell wiederhergestellt werden können."
+    "en": {
+      "question": "What is the purpose of a Business Impact Analysis (BIA) in continuity planning?",
+      "options": {
+        "A": "To identify the most profitable business areas",
+        "B": "To identify risk disruption for primary business functions",
+        "C": "To assess the impact of new hires on the business",
+        "D": "To evaluate the effectiveness of sales strategies"
+      },
+      "answer": "B",
+      "explanation": "A Business Impact Analysis (BIA) identifies and evaluates the potential impact of disruptions on critical business functions. It provides the foundation for continuity and recovery planning by ensuring primary business processes can be restored quickly."
+    }
   },
-  "en": {
-    "question": "What is the purpose of a Business Impact Analysis (BIA) in continuity planning?",
-    "options": {
-      "A": "To identify the most profitable business areas",
-      "B": "To identify risk disruption for primary business functions",
-      "C": "To assess the impact of new hires on the business",
-      "D": "To evaluate the effectiveness of sales strategies"
+  {
+    "id": 417,
+    "de": {
+      "frage": "Wozu dient der PRI-Code in einer Syslog-Nachricht?",
+      "optionen": {
+        "A": "Zur Verschlüsselung der Nachricht",
+        "B": "Zur Kennzeichnung der Priorität der Nachricht",
+        "C": "Zur Angabe des verwendeten Protokolls",
+        "D": "Zur Identifizierung des Empfängers der Nachricht"
+      },
+      "antwort": "B",
+      "erklärung": "Der PRI-Code (Priority) in Syslog kodiert die Priorität einer Nachricht als Kombination aus Facility und Severity und kennzeichnet damit die Wichtigkeit bzw. Dringlichkeit der Meldung."
     },
-    "answer": "B",
-    "explanation": "A Business Impact Analysis (BIA) identifies and evaluates the potential impact of disruptions on critical business functions. It provides the foundation for continuity and recovery planning by ensuring primary business processes can be restored quickly."
+    "en": {
+      "question": "What is the purpose of the PRI code in a syslog message?",
+      "options": {
+        "A": "To encrypt the message",
+        "B": "To indicate the message's priority",
+        "C": "To specify the protocol used",
+        "D": "To identify the recipient of the message"
+      },
+      "answer": "B",
+      "explanation": "The PRI (priority) code in syslog encodes a message’s priority as a combination of facility and severity, indicating the importance or urgency of the log message."
+    }
+  },
+  {
+    "id": 418,
+    "de": {
+      "frage": "Woraus besteht eine Syslog-Nachricht?",
+      "optionen": {
+        "A": "Nur aus einem Header mit Zeitstempel",
+        "B": "Nur aus einem Nachrichtenteil mit Inhalt",
+        "C": "Aus einem PRI-Code, einem Header und einem Nachrichtenteil",
+        "D": "Aus einem Schweregrad und einem Nachrichtenteil"
+      },
+      "antwort": "C",
+      "erklärung": "Eine Syslog-Nachricht setzt sich klassisch aus dem PRI-Code (Priority), einem Header (z. B. Zeitstempel und Hostname) und dem eigentlichen Nachrichtenteil (MSG) zusammen."
+    },
+    "en": {
+      "question": "What does a syslog message comprise?",
+      "options": {
+        "A": "Only a header containing a timestamp",
+        "B": "Only a message part with content",
+        "C": "A PRI code, a header, and a message part",
+        "D": "A severity level and a message part"
+      },
+      "answer": "C",
+      "explanation": "A syslog message traditionally consists of the PRI (priority) code, a header (e.g., timestamp and hostname), and the message part (MSG)."
+    }
+  },
+  {
+    "id": 419,
+    "de": {
+      "frage": "Was bedeutet Log-Aggregation im Kontext von SIEM?",
+      "optionen": {
+        "A": "Die physische Sammlung von Logdateien von verschiedenen Geräten",
+        "B": "Das Löschen veralteter Logdateien zur Speicherplatzfreigabe",
+        "C": "Die Normalisierung von Daten aus unterschiedlichen Quellen, um sie konsistent zu machen",
+        "D": "Die Verschlüsselung von Logdateien zur sicheren Speicherung"
+      },
+      "antwort": "C",
+      "erklärung": "Log-Aggregation im SIEM-Kontext bezeichnet das zentrale Sammeln (Aggregieren) von Logdateien aus verschiedenen Quellen und Systemen, bevor sie weiterverarbeitet oder analysiert werden."
+    },
+    "en": {
+      "question": "What does log aggregation in the context of SIEM refer to?",
+      "options": {
+        "A": "The physical collection of log files from different devices",
+        "B": "The process of deleting outdated log files to free up storage space",
+        "C": "Normalizing data from different sources to make it consistent",
+        "D": "Encrypting log files for secure storage"
+      },
+      "answer": "C",
+      "explanation": "In a SIEM context, log aggregation refers to the central collection (aggregation) of log files from multiple sources and systems before further processing or analysis."
+    }
+  },
+  {
+    "id": 420,
+    "de": {
+      "frage": "Wie gehen SIEM-Tools mit Unterschieden in Datum/Zeitzonen zwischen verschiedenen Log-Quellen um?",
+      "optionen": {
+        "A": "Durch Ignorieren von Datums-/Zeitinformationen, um Verwirrung zu vermeiden",
+        "B": "Durch Normalisierung von Zeitzonenunterschieden auf eine einheitliche Zeitleiste",
+        "C": "Durch Akzeptieren von Logs nur in der UTC-Zeitzone",
+        "D": "Durch Speichern von Logs in separaten Datenbanken basierend auf ihren Zeitzonen"
+      },
+      "antwort": "B",
+      "erklärung": "SIEM-Tools normalisieren Zeitstempel aus unterschiedlichen Zeitzonen auf eine einheitliche Referenz (häufig UTC), um eine konsistente, korrelierbare Zeitleiste für Ereignisse zu gewährleisten."
+    },
+    "en": {
+      "question": "How do SIEM tools handle differences in date/time zones among various log sources?",
+      "options": {
+        "A": "By ignoring date/time information to avoid confusion",
+        "B": "By normalizing date/time zone differences to a single timeline",
+        "C": "By only accepting logs in the UTC time zone",
+        "D": "By storing logs in separate databases based on their time zones"
+      },
+      "answer": "B",
+      "explanation": "SIEM tools normalize timestamps from different time zones to a single reference (often UTC) to ensure a consistent, correlatable timeline of events."
+    }
+  },
+  {
+    "id": 421,
+    "de": {
+      "frage": "Was ist ein zentrales Merkmal von Performance-/Traffic-Logs?",
+      "optionen": {
+        "A": "Sie zeichnen nur Sicherheitsverletzungen auf.",
+        "B": "Sie erfassen Metriken für Netzwerkressourcen.",
+        "C": "Sie verfolgen ausschließlich Benutzeranmeldeversuche.",
+        "D": "Sie dienen als Backups für Anwendungsdaten."
+      },
+      "antwort": "B",
+      "erklärung": "Performance-/Traffic-Logs erfassen Kennzahlen wie Bandbreite, Latenz, Durchsatz, Paketverlust oder Auslastung von Netzwerkressourcen, um Zustand und Leistung der Infrastruktur zu überwachen."
+    },
+    "en": {
+      "question": "What is a key feature of performance/traffic logs?",
+      "options": {
+        "A": "They record only security breaches.",
+        "B": "They record metrics for network resources.",
+        "C": "They exclusively track user login attempts.",
+        "D": "They serve as backups for application data."
+      },
+      "answer": "B",
+      "explanation": "Performance/traffic logs capture metrics such as bandwidth, latency, throughput, packet loss, or utilization of network resources to monitor infrastructure health and performance."
+    }
+  },
+  {
+    "id": 422,
+    "de": {
+      "frage": "Welche Art von Ereignissen zeichnet ein Audit-Log typischerweise auf?",
+      "optionen": {
+        "A": "Erfolg/Fehlschlag-Ereignisse im Zusammenhang mit Authentifizierung",
+        "B": "Detaillierte Beschreibungen aller Benutzeraktivitäten",
+        "C": "Sicherungen der Systemkonfiguration",
+        "D": "Leistungsmetriken für Rechenressourcen"
+      },
+      "antwort": "A",
+      "erklärung": "Audit-Logs protokollieren in der Regel Authentifizierungsereignisse wie erfolgreiche und fehlgeschlagene Anmeldungen, Autorisierungen oder Zugriffsversuche, um Nachvollziehbarkeit und Compliance sicherzustellen."
+    },
+    "en": {
+      "question": "What type of events does an audit log generally record?",
+      "options": {
+        "A": "Success/fail type events related to authentication",
+        "B": "Detailed descriptions of all user activities",
+        "C": "System configuration backups",
+        "D": "Performance metrics for compute resources"
+      },
+      "answer": "A",
+      "explanation": "Audit logs typically record authentication-related events such as successful and failed logins, authorizations, or access attempts to ensure traceability and compliance."
+    }
+  },
+  {
+    "id": 423,
+    "de": {
+      "frage": "Was unterscheidet ein Anwendungslog von einem Systemlog?",
+      "optionen": {
+        "A": "Ein Anwendungslog erfasst Daten für das gesamte Betriebssystem.",
+        "B": "Ein Anwendungslog erfasst Daten für einen einzelnen spezifischen Dienst.",
+        "C": "Ein Anwendungslog wird nur für Sicherheitszwecke verwendet.",
+        "D": "Ein Anwendungslog kann keine Fehler aufzeichnen."
+      },
+      "antwort": "B",
+      "erklärung": "Ein Anwendungslog bezieht sich typischerweise auf eine einzelne Anwendung oder einen spezifischen Dienst und protokolliert dessen Ereignisse und Fehler, während Systemlogs auf Betriebssystem- oder Systemebene Ereignisse des gesamten Systems erfassen."
+    },
+    "en": {
+      "question": "What distinguishes an application log from a system log?",
+      "options": {
+        "A": "An application log records data for the entire operating system.",
+        "B": "An application log records data for a single specific service.",
+        "C": "An application log is only used for security purposes.",
+        "D": "An application log cannot record errors."
+      },
+      "answer": "B",
+      "explanation": "An application log typically pertains to a single application or specific service and records its events and errors, whereas system logs capture system-wide events at the operating system level."
+    }
+  },
+  {
+    "id": 424,
+    "de": {
+      "frage": "Warum hilft das Plotten von Daten als Grafik bei der Log-Analyse?",
+      "optionen": {
+        "A": "Es macht Softwareanalyse überflüssig.",
+        "B": "Es erleichtert das Erkennen von Trends oder Spitzen in den Daten.",
+        "C": "Es verringert die zu speichernde Datenmenge.",
+        "D": "Es erhöht die Geschwindigkeit des Netzwerks."
+      },
+      "antwort": "B",
+      "erklärung": "Grafische Darstellungen heben Muster, Trends und Ausreißer visuell hervor, wodurch Anomalien oder Spitzen schneller erkennbar werden als in reinen Text- oder Tabellenansichten."
+    },
+    "en": {
+      "question": "Why is plotting data as a graph helpful in log analysis?",
+      "options": {
+        "A": "It eliminates the need for software analysis.",
+        "B": "It makes it easier to spot trends or spikes in the data.",
+        "C": "It reduces the amount of data that needs to be stored.",
+        "D": "It increases the speed of the network."
+      },
+      "answer": "B",
+      "explanation": "Graphing highlights patterns, trends, and outliers, making anomalies or spikes easier and faster to identify than with raw text or tabular views."
+    }
+  },
+  {
+    "id": 425,
+    "de": {
+      "frage": "Wie kann eine hochpriorisierte Warnung in einem Event-Management-System kommuniziert werden?",
+      "optionen": {
+        "A": "Nur durch Anzeige auf dem System-Dashboard",
+        "B": "Durch Senden einer E-Mail an den Systemadministrator",
+        "C": "Durch Erhöhen des Logging-Levels auf allen Hosts",
+        "D": "Durch Erstellen eines detaillierten Monatsberichts"
+      },
+      "antwort": "B",
+      "erklärung": "Hochpriorisierte Warnungen werden typischerweise aktiv zugestellt, etwa per E-Mail, SMS oder Pager-Benachrichtigung an Administratoren, um eine schnelle Reaktion zu ermöglichen."
+    },
+    "en": {
+      "question": "How can a high priority alert be communicated in an event management system?",
+      "options": {
+        "A": "By displaying it on the system dashboard only",
+        "B": "By sending an email to the system administrator",
+        "C": "By increasing the logging level on all hosts",
+        "D": "By generating a detailed report at the end of the month"
+      },
+      "answer": "B",
+      "explanation": "High-priority alerts are typically delivered proactively, such as via email, SMS, or pager notifications to administrators, to enable rapid response."
+    }
+  },
+  {
+    "id": 426,
+    "de": {
+      "frage": "Wozu ist ein automatisiertes Event-Management-System konfiguriert?",
+      "optionen": {
+        "A": "Detaillierte Berichte für jedes Ereignis",
+        "B": "Irgendeine Art von Alert",
+        "C": "Ein Backup des Logging-Systems",
+        "D": "Eine Liste aller Geräte im Netzwerk"
+      },
+      "antwort": "B",
+      "erklärung": "Automatisierte Event-Management-Systeme sind darauf ausgelegt, bei relevanten Ereignissen Benachrichtigungen bzw. Alerts auszulösen, um Verantwortliche schnell zu informieren und Reaktionen zu ermöglichen."
+    },
+    "en": {
+      "question": "What is an automated event management system configured to generate?",
+      "options": {
+        "A": "Detailed reports for every event",
+        "B": "Some sort of alert",
+        "C": "A backup of the logging system",
+        "D": "A list of all devices on the network"
+      },
+      "answer": "B",
+      "explanation": "Automated event management systems are designed to trigger notifications or alerts when pertinent events occur, enabling timely awareness and response."
+    }
+  },
+  {
+    "id": 427,
+    "de": {
+      "frage": "Was ist eine große Sicherheitschwäche von SNMP v2c?",
+      "optionen": {
+        "A": "Es verwendet standardmäßig starke Verschlüsselung.",
+        "B": "Es unterstützt zu viele Benutzer.",
+        "C": "Es sendet Community-Strings im Klartext.",
+        "D": "Es beschränkt Verwaltungsoperationen auf bekannte Hosts."
+      },
+      "antwort": "C",
+      "erklärung": "SNMP v2c verwendet Community-Strings als Authentifizierungsmechanismus und überträgt diese im Klartext über das Netzwerk, was das Abhören und Missbrauchen erleichtert; Verschlüsselung und starke Authentifizierung fehlen."
+    },
+    "en": {
+      "question": "What is a major security weakness of SNMP v2c?",
+      "options": {
+        "A": "It uses strong encryption by default.",
+        "B": "It supports too many users.",
+        "C": "It sends community strings in plaintext.",
+        "D": "It restricts management operations to known hosts."
+      },
+      "answer": "C",
+      "explanation": "SNMP v2c uses community strings for authentication and transmits them in plaintext over the network, making eavesdropping and misuse easier; it lacks encryption and strong authentication."
+    }
+  },
+  {
+    "id": 428,
+    "de": {
+      "frage": "Welche SNMP-Version unterstützt Verschlüsselung und starke, benutzerbasierte Authentifizierung?",
+      "optionen": {
+        "A": "SNMP v1",
+        "B": "SNMP v2c",
+        "C": "SNMP v3",
+        "D": "SNMP v4"
+      },
+      "antwort": "C",
+      "erklärung": "SNMP v3 führt User-based Security Model (USM) mit starker Authentifizierung (z. B. HMAC-MD5/SHA) und optionaler Verschlüsselung/Privatsphäre (z. B. DES/AES) ein und adressiert so die Sicherheitslücken früherer Versionen."
+    },
+    "en": {
+      "question": "Which version of SNMP supports encryption and strong user-based authentication?",
+      "options": {
+        "A": "SNMP v1",
+        "B": "SNMP v2c",
+        "C": "SNMP v3",
+        "D": "SNMP v4"
+      },
+      "answer": "C",
+      "explanation": "SNMP v3 introduces the User-based Security Model (USM) with strong authentication (e.g., HMAC-MD5/SHA) and optional privacy/encryption (e.g., DES/AES), addressing the security gaps of earlier versions."
+    }
+  },
+  {
+    "id": 429,
+    "de": {
+      "frage": "Ein Unternehmen verwendet das Simple Network Management Protocol (SNMP) für die Fernverwaltung und -überwachung von Servern und Netzwerkgeräten und muss auf jedem Gerät einen Agenten bereitstellen. Wo werden die Statistiken zur Aktivität jedes Geräts gespeichert?",
+      "optionen": {
+        "A": "OID",
+        "B": "MIB",
+        "C": "Get",
+        "D": "Trap"
+      },
+      "antwort": "B",
+      "erklärung": "Statistiken und Verwaltungsdaten werden in der Management Information Base (MIB) strukturiert abgelegt; OIDs sind die Bezeichner einzelner MIB-Objekte, während Get eine Abfrageoperation und Trap eine asynchrone Meldung ist."
+    },
+    "en": {
+      "question": "An organization uses SNMP for remote management and monitoring and must deploy an agent to each device. Where are the statistics relating to each device’s activity kept?",
+      "options": {
+        "A": "OID",
+        "B": "MIB",
+        "C": "Get",
+        "D": "Trap"
+      },
+      "answer": "B",
+      "explanation": "Statistics and management data are organized in the Management Information Base (MIB); OIDs identify individual objects within the MIB, while Get is a query operation and Trap is an asynchronous notification."
+    }
+  },
+  {
+    "id": 430,
+    "de": {
+      "frage": "Wozu dient ein Community-String in SNMP?",
+      "optionen": {
+        "A": "Zur Verschlüsselung von Datenpaketen",
+        "B": "Als eine Art Passwort",
+        "C": "Zur Erhöhung der Netzgeschwindigkeit",
+        "D": "Zur Identifizierung der Netzwerktopologie"
+      },
+      "antwort": "B",
+      "erklärung": "In SNMP v1/v2c fungiert der Community-String als einfacher, gemeinsamer Geheimniswert, der wie ein Passwort den Zugriff auf SNMP-Operationen steuert; er bietet jedoch keine Verschlüsselung und wird im Klartext übertragen."
+    },
+    "en": {
+      "question": "What is the purpose of a community string in SNMP?",
+      "options": {
+        "A": "To encrypt data packets",
+        "B": "To serve as a type of password",
+        "C": "To increase network speed",
+        "D": "To identify the network topology"
+      },
+      "answer": "B",
+      "explanation": "In SNMP v1/v2c, the community string acts as a shared secret similar to a password to control access to SNMP operations; it does not provide encryption and is transmitted in plaintext."
+    }
+  },
+  {
+    "id": 431,
+    "de": {
+      "frage": "Welcher Modus in SNMP v3 verschlüsselt Pakete nicht, erfordert aber Authentifizierung?",
+      "optionen": {
+        "A": "authNoPriv",
+        "B": "authPriv",
+        "C": "noAuthNoPriv",
+        "D": "privAuth"
+      },
+      "antwort": "A",
+      "erklärung": "Im Modus authNoPriv verlangt SNMP v3 eine Authentifizierung (z. B. HMAC mit MD5/SHA), verwendet jedoch keine Verschlüsselung/Privatsphäre, sodass die Nutzdaten unverschlüsselt bleiben. authPriv würde zusätzlich verschlüsseln, noAuthNoPriv weder authentifizieren noch verschlüsseln."
+    },
+    "en": {
+      "question": "What mode in SNMP v3 does not encrypt packets but requires authentication?",
+      "options": {
+        "A": "authNoPriv",
+        "B": "authPriv",
+        "C": "noAuthNoPriv",
+        "D": "privAuth"
+      },
+      "answer": "A",
+      "explanation": "In authNoPriv mode, SNMP v3 requires authentication (e.g., HMAC with MD5/SHA) but does not use privacy/encryption, leaving payloads unencrypted. authPriv adds encryption, while noAuthNoPriv does neither."
+    }
   }
-}
-
 ]
