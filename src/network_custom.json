@@ -10838,5 +10838,630 @@
       "answer": "A",
       "explanation": "In authNoPriv mode, SNMP v3 requires authentication (e.g., HMAC with MD5/SHA) but does not use privacy/encryption, leaving payloads unencrypted. authPriv adds encryption, while noAuthNoPriv does neither."
     }
+  },
+  {
+    "id": 432,
+    "de": {
+      "frage": "Was bewirkt der Schalter -w in tcpdump?",
+      "optionen": {
+        "A": "Schreibt die Ausgabe in eine Datei",
+        "B": "Liest den Inhalt einer Capture-Datei",
+        "C": "Erhöht die Detailtiefe der Anzeige",
+        "D": "Zeigt den Ethernet-Header an"
+      },
+      "antwort": "A",
+      "erklärung": "Der Schalter -w in tcpdump speichert Pakete im pcap-Format direkt in eine Datei, anstatt sie lesbar auf dem Bildschirm auszugeben. Zum Einlesen einer Capture-Datei wird hingegen -r verwendet."
+    },
+    "en": {
+      "question": "What does the -w switch do in tcpdump?",
+      "options": {
+        "A": "Writes output to a file",
+        "B": "Reads the contents of a capture file",
+        "C": "Increases the amount of detail shown",
+        "D": "Shows the Ethernet header"
+      },
+      "answer": "A",
+      "explanation": "The -w switch in tcpdump writes captured packets to a file in pcap format instead of printing them to the screen. To read a capture file, use -r instead."
+    }
+  },
+  {
+    "id": 433,
+    "de": {
+      "frage": "Wie kann in tcpdump die Detailtiefe der Informationen pro Frame erhöht werden?",
+      "optionen": {
+        "A": "Mit dem Schalter -w",
+        "B": "Mit dem Schalter -i",
+        "C": "Mit den Schaltern -v, -vv oder -vvv",
+        "D": "Mit dem Schalter -e"
+      },
+      "antwort": "C",
+      "erklärung": "Die Schalter -v, -vv und -vvv erhöhen stufenweise die Ausführlichkeit der Ausgabe in tcpdump und zeigen mehr Details zu jedem Paket an. Der Schalter -e zeigt zusätzlich den Ethernet-Header, -i wählt ein Interface, und -w schreibt in eine Datei, erhöht aber nicht die Anzeige-Detailtiefe."
+    },
+    "en": {
+      "question": "How can the detail of the information shown about each frame be increased in tcpdump?",
+      "options": {
+        "A": "Using the -w switch",
+        "B": "Using the -i switch",
+        "C": "Using the -v, -vv, or -vvv switches",
+        "D": "Using the -e switch"
+      },
+      "answer": "C",
+      "explanation": "The -v, -vv, and -vvv switches progressively increase verbosity in tcpdump, showing more detail for each packet. The -e switch shows the Ethernet header, -i selects an interface, and -w writes to a file but does not increase on-screen detail."
+    }
+  },
+  {
+    "id": 434,
+    "de": {
+      "frage": "Welche Option wird bei tcpdump verwendet, um das Netzwerkinterface anzugeben, auf dem gelauscht werden soll?",
+      "optionen": {
+        "A": "-i",
+        "B": "-w",
+        "C": "-v",
+        "D": "-e"
+      },
+      "antwort": "A",
+      "erklärung": "Mit -i wird das zu verwendende Interface (z. B. eth0, wlan0) ausgewählt; ohne diese Angabe wählt tcpdump oft ein Standardinterface. -w schreibt in eine Datei, -v erhöht die Ausführlichkeit, und -e zeigt den Ethernet-Header, gibt aber kein Interface an."
+    },
+    "en": {
+      "question": "Which option is used with tcpdump to specify the network interface to listen on?",
+      "options": {
+        "A": "-i",
+        "B": "-w",
+        "C": "-v",
+        "D": "-e"
+      },
+      "answer": "A",
+      "explanation": "Use -i to choose the interface (e.g., eth0, wlan0) to capture on; without it, tcpdump often picks a default interface. -w writes to a file, -v increases verbosity, and -e shows the Ethernet header but does not select an interface."
+    }
+  },
+  {
+    "id": 435,
+    "de": {
+      "frage": "Was ist der Zweck der Installation eines speziellen Treibers für einen softwarebasierten Sniffer?",
+      "optionen": {
+        "A": "Die Latenz des Netzwerks zu verringern",
+        "B": "Damit Frames aus dem Netzwerk-Stack gelesen werden können",
+        "C": "Die erfassten Frames zu verschlüsseln",
+        "D": "Die Verarbeitungsgeschwindigkeit des Sniffers zu erhöhen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein spezieller Capture-Treiber (z. B. WinPcap/Npcap/Libpcap) klinkt sich in den Netzwerk-Stack ein, um Pakete im Kernel-/Treiberkontext abzugreifen und an die Sniffer-Software weiterzureichen, einschließlich Funktionen wie Promiscuous Mode. Dadurch können Frames überhaupt aus dem Stack gelesen werden; die anderen Optionen sind nicht der primäre Zweck."
+    },
+    "en": {
+      "question": "What is the purpose of installing a special driver for a software-based sniffer?",
+      "options": {
+        "A": "To decrease the network's latency",
+        "B": "To allow the frames to be read from the network stack",
+        "C": "To encrypt the captured frames",
+        "D": "To increase the sniffer's processing speed"
+      },
+      "answer": "B",
+      "explanation": "A dedicated capture driver (e.g., WinPcap/Npcap/Libpcap) hooks into the network stack to intercept packets in kernel/driver context and deliver them to the sniffer, including enabling features like promiscuous mode. This enables reading frames from the stack; the other options are not its primary purpose."
+    }
+  },
+  {
+    "id": 436,
+    "de": {
+      "frage": "Welche Rolle hat ein Packet Sniffer im Kontext eines Protokollanalysators?",
+      "optionen": {
+        "A": "Die Bandbreite des Netzwerks zu erhöhen",
+        "B": "Frames auf dem Netzwerkmedium zu erfassen",
+        "C": "Physisch verschiedene Netzwerksegmente zu verbinden",
+        "D": "Verschlüsselung für Datenpakete bereitzustellen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Packet Sniffer erfasst die über das Medium laufenden Frames/Pakete und stellt sie dem Protokollanalysator zur Dekodierung und Analyse bereit, anstatt Bandbreite zu beeinflussen, Netze zu verbinden oder Verschlüsselung bereitzustellen."
+    },
+    "en": {
+      "question": "What is the role of a packet sniffer in the context of a protocol analyzer?",
+      "options": {
+        "A": "To increase the bandwidth of the network",
+        "B": "To capture frames moving over the network medium",
+        "C": "To physically connect different network segments",
+        "D": "To provide encryption for data packets"
+      },
+      "answer": "B",
+      "explanation": "A packet sniffer captures frames/packets traversing the medium and feeds them to the protocol analyzer for decoding and analysis, rather than affecting bandwidth, bridging segments, or providing encryption."
+    }
+  },
+  {
+    "id": 437,
+    "de": {
+      "frage": "Was unterscheidet einen Passive TAP von einer SPAN/Port-Mirroring-Verbindung?",
+      "optionen": {
+        "A": "Er kann nur verschlüsselten Verkehr überwachen.",
+        "B": "Er kopiert das Signal physisch von der Verkabelung auf einen Monitor-Port.",
+        "C": "Er benötigt spezielle Software zum Funktionieren.",
+        "D": "Er kann die Netzwerkgeschwindigkeit erhöhen."
+      },
+      "antwort": "B",
+      "erklärung": "Ein passiver TAP ist eine physische Hardware, die das elektrische/optische Signal direkt aus der Leitung auskoppelt und unverändert an einen Monitor-Port spiegelt, ohne den aktiven Netzwerkpfad zu beeinflussen; SPAN/Port Mirroring ist eine Switch-Funktion, die Kopien im Gerät erzeugt und potenziell Drops oder Timing-Effekte haben kann."
+    },
+    "en": {
+      "question": "What distinguishes a Passive TAP from a SPAN/port mirroring connection?",
+      "options": {
+        "A": "It can only monitor encrypted traffic.",
+        "B": "It physically copies the signal from the cabling to a monitor port.",
+        "C": "It requires special software to function.",
+        "D": "It can increase network speed."
+      },
+      "answer": "B",
+      "explanation": "A passive TAP is a hardware device that physically splits the electrical/optical signal from the link and mirrors it to a monitor port without altering the live path; SPAN/port mirroring is a switch feature that creates copies in-device and may introduce drops or timing artifacts."
+    }
+  },
+  {
+    "id": 438,
+    "de": {
+      "frage": "Warum kann ein Aggregation TAP unter hoher Last Frames verwerfen?",
+      "optionen": {
+        "A": "Weil er keinen verschlüsselten Traffic verarbeiten kann",
+        "B": "Weil er kein Gigabit-Signaling unterstützt",
+        "C": "Weil er Ströme in einen einzelnen Kanal zusammenführt",
+        "D": "Weil er eine direkte Internetverbindung benötigt"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Aggregation TAP führt die beiden Vollduplex-Richtungen eines Links auf einen gemeinsamen Monitor-Port zusammen; überschreitet die kombinierte Datenrate die verfügbaren Monitor-Port-Kapazitäten oder die internen Puffer, werden Frames verworfen. Dies hängt mit der Zusammenführung der Ströme zusammen und nicht mit Verschlüsselung, Signaling-Unterstützung oder Internetzugang."
+    },
+    "en": {
+      "question": "Why might an aggregation TAP drop frames under heavy load?",
+      "options": {
+        "A": "Because it cannot handle encrypted traffic",
+        "B": "Because it does not support gigabit signaling",
+        "C": "Because it rebuilds streams into a single channel",
+        "D": "Because it requires a direct internet connection"
+      },
+      "answer": "C",
+      "explanation": "An aggregation TAP combines both full-duplex directions of a link onto a single monitor port; if the combined throughput exceeds the monitor port capacity or internal buffers, frames are dropped. This is due to stream aggregation rather than encryption, signaling limitations, or internet connectivity."
+    }
+  },
+  {
+    "id": 439,
+    "de": {
+      "frage": "Welches Open-Source-Tool wird als grafisches Paketmitschnitt- und Analysewerkzeug genannt?",
+      "optionen": {
+        "A": "Nmap",
+        "B": "Wireshark",
+        "C": "Nessus",
+        "D": "Netcat"
+      },
+      "antwort": "B",
+      "erklärung": "Wireshark ist ein Open-Source-Tool mit grafischer Oberfläche zum Mitschneiden und Analysieren von Netzwerkpaketen; Nmap ist ein Portscanner, Nessus ein Schwachstellenscanner und Netcat ein vielseitiges Netzwerkwerkzeug ohne GUI für Paket-Analysezwecke. "
+    },
+    "en": {
+      "question": "Which open-source tool is mentioned as a graphical packet capture and analysis utility?",
+      "options": {
+        "A": "Nmap",
+        "B": "Wireshark",
+        "C": "Nessus",
+        "D": "Netcat"
+      },
+      "answer": "B",
+      "explanation": "Wireshark is an open-source GUI tool for capturing and analyzing network packets; Nmap is a port scanner, Nessus is a vulnerability scanner, and Netcat is a versatile networking tool without a GUI for packet analysis. "
+    }
+  },
+  {
+    "id": 440,
+    "de": {
+      "frage": "Wo können in Wireshark Tools zur Verkehrsanalyse aufgerufen werden?",
+      "optionen": {
+        "A": "Datei-Menü",
+        "B": "Bearbeiten-Menü",
+        "C": "Statistiken-Menü",
+        "D": "Tools-Menü"
+      },
+      "antwort": "C",
+      "erklärung": "In Wireshark sind Analysefunktionen wie Protokollhierarchie, Gesprächs- und Endpunktstatistiken im Statistiken-Menü zugänglich; es gibt kein separates allgemeines „Tools“-Menü für die Verkehrsanalyse. "
+    },
+    "en": {
+      "question": "In Wireshark, where can you access tools for traffic analysis?",
+      "options": {
+        "A": "File menu",
+        "B": "Edit menu",
+        "C": "Statistics menu",
+        "D": "Tools menu"
+      },
+      "answer": "C",
+      "explanation": "Wireshark’s traffic analysis features like Protocol Hierarchy, Conversations, and Endpoints are found under the Statistics menu; there isn’t a general “Tools” menu for traffic analysis. "
+    }
+  },
+  {
+    "id": 441,
+    "de": {
+      "frage": "Wozu dienen Display-Filter in Wireshark?",
+      "optionen": {
+        "A": "Die Capture-Geschwindigkeit der Pakete zu erhöhen",
+        "B": "Die Farbe der Oberfläche zu ändern",
+        "C": "Nur bestimmte Frames oder Frame-Sequenzen anzuzeigen",
+        "D": "Unerwünschte Pakete aus dem Netzwerk zu löschen"
+      },
+      "antwort": "C",
+      "erklärung": "Display-Filter werden verwendet, um die Sicht im bereits erfassten Trace auf bestimmte Pakete/Frames oder zusammenhängende Sequenzen einzuschränken, sodass relevante Daten schneller analysiert werden können. Sie beeinflussen nicht die Erfassungsgeschwindigkeit, ändern keine UI-Farben und löschen keine Pakete im Netzwerk. "
+    },
+    "en": {
+      "question": "What is the purpose of using display filters in Wireshark?",
+      "options": {
+        "A": "To increase the capture speed of packets",
+        "B": "To change the color of the interface",
+        "C": "To show only particular frames or sequences of frames",
+        "D": "To delete unwanted packets from the network"
+      },
+      "answer": "C",
+      "explanation": "Display filters are used to narrow the view of an already captured trace to specific packets/frames or related sequences, enabling focused analysis of relevant data. They do not affect capture speed, change UI colors, or delete packets on the network. "
+    }
+  },
+  {
+    "id": 442,
+    "de": {
+      "frage": "Was ist die Hauptfunktion von Traffic Shapern?",
+      "optionen": {
+        "A": "Die Geschwindigkeit der Paketübertragung zu erhöhen",
+        "B": "Bestimmte Paketarten basierend auf ihrem Inhalt zu verzögern",
+        "C": "Protokolle in verschiedene Servicelevel einzuordnen",
+        "D": "Verkehrsbedingungen zu überwachen und Berichte zu erstellen"
+      },
+      "antwort": "B",
+      "erklärung": "Traffic Shaper puffern und planen Datenströme, um ausgewählte Pakete nach Klassifizierung bewusst zu verzögern und so die Ausgaberate zu glätten und Bandbreitenrichtlinien/QoS-Profile einzuhalten; sie beschleunigen Übertragungen nicht direkt und sind nicht primär für Reporting oder reine Klassifizierung zuständig. "
+    },
+    "en": {
+      "question": "What is the primary function of traffic shapers?",
+      "options": {
+        "A": "To increase the speed of packet delivery",
+        "B": "To delay certain packet types based on their content",
+        "C": "To categorize protocols into different service levels",
+        "D": "To monitor traffic conditions and generate reports"
+      },
+      "answer": "B",
+      "explanation": "Traffic shapers buffer and schedule flows to intentionally delay selected packets based on classification, smoothing egress rate and enforcing bandwidth/QoS policies; they do not directly speed delivery and are not primarily for reporting or mere categorization. "
+    }
+  },
+  {
+    "id": 443,
+    "de": {
+      "frage": "Welche mögliche Folge hat die Verwendung von Traffic-Policing-Geräten anstelle von Traffic Shapern?",
+      "optionen": {
+        "A": "Erhöhte Latenz für nicht kritische Anwendungen",
+        "B": "Effizientere Nutzung der verfügbaren Bandbreite",
+        "C": "Weniger Paketverluste bei Überlast",
+        "D": "Unterauslastung der Bandbreite in Leerlaufzeiten"
+      },
+      "antwort": "D",
+      "erklärung": "Traffic Policing verwirft oder markiert Überschreitungen sofort, anstatt sie zwischenzuspeichern und zeitlich zu glätten wie beim Shaping; dadurch kann ungenutzte Kapazität in ruhigen Phasen nicht durch Pufferabbau genutzt werden, was zu Unterauslastung der Bandbreite führt. "
+    },
+    "en": {
+      "question": "What is a potential consequence of using traffic policing devices instead of traffic shapers?",
+      "options": {
+        "A": "Increased latency for non-critical applications",
+        "B": "More efficient use of available bandwidth",
+        "C": "Fewer lost packets during periods of congestion",
+        "D": "Under-utilization of bandwidth during idle periods"
+      },
+      "answer": "D",
+      "explanation": "Traffic policing drops or marks excess traffic immediately rather than buffering and smoothing as shaping does; as a result, unused capacity during quiet periods cannot be reclaimed by draining queues, leading to bandwidth under-utilization. "
+    }
+  },
+  {
+    "id": 444,
+    "de": {
+      "frage": "Ein Netzwerkadministrator soll die Leistung eines VoIP-Systems verbessern, das während der Stoßzeiten schlechte Audioqualität aufweist. Das Netzwerk wird auch für E-Mail, Web und Dateiübertragungen genutzt. Es soll eine Lösung implementiert werden, die VoIP-Verkehr priorisiert. Welche Lösung wäre AM EHESTEN wirksam?",
+      "optionen": {
+        "A": "Implementierung einer First-In-First-Out (FIFO) Warteschlangen-Disziplin im gesamten Netzwerk.",
+        "B": "Konfiguration eines Random Early Detection (RED) Algorithmus auf allen Netzwerkswitches.",
+        "C": "Einsatz von Traffic Shaping zur Priorisierung von VoIP-Paketen.",
+        "D": "Erhöhung der Bandbreite des Internetanschlusses des Unternehmens."
+      },
+      "antwort": "C",
+      "erklärung": "Traffic Shaping und QoS-Priorisierung weisen VoIP-Paketen bevorzugte Behandlung und ggf. reservierte Bandbreite zu, reduzieren Latenz/Jitter und verbessern Sprachqualität unter Last, während FIFO keine Priorisierung bietet, RED primär Staueffekte durch frühzeitiges Droppen steuert und reine Bandbreitenerhöhung ohne Priorisierung die Konkurrenz durch andere Anwendungen in Spitzzeiten nicht gezielt entschärft. "
+    },
+    "en": {
+      "question": "A network administrator needs to improve VoIP performance, which suffers during peak hours. The network also carries email, web, and file transfers. The goal is to prioritize VoIP over other traffic. Which solution would be MOST effective?",
+      "options": {
+        "A": "Implementing a First-In, First-Out (FIFO) queuing discipline across the network.",
+        "B": "Configuring a Random Early Detection (RED) algorithm on all network switches.",
+        "C": "Deploying traffic shaping to prioritize VoIP packets.",
+        "D": "Increasing the bandwidth of the company's internet connection."
+      },
+      "answer": "C",
+      "explanation": "Traffic shaping with QoS prioritization gives VoIP packets preferential treatment and, if needed, reserved bandwidth, reducing latency/jitter and improving voice quality under load, whereas FIFO offers no prioritization, RED mainly manages congestion via early drops, and simply adding bandwidth without prioritization does not reliably prevent competition from other apps during peak periods. "
+    }
+  },
+  {
+    "id": 445,
+    "de": {
+      "frage": "Welchen Vorteil bieten Website-Performance-Checker beim Testen von Seitenreaktionszeiten?",
+      "optionen": {
+        "A": "Sie können Websites physisch reparieren.",
+        "B": "Sie testen aus der Perspektive von Kunden in verschiedenen Ländern.",
+        "C": "Sie erhöhen automatisch den Website-Traffic.",
+        "D": "Sie entwerfen Websites."
+      },
+      "antwort": "B",
+      "erklärung": "Website-Performance-Checker führen Messungen von mehreren geografischen Standorten aus durch, sodass die Reaktionszeiten aus der Sicht von Nutzern in verschiedenen Ländern sichtbar werden und regionale Unterschiede erkannt werden. Dies ermöglicht realistische Endbenutzer-Perspektiven und gezieltes Tuning, nicht jedoch Reparaturen, Traffic-Steigerung oder Webdesign. "
+    },
+    "en": {
+      "question": "What advantage do website performance checkers offer for testing site response times?",
+      "options": {
+        "A": "They can physically repair websites.",
+        "B": "They test from the perspective of customers in different countries.",
+        "C": "They increase website traffic automatically.",
+        "D": "They design websites."
+      },
+      "answer": "B",
+      "explanation": "Website performance checkers run tests from multiple geographic locations, revealing response times from the perspective of users in different countries and highlighting regional differences. This provides realistic end-user views for tuning, not physical repairs, traffic boosting, or web design. "
+    }
+  },
+  {
+    "id": 446,
+    "de": {
+      "frage": "Worauf beziehen sich „Top Talkers“ und „Top Listeners“ in der Netzwerkanalyse?",
+      "optionen": {
+        "A": "Top Talkers sind Geräte mit den höchsten Fehlerraten im Netzwerk, während Top Listeners Geräte mit den höchsten Paketverlustraten sind.",
+        "B": "Top Talkers sind die sichersten Verbindungen in einem Netzwerk, und Top Listeners sind die unsichersten Verbindungen.",
+        "C": "Top Talkers sind Schnittstellen, die am meisten ausgehenden Traffic erzeugen, während Top Listeners die Schnittstellen sind, die am meisten eingehenden Traffic empfangen.",
+        "D": "Top Talkers sind die schnellsten Netzwerkverbindungen, während Top Listeners die langsamsten Netzwerkverbindungen sind."
+      },
+      "antwort": "C",
+      "erklärung": "In der Netzwerkanalyse bezeichnet man als Top Talkers die Hosts oder Interfaces mit dem höchsten ausgehenden Datenvolumen, während Top Listeners diejenigen sind, die das größte eingehende Volumen empfangen. Diese Metriken helfen bei der Identifikation von Bandbreitennutzern und möglichen Engpässen. "
+    },
+    "en": {
+      "question": "What do 'top talkers' and top listeners refer to in network analysis?",
+      "options": {
+        "A": "Top talkers are devices with the highest error rates in the network, while top listeners are devices with the highest packet loss rates.",
+        "B": "Top talkers are the most secure connections in a network, and top listeners are the least secure connections.",
+        "C": "Top talkers are interfaces generating the most outgoing traffic, while top listeners are the interfaces receiving the most incoming traffic.",
+        "D": "Top talkers are the fastest network connections, while top listeners are the slowest network connections."
+      },
+      "answer": "C",
+      "explanation": "In network analysis, top talkers are the hosts or interfaces with the highest volume of outgoing traffic, while top listeners are those receiving the largest volume of incoming traffic. These metrics help identify bandwidth consumers and potential bottlenecks. "
+    }
+  },
+  {
+    "id": 447,
+    "de": {
+      "frage": "Was ist Paketverlust?",
+      "optionen": {
+        "A": "Die Verschlüsselung von Datenpaketen zu Sicherheitszwecken",
+        "B": "Die absichtliche Verlangsamung der Datenübertragung",
+        "C": "Das Verwerfen von Datenpaketen in einem Netzwerk",
+        "D": "Die Duplizierung von Datenpaketen zur Sicherstellung der Zustellung"
+      },
+      "antwort": "C",
+      "erklärung": "Paketverlust bezeichnet das Verwerfen oder Nicht-Ankommen von Datenpaketen auf dem Übertragungsweg, sodass diese ihr Ziel nicht erreichen, was zu fehlenden oder verzögerten Daten führt. Dies ist nicht mit Verschlüsselung, absichtlicher Drosselung oder Duplizierung zu verwechseln. "
+    },
+    "en": {
+      "question": "What is packet loss?",
+      "options": {
+        "A": "The encryption of data packets for security purposes",
+        "B": "The intentional slowing down of data transmission",
+        "C": "The discarding of data packets in a network",
+        "D": "The duplication of data packets to ensure delivery"
+      },
+      "answer": "C",
+      "explanation": "Packet loss is the discarding or non-arrival of data packets along the transmission path, preventing them from reaching the destination and causing missing or delayed data. It is not encryption, deliberate throttling, or duplication. "
+    }
+  },
+  {
+    "id": 448,
+    "de": {
+      "frage": "Was sind Latenz und Jitter im Kontext der Netzwerkleistung?",
+      "optionen": {
+        "A": "Arten von Netzwerksicherheitsprotokollen",
+        "B": "Messgrößen für Netzwerkgeschwindigkeit und -effizienz",
+        "C": "Probleme von Timing und Reihenfolge der Paketlieferung",
+        "D": "Techniken zur Optimierung der Bandbreitennutzung"
+      },
+      "antwort": "C",
+      "erklärung": "Latenz ist die Verzögerung, die ein Paket von Quelle bis Ziel erfährt, und Jitter ist die Schwankung dieser Verzögerung über die Zeit; zusammen beschreiben sie Timing- und Reihenfolgeprobleme bei der Paketzustellung, die besonders bei Echtzeitdiensten wie VoIP relevant sind. "
+    },
+    "en": {
+      "question": "What are latency and jitter in the context of network performance?",
+      "options": {
+        "A": "Types of network security protocols",
+        "B": "Measures of network speed and efficiency",
+        "C": "Problems of timing and sequence of packet delivery",
+        "D": "Techniques for optimizing bandwidth usage"
+      },
+      "answer": "C",
+      "explanation": "Latency is the delay a packet experiences from source to destination, and jitter is the variation of that delay over time; together they reflect timing and ordering issues in packet delivery, which are critical for real-time services like VoIP. "
+    }
+  },
+  {
+    "id": 449,
+    "de": {
+      "frage": "Welche Art der Datenübertragung gilt als „bursty“ (stoßweise)?",
+      "optionen": {
+        "A": "Echtzeit-Video-Streaming",
+        "B": "Voice over IP (VoIP)",
+        "C": "Dateiübertragung",
+        "D": "Live-Audioübertragung"
+      },
+      "antwort": "C",
+      "erklärung": "Dateiübertragungen erzeugen typischerweise stoßweisen Verkehr mit hohen Datenraten in kurzen Schüben, gefolgt von Pausen für Bestätigungen oder Steuerung, im Gegensatz zu kontinuierlichen, gleichmäßigeren Strömen bei Echtzeit-Video, VoIP oder Live-Audio. "
+    },
+    "en": {
+      "question": "What type of data transfer is described as bursty?",
+      "options": {
+        "A": "Real-time video streaming",
+        "B": "Voice over IP (VoIP)",
+        "C": "File transfer",
+        "D": "Live audio broadcasting"
+      },
+      "answer": "C",
+      "explanation": "File transfers typically produce bursty traffic with high data rates in short bursts followed by pauses for acknowledgments or control, unlike the more continuous flows of real-time video, VoIP, or live audio. "
+    }
+  },
+  {
+    "id": 450,
+    "de": {
+      "frage": "Warum wird das Sammeln nur der Paket-Metadaten dem Aufzeichnen jedes einzelnen Frames vorgezogen?",
+      "optionen": {
+        "A": "Es erhöht die Netzwerkgeschwindigkeit.",
+        "B": "Es verursacht einen hohen Verarbeitungsaufwand.",
+        "C": "Es reduziert die vom Sniffer benötigte Bandbreite.",
+        "D": "Es verbessert die Sicherheit des Netzwerks."
+      },
+      "antwort": "C",
+      "erklärung": "Das Erfassen ausschließlich von Metadaten (z. B. Zeitstempel, Quell-/Zieladressen, Ports, Länge) verringert die Menge an übertragenen und gespeicherten Daten für den Sniffer erheblich, wodurch weniger Bandbreite und Speicher benötigt werden als bei der vollständigen Aufzeichnung jedes Frames mit Payload. "
+    },
+    "en": {
+      "question": "Why is collecting just the packet metadata preferred over recording each frame?",
+      "options": {
+        "A": "It increases the network speed.",
+        "B": "It imposes a heavy processing overhead.",
+        "C": "It reduces the bandwidth required by the sniffer.",
+        "D": "It enhances the security of the network."
+      },
+      "answer": "C",
+      "explanation": "Capturing only metadata (e.g., timestamps, source/destination addresses, ports, length) dramatically reduces the amount of data the sniffer must transfer and store, requiring less bandwidth and storage than full frame capture with payload. "
+    }
+  },
+  {
+    "id": 451,
+    "de": {
+      "frage": "Was ist der Hauptzweck der Überwachung einzelner Schnittstellenstatistiken in einem Netzwerk?",
+      "optionen": {
+        "A": "Die Netzwerkgeschwindigkeit zu erhöhen",
+        "B": "Leistungsprobleme zu diagnostizieren",
+        "C": "Die Kosten der Netzwerkwartung zu senken",
+        "D": "Die Sicherheit der Netzwerkkommunikation zu verbessern"
+      },
+      "antwort": "B",
+      "erklärung": "Das Monitoring von Schnittstellenstatistiken wie Auslastung, Fehlern, Drops und Kollisionen dient primär der Diagnose von Leistungsproblemen und Engpässen, um Ursachen wie Überlastung, Duplex-Mismatches oder fehlerhafte Links zu identifizieren. "
+    },
+    "en": {
+      "question": "What is the primary purpose of monitoring individual interface statistics in a network?",
+      "options": {
+        "A": "To increase the network speed",
+        "B": "To diagnose performance issues",
+        "C": "To reduce the cost of network maintenance",
+        "D": "To enhance the security of network communications"
+      },
+      "answer": "B",
+      "explanation": "Monitoring interface statistics such as utilization, errors, drops, and collisions is primarily used to diagnose performance issues and bottlenecks, helping pinpoint causes like congestion, duplex mismatches, or faulty links. "
+    }
+  },
+  {
+    "id": 452,
+    "de": {
+      "frage": "Welche Rolle spielt ein NetFlow-Exporter in einem Netzwerk?",
+      "optionen": {
+        "A": "Er aggregiert Flows von mehreren Collectors.",
+        "B": "Er analysiert und berichtet Flow-Informationen.",
+        "C": "Er definiert Cache-Flows.",
+        "D": "Er erhöht die Bandbreite des Netzwerks."
+      },
+      "antwort": "C",
+      "erklärung": "Ein NetFlow-Exporter sammelt Flow-Daten von Netzwerkgeräten/Interfaces und exportiert sie an einen oder mehrere Collector/Analyzer, wo die Daten ausgewertet und berichtet werden; seine Rolle ist somit die Bereitstellung bzw. Aufbereitung zur Analyse, nicht das Aggregieren von Collector-Ergebnissen, das Definieren der Cache-Politik oder das Erhöhen der Bandbreite. "
+    },
+    "en": {
+      "question": "What role does a NetFlow exporter play in a network?",
+      "options": {
+        "A": "It aggregates flows from multiple collectors.",
+        "B": "It analyzes and reports flow information.",
+        "C": "It defines cache flows.",
+        "D": "It increases the bandwidth of the network."
+      },
+      "answer": "C",
+      "explanation": "A NetFlow exporter gathers flow records from device interfaces and exports them to one or more collectors/analyzers, where the data is analyzed and reported; its role is thus enabling analysis and reporting rather than aggregating collectors, defining cache policies, or increasing bandwidth. "
+    }
+  },
+  {
+    "id": 453,
+    "de": {
+      "frage": "Welche Bedeutung hat die Überwachung der Warteschlangenlänge für die Netzwerkleistung?",
+      "optionen": {
+        "A": "Sie zeigt die Gesamtzahl der Nutzer im Netzwerk an.",
+        "B": "Sie hilft festzustellen, ob der Link ein Engpass ist.",
+        "C": "Sie zeigt die finanziellen Kosten der Datenübertragung.",
+        "D": "Sie misst den physischen Zustand der Netzwerkschnittstelle."
+      },
+      "antwort": "B",
+      "erklärung": "Eine anhaltend lange Warteschlange weist darauf hin, dass die Ausgaberate der Schnittstelle die ankommende Last nicht abarbeiten kann, was auf einen Engpass des Links oder unzureichende QoS hinweist; die Queue-Länge gibt weder Nutzerzahlen noch Kosten oder den physischen Zustand direkt wieder. "
+    },
+    "en": {
+      "question": "What is the significance of monitoring queue length in network performance?",
+      "options": {
+        "A": "It indicates the total number of users in the network.",
+        "B": "It helps determine whether the link is a bottleneck.",
+        "C": "It shows the financial cost of data transfer.",
+        "D": "It measures the physical condition of the network interface."
+      },
+      "answer": "B",
+      "explanation": "Persistently long queues indicate the egress interface cannot service incoming load fast enough, signaling a link bottleneck or insufficient QoS; queue length does not directly reflect user counts, financial cost, or physical health of the interface. "
+    }
+  },
+  {
+    "id": 454,
+    "de": {
+      "frage": "Was gilt allgemein als akzeptable Fehlerrate?",
+      "optionen": {
+        "A": "Unter 1 Prozent",
+        "B": "Genau 5 Prozent",
+        "C": "Unter 10 Prozent",
+        "D": "Über 15 Prozent"
+      },
+      "antwort": "A",
+      "erklärung": "In allgemeinen Netzwerk- und Systemkontexten wird eine Fehlerrate von unter 1% typischerweise als akzeptabel betrachtet, während höhere Raten auf Qualitäts- oder Zuverlässigkeitsprobleme hindeuten würden. "
+    },
+    "en": {
+      "question": "What is considered an acceptable error rate in general terms?",
+      "options": {
+        "A": "Under 1 percent",
+        "B": "Exactly 5 percent",
+        "C": "Under 10 percent",
+        "D": "Over 15 percent"
+      },
+      "answer": "A",
+      "explanation": "In general networking and systems contexts, an error rate of under 1% is typically considered acceptable, whereas higher rates would indicate quality or reliability issues. "
+    }
+  },
+  {
+    "id": 455,
+    "de": {
+      "frage": "Was ist der Hauptzweck von Quality of Service (QoS) Mechanismen in einem Netzwerk?",
+      "optionen": {
+        "A": "Die Netzwerksicherheit zu verringern",
+        "B": "Die Anzahl der verbindbaren Geräte zu erhöhen",
+        "C": "Bestimmte Verkehrsarten gegenüber anderen zu priorisieren",
+        "D": "Die Kosten der Netzinfrastruktur zu senken"
+      },
+      "antwort": "C",
+      "erklärung": "QoS dient dazu, Verkehrsklassen zu unterscheiden und priorisiert zeitkritische oder wichtige Datenströme (z. B. VoIP, Echtzeit-Apps) gegenüber weniger kritischen, um Latenz, Jitter und Paketverlust für priorisierten Traffic zu minimieren. "
+    },
+    "en": {
+      "question": "What is the primary purpose of using Quality of Service (QoS) mechanisms in a network?",
+      "options": {
+        "A": "To decrease network security",
+        "B": "To increase the number of devices that can connect to the network",
+        "C": "To prioritize certain types of traffic over others",
+        "D": "To reduce the cost of network infrastructure"
+      },
+      "answer": "C",
+      "explanation": "QoS differentiates traffic classes and prioritizes time-sensitive or important flows (e.g., VoIP, real-time apps) over less critical ones to minimize latency, jitter, and packet loss for prioritized traffic. "
+    }
+  },
+  {
+    "id": 456,
+    "de": {
+      "frage": "Welche der folgenden ist KEINE von DiffServ definierte Verkehrsklasse?",
+      "optionen": {
+        "A": "Best Effort",
+        "B": "Assured Forwarding",
+        "C": "Expedited Forwarding",
+        "D": "Maximum Throughput"
+      },
+      "antwort": "D",
+      "erklärung": "Best Effort, Assured Forwarding (AF) und Expedited Forwarding (EF) sind in DiffServ als Verhaltensklassen/PHBs etabliert, während „Maximum Throughput“ keine standardisierte DiffServ-Klasse darstellt. "
+    },
+    "en": {
+      "question": "Which of the following is NOT a traffic class defined by DiffServ?",
+      "options": {
+        "A": "Best Effort",
+        "B": "Assured Forwarding",
+        "C": "Expedited Forwarding",
+        "D": "Maximum Throughput"
+      },
+      "answer": "D",
+      "explanation": "Best Effort, Assured Forwarding (AF), and Expedited Forwarding (EF) are established DiffServ behaviors/PHBs, whereas “Maximum Throughput” is not a standardized DiffServ class. "
+    }
   }
 ]
