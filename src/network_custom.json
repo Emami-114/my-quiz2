@@ -11463,5 +11463,630 @@
       "answer": "D",
       "explanation": "Best Effort, Assured Forwarding (AF), and Expedited Forwarding (EF) are established DiffServ behaviors/PHBs, whereas “Maximum Throughput” is not a standardized DiffServ class. "
     }
+  },
+  {
+    "id": 457,
+    "de": {
+      "frage": "Was ist der Hauptzweck des Spanning Tree Protocol (STP) in einem Netzwerk?",
+      "optionen": {
+        "A": "Den Datenverkehr zwischen Switches zu verschlüsseln",
+        "B": "Die Netzwerkbandbreite zu erhöhen",
+        "C": "Switching-Schleifen zu verhindern",
+        "D": "VLAN-Hopping-Angriffe zu erleichtern"
+      },
+      "antwort": "C",
+      "erklärung": "Der Hauptzweck von STP ist, Schleifen in geswitchten Layer-2-Netzen zu verhindern, indem redundante Pfade erkannt und selektiv blockiert werden, sodass eine schleifenfreie logische Baumstruktur entsteht ."
+    },
+    "en": {
+      "question": "What is the primary purpose of the Spanning Tree Protocol (STP) in a network?",
+      "options": {
+        "A": "To encrypt traffic between switches",
+        "B": "To increase network bandwidth",
+        "C": "To prevent switching loops",
+        "D": "To facilitate VLAN hopping attacks"
+      },
+      "answer": "C",
+      "explanation": "STP’s primary purpose is to prevent loops in switched Layer 2 networks by detecting redundant paths and selectively blocking them to form a loop-free logical tree ."
+    }
+  },
+  {
+    "id": 458,
+    "de": {
+      "frage": "Welche Funktion von 802.1Q wird bei VLAN-Hopping-Angriffen ausgenutzt?",
+      "optionen": {
+        "A": "Port-Sicherheit",
+        "B": "Native VLANs",
+        "C": "Access Control Lists (ACLs)",
+        "D": "Port Mirroring"
+      },
+      "antwort": "B",
+      "erklärung": "VLAN-Hopping, insbesondere per Double-Tagging, nutzt das Konzept der Native VLANs in 802.1Q aus: Der äußere Tag wird auf dem Trunk im Native VLAN entfernt, wodurch der innere Tag auf einem anderen VLAN landet ."
+    },
+    "en": {
+      "question": "What feature of 802.1Q do VLAN hopping attacks exploit?",
+      "options": {
+        "A": "Port security",
+        "B": "Native VLANs",
+        "C": "Access control lists (ACLs)",
+        "D": "Port mirroring"
+      },
+      "answer": "B",
+      "explanation": "VLAN hopping—especially via double tagging—exploits the 802.1Q concept of native VLANs: the outer tag is stripped on a trunk’s native VLAN, allowing the inner tag to be forwarded into another VLAN ."
+    }
+  },
+  {
+    "id": 459,
+    "de": {
+      "frage": "Was ist VLAN-Hopping?",
+      "optionen": {
+        "A": "Eine Methode, um die Geschwindigkeit des VLAN-Datenverkehrs zu erhöhen",
+        "B": "Ein Angriff, der darauf abzielt, Verkehr in ein anderes VLAN zu senden als das, in dem sich das Hostsystem befindet",
+        "C": "Eine Technik zur Reduzierung von Netzwerkauslastung",
+        "D": "Eine Sicherheitsfunktion von 802.1Q zur Verbesserung der VLAN-Kompatibilität"
+      },
+      "antwort": "B",
+      "erklärung": "VLAN-Hopping ist ein Angriffsvektor, bei dem ein Angreifer den Datenverkehr aus seinem zugewiesenen VLAN heraus in ein anderes VLAN leitet, typischerweise durch Switch-Spoofing oder Double-Tagging, um VLAN-Isolation zu umgehen ."
+    },
+    "en": {
+      "question": "What is VLAN hopping?",
+      "options": {
+        "A": "A method to increase the speed of VLAN traffic",
+        "B": "An attack designed to send traffic to a VLAN other than the one the host system is in",
+        "C": "A technique to reduce network congestion",
+        "D": "A security feature of 802.1Q to enhance VLAN compatibility"
+      },
+      "answer": "B",
+      "explanation": "VLAN hopping is an attack vector where an attacker injects traffic into a different VLAN than the one assigned, commonly via switch spoofing or double tagging, to bypass VLAN isolation ."
+    }
+  },
+  {
+    "id": 460,
+    "de": {
+      "frage": "Wie nutzen Angreifer die Native-VLAN-Funktion bei einem VLAN-Hopping-Angriff aus?",
+      "optionen": {
+        "A": "Durch Verschlüsselung des an das Native VLAN gesendeten Verkehrs",
+        "B": "Durch Senden eines Frames mit drei VLAN-Tag-Headern",
+        "C": "Durch Erstellen eines Frames mit zwei VLAN-Tag-Headern",
+        "D": "Durch Löschen des Native VLAN aus der Switch-Konfiguration"
+      },
+      "antwort": "C",
+      "erklärung": "Beim Double-Tagging wird ein Frame mit zwei VLAN-Tags gesendet: Der äußere Tag entspricht dem Native VLAN eines Trunk-Ports und wird dort entfernt; der verbleibende innere Tag bewirkt, dass das Frame in ein anderes VLAN weitergeleitet wird ."
+    },
+    "en": {
+      "question": "How do attackers exploit the native VLAN feature in a VLAN hopping attack?",
+      "options": {
+        "A": "By encrypting the traffic sent to the native VLAN",
+        "B": "By sending a frame with three VLAN tag headers",
+        "C": "By crafting a frame with two VLAN tag headers",
+        "D": "By deleting the native VLAN from the switch configuration"
+      },
+      "answer": "C",
+      "explanation": "In double tagging, an attacker sends a frame with two VLAN tags: the outer tag matches the trunk’s native VLAN and is stripped, leaving the inner tag to be forwarded into a different VLAN ."
+    }
+  },
+  {
+    "id": 461,
+    "de": {
+      "frage": "Was ist MAC-Spoofing?",
+      "optionen": {
+        "A": "Die MAC-Adresse einer Netzwerkschnittstelle auf einen beliebigen Wert ändern",
+        "B": "Die Netzwerkschnittstelle physisch verändern, um ihre MAC-Adresse zu ändern",
+        "C": "Malware verwenden, um die MAC-Adresse eines Geräts offenzulegen",
+        "D": "MAC-Adressen während der Datenübertragung abfangen"
+      },
+      "antwort": "A",
+      "erklärung": "MAC-Spoofing bezeichnet das absichtliche Ändern der MAC-Adresse einer Netzwerkschnittstelle zu einem beliebigen, oft gefälschten Wert, um sich als ein anderes Gerät auszugeben oder Filter/Bindungen zu umgehen ."
+    },
+    "en": {
+      "question": "What is MAC spoofing?",
+      "options": {
+        "A": "Changing the MAC address of a network interface to any arbitrary value",
+        "B": "Physically altering the network interface to change its MAC address",
+        "C": "Using malware to reveal the MAC address of a device",
+        "D": "Intercepting MAC addresses during data transmission"
+      },
+      "answer": "A",
+      "explanation": "MAC spoofing is the deliberate modification of a network interface’s MAC address to an arbitrary, often forged value to impersonate another device or bypass filters/bindings ."
+    }
+  },
+  {
+    "id": 462,
+    "de": {
+      "frage": "Was ist ein On-Path-Angriff?",
+      "optionen": {
+        "A": "Eine Art physischer Angriff, bei dem der Angreifer eine Datenübertragung physisch abfängt.",
+        "B": "Eine Art Spoofing-Angriff, bei dem ein Bedrohungsakteur die Kommunikation zwischen zwei Hosts abfängt.",
+        "C": "Ein Cyberangriff, der ausschließlich den Pfad von Datenspeichergeräten ins Visier nimmt.",
+        "D": "Ein Angriff, bei dem der Bedrohungsakteur einen neuen Pfad in einem Netzwerk erstellt, um Daten umzuleiten."
+      },
+      "antwort": "B",
+      "erklärung": "Ein On-Path-Angriff (früher oft als Man-in-the-Middle bezeichnet) ist ein Spoofing-/Abfangangriff, bei dem ein Angreifer den Datenverkehr zwischen zwei kommunizierenden Hosts abfängt und potenziell verändert, ohne dass diese es bemerken ."
+    },
+    "en": {
+      "question": "What is an on-path attack?",
+      "options": {
+        "A": "A type of physical attack where the attacker physically intercepts a data transmission.",
+        "B": "A type of spoofing attack where a threat actor intercepts communications between two hosts.",
+        "C": "A cyber-attack that exclusively targets the path of data storage devices.",
+        "D": "An attack where the threat actor creates a new path in a network to reroute data."
+      },
+      "answer": "B",
+      "explanation": "An on-path attack (formerly often called man-in-the-middle) is a spoofing/interception attack in which an attacker intercepts and potentially alters traffic between two communicating hosts without their knowledge ."
+    }
+  },
+  {
+    "id": 463,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen ARP-Spoofing und ARP-Poisoning?",
+      "optionen": {
+        "A": "ARP-Spoofing ist ein passiver Angriff, während ARP-Poisoning ein aktiver Angriff ist.",
+        "B": "ARP-Spoofing beinhaltet das Senden gefälschter ARP-Nachrichten, während ARP-Poisoning den resultierenden Zustand des ARP-Caches bezeichnet.",
+        "C": "ARP-Poisoning wird zur Sicherung der Netzwerkkommunikation verwendet, wohingegen ARP-Spoofing eine bösartige Aktivität ist.",
+        "D": "ARP-Spoofing und ARP-Poisoning sind Begriffe für denselben Prozess, ohne Unterschied."
+      },
+      "antwort": "B",
+      "erklärung": "ARP-Spoofing beschreibt die Technik, gefälschte ARP-Antworten zu versenden, um Zuordnungen zu manipulieren; ARP-Poisoning bezeichnet den kompromittierten Zustand des ARP-Caches nach erfolgreichem Spoofing ."
+    },
+    "en": {
+      "question": "What is the primary difference between ARP spoofing and ARP poisoning?",
+      "options": {
+        "A": "ARP spoofing is a passive attack while ARP poisoning is an active attack.",
+        "B": "ARP spoofing involves broadcasting fake ARP messages, while ARP poisoning refers to the state of the ARP cache.",
+        "C": "ARP poisoning is used to secure network communications, whereas ARP spoofing is a malicious activity.",
+        "D": "ARP spoofing and ARP poisoning are terms for the same process, with no difference between them."
+      },
+      "answer": "B",
+      "explanation": "ARP spoofing refers to the technique of sending forged ARP replies to manipulate mappings; ARP poisoning refers to the compromised state of the ARP cache after successful spoofing ."
+    }
+  },
+  {
+    "id": 464,
+    "de": {
+      "frage": "Was ist das Ergebnis eines erfolgreichen ARP-Poisoning-Angriffs?",
+      "optionen": {
+        "A": "Das Gerät des Angreifers wird vom Netzwerk getrennt.",
+        "B": "Der gesamte Netzwerkverkehr wird automatisch verschlüsselt.",
+        "C": "Der Angreifer erhält den gesamten Datenverkehr, der für entfernte Netzwerke bestimmt ist.",
+        "D": "Die Geschwindigkeit des Netzwerks wird deutlich erhöht."
+      },
+      "antwort": "C",
+      "erklärung": "Bei erfolgreichem ARP-Poisoning manipuliert der Angreifer ARP-Zuordnungen so, dass Verkehr über sein Gerät geleitet wird, wodurch er Daten für andere Ziele abfangen und weiterleiten kann (On-Path/Man-in-the-Middle) ."
+    },
+    "en": {
+      "question": "What is the result of a successful ARP poisoning attack?",
+      "options": {
+        "A": "The attacker's device is disconnected from the network.",
+        "B": "All network traffic is encrypted automatically.",
+        "C": "The attacker receives all traffic destined for remote networks.",
+        "D": "The network's speed is significantly increased."
+      },
+      "answer": "C",
+      "explanation": "With successful ARP poisoning, the attacker corrupts ARP mappings so that traffic is routed through the attacker, allowing interception and relay of data intended for other destinations (on-path/man-in-the-middle) ."
+    }
+  },
+  {
+    "id": 465,
+    "de": {
+      "frage": "Was ist der Hauptzweck von ARP-Poisoning in einem On-Path-Angriff?",
+      "optionen": {
+        "A": "Die Effizienz des ARP-Protokolls zu erhöhen",
+        "B": "Alle Datenpakete im Netzwerk zu verschlüsseln",
+        "C": "Den Datenverkehr über den Angreifer umzuleiten",
+        "D": "Die Netzwerk-Infrastruktur physisch zu beschädigen"
+      },
+      "antwort": "C",
+      "erklärung": "Beim On-Path-Angriff wird ARP-Poisoning eingesetzt, um ARP-Zuordnungen zu verfälschen, sodass der Datenverkehr zuerst zum Angreifer geleitet wird, der ihn abfangen oder manipulieren kann, bevor er weitergeleitet wird ."
+    },
+    "en": {
+      "question": "What is the primary purpose of ARP poisoning in an on-path attack?",
+      "options": {
+        "A": "To increase the efficiency of the ARP protocol.",
+        "B": "To encrypt all data packets on the network.",
+        "C": "To redirect traffic through the attacker.",
+        "D": "To physically damage the network infrastructure."
+      },
+      "answer": "C",
+      "explanation": "In an on-path attack, ARP poisoning corrupts ARP mappings so traffic is routed through the attacker, enabling interception or manipulation before forwarding to the destination ."
+    }
+  },
+  {
+    "id": 466,
+    "de": {
+      "frage": "Was passiert, wenn die MAC-Adress-Tabelle eines Switches durch einen MAC-Flooding-Angriff überlastet wird?",
+      "optionen": {
+        "A": "Der Switch leitet den Verkehr nur an den Port des Angreifers weiter.",
+        "B": "Der Switch beginnt, wie ein Hub zu funktionieren.",
+        "C": "Der Switch schaltet sich aus Sicherheitsgründen automatisch ab.",
+        "D": "Der Switch erhöht automatisch seine Speicherkapazität."
+      },
+      "antwort": "B",
+      "erklärung": "Bei einem MAC-Flooding-Angriff wird die CAM/MAC-Tabelle mit vielen gefälschten Einträgen gefüllt; wenn sie überläuft, kann der Switch Ziel-MACs nicht mehr zuordnen und flutet Frames an alle Ports, wodurch er effektiv wie ein Hub arbeitet ."
+    },
+    "en": {
+      "question": "What happens when a switch's MAC address table is overwhelmed due to a MAC flooding attack?",
+      "options": {
+        "A": "The switch only forwards traffic to the attacker's port.",
+        "B": "The switch begins to function as a hub.",
+        "C": "The switch automatically shuts down for security reasons.",
+        "D": "The switch increases its memory capacity automatically."
+      },
+      "answer": "B",
+      "explanation": "In a MAC flooding attack, the CAM/MAC table is stuffed with bogus entries; once it overflows, the switch can no longer map destination MACs and floods frames out all ports, effectively acting like a hub ."
+    }
+  },
+  {
+    "id": 467,
+    "de": {
+      "frage": "Was ist die WAHRSCHEINLICHSTE Ursache dafür, dass Clients mit einer falschen IP-Konfiguration enden?",
+      "optionen": {
+        "A": "Überlasteter Netzwerkverkehr",
+        "B": "Ein Rogue-DHCP-Server im Netzwerk",
+        "C": "Falsche Subnetzmaskeinstellungen auf dem Client",
+        "D": "Ein fehlerhaftes Ethernet-Kabel"
+      },
+      "antwort": "B",
+      "erklärung": "Ein rogue DHCP-Server verteilt unautorisierte oder falsche IP-Parameter (IP, Subnetz, Gateway, DNS) und führt typischerweise dazu, dass viele Clients gleichzeitig eine inkorrekte Konfiguration erhalten, was charakteristisch für dieses Problem ist ."
+    },
+    "en": {
+      "question": "What is the MOST likely cause of clients ending up with an incorrect IP configuration?",
+      "options": {
+        "A": "Overloaded network traffic",
+        "B": "A rogue DHCP server on the network",
+        "C": "Incorrect subnet mask settings on the client",
+        "D": "A faulty Ethernet cable"
+      },
+      "answer": "B",
+      "explanation": "A rogue DHCP server hands out unauthorized or incorrect IP parameters (IP, subnet, gateway, DNS), commonly causing many clients at once to receive wrong configurations, which is characteristic of this issue ."
+    }
+  },
+  {
+    "id": 468,
+    "de": {
+      "frage": "Was ist ein DHCP-Starvation-Angriff?",
+      "optionen": {
+        "A": "Ein Angriff, der das Netzwerk mit übermäßigen Daten überflutet",
+        "B": "Ein Angriff, der den Adresspool eines DHCP-Servers erschöpft",
+        "C": "Ein Angriff, der den gesamten DHCP-Verkehr verschlüsselt",
+        "D": "Ein Angriff, der den DHCP-Server physisch beschädigt"
+      },
+      "antwort": "B",
+      "erklärung": "Bei einem DHCP-Starvation-Angriff sendet ein Angreifer massenhaft gefälschte DHCP-Anfragen mit unterschiedlichen MAC-Adressen, bis der DHCP-Adresspool aufgebraucht ist, wodurch legitime Clients keine IP-Adresse mehr erhalten können ."
+    },
+    "en": {
+      "question": "What is a DHCP starvation attack?",
+      "options": {
+        "A": "An attack that floods the network with excessive data",
+        "B": "An attack that exhausts a DHCP server's address pool",
+        "C": "An attack that encrypts all DHCP traffic",
+        "D": "An attack that physically damages the DHCP server"
+      },
+      "answer": "B",
+      "explanation": "In a DHCP starvation attack, an attacker sends a large number of forged DHCP requests with different MAC addresses until the server’s address pool is depleted, preventing legitimate clients from obtaining an IP address ."
+    }
+  },
+  {
+    "id": 469,
+    "de": {
+      "frage": "Welche der folgenden Folgen kann auftreten, wenn ein Rogue-DHCP-Server die Standard-Gateway-Adresse für ein Subnetz ändert?",
+      "optionen": {
+        "A": "Erhöhte Internetgeschwindigkeit für alle Clients",
+        "B": "Verbesserte Netzwerksicherheit und Verschlüsselung",
+        "C": "Weiterleitung der Kommunikation über die Maschine des Angreifers",
+        "D": "Automatische Lösung von IP-Adresskonflikten"
+      },
+      "antwort": "C",
+      "erklärung": "Wenn ein Rogue-DHCP-Server ein manipuliertes Standard-Gateway verteilt, wird der ausgehende Verkehr der Clients über den Angreifer geleitet, was On-Path/Man-in-the-Middle-Überwachung oder Manipulation ermöglicht ."
+    },
+    "en": {
+      "question": "Which of the following is a potential consequence of a rogue DHCP server changing the default gateway address for a subnet?",
+      "options": {
+        "A": "Increased internet speed for all clients",
+        "B": "Improved network security and encryption",
+        "C": "Routing communications through the attacker's machine",
+        "D": "Automatic resolution of IP address conflicts"
+      },
+      "answer": "C",
+      "explanation": "If a rogue DHCP server distributes a tampered default gateway, clients’ outbound traffic is routed via the attacker, enabling on-path/man-in-the-middle monitoring or manipulation ."
+    }
+  },
+  {
+    "id": 470,
+    "de": {
+      "frage": "Welche der folgenden Optionen kann als Rogue-Gerät betrachtet werden?",
+      "optionen": {
+        "A": "Ein offiziell genehmigter DHCP-Server",
+        "B": "Ein Wireless Access Point, der ohne IT-Genehmigung installiert wurde",
+        "C": "Eine von der Netzwerksicherheitsabteilung konfigurierte Firewall",
+        "D": "Ein vom Unternehmen ausgegebener Laptop mit aktueller Sicherheitssoftware"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Rogue-Gerät ist ein nicht autorisiertes oder heimlich installiertes Gerät im Netzwerk; ein ohne IT-Genehmigung installierter WLAN-Access Point gilt typischerweise als Rogue-AP und stellt ein Sicherheitsrisiko dar ."
+    },
+    "en": {
+      "question": "Which of the following can be considered a rogue device?",
+      "options": {
+        "A": "An officially sanctioned DHCP server",
+        "B": "A wireless access point installed without IT approval",
+        "C": "A firewall configured by the network security team",
+        "D": "A company-issued laptop with up-to-date security software"
+      },
+      "answer": "B",
+      "explanation": "A rogue device is an unauthorized or covertly installed device on the network; a wireless access point installed without IT approval is typically considered a rogue AP and poses a security risk ."
+    }
+  },
+  {
+    "id": 471,
+    "de": {
+      "frage": "Was ist eine häufige Folge von Rogue-Geräten und -Diensten in einem Netzwerk?",
+      "optionen": {
+        "A": "Verbesserte Netzwerkeffizienz.",
+        "B": "Erhöhte Netzwerksicherheit.",
+        "C": "Schaffung neuer, unüberwachter Angriffsflächen.",
+        "D": "Reduzierung der Arbeitsbelastung der IT-Abteilung."
+      },
+      "antwort": "C",
+      "erklärung": "Nicht autorisierte Geräte und Dienste umgehen etablierte Sicherheitskontrollen und Überwachungen, wodurch neue unüberwachte Angriffsflächen entstehen, die Angreifer ausnutzen können ."
+    },
+    "en": {
+      "question": "What is a common consequence of rogue devices and services in a network?",
+      "options": {
+        "A": "Improved network efficiency.",
+        "B": "Increased network security.",
+        "C": "Creation of new unmonitored attack surfaces.",
+        "D": "Reduction in IT department workload."
+      },
+      "answer": "C",
+      "explanation": "Unauthorized devices and services bypass established security controls and monitoring, creating new unmonitored attack surfaces that attackers can exploit ."
+    }
+  },
+  {
+    "id": 472,
+    "de": {
+      "frage": "Was ist der Hauptunterschied zwischen DNS-Spoofing und DNS-Poisoning?",
+      "optionen": {
+        "A": "Spoofing beinhaltet physische Angriffe auf DNS-Server, während Poisoning dies nicht tut",
+        "B": "Spoofing verwendet gefälschte DNS-Antworten, während Poisoning zwischengespeicherte Einträge manipuliert",
+        "C": "Spoofing zielt nur auf private Netzwerke, während Poisoning öffentliche Netzwerke angreift",
+        "D": "Spoofing ist eine legale Methode zur Umleitung von Datenverkehr, während Poisoning illegal ist"
+      },
+      "antwort": "B",
+      "erklärung": "DNS-Spoofing bezeichnet das Einspeisen gefälschter DNS-Antworten, um Anfragen falsch aufzulösen, während DNS-Poisoning die Manipulation des DNS-Caches (z. B. beim Resolver) beschreibt, sodass nachfolgende Anfragen dauerhaft falsch aufgelöst werden ."
+    },
+    "en": {
+      "question": "What is the primary difference between DNS spoofing and DNS poisoning?",
+      "options": {
+        "A": "Spoofing involves physical attacks on DNS servers, while poisoning does not",
+        "B": "Spoofing uses false DNS requests, while poisoning manipulates cached records",
+        "C": "Spoofing targets only private networks, while poisoning targets public networks",
+        "D": "Spoofing is a legal method of redirecting traffic, while poisoning is not"
+      },
+      "answer": "B",
+      "explanation": "DNS spoofing refers to injecting forged DNS responses to misresolve queries, whereas DNS poisoning refers to corrupting the resolver’s cached records, causing subsequent queries to resolve incorrectly over time ."
+    }
+  },
+  {
+    "id": 473,
+    "de": {
+      "frage": "Was ist DNS-Spoofing?",
+      "optionen": {
+        "A": "Manipulation zwischengespeicherter DNS-Einträge",
+        "B": "Verwendung gefälschter DNS-Anfragen oder -Antworten",
+        "C": "Angriff auf die physische Infrastruktur von DNS-Servern",
+        "D": "Infektion von DNS-Servern mit Malware"
+      },
+      "antwort": "B",
+      "erklärung": "DNS-Spoofing bezeichnet das Einspeisen oder Verwenden gefälschter DNS-Anfragen/-Antworten, um die Namensauflösung zu manipulieren und Verkehr zu falschen Zielen umzuleiten ."
+    },
+    "en": {
+      "question": "What is DNS spoofing?",
+      "options": {
+        "A": "Manipulating cached DNS records",
+        "B": "Using false DNS requests or replies",
+        "C": "Attacking the physical infrastructure of DNS servers",
+        "D": "Infecting DNS servers with malware"
+      },
+      "answer": "B",
+      "explanation": "DNS spoofing is the use or injection of forged DNS requests/responses to manipulate name resolution and redirect traffic to incorrect destinations ."
+    }
+  },
+  {
+    "id": 474,
+    "de": {
+      "frage": "Was ist der Zweck der HOSTS-Datei in der DNS-Auflösung?",
+      "optionen": {
+        "A": "Den Browserverlauf des Benutzers zu speichern",
+        "B": "Als Backup für DNS-Server zu dienen",
+        "C": "Domainnamen IP-Adressen zuzuordnen",
+        "D": "DNS-Abfragefehler zu protokollieren"
+      },
+      "antwort": "C",
+      "erklärung": "Die HOSTS-Datei dient der lokalen Zuordnung von Domainnamen zu IP-Adressen und wird bei der Namensauflösung typischerweise vor externen DNS-Abfragen konsultiert ."
+    },
+    "en": {
+      "question": "What is the purpose of the HOSTS file in DNS resolution?",
+      "options": {
+        "A": "To store the user's browsing history",
+        "B": "To act as a backup for DNS servers",
+        "C": "To map domain names to IP addresses",
+        "D": "To log DNS query errors"
+      },
+      "answer": "C",
+      "explanation": "The HOSTS file provides local mappings of domain names to IP addresses and is typically consulted before external DNS lookups during name resolution ."
+    }
+  },
+  {
+    "id": 475,
+    "de": {
+      "frage": "Was ist ein häufiges Indiz für eine kompromittierte Maschine im Kontext von DNS-Angriffen?",
+      "optionen": {
+        "A": "Hohe CPU-Auslastung",
+        "B": "Verdächtige Einträge in der HOSTS-Datei",
+        "C": "Häufige Systemabstürze",
+        "D": "Langsame Internetverbindung"
+      },
+      "antwort": "B",
+      "erklärung": "Malware und DNS-Hijacking manipulieren oft die lokale HOSTS-Datei, um Domainnamen auf bösartige IPs umzubiegen; ungewöhnliche oder unerwartete Einträge dort gelten als starkes Kompromittierungsindikator ."
+    },
+    "en": {
+      "question": "What is a common indicator of a compromised machine in the context of DNS attacks?",
+      "options": {
+        "A": "High CPU usage",
+        "B": "Suspect entries in the HOSTS file",
+        "C": "Frequent system crashes",
+        "D": "Slow internet connection"
+      },
+      "answer": "B",
+      "explanation": "Malware and DNS hijacking frequently alter the local HOSTS file to redirect domains to malicious IPs; unusual or unexpected entries there are a strong compromise indicator ."
+    }
+  },
+  {
+    "id": 476,
+    "de": {
+      "frage": "Was ist DNS-Server-Cache-Poisoning?",
+      "optionen": {
+        "A": "Einen DNS-Server mit Malware infizieren, um seinen Betrieb zu stören",
+        "B": "Einen DNS-Server physisch beschädigen, um ihn offline zu nehmen",
+        "C": "Falsche Zuordnungen von Domain zu IP in den Cache eines DNS-Servers einfügen",
+        "D": "Sensible Informationen aus dem Cache eines DNS-Servers stehlen"
+      },
+      "antwort": "C",
+      "erklärung": "Beim DNS-Cache-Poisoning werden manipulierte Domain-zu-IP-Einträge in den Cache eines DNS-Resolvers eingeschleust, sodass spätere Anfragen falsch aufgelöst und zu falschen Zielen umgeleitet werden ."
+    },
+    "en": {
+      "question": "What is DNS server cache poisoning?",
+      "options": {
+        "A": "Infecting a DNS server with malware to disrupt its operation",
+        "B": "Physically damaging a DNS server to take it offline",
+        "C": "Inserting false domain:IP mappings into a DNS server's cache",
+        "D": "Stealing sensitive information from a DNS server's cache"
+      },
+      "answer": "C",
+      "explanation": "DNS cache poisoning injects forged domain-to-IP records into a resolver’s cache, causing subsequent queries to resolve incorrectly and redirect to wrong destinations ."
+    }
+  },
+  {
+    "id": 477,
+    "de": {
+      "frage": "Welches der folgenden Beispiele beschreibt Shoulder Surfing am BESTEN?",
+      "optionen": {
+        "A": "Das Erraten eines Passworts, weil es sehr gebräuchlich oder einfach ist",
+        "B": "Das Finden eines Passworts im Mülleimer und dessen Verwendung zum Zugriff auf ein Konto",
+        "C": "Jemandem, dem man vertraut, den Benutzernamen und das Passwort geben",
+        "D": "Jemand in der Nähe beobachtet, wie ein Passwort am Computer eingegeben wird, und nimmt es auf"
+      },
+      "antwort": "D",
+      "erklärung": "Shoulder Surfing bezeichnet das Ausspähen sensibler Informationen, indem ein Angreifer über die Schulter zuschaut oder aufzeichnet, wie Anmeldedaten eingegeben werden; das Szenario mit dem Beobachten und Aufzeichnen der Passworteingabe beschreibt dies am treffendsten ."
+    },
+    "en": {
+      "question": "Which of the following examples BEST describes shoulder surfing?",
+      "options": {
+        "A": "Guessing someone's password because it is so common or simple",
+        "B": "Finding someone's password in the trash can and using it to access their account",
+        "C": "Giving someone you trust your username and account password",
+        "D": "Someone nearby watching you enter your password on your computer and recording it"
+      },
+      "answer": "D",
+      "explanation": "Shoulder surfing is the act of spying sensitive information by watching over someone’s shoulder or recording as they enter credentials; the scenario of observing and recording a password entry best fits this definition ."
+    }
+  },
+  {
+    "id": 478,
+    "de": {
+      "frage": "Auf dem Weg zum Hintereingang des Bürogebäudes bittet ein als Klempner gekleideter Mann um Einlass, um die Toilette zu reparieren. Was ist zu tun?",
+      "optionen": {
+        "A": "Ihn hereinlassen.",
+        "B": "Ihn hereinlassen und beim Finden der Toilette helfen. Dann arbeiten lassen.",
+        "C": "Ihn zum Vordereingang schicken und anweisen, sich bei der Rezeption anzumelden.",
+        "D": "Ihm nein sagen und die Tür schnell schließen."
+      },
+      "antwort": "C",
+      "erklärung": "Das Szenario deutet auf Tailgating/Impersonation hin; Sicherheitsrichtlinien verlangen, externe Dienstleister über den offiziellen Empfang einchecken zu lassen, damit Identität und Auftrag geprüft und begleitet werden können ."
+    },
+    "en": {
+      "question": "On the way into the back entrance of the office, a man dressed as a plumber asks to be let in to fix the restroom. What should be done?",
+      "options": {
+        "A": "Let him in.",
+        "B": "Let him in and help him find the restroom. Then let him work.",
+        "C": "Direct him to the front entrance and instruct him to check in with the receptionist.",
+        "D": "Tell him no and quickly close the door."
+      },
+      "answer": "C",
+      "explanation": "This scenario suggests tailgating/impersonation; security policy requires vendors to enter via the main reception for identity and work-order verification and proper escorting ."
+    }
+  },
+  {
+    "id": 479,
+    "de": {
+      "frage": "Was ist eine gängige Methode, mit der Bedrohungsakteure Zugriff auf ein Netzwerk erlangen?",
+      "optionen": {
+        "A": "Durch physisches Einbrechen in Serverräume",
+        "B": "Durch Erlangen von Zugangsdaten zum Netzwerk",
+        "C": "Durch formelle Zugriffsanfragen an die IT-Abteilung",
+        "D": "Durch Erraten der Netzwerk-IP-Adresse"
+      },
+      "antwort": "B",
+      "erklärung": "Angreifer verschaffen sich häufig Zugriff, indem sie Zugangsdaten über Phishing, Leaks oder Brute-Force erlangen und sich damit legitim am Netzwerk anmelden, statt technische Barrieren direkt zu durchbrechen ."
+    },
+    "en": {
+      "question": "What is a common way for threat actors to gain access to a network?",
+      "options": {
+        "A": "By physically breaking into server rooms",
+        "B": "By obtaining credentials to access the network",
+        "C": "By sending formal requests for access to the IT department",
+        "D": "By guessing the network IP address"
+      },
+      "answer": "B",
+      "explanation": "Attackers often gain access by acquiring credentials via phishing, leaks, or brute force and then logging in as legitimate users, rather than directly bypassing technical defenses ."
+    }
+  },
+  {
+    "id": 480,
+    "de": {
+      "frage": "Warum sind längere und komplexere Passwörter sicherer gegen Brute-Force-Angriffe?",
+      "optionen": {
+        "A": "Sie sind leichter zu merken.",
+        "B": "Sie lassen sich schneller knacken.",
+        "C": "Sie erhöhen die Zeit, die der Angriff zum Durchlaufen benötigt.",
+        "D": "Sie werden seltener in Passwortdateien gespeichert."
+      },
+      "antwort": "C",
+      "erklärung": "Mit zunehmender Länge und Komplexität steigt der Suchraum exponentiell, was die Anzahl möglicher Kombinationen erhöht und die für Brute-Force-Angriffe benötigte Zeit drastisch verlängert, wodurch das Knacken unpraktisch wird ."
+    },
+    "en": {
+      "question": "Why are longer and more complex passwords more secure against brute force attacks?",
+      "options": {
+        "A": "They are easier to remember.",
+        "B": "They take less time to crack.",
+        "C": "They increase the amount of time the attack takes to run.",
+        "D": "They are less likely to be stored in password files."
+      },
+      "answer": "C",
+      "explanation": "As password length and complexity increase, the search space grows exponentially, boosting the number of possible combinations and dramatically increasing brute-force time, making cracking impractical ."
+    }
+  },
+  {
+    "id": 481,
+    "de": {
+      "frage": "Welche Passwort-Cracking-Methode versucht jede mögliche Kombination, um das passende Passwort zu finden?",
+      "optionen": {
+        "A": "Wörterbuch",
+        "B": "Social Engineering",
+        "C": "Brute Force",
+        "D": "Phishing"
+      },
+      "antwort": "C",
+      "erklärung": "Brute Force-Angriffe testen systematisch alle möglichen Zeichenkombinationen, bis das richtige Passwort gefunden ist, im Gegensatz zu Wörterbuchangriffen oder Social-Engineering-Methoden ."
+    },
+    "en": {
+      "question": "Which password cracking method involves trying every possible combination to find the matching password?",
+      "options": {
+        "A": "Dictionary",
+        "B": "Social Engineering",
+        "C": "Brute Force",
+        "D": "Phishing"
+      },
+      "answer": "C",
+      "explanation": "Brute force attacks systematically try all possible character combinations until the correct password is found, unlike dictionary attacks or social engineering methods ."
+    }
   }
 ]
