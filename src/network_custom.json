@@ -12088,5 +12088,630 @@
       "answer": "C",
       "explanation": "Brute force attacks systematically try all possible character combinations until the correct password is found, unlike dictionary attacks or social engineering methods ."
     }
+  },
+  {
+    "id": 482,
+    "de": {
+      "frage": "Was ist eine Schlüsselkomponente des föderierten Identitätsmanagements?",
+      "optionen": {
+        "A": "Active Directory",
+        "B": "Claims-basierte Identität",
+        "C": "Passwortsynchronisierung",
+        "D": "Single Sign-on mit einem einzigen Passwort für alle Konten"
+      },
+      "antwort": "B",
+      "erklärung": "Eine Schlüsselkomponente des föderierten Identitätsmanagements ist die claims-basierte Identität, bei der Identitätsanbieter Ansprüche (Claims) in Token (z. B. SAML, JWT) ausstellen, die von Diensten zur Authentifizierung und Autorisierung verwendet werden."
+    },
+    "en": {
+      "question": "What is a key component of federated identity management?",
+      "options": {
+        "A": "Active Directory",
+        "B": "Claims-based identity",
+        "C": "Password synchronization",
+        "D": "Single sign-on with a single password for all accounts"
+      },
+      "answer": "B",
+      "explanation": "A key component of federated identity management is claims-based identity, where identity providers issue claims in tokens (e.g., SAML, JWT) that services use for authentication and authorization."
+    }
+  },
+  {
+    "id": 483,
+    "de": {
+      "frage": "Was ist ein zentraler Unterschied zwischen RADIUS und TACACS+ in Bezug auf die Protokollfunktionalität?",
+      "optionen": {
+        "A": "RADIUS verschlüsselt den gesamten Authentifizierungsprozess, während TACACS+ dies nicht tut.",
+        "B": "TACACS+ trennt AAA-Funktionen, während RADIUS dies nicht tut.",
+        "C": "TACACS+ verwendet UDP für die Kommunikation, während RADIUS TCP verwendet.",
+        "D": "TACACS+ wird nur für drahtlosen Zugriff verwendet, während RADIUS dies nicht ist."
+      },
+      "antwort": "B",
+      "erklärung": "TACACS+ trennt Authentication, Authorization und Accounting (AAA) logisch, was eine granulare, z. B. befehlsbasierte Autorisierung ermöglicht; RADIUS koppelt Authentifizierung und Autorisierung enger und verschlüsselt typischerweise nur das Passwortfeld statt des gesamten Payloads."
+    },
+    "en": {
+      "question": "What is a key difference between RADIUS and TACACS+ in terms of protocol functionality?",
+      "options": {
+        "A": "RADIUS encrypts the entire authentication process, while TACACS+ does not.",
+        "B": "TACACS+ separates AAA functions, while RADIUS does not.",
+        "C": "TACACS+ uses UDP for communication, while RADIUS uses TCP.",
+        "D": "TACACS+ is only used for wireless access, while RADIUS is not."
+      },
+      "answer": "B",
+      "explanation": "TACACS+ separates authentication, authorization, and accounting (AAA), enabling granular, e.g., per-command authorization, whereas RADIUS more tightly couples authentication and authorization and typically encrypts only the password field rather than the entire payload."
+    }
+  },
+  {
+    "id": 484,
+    "de": {
+      "frage": "Was ist das Hauptziel der sicheren Speicherung von Verschlüsselungsschlüsseln?",
+      "optionen": {
+        "A": "Einen einfachen Zugriff für alle Nutzer sicherstellen",
+        "B": "Die Schlüsselwiderrufung erleichtern",
+        "C": "Unbefugten Zugriff verhindern",
+        "D": "Die Stärke des Schlüssels erhöhen"
+      },
+      "antwort": "C",
+      "erklärung": "Das primäre Ziel der sicheren Schlüsselaufbewahrung ist der Schutz der Schlüssel vor unbefugtem Zugriff, damit Angreifer die verschlüsselten Daten nicht entschlüsseln können; Aufbewahrung stärkt nicht die kryptografische Güte, sondern schützt deren Vertraulichkeit und Integrität."
+    },
+    "en": {
+      "question": "What is the main goal of storing encryption keys securely?",
+      "options": {
+        "A": "To ensure easy access for all users",
+        "B": "To facilitate key revocation",
+        "C": "To prevent unauthorized access",
+        "D": "To increase the key's strength"
+      },
+      "answer": "C",
+      "explanation": "The primary goal of secure key storage is to prevent unauthorized access to the keys so attackers cannot decrypt protected data; storage does not increase cryptographic strength but protects the keys’ confidentiality and integrity."
+    }
+  },
+  {
+    "id": 485,
+    "de": {
+      "frage": "Was ist ein Schlüsselpaar in der Public-Key-Kryptografie?",
+      "optionen": {
+        "A": "Zwei identische Schlüssel, die für Verschlüsselung und Entschlüsselung verwendet werden",
+        "B": "Ein Satz aus zwei Schlüsseln, einer zum Signieren und einer zur Verifikation",
+        "C": "Ein Satz aus zwei Schlüsseln, einer öffentlich und einer privat, die zusammen verwendet werden",
+        "D": "Zwei öffentliche Schlüssel, die austauschbar verwendet werden"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Schlüsselpaar besteht aus einem öffentlichen und einem privaten Schlüssel, die mathematisch miteinander verknüpft sind und gemeinsam für Verschlüsselung/Entschlüsselung bzw. Signatur/Verifikation verwendet werden."
+    },
+    "en": {
+      "question": "What is a key pair in public key cryptography?",
+      "options": {
+        "A": "Two identical keys used for encryption and decryption",
+        "B": "A set of two keys, one for signing and one for verification",
+        "C": "A set of two keys, one public and one private, used together",
+        "D": "Two public keys used interchangeably"
+      },
+      "answer": "C",
+      "explanation": "A key pair consists of a mathematically related public and private key used together for encryption/decryption and signing/verification."
+    }
+  },
+  {
+    "id": 486,
+    "de": {
+      "frage": "Welche Rolle hat eine Zertifizierungsstelle (CA) in einer PKI?",
+      "optionen": {
+        "A": "Private Schlüssel an Benutzer verteilen",
+        "B": "Die Gültigkeit digitaler Zertifikate gewährleisten",
+        "C": "Nachrichten mit öffentlichen Schlüsseln verschlüsseln",
+        "D": "Symmetrische Sitzungsschlüssel erzeugen"
+      },
+      "antwort": "B",
+      "erklärung": "Eine CA prüft Identitäten und stellt digitale Zertifikate aus, indem sie diese kryptografisch signiert und so die Bindung zwischen Subjekt und öffentlichem Schlüssel bestätigt; sie verteilt keine privaten Schlüssel und verschlüsselt keine Nachrichten."
+    },
+    "en": {
+      "question": "What is the role of a Certificate Authority (CA) in PKI?",
+      "options": {
+        "A": "To distribute private keys to users",
+        "B": "To guarantee the validity of digital certificates",
+        "C": "To encrypt messages with public keys",
+        "D": "To generate symmetric session keys"
+      },
+      "answer": "B",
+      "explanation": "A CA verifies identities and issues digital certificates by cryptographically signing them, confirming the binding between a subject and its public key; it does not distribute private keys or encrypt messages."
+    }
+  },
+  {
+    "id": 487,
+    "de": {
+      "frage": "Welche der folgenden Kombinationen stellt eine Zwei-Faktor-Authentifizierung dar?",
+      "optionen": {
+        "A": "Passwort und eine Smartcard",
+        "B": "Zwei verschiedene Passwörter",
+        "C": "Passwort und die Lieblingsfarbe eines Benutzers",
+        "D": "Passwort und die Anmeldezeit"
+      },
+      "antwort": "A",
+      "erklärung": "Zwei-Faktor-Authentifizierung erfordert zwei unterschiedliche Faktoren, z. B. Wissen (Passwort) und Besitz (Smartcard). Kombinationen aus zwei Wissensfaktoren oder Kontextinformationen erfüllen dies nicht."
+    },
+    "en": {
+      "question": "Which of the following combinations represents two-factor authentication?",
+      "options": {
+        "A": "Password and a smart card",
+        "B": "Two different passwords",
+        "C": "Password and a user's favorite color",
+        "D": "Password and the time of login"
+      },
+      "answer": "A",
+      "explanation": "Two-factor authentication requires two different factor types, e.g., something you know (password) and something you have (smart card). Combinations of two knowledge factors or contextual data do not qualify."
+    }
+  },
+  {
+    "id": 488,
+    "de": {
+      "frage": "Warum sind Verhaltens-, Standort- und Zeitfaktoren nicht zuverlässig genug, um als einzelner Faktor in der Authentifizierung verwendet zu werden?",
+      "optionen": {
+        "A": "Sie sind zu leicht zu fälschen.",
+        "B": "Sie sind nicht spezifisch oder zuverlässig genug.",
+        "C": "Sie sind zu schwer zu messen.",
+        "D": "Sie werden von Authentifizierungssystemen nicht erkannt."
+      },
+      "antwort": "B",
+      "erklärung": "Diese Kontextsignale sind variabel, können sich im Laufe der Zeit ändern und lassen sich durch Tools wie VPNs oder Zeitmanipulation beeinflussen; sie binden nicht stabil und eindeutig an eine Person und dienen daher eher als risikobasierte Zusatzsignale als als eigenständiger Faktor."
+    },
+    "en": {
+      "question": "Why are behavioral, location, and time factors not reliable enough to be used as single factors in authentication?",
+      "options": {
+        "A": "They are too easy to fake.",
+        "B": "They are not specific or reliable enough.",
+        "C": "They are too difficult to measure.",
+        "D": "They are not recognized by authentication systems."
+      },
+      "answer": "B",
+      "explanation": "These contextual signals are variable, can change over time, and can be influenced or spoofed (e.g., via VPN or clock manipulation); they do not consistently and uniquely bind to a person, so they are better used as risk signals rather than a standalone factor."
+    }
+  },
+  {
+    "id": 489,
+    "de": {
+      "frage": "Was gilt als Wissensfaktor in der Authentifizierung?",
+      "optionen": {
+        "A": "Eine Smartcard",
+        "B": "Ein Passwort",
+        "C": "Ein Fingerabdruck",
+        "D": "Ein mobiles Endgerät"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Wissensfaktor ist etwas, das eine Person weiß, wie z. B. ein Passwort oder eine PIN; Smartcards und mobile Geräte sind Besitzfaktoren, Fingerabdrücke sind biometrische Faktoren."
+    },
+    "en": {
+      "question": "What is considered a knowledge factor in authentication?",
+      "options": {
+        "A": "A smart card",
+        "B": "A password",
+        "C": "A fingerprint",
+        "D": "A mobile device"
+      },
+      "answer": "B",
+      "explanation": "A knowledge factor is something a person knows, such as a password or PIN; smart cards and mobile devices are possession factors, and fingerprints are biometric factors."
+    }
+  },
+  {
+    "id": 490,
+    "de": {
+      "frage": "Welche der folgenden Optionen ist ein Beispiel für einen Verhaltensfaktor in der Authentifizierung?",
+      "optionen": {
+        "A": "Passwort",
+        "B": "Smartcard",
+        "C": "Eine Unterschrift leisten",
+        "D": "Fingerabdruck"
+      },
+      "antwort": "C",
+      "erklärung": "Ein Verhaltensfaktor bezieht sich auf das Verhalten einer Person, wie z. B. die Art und Weise, wie eine Unterschrift geleistet wird (Dynamik der Unterschrift); Passwort ist ein Wissensfaktor, Smartcard ein Besitzfaktor und Fingerabdruck ein biometrischer (physiologischer) Faktor."
+    },
+    "en": {
+      "question": "Which of the following is an example of a behavioral factor used in authentication?",
+      "options": {
+        "A": "Password",
+        "B": "Smart card",
+        "C": "Making a signature",
+        "D": "Fingerprint"
+      },
+      "answer": "C",
+      "explanation": "A behavioral factor relates to how a person behaves, such as the dynamics of writing a signature; a password is a knowledge factor, a smart card is a possession factor, and a fingerprint is a physiological biometric factor."
+    }
+  },
+  {
+    "id": 491,
+    "de": {
+      "frage": "Was stellt das Ticket Granting Ticket (TGT) im Kerberos-Authentifizierungsprozess bereit?",
+      "optionen": {
+        "A": "Sofortigen Zugriff auf alle Netzwerkressourcen",
+        "B": "Ein Token, das Zugriff auf einen Ziel‑Anwendungsserver gewährt",
+        "C": "Authentifizierung für Benutzeranmeldeanforderungen",
+        "D": "Die Möglichkeit, beim TGS Diensttickets anzufordern"
+      },
+      "antwort": "D",
+      "erklärung": "Das TGT wird vom Authentication Server ausgestellt und ermöglicht es, beim Ticket Granting Server (TGS) Diensttickets für konkrete Dienste anzufordern; es gewährt selbst keinen direkten Zugriff auf Anwendungsserver und ist nicht das eigentliche Dienstticket."
+    },
+    "en": {
+      "question": "What does the Ticket Granting Ticket (TGT) provide in the Kerberos authentication process?",
+      "options": {
+        "A": "Immediate access to all network resources",
+        "B": "A token that grants access to a target application server",
+        "C": "Authentication for user logon requests",
+        "D": "The ability to request Service Tickets from the TGS"
+      },
+      "answer": "D",
+      "explanation": "The TGT is issued by the Authentication Server and allows requesting Service Tickets from the Ticket Granting Server (TGS); it does not directly grant access to application servers and is not the service ticket itself."
+    }
+  },
+  {
+    "id": 492,
+    "de": {
+      "frage": "Welches Framework verwendet Windows für Single Sign-On (SSO)?",
+      "optionen": {
+        "A": "OAuth",
+        "B": "LDAP",
+        "C": "Kerberos",
+        "D": "SAML"
+      },
+      "antwort": "C",
+      "erklärung": "In Windows-Domänen erfolgt SSO primär über Kerberos, das Ticket-basierte Authentifizierung zwischen Clients und Diensten ermöglicht; LDAP dient dem Verzeichniszugriff, während OAuth und SAML typischerweise für Web-/Cloud-Szenarien genutzt werden."
+    },
+    "en": {
+      "question": "What framework does Windows use to provide Single Sign-On (SSO) authentication?",
+      "options": {
+        "A": "OAuth",
+        "B": "LDAP",
+        "C": "Kerberos",
+        "D": "SAML"
+      },
+      "answer": "C",
+      "explanation": "In Windows domains, SSO is primarily provided by Kerberos, which enables ticket-based authentication between clients and services; LDAP is for directory access, while OAuth and SAML are typically used in web/cloud scenarios."
+    }
+  },
+  {
+    "id": 493,
+    "de": {
+      "frage": "Warum werden Passwörter als kryptografische Hashes gespeichert?",
+      "optionen": {
+        "A": "Um die Authentifizierung zu beschleunigen",
+        "B": "Damit Passwörter bei Vergessen leicht wiederhergestellt werden können",
+        "C": "Um zu verhindern, dass ein Passwort leicht kompromittiert wird",
+        "D": "Damit Nutzer einfachere Passwörter wählen können"
+      },
+      "antwort": "C",
+      "erklärung": "Passwörter werden als Einweg-Hashes (idealerweise mit Salt und langsamen KDFs wie bcrypt, scrypt oder Argon2) gespeichert, damit selbst bei einem Datenbankleck die Klartextpasswörter nicht direkt auslesbar sind und so schwerer kompromittiert werden können."
+    },
+    "en": {
+      "question": "Why are passwords stored as cryptographic hashes?",
+      "options": {
+        "A": "To increase the speed of the authentication process",
+        "B": "To ensure passwords can be easily recovered if forgotten",
+        "C": "To prevent a password from being easily compromised",
+        "D": "To allow users to choose simpler passwords"
+      },
+      "answer": "C",
+      "explanation": "Passwords are stored as one-way hashes (ideally salted and using slow KDFs like bcrypt, scrypt, or Argon2) so that even if a database is leaked, plaintext passwords are not directly readable and are harder to compromise."
+    }
+  },
+  {
+    "id": 494,
+    "de": {
+      "frage": "Welches ist das bevorzugte System für die Windows-Netzwerkauthentifizierung?",
+      "optionen": {
+        "A": "NT LAN Manager (NTLM)",
+        "B": "Kerberos",
+        "C": "OAuth",
+        "D": "SAML"
+      },
+      "antwort": "B",
+      "erklärung": "In Windows-Domänen ist Kerberos das bevorzugte und standardmäßige Authentifizierungsprotokoll, da es Ticket-basierte, gegenseitige Authentifizierung und delegationsfähige SSO unterstützt; NTLM wird nur als Fallback genutzt, während OAuth und SAML typischerweise für Web- und Cloud-Anwendungen verwendet werden."
+    },
+    "en": {
+      "question": "What is the preferred system for Windows network authentication?",
+      "options": {
+        "A": "NT LAN Manager (NTLM)",
+        "B": "Kerberos",
+        "C": "OAuth",
+        "D": "SAML"
+      },
+      "answer": "B",
+      "explanation": "In Windows domains, Kerberos is the preferred and default authentication protocol because it provides ticket-based, mutual authentication and SSO with delegation; NTLM is used only as a fallback, while OAuth and SAML are typically for web and cloud use cases."
+    }
+  },
+  {
+    "id": 495,
+    "de": {
+      "frage": "Was ist ein Mandatory-Modell in der Autorisierung?",
+      "optionen": {
+        "A": "Ein Modell, bei dem Rechte vom Systemadministrator zugewiesen werden",
+        "B": "Ein Modell, bei dem Rechte durch systemdurchgesetzte Regeln vorbestimmt sind",
+        "C": "Ein Modell, das auf der Rolle des Subjekts basiert",
+        "D": "Ein Modell, das auf den Attributen des Subjekts basiert"
+      },
+      "antwort": "B",
+      "erklärung": "Beim Mandatory Access Control (MAC) sind Zugriffsrechte durch systemdurchgesetzte Regeln und Sicherheitslabels vordefiniert und können nicht durch Benutzer oder Ressourcenbesitzer geändert werden; im Gegensatz dazu stehen rollenbasierte (RBAC) und attributbasierte (ABAC) Modelle."
+    },
+    "en": {
+      "question": "What is a mandatory model in authorization?",
+      "options": {
+        "A": "A model where rights are allocated by the system administrator",
+        "B": "A model where rights are predetermined by system-enforced rules",
+        "C": "A model based on the subject's role",
+        "D": "A model based on the subject's attributes"
+      },
+      "answer": "B",
+      "explanation": "In Mandatory Access Control (MAC), access rights are predetermined by system-enforced rules and security labels and cannot be altered by users or resource owners; this contrasts with role-based (RBAC) and attribute-based (ABAC) models."
+    }
+  },
+  {
+    "id": 496,
+    "de": {
+      "frage": "Welcher Faktor bestimmt die Art der Zugangsdaten, die ein Subjekt für die Authentifizierung verwenden kann?",
+      "optionen": {
+        "A": "Autorisierungsmodell",
+        "B": "Abrechnungssystem",
+        "C": "Authentifizierungsfaktor",
+        "D": "Identifikationsprozess"
+      },
+      "antwort": "C",
+      "erklärung": "Der Authentifizierungsfaktor bestimmt die Klasse der Anmeldedaten (z. B. Wissen wie Passwort/PIN, Besitz wie Smartcard/Token, oder Inhärenz wie Fingerabdruck/Face-ID) und damit, welche Art von Credential verwendet wird."
+    },
+    "en": {
+      "question": "Which factor determines the type of credential a subject can use for authentication?",
+      "options": {
+        "A": "Authorization model",
+        "B": "Accounting system",
+        "C": "Authentication factor",
+        "D": "Identification process"
+      },
+      "answer": "C",
+      "explanation": "The authentication factor defines the class of credentials (e.g., something you know like a password/PIN, something you have like a smart card/token, or something you are like a fingerprint/face) and thus determines which type of credential is used."
+    }
+  },
+  {
+    "id": 497,
+    "de": {
+      "frage": "Worin unterscheidet sich RBAC von der Verwendung von Sicherheitsgruppen zur Zuweisung von Berechtigungen?",
+      "optionen": {
+        "A": "RBAC weist Berechtigungen direkt Benutzern zu, während Sicherheitsgruppen dies nicht tun.",
+        "B": "RBAC ist discretio­när, während Sicherheitsgruppen nicht‑discretionär sind.",
+        "C": "RBAC fokussiert auf Jobrollen, während Sicherheitsgruppen die Benutzeridentität abbilden.",
+        "D": "Sicherheitsgruppen verschlüsseln Daten, während RBAC dies nicht tut."
+      },
+      "antwort": "C",
+      "erklärung": "RBAC ordnet Berechtigungen Rollen zu, die Jobfunktionen repräsentieren; Benutzer erhalten dann über die Rollenzuordnung ihre Rechte. Sicherheitsgruppen bündeln primär Identitäten zu Gruppen und werden für Zugriffslisten verwendet, sind jedoch nicht zwingend an Rollen/Jobfunktionen gebunden."
+    },
+    "en": {
+      "question": "How does RBAC differ from using security groups for assigning permissions?",
+      "options": {
+        "A": "RBAC assigns permissions directly to users, while security groups do not.",
+        "B": "RBAC is discretionary, while security groups are nondiscretionary.",
+        "C": "RBAC focuses on job roles, while security groups are about user identity.",
+        "D": "Security groups encrypt data, while RBAC does not."
+      },
+      "answer": "C",
+      "explanation": "RBAC assigns permissions to roles that represent job functions, and users gain rights by being assigned those roles. Security groups primarily group identities for access lists and are not inherently tied to roles or job functions."
+    }
+  },
+  {
+    "id": 498,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt ein zentrales Prinzip des Discretionary Access Control (DAC) Modells am BESTEN?",
+      "optionen": {
+        "A": "Zugriffsrechte werden basierend auf der Sensitivität der Daten zugewiesen.",
+        "B": "Berechtigungen werden zentral von einem Sicherheitsadministrator verwaltet.",
+        "C": "Jede Ressource hat einen Eigentümer.",
+        "D": "Benutzer werden basierend auf ihren Jobfunktionen Rollen zugewiesen."
+      },
+      "antwort": "C",
+      "erklärung": "Im DAC-Modell besitzt jede Ressource einen Eigentümer, der die Zugriffsrechte nach eigenem Ermessen vergeben oder entziehen kann; dies unterscheidet sich von MAC, wo das System Regeln erzwingt, und von RBAC, wo Rollen den Zugriff steuern."
+    },
+    "en": {
+      "question": "Which of the following statements BEST describes a key principle of the Discretionary Access Control (DAC) model?",
+      "options": {
+        "A": "Access permissions are assigned based on the sensitivity of the data.",
+        "B": "Permissions are centrally managed by a security administrator.",
+        "C": "Every resource has an owner.",
+        "D": "Users are assigned roles based on their job functions."
+      },
+      "answer": "C",
+      "explanation": "In the DAC model, every resource has an owner who can grant or revoke access at their discretion; this contrasts with MAC, where the system enforces rules, and RBAC, where roles govern access."
+    }
+  },
+  {
+    "id": 499,
+    "de": {
+      "frage": "Was ist der Hauptzweck der Autorisierung in Netzwerksystemen?",
+      "optionen": {
+        "A": "Benutzeridentitäten zu authentifizieren",
+        "B": "Rechte und Berechtigungen zuzuweisen",
+        "C": "Daten zu verschlüsseln",
+        "D": "Netzwerkverkehr zu überwachen"
+      },
+      "antwort": "B",
+      "erklärung": "Autorisierung legt fest, welche Aktionen ein bereits authentifiziertes Subjekt ausführen darf, indem Rechte und Berechtigungen auf Ressourcen zugewiesen und durchgesetzt werden; sie beantwortet die Frage, was erlaubt ist, nicht wer es ist."
+    },
+    "en": {
+      "question": "What is the primary purpose of authorization in network systems?",
+      "options": {
+        "A": "To authenticate user identities",
+        "B": "To allocate rights and permissions",
+        "C": "To encrypt data",
+        "D": "To monitor network traffic"
+      },
+      "answer": "B",
+      "explanation": "Authorization determines what actions an already authenticated subject is allowed to perform by assigning and enforcing rights and permissions on resources; it answers what is allowed, not who the subject is."
+    }
+  },
+  {
+    "id": 500,
+    "de": {
+      "frage": "Welche Rolle spielt die Trennung von Aufgaben (Separation of Duties) in PAM?",
+      "optionen": {
+        "A": "Sie stellt sicher, dass alle Benutzer das gleiche Zugriffslevel haben.",
+        "B": "Sie teilt Verantwortlichkeiten auf, um Machtmissbrauch zu verhindern.",
+        "C": "Sie konsolidiert Aufgaben, um die Verwaltung zu vereinfachen.",
+        "D": "Sie ermöglicht es Benutzern, ihre Verantwortlichkeiten selbst zu wählen."
+      },
+      "antwort": "B",
+      "erklärung": "In PAM dient die Trennung von Aufgaben dazu, privilegierte Verantwortlichkeiten auf mehrere Personen zu verteilen, damit keine einzelne Person kritische End-to-End-Handlungen allein durchführen kann; so werden Machtmissbrauch, Betrug und Fehler reduziert."
+    },
+    "en": {
+      "question": "What role does separation of duties play in PAM?",
+      "options": {
+        "A": "It ensures all users have the same level of access.",
+        "B": "It divides responsibilities among individuals to prevent abuse of power.",
+        "C": "It consolidates duties to streamline management.",
+        "D": "It allows users to choose their responsibilities."
+      },
+      "answer": "B",
+      "explanation": "In PAM, separation of duties distributes privileged responsibilities across individuals so no single person can perform critical end-to-end actions alone; this reduces the risk of power abuse, fraud, and errors."
+    }
+  },
+  {
+    "id": 501,
+    "de": {
+      "frage": "Was beinhaltet das Prinzip der minimalen Rechte (Least Privilege) im Kontext von PAM?",
+      "optionen": {
+        "A": "Benutzern unbegrenzte Rechte gewähren, um ihre Arbeit auszuführen",
+        "B": "Benutzern nur die Rechte gewähren, die zur Ausführung ihrer Arbeit notwendig sind",
+        "C": "Benutzern erlauben, ihre Zugriffsrechte selbst zu bestimmen",
+        "D": "Allen Benutzern administrative Berechtigungen bereitstellen"
+      },
+      "antwort": "B",
+      "erklärung": "Least Privilege bedeutet, dass Nutzer ausschließlich die minimal erforderlichen Berechtigungen für ihre Aufgaben erhalten, um das Risiko von Missbrauch und unbeabsichtigten Änderungen zu reduzieren."
+    },
+    "en": {
+      "question": "What does the principle of least privilege entail in the context of PAM?",
+      "options": {
+        "A": "Granting users unlimited rights to perform their job",
+        "B": "Granting users only the rights necessary to perform their job",
+        "C": "Allowing users to determine their access rights",
+        "D": "Providing all users with administrative privileges"
+      },
+      "answer": "B",
+      "explanation": "Least privilege means users are granted only the minimum permissions necessary to perform their tasks, reducing the risk of misuse and unintended changes."
+    }
+  },
+  {
+    "id": 502,
+    "de": {
+      "frage": "Wofür wird LDAP in erster Linie verwendet?",
+      "optionen": {
+        "A": "Verschlüsselung von Datenübertragungen über das Internet",
+        "B": "Abfragen und Aktualisieren von Verzeichnisdiensten",
+        "C": "Verwaltung von Netzwerkgeräten und -konfigurationen",
+        "D": "Übertragen von Dateien zwischen Computern"
+      },
+      "antwort": "B",
+      "erklärung": "LDAP ist ein Protokoll zum Zugriff auf und zur Pflege von Verzeichnisdiensten, beispielsweise zum Suchen von Benutzern und zum Aktualisieren von Einträgen; es dient nicht selbst der Verschlüsselung (dafür wird typischerweise TLS/LDAPS verwendet), nicht der Gerätekonfiguration und nicht der Dateiübertragung."
+    },
+    "en": {
+      "question": "What is LDAP primarily used for?",
+      "options": {
+        "A": "Encrypting data transmissions over the Internet",
+        "B": "Querying and updating directory services",
+        "C": "Managing network devices and configurations",
+        "D": "Transferring files between computers"
+      },
+      "answer": "B",
+      "explanation": "LDAP is a protocol for accessing and maintaining directory services, such as searching for users and updating entries; it does not itself handle encryption (TLS/LDAPS is used for that), device configuration, or file transfer."
+    }
+  },
+  {
+    "id": 503,
+    "de": {
+      "frage": "Wie sind in einem LDAP Distinguished Name (DN) die Bestandteile des Namens strukturiert?",
+      "optionen": {
+        "A": "Als eine Folge von Attribut=Wert-Paaren",
+        "B": "In einer hierarchischen Baumstruktur",
+        "C": "Als Liste benutzerdefinierter Schlüsselwörter",
+        "D": "Durch eine Sequenz verschlüsselter Token"
+      },
+      "antwort": "A",
+      "erklärung": "Ein DN besteht aus einer geordneten Folge von Attribut=Wert-Paaren (RDNs), die in der Regel durch Kommas getrennt sind, z. B. CN=Alice,OU=Sales,DC=example,DC=com; diese RDN-Paare bilden zusammen die hierarchische Position im Verzeichnis ab."
+    },
+    "en": {
+      "question": "In an LDAP distinguished name (DN), how are the components of the name structured?",
+      "options": {
+        "A": "As a series of attribute=value pairs",
+        "B": "In a hierarchical tree structure",
+        "C": "As a list of user-defined keywords",
+        "D": "Through a sequence of encrypted tokens"
+      },
+      "answer": "A",
+      "explanation": "A DN is composed of an ordered sequence of attribute=value pairs (RDNs), typically separated by commas, e.g., CN=Alice,OU=Sales,DC=example,DC=com; these RDN pairs together represent the object's hierarchical position in the directory."
+    }
+  },
+  {
+    "id": 504,
+    "de": {
+      "frage": "Was enthält ein Zugriffsschlüssel (Access Key), wenn er vom Sicherheitsdienst des Servers für einen authentifizierten Benutzer erzeugt wird?",
+      "optionen": {
+        "A": "Das Passwort des Benutzers und die Anmeldezeit",
+        "B": "Den Benutzernamen und die Gruppenmitgliedschaften des Benutzers",
+        "C": "Die IP-Adresse und MAC-Adresse des Geräts des Benutzers",
+        "D": "Den Browserverlauf des Benutzers und die Nutzung von Anwendungen"
+      },
+      "antwort": "B",
+      "erklärung": "Ein vom Sicherheitsdienst ausgestellter Zugriffsschlüssel/Token enthält die Identität des Benutzers und seine Gruppenmitgliedschaften bzw. Privilegien, damit Autorisierungsprüfungen durchgeführt werden können; sensible Anmeldeinformationen wie Passwörter oder Gerätemetadaten sind nicht enthalten."
+    },
+    "en": {
+      "question": "What does an access key contain when generated by the server's security service for an authenticated user?",
+      "options": {
+        "A": "The user's password and login time",
+        "B": "The user's username and group memberships",
+        "C": "The IP address and MAC address of the user's device",
+        "D": "The user's browsing history and application usage"
+      },
+      "answer": "B",
+      "explanation": "A server-issued access key/token includes the user's identity and group memberships or privileges so authorization checks can be performed; it does not contain sensitive credentials like passwords or device metadata."
+    }
+  },
+  {
+    "id": 505,
+    "de": {
+      "frage": "Warum sollten anonyme und Simple-Bind-Zugriffsmethoden auf einem LDAP-Server, der sicheren Zugriff erfordert, deaktiviert werden?",
+      "optionen": {
+        "A": "Sie bieten automatisch Verschlüsselung.",
+        "B": "Sie sind die sichersten Authentifizierungsmethoden.",
+        "C": "Sie übertragen Daten im Klartext.",
+        "D": "Sie verwenden digitale Zertifikate für alle Verbindungen."
+      },
+      "antwort": "C",
+      "erklärung": "Anonymous Bind ermöglicht unauthentifizierten Zugriff und Simple Bind überträgt Anmeldedaten im Klartext, wenn keine TLS-Verschlüsselung verwendet wird; auf einem Server mit Sicherheitsanforderungen sollten diese Methoden deaktiviert bzw. nur in Verbindung mit TLS (LDAPS/StartTLS) zugelassen werden."
+    },
+    "en": {
+      "question": "Why should anonymous and simple bind access methods be disabled on an LDAP server requiring secure access?",
+      "options": {
+        "A": "They provide encryption automatically.",
+        "B": "They are the most secure methods of authentication.",
+        "C": "They transmit data in plaintext.",
+        "D": "They use digital certificates for all connections."
+      },
+      "answer": "C",
+      "explanation": "Anonymous bind allows unauthenticated access, and simple bind transmits credentials in plaintext unless protected by TLS; on a secure LDAP server, these methods should be disabled or only allowed with TLS (LDAPS/StartTLS)."
+    }
+  },
+  {
+    "id": 506,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt den Zweck einer Zugriffskontrollrichtlinie (Access Control Policy) in LDAP am besten?",
+      "optionen": {
+        "A": "Die Verschlüsselungsmethode für LDAP‑Kommunikation festlegen",
+        "B": "Festlegen, welche Benutzer auf das LDAP‑Verzeichnis zugreifen dürfen",
+        "C": "Digitale Zertifikate für LDAPS konfigurieren",
+        "D": "Die Netzwerkports festlegen, die LDAP für die Kommunikation verwendet"
+      },
+      "antwort": "B",
+      "erklärung": "Eine LDAP‑Zugriffskontrollrichtlinie (ACL/ACIs) definiert, welche Subjekte auf welche Einträge und Attribute mit welchen Rechten zugreifen dürfen; sie steuert also die Autorisierung und nicht Verschlüsselung, Zertifikate oder Portwahl."
+    },
+    "en": {
+      "question": "Which of the following best describes the purpose of an access control policy in LDAP?",
+      "options": {
+        "A": "To determine the encryption method used for LDAP communications",
+        "B": "To specify which users can access the LDAP directory",
+        "C": "To configure the digital certificates for LDAPS",
+        "D": "To set the network ports that LDAP will use for communications"
+      },
+      "answer": "B",
+      "explanation": "An LDAP access control policy (ACL/ACIs) defines which subjects can access which entries and attributes with what rights; it governs authorization, not encryption, certificates, or port selection."
+    }
   }
 ]
