@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./network_custom.json";
+import questions2 from "./networkplus.json";
 
 export default function Quiz() {
   const [questions, setQuestions] = useState(questions2);
