@@ -11,7 +11,7 @@
         "E": "Verhinderung von Konfigurationsabweichungen",
         "F": "Subnetzbereichsbeschränkungen"
       },
-      "antwort": "A,C",
+      "antwort": ["A","C"],
       "erklärung": "Das Prinzip der geringsten Rechte reduziert die Angriffsfläche, indem nur notwendige Zugriffe erlaubt werden. Zentrale Richtlinienverwaltung stellt konsistente, durchsetzbare Sicherheitsvorgaben sicher und beschleunigt Reaktionen nach Vorfällen."
     },
     "en": {
@@ -24,7 +24,7 @@
         "E": "Configuration drift prevention",
         "F": "Subnet range limits"
       },
-      "answer": "A,C",
+      "answer": ["A","C"],
       "explanation": "Least privilege reduces the attack surface by granting only necessary access. Central policy management enforces consistent security controls and speeds incident response across the environment."
     }
   },
@@ -240,7 +240,7 @@
         "E": "Es wurde der falsche Transceivertyp für die neue Terminierung verwendet.",
         "F": "Die neuen RJ45‑Kabel sind eine höhere Kategorie als die alten."
       },
-      "antwort": "D,E",
+      "antwort": ["D","E"],
       "erklärung": "Ungeschirmte Twisted‑Pair‑Kabel sind in störanfälligen Umgebungen anfälliger für EMV‑Einflüsse. Ein falscher Transceivertyp (z. B. Singlemode vs. Multimode, falsche Wellenlänge/Stecker) führt zu Link‑Problemen."
     },
     "en": {
@@ -253,7 +253,7 @@
         "E": "The wrong transceiver type was used for the new termination.",
         "F": "The new RJ45 cables are a higher category than the old ones."
       },
-      "answer": "D,E",
+      "answer": ["D","E"],
       "explanation": "Unshielded twisted pair is more susceptible to interference in noisy environments. Using the wrong transceiver type (e.g., SM vs. MM, wrong wavelength/connector) commonly causes link failures."
     }
   },
@@ -1069,7 +1069,7 @@
         "E": "Ändern von Standardpasswörtern",
         "F": "Sicherstellen von Least‑Privilege‑Konzepten"
       },
-      "antwort": "A,E",
+      "antwort": ["A","E"],
       "erklärung": "Ungenutzte Ports deaktivieren reduziert die Angriffsfläche. Standardpasswörter zu ändern verhindert triviale Kompromittierungen. Die anderen Optionen sind sinnvoll, gelten aber nicht direkt als grundlegende Härtungsmaßnahmen der Geräte."
     },
     "en": {
@@ -1082,7 +1082,7 @@
         "E": "Changing default passwords",
         "F": "Ensuring least‑privilege concepts are in place"
       },
-      "answer": "A,E",
+      "answer": ["A","E"],
       "explanation": "Disabling unused ports reduces attack surface, and changing default passwords prevents trivial compromise. Others are valuable but not core device hardening steps."
     }
   },
@@ -1673,7 +1673,7 @@
         "E": "Bodenbauart",
         "F": "Nähe zum nächsten MDF"
       },
-      "antwort": "A,C",
+      "antwort": ["A","C"],
       "erklärung": "Ein geeignetes Feuerlöschsystem und geregelte Luftfeuchte sind zentrale Umweltfaktoren zum Schutz und zur Langlebigkeit von IT‑Equipment."
     },
     "en": {
@@ -1686,7 +1686,7 @@
         "E": "Floor construction type",
         "F": "Proximity to the nearest MDF"
       },
-      "answer": "A,C",
+      "answer": ["A","C"],
       "explanation": "Appropriate fire suppression and controlled humidity are key environmental factors to protect and preserve IT equipment."
     }
   },
@@ -2727,7 +2727,7 @@
         "E": "DNS neu konfigurieren",
         "F": "Geräte in das Perimeternetz stellen"
       },
-      "antwort": "B,D",
+      "antwort": ["B","D"],
       "erklärung": "Mit 802.1Q und separaten Voice‑VLANs lassen sich Sprache und Daten über denselben Port logisch trennen und priorisieren."
     },
     "en": {
@@ -2740,7 +2740,7 @@
         "E": "Reconfigure DNS",
         "F": "Place devices in the perimeter network"
       },
-      "answer": "B,D",
+      "answer": ["B","D"],
       "explanation": "Use 802.1Q tagging and dedicated voice VLANs to carry voice and data on the same port while keeping them separate."
     }
   },
@@ -3156,7 +3156,7 @@
         "E": "tracert",
         "F": "route print"
       },
-      "antwort": "E,F",
+      "antwort": ["E","F"],
       "erklärung": "tracert zeigt den Weg zum Ziel (Block/Misroute erkennbar). route print zeigt die Routingtabelle (z. B. ob der Traffic fälschlich durch den Tunnel geht)."
     },
     "en": {
@@ -3169,7 +3169,7 @@
         "E": "tracert",
         "F": "route print"
       },
-      "answer": "E,F",
+      "answer": ["E","F"],
       "explanation": "tracert reveals the path to the destination; route print shows the local routing table to spot misrouted traffic via the VPN."
     }
   },
@@ -3564,7 +3564,7 @@
         "E": "Captive Portal",
         "F": "Ad‑hoc‑Netz"
       },
-      "antwort": "B,D",
+      "antwort": ["B","D"],
       "erklärung": "Der Wechsel auf 5 GHz vermeidet 2,4‑GHz‑Störer; in 2,4 GHz reduzieren die nicht überlappenden Kanäle (1/6/11) Interferenzen."
     },
     "en": {
@@ -3577,7 +3577,7 @@
         "E": "Captive portal",
         "F": "Ad hoc network"
       },
-      "answer": "B,D",
+      "answer": ["B","D"],
       "explanation": "Moving to 5 GHz avoids 2.4 GHz interferers; within 2.4 GHz, using non-overlapping channels (1/6/11) reduces interference."
     }
   },
@@ -3618,7 +3618,7 @@
         "E": "Falsche QoS‑Einstellungen",
         "F": "Netzüberlastung"
       },
-      "antwort": "E,F",
+      "antwort": ["E","F"],
       "erklärung": "Video verursacht hohe Last; ohne korrektes QoS und bei Überlastung verschlechtern sich Latenz/Jitter/Durchsatz."
     },
     "en": {
@@ -3631,7 +3631,7 @@
         "E": "Incorrect QoS settings",
         "F": "Network congestion"
       },
-      "answer": "E,F",
+      "answer": ["E","F"],
       "explanation": "Video is bandwidth-heavy; without correct QoS and with congestion, latency/jitter increase and throughput drops."
     }
   },
@@ -3797,7 +3797,7 @@
         "E": "Absicherung (Ampere) der Steckdosen",
         "F": "Server‑Höhe"
       },
-      "antwort": "B,F",
+      "antwort": ["B","F"],
       "erklärung": "Die Racktiefe richtet sich nach der Tiefe des tiefsten Geräts (z. B. Switch/Server). Die Rackhöhe ergibt sich aus den benötigten Höheneinheiten (U) für Server/Equipment."
     },
     "en": {
@@ -3810,7 +3810,7 @@
         "E": "Outlet amperage",
         "F": "Server height"
       },
-      "answer": "B,F",
+      "answer": ["B","F"],
       "explanation": "Rack depth depends on the deepest device (e.g., switch/server). Rack height depends on required rack units (U) for servers/equipment."
     }
   },
@@ -5101,7 +5101,7 @@
         "E": "Standard-Anmeldedaten ändern",
         "F": "GRE auf dem WLAN-Router konfigurieren"
       },
-      "antwort": "A,E",
+      "antwort": ["A","E"],
       "erklärung": "Durch Segmentierung (z. B. separate SSID/VLAN) werden Smart-Geräte von Gästen getrennt (A). Das Ändern von Standardanmeldedaten verhindert einfache Übernahmen von IoT-Geräten (E). IPS, zusätzlicher AP, Syslog oder GRE lösen das Kernproblem nicht."
     },
     "en": {
@@ -5114,7 +5114,7 @@
         "E": "Change the default credentials",
         "F": "Configure GRE on the wireless router"
       },
-      "answer": "A,E",
+      "answer": ["A","E"],
       "explanation": "Segment smart/IoT devices into a separate SSID/VLAN (A) and change default credentials (E) to prevent easy takeover. IPS, another AP, logging, or GRE do not address the root cause."
     }
   },
@@ -5580,7 +5580,7 @@
         "E": "DNS-Server",
         "F": "DHCP-Server"
       },
-      "antwort": "B,D",
+      "antwort": ["B","D"],
       "erklärung": "Für die Layer-3-Konnektivität benötigt die Firewall eine der statischen öffentlichen IPs (D) und das Standard-Gateway des ISP (B). DNS ist für Namensauflösung hilfreich, aber nicht für reine IP-Konnektivität zwingend."
     },
     "en": {
@@ -5593,7 +5593,7 @@
         "E": "DNS servers",
         "F": "DHCP server"
       },
-      "answer": "B,D",
+      "answer": ["B","D"],
       "explanation": "For basic L3 connectivity, the firewall needs one of the public static IPs (D) and the ISP's default gateway (B). DNS aids name resolution but is not required for raw IP reachability."
     }
   },
@@ -7561,7 +7561,7 @@
         "E": "AP im autonomen Modus betreiben",
         "F": "Einen WLAN-Controller installieren"
       },
-      "antwort": "A,B",
+      "antwort": ["A","B"],
       "erklärung": "Externe Engpässe (Backhaul, Switch, Internet) können die Performance limitieren. Aktuelle Firmware behebt Bugs/Optimiert Durchsatz. Die anderen Optionen adressieren die Ursache nicht direkt."
     },
     "en": {
@@ -7574,7 +7574,7 @@
         "E": "Configure the AP in autonomous mode",
         "F": "Install a wireless LAN controller"
       },
-      "answer": "A,B",
+      "answer": ["A","B"],
       "explanation": "External bottlenecks (backhaul, switch, ISP) can cap performance; updating firmware fixes bugs and improves throughput. The other options are not primary fixes."
     }
   },
@@ -7640,7 +7640,7 @@
         "E": "DNS neu konfigurieren",
         "F": "Geräte ins Perimeter‑Netz verschieben"
       },
-      "antwort": "B,D",
+      "antwort": ["B","D"],
       "erklärung": "Mit 802.1Q und Voice‑VLANs können Telefon und PC einen Port teilen und dennoch getrennt priorisiert/segmentiert werden."
     },
     "en": {
@@ -7653,7 +7653,7 @@
         "E": "Reconfigure DNS",
         "F": "Place devices in the perimeter network"
       },
-      "answer": "B,D",
+      "answer": ["B","D"],
       "explanation": "Enable 802.1Q and configure voice VLANs so phones and PCs can share a port while remaining separated and prioritized."
     }
   },
