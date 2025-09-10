@@ -2225,7 +2225,7 @@
         "C": "Eine Root-Bridge muss bestimmt werden.",
         "D": "Der Switch sollte für RSTP konfiguriert werden."
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Ohne korrekt bestimmte Root‑Bridge und korrekte STP‑Berechnung kann es dazu kommen, dass alle Links vorwärts schalten und eine Schleife entsteht. Eine eindeutige Root‑Bridge ist für die Schleifenvermeidung erforderlich."
     },
     "en": {
@@ -2236,7 +2236,7 @@
         "C": "A root bridge needs to be identified.",
         "D": "The switch should be configured for RSTP."
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "Without a clearly identified root bridge and correct STP calculation, all links may forward, creating a loop. A single root bridge is required to avoid loops."
     }
   },
@@ -7967,7 +7967,7 @@
         "C": "SNMP-Konsole",
         "D": "API-Gateway"
       },
-      "antwort": "A",
+      "antwort": "D",
       "erklärung": "Eine Weboberfläche bietet HTTPS-basierte, entfernte Verwaltung mit Echtzeit-Einblick. CLI erfolgt typischerweise über SSH, nicht HTTPS; SNMP liefert v. a. Monitoring; ein API-Gateway ist entwickler-/plattformbezogen und weniger typisch für die direkte AP-Administration."
     },
     "en": {
@@ -7978,7 +7978,7 @@
         "C": "SNMP console",
         "D": "API gateway"
       },
-      "answer": "A",
+      "answer": "D",
       "explanation": "A web interface provides HTTPS-based remote management with real-time visibility. CLI is usually via SSH (not HTTPS); SNMP focuses on monitoring; an API gateway is more developer/platform centric than typical AP admin."
     }
   },
