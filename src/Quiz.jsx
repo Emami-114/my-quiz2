@@ -18,7 +18,9 @@ export default function Quiz() {
     setSelected(option);
     setShowAnswer(true);
 
-    const isCorrect = option === questions[current][lang].antwort || option === questions[current][lang].answer;
+    const isCorrect =
+      option === questions[current][lang].antwort ||
+      option === questions[current][lang].answer;
 
     if (isCorrect) {
       setScore(score + 1);
@@ -40,15 +42,15 @@ export default function Quiz() {
     setAnsweredIds([...answeredIds, questions[current].id]);
   };
 
-    // Funktion, um eine zufällige unbeantwortete Frage zu wählen
+  // Funktion, um eine zufällige unbeantwortete Frage zu wählen
   const pickRandomQuestion = () => {
-    const unanswered = questions.filter(q => !answeredIds.includes(q.id));
+    const unanswered = questions.filter((q) => !answeredIds.includes(q.id));
     if (unanswered.length === 0) {
       setCurrent(null);
       return;
     }
     const randomIndex = Math.floor(Math.random() * unanswered.length);
-    setCurrent(questions.findIndex(q => q.id === unanswered[randomIndex].id));
+    setCurrent(questions.findIndex((q) => q.id === unanswered[randomIndex].id));
   };
 
   const nextQuestion = () => {
@@ -70,7 +72,11 @@ export default function Quiz() {
       setSelected("");
       setShowAnswer(false);
     } else {
-      alert(lang === "de" ? "Du hast keine falsch beantworteten Fragen!" : "You have no incorrectly answered questions!");
+      alert(
+        lang === "de"
+          ? "Du hast keine falsch beantworteten Fragen!"
+          : "You have no incorrectly answered questions!"
+      );
     }
   };
 
@@ -97,7 +103,9 @@ export default function Quiz() {
           className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
           onClick={repeatWrongQuestions}
         >
-          {lang === "de" ? "Falsche Fragen wiederholen" : "Repeat wrong questions"}
+          {lang === "de"
+            ? "Falsche Fragen wiederholen"
+            : "Repeat wrong questions"}
         </Button>
         <Card className="bg-gray-800 w-full max-w-xl rounded-3xl shadow-2xl p-8 transform transition-all duration-500 ease-in-out scale-105">
           <CardContent>
@@ -105,8 +113,15 @@ export default function Quiz() {
               {lang === "de" ? "🎉 Quiz beendet! 🎉" : "🎉 Quiz finished! 🎉"}
             </h2>
             <p className="text-2xl mb-8">
-              {lang === "de" ? "Dein Ergebnis:" : "Your result:"} <span className="font-bold text-green-400">{score}</span> {lang === "de" ? "von" : "of"}{" "}
-              <span className="font-bold text-blue-400">{questions.length}</span> {lang === "de" ? "Fragen richtig beantwortet!" : "questions answered correctly!"}
+              {lang === "de" ? "Dein Ergebnis:" : "Your result:"}{" "}
+              <span className="font-bold text-green-400">{score}</span>{" "}
+              {lang === "de" ? "von" : "of"}{" "}
+              <span className="font-bold text-blue-400">
+                {questions.length}
+              </span>{" "}
+              {lang === "de"
+                ? "Fragen richtig beantwortet!"
+                : "questions answered correctly!"}
             </p>
             <Button
               className="mt-8 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
@@ -121,7 +136,9 @@ export default function Quiz() {
   }
 
   const currentQuestion = questions[current][lang];
-  const optionEntries = Object.entries(currentQuestion.optionen || currentQuestion.options);
+  const optionEntries = Object.entries(
+    currentQuestion.optionen || currentQuestion.options
+  );
 
   return (
     <div className="min-h-screen min-w-screen flex items-center justify-center bg-gray-900 text-white p-6">
@@ -133,11 +150,13 @@ export default function Quiz() {
         {lang === "de" ? "English" : "Deutsch"}
       </Button>
       {/* Dauerhafter Button */}
-       <Button
+      <Button
         className="fixed top-4 center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50 "
         onClick={() => {}}
       >
-        {lang === "de" ? `Total:  ${answeredIds.length} - Wrong: ${totalFalse}` : `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`}
+        {lang === "de"
+          ? `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`
+          : `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`}
       </Button>
       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
@@ -147,12 +166,18 @@ export default function Quiz() {
       </Button>
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
-        <h2 className="text-center text-3xl font-bold mb-8 text-blue-400">
-          {lang === "de"
-            ? `Frage ${questions[current].id} von ${questions[questions.length - 1].id}`
-            : `Question ${questions[current].id} of ${questions[questions.length - 1].id}`}
-        </h2>
-          <p className="text-center text-2xl mb-8 font-medium leading-relaxed">{currentQuestion.frage || currentQuestion.question}</p>
+          <h2 className="text-center text-3xl font-bold mb-8 text-blue-400">
+            {lang === "de"
+              ? `Frage ${questions[current].id} von ${
+                  questions[questions.length - 1].id
+                }`
+              : `Question ${questions[current].id} of ${
+                  questions[questions.length - 1].id
+                }`}
+          </h2>
+          <p className="text-center text-2xl mb-8 font-medium leading-relaxed">
+            {currentQuestion.frage || currentQuestion.question}
+          </p>
           <div className="space-y-5">
             {optionEntries.map(([key, value]) => (
               <Button
@@ -162,12 +187,19 @@ export default function Quiz() {
                 className={`w-full text-xl py-3 rounded-xl justify-start transition-all duration-300 ease-in-out
                   ${
                     selected === key
-                      ? selected === (currentQuestion.antwort || currentQuestion.answer)
+                      ? selected ===
+                        (currentQuestion.antwort || currentQuestion.answer)
                         ? "bg-green-700 text-white shadow-md border-2 border-green-500"
                         : "bg-red-700 text-white shadow-md border-2 border-red-500"
                       : "bg-gray-700 hover:bg-gray-600 text-gray-100 border border-gray-600"
                   }
-                  ${showAnswer && selected !== key && key === (currentQuestion.antwort || currentQuestion.answer) ? "bg-green-900 text-white border-2 border-green-500 animate-pulse" : ""}
+                  ${
+                    showAnswer &&
+                    selected !== key &&
+                    key === (currentQuestion.antwort || currentQuestion.answer)
+                      ? "bg-green-900 text-white border-2 border-green-500 animate-pulse"
+                      : ""
+                  }
                 `}
               >
                 <span className="font-bold mr-2">{key}.</span> {value}
@@ -178,17 +210,26 @@ export default function Quiz() {
             <div className="mt-8 text-center bg-gray-700 p-6 rounded-2xl shadow-inner">
               <p
                 className={`text-2xl font-extrabold mb-4 ${
-                  selected === (currentQuestion.antwort || currentQuestion.answer) ? "text-green-400" : "text-red-400"
+                  selected ===
+                  (currentQuestion.antwort || currentQuestion.answer)
+                    ? "text-green-400"
+                    : "text-red-400"
                 }`}
               >
-                {selected === (currentQuestion.antwort || currentQuestion.answer)
-                  ? lang === "de" ? "✅ Richtig! Fantastisch!" : "✅ Correct! Fantastic!"
+                {selected ===
+                (currentQuestion.antwort || currentQuestion.answer)
+                  ? lang === "de"
+                    ? "✅ Richtig! Fantastisch!"
+                    : "✅ Correct! Fantastic!"
                   : lang === "de"
-                    ? `❌ Falsch! Die richtige Antwort war: ${currentQuestion.antwort}`
-                    : `❌ Wrong! The correct answer was: ${currentQuestion.answer}`}
+                  ? `❌ Falsch! Die richtige Antwort war: ${currentQuestion.antwort}`
+                  : `❌ Wrong! The correct answer was: ${currentQuestion.answer}`}
               </p>
               <p className="mt-4 text-gray-300 text-lg leading-relaxed">
-                <span className="font-semibold text-white">{lang === "de" ? "Erklärung:" : "Explanation:"}</span> {currentQuestion.erklärung || currentQuestion.explanation}
+                <span className="font-semibold text-white">
+                  {lang === "de" ? "Erklärung:" : "Explanation:"}
+                </span>{" "}
+                {currentQuestion.erklärung || currentQuestion.explanation}
               </p>
               <Button
                 className="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
@@ -198,24 +239,49 @@ export default function Quiz() {
               </Button>
             </div>
           )}
+          {!showAnswer && (
+            <div className="text-center mt-6">
+              <p className="mt-8 text-center text-gray-400">
+                {lang === "de"
+                  ? "Wähle eine Antwort aus, um fortzufahren."
+                  : "Select an answer to continue."}
+              </p>
+            </div>
+          )}
         </CardContent>
       </Card>
       <Button
         className="fixed bottom-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={() => setIsRandom(!isRandom)}
       >
-        {isRandom ? (lang === "de" ? "Zufällige Fragen: Ein" : "Random Questions: On") : (lang === "de" ? "Zufällige Fragen: Aus" : "Random Questions: Off")}
+        {isRandom
+          ? lang === "de"
+            ? "Zufällige Fragen: Ein"
+            : "Random Questions: On"
+          : lang === "de"
+          ? "Zufällige Fragen: Aus"
+          : "Random Questions: Off"}
       </Button>
       <Button
-  className="fixed bottom-4 left-4 bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
-  onClick={() => {
-    localStorage.removeItem("wrongAnswers");
-    alert(lang === "de" ? "Alle falsch beantworteten Fragen wurden gelöscht!" : "All wrong questions have been deleted!");
-    window.location.reload();
-  }}
->
-  {lang === "de" ? "Falsche Fragen löschen" : "Delete wrong questions"}
-</Button>
+        className="fixed bottom-4 center-3 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
+        onClick={nextQuestion}
+      >
+        {lang === "de" ? "Weiter" : "Skip"}
+      </Button>
+      <Button
+        className="fixed bottom-4 left-4 bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
+        onClick={() => {
+          localStorage.removeItem("wrongAnswers");
+          alert(
+            lang === "de"
+              ? "Alle falsch beantworteten Fragen wurden gelöscht!"
+              : "All wrong questions have been deleted!"
+          );
+          window.location.reload();
+        }}
+      >
+        {lang === "de" ? "Falsche Fragen löschen" : "Delete wrong questions"}
+      </Button>
     </div>
   );
 }
