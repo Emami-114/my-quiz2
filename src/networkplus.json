@@ -3176,15 +3176,15 @@
   {
     "id": 132,
     "de": {
-      "frage": "Welche der folgenden Einrichtungen ist das beste Beispiel für eine Warm Site bei einer Störung des Informationssystems?",
+      "frage": "Welche der folgenden Einrichtungen ist das beste Beispiel für einen Warm Site im Falle einer Störung des Informationssystems?",
       "optionen": {
-        "A": "Eine Kombination aus öffentlichen und privaten Cloud-Services zur Datenwiederherstellung",
+        "A": "Eine Kombination aus öffentlichen und privaten Cloud-Diensten zur Wiederherstellung von Daten",
         "B": "Eine teilweise Infrastruktur, Software und Daten vor Ort",
-        "C": "Eine vollständige elektrische Infrastruktur vorhanden, aber keine Kundengeräte vor Ort",
-        "D": "Eine vollständige Infrastruktur vorhanden, aber keine aktuellen Daten vor Ort"
+        "C": "Eine vollständige elektrische Infrastruktur, aber keine Kundengeräte vor Ort",
+        "D": "Eine vollständige Infrastruktur, aber keine aktuellen Daten vor Ort"
       },
-      "antwort": "D",
-      "erklärung": "Eine Warm Site hat typischerweise eine vollständige Infrastruktur bereit, aber es fehlen die aktuellsten Daten oder sie ist nicht sofort betriebsbereit. Sie erfordert einige Konfiguration oder Datenwiederherstellung, um vollständig funktionsfähig zu werden. Eine Warm Site ist ein Kompromiss zwischen einer Hot Site (vollständig betriebsbereit) und einer Cold Site (nur Grundinfrastruktur). Sie hat die Hardware und Netzwerkinfrastruktur installiert, aber Daten müssen von Backups wiederhergestellt werden."
+      "antwort": "B",
+      "erklärung": "Ein Warm Site ist durch eine teilweise vorhandene Infrastruktur, Software und Daten gekennzeichnet. Im Gegensatz zu einem Hot Site (voll ausgestattet) oder einem Cold Site (kaum ausgestattet) stellt er einen Mittelweg dar, der eine Wiederherstellung innerhalb von Tagen statt Stunden oder Wochen ermöglicht."
     },
     "en": {
       "question": "Which of the following facilities is the best example of a warm site in the event of information system disruption?",
@@ -3194,8 +3194,8 @@
         "C": "A full electrical infrastructure in place, but no customer devices on site",
         "D": "A full infrastructure in place, but no current data on site"
       },
-      "answer": "D",
-      "explanation": "A warm site typically has a full infrastructure ready, but it lacks the most up-to-date data or is not immediately operational. It requires some configuration or data restoration to become fully functional. A warm site is a compromise between a hot site (fully operational) and a cold site (basic infrastructure only). It has the hardware and network infrastructure installed, but data needs to be restored from backups."
+      "answer": "B",
+      "explanation": "A warm site is characterized by having a partial infrastructure, software, and data already in place. Unlike a hot site (fully equipped) or a cold site (barely equipped), it represents a middle ground, allowing for recovery within days rather than hours or weeks."
     }
   },
   {
@@ -3530,15 +3530,15 @@
   {
     "id": 149,
     "de": {
-      "frage": "Welcher der folgenden Schritte in der Fehlerbehebungsmethodik kommt nach der Verwendung einer Top-to-Bottom-Untersuchung des OSI-Modells zur Ursachenbestimmung?",
+      "frage": "Welcher der folgenden Schritte in der Fehlerbehebungsmethodik kommt nach der Verwendung einer Top-to-Bottom-Untersuchung des OSI-Modells zur Ursachenermittlung?",
       "optionen": {
         "A": "Die Theorie testen",
         "B": "Einen Aktionsplan erstellen",
-        "C": "Die vollständige Systemfunktionalität überprüfen",
+        "C": "Die volle Systemfunktionalität überprüfen",
         "D": "Das Problem identifizieren"
       },
-      "antwort": "B",
-      "erklärung": "Nach der Verwendung einer systematischen Untersuchung des OSI-Modells zur Bestimmung der Ursache ist der nächste Schritt in der CompTIA-Fehlerbehebungsmethodik die Erstellung eines Aktionsplans. Die Reihenfolge ist: Problem identifizieren, Theorie der wahrscheinlichen Ursache entwickeln, Theorie testen (einschließlich OSI-Modell-Analyse), Aktionsplan erstellen und Lösung implementieren, vollständige Systemfunktionalität überprüfen, Ergebnisse dokumentieren."
+      "antwort": "A",
+      "erklärung": "In der standardmäßigen Fehlerbehebungsmethodik folgt auf die Etablierung einer Theorie über die wahrscheinliche Ursache (Schritt 2) das Testen dieser Theorie (Schritt 3), um die Ursache zu bestätigen. Die Untersuchung des OSI-Modells ist Teil der Ursachenermittlung."
     },
     "en": {
       "question": "Which of the following steps in the troubleshooting methodology comes after using a top-to-bottom examination of the OSI model to determine cause?",
@@ -3548,8 +3548,8 @@
         "C": "Verify full system functionality",
         "D": "Identify the problem"
       },
-      "answer": "B",
-      "explanation": "After using a systematic examination of the OSI model to determine the cause, the next step in the CompTIA troubleshooting methodology is to establish a plan of action. The sequence is: identify the problem, develop a theory of probable cause, test the theory (including OSI model analysis), establish a plan of action and implement the solution, verify full system functionality, document findings."
+      "answer": "A",
+      "explanation": "In standard troubleshooting methodology, after you establish a theory of probable cause (Step 2), the next step is to test that theory to determine the actual cause (Step 3). Using the OSI model is part of establishing the theory."
     }
   },
   {
@@ -3867,26 +3867,26 @@
   {
     "id": 162,
     "de": {
-      "frage": "Benutzer verwenden normalerweise RDP, um sich mit einem Terminal-Server mit dem Hostnamen TS19 zu verbinden, der auf 10.0.100.19 zeigt. Jedoch konnten sich Benutzer kürzlich nicht mit TS19 verbinden. Der Techniker pingt 10.0.100.19 und erhält einen Unerreichbar-Fehler. Was ist die wahrscheinlichste Ursache?",
+      "frage": "Benutzer verwenden normalerweise RDP, um sich mit einem Terminalserver mit dem Hostnamen TS19 zu verbinden, der auf 10.0.100.19 verweist. In letzter Zeit konnten sich die Benutzer jedoch nicht mit TS19 verbinden. Der Techniker pingt 10.0.100.19 an und erhält eine 'unreachable'-Fehlermeldung. Welches der folgenden ist die wahrscheinlichste Ursache?",
       "optionen": {
-        "A": "Die Benutzer sind im falschen Subnetz",
-        "B": "Der DHCP-Server hat die Lease erneuert",
-        "C": "Die IP-Adresse war nicht reserviert",
-        "D": "Der Hostname wurde geändert"
+        "A": "Die Benutzer befinden sich im falschen Subnetz.",
+        "B": "Der DHCP-Server hat die Lease erneuert.",
+        "C": "Die IP-Adresse wurde nicht reserviert.",
+        "D": "Der Hostname wurde geändert."
       },
-      "antwort": "A",
-      "erklärung": "Wenn ein Ping zu 10.0.100.19 nicht erreichbar ist, ist das wahrscheinlichste Problem, dass Benutzer im falschen Subnetz sind und nicht mit dem Server kommunizieren können. Wenn Benutzer in einem anderen Subnetz ohne ordnungsgemäßes Routing sind, werden sie den Server nicht erreichen. DHCP-Lease-Erneuerung würde die Client-IP ändern, aber die statische IP des Servers sollte unverändert bleiben. IP-Reservierungen betreffen dynamische IPs, aber RDP-Server haben typischerweise statische IPs. Hostname-Änderung würde DNS-Auflösung betreffen, aber das direkte Pingen der IP würde immer noch funktionieren."
+      "antwort": "C",
+      "erklärung": "Da das direkte Pingen der IP-Adresse 10.0.100.19 zu einem 'unreachable'-Fehler führt, bedeutet dies, dass der Server nicht mehr unter dieser spezifischen IP-Adresse erreichbar ist. Dies geschah höchstwahrscheinlich, weil die IP-Adresse im DHCP-Server nicht reserviert war. Als die DHCP-Lease des Servers ablief, wurde ihm eine neue IP-Adresse zugewiesen und 10.0.100.19 wurde nicht mehr erreichbar."
     },
     "en": {
       "question": "Users usually use RDP to connect to a terminal server with hostname TS19 that points to 10.0.100.19. However, users recently have been unable to connect to TS19. The technician pings 10.0.100.19 and gets an unreachable error. Which of the following is the most likely cause?",
       "options": {
-        "A": "The users are on the wrong subnet",
-        "B": "The DHCP server renewed the lease",
-        "C": "The IP address was not reserved",
-        "D": "The hostname was changed"
+        "A": "The users are on the wrong subnet.",
+        "B": "The DHCP server renewed the lease.",
+        "C": "The IP address was not reserved.",
+        "D": "The hostname was changed."
       },
-      "answer": "A",
-      "explanation": "If a ping to 10.0.100.19 is unreachable, the most likely issue is that users are on the wrong subnet and cannot communicate with the server. If users are on a different subnet without proper routing, they won't reach the server. DHCP lease renewal would change the client's IP, but the server's static IP should remain unchanged. IP reservations matter for dynamic IPs, but RDP servers typically have static IPs. Hostname change would affect DNS resolution, but pinging the IP directly would still work."
+      "answer": "C",
+      "explanation": "Since pinging the IP address 10.0.100.19 directly results in an 'unreachable' error, it means the server is no longer at that specific IP address. This most likely happened because the IP address was not reserved in the DHCP server. When the server's DHCP lease expired, it was assigned a new IP address, and 10.0.100.19 became unavailable."
     }
   },
   {
@@ -4492,26 +4492,26 @@
   {
     "id": 187,
     "de": {
-      "frage": "Ein Netzwerkingenieur möchte ein neues IDS zwischen dem Switch und einem Router implementieren, der mit dem LAN verbunden ist. Der Ingenieur möchte keine Latenz einführen, indem er das IDS in Reihe mit dem Gateway platziert. Der Ingenieur möchte sicherstellen, dass das IDS alle Pakete ohne Verlust sieht. Was ist der beste Weg für den Ingenieur, das IDS zu implementieren?",
+      "frage": "Ein Netzwerktechniker möchte ein neues IDS zwischen dem Switch und einem mit dem LAN verbundenen Router implementieren. Der Techniker möchte keine Latenz einführen, indem er das IDS in Reihe mit dem Gateway platziert. Er möchte jedoch sicherstellen, dass das IDS alle Pakete ohne Verlust sieht. Welcher der folgenden Wege ist der beste für den Techniker, um das IDS zu implementieren?",
       "optionen": {
-        "A": "Einen Netzwerk-Tap verwenden",
-        "B": "Nmap-Software verwenden",
-        "C": "Einen Protokoll-Analyzer verwenden",
-        "D": "Port Mirroring verwenden"
+        "A": "Einen Netzwerk-Tap verwenden.",
+        "B": "Nmap-Software verwenden.",
+        "C": "Einen Protokollanalysator verwenden.",
+        "D": "Einen Port-Spiegel verwenden."
       },
-      "antwort": "D",
-      "erklärung": "Port Mirroring (auch als SPAN - Switched Port Analyzer bezeichnet) kopiert den Datenverkehr von einem oder mehreren Ports zu einem Monitoring-Port, ohne in den Datenpfad einzugreifen. Dies ermöglicht es dem IDS, allen Datenverkehr zu sehen, ohne Latenz zu verursachen, da es nicht inline platziert wird. Ein Netzwerk-Tap würde auch funktionieren, aber Port Mirroring ist kostengünstiger und einfacher zu implementieren. Nmap ist ein Scanning-Tool, kein Monitoring-System. Ein Protokoll-Analyzer ist ein Tool zur Paketanalyse, nicht eine Implementierungsmethode."
+      "antwort": "A",
+      "erklärung": "Ein Netzwerk-Tap ist die beste Lösung, da es sich um ein dediziertes Hardwaregerät handelt, das eine verlustfreie Kopie des gesamten Datenverkehrs bereitstellt, ohne inline zu sein. Dies erfüllt beide Anforderungen: Es führt keine Latenz ein und stellt sicher, dass das IDS alle Pakete ohne Verlust sieht. Ein Port-Spiegel kann bei hoher Auslastung Pakete verwerfen, was ihn für diesen Zweck weniger zuverlässig macht."
     },
     "en": {
       "question": "A network engineer wants to implement a new IDS between the switch and a router connected to the LAN. The engineer does not want to introduce any latency by placing the IDS in line with the gateway. The engineer does want to ensure that the IDS sees all packets without any loss. Which of the following is the best way for the engineer to implement the IDS?",
       "options": {
-        "A": "Use a network tap",
-        "B": "Use Nmap software",
-        "C": "Use a protocol analyzer",
-        "D": "Use a port mirror"
+        "A": "Use a network tap.",
+        "B": "Use Nmap software.",
+        "C": "Use a protocol analyzer.",
+        "D": "Use a port mirror."
       },
-      "answer": "D",
-      "explanation": "Port mirroring (also called SPAN - Switched Port Analyzer) copies traffic from one or more ports to a monitoring port without interfering with the data path. This allows the IDS to see all traffic without causing latency since it's not placed inline. A network tap would also work, but port mirroring is more cost-effective and easier to implement. Nmap is a scanning tool, not a monitoring system. A protocol analyzer is a packet analysis tool, not an implementation method."
+      "answer": "A",
+      "explanation": "A network tap is the best solution because it is a dedicated hardware device that provides a lossless copy of all traffic without being inline. This meets both requirements: it does not introduce latency and ensures the IDS sees all packets without any loss. A port mirror, while similar, can drop packets under heavy load, making it less reliable for this purpose."
     }
   },
   {
