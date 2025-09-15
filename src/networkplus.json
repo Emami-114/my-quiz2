@@ -5975,15 +5975,15 @@
   {
     "id": 249,
     "de": {
-      "frage": "Nachdem ein Netzwerk-Praktikant einen Switch eingesteckt hat, haben eine beträchtliche Anzahl von Benutzern in einem Gebäude die Konnektivität verloren. Was ist die wahrscheinlichste Grundursache?",
+      "frage": "Nachdem ein Netzwerk-Praktikant einen Switch angeschlossen hatte, verloren eine erhebliche Anzahl von Benutzern in einem Gebäude die Konnektivität. Was ist die wahrscheinlichste Ursache dafür?",
       "optionen": {
         "A": "VTP-Update",
-        "B": "Port Security-Problem",
+        "B": "Problem mit der Port-Sicherheit",
         "C": "LLDP-Fehlkonfiguration",
-        "D": "Native VLAN Mismatch"
+        "D": "Nicht übereinstimmendes natives VLAN"
       },
-      "antwort": "D",
-      "erklärung": "Wenn ein Switch unsachgemäß mit einem Netzwerk verbunden wird, kann es zu weitverbreiteten Konnektivitätsproblemen kommen, besonders wenn eine Fehlkonfiguration in VLAN-Einstellungen vorliegt. Ein Native VLAN Mismatch tritt auf, wenn zwei Switches, die über eine Trunk-Verbindung verbunden sind, verschiedene native VLANs für unmarkierten Datenverkehr konfiguriert haben. Dies kann dazu führen, dass Datenverkehr an das falsche VLAN gesendet oder verworfen wird, was zu Konnektivitätsverlust für Benutzer führt. Der Praktikant hat wahrscheinlich den Switch angeschlossen, ohne sicherzustellen, dass das native VLAN des Trunk-Ports der bestehenden Netzwerkkonfiguration entspricht."
+      "antwort": "B",
+      "erklärung": "Wenn ein neuer Switch an einen Port angeschlossen wird, auf dem die Port-Sicherheit aktiviert ist, kann dies eine Sicherheitsverletzung auslösen, z.B. durch Überschreiten der maximal zulässigen Anzahl an MAC-Adressen. Dies führt dazu, dass der Port heruntergefahren wird, wodurch alle Benutzer, die über den neuen Switch verbunden sind, die Konnektivität verlieren."
     },
     "en": {
       "question": "After a networking intern plugged in a switch, a significant number of users in a building lost connectivity. Which of the following is the most likely root cause?",
@@ -5993,8 +5993,8 @@
         "C": "LLDP misconfiguration",
         "D": "Native VLAN mismatch"
       },
-      "answer": "D",
-      "explanation": "When a switch is improperly connected to a network, it can cause widespread connectivity issues, especially if there's a misconfiguration in VLAN settings. A Native VLAN mismatch occurs when two switches connected via a trunk link have different native VLANs configured for untagged traffic. This can cause traffic to be sent to the wrong VLAN or dropped, resulting in connectivity loss for users. The intern likely connected the switch without ensuring that the trunk port's native VLAN matched the existing network configuration."
+      "answer": "B",
+      "explanation": "When a new switch is connected to a port that has port security enabled, it can trigger a security violation, for instance, by exceeding the maximum allowed number of MAC addresses. This causes the port to shut down, leading to a loss of connectivity for all users connected through the new switch."
     }
   },
   {
@@ -6025,15 +6025,15 @@
   {
     "id": 251,
     "de": {
-      "frage": "Ein Netzwerktechniker behebt schlechte Leistung einer Webanwendung. Das Büro hat zwei Internet-Links, die die Verkehrslast teilen. Welches der folgenden Tools sollte der Techniker verwenden, um zu bestimmen, welcher Link für die Webanwendung verwendet wird?",
+      "frage": "Ein Netzwerktechniker untersucht die schlechte Leistung einer Webanwendung. Das Büro hat zwei Internetverbindungen, die die Datenlast teilen. Welches der folgenden Werkzeuge sollte der Techniker verwenden, um zu bestimmen, welche Verbindung für die Webanwendung genutzt wird?",
       "optionen": {
         "A": "netstat",
         "B": "nslookup",
         "C": "ping",
         "D": "tracert"
       },
-      "antwort": "D",
-      "erklärung": "tracert (Windows) oder traceroute (Linux) ist ein Netzwerk-Diagnosetool, das verwendet wird, um den Pfad zu verfolgen, den Pakete von einer Quelle zu einem Ziel nehmen. Es listet alle Zwischenrouter auf, die die Pakete durchlaufen. Durch das Ausführen von tracert zur Ziel-IP-Adresse der Webanwendung kann der Techniker identifizieren, welche Route der Datenverkehr nimmt und dadurch bestimmen, welcher Internet-Link verwendet wird. netstat zeigt Netzwerkverbindungen an, verfolgt aber nicht den Paketpfad. nslookup wird für DNS-Abfragen verwendet. ping testet Konnektivität, liefert aber keine Pfadinformationen."
+      "antwort": "A",
+      "erklärung": "Der `netstat`-Befehl wird verwendet, um aktive Netzwerkverbindungen anzuzeigen. Ein Techniker kann dieses Werkzeug verwenden, um die spezifischen IP-Adressen (sowohl lokal als auch remote) zu sehen, die am Datenverkehr der Webanwendung beteiligt sind. Dies zeigt, welche der beiden Internetverbindungen für diese spezielle Verbindung verwendet wird."
     },
     "en": {
       "question": "A network technician is troubleshooting a web application's poor performance. The office has two internet links that share the traffic load. Which of the following tools should the technician use to determine which link is being used for the web application?",
@@ -6043,8 +6043,8 @@
         "C": "ping",
         "D": "tracert"
       },
-      "answer": "D",
-      "explanation": "tracert (Windows) or traceroute (Linux) is a network diagnostic tool used to trace the path that packets take from a source to a destination. It lists all the intermediate routers the packets traverse. By running tracert to the web application's destination IP address, the technician can identify which route the traffic is taking and thereby determine which internet link is being used. netstat displays network connections but does not trace packet paths. nslookup is used for DNS queries. ping tests connectivity but does not provide path information."
+      "answer": "A",
+      "explanation": "The `netstat` command is used to display active network connections. A technician can use this tool to see the specific IP addresses (both local and remote) involved in the web application's traffic, which will reveal which of the two internet links is being used for that particular connection."
     }
   },
   {
@@ -6200,15 +6200,15 @@
   {
     "id": 258,
     "de": {
-      "frage": "Ein Netzwerkarchitekt implementiert eine Off-Premises-Computing-Einrichtung und muss sicherstellen, dass der Betrieb nicht von größeren Ausfällen beeinträchtigt wird. Was sollte der Architekt berücksichtigen?",
+      "frage": "Ein Netzwerkarchitekt implementiert eine externe Rechenanlage und muss sicherstellen, dass der Betrieb durch größere Ausfälle nicht beeinträchtigt wird. Welches der folgenden Konzepte sollte der Architekt berücksichtigen?",
       "optionen": {
         "A": "Hot Site",
         "B": "DCI",
         "C": "Direct Connect",
-        "D": "Active-Passive Ansatz"
+        "D": "Aktiv-Passiv-Ansatz"
       },
-      "antwort": "A",
-      "erklärung": "Eine Hot Site ist eine vollständig betriebsbereite Backup-Einrichtung mit Hardware, Netzwerk und Datensynchronisation, die bereits vorhanden sind. Sie ermöglicht sofortiges Failover im Falle eines Disasters und minimiert Ausfallzeiten. Eine Hot Site ist die beste Option für Geschäftskontinuität, da sie nahezu sofortigen Betrieb ermöglicht, wenn die primäre Einrichtung ausfällt. DCI verbindet Rechenzentren, garantiert aber keine Verfügbarkeit. Direct Connect bezieht sich auf eine private Verbindung zu Cloud-Providern. Active-Passive kann bei Failover helfen, kann aber Verzögerungen beinhalten."
+      "antwort": "B",
+      "erklärung": "DCI (Data Center Interconnect) bezeichnet die Verbindung zwischen zwei oder mehr Rechenzentren. Diese Verbindung ist entscheidend für die Implementierung von Disaster-Recovery- und Hochverfügbarkeitsstrategien. Sie stellt sicher, dass bei einem größeren Ausfall in einer Anlage der Betrieb auf eine andere, verbundene Anlage umgeschaltet werden kann, um die Auswirkungen zu minimieren."
     },
     "en": {
       "question": "A network architect is implementing an off-premises computing facility and needs to ensure that operations will not be impacted by major outages. Which of the following should the architect consider?",
@@ -6218,8 +6218,8 @@
         "C": "Direct Connect",
         "D": "Active-passive approach"
       },
-      "answer": "A",
-      "explanation": "A hot site is a fully operational backup facility with hardware, network, and data synchronization already in place. It allows for immediate failover in the event of a disaster, minimizing downtime. A hot site is the best option for business continuity as it enables near-instant operation when the primary facility fails. DCI connects data centers but doesn't guarantee availability. Direct Connect refers to a private link to cloud providers. Active-passive can help with failover but may involve delays."
+      "answer": "B",
+      "explanation": "DCI (Data Center Interconnect) refers to the connection between two or more data centers. This interconnection is crucial for implementing disaster recovery and high availability strategies. It ensures that if one facility experiences a major outage, operations can be failed over to another connected facility, ensuring operations are not impacted."
     }
   },
   {
@@ -6427,15 +6427,15 @@
   {
     "id": 267,
     "de": {
-      "frage": "Ein Netzwerkadministrator plant, eine Unternehmensanwendung in der Cloud zu hosten und die Anwendung für alle internen und Drittanbieter-Benutzer verfügbar zu machen. Welches der folgenden Konzepte beschreibt diese Anordnung?",
+      "frage": "Ein Netzwerkadministrator plant, eine Unternehmensanwendung in der Cloud zu hosten, um die Anwendung für alle internen und externen Benutzer verfügbar zu machen. Welches der folgenden Konzepte beschreibt diese Anordnung?",
       "optionen": {
         "A": "Multitenancy",
         "B": "VPC",
         "C": "NFV",
         "D": "SaaS"
       },
-      "antwort": "A",
-      "erklärung": "Multitenancy ist eine Cloud-Computing-Architektur, bei der eine einzige Software-Instanz mehrere Kunden oder Mandanten bedient. Die Daten jedes Mandanten sind isoliert und bleiben für andere Mandanten unsichtbar. Das Hosten einer Unternehmensanwendung in der Cloud, um sie sowohl für interne als auch Drittanbieter-Benutzer verfügbar zu machen, passt zu diesem Konzept, da es gemeinsam genutzte Ressourcen und Infrastruktur ermöglicht, während Datentrennung und Sicherheit gewährleistet werden. VPC ist Virtual Private Cloud. NFV ist Network Functions Virtualization. SaaS ist Software as a Service, ein Bereitstellungsmodell."
+      "antwort": "D",
+      "erklärung": "SaaS (Software as a Service) ist ein Cloud-Modell, bei dem eine Anwendung zentral in der Cloud gehostet und den Benutzern über das Internet zur Verfügung gestellt wird. Dies passt genau zur Beschreibung, die Anwendung sowohl für interne als auch für Drittanbieter-Benutzer zugänglich zu machen."
     },
     "en": {
       "question": "A network administrator is planning to host a company application in the cloud, making the application available for all internal and third-party users. Which of the following concepts describes this arrangement?",
@@ -6445,8 +6445,8 @@
         "C": "NFV",
         "D": "SaaS"
       },
-      "answer": "A",
-      "explanation": "Multitenancy is a cloud computing architecture where a single instance of software serves multiple customers or tenants. Each tenant's data is isolated and remains invisible to other tenants. Hosting a company application in the cloud to be available for both internal and third-party users fits this concept, as it allows shared resources and infrastructure while maintaining data separation and security. VPC is Virtual Private Cloud. NFV is Network Functions Virtualization. SaaS is Software as a Service, a delivery model."
+      "answer": "D",
+      "explanation": "SaaS (Software as a Service) is a cloud model where an application is centrally hosted in the cloud and made available to users over the internet. This exactly fits the description of making the application available to all internal and third-party users."
     }
   },
   {
@@ -6877,7 +6877,7 @@
   {
     "id": 285,
     "de": {
-      "frage": "Ein Netzwerktechniker entwirft ein internes Netzwerk, das sowohl IPv4- als auch IPv6-Routing unterstützen muss. Welches der folgenden Routing-Protokolle ist in der Lage, sowohl IPv4 als auch IPv6 zu unterstützen?",
+      "frage": "Ein Netzwerkingenieur entwirft ein internes Netzwerk, das sowohl IPv4- als auch IPv6-Routing unterstützen muss. Welches der folgenden Routing-Protokolle ist in der Lage, sowohl IPv4 als auch IPv6 zu unterstützen?",
       "optionen": {
         "A": "OSPFv3",
         "B": "RIPv2",
@@ -6885,7 +6885,7 @@
         "D": "EIGRP"
       },
       "antwort": "A",
-      "erklärung": "OSPFv3 wurde ursprünglich für IPv6 entwickelt, wurde aber durch die Verwendung von Adressfamilien erweitert, um auch IPv4 zu unterstützen. Dies ermöglicht es, ein einziges Routing-Protokoll für ein internes Dual-Stack-Netzwerk zu verwenden. RIPv2 unterstützt nur IPv4, während BGP, obwohl fähig, ein Exterior-Protokoll ist, das für diesen internen Anwendungsfall nicht ideal ist."
+      "erklärung": "OSPFv3 wurde ursprünglich für IPv6 entwickelt. Es wurde jedoch durch die Verwendung von Adressfamilien (Address Families) erweitert, um auch IPv4-Routing zu unterstützen. Dadurch kann eine einzige OSPFv3-Instanz Routen für beide Protokollfamilien verwalten, was es zu einer idealen Wahl für Dual-Stack-Netzwerke macht."
     },
     "en": {
       "question": "A network engineer is designing an internal network that needs to support both IPv4 and IPv6 routing. Which of the following routing protocols is capable of supporting both IPv4 and IPv6?",
@@ -6896,7 +6896,7 @@
         "D": "EIGRP"
       },
       "answer": "A",
-      "explanation": "OSPFv3 was originally designed for IPv6 but has been extended using address families to also support IPv4, making it a single routing protocol solution for a dual-stack internal network. RIPv2 only supports IPv4, and BGP, while capable, is an exterior protocol not ideal for this internal use case."
+      "explanation": "OSPFv3 was originally developed to support IPv6. However, it was extended through the use of address families to also support IPv4 routing. This allows a single instance of OSPFv3 to manage routes for both protocol families, making it an ideal choice for dual-stack networks."
     }
   },
   {
@@ -7102,15 +7102,15 @@
   {
     "id": 294,
     "de": {
-      "frage": "Ein Rechenzentrums-Administrator evaluiert die Verwendung von Jumbo-Frames in einer Speicherumgebung. Welcher der folgenden Punkte beschreibt den besten Grund, Jumbo-Frames in der Speicherumgebung zu verwenden?",
+      "frage": "Ein Rechenzentrumsadministrator bewertet die Verwendung von Jumbo Frames in einer Speicherumgebung. Welcher der folgenden Gründe beschreibt am besten, warum Jumbo Frames in der Speicherumgebung verwendet werden sollten?",
       "optionen": {
         "A": "Um den Geräte-Overhead zu reduzieren",
-        "B": "Um über den aktuellen Root-Switch im STP zu berichten",
+        "B": "Um den aktuellen Root-Switch im STP zu melden",
         "C": "Um die Routing-Konvergenz zu verbessern",
-        "D": "Um den Festplattendurchsatz zu erhöhen"
+        "D": "Um den Laufwerksdurchsatz zu erhöhen"
       },
       "antwort": "D",
-      "erklärung": "Jumbo-Frames erhöhen die maximale Übertragungseinheit (MTU) von 1500 Bytes auf bis zu 9000 Bytes. In einer Speicherumgebung, in der große Datenblöcke übertragen werden (z. B. bei iSCSI oder NAS), müssen für die gleiche Datenmenge weniger Frames gesendet werden. Dies reduziert den Verarbeitungs-Overhead auf den Geräten und führt zu einem höheren Gesamtdurchsatz, was den Festplattendurchsatz effektiv erhöht."
+      "erklärung": "Jumbo Frames ermöglichen es, mehr Daten in einem einzigen Ethernet-Frame zu senden, wodurch die Anzahl der zu verarbeitenden Frames und Header für eine bestimmte Datenmenge reduziert wird. Diese Reduzierung des Verarbeitungsaufwands führt zu höheren effektiven Datenübertragungsraten, insbesondere bei großen Dateiübertragungen, die in Speicherumgebungen üblich sind. Dies führt direkt zu einem erhöhten Laufwerksdurchsatz."
     },
     "en": {
       "question": "A data center administrator is evaluating the use of jumbo frames within a storage environment. Which of the following describes the best reason to use jumbo frames in the storage environment?",
@@ -7121,7 +7121,7 @@
         "D": "To increase drive throughput"
       },
       "answer": "D",
-      "explanation": "Jumbo frames increase the Maximum Transmission Unit (MTU) from 1500 bytes up to 9000 bytes. In a storage environment where large blocks of data are transferred (like with iSCSI or NAS), fewer frames are needed to send the same amount of data. This reduces processing overhead on devices and leads to higher overall throughput, effectively increasing drive throughput."
+      "explanation": "Jumbo frames allow more data to be sent in a single Ethernet frame, reducing the number of frames and headers that need to be processed for a given amount of data. This reduction in processing overhead leads to higher effective data transfer rates, especially for large file transfers common in storage environments. This directly translates to increased drive throughput."
     }
   },
   {
@@ -7302,18 +7302,18 @@
   {
     "id": 302,
     "de": {
-      "frage": "Ein Netzwerktechniker behebt ein Verbindungsproblem zur Firmenwebsite. Der Befehl traceroute erzeugt die folgende Ausgabe:\n\nTraceroute zu www.mysite.com(8.8.8.8) über maximal 30 Hops\n1 10.1.1.1 <1 ms <1 ms <1 ms\n2 * * *\n\nTraceroute unvollständig\n\nWelche der folgenden Maßnahmen sollte der Techniker ergreifen, um den Pfad zum Server zu identifizieren?",
+      "frage": "Ein Netzwerktechniker behebt ein Verbindungsproblem zur Firmenwebsite. Der Befehl traceroute liefert folgende Ausgabe:\n\n`Traceroute zu www.mysite.com (8.8.8.8) über maximal 30 Hops`\n`1 10.1.1.1 <1 ms <1 ms <1 ms`\n`2 * * *`\n`Traceroute unvollständig`\n\nWelches der folgenden Dinge sollte der Techniker tun, um den Pfad zum Server zu identifizieren?",
       "optionen": {
-        "A": "Die ACL des Routers überprüfen.",
-        "B": "netstat ausführen.",
-        "C": "Einen nslookup durchführen.",
-        "D": "LLDP aktivieren."
+        "A": "Überprüfen der ACL des Routers.",
+        "B": "Ausführen von netstat.",
+        "C": "Durchführen eines nslookup.",
+        "D": "Aktivieren von LLDP."
       },
       "antwort": "A",
-      "erklärung": "Der Traceroute schlägt am zweiten Hop fehl, direkt nach dem Verlassen des lokalen Gateways (10.1.1.1). Die Sternchen (*) deuten darauf hin, dass der Router (der zweite Hop) die Pakete verwirft. Ein häufiger Grund dafür ist eine Access Control List (ACL) auf dem Router, die die von traceroute verwendeten ICMP- oder UDP-Pakete blockiert. Die Überprüfung der ACL des Routers ist der logischste Schritt, um herauszufinden, warum der Datenverkehr nicht weitergeleitet wird."
+      "erklärung": "Der Traceroute schlägt nach dem ersten Hop (10.1.1.1) fehl, bei dem es sich wahrscheinlich um den Standard-Gateway-Router handelt. Die Sternchen `* * *` zeigen an, dass die Pakete verworfen werden oder eine Zeitüberschreitung auftritt. Ein häufiger Grund, warum ein Router diese Art von Datenverkehr verwirft, ist eine Zugriffskontrollliste (ACL). Daher ist die Überprüfung der ACL des Routers der logischste nächste Schritt, um das Problem zu beheben."
     },
     "en": {
-      "question": "A network technician is troubleshooting the connection to the company website. The traceroute command produces the following output:\n\nTraceroute to www.mysite.com (8.8.8.8) over a maximum of 30 hops\n1 10.1.1.1 <1 ms <1 ms <1 ms\n2 * * *\n\nTraceroute incomplete\n\nWhich of the following should the technician do to identify the path to the server?",
+      "question": "A network technician is troubleshooting the connection to the company website. The traceroute command produces the following output:\n\n`Traceroute to www.mysite.com (8.8.8.8) over a maximum of 30 hops`\n`1 10.1.1.1 <1 ms <1 ms <1 ms`\n`2 * * *`\n`Traceroute complete`\n\nWhich of the following should the technician do to identify the path to the server?",
       "options": {
         "A": "Review the router's ACL.",
         "B": "Execute netstat.",
@@ -7321,7 +7321,7 @@
         "D": "Enable LLDP."
       },
       "answer": "A",
-      "explanation": "The traceroute is failing at the second hop, immediately after the local gateway (10.1.1.1). The asterisks (*) indicate that the next-hop router is dropping the packets. A common reason for this is an Access Control List (ACL) on the router that is blocking the ICMP or UDP packets used by traceroute. Reviewing the router's ACL is the most logical step to determine why the traffic is not being passed along."
+      "explanation": "The traceroute fails after the first hop (10.1.1.1), which is likely the default gateway router. The asterisks `* * *` indicate that the probes are being dropped or are timing out. A common reason for a router to drop this type of traffic is an Access Control List (ACL). Therefore, reviewing the router's ACL is the most logical next step to troubleshoot the issue."
     }
   },
   {
