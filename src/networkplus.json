@@ -8081,5 +8081,780 @@
       "answer": "C",
       "explanation": "The requirement is to support over 300 hosts. The subnet mask 255.255.254.0 (or /23) provides 512 addresses, 510 of which are usable — ideal for around 300 devices. 255.255.0.0 (/16) provides too many addresses. 255.255.192.0 (/18) gives 16384 addresses — overkill. 255.255.255.254 is invalid for host assignments (only 2 addresses, 0 usable). To support 300 hosts, a /23 subnet (255.255.254.0) offers 510 usable addresses — the most efficient choice without excessive overhead."
     }
+  },
+  {
+    "id": 333,
+    "de": {
+      "frage": "Nach der Installation eines neuen 6E-WLAN-Routers in einem kleinen Büro stellt ein Techniker fest, dass einige drahtlose Geräte nicht die Nennübertragungsgeschwindigkeiten erreichen. Was sollte der Techniker überprüfen, um das Problem zu beheben? (Wählen Sie zwei)",
+      "optionen": {
+        "A": "Kompatibilität der Client-Geräte",
+        "B": "Backend-Verkabelung",
+        "C": "Wetterphänomene",
+        "D": "Anforderungen an die Spannungsquelle",
+        "E": "Interferenzpegel",
+        "F": "Rechenleistung"
+      },
+      "antwort": "A, E",
+      "erklärung": "Um langsame Geschwindigkeiten in einem neuen Wi-Fi 6E-Netzwerk zu beheben, muss der Techniker zunächst überprüfen, ob die Client-Geräte Wi-Fi 6E unterstützen, um die neuen Bänder und Geschwindigkeiten nutzen zu können. Außerdem ist die Überprüfung auf Störungen durch andere drahtlose Netzwerke, Bluetooth-Geräte oder physische Hindernisse entscheidend, da Störungen die Leistung auch in fortschrittlichen Netzwerken erheblich beeinträchtigen können."
+    },
+    "en": {
+      "question": "After installing a new 6E wireless router in a small office, a technician notices that some wireless devices are not able to achieve the rated speeds. Which of the following should the technician check to troubleshoot the issue? (Select two)",
+      "options": {
+        "A": "Client device compatibility",
+        "B": "Back-end cabling",
+        "C": "Weather phenomena",
+        "D": "Voltage source requirements",
+        "E": "Interference levels",
+        "F": "Processing power"
+      },
+      "answer": "A, E",
+      "explanation": "To troubleshoot slow speeds on a new Wi-Fi 6E network, the technician must first verify that client devices support Wi-Fi 6E to take advantage of the new bands and speeds. Additionally, checking for interference from other wireless networks, Bluetooth devices, or physical obstructions is crucial, as interference can significantly degrade performance even on advanced networks."
+    }
+  },
+  {
+    "id": 334,
+    "de": {
+      "frage": "Ein Netzwerkingenieur erhält einen neuen Router zur Nutzung für die WAN-Konnektivität. Welche der folgenden Schichten beschreibt am besten, an die der Netzwerkingenieur den neuen Router anschließen sollte?",
+      "optionen": {
+        "A": "Access",
+        "B": "Core",
+        "C": "Leaf",
+        "D": "Spine"
+      },
+      "antwort": "B",
+      "erklärung": "Im traditionellen dreistufigen hierarchischen Netzwerkmodell (Core, Distribution, Access) wird die WAN-Konnektivität typischerweise auf der Core-Ebene gehandhabt. Die Core-Schicht ist für das Hochgeschwindigkeits-Paket-Switching und das Routing von Verkehr zu und von externen Netzwerken wie dem Internet oder einem WAN verantwortlich. Daher wird der WAN-Router an die Core-Schicht angeschlossen, um diese externe Konnektivität für das gesamte Netzwerk bereitzustellen."
+    },
+    "en": {
+      "question": "A network engineer receives a new router to use for WAN connectivity. Which of the following best describes the layer the network engineer should connect the new router to?",
+      "options": {
+        "A": "Access",
+        "B": "Core",
+        "C": "Leaf",
+        "D": "Spine"
+      },
+      "answer": "B",
+      "explanation": "In the traditional three-tier hierarchical network model (Core, Distribution, Access), WAN connectivity is typically handled at the Core layer. The core layer is responsible for high-speed packet switching and routing traffic to and from external networks, like the internet or a WAN. Therefore, the WAN router connects to the core layer to provide this external connectivity for the entire network."
+    }
+  },
+  {
+    "id": 335,
+    "de": {
+      "frage": "Ein Kunde möchte häufig genutzte Inhalte zwischenspeichern, um die Anzahl der vollständigen Seiten-Downloads aus dem Internet zu reduzieren. Was sollte der Netzwerkadministrator empfehlen?",
+      "optionen": {
+        "A": "Proxy-Server",
+        "B": "Load Balancer",
+        "C": "Offenes Relay",
+        "D": "Code-Repository"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Proxy-Server (insbesondere ein Caching-HTTP/HTTPS-Proxy) speichert häufig aufgerufene Webobjekte und stellt sie den Clients lokal zur Verfügung, wodurch der externe Bandbreitenverbrauch reduziert und die Antwortzeiten verbessert werden."
+    },
+    "en": {
+      "question": "A customer wants to cache commonly used content to reduce the number of full page downloads from the internet. Which of the following should the network administrator recommend?",
+      "options": {
+        "A": "Proxy server",
+        "B": "Load balancer",
+        "C": "Open relay",
+        "D": "Code repository"
+      },
+      "answer": "A",
+      "explanation": "A proxy server (specifically a caching HTTP/HTTPS proxy) stores frequently accessed web objects and serves them locally to clients, reducing external bandwidth consumption and improving response times."
+    }
+  },
+  {
+    "id": 336,
+    "de": {
+      "frage": "Welche der folgenden Angriffsarten tritt am wahrscheinlichsten auf, nachdem ein Angreifer einen Evil Twin eingerichtet hat?",
+      "optionen": {
+        "A": "On-Path",
+        "B": "DDoS",
+        "C": "ARP-Spoofing",
+        "D": "Phishing"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Evil Twin ist ein bösartiger drahtloser Zugangspunkt, der eine legitime SSID nachahmt. Sobald sich Opfer verbinden, kann der Angreifer den Datenverkehr abfangen und manipulieren und so einen On-Path-Angriff (Man-in-the-Middle) durchführen – dabei können Anmeldeinformationen erfasst, Inhalte eingefügt oder die Verschlüsselung herabgestuft werden."
+    },
+    "en": {
+      "question": "Which of the following types of attacks is most likely to occur after an attacker sets up an evil twin?",
+      "options": {
+        "A": "On-path",
+        "B": "DDoS",
+        "C": "ARP spoofing",
+        "D": "Phishing"
+      },
+      "answer": "A",
+      "explanation": "An evil twin is a malicious wireless access point that impersonates a legitimate SSID. Once victims connect, the attacker can intercept and manipulate traffic, performing an on-path (man-in-the-middle) attack—capturing credentials, injecting content, or downgrading encryption."
+    }
+  },
+  {
+    "id": 337,
+    "de": {
+      "frage": "Welche der folgenden Verbindungsmethoden ermöglicht es einem Netzwerkingenieur, die Bereitstellung von Konfigurationen für Netzwerkgeräte in der gesamten Umgebung zu automatisieren?",
+      "optionen": {
+        "A": "RDP",
+        "B": "Telnet",
+        "C": "SSH",
+        "D": "GUI"
+      },
+      "antwort": "C",
+      "erklärung": "SSH bietet einen sicheren, skriptfähigen Fernzugriff, der von Automatisierungs-/Orchestrierungswerkzeugen (z. B. unter Nutzung von CLI, NETCONF über SSH oder Ansible-Modulen) verwendet wird, um Konfigurationen in großem Umfang zu verteilen."
+    },
+    "en": {
+      "question": "Which of the following connection methods allows a network engineer to automate configuration deployment for network devices across the environment?",
+      "options": {
+        "A": "RDP",
+        "B": "Telnet",
+        "C": "SSH",
+        "D": "GUI"
+      },
+      "answer": "C",
+      "explanation": "SSH provides secure, scriptable remote access used by automation/orchestration tools (e.g., leveraging CLI, NETCONF over SSH, or Ansible modules) to push configurations at scale."
+    }
+  },
+  {
+    "id": 338,
+    "de": {
+      "frage": "Was würde am ehesten verwendet werden, um die Verschlüsselung während der Übertragung bei der Verwendung von HTTPS zu implementieren?",
+      "optionen": {
+        "A": "SSH",
+        "B": "TLS",
+        "C": "SCADA",
+        "D": "RADIUS"
+      },
+      "antwort": "B",
+      "erklärung": "HTTPS ist HTTP, das in TLS (dem Nachfolger von SSL) gekapselt ist, welches Vertraulichkeit, Integrität und Serverauthentifizierung für den Webverkehr bietet."
+    },
+    "en": {
+      "question": "Which of the following would most likely be used to implement encryption in transit when using HTTPS?",
+      "options": {
+        "A": "SSH",
+        "B": "TLS",
+        "C": "SCADA",
+        "D": "RADIUS"
+      },
+      "answer": "B",
+      "explanation": "HTTPS is HTTP encapsulated in TLS (the successor to SSL), which provides confidentiality, integrity, and server authentication for web traffic."
+    }
+  },
+  {
+    "id": 339,
+    "de": {
+      "frage": "Ein Netzwerkarchitekt eines Börsenmaklers implementiert einen Disaster-Recovery-Plan (DR) für hohe Verfügbarkeit. Welcher der folgenden Ansätze wäre am besten geeignet?",
+      "optionen": {
+        "A": "Warm Site",
+        "B": "Aktiv-Aktiv",
+        "C": "Vollvermascht",
+        "D": "In-Band"
+      },
+      "antwort": "B",
+      "erklärung": "In Finanzinstituten wie Börsen können Ausfallzeiten oder Latenz schwerwiegende Folgen haben. Eine Aktiv-Aktiv-Hochverfügbarkeit stellt sicher, dass mehrere Standorte/Systeme gleichzeitig laufen, die Last verteilen und eine sofortige Ausfallsicherung mit minimaler oder keiner Unterbrechung ermöglichen. Dies ist der beste Ansatz für Umgebungen, die kontinuierliche Betriebszeit und Ausfallsicherheit erfordern."
+    },
+    "en": {
+      "question": "A network architect of a stock exchange broker is implementing a disaster recovery (DR) high-availability plan. Which of the following approaches would be the best fit?",
+      "options": {
+        "A": "Warm site",
+        "B": "Active-active",
+        "C": "Full mesh",
+        "D": "In-band"
+      },
+      "answer": "B",
+      "explanation": "In financial institutions such as stock exchanges, downtime or latency can have severe consequences. Active-active high availability ensures multiple sites/systems are running simultaneously, distributing the load and providing immediate failover with minimal or no interruption. This is the best approach for environments that require continuous uptime and resiliency."
+    }
+  },
+  {
+    "id": 340,
+    "de": {
+      "frage": "Eine Organisation hat kürzlich einen neuen Computer mit dem LAN verbunden. Der Benutzer kann den Standard-Gateway nicht anpingen. Der Techniker untersucht die Konfiguration und sieht eine selbst zugewiesene IP-Adresse. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Der DHCP-Server ist nicht verfügbar",
+        "B": "Es wird eine RFC1918-Adresse verwendet",
+        "C": "Der TCP/IP-Stack ist deaktiviert",
+        "D": "Eine statische IP ist zugewiesen"
+      },
+      "antwort": "A",
+      "erklärung": "Wenn ein Host keine IP-Adresse von einem DHCP-Server erhalten kann, weist er sich selbst eine APIPA-Adresse (Automatic Private IP Addressing) im Bereich 169.254.x.x zu, die üblicherweise als 'selbst zugewiesene IP' bezeichnet wird. Dies verhindert die Kommunikation außerhalb des lokalen Links, einschließlich des Erreichens des Standard-Gateways."
+    },
+    "en": {
+      "question": "An organization recently connected a new computer to the LAN. The user is unable to ping the default gateway. The technician examines the configuration and sees a self-assigned IP address. Which of the following is the most likely cause?",
+      "options": {
+        "A": "The DHCP server is not available",
+        "B": "An RFC1918 address is being used",
+        "C": "The TCP/IP stack is disabled",
+        "D": "A static IP is assigned"
+      },
+      "answer": "A",
+      "explanation": "When a host fails to obtain an IP address from a DHCP server, it assigns itself an APIPA (Automatic Private IP Addressing) address in the 169.254.x.x range, commonly described as a “self-assigned IP.” This prevents communication outside the local link, including reaching the default gateway."
+    }
+  },
+  {
+    "id": 341,
+    "de": {
+      "frage": "Während eines Sicherheitsaudits stellt eine Beratungsfirma Inkonsistenzen zwischen der Dokumentation und der tatsächlichen Umgebung fest. Womit kann protokolliert werden, wer die Änderungen vorgenommen hat und was die Änderungen sind?",
+      "optionen": {
+        "A": "Netzwerkzugriffskontrolle",
+        "B": "Konfigurationsüberwachung",
+        "C": "Zero Trust",
+        "D": "Syslog"
+      },
+      "antwort": "B",
+      "erklärung": "Konfigurationsüberwachungs- und -verwaltungstools (oft Teil von Netzwerkmanagementsystemen) führen versionierte Aufzeichnungen von Gerätekonfigurationen, verfolgen Änderungen und protokollieren, wer sie vorgenommen hat. Dies sorgt für Rechenschaftspflicht und unterstützt Compliance-Audits."
+    },
+    "en": {
+      "question": "During a security audit, a consulting firm notices inconsistencies between the documentation and the actual environment. Which of the following can keep a record of who made the changes and what the changes are?",
+      "options": {
+        "A": "Network access control",
+        "B": "Configuration monitoring",
+        "C": "Zero Trust",
+        "D": "Syslog"
+      },
+      "answer": "B",
+      "explanation": "Configuration monitoring and management tools (often part of network management systems) maintain version-controlled records of device configurations, track changes, and log who made them. This provides accountability and supports compliance audits."
+    }
+  },
+  {
+    "id": 342,
+    "de": {
+      "frage": "Ein Angreifer hat sich Zugriff auf die Hosts-Datei auf einem Endgerät verschafft und sie modifiziert. Nun wird ein Benutzer von der Startseite des Unternehmens auf eine betrügerische Website umgeleitet. Was ist am wahrscheinlichsten passiert?",
+      "optionen": {
+        "A": "DNS-Spoofing",
+        "B": "Phishing",
+        "C": "VLAN-Hopping",
+        "D": "ARP-Poisoning"
+      },
+      "antwort": "A",
+      "erklärung": "Wenn die Hosts-Datei geändert wird, ist die lokale Namensauflösung kompromittiert, und Domain-Abfragen werden an bösartige IP-Adressen umgeleitet. Dies ist eine Form von DNS-Spoofing/Poisoning, bei der gefälschte Zuordnungen Benutzer dazu verleiten, betrügerische Websites zu besuchen."
+    },
+    "en": {
+      "question": "An attacker gained access to the hosts file on an endpoint and modified it. Now, a user is redirected from the company’s home page to a fraudulent website. Which of the following most likely happened?",
+      "options": {
+        "A": "DNS spoofing",
+        "B": "Phishing",
+        "C": "VLAN hopping",
+        "D": "ARP poisoning"
+      },
+      "answer": "A",
+      "explanation": "When the hosts file is altered, local name resolution is compromised, and domain queries are redirected to malicious IP addresses. This is a form of DNS spoofing/poisoning, where false mappings trick users into visiting fraudulent websites."
+    }
+  },
+  {
+    "id": 343,
+    "de": {
+      "frage": "Was ermöglicht es einem Netzwerkadministrator, Angriffe aus dem Internet zu analysieren, ohne die Latenz zu beeinträchtigen?",
+      "optionen": {
+        "A": "IPS",
+        "B": "IDS",
+        "C": "Load Balancer",
+        "D": "Firewall"
+      },
+      "antwort": "B",
+      "erklärung": "Ein IDS (Intrusion Detection System) wird out-of-band eingesetzt, was bedeutet, dass es den Netzwerkverkehr passiv über einen SPAN/Spiegelport oder einen Netzwerk-Tap überwacht. Es erkennt und analysiert verdächtigen Verkehr, ohne Latenz einzuführen, da es nicht in-line geschaltet ist."
+    },
+    "en": {
+      "question": "Which of the following allows a network administrator to analyze attacks coming from the internet without affecting latency?",
+      "options": {
+        "A": "IPS",
+        "B": "IDS",
+        "C": "Load balancer",
+        "D": "Firewall"
+      },
+      "answer": "B",
+      "explanation": "An IDS (Intrusion Detection System) is deployed out-of-band, meaning it passively monitors network traffic using a SPAN/mirror port or network tap. It detects and analyzes suspicious traffic without introducing latency since it does not sit in-line."
+    }
+  },
+  {
+    "id": 344,
+    "de": {
+      "frage": "Welcher der folgenden Angriffe zwingt einen Switch, den gesamten Datenverkehr über alle Ports zu senden?",
+      "optionen": {
+        "A": "ARP-Poisoning",
+        "B": "Evil Twin",
+        "C": "MAC-Flooding",
+        "D": "DNS-Spoofing"
+      },
+      "antwort": "C",
+      "erklärung": "MAC-Flooding überlastet die CAM-Tabelle (Content Addressable Memory) eines Switches, indem eine Flut von Frames mit gefälschten MAC-Adressen gesendet wird. Sobald die CAM-Tabelle überläuft, kann der Switch keine legitimen MAC-Adressen mehr lernen und sendet standardmäßig alle Frames an alle Ports, wodurch er praktisch zu einem Hub wird. Dies ermöglicht es einem Angreifer, Verkehr zu erfassen, der ursprünglich nicht für seinen Port bestimmt war."
+    },
+    "en": {
+      "question": "Which of the following attacks forces a switch to send all traffic out of all ports?",
+      "options": {
+        "A": "ARP poisoning",
+        "B": "Evil twin",
+        "C": "MAC flooding",
+        "D": "DNS spoofing"
+      },
+      "answer": "C",
+      "explanation": "MAC flooding overwhelms a switch’s CAM (Content Addressable Memory) table by sending a flood of frames with spoofed MAC addresses. Once the CAM table overflows, the switch cannot learn legitimate MAC addresses and defaults to flooding all frames out all ports, effectively turning it into a hub. This allows an attacker to capture traffic not originally destined for their port."
+    }
+  },
+  {
+    "id": 345,
+    "de": {
+      "frage": "Ein Netzwerkingenieur installiert neue PoE-WLAN-APs. Die ersten fünf APs werden erfolgreich bereitgestellt, aber der sechste lässt sich nicht starten. Was sollte der Ingenieur zuerst untersuchen?",
+      "optionen": {
+        "A": "Signalstärke",
+        "B": "Duplex-Mismatch",
+        "C": "Leistungsbudget",
+        "D": "CRC"
+      },
+      "antwort": "C",
+      "erklärung": "Bei der Bereitstellung mehrerer Power-over-Ethernet-(PoE)-Geräte kann das Leistungsbudget des Switches erschöpft sein. Wenn die verfügbare Wattzahl am Switch den zusätzlichen AP nicht versorgen kann, wird er nicht eingeschaltet. Dies ist die wahrscheinlichste Ursache, wenn frühere APs einwandfrei funktionierten, ein neuer jedoch nicht."
+    },
+    "en": {
+      "question": "A network engineer is installing new PoE wireless APs. The first five APs deploy successfully, but the sixth one fails to start. Which of the following should the engineer investigate first?",
+      "options": {
+        "A": "Signal strength",
+        "B": "Duplex mismatch",
+        "C": "Power budget",
+        "D": "CRC"
+      },
+      "answer": "C",
+      "explanation": "When deploying multiple Power over Ethernet (PoE) devices, the switch’s power budget can be exhausted. If the available wattage on the switch cannot supply the additional AP, it will fail to power on. This is the most likely cause when previous APs worked fine but a new one does not."
+    }
+  },
+  {
+    "id": 346,
+    "de": {
+      "frage": "Welches der folgenden Geräte arbeitet hauptsächlich auf der Sicherungsschicht (Data Link Layer) des OSI-Modells und wird verwendet, um ein Glasfaserkabel mit einer Netzwerkschnittstelle zu verbinden?",
+      "optionen": {
+        "A": "SC",
+        "B": "DAC",
+        "C": "SFP-Transceiver",
+        "D": "Twinaxialkabel"
+      },
+      "antwort": "C",
+      "erklärung": "Ein SFP (Small Form-factor Pluggable) Transceiver ist ein modulares Gerät, das die Schnittstelle zwischen Glasfaser- oder Kupferkabeln und dem Netzwerkgerät (z.B. Switch oder Router) herstellt. Er arbeitet hauptsächlich auf Schicht 2 (Sicherungsschicht) und wandelt optische oder elektrische Signale in Frames um, die vom Netzwerkgerät verwendet werden können."
+    },
+    "en": {
+      "question": "Which of the following devices functions mainly at the data link layer of the OSI model and is used to connect a fiber-optic cable to a network interface?",
+      "options": {
+        "A": "SC",
+        "B": "DAC",
+        "C": "SFP transceiver",
+        "D": "Twinaxial cable"
+      },
+      "answer": "C",
+      "explanation": "An SFP (Small Form-factor Pluggable) transceiver is a modular device that provides the interface between fiber-optic or copper cabling and the networking equipment (e.g., switch or router). It operates primarily at Layer 2 (Data Link), converting optical or electrical signals into frames usable by the network device."
+    }
+  },
+  {
+    "id": 347,
+    "de": {
+      "frage": "Welcher der folgenden Schritte der Fehlersuchmethodik würde am ehesten den Vergleich aktueller Durchsatztests mit einer Baseline beinhalten?",
+      "optionen": {
+        "A": "Die Lösung implementieren",
+        "B": "Die volle Systemfunktionalität überprüfen",
+        "C": "Erkenntnisse dokumentieren",
+        "D": "Die Theorie testen"
+      },
+      "antwort": "B",
+      "erklärung": "Die Überprüfung der vollen Systemfunktionalität erfolgt nach der Implementierung einer Lösung. Dieser Schritt stellt sicher, dass die Lösung das Problem behoben hat und die Leistung wieder auf dem erwarteten Niveau ist. Der Vergleich des aktuellen Durchsatzes mit Baseline-Messungen ist Teil der Validierungstests, um zu bestätigen, dass alles innerhalb der normalen Betriebsparameter liegt."
+    },
+    "en": {
+      "question": "Which of the following steps of the troubleshooting methodology would most likely involve comparing current throughput tests to a baseline?",
+      "options": {
+        "A": "Implement the solution",
+        "B": "Verify full system functionality",
+        "C": "Document findings",
+        "D": "Test the theory"
+      },
+      "answer": "B",
+      "explanation": "Verifying full system functionality occurs after implementing a fix. This step ensures the solution resolved the issue and that performance is back to expected levels. Comparing current throughput to baseline measurements is part of validation testing to confirm everything is within normal operational parameters."
+    }
+  },
+  {
+    "id": 348,
+    "de": {
+      "frage": "Was kann einem Benutzer zusätzlich zu einem Passwort für die MFA abgefragt werden?",
+      "optionen": {
+        "A": "PIN",
+        "B": "Lieblingsfarbe",
+        "C": "Hard-Token",
+        "D": "Mädchenname der Mutter"
+      },
+      "antwort": "C",
+      "erklärung": "Die Multi-Faktor-Authentifizierung (MFA) erfordert zwei oder mehr verschiedene Kategorien von Authentifizierungsfaktoren: Etwas, das Sie wissen (Passwort, PIN), Etwas, das Sie haben (Smartcard, Hardware-Token), Etwas, das Sie sind (Biometrie). Der einzig gültige zweite Faktor hier ist ein Hard-Token (z. B. ein Schlüsselanhänger, der Einmal-Codes generiert)."
+    },
+    "en": {
+      "question": "Which of the following, in addition to a password, can be asked of a user for MFA?",
+      "options": {
+        "A": "PIN",
+        "B": "Favorite color",
+        "C": "Hard token",
+        "D": "Mother’s maiden name"
+      },
+      "answer": "C",
+      "explanation": "Multi-factor authentication (MFA) requires two or more different categories of authentication factors: Something you know (password, PIN), Something you have (smart card, hardware token), Something you are (biometric). The only valid second factor here is a hard token (e.g., a key fob generating one-time codes)."
+    }
+  },
+  {
+    "id": 349,
+    "de": {
+      "frage": "Ein Netzwerktechniker arbeitet an einem PC mit einer defekten Netzwerkkarte (NIC). Der Host ist mit einem Switch mit gesicherten Ports verbunden. Nach dem Testen der Verbindungskabel und der Verwendung einer als funktionierend bekannten NIC kann der Host immer noch keine Verbindung zum Netzwerk herstellen. Was verursacht das Verbindungsproblem?",
+      "optionen": {
+        "A": "MAC-Adresse der neuen Karte",
+        "B": "BPDU-Guard-Einstellungen",
+        "C": "Link-Aggregation-Einstellungen",
+        "D": "PoE-Leistungsbudget"
+      },
+      "antwort": "A",
+      "erklärung": "Wenn auf einem Switch Port-Sicherheit aktiviert ist (z. B. Sticky MAC oder eine konfigurierte erlaubte MAC), erlaubt der Port nur die MAC-Adresse der ursprünglichen NIC. Wenn eine neue NIC mit einer anderen MAC-Adresse installiert wird, lehnt der Port den Datenverkehr ab und verhindert die Netzwerkkonnektivität."
+    },
+    "en": {
+      "question": "A network technician is working on a PC with a faulty NIC. The host is connected to a switch with secured ports. After testing the connection cables and using a known-good NIC, the host is still unable to connect to the network. Which of the following is causing the connection issue?",
+      "options": {
+        "A": "MAC address of the new card",
+        "B": "BPDU guard settings",
+        "C": "Link aggregation settings",
+        "D": "PoE power budget"
+      },
+      "answer": "A",
+      "explanation": "If a switch has port security enabled (such as sticky MAC or a configured allowed MAC), the port will only allow the original NIC’s MAC address. When a new NIC with a different MAC address is installed, the port rejects traffic, preventing network connectivity."
+    }
+  },
+  {
+    "id": 350,
+    "de": {
+      "frage": "Ein Netzwerkadministrator implementiert neue Netzwerkhardware. Bei der Konfiguration des Netzwerküberwachungsservers konnte der Server sich authentifizieren, aber den spezifischen Status der Hardware nicht ermitteln. Was würde der Administrator am ehesten tun, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Den öffentlichen Community-String verwenden",
+        "B": "Die entsprechende MIB importieren",
+        "C": "Einen Switchport-Analysator einrichten und den Verkehr weiterleiten",
+        "D": "SNMPv3-Privatsphäre konfigurieren"
+      },
+      "antwort": "B",
+      "erklärung": "MIBs (Management Information Bases) definieren die Variablen und Objekte, die SNMP auf einem Gerät abfragen kann. Wenn der Überwachungsserver sich authentifiziert, aber die Daten nicht interpretieren kann, fehlt ihm wahrscheinlich die richtige MIB für diesen Anbieter oder dieses Modell. Das Importieren der richtigen MIB ermöglicht es dem Überwachungsserver, den Gerätestatus und die Metriken korrekt anzuzeigen."
+    },
+    "en": {
+      "question": "A network administrator deploys new network hardware. While configuring the network monitoring server, the server could authenticate but could not determine the specific status of the hardware. Which of the following would the administrator most likely do to resolve the issue?",
+      "options": {
+        "A": "Use the public community string",
+        "B": "Import the appropriate MIB",
+        "C": "Set up a switchport analyzer and forward traffic",
+        "D": "Configure SNMPv3 privacy"
+      },
+      "answer": "B",
+      "explanation": "MIBs (Management Information Bases) define the variables and objects that SNMP can query on a device. If the monitoring server authenticates but cannot interpret the data, it likely lacks the correct MIB for that vendor or model. Importing the proper MIB allows the monitoring server to correctly display device status and metrics."
+    }
+  },
+  {
+    "id": 351,
+    "de": {
+      "frage": "Der Chief Information Security Officer eines Unternehmens verlangt, dass Server und Firewalls beim Erstellen von Protokolldateien genaue Zeitstempel haben, damit Sicherheitsanalysten Ereignisse bei Vorfalluntersuchungen korrelieren können. Was sollte implementiert werden?",
+      "optionen": {
+        "A": "Syslog-Server",
+        "B": "SMTP",
+        "C": "SNMP",
+        "D": "NTP"
+      },
+      "antwort": "D",
+      "erklärung": "NTP (Network Time Protocol) synchronisiert die Uhren auf allen Netzwerkgeräten und sorgt so für genaue Zeitstempel in den Protokollen. Dies ist entscheidend für die Korrelation von Ereignissen über verschiedene Systeme hinweg während der Untersuchungen."
+    },
+    "en": {
+      "question": "A company’s Chief Information Security Officer requires that servers and firewalls have accurate timestamps when creating log files so that security analysts can correlate events during incident investigations. Which of the following should be implemented?",
+      "options": {
+        "A": "Syslog server",
+        "B": "SMTP",
+        "C": "SNMP",
+        "D": "NTP"
+      },
+      "answer": "D",
+      "explanation": "NTP (Network Time Protocol) synchronizes clocks across network devices, ensuring accurate timestamps in logs. This is critical for correlating events across different systems during investigations."
+    }
+  },
+  {
+    "id": 352,
+    "de": {
+      "frage": "Zwei Netzwerk-Switches an verschiedenen Standorten sind über ein Glasfaserkabel mit einer Entfernung von 10 Meilen (16 km) verbunden. Das Duplex-Glasfaser-Patchkabel zwischen dem Patchpanel und dem Switch wird versehentlich eingeklemmt, wodurch die Verbindung zwischen den beiden Switches unterbrochen wird. Ein Netzwerktechniker ersetzt das defekte Kabel durch ein neues Single-Mode-Patchkabel. Die Verbindung zwischen beiden Switches ist jedoch immer noch unterbrochen und die Link-Leuchten sind immer noch aus. Welche der folgenden Maßnahmen sollte der Techniker zuerst durchführen?",
+      "optionen": {
+        "A": "Den Glasfaser-Transceiver im Switch austauschen",
+        "B": "Sich am Switch anmelden, um den Switchport herunterzufahren und wieder zu aktivieren",
+        "C": "Die beiden Glasfaserstecker an einem Ende des neuen Patchkabels vertauschen",
+        "D": "Das Single-Mode-Glasfaser-Patchkabel gegen ein Multimode-Glasfaser-Patchkabel austauschen"
+      },
+      "antwort": "C",
+      "erklärung": "Glasfaserverbindungen erfordern, dass der Tx-Anschluss an einem Ende mit dem Rx-Anschluss am anderen Ende verbunden ist. Wenn das Patchkabel ausgetauscht wird und die Verbindungsleuchten aus bleiben, ist die häufigste Ursache, dass die Stecker vertauscht sind. Das Vertauschen (Transponieren) der Stecker stellt die korrekte Sende-/Empfangsausrichtung sicher."
+    },
+    "en": {
+      "question": "Two network switches at different locations are connected via fiber-optic cable at a distance of 10 miles (16 km). The duplex fiber-optic patch cord between the patch panel and switch is accidentally pinched, stopping connectivity between the two switches. A network technician replaces the broken cable with a new, single-mode patch cord. However, connectivity between both switches is still down and the link lights are still off. Which of the following actions should the technician perform first?",
+      "options": {
+        "A": "Replace the fiber-optic transceiver in the switch",
+        "B": "Log in to the switch to shut down and re-enable the switchport",
+        "C": "Transpose the two fiber connectors at one end of the new patch cord",
+        "D": "Swap the single-mode fiber patch cord with a multimode fiber patch cord"
+      },
+      "answer": "C",
+      "explanation": "Fiber connections require Tx on one end to connect to Rx on the other end. If the patch cord is replaced and link lights remain off, the most common cause is that the connectors are reversed. Swapping (transposing) the connectors ensures proper transmit/receive alignment."
+    }
+  },
+  {
+    "id": 353,
+    "de": {
+      "frage": "Benutzer melden Probleme mit der Mobilfunkverbindung, nachdem kürzlich ein Mobilfunk-Repeater installiert wurde. Die Benutzer stellen auch fest, dass sich die Akkus der Telefone schnell entladen. Was sollte der Techniker zuerst überprüfen, um das Problem zu beheben?",
+      "optionen": {
+        "A": "WPS-Konfiguration",
+        "B": "Signalstärke",
+        "C": "Kanal-Frequenz",
+        "D": "Leistungsbudget"
+      },
+      "antwort": "B",
+      "erklärung": "Wenn die Signalstärke schlecht ist, erhöhen Mobilgeräte ständig ihre Sendeleistung, um eine stabile Verbindung aufrechtzuerhalten. Dies führt zu Verbindungsabbrüchen und schnellem Akkuverbrauch. Da ein Repeater installiert wurde, könnte eine falsche Ausrichtung oder Konfiguration die Signalstärke beeinträchtigen."
+    },
+    "en": {
+      "question": "Users are reporting issues with mobile phone connectivity after a cellular repeater was recently installed. Users also note that the phones are rapidly losing battery charge. Which of the following should the technician check first to troubleshoot the issue?",
+      "options": {
+        "A": "WPS configuration",
+        "B": "Signal strength",
+        "C": "Channel frequency",
+        "D": "Power budget"
+      },
+      "answer": "B",
+      "explanation": "When signal strength is poor, mobile devices constantly boost their transmission power in an attempt to maintain a stable connection. This results in dropped calls/data and rapid battery drain. Since a repeater was installed, misalignment or misconfiguration could be degrading the signal strength."
+    }
+  },
+  {
+    "id": 354,
+    "de": {
+      "frage": "Ein Netzwerkingenieur implementiert eine neue Verbindung zwischen Core-Switches. Der Ingenieur stellt die folgenden Konfigurationen bereit:\n\nCore-SW01\nvlan 100\nname\ninterface Ethernet 1/1\nchannel-group 1 mode active\ninterface Ethernet 1/2\nchannel-group 1 mode active\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allow vlan 100\n\nCore-SW02\nvlan 100\nname\ninterface Ethernet 1/1\nswitchport mode trunk\nswitchport trunk allow vlan 100\ninterface Ethernet 1/2\nswitchport mode trunk\nswitchport trunk allow vlan 100\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allow vlan 100\n\nWelchen Zustand haben die Port-Channel-Schnittstellen von Core-SW01?",
+      "optionen": {
+        "A": "Zunehmende CRC-Fehler",
+        "B": "Fehlerhaft deaktiviert (Error disabled)",
+        "C": "Administrativ heruntergefahren",
+        "D": "Ausgesetzt (Suspended)"
+      },
+      "antwort": "D",
+      "erklärung": "Auf Core-SW01 sind die Ports mit LACP (Modus aktiv) für die Link-Aggregation konfiguriert. Auf Core-SW02 sind die Ports als unabhängige Trunks konfiguriert, nicht als Teil einer LACP-Gruppe. Aufgrund dieser Nichtübereinstimmung kann LACP den Bündel nicht bilden, und die aggregierten Ports auf SW01 gehen in einen ausgesetzten (suspended) Zustand über."
+    },
+    "en": {
+      "question": "A network engineer is implementing a new connection between core switches. The engineer deploys the following configurations:\n\nCore-SW01\nvlan 100\nname\ninterface Ethernet 1/1\nchannel-group 1 mode active\ninterface Ethernet 1/2\nchannel-group 1 mode active\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allow vlan 100\n\nCore-SW02\nvlan 100\nname\ninterface Ethernet 1/1\nswitchport mode trunk\nswitchport trunk allow vlan 100\ninterface Ethernet 1/2\nswitchport mode trunk\nswitchport trunk allow vlan 100\ninterface port-channel 1\nswitchport mode trunk\nswitchport trunk allow vlan 100\n\nWhich of the following is the state of the Core-SW01 port-channel interfaces?",
+      "options": {
+        "A": "Incrementing CRC errors",
+        "B": "Error disabled",
+        "C": "Administratively down",
+        "D": "Suspended"
+      },
+      "answer": "D",
+      "explanation": "On Core-SW01, the ports are configured with LACP (mode active) for link aggregation. On Core-SW02, the ports are configured as independent trunks, not as part of an LACP group. Because of this mismatch, LACP cannot form the bundle, and the aggregated ports on SW01 will go into a suspended state."
+    }
+  },
+  {
+    "id": 355,
+    "de": {
+      "frage": "Nach einem Sicherheitsvorfall stellt ein Techniker fest, dass Unternehmensdaten gestohlen wurden. Bei der Untersuchung wird entdeckt, dass sich ein Host als Switch getarnt hat. Welche der folgenden Aussagen beschreibt den aufgetretenen Angriff am besten?",
+      "optionen": {
+        "A": "VLAN-Hopping",
+        "B": "Evil Twin",
+        "C": "DNS-Poisoning",
+        "D": "ARP-Spoofing"
+      },
+      "antwort": "A",
+      "erklärung": "VLAN-Hopping tritt auf, wenn ein Angreifer einen Switch dazu verleitet zu glauben, der Host sei ein anderer Switch, indem er getaggte Frames generiert oder die Trunk-Aushandlung (DTP) ausnutzt. Dies ermöglicht dem Angreifer den Zugriff auf Datenverkehr aus mehreren VLANs und potenziell den Diebstahl sensibler Daten."
+    },
+    "en": {
+      "question": "After a security incident, a technician reveals that company data was stolen. During the investigation, it is discovered that a host disguised itself as a switch. Which of the following best describes the attack that occurred?",
+      "options": {
+        "A": "VLAN hopping",
+        "B": "Evil twin",
+        "C": "DNS poisoning",
+        "D": "ARP spoofing"
+      },
+      "answer": "A",
+      "explanation": "VLAN hopping occurs when an attacker tricks a switch into believing the host is another switch by generating tagged frames or exploiting trunk negotiation (DTP). This allows the attacker to access traffic from multiple VLANs, potentially stealing sensitive data."
+    }
+  },
+  {
+    "id": 356,
+    "de": {
+      "frage": "Welcher der folgenden Schritte zur Fehlerbehebung liefert einem Change Advisory Board die Informationen, die für eine Entscheidung benötigt werden?",
+      "optionen": {
+        "A": "Das Problem identifizieren",
+        "B": "Eine Theorie der wahrscheinlichen Ursache entwickeln",
+        "C": "Die Theorie testen, um die Ursache zu bestimmen",
+        "D": "Einen Aktionsplan erstellen"
+      },
+      "antwort": "D",
+      "erklärung": "Im Umgang mit Fehlerbehebung und Change Management umreißt der Aktionsplan die Schritte, Risiken und Minderungsstrategien. Ein Change Advisory Board (CAB) verwendet diesen dokumentierten Plan, um zu entscheiden, ob die Änderung genehmigt wird."
+    },
+    "en": {
+      "question": "Which of the following troubleshooting steps provides a change advisory board with the information needed to make a decision?",
+      "options": {
+        "A": "Identify the problem",
+        "B": "Develop a theory of probable cause",
+        "C": "Test the theory to determine cause",
+        "D": "Establish a plan of action"
+      },
+      "answer": "D",
+      "explanation": "When dealing with troubleshooting and change management, the plan of action outlines the steps, risks, and mitigation strategies. A change advisory board (CAB) uses this documented plan to decide whether to approve the change."
+    }
+  },
+  {
+    "id": 357,
+    "de": {
+      "frage": "Sprachverkehr weist übermäßigen Jitter auf. Ein Netzwerkingenieur möchte die Anrufleistung und -klarheit verbessern. Welche der folgenden Funktionen sollte der Ingenieur konfigurieren?",
+      "optionen": {
+        "A": "QoS",
+        "B": "STP"
+      },
+      "antwort": "A",
+      "erklärung": "Quality of Service (QoS) priorisiert verzögerungsempfindlichen Datenverkehr wie VoIP, indem es eine höhere Priorität in den Warteschlangen zuweist, wodurch Jitter, Latenz und Paketverlust reduziert werden. Die Implementierung von QoS-Richtlinien gewährleistet eine stabile und klare Sprachkommunikation."
+    },
+    "en": {
+      "question": "Voice traffic is experiencing excessive jitter. A network engineer wants to improve call performance and clarity. Which of the following features should the engineer configure?",
+      "options": {
+        "A": "QoS",
+        "B": "STP"
+      },
+      "answer": "A",
+      "explanation": "Quality of Service (QoS) prioritizes delay-sensitive traffic such as VoIP by assigning higher priority in queues, reducing jitter, latency, and packet loss. Implementing QoS policies ensures stable and clear voice communication."
+    }
+  },
+  {
+    "id": 358,
+    "de": {
+      "frage": "Ein Benutzer versucht, eine Website zu besuchen, aber anstelle der beabsichtigten Seite wird vmw.cba.com angezeigt. Was sollte getan werden, um die richtige Website zu erreichen?",
+      "optionen": {
+        "A": "Den CNAME-Eintrag ändern",
+        "B": "Den PTR-Eintrag aktualisieren",
+        "C": "Die NTP-Einstellungen ändern",
+        "D": "Den TXT-Eintrag löschen"
+      },
+      "antwort": "A",
+      "erklärung": "Ein CNAME (Canonical Name)-Eintrag bildet einen Alias auf den korrekten vollqualifizierten Domainnamen (FQDN) ab. Wenn ein Benutzer auf den falschen Hostnamen umgeleitet wird, stellt die Korrektur oder Aktualisierung des CNAME sicher, dass der Alias auf die richtige Domain verweist."
+    },
+    "en": {
+      "question": "A user tries to visit a website, but instead of the intended site, the page displays vmw.cba.com. Which of the following should be done to reach the correct website?",
+      "options": {
+        "A": "Modify the CNAME record",
+        "B": "Update the PTR record",
+        "C": "Change the NTP settings",
+        "D": "Delete the TXT record"
+      },
+      "answer": "A",
+      "explanation": "A CNAME (Canonical Name) record maps an alias to the correct fully qualified domain name (FQDN). If a user is redirected to the wrong hostname, correcting or updating the CNAME ensures the alias points to the proper domain."
+    }
+  },
+  {
+    "id": 359,
+    "de": {
+      "frage": "Welcher der folgenden physischen Installationsfaktoren ist am wichtigsten, wenn ein Netzwerk-Switch in einem versiegelten Gehäuse installiert wird?",
+      "optionen": {
+        "A": "Brandschutz",
+        "B": "Leistungsbudget",
+        "C": "Temperatur",
+        "D": "Luftfeuchtigkeit"
+      },
+      "antwort": "C",
+      "erklärung": "Switches in versiegelten Gehäusen sind überhitzungsgefährdet, da der Luftstrom eingeschränkt ist. Der Temperaturfaktor ist entscheidend, da Hitzestau Komponenten beschädigen, die Lebensdauer des Geräts verkürzen und zu Ausfällen führen kann. Eine ordnungsgemäße Kühlung oder Belüftung muss sichergestellt werden."
+    },
+    "en": {
+      "question": "Which of the following physical installation factors is the most important when a network switch is installed in a sealed enclosure?",
+      "options": {
+        "A": "Fire suppression",
+        "B": "Power budget",
+        "C": "Temperature",
+        "D": "Humidity"
+      },
+      "answer": "C",
+      "explanation": "Switches in sealed enclosures are at risk of overheating because airflow is restricted. The temperature factor is critical since heat buildup can damage components, shorten device lifespan, and cause outages. Proper cooling or ventilation must be ensured."
+    }
+  },
+  {
+    "id": 360,
+    "de": {
+      "frage": "Ein Netzwerktechniker muss einen neuen Benutzer mit dem WLAN-Netzwerk des Unternehmens mit der SSID: business verbinden. Beim Versuch, eine Verbindung herzustellen, werden zwei Netzwerke als mögliche Optionen aufgeführt: SSID: business und SSID: myaccess. Welcher der folgenden Angriffe findet statt?",
+      "optionen": {
+        "A": "On-path",
+        "B": "Rogue AP",
+        "C": "Evil Twin",
+        "D": "Tailgating"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Rogue AP ist jeder nicht autorisierte Zugangspunkt, der im Netzwerk eines Unternehmens vorhanden ist. In diesem Szenario ist 'myaccess' ein unbekannter und nicht autorisierter AP, der neben dem legitimen 'business'-Netzwerk existiert und ein Sicherheitsrisiko darstellt. Ein Evil Twin würde die legitime SSID 'business' speziell nachahmen, um Benutzer zu täuschen, was hier nicht der Fall ist, da die SSIDs unterschiedlich sind."
+    },
+    "en": {
+      "question": "A network technician needs to connect a new user to the company’s Wi-Fi network called SSID: business. When attempting to connect, two networks are listed as possible choices: SSID: business and SSID: myaccess. Which of the following attacks is occurring?",
+      "options": {
+        "A": "On-path",
+        "B": "Rogue AP",
+        "C": "Evil twin",
+        "D": "Tailgating"
+      },
+      "answer": "B",
+      "explanation": "A rogue AP is any unauthorized access point present on a company's network. In this scenario, 'myaccess' is an unknown and unauthorized AP existing alongside the legitimate 'business' network, posing a security risk. An evil twin would specifically mimic the legitimate 'business' SSID to deceive users, which is not the case here as the SSIDs are different."
+    }
+  },
+  {
+    "id": 361,
+    "de": {
+      "frage": "Ein Netzwerkadministrator erhält Beschwerden über zeitweise auftretende Netzwerkverbindungsprobleme. Der Administrator untersucht das Problem und stellt fest, dass das Netzwerkdesign potenzielle Schleifenszenarien enthält. Was sollte der Administrator tun?",
+      "optionen": {
+        "A": "Spanning Tree aktivieren",
+        "B": "Port-Sicherheit konfigurieren",
+        "C": "Switchport-Geschwindigkeitsbegrenzungen ändern",
+        "D": "802.1Q-Tagging erzwingen"
+      },
+      "antwort": "A",
+      "erklärung": "Das Spanning Tree Protocol (STP) ist dafür ausgelegt, Layer-2-Schleifen zu erkennen und zu verhindern, indem redundante Pfade blockiert werden. Wenn Schleifen im Design möglich sind, gewährleistet die Aktivierung von STP die Netzwerkstabilität."
+    },
+    "en": {
+      "question": "A network administrator receives complaints of intermittent network connectivity issues. The administrator investigates and finds that the network design contains potential loop scenarios. Which of the following should the administrator do?",
+      "options": {
+        "A": "Enable spanning tree",
+        "B": "Configure port security",
+        "C": "Change switchport speed limits",
+        "D": "Enforce 802.1Q tagging"
+      },
+      "answer": "A",
+      "explanation": "Spanning Tree Protocol (STP) is designed to detect and prevent Layer 2 loops by blocking redundant paths. If loops are possible in the design, enabling STP ensures network stability."
+    }
+  },
+  {
+    "id": 362,
+    "de": {
+      "frage": "Ein Netzwerkingenieur verbindet ein Unternehmen mit einem neuen ISP. Ein einfacher Ping-Test an 8.8.8.8 ist erfolgreich. Die Benutzer beschweren sich jedoch über extreme Langsamkeit bei jeder Website und über Zeiträume ohne Konnektivität. Was ist die wahrscheinlichste Ursache?",
+      "optionen": {
+        "A": "Falsches Standard-Gateway",
+        "B": "VLAN-Konflikt",
+        "C": "Subnetzmasken-Konfiguration",
+        "D": "Doppelte ISP-IP-Adresse"
+      },
+      "antwort": "D",
+      "erklärung": "Wenn das Unternehmen die vom ISP zugewiesene öffentliche IP-Adresse teilt oder dupliziert, kommt es zu Routing-Instabilität und Konflikten. Das Pingen einer öffentlichen IP wie 8.8.8.8 mag funktionieren (da ICMP bestimmte Konflikte umgehen kann), aber das Surfen auf Websites (was stabile Sitzungen und Rückverkehr erfordert) wird zeitweise fehlschlagen."
+    },
+    "en": {
+      "question": "A network engineer connects a business to a new ISP. A simple ping test to 8.8.8.8 is successful. However, users complain of extreme slowness to any website and periods of no connectivity. Which of the following is the most likely cause?",
+      "options": {
+        "A": "Incorrect default gateway",
+        "B": "VLAN mismatch",
+        "C": "Subnet mask configuration",
+        "D": "Duplicate ISP IP address"
+      },
+      "answer": "D",
+      "explanation": "If the business shares or duplicates the ISP-assigned public IP address, routing instability and conflicts will occur. Pinging a public IP like 8.8.8.8 may work (since ICMP can bypass certain conflicts), but browsing websites (which requires stable sessions and return traffic) will fail intermittently."
+    }
+  },
+  {
+    "id": 363,
+    "de": {
+      "frage": "Welche der folgenden Arten von NAC verwendet eine Reihe von Richtlinien, um den Zugriff auf das Netzwerk basierend auf der Identität des Benutzers zu erlauben oder zu verweigern?",
+      "optionen": {
+        "A": "Standard-ACL",
+        "B": "MAC-Filterung",
+        "C": "802.1X",
+        "D": "SSO"
+      },
+      "antwort": "C",
+      "erklärung": "802.1X ist eine portbasierte Methode der Netzwerkzugriffskontrolle (NAC), die eine Authentifizierung erzwingt, bevor der Zugriff auf das Netzwerk gestattet wird. Sie verwendet einen RADIUS-Server zur Identitätsüberprüfung und Richtliniendurchsetzung, um sicherzustellen, dass nur autorisierte Benutzer/Geräte Zugriff erhalten."
+    },
+    "en": {
+      "question": "Which of the following is a type of NAC that uses a set of policies to allow or deny access to the network based on the user’s identity?",
+      "options": {
+        "A": "Standard ACL",
+        "B": "MAC filtering",
+        "C": "802.1X",
+        "D": "SSO"
+      },
+      "answer": "C",
+      "explanation": "802.1X is a port-based Network Access Control (NAC) method that enforces authentication before allowing access to the network. It uses a RADIUS server for identity verification and policy enforcement, ensuring only authorized users/devices gain access."
+    }
   }
 ]
