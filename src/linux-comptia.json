@@ -1,0 +1,682 @@
+[
+  {
+    "id": 1,
+    "de": {
+      "frage": "Beim Starten der Terminal-Anwendung werden die Profileinstellungen des Benutzers von welchem der folgenden Dateisystem-Speicherorte geladen?",
+      "optionen": {
+        "A": "/bin",
+        "B": "/proc",
+        "C": "/home",
+        "D": "/usr"
+      },
+      "antwort": "C",
+      "erklärung": "Das /home-Verzeichnis enthält die persönlichen Dateien und Konfigurationseinstellungen für jeden Benutzer. Beim Start des Terminals werden Profildateien wie .bashrc oder .zshrc aus diesem Verzeichnis geladen."
+    },
+    "en": {
+      "question": "When launching the Terminal application, the user's profile settings are loaded from which of the following file system locations?",
+      "options": {
+        "A": "/bin",
+        "B": "/proc",
+        "C": "/home",
+        "D": "/usr"
+      },
+      "answer": "C",
+      "explanation": "The /home directory contains the personal files and configuration settings for each user. When the terminal is launched, profile files like .bashrc or .zshrc are loaded from this directory."
+    }
+  },
+  {
+    "id": 2,
+    "de": {
+      "frage": "Risha hat das System gerade neu gestartet, nachdem sie eine Anwendung als Teil ihrer Lösungsimplementierung neu installiert hat. Als sie sich anmeldet, stellt sie fest, dass die Anwendung immer noch nicht korrekt startet.\n\nWas sollte sie tun, um das Problem am besten zu lösen?",
+      "optionen": {
+        "A": "Das Problem an einen anderen Techniker eskalieren.",
+        "B": "Eine neue wahrscheinliche Ursache identifizieren.",
+        "C": "Die Anwendung deinstallieren und erneut installieren.",
+        "D": "Ihre Lösung dokumentieren."
+      },
+      "antwort": "B",
+      "erklärung": "Da die Neuinstallation das Problem nicht behoben hat, war Rishas ursprüngliche Theorie wahrscheinlich falsch. Der nächste logische Schritt in der Fehlerbehebung ist, eine neue wahrscheinliche Ursache für das Problem zu identifizieren."
+    },
+    "en": {
+      "question": "Risha has just rebooted the system after reinstalling an application as part of her solution implementation. As she logs in, she identifies that the application will still not start correctly.\n\nWhat should she do to attempt to best resolve the issue?",
+      "options": {
+        "A": "Escalate the issue to another technician.",
+        "B": "Identify a new probable cause.",
+        "C": "Uninstall the application and reinstall it again.",
+        "D": "Document her solution."
+      },
+      "answer": "B",
+      "explanation": "Since reinstalling the application did not fix the issue, Risha's initial theory was likely incorrect. The next logical step in the troubleshooting methodology is to identify a new probable cause for the problem."
+    }
+  },
+  {
+    "id": 3,
+    "de": {
+      "frage": "Welcher der folgenden Befehle erstellt eine neue Datei mit dem Namen TestFile1.txt?",
+      "optionen": {
+        "A": "mkdir TestFile1.txt",
+        "B": "dir TestFile1.txt",
+        "C": "cd TestFile1.txt",
+        "D": "touch TestFile1.txt"
+      },
+      "antwort": "D",
+      "erklärung": "Der 'touch'-Befehl wird verwendet, um den Zeitstempel einer Datei zu ändern oder um eine neue leere Datei zu erstellen, wenn sie noch nicht existiert."
+    },
+    "en": {
+      "question": "Which of the following commands will create a new file named TestFile1.txt?",
+      "options": {
+        "A": "mkdir TestFile1.txt",
+        "B": "dir TestFile1.txt",
+        "C": "cd TestFile1.txt",
+        "D": "touch TestFile1.txt"
+      },
+      "answer": "D",
+      "explanation": "The 'touch' command is used to change a file's timestamp or to create a new, empty file if it does not already exist."
+    }
+  },
+  {
+    "id": 4,
+    "de": {
+      "frage": "Ein leitender Ingenieur meldet, dass sein Computer 'total durcheinander' ist und schnell repariert werden muss. Der Sysadmin, der das Ticket bearbeitet, informiert den leitenden Ingenieur, dass der Sysadmin das System erst untersuchen muss, bevor er einen Zeitplan nennen kann. Der leitende Ingenieur wird wütend und schreit den Sysadmin an, er solle den Computer einfach jetzt reparieren.\n\nWas sollte der Sysadmin als Nächstes tun?",
+      "optionen": {
+        "A": "Das Betriebssystem neu installieren.",
+        "B": "Das Ticket schnell lösen.",
+        "C": "Das Problem an einen Vorgesetzten eskalieren.",
+        "D": "Die Ticketanfrage des leitenden Ingenieurs ignorieren."
+      },
+      "antwort": "C",
+      "erklärung": "Wenn ein Benutzer wütend oder feindselig wird, ist es die beste Vorgehensweise, die Situation zu deeskalieren oder einen Vorgesetzten einzuschalten. Der Vorgesetzte kann helfen, mit dem schwierigen Benutzer umzugehen und die Situation zu vermitteln."
+    },
+    "en": {
+      "question": "A senior engineer is reporting that their computer is 'all messed up' and needs to be fixed fast. The sysadmin working on the ticket informs the senior engineer that the sysadmin will need to troubleshoot the system before being able to provide a timeline. The senior engineer gets angry and yells at the sysadmin to just fix the computer now.\n\nWhat should the sysadmin do next?",
+      "options": {
+        "A": "Reinstall the operating system.",
+        "B": "Resolve the ticket quickly.",
+        "C": "Escalate the issue to a supervisor.",
+        "D": "Ignore the senior engineer's ticket request."
+      },
+      "answer": "C",
+      "explanation": "When a user becomes angry or hostile, it is best practice to de-escalate the situation or involve a supervisor. The supervisor can help manage the difficult user and mediate the situation."
+    }
+  },
+  {
+    "id": 5,
+    "de": {
+      "frage": "Welche Datei wird bearbeitet, um Benutzern oder Gruppen in Linux spezifische administrative Aufgaben zu delegieren?",
+      "optionen": {
+        "A": "/etc/shadow",
+        "B": "/etc/hosts",
+        "C": "/etc/passwd",
+        "D": "/etc/sudoers"
+      },
+      "antwort": "D",
+      "erklärung": "Die Datei /etc/sudoers wird verwendet, um zu konfigurieren, welche Benutzer und Gruppen Befehle mit Superuser-Rechten (root) über den sudo-Befehl ausführen dürfen. Dies ist die Standardmethode zur Delegation von administrativen Aufgaben."
+    },
+    "en": {
+      "question": "What file is edited to delegate specific administrative tasks to users or groups in Linux?",
+      "options": {
+        "A": "/etc/shadow",
+        "B": "/etc/hosts",
+        "C": "/etc/passwd",
+        "D": "/etc/sudoers"
+      },
+      "answer": "D",
+      "explanation": "The /etc/sudoers file is used to configure which users and groups can run commands with superuser (root) privileges via the sudo command. This is the standard method for delegating administrative tasks."
+    }
+  },
+  {
+    "id": 6,
+    "de": {
+      "frage": "Als IT-Administrator haben Sie die Aufgabe, einen Apache-Webserver durch Ändern der Datei /etc/apache2/apache2.conf zu konfigurieren. Sie öffnen die Datei in vi.\n\nWährend Sie die Datei betrachten, fällt Ihr auslaufsicherer Getränkebehälter auf die Tastatur. Er rollt über mehrere Tasten, während Sie versuchen, ihn aufzuheben. Jetzt sind überall im Textpuffer zusätzliche Zeichen.\n\nWelchen der folgenden Befehle können Sie verwenden, um vi zu beenden, ohne die am Textpuffer vorgenommenen Änderungen zu speichern?",
+      "optionen": {
+        "A": ":q",
+        "B": ":q!",
+        "C": ":wq",
+        "D": ":x"
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl ':q!' erzwingt das Beenden von vi und verwirft alle Änderungen, die im Textpuffer vorgenommen wurden. Dies ist nützlich, wenn versehentliche oder unerwünschte Änderungen gemacht wurden."
+    },
+    "en": {
+      "question": "As an IT administrator, you are tasked with configuring an Apache web server by modifying the /etc/apache2/apache2.conf file. You open the file in vi.\n\nAs you're looking at the file, you knock your spill-proof drink container onto the keyboard. It rolls over several keys as you try to pick it up. Now there are extra characters everywhere in the text buffer.\n\nWhich of the following commands can you use to exit vi without saving any changes that were made to the text buffer?",
+      "options": {
+        "A": ":q",
+        "B": ":q!",
+        "C": ":wq",
+        "D": ":x"
+      },
+      "answer": "B",
+      "explanation": "The ':q!' command forces vi to quit and discard any changes made to the text buffer. This is useful when accidental or unwanted modifications have been made."
+    }
+  },
+
+  {
+    "id": 7,
+    "de": {
+      "frage": "Sie arbeiten auf einem Linux-System, auf dem das Root-Konto standardmäßig deaktiviert ist. Sie müssen ein Paket mit dem apt-Paketmanager installieren. Wie gehen Sie am besten vor?",
+      "optionen": {
+        "A": "Aktivieren Sie das Root-Konto und melden Sie sich als Root an, um das Paket zu installieren.",
+        "B": "Verwenden Sie den Befehl sudo apt install {paket-name} und geben Sie bei Aufforderung Ihr Passwort ein.",
+        "C": "Erstellen Sie ein neues Benutzerkonto mit Root-Rechten und verwenden Sie es, um das Paket zu installieren.",
+        "D": "Verwenden Sie den Befehl su - root, um zum Root-Konto zu wechseln und das Paket zu installieren."
+      },
+      "antwort": "B",
+      "erklärung": "Auf Systemen, bei denen das Root-Konto standardmäßig deaktiviert ist (wie z. B. Ubuntu), ist 'sudo' die Standardmethode, um Befehle mit administrativen Rechten auszuführen. Es ermöglicht autorisierten Benutzern, Befehle vorübergehend als Root auszuführen, ohne sich als Root-Benutzer anmelden zu müssen."
+    },
+    "en": {
+      "question": "You are working on a Linux system where the root account is disabled by default. You need to install a package using the apt package manager. What is the correct way to proceed?",
+      "options": {
+        "A": "Enable the root account and log in as root to install the package.",
+        "B": "Use the sudo apt install {package-name} command and provide your password when prompted.",
+        "C": "Create a new user account with root privileges and use it to install the package.",
+        "D": "Use the su - root command to switch to the root account and install the package."
+      },
+      "answer": "B",
+      "explanation": "On systems where the root account is disabled by default (like Ubuntu), 'sudo' is the standard way to execute commands with administrative privileges. It allows authorized users to run commands as root temporarily without needing to log in as the root user."
+    }
+  },
+  {
+    "id": 8,
+    "de": {
+      "frage": "Sie sind ein Systemadministrator, der einen Linux-Server verwaltet. Ein Junior-Administrator muss den Apache-Webserver-Dienst neu starten, benötigt aber keinen vollen Root-Zugriff.\n\nWas ist der BESTE Weg, ihm die notwendigen Berechtigungen zu erteilen und gleichzeitig die Best Practices für die Sicherheit beizubehalten?",
+      "optionen": {
+        "A": "Melden Sie sich selbst als Root an und starten Sie den Dienst für den Junior-Administrator neu.",
+        "B": "Bearbeiten Sie die Datei /etc/sudoers, um dem Junior-Administrator zu erlauben, den Befehl systemctl restart apache2 mit sudo auszuführen.",
+        "C": "Geben Sie dem Junior-Administrator das Root-Passwort, damit er den Befehl su - root verwenden kann, um den Dienst neu zu starten.",
+        "D": "Fügen Sie den Junior-Administrator der Root-Gruppe hinzu, um ihm volle administrative Privilegien zu geben."
+      },
+      "antwort": "B",
+      "erklärung": "Das Bearbeiten der /etc/sudoers-Datei folgt dem Prinzip der geringsten Rechte (Principle of Least Privilege). Es gewährt dem Junior-Administrator nur die spezifische Berechtigung, die er benötigt, ohne ihm vollen Root-Zugriff zu geben, was die sicherste Methode ist."
+    },
+    "en": {
+      "question": "You are a system administrator managing a Linux server. A junior administrator needs to restart the Apache web server service but does not need full root access.\n\nWhat is the BEST way to grant them the necessary permissions while maintaining security best practices?",
+      "options": {
+        "A": "Log in as root yourself and restart the service for the junior administrator.",
+        "B": "Edit the /etc/sudoers file to allow the junior administrator to execute the systemctl restart apache2 command with sudo.",
+        "C": "Provide the junior administrator with the root password so they can use the su - root command to restart the service.",
+        "D": "Add the junior administrator to the root group to give them full administrative privileges."
+      },
+      "answer": "B",
+      "explanation": "Editing the /etc/sudoers file follows the principle of least privilege. It grants the junior administrator only the specific permission they need without giving them full root access, which is the most secure method."
+    }
+  },
+  {
+    "id": 9,
+    "de": {
+      "frage": "Warum wird empfohlen, dass sich ein Standardbenutzer mit einem nicht privilegierten Konto anmeldet, statt direkt das Root-Konto zu verwenden?",
+      "optionen": {
+        "A": "Standardbenutzer können keine administrativen Aufgaben durchführen, auch nicht mit Privilege-Escalation-Tools.",
+        "B": "Sich als Standardbenutzer anzumelden reduziert das Risiko versehentlicher oder böswilliger Systemänderungen.",
+        "C": "Standardbenutzer haben denselben Zugriff wie der Root-Benutzer, sind jedoch auf bestimmte Aufgaben beschränkt.",
+        "D": "Sich als Standardbenutzer anzumelden deaktiviert standardmäßig das Root-Konto."
+      },
+      "antwort": "B",
+      "erklärung": "Die Anmeldung mit einem Standardbenutzer und der Einsatz von Least-Privilege-Ansätzen minimiert das Risiko unbeabsichtigter oder schädlicher Änderungen am System. Administratives Handeln erfolgt dosiert über sudo oder ähnliche Mechanismen."
+    },
+    "en": {
+      "question": "Why is it recommended for a standard user to log in with a non-privileged account instead of directly using the root account?",
+      "options": {
+        "A": "Standard users are unable to perform any administrative tasks, even with privilege escalation tools.",
+        "B": "Logging in as a standard user minimizes the risk of accidental or malicious system changes.",
+        "C": "Standard users have the same level of access as the root user but are limited to specific tasks.",
+        "D": "Logging in as a standard user disables the root account by default."
+      },
+      "answer": "B",
+      "explanation": "Logging in as a standard user and applying a least-privilege approach minimizes the risk of accidental or malicious changes to the system. Administrative actions are performed via controlled elevation tools like sudo."
+    }
+  },
+  {
+    "id": 10,
+    "de": {
+      "frage": "Sie sind Administrator eines kleinen Unternehmens. Sie müssen eine neue Gruppe für Benutzer in der Verkaufsabteilung erstellen und die Gruppe mit dem Namen „sales“ benennen. Welche der folgenden Befehle hilft Ihnen dabei?",
+      "optionen": {
+        "A": "groupadd sales",
+        "B": "groupmod -x sales",
+        "C": "groupadd -r sales",
+        "D": "groupmod sales"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl groupadd erzeugt eine neue Benutzergruppe mit dem angegebenen Gruppennamen. Die anderen Befehle erfüllen diese Aufgabe nicht korrekt."
+    },
+    "en": {
+      "question": "You are the administrator of a small company. You need to create a new group for users in the sales department and want to name the group \"sales\". Which of the following commands will help you accomplish this task?",
+      "options": {
+        "A": "groupadd sales",
+        "B": "groupmod -x sales",
+        "C": "groupadd -r sales",
+        "D": "groupmod sales"
+      },
+      "answer": "A",
+      "explanation": "The groupadd command creates a new user group with the specified name. The other commands do not correctly perform this task."
+    }
+  },
+  {
+    "id": 11,
+    "de": {
+      "frage": "Sie müssen die Gruppenmitgliedschaft eines Benutzerkontos namens cjensen ändern. Ihre Aufgabe ist es, die Gruppe staff zu cjensen' Liste der sekundären Gruppen hinzuzufügen. Der Benutzer soll seine bestehenden sekundären Gruppenmitgliedschaften beibehalten.",
+      "optionen": {
+        "A": "usermod -G staff cjensen",
+        "B": "usermod -ag staff cjensen",
+        "C": "usermod -aG staff cjensen",
+        "D": "usermod -a staff cjensen"
+      },
+      "antwort": "C",
+      "erklärung": "Der korrekte Weg, eine zusätzliche Gruppe hinzuzufügen, ohne bestehende zu entfernen, ist die Verwendung von -a (append) zusammen mit -G, d. h. -aG. Dadurch wird cjensen zur Gruppe staff hinzugefügt, ohne andere Gruppenmitgliedschaften zu verändern."
+    },
+    "en": {
+      "question": "You need to modify the group membership for a user account called cjensen. Your task is to add the staff group to cjensen's list of secondary group memberships. The user needs to keep their existing secondary group memberships.",
+      "options": {
+        "A": "usermod -G staff cjensen",
+        "B": "usermod -ag staff cjensen",
+        "C": "usermod -aG staff cjensen",
+        "D": "usermod -a staff cjensen"
+      },
+      "answer": "C",
+      "explanation": "To add an additional group without removing existing ones, use -a with -G, i.e., -aG. This appends the staff group to cjensen's secondary groups."
+    }
+  },
+  {
+    "id": 12,
+    "de": {
+      "frage": "Welche Aussage erklärt am besten, wie Polkit-Regeln konfiguriert werden?",
+      "optionen": {
+        "A": "Polkit-Regeln werden in Shell-Skripten geschrieben und in /usr/share/polkit-1/rules.d gespeichert.",
+        "B": "Polkit-Regeln werden in JavaScript geschrieben und beziehen sich auf Aktionen, die in .policy-Dateien definiert sind.",
+        "C": "Polkit-Regeln werden in XML-Dateien gespeichert und befinden sich im Verzeichnis /etc/polkit-1/actions.",
+        "D": "Polkit-Regeln werden vom System automatisch generiert und können von Administratoren nicht geändert werden."
+      },
+      "antwort": "B",
+      "erklärung": "Polkit verwendet XML-Aktionsdateien im Verzeichnis /etc/polkit-1/actions und Regeldateien in JavaScript (oder jetzt oft in .rules, JavaScript) unter /usr/share/polkit-1/rules.d. Die Kernlogik liegt jedoch in den Aktionendefinitionen in XML."
+    },
+    "en": {
+      "question": "Which statement best explains how polkit rules are configured?",
+      "options": {
+        "A": "Polkit rules are written in shell scripts and stored in /usr/share/polkit-1/rules.d.",
+        "B": "Polkit rules are written in JavaScript and reference actions defined in .policy files.",
+        "C": "Polkit rules are written in XML files stored in the /etc/polkit-1/actions directory.",
+        "D": "Polkit rules are automatically generated by the system and cannot be modified by administrators."
+      },
+      "answer": "B",
+      "explanation": "Polkit uses XML action definitions stored in /etc/polkit-1/actions. Rule files can be in JavaScript under /usr/share/polkit-1/rules.d, but the authoritative action definitions reside in XML under /etc/polkit-1/actions."
+    }
+  },
+  {
+    "id": 13,
+    "de": {
+      "frage": "Was wäre das Ergebnis des folgenden Befehls? userdel -f tberling",
+      "optionen": {
+        "A": "Der Benutzer tberling wird in einen Dienstkonto umgewandelt.",
+        "B": "Der Benutzer tberling wird gelöscht, zusammen mit zugehörigen Dateien und Prozessen.",
+        "C": "Der Benutzer tberling wird gelöscht, es sei denn, er ist eingeloggt und greift auf Dateien zu.",
+        "D": "Die Kontodateien von tberling werden entfernt, aber der Benutzer kann sich weiterhin am System anmelden."
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl userdel -f entfernt das Benutzerkonto einschließlich der Zuordnung von Dateien und laufenden Prozessen, sofern möglich."
+    },
+    "en": {
+      "question": "What would be the outcome of the following command? userdel -f tberling",
+      "options": {
+        "A": "The user tberling will be reformatted to a service account.",
+        "B": "The user tberling will have their user account deleted, along with any associated files and processes.",
+        "C": "The user tberling will be deleted unless they are logged in and accessing files.",
+        "D": "The user tberling will have their account files removed, but the user can still log in to the system."
+      },
+      "answer": "B",
+      "explanation": "The userdel -f command forcibly removes the user account along with associated files and processes when possible."
+    }
+  },
+  {
+    "id": 14,
+    "de": {
+      "frage": "Welche der folgenden Befehle gibt den Wert der LANG-Umgebungsvariable aus, die aktuell für die vom Betriebssystem verwendete Sprache festgelegt ist?",
+      "optionen": {
+        "A": "echo %LANG%",
+        "B": "echo $LANG",
+        "C": "echo %LANG",
+        "D": "echo LANG"
+      },
+      "antwort": "B",
+      "erklärung": "In Unix-ähnlichen Systemen wird die Umgebungsvariable LANG mit echo $LANG ausgegeben. Die Form %LANG% gehört Windows-Zeichenfolgen, und echo LANG würde nur den Text LANG ausgeben."
+    },
+    "en": {
+      "question": "Which of the following commands displays the value of the LANG environmental variable currently set for the language the operating system uses?",
+      "options": {
+        "A": "echo %LANG%",
+        "B": "echo $LANG",
+        "C": "echo %LANG",
+        "D": "echo LANG"
+      },
+      "answer": "B",
+      "explanation": "In Unix-like systems, the LANG environment variable is displayed with echo $LANG. The form %LANG% is a Windows-style expansion, and echo LANG would just print the literal text LANG."
+    }
+  },
+  {
+    "id": 15,
+    "de": {
+      "frage": "Welche der folgenden Befehle würde den Benutzer jsummit der Gruppe finance hinzufügen?",
+      "optionen": {
+        "A": "groupmod finance jsummit",
+        "B": "groupadd finance jsummit",
+        "C": "usermod -aG finance jsummit",
+        "D": "usermod -G finance jsummit"
+      },
+      "antwort": "C",
+      "erklärung": "usermod -aG Finance jsummit fügt den Benutzer jsummit der Gruppe finance hinzu, während bestehende Gruppenmitgliedschaften beibehalten werden. -aG steht für anhängen (append) zur Gruppenzuordnung."
+    },
+    "en": {
+      "question": "Which of the following commands would add the user jsummit to the finance group?",
+      "options": {
+        "A": "groupmod finance jsummit",
+        "B": "groupadd finance jsummit",
+        "C": "usermod -aG finance jsummit",
+        "D": "usermod -G finance jsummit"
+      },
+      "answer": "C",
+      "explanation": "usermod -aG finance jsummit adds the user to the finance group while preserving existing supplementary groups. -aG stands for append to groups."
+    }
+  },
+  {
+    "id": 16,
+    "de": {
+      "frage": "Sie sind Systemadministrator und betreiben einen Linux-Server mit Red Hat-basierter Distribution. Sie möchten einem Benutzer 'jdoe' erlauben, administrative Aufgaben mit dem Befehl sudo auszuführen, ohne vollen Root-Zugriff zu gewähren. Was ist der BESTE Ansatz, um dies zu erreichen?",
+      "optionen": {
+        "A": "Fügen Sie 'jdoe' der Gruppe wheel hinzu, was automatisch vollen Root-Zugriff gewährt, ohne weitere Konfiguration.",
+        "B": "Fügen Sie 'jdoe' der Gruppe sudo hinzu, was automatisch vollen Root-Zugriff gewährt, ohne weitere Konfiguration.",
+        "C": "Fügen Sie 'jdoe' der Gruppe sudo hinzu und bearbeiten Sie die Datei /etc/sudoers, um bestimmte Befehle festzulegen, die sie ausführen dürfen.",
+        "D": "Fügen Sie 'jdoe' der Gruppe wheel hinzu und bearbeiten Sie die Datei /etc/sudoers, um bestimmte Befehle festzulegen, die sie ausführen dürfen."
+      },
+      "antwort": "D",
+      "erklärung": "Auf Red Hat-basierten Systemen ist die sicherste Methode, sudo-Berechtigungen gezielt über /etc/sudoers festzulegen, oft ergänzt durch Zugehörigkeit zur Gruppe sudo. Dadurch erhält der Benutzer eingeschränkte administrative Rechte und kein völlig freiwilliges Root-Passwort."
+    },
+    "en": {
+      "question": "You are a system administrator managing a Linux server running a Red Hat-based distribution. You want to allow a user, \"jdoe,\" to perform administrative tasks using the sudo command without giving them full root access. What is the BEST approach to achieve this?",
+      "options": {
+        "A": "Add 'jdoe' to the wheel group, which automatically grants full root access without requiring further configuration.",
+        "B": "Add 'jdoe' to the sudo group, which automatically grants full root access without requiring further configuration.",
+        "C": "Add 'jdoe' to the sudo group and edit the /etc/sudoers file to define specific commands they can execute.",
+        "D": "Add 'jdoe' to the wheel group and edit the /etc/sudoers file to define specific commands they can execute."
+      },
+      "answer": "D",
+      "explanation": "On Red Hat-based systems, the secure approach is to grant sudo privileges by editing /etc/sudoers to define explicit commands or privileges. Group membership alone should not grant unrestricted root access; use least-privilege rules."
+    }
+  },
+  {
+    "id": 17,
+    "de": {
+      "frage": "In der Datei /etc/shadow zeigt welches Zeichen im Passwortfeld an, dass das Passwort ein verschlüsselter Eintrag ist?",
+      "optionen": {
+        "A": "$",
+        "B": "!!",
+        "C": ":",
+        "D": "*"
+      },
+      "antwort": "A",
+      "erklärung": "Ein Sternchen (*) im Passwortfeld von /etc/shadow signalisiert normalerweise, dass kein Passwort vorhanden ist oder der Account deaktiviert ist. Ein verschlüsseltes Passwort selbst wird durch den Hash-String ersetzt, nicht durch ein einzelnes Symbol. Unter bestimmten Zuständen könnte auch ein Exklusionsmarker verwendet werden, aber standardmäßig kennzeichnet kein einzelnes Zeichen direkt 'verschlüsselt'."
+    },
+    "en": {
+      "question": "In the /etc/shadow file, which character in the password field indicates that the password is an encrypted entry?",
+      "options": {
+        "A": "$",
+        "B": "!!",
+        "C": ":",
+        "D": "*"
+      },
+      "answer": "A",
+      "explanation": "The asterisk (*) in /etc/shadow password field typically indicates no password is set or the account is locked. The presence of an actual password hash is shown by a hash string, not a single character."
+    }
+  },
+  {
+    "id": 18,
+    "de": {
+      "frage": "Ein SaaS-Unternehmen hat SuSe Linux-Systeme installiert, um ihre Docker-Container zu verwalten. Diese Systeme deaktivieren standardmäßig das Root-Konto.\n\nWelcher Befehl würde ein Administrator verwenden, um Funktionen mit Root-Zugriff auszuführen?",
+      "optionen": {
+        "A": "su",
+        "B": "pkaction",
+        "C": "ls",
+        "D": "pkexec"
+      },
+      "antwort": "D",
+      "erklärung": "pkexec ist Teil von PolicyKit (Polkit) und ermöglicht autorisierten Benutzern, privilegierte Befehle als andere Benutzer auszuführen, typischerweise als Root, ohne das Root-Konto direkt zu verwenden. Dies ist die empfohlene Methode auf Systemen, die Root standardmäßig deaktiviert haben."
+    },
+    "en": {
+      "question": "A software-as-a-service (SaaS) company has installed SuSe Linux on their systems to manage their Docker containers. These systems disable the root account by default.\n\nWhich command would an administrator use to perform functions requiring root access?",
+      "options": {
+        "A": "su",
+        "B": "pkaction",
+        "C": "ls",
+        "D": "pkexec"
+      },
+      "answer": "D",
+      "explanation": "pkexec is part of PolicyKit (Polkit) and allows authorized users to run privileged commands as another user, typically root, without using the root account directly. This is the recommended approach on systems where root is disabled by default."
+    }
+  },
+  {
+    "id": 19,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die PATH-Umgebungsvariable am besten?",
+      "optionen": {
+        "A": "Sie gibt die Zeichenfolge an, die die Shell verwendet, um normale Benutzer ($), Root-Benutzer (#) und ähnliche Elemente zu kennzeichnen.",
+        "B": "Sie gibt den Dateinamen an, in dem vergangene Befehle gespeichert werden.",
+        "C": "Sie enthält die Verzeichnispfade, die durchsucht werden, um Programme und Dateien zu finden.",
+        "D": "Sie enthält der Pfad des aktuellen Arbeitsverzeichnisses."
+      },
+      "antwort": "C",
+      "erklärung": "Die PATH-Umgebungsvariable listet die Verzeichnisse auf, in denen das System nach auszuführenden Programmen sucht."
+    },
+    "en": {
+      "question": "Which of the following statements best describes the PATH environment variable?",
+      "options": {
+        "A": "It specifies the characters the shell uses to indicate normal user ($), root user (#), and similar items.",
+        "B": "It specifies the filename where past commands are stored.",
+        "C": "It contains the directory prefixes used to search for programs and files.",
+        "D": "It contains the path of the current working directory."
+      },
+      "answer": "C",
+      "explanation": "The PATH environment variable lists the directories the system searches to find executable programs."
+    }
+  },
+  {
+    "id": 20,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt zutreffend den Zweck der Gruppen wheel und sudo in Linux-Systemen?",
+      "optionen": {
+        "A": "Die wheel-Gruppe ist spezifisch für Debian-basierte Distributionen, während die sudo-Gruppe spezifisch für Red Hat-basierte Distributionen ist.",
+        "B": "Die wheel-Gruppe erlaubt es Benutzern, alle Befehle als root auszuführen, während die sudo-Gruppe Benutzer auf spezifische Befehle beschränkt.",
+        "C": "Sowohl die wheel- als auch die sudo-Gruppe ermöglichen es Benutzern, administrative Aufgaben auszuführen, ohne sich als root einzuloggen.",
+        "D": "Sowohl die wheel- als auch die sudo-Gruppe werden verwendet, um Dateiberechtigungen für reguläre Benutzer zu verwalten."
+      },
+      "antwort": "C",
+      "erklärung": "Beide Gruppen dienen dazu, administrative Aufgaben zu ermöglichen, ohne sich direkt als root anzumelden. Die genaue Implementierung kann je nach Distribution variieren, typischerweise über sudo oder ähnliche Mechanismen."
+    },
+    "en": {
+      "question": "Which of the following statements accurately describes the purpose of the wheel and sudo groups in Linux systems?",
+      "options": {
+        "A": "The wheel group is specific to Debian-based distributions, while the sudo group is specific to Red Hat-based distributions.",
+        "B": "The wheel group allows users to execute all commands as root, while the sudo group restricts users to specific commands.",
+        "C": "Both the wheel and sudo groups allow users to perform administrative tasks without logging in as the root user.",
+        "D": "Both the wheel and sudo groups are used to manage file permissions for regular users."
+      },
+      "answer": "C",
+      "explanation": "Both groups facilitate performing administrative tasks without logging in as root. Distribution-specific configurations may vary, but the common purpose is to enable controlled elevated privileges."
+    }
+  },
+  {
+    "id": 21,
+    "de": {
+      "frage": "Welche der folgenden Optionen sind Beispiele dafür, dass ein Benutzer eine Non-Login-Shell verwendet? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Wenn ein Benutzer den Befehl sudo -i {Benutzer-ID} ausführt und das richtige Passwort eingibt.",
+        "B": "Wenn ein Benutzer den Befehl sudo {Benutzer-ID} ausführt, ohne die -i-Option zu verwenden.",
+        "C": "Wenn sich ein Benutzer von einem entfernten System per SSH-Protokoll anmeldet.",
+        "D": "Wenn ein Benutzer eine Shell-Sitzung (Terminalanwendung) aus der GUI öffnet.",
+        "E": "Wenn das Linux-System keine GUI hat und der Benutzer sich über die textbasierte Schnittstelle anmeldet."
+      },
+      "antwort": "BD",
+      "erklärung": "Eine Non-Login-Shell ist typischerweise eine Shell, die beim Start einer Sitzung nicht als Login-Shell verwendet wird. Hierzu gehört das Öffnen eines Terminalfensters in der GUI (D) und das Verwenden von sudo-Befehlen ohne Login-Shell (B)."
+    },
+    "en": {
+      "question": "Which of the following are examples of a user running a non-login shell? (Select two.)",
+      "options": {
+        "A": "When a user runs the sudo -i {user ID} command and enters the correct password.",
+        "B": "When a user runs the sudo {user ID} command without the -i option.",
+        "C": "When a user logs in from a remote system using the SSH protocol.",
+        "D": "When a user opens a shell session (terminal application) from within the GUI.",
+        "E": "When the Linux system does not have a GUI and the user logs in using the text-based interface."
+      },
+      "answer": "BD",
+      "explanation": "A non-login shell is a shell session that is not started as a login shell. Opening a terminal from the GUI produces a non-login shell, and sudo commands without -i run in a non-login shell context."
+    }
+  },
+  {
+    "id": 22,
+    "de": {
+      "frage": "Ein Systemadministrator möchte auf dem Debian-System ihres Arbeitgebers ein neues Benutzerkonto erstellen. Empfehlen Sie einen Befehl, der beim Erstellen eines neuen Benutzers auch anschließend dazu auffordert, ein Passwort festzulegen.",
+      "optionen": {
+        "A": "The who command",
+        "B": "The useradd command",
+        "C": "The adduser command",
+        "D": "The passwd command"
+      },
+      "antwort": "C",
+      "erklärung": "Auf Debian-Systemen führt der Befehl adduser interaktiv durch die Benutzereinrichtung und fordert zur Eingabe eines Passworts auf. useradd ist eher Low-Level und fordert separate Passwortsetzung."
+    },
+    "en": {
+      "question": "A systems administrator wants to create a new user account on the employer's Debian system. Recommend a command that will also prompt the administrator to set a password.",
+      "options": {
+        "A": "The who command",
+        "B": "The useradd command",
+        "C": "The adduser command",
+        "D": "The passwd command"
+      },
+      "answer": "C",
+      "explanation": "On Debian systems, adduser walks you through user creation and prompts for a password. useradd is a low-level tool and typically requires running passwd separately."
+    }
+  },
+  {
+    "id": 23,
+    "de": {
+      "frage": "Welche der folgenden Dateien enthält Details zu allen aktuell auf dem System verfügbaren Gruppen?",
+      "optionen": {
+        "A": "/etc/shadow",
+        "B": "/etc/group",
+        "C": "/etc/bin",
+        "D": "/etc/passwd"
+      },
+      "antwort": "B",
+      "erklärung": "Die Datei /etc/group listet alle Systemgruppen und deren Gruppenmitglieder auf."
+    },
+    "en": {
+      "question": "Which of the following files provides details about all groups currently available on the system?",
+      "options": {
+        "A": "/etc/shadow",
+        "B": "/etc/group",
+        "C": "/etc/bin",
+        "D": "/etc/passwd"
+      },
+      "answer": "B",
+      "explanation": "The /etc/group file contains all system group definitions and their members."
+    }
+  },
+  {
+    "id": 24,
+    "de": {
+      "frage": "Ein Mitarbeiter mit dem Benutzernamen bsmith hat das Unternehmen verlassen. Ihr Vorgesetzter hat Sie angewiesen, das Benutzerkonto zu löschen und das Home-Verzeichnis zu entfernen. Welcher der folgenden Befehle würde das gewünschte Ergebnis erzeugen?",
+      "optionen": {
+        "A": "userdel -h bsmith",
+        "B": "userdel -r bsmith",
+        "C": "usermod -r bsmith",
+        "D": "userdel bsmith"
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl 'userdel -r' entfernt das Benutzerkonto und löscht das Home-Verzeichnis sowie zugehörige Dateien des Benutzers."
+    },
+    "en": {
+      "question": "An employee whose username is bsmith has left the company. Your supervisor has instructed you to delete that user account and home directory. Which of the following commands would produce the required outcome?",
+      "options": {
+        "A": "userdel -h bsmith",
+        "B": "userdel -r bsmith",
+        "C": "usermod -r bsmith",
+        "D": "userdel bsmith"
+      },
+      "answer": "B",
+      "explanation": "The 'userdel -r' command removes the user account and deletes the user's home directory and related files."
+    }
+  },
+  {
+    "id": 25,
+    "de": {
+      "frage": "Sie haben kürzlich den HOST=FS4-Befehl verwendet. Welcher der folgenden Befehle sollte verwendet werden, um die HOST-Variable in eine Umgebungsvariable zu ändern, die von nachfolgenden Kind-Shells und Prozessen vererbt wird?",
+      "optionen": {
+        "A": "unset HOST",
+        "B": "set HOST",
+        "C": "export HOST",
+        "D": "env HOST"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl exportiert eine Shell-Variante zur Umgebungsvariable, wodurch sie an Child-Prozesse und nachfolgende Shell-Sitzungen vererbt wird."
+    },
+    "en": {
+      "question": "You recently used the HOST=FS4 command. Which of the following commands should you use to change the HOST variable into an environment variable that will be inherited by subsequent child shells and processes?",
+      "options": {
+        "A": "unset HOST",
+        "B": "set HOST",
+        "C": "export HOST",
+        "D": "env HOST"
+      },
+      "answer": "C",
+      "explanation": "The export command makes HOST an environment variable that is passed to child processes and future shells."
+    }
+  },
+  {
+    "id": 26,
+    "de": {
+      "frage": "Sie sind IT-Berater eines kleinen Unternehmens. Das Unternehmen möchte die Passwörter aus der Datei /etc/passwd in die Datei /etc/shadow verschieben, um die Sicherheit zu erhöhen. Welche der folgenden Hilfsprogramme erledigt dies am BESTEN?",
+      "optionen": {
+        "A": "pwconv",
+        "B": "cd",
+        "C": "cp",
+        "D": "shadow"
+      },
+      "antwort": "A",
+      "erklärung": "pwconv ist das Standardwerkzeug, das Passwörter aus /etc/passwd in /etc/shadow verschiebt und dabei die entsprechenden Hashes in die Shadow-Datei übernimmt."
+    },
+    "en": {
+      "question": "You are an IT consultant for a small company. The company wants to move their passwords from the /etc/passwd file to the /etc/shadow file to increase security. Which of the following utilities will BEST accomplish this task?",
+      "options": {
+        "A": "pwconv",
+        "B": "cd",
+        "C": "cp",
+        "D": "shadow"
+      },
+      "answer": "A",
+      "explanation": "pwconv is the standard tool that migrates password hashes from /etc/passwd to /etc/shadow for improved security."
+    }
+  },
+  {
+    "id": 27,
+    "de": {
+      "frage": "Welche der folgenden Optionen sind Beispiele dafür, dass ein Benutzer eine Login-Shell verwendet? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Wenn ein Benutzer eine Shell-Sitzung (Terminalanwendung) aus der GUI öffnet.",
+        "B": "Wenn ein Benutzer den Befehl sudo <Benutzer-ID> ohne die -i-Option ausführt.",
+        "C": "Wenn ein Benutzer eine neue Shell von einer Shell-Eingabeaufforderung öffnet.",
+        "D": "Wenn das Linux-System keine GUI hat und sich der Benutzer über die textbasierte Schnittstelle anmeldet.",
+        "E": "Wenn der Benutzer den Befehl sudo -i <Benutzer-ID> ausführt und das richtige Passwort eingibt."
+      },
+      "antwort": "DE",
+      "erklärung": "Login-Shells werden typischerweise bei direkter Anmeldung (z. B. Text-Login oder über eine grafische Sitzung, die eine Login-Shell startet) sowie beim Starten einer Shell mit einer login-Option gestartet. Das Öffnen einer neuen Shell aus einer bestehenden Shell oder GUI kann eine Nicht-Login-Shell sein, und sudo ohne -i erzeugt keine Login-Shell. sudo -i erzeugt eine Login-Shell, daher ist E ebenfalls korrekt."
+    },
+    "en": {
+      "question": "Which of the following are examples of a user running a login shell? (Select two.)",
+      "options": {
+        "A": "When a user opens a shell session, or a terminal application, from within the GUI.",
+        "B": "When a user runs the sudo <user ID> command without the -i option.",
+        "C": "When a user opens a new shell from a shell prompt.",
+        "D": "When the Linux system does not have a GUI and the user logs in using the text-based interface.",
+        "E": "When a user runs the sudo -i <user ID> command and enters the correct password."
+      },
+      "answer": "DE",
+      "explanation": "Login shells are started during user login (text or GUI that invokes a login shell) and when using sudo -i to simulate a login shell. Opening a new interactive shell from an existing shell is typically a non-login shell, and sudo without -i is not a login shell."
+    }
+  }
+]

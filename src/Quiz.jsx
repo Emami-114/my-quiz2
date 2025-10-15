@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./networkplus.json";
+import questions2 from "./linux-comptia.json";
 
 export default function Quiz() {
   const [questions, setQuestions] = useState(questions2);
@@ -9,7 +9,7 @@ export default function Quiz() {
   const [selected, setSelected] = useState("");
   const [score, setScore] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [lang, setLang] = useState("de"); // Sprach-State
+  const [lang, setLang] = useState("en"); // Sprach-State
   const [answeredIds, setAnsweredIds] = useState([]);
   const [totalFalse, setTotalFalse] = useState(0);
   const [isRandom, setIsRandom] = useState(false);
