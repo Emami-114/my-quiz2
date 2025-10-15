@@ -678,5 +678,536 @@
       "answer": "DE",
       "explanation": "Login shells are started during user login (text or GUI that invokes a login shell) and when using sudo -i to simulate a login shell. Opening a new interactive shell from an existing shell is typically a non-login shell, and sudo without -i is not a login shell."
     }
+  },
+  {
+    "id": 28,
+    "de": {
+      "frage": "Sie haben eine große Datei, die Sie per E-Mail versenden möchten. Sie möchten die Datei schnell komprimieren und sicherstellen, dass der Empfänger sie auf seinem Windows-System problemlos und ohne zusätzliche Tools dekomprimieren kann.\n\nWelches der folgenden Tools würde sich für Ihren Bedarf am besten eignen?",
+      "optionen": {
+        "A": "bzip2",
+        "B": "gzip",
+        "C": "zip",
+        "D": "7z"
+      },
+      "antwort": "C",
+      "erklärung": "Windows verfügt über eine native Unterstützung für ZIP-Archive, sodass der Empfänger keine zusätzlichen Tools zum Dekomprimieren der Datei benötigt. bzip2, gzip und 7z erfordern normalerweise die Installation von Drittanbieter-Software."
+    },
+    "en": {
+      "question": "You have a large file that you are trying to send over email. You want to quickly compress the file and ensure that the recipient can decompress it easily on their Windows system without requiring additional tools.\n\nWhich of the following tools would best suit your need?",
+      "options": {
+        "A": "bzip2",
+        "B": "gzip",
+        "C": "zip",
+        "D": "7z"
+      },
+      "answer": "C",
+      "explanation": "Windows has native support for ZIP archives, so the recipient won't need any additional tools to decompress the file. bzip2, gzip, and 7z usually require third-party software to be installed."
+    }
+  },
+  {
+    "id": 29,
+    "de": {
+      "frage": "Sie arbeiten als Junior-Netzwerkadministrator und haben die Aufgabe, die SSH-Konfigurationsdatei auf einem Linux-Server zu bearbeiten, auf dem keine Desktop-Umgebung installiert ist. Sie sind mit vim nicht vertraut und möchten einen einfacheren Texteditor verwenden.\n\nWelchen der folgenden Editoren sollten Sie verwenden?",
+      "optionen": {
+        "A": "gedit",
+        "B": "Emacs",
+        "C": "gVim",
+        "D": "nano"
+      },
+      "antwort": "D",
+      "erklärung": "gedit und gVim sind GUI-Editoren und funktionieren in einer Serverumgebung ohne Desktop nicht. Emacs ist leistungsstark, aber für Anfänger oft kompliziert. nano ist ein einfacher, kommandozeilenbasierter Texteditor, der leicht zu erlernen ist und sich daher am besten eignet."
+    },
+    "en": {
+      "question": "You are working as a junior network administrator and have been tasked with editing the SSH configuration file on a Linux server that has no desktop environment installed. You are unfamiliar with vim and would like to use a simpler text editor.\n\nWhich of the following editors should you use?",
+      "options": {
+        "A": "gedit",
+        "B": "Emacs",
+        "C": "gVim",
+        "D": "nano"
+      },
+      "answer": "D",
+      "explanation": "gedit and gVim are GUI editors and will not work in a server environment without a desktop. Emacs is powerful but often complicated for beginners. nano is a simple, command-line based text editor that is easy to learn, making it the best choice."
+    }
+  },
+  {
+    "id": 30,
+    "de": {
+      "frage": "Sie haben ein SCSI-Bandlaufwerk st0. Sie möchten den Inhalt von /var/oracle sichern.\n\nWelcher der folgenden Befehle führt das Backup durch?",
+      "optionen": {
+        "A": "backup /var/oracle /dev/st0",
+        "B": "tar -vcf /var/oracle /dev/st0",
+        "C": "tar -vcf /dev/st0 /var/oracle",
+        "D": "cp /var/oracle /dev/st0"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl `tar` wird zum Erstellen von Archiven verwendet. Die korrekte Syntax ist `tar -cvf [Archivdatei] [zu sichernde Dateien]`. In diesem Fall ist `/dev/st0` die Archivdatei (das Bandlaufwerk) und `/var/oracle` das zu sichernde Verzeichnis."
+    },
+    "en": {
+      "question": "You have a SCSI tape drive st0. You want to back up the contents of /var/oracle.\n\nWhich of the following commands will perform the backup?",
+      "options": {
+        "A": "backup /var/oracle /dev/st0",
+        "B": "tar -vcf /var/oracle /dev/st0",
+        "C": "tar -vcf /dev/st0 /var/oracle",
+        "D": "cp /var/oracle /dev/st0"
+      },
+      "answer": "C",
+      "explanation": "The `tar` command is used for creating archives. The correct syntax is `tar -cvf [archive_file] [files_to_backup]`. In this case, `/dev/st0` is the archive file (the tape drive), and `/var/oracle` is the directory to be backed up."
+    }
+  },
+  {
+    "id": 31,
+    "de": {
+      "frage": "Sie arbeiten als Junior-Netzwerkadministrator. Sie haben die Aufgabe, SSH auf einem Linux-Server so zu konfigurieren, dass der Fernzugriff auf bestimmte Benutzer beschränkt wird.\n\nWas sollten Sie tun, um diese Aufgabe zu erledigen?",
+      "optionen": {
+        "A": "Installieren Sie ein GUI-basiertes SSH-Konfigurationstool, um den Zugriff zu verwalten.",
+        "B": "Verwenden Sie den gedit-Texteditor, um die Datei /etc/network/interfaces zu bearbeiten.",
+        "C": "Bearbeiten Sie die Datei /etc/passwd, um die erlaubten Benutzer hinzuzufügen.",
+        "D": "Verwenden Sie den vim-Texteditor, um die Datei /etc/ssh/sshd_config zu bearbeiten."
+      },
+      "antwort": "D",
+      "erklärung": "Um den SSH-Zugriff zu beschränken, müssen Sie die Konfigurationsdatei des SSH-Daemons, /etc/ssh/sshd_config, bearbeiten. Diese Datei enthält Anweisungen wie `AllowUsers`, um festzulegen, welche Benutzer sich anmelden dürfen. vim ist ein standardmäßiger Kommandozeilen-Editor für diese Aufgabe."
+    },
+    "en": {
+      "question": "You are working as a junior network administrator. You have been tasked with configuring SSH on a Linux server to restrict remote access to specific users.\n\nWhich of the following should you do to accomplish this task?",
+      "options": {
+        "A": "Install a GUI-based SSH configuration tool to manage access.",
+        "B": "Use the gedit text editor to edit the /etc/network/interfaces file.",
+        "C": "Edit the /etc/passwd file to add the allowed users.",
+        "D": "Use the vim text editor to edit the /etc/ssh/sshd_config file."
+      },
+      "answer": "D",
+      "explanation": "To restrict SSH access, you must edit the SSH daemon's configuration file, which is /etc/ssh/sshd_config. This file contains directives like `AllowUsers` to specify which users can log in. vim is a standard command-line editor for this task."
+    }
+  },
+  {
+    "id": 32,
+    "de": {
+      "frage": "Sie arbeiten als Junior-Netzwerkadministrator und wurden vom Netzwerkadministrator beauftragt, eine Sicherung der Wissensdatenbankdateien zu erstellen. Nach Prüfung der verfügbaren Tools haben Sie sich für cpio entschieden.\n\nWelche der folgenden Aussagen begründet diese Entscheidung am besten?",
+      "optionen": {
+        "A": "cpio ist für alle Archivierungsaufgaben schneller als tar.",
+        "B": "cpio ist das einzige Werkzeug, das eine ausführliche Ausgabe während des Archivierungsprozesses unterstützt.",
+        "C": "cpio ist besser zum Erstellen komprimierter Archive geeignet als tar.",
+        "D": "cpio bietet mehr Flexibilität durch die Unterstützung von Befehlen und Umleitungen."
+      },
+      "antwort": "D",
+      "erklärung": "cpio liest Dateinamen von der Standardeingabe und schreibt das Archiv in die Standardausgabe. Dies ermöglicht eine hohe Flexibilität, da es mit anderen Befehlen wie `find` und Shell-Umleitungen kombiniert werden kann, um genau auszuwählen, welche Dateien archiviert werden sollen."
+    },
+    "en": {
+      "question": "You are working as a junior network administrator and have been tasked by the network administrator with creating a backup of the knowledge base files. After reviewing available tools, you have decided to use cpio.\n\nWhich of the following best justifies this decision?",
+      "options": {
+        "A": "cpio is faster than tar for all archiving tasks.",
+        "B": "cpio is the only tool that supports verbose output during the archiving process.",
+        "C": "cpio is better for creating compressed archives than tar.",
+        "D": "cpio provides more flexibility by supporting commands and redirectors."
+      },
+      "answer": "D",
+      "explanation": "cpio reads filenames from standard input and writes the archive to standard output. This allows for great flexibility by combining it with other commands, like `find`, and shell redirectors to precisely select which files to archive."
+    }
+  },
+  {
+    "id": 33,
+    "de": {
+      "frage": "Sie haben nano verwendet, um ein langes Skript zu bearbeiten. Beim Kopieren und Einfügen einiger Teile des Skripts haben Sie versehentlich eine Zeile mit der Tastenkombination Strg+K gelöscht.\n\nWas sollten Sie in dieser Situation tun?",
+      "optionen": {
+        "A": "Verwenden Sie Alt+\\, um das Löschen rückgängig zu machen.",
+        "B": "Verwenden Sie Strg+^, um die gelöschte Zeile zu markieren, und Alt+^, um sie wiederherzustellen.",
+        "C": "Verwenden Sie Strg+U, um die gelöschte Zeile wieder in die Datei einzufügen.",
+        "D": "Versuchen Sie, sich daran zu erinnern, was Sie gelöscht haben, und geben Sie es erneut ein."
+      },
+      "antwort": "C",
+      "erklärung": "In nano 'schneidet' Strg+K die aktuelle Zeile aus und legt sie in den Zwischenspeicher (cut buffer). Strg+U fügt den Inhalt dieses Zwischenspeichers wieder ein. Daher wird durch Drücken von Strg+U die versehentlich 'geschnittene' Zeile wiederhergestellt."
+    },
+    "en": {
+      "question": "You have been using nano to edit a long script. While copying and pasting some portions of the script, you accidentally delete a line using the Ctrl+K shortcut.\n\nWhich of the following should you do in this situation?",
+      "options": {
+        "A": "Use Alt+\\ to undo the deletion.",
+        "B": "Use Ctrl+^ to mark the deleted line and Alt+^ to restore it.",
+        "C": "Use Ctrl+U to paste the deleted line back into the file.",
+        "D": "Try to remember what you deleted and retype it."
+      },
+      "answer": "C",
+      "explanation": "In nano, Ctrl+K 'cuts' the current line, placing it into the cut buffer. Ctrl+U 'uncuts' or pastes the content from the cut buffer. Therefore, pressing Ctrl+U will paste the accidentally deleted line back into the file."
+    }
+  },
+  {
+    "id": 34,
+    "de": {
+      "frage": "Was bewirkt die Option `-f` im Befehl `ddrescue`?",
+      "optionen": {
+        "A": "Überspringt fehlerhafte Sektoren ohne Wiederholungsversuche.",
+        "B": "Erhöht die Ausführlichkeit der Ausgabe.",
+        "C": "Erzwingt das Überschreiben des Zielgeräts.",
+        "D": "Gibt die Anzahl der Wiederholungsversuche für fehlerhafte Sektoren an."
+      },
+      "antwort": "C",
+      "erklärung": "Die Option `-f` oder `--force` in `ddrescue` erzwingt das Überschreiben der Ausgabedatei oder des Geräts. Dies ist notwendig, wenn das Ziel ein Blockgerät ist oder die Datei bereits existiert und Sie sie ersetzen möchten."
+    },
+    "en": {
+      "question": "What does the `-f` option in the `ddrescue` command do?",
+      "options": {
+        "A": "Skips bad sectors without retrying.",
+        "B": "Increases verbosity of the output.",
+        "C": "Forces overwriting of the destination device.",
+        "D": "Specifies the number of retry attempts for bad sectors."
+      },
+      "answer": "C",
+      "explanation": "The `-f` or `--force` option in `ddrescue` is used to force the overwriting of the output file or device. This is necessary when the destination is a block device or if the file already exists and you want to replace it."
+    }
+  },
+  {
+    "id": 35,
+    "de": {
+      "frage": "Sie versuchen, Daten von einem ausfallenden Laufwerk, das unter /dev/sda gemountet ist, auf das Ziellaufwerk unter /dev/sdb wiederherzustellen. Das Laufwerk fällt aufgrund mehrerer fehlerhafter Sektoren aus, daher möchten Sie sicherstellen, dass `ddrescue` dreimal versucht, fehlerhafte Sektoren zu lesen, bevor sie übersprungen werden.\n\nWelchen der folgenden Befehle würden Sie verwenden, um dies zu erreichen?",
+      "optionen": {
+        "A": "ddrescue -r 3 /dev/sda /dev/sdb",
+        "B": "ddrescue /dev/sda /dev/sdb",
+        "C": "ddrescue -f /dev/sda /dev/sdb",
+        "D": "ddrescue -v /dev/sda /dev/sdb"
+      },
+      "antwort": "A",
+      "erklärung": "Die Option `-r` im Befehl `ddrescue` gibt die maximale Anzahl von Wiederholungsversuchen für fehlerhafte Blöcke an. Die Verwendung von `-r 3` weist `ddrescue` an, jeden fehlerhaften Sektor dreimal zu lesen, bevor er aufgegeben wird."
+    },
+    "en": {
+      "question": "You are attempting to recover data from a failing drive mounted at /dev/sda to the destination drive mounted at /dev/sdb. The drive is failing due to multiple bad sectors, so you want to make sure that `ddrescue` attempts to read any bad sectors three times before skipping them.\n\nWhich of the following commands would you use to accomplish this?",
+      "options": {
+        "A": "ddrescue -r 3 /dev/sda /dev/sdb",
+        "B": "ddrescue /dev/sda /dev/sdb",
+        "C": "ddrescue -f /dev/sda /dev/sdb",
+        "D": "ddrescue -v /dev/sda /dev/sdb"
+      },
+      "answer": "A",
+      "explanation": "The `-r` option in the `ddrescue` command specifies the maximum number of retry attempts on bad blocks. Using `-r 3` tells `ddrescue` to attempt to read any bad sector three times before giving up on it."
+    }
+  },
+  {
+    "id": 36,
+    "de": {
+      "frage": "Sie bearbeiten eine Konfigurationsdatei in nano und möchten den Cursor an das Ende der Seite bewegen. Welcher der folgenden Befehle ermöglicht Ihnen dies schnell?",
+      "optionen": {
+        "A": "Strg+P",
+        "B": "Strg+E",
+        "C": "Alt+/",
+        "D": "Alt+\\"
+      },
+      "antwort": "C",
+      "erklärung": "In nano bewegt die Tastenkombination Alt+/ den Cursor zum Ende der Datei (ganz nach unten). Alt+\\ bewegt den Cursor zum Anfang der Datei. Strg+P bewegt den Cursor eine Zeile nach oben und Strg+E an das Ende der aktuellen Zeile."
+    },
+    "en": {
+      "question": "You are editing a configuration file in nano and want to move the cursor to the bottom of the page. Which of the following commands will allow you to quickly do this?",
+      "options": {
+        "A": "Ctrl+P",
+        "B": "Ctrl+E",
+        "C": "Alt+/",
+        "D": "Alt+\\"
+      },
+      "answer": "C",
+      "explanation": "In nano, the Alt+/ key combination moves the cursor to the end of the file (the very bottom). Alt+\\ moves the cursor to the beginning of the file. Ctrl+P moves to the previous line, and Ctrl+E moves to the end of the current line."
+    }
+  },
+  {
+    "id": 37,
+    "de": {
+      "frage": "Sie arbeiten an einem Skript in Vim und der Cursor befindet sich derzeit auf Zeile 7. Sie müssen die Zeilen 7-9 löschen. Welchen der folgenden Befehle sollten Sie verwenden?",
+      "optionen": {
+        "A": "3yy",
+        "B": ":q!",
+        "C": "3dd",
+        "D": "d3"
+      },
+      "antwort": "C",
+      "erklärung": "In Vim löscht `dd` die aktuelle Zeile. Wenn Sie eine Zahl voranstellen, wird der Befehl so oft wiederholt. `3dd` löscht also die aktuelle Zeile (7) und die beiden folgenden (8 und 9), insgesamt also drei Zeilen."
+    },
+    "en": {
+      "question": "You are working on a script in Vim and have the cursor currently placed on line 7. You need to delete lines 7-9. Which of the following commands should you use?",
+      "options": {
+        "A": "3yy",
+        "B": ":q!",
+        "C": "3dd",
+        "D": "d3"
+      },
+      "answer": "C",
+      "explanation": "In Vim, `dd` deletes the current line. Prepending a number to it repeats the command that many times. So, `3dd` will delete the current line (7) and the next two lines (8 and 9), for a total of three lines."
+    }
+  },
+  {
+    "id": 38,
+    "de": {
+      "frage": "Der `diff`-Befehl zeigt die Unterschiede zwischen zwei Dateien Zeile für Zeile an und enthält mehrere Optionen.\nSie möchten den `diff`-Befehl verwenden, um die Unterschiede zwischen den Dateien q1results.txt und q2results.txt zu vergleichen, wobei die Ausgabe in zwei Spalten angezeigt werden soll.\n\nWelche der folgenden `diff`-Optionen würden Sie verwenden, um die zweispaltige Ausgabe anzuzeigen?",
+      "optionen": {
+        "A": "-w",
+        "B": "-c",
+        "C": "-i",
+        "D": "-y"
+      },
+      "antwort": "D",
+      "erklärung": "Die Option `-y` im `diff`-Befehl weist ihn an, die Ausgabe im Seite-an-Seite-Format anzuzeigen, also in zwei Spalten. Dies erleichtert den visuellen Vergleich der Unterschiede zwischen den beiden Dateien."
+    },
+    "en": {
+      "question": "The `diff` command displays the differences between two files, line by line, and includes several options.\nYou want to use the `diff` command to compare the differences between the q1results.txt and the q2results.txt files, with the output displayed in two columns.\n\nWhich of the following `diff` options would you use to display the two column output?",
+      "options": {
+        "A": "-w",
+        "B": "-c",
+        "C": "-i",
+        "D": "-y"
+      },
+      "answer": "D",
+      "explanation": "The `-y` option in the `diff` command instructs it to display the output in a side-by-side format, which is two columns. This makes it easier to visually compare the differences between the two files."
+    }
+  },
+  {
+    "id": 39,
+    "de": {
+      "frage": "Welches der folgenden Dienstprogramme ersetzt eine vorhandene Zeichenfolge durch eine neue innerhalb einer Datei?",
+      "optionen": {
+        "A": "sed",
+        "B": "fgrep",
+        "C": "grep",
+        "D": "egrep"
+      },
+      "antwort": "A",
+      "erklärung": "Mit `sed` (Stream-Editor) können Sie Zeichenfolgen per Ersetzungsbefehl wie `s/alt/neu/` austauschen; mit `-i` auch direkt in der Datei. `grep`, `egrep` und `fgrep` dienen nur der Suche, nicht dem Ersetzen."
+    },
+    "en": {
+      "question": "Which of the following utilities will substitute an existing string with a new string within a file?",
+      "options": {
+        "A": "sed",
+        "B": "fgrep",
+        "C": "grep",
+        "D": "egrep"
+      },
+      "answer": "A",
+      "explanation": "`sed` (stream editor) can replace strings using the substitution command like `s/old/new/`, and with `-i` edit the file in place. `grep`, `egrep`, and `fgrep` only search; they do not replace."
+    }
+  },
+  {
+    "id": 40,
+    "de": {
+      "frage": "Welcher der folgenden Befehle sortiert den kombinierten Inhalt der Dateien /usr/wordlist1 und /usr/wordlist2 und sendet das Ergebnis sowohl auf den Bildschirm als auch in eine neue Datei namens sortedwordlist?",
+      "optionen": {
+        "A": "cat /usr/wordlist1 >> /usr/wordlist2 | sort sortedwordlist",
+        "B": "cat /usr/wordlist1 /usr/wordlist2 | tee sortedwordlist",
+        "C": "cat /usr/wordlist1 /usr/wordlist2 | sort | tee sortedwordlist",
+        "D": "cat /usr/wordlist1 /usr/wordlist2 | sort sortedwordlist"
+      },
+      "antwort": "C",
+      "erklärung": "`cat /usr/wordlist1 /usr/wordlist2` verbindet die Dateien. Die Ausgabe wird an `sort` weitergeleitet, um sie zu sortieren. Das sortierte Ergebnis wird dann an `tee sortedwordlist` weitergeleitet, das die Ausgabe sowohl auf dem Bildschirm anzeigt als auch in die Datei `sortedwordlist` schreibt."
+    },
+    "en": {
+      "question": "Which of the following commands sorts the combined contents of the /usr/wordlist1 and /usr/wordlist2 files and sends the results to both the screen and to a new file named sortedwordlist?",
+      "options": {
+        "A": "cat /usr/wordlist1 >> /usr/wordlist2 | sort sortedwordlist",
+        "B": "cat /usr/wordlist1 /usr/wordlist2 | tee sortedwordlist",
+        "C": "cat /usr/wordlist1 /usr/wordlist2 | sort | tee sortedwordlist",
+        "D": "cat /usr/wordlist1 /usr/wordlist2 | sort sortedwordlist"
+      },
+      "answer": "C",
+      "explanation": "`cat /usr/wordlist1 /usr/wordlist2` combines the files. This output is piped to `sort` to sort it. The sorted result is then piped to `tee sortedwordlist`, which both displays the output on the screen and writes it to the `sortedwordlist` file."
+    }
+  },
+  {
+    "id": 41,
+    "de": {
+      "frage": "Sie haben gerade eine USB-Festplatte an Ihren Linux-Server angeschlossen.\n\nWo bindet Linux dieses temporäre Speichergerät ein?",
+      "optionen": {
+        "A": "/sys",
+        "B": "/boot",
+        "C": "/media",
+        "D": "/mnt"
+      },
+      "antwort": "C",
+      "erklärung": "Moderne Linux-Systeme binden Wechselmedien wie USB-Laufwerke automatisch in einem Unterverzeichnis unter `/media` ein. Das Verzeichnis `/mnt` wird traditionell für das manuelle, temporäre Einhängen von Dateisystemen verwendet."
+    },
+    "en": {
+      "question": "You have just plugged a USB hard drive into your Linux server.\n\nWhere does Linux mount this temporary storage device?",
+      "options": {
+        "A": "/sys",
+        "B": "/boot",
+        "C": "/media",
+        "D": "/mnt"
+      },
+      "answer": "C",
+      "explanation": "Modern Linux systems automatically mount removable media like USB drives in a subdirectory under `/media`. The `/mnt` directory is traditionally used for manually mounting filesystems temporarily."
+    }
+  },
+  {
+    "id": 42,
+    "de": {
+      "frage": "Welcher der folgenden Befehle zeigt Informationen an, die sich in der zweiten Spalte der tabulatorgetrennten Datei ~/smarts befinden?",
+      "optionen": {
+        "A": "cut -f2 ~/smarts",
+        "B": "join -t2 ~/smarts",
+        "C": "expand -f2 ~/smarts",
+        "D": "fmt -t2 ~/smarts"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl `cut` wird verwendet, um Abschnitte (Felder) aus jeder Zeile einer Datei zu extrahieren. Die Option `-f2` gibt an, dass das zweite Feld extrahiert werden soll. Da Tabulatoren das Standardtrennzeichen für `cut` sind, ist dies der richtige Befehl."
+    },
+    "en": {
+      "question": "Which of following commands displays information found in the second column of the tab-delimited ~/smarts file?",
+      "options": {
+        "A": "cut -f2 ~/smarts",
+        "B": "join -t2 ~/smarts",
+        "C": "expand -f2 ~/smarts",
+        "D": "fmt -t2 ~/smarts"
+      },
+      "answer": "A",
+      "explanation": "The `cut` command is used to extract sections (fields) from each line of a file. The `-f2` option specifies that the second field should be extracted. Since the default delimiter for `cut` is a tab, this is the correct command."
+    }
+  },
+  {
+    "id": 43,
+    "de": {
+      "frage": "Welche der folgenden Befehle können Sie verwenden, um eine bestimmte Datei auf einem Linux-System zu finden? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "type",
+        "B": "which",
+        "C": "whereis",
+        "D": "find",
+        "E": "locate"
+      },
+      "antwort": "D, E",
+      "erklärung": "`find` durchsucht das Dateisystem aktiv, um Dateien basierend auf Kriterien wie Name, Größe oder Typ zu finden. `locate` durchsucht eine vorab erstellte Datenbank von Dateien, was viel schneller ist, aber möglicherweise nicht die aktuellsten Ergebnisse liefert. `which` und `whereis` werden speziell zum Auffinden von Befehlsdateien verwendet."
+    },
+    "en": {
+      "question": "Which of the following commands can you use to find a specific file on a Linux system? (Select two.)",
+      "options": {
+        "A": "type",
+        "B": "which",
+        "C": "whereis",
+        "D": "find",
+        "E": "locate"
+      },
+      "answer": "D, E",
+      "explanation": "`find` actively searches the filesystem to locate files based on criteria like name, size, or type. `locate` searches a pre-built database of files, which is much faster but may not have the most up-to-date results. `which` and `whereis` are used specifically for finding command files."
+    }
+  },
+  {
+    "id": 44,
+    "de": {
+      "frage": "Eine Anwendung namens ABCD erzeugt beim Start Systemfehler.\n\nWelcher der folgenden Befehle durchsucht die Systemprotokolldatei nach diesen Fehlern?",
+      "optionen": {
+        "A": "tail -n25 /var/log/ABCD.log",
+        "B": "top /var/log/ABCD.log",
+        "C": "grep ABCD /var/log/messages",
+        "D": "tail -n25 /var/log/messages"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl `grep` wird verwendet, um Text in Dateien zu suchen. `grep ABCD /var/log/messages` durchsucht die Standard-Systemprotokolldatei (`/var/log/messages`) nach Zeilen, die 'ABCD' enthalten, was die effektivste Methode ist, um die relevanten Fehlermeldungen zu finden."
+    },
+    "en": {
+      "question": "An application named ABCD is generating system errors when it starts.\n\nWhich of the following commands searches the system message log file for these errors?",
+      "options": {
+        "A": "tail -n25 /var/log/ABCD.log",
+        "B": "top /var/log/ABCD.log",
+        "C": "grep ABCD /var/log/messages",
+        "D": "tail -n25 /var/log/messages"
+      },
+      "answer": "C",
+      "explanation": "The `grep` command is used to search for text within files. `grep ABCD /var/log/messages` searches the standard system message log file (`/var/log/messages`) for lines containing 'ABCD', which is the most effective way to find the relevant error messages."
+    }
+  },
+  {
+    "id": 45,
+    "de": {
+      "frage": "Welcher der folgenden Befehle kopiert das gesamte Verzeichnis /temp mit all seinen Dateien, Unterverzeichnissen und den Dateien in den Unterverzeichnissen von selbst in das Verzeichnis /home/epierce? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "cp /temp /home/epierce",
+        "B": "cp -s /temp /home/epierce",
+        "C": "cp -q /temp /home/epierce",
+        "D": "cp -R /temp /home/epierce",
+        "E": "cp -r /temp /home/epierce"
+      },
+      "antwort": "D, E",
+      "erklärung": "Die Optionen `-r` und `-R` für den Befehl `cp` stehen beide für „rekursiv“. Sie weisen `cp` an, ein Verzeichnis und seinen gesamten Inhalt, einschließlich aller Unterverzeichnisse und der darin enthaltenen Dateien, zu kopieren. Standardmäßig kopiert `cp` keine Verzeichnisse."
+    },
+    "en": {
+      "question": "Which of the following commands will, by itself, copy the entire /temp directory with all of its files, sub-directories, and files in the sub-directories to the /home/epierce directory? (Select two.)",
+      "options": {
+        "A": "cp /temp /home/epierce",
+        "B": "cp -s /temp /home/epierce",
+        "C": "cp -q /temp /home/epierce",
+        "D": "cp -R /temp /home/epierce",
+        "E": "cp -r /temp /home/epierce"
+      },
+      "answer": "D, E",
+      "explanation": "The `-r` and `-R` options for the `cp` command both mean 'recursive'. They instruct `cp` to copy a directory and its entire contents, including all sub-directories and the files within them. By default, `cp` will not copy directories."
+    }
+  },
+  {
+    "id": 46,
+    "de": {
+      "frage": "Welcher der folgenden Befehle kopiert das gesamte Verzeichnis /temp mit all seinen Dateien, Unterverzeichnissen und den Dateien in den Unterverzeichnissen von selbst in das Verzeichnis /home/epierce? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "cp /temp /home/epierce",
+        "B": "cp -s /temp /home/epierce",
+        "C": "cp -q /temp /home/epierce",
+        "D": "cp -R /temp /home/epierce",
+        "E": "cp -r /temp /home/epierce"
+      },
+      "antwort": "D, E",
+      "erklärung": "Die Optionen `-r` und `-R` für den Befehl `cp` stehen beide für „rekursiv“. Sie weisen `cp` an, ein Verzeichnis und seinen gesamten Inhalt, einschließlich aller Unterverzeichnisse und der darin enthaltenen Dateien, zu kopieren. Standardmäßig kopiert `cp` keine Verzeichnisse."
+    },
+    "en": {
+      "question": "Which of the following commands will, by itself, copy the entire /temp directory with all of its files, sub-directories, and files in the sub-directories to the /home/epierce directory? (Select two.)",
+      "options": {
+        "A": "cp /temp /home/epierce",
+        "B": "cp -s /temp /home/epierce",
+        "C": "cp -q /temp /home/epierce",
+        "D": "cp -R /temp /home/epierce",
+        "E": "cp -r /temp /home/epierce"
+      },
+      "answer": "D, E",
+      "explanation": "The `-r` and `-R` options for the `cp` command both mean 'recursive'. They instruct `cp` to copy a directory and its entire contents, including all sub-directories and the files within them. By default, `cp` will not copy directories."
+    }
+  },
+  {
+    "id": 47,
+    "de": {
+      "frage": "Welcher der folgenden Befehle zeigt alle Zeilen in der Datei blue_and_gold an, die das Wort Alicia nicht enthalten?",
+      "optionen": {
+        "A": "grep -v Alicia blue_and_gold",
+        "B": "grep -n blue_and_gold Alicia",
+        "C": "grep -v blue_and_gold Alicia",
+        "D": "grep -n Alicia blue_and_gold"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl `grep` wird zum Suchen von Text verwendet. Die Option `-v` kehrt die Suche um und zeigt nur die Zeilen an, die dem Muster NICHT entsprechen. Daher ist `grep -v Alicia blue_and_gold` der richtige Befehl, um Zeilen zu finden, die 'Alicia' nicht enthalten."
+    },
+    "en": {
+      "question": "Which of the following commands displays all the lines in the blue_and_gold file that do not contain the word Alicia?",
+      "options": {
+        "A": "grep -v Alicia blue_and_gold",
+        "B": "grep -n blue_and_gold Alicia",
+        "C": "grep -v blue_and_gold Alicia",
+        "D": "grep -n Alicia blue_and_gold"
+      },
+      "answer": "A",
+      "explanation": "The `grep` command is used for searching text. The `-v` option inverts the search, showing only the lines that do NOT match the pattern. Therefore, `grep -v Alicia blue_and_gold` is the correct command to find lines that do not contain 'Alicia'."
+    }
+  },
+  {
+    "id": 48,
+    "de": {
+      "frage": "Ein Benutzer namens employee-user möchte den absoluten Pfad zu einer bestimmten Datei finden. Zum Beispiel speichert das Unterverzeichnis 2025 des Projektverzeichnisses in seinem Home-Ordner die Datei projectxyz.doc. Wie würde der absolute Pfad für diese Datei lauten?",
+      "optionen": {
+        "A": "/home/employee-user/2025/projects/projectxyz.doc",
+        "B": "/home/employee-user/projects/2025/projectxyz.doc",
+        "C": "/home/projectxyz.doc/2025/projects/employee-user",
+        "D": "/employee-user/home/projects/2025/projectxyz.doc"
+      },
+      "antwort": "B",
+      "erklärung": "Ein absoluter Pfad beginnt im Root-Verzeichnis (/). Das Home-Verzeichnis eines Benutzers ist normalerweise `/home/benutzername`. Die beschriebene Struktur ist 'das Unterverzeichnis 2025 des Projektverzeichnisses', was `/projects/2025` entspricht. Der vollständige absolute Pfad ist daher `/home/employee-user/projects/2025/projectxyz.doc`."
+    },
+    "en": {
+      "question": "A user named employee-user wants to find the absolute path to a specific file. For example, the 2025 subdirectory of the project's directory of their home folder stores the projectxyz.doc file. What would the absolute path be for this file?",
+      "options": {
+        "A": "/home/employee-user/2025/projects/projectxyz.doc",
+        "B": "/home/employee-user/projects/2025/projectxyz.doc",
+        "C": "/home/projectxyz.doc/2025/projects/employee-user",
+        "D": "/employee-user/home/projects/2025/projectxyz.doc"
+      },
+      "answer": "B",
+      "explanation": "An absolute path starts from the root directory (/). A user's home directory is typically `/home/username`. The structure described is 'the 2025 subdirectory of the project's directory,' which translates to `/projects/2025`. Therefore, the full absolute path is `/home/employee-user/projects/2025/projectxyz.doc`."
+    }
   }
 ]
