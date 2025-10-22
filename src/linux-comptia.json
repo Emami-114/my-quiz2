@@ -1211,979 +1211,1353 @@
     }
   },
   {
-"id": 49,
-"de": {
-"frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server, der nicht startet. Nach der Untersuchung vermutest du, dass die Ursache ein beschädigtes ext4-Dateisystem auf der Partition /dev/sdb2 ist. Du entscheidest dich, den Befehl fsck zu verwenden, um das Dateisystem zu diagnostizieren und zu reparieren.\n\nWelche der folgenden Vorgehensweisen ist die RICHTIGE Reihenfolge, um diese Aufgabe sicher durchzuführen?",
-"optionen": {
-"A": "Das System neu starten und den fsck-Befehl automatisch beim Start ausführen lassen",
-"B": "Den Befehl resize2fs verwenden, um Dateisystemprobleme zu beheben, und anschließend das Dateisystem erneut einhängen",
-"C": "Den Befehl fsck -y /dev/sdb2 sofort ausführen, um das Dateisystem zu reparieren, während es eingehängt ist",
-"D": "Das Dateisystem mit dem Befehl umount aushängen und anschließend fsck -y /dev/sdb2 ausführen, um das Dateisystem zu überprüfen und zu reparieren"
-},
-"antwort": "D",
-"erklärung": "Die sichere Methode zur Überprüfung und Reparatur eines ext4-Dateisystems besteht darin, es zuerst auszuhängen, um Datenverlust zu vermeiden, und dann fsck -y /dev/sdb2 auszuführen, um Fehler zu erkennen und automatisch zu beheben."
-},
-"en": {
-"question": "You are a system administrator troubleshooting a Linux server that fails to boot. After investigation, you suspect the issue is caused by a corrupted ext4 filesystem on the /dev/sdb2 partition. You decide to use the fsck command to diagnose and repair the filesystem.\n\nWhich of the following is the CORRECT sequence of actions to safely perform this task?",
-"options": {
-"A": "Reboot the system and let the fsck command run automatically during startup",
-"B": "Use the resize2fs command to fix the filesystem issues, then remount the filesystem",
-"C": "Run fsck -y /dev/sdb2 immediately to repair the filesystem while it is mounted",
-"D": "Unmount the filesystem using the umount command, then run fsck -y /dev/sdb2 to check and repair the filesystem"
-},
-"answer": "D",
-"explanation": "The safe way to check and repair an ext4 filesystem is to unmount it first to avoid data corruption, then run fsck -y /dev/sdb2 to detect and fix any issues automatically."
-}
-},
-{
-"id": 50,
-"de": {
-"frage": "Du verwaltest einen Linux-Server, der das XFS-Dateisystem auf der Partition /dev/sdb2 verwendet. Kürzlich wurde die Partition beschädigt, und du musst das beste Werkzeug auswählen, um das Dateisystem zu reparieren und dabei so viele Daten wie möglich zu erhalten.\n\nWelches der folgenden Werkzeuge solltest du dafür verwenden?",
-"optionen": {
-"A": "xfs_copy",
-"B": "xfs_info",
-"C": "xfs_metadump",
-"D": "xfs_repair"
-},
-"antwort": "D",
-"erklärung": "Das Werkzeug xfs_repair wird verwendet, um beschädigte XFS-Dateisysteme zu überprüfen und zu reparieren. Es erkennt und behebt Inkonsistenzen in den Metadaten, ohne die Benutzerdaten zu überschreiben, sofern möglich."
-},
-"en": {
-"question": "You are managing a Linux server that uses the XFS filesystem on the /dev/sdb2 partition. Recently, the partition became corrupted, and you need to evaluate the best tool to repair and recover the filesystem while preserving as much data as possible.\n\nWhich of the following tools should you use to achieve this?",
-"options": {
-"A": "xfs_copy",
-"B": "xfs_info",
-"C": "xfs_metadump",
-"D": "xfs_repair"
-},
-"answer": "D",
-"explanation": "The xfs_repair tool is used to check and repair damaged XFS filesystems. It detects and fixes metadata inconsistencies while preserving user data whenever possible."
-}
-},
-{
-"id": 51,
-"de": {
-"frage": "Welche der folgenden Aussagen beschreibt das Temporary File System (tmpfs), wie es in Linux verwendet wird, am BESTEN?",
-"optionen": {
-"A": "tmpfs speichert Daten im Speicher, was es schnell, aber flüchtig macht.",
-"B": "tmpfs speichert Daten im Speicher und bewahrt sie über Systemneustarts hinweg.",
-"C": "tmpfs ist ein festplattenbasiertes Dateisystem, das Swap-Speicher für den virtuellen Speicher organisiert.",
-"D": "tmpfs ist ein Verzeichnis unter /var/tmp, das Daten während Systemneustarts beibehält."
-},
-"antwort": "A",
-"erklärung": "tmpfs ist ein temporäres Dateisystem, das Daten im Arbeitsspeicher speichert. Dies ermöglicht schnellen Zugriff, aber die Daten gehen beim Neustart verloren, da sie nicht auf der Festplatte gespeichert werden."
-},
-"en": {
-"question": "Which of the following statements BEST describes the Temporary File System (tmpfs) as used in Linux?",
-"options": {
-"A": "tmpfs stores data in memory, making it fast but volatile.",
-"B": "tmpfs stores data in memory and preserves it across system reboots.",
-"C": "tmpfs is a disk-based filesystem that organizes swap space for virtual memory.",
-"D": "tmpfs is a directory located at /var/tmp that preserves data during system restarts."
-},
-"answer": "A",
-"explanation": "tmpfs is a temporary filesystem that stores data in system memory. This makes it very fast, but all data is lost when the system reboots since it is not stored on disk."
-}
-},
-{
-"id": 53,
-"de": {
-"frage": "Du hast gerade eine neue Festplatte auf einem Linux-Server installiert. Du möchtest bestätigen, dass das System das neue Laufwerk erkennt und dessen Kapazität sowie Partitionsdetails anzeigen.\n\nWelchen Befehl solltest du verwenden?",
-"optionen": {
-"A": "df -h",
-"B": "hwinfo --short --storage",
-"C": "lsscsi -s",
-"D": "lsblk"
-},
-"antwort": "D",
-"erklärung": "Der Befehl lsblk zeigt alle erkannten Blockgeräte, einschließlich Festplatten und ihrer Partitionen, in einer strukturierten Übersicht mit Kapazität, Gerätenamen und Mountpoints an."
-},
-"en": {
-"question": "You have just installed a new hard disk drive on a Linux server. You want to confirm that the system recognizes the new drive and view its capacity and partition details.\n\nWhich command should you use?",
-"options": {
-"A": "df -h",
-"B": "hwinfo --short --storage",
-"C": "lsscsi -s",
-"D": "lsblk"
-},
-"answer": "D",
-"explanation": "The lsblk command lists all recognized block devices, including drives and their partitions, showing their names, sizes, and mount points in a clear hierarchical structure."
-}
-},
-{
-"id": 54,
-"de": {
-"frage": "Ein Speicheradministrator plant die Speicherarchitektur für ein bevorstehendes Projekt, das hauptsächlich mit statischen Daten arbeitet.\n\nWelche Speicherart sollte der Administrator verwenden?",
-"optionen": {
-"A": "Block",
-"B": "Verzeichnis",
-"C": "Datei",
-"D": "Objekt"
-},
-"antwort": "D",
-"erklärung": "Objektspeicher eignet sich ideal für statische Daten, da er große Mengen unveränderlicher Informationen effizient speichert und verwaltet. Er bietet Skalierbarkeit, hohe Verfügbarkeit und wird häufig für Backups, Multimedia-Dateien und Archive verwendet."
-},
-"en": {
-"question": "A storage administrator plans out storage architecture for an upcoming project dealing with fairly static data.\n\nWhich type of storage should the administrator use?",
-"options": {
-"A": "Block",
-"B": "Directory",
-"C": "File",
-"D": "Object"
-},
-"answer": "D",
-"explanation": "Object storage is ideal for static data because it efficiently stores and manages large amounts of unchanging information. It offers scalability, durability, and is commonly used for backups, media files, and archives."
-}
-},
-{
-"id": 55,
-"de": {
-"frage": "Was ist der wichtigste Vorteil der Verwendung des Logical Volume Managers (LVM) gegenüber der traditionellen Partitionierung in der Linux-Speicherverwaltung?",
-"optionen": {
-"A": "LVM ist nur mit externen Speichergeräten kompatibel, die über USB verbunden sind.",
-"B": "LVM ermöglicht es, Speicherplatz aus mehreren Festplatten zu einem einzigen logischen Laufwerk zusammenzufassen.",
-"C": "LVM macht das Erstellen von Partitionen auf Speichergeräten überflüssig.",
-"D": "LVM erhöht automatisch die Geschwindigkeit des Datenzugriffs auf Speichergeräte."
-},
-"antwort": "B",
-"erklärung": "Der Logical Volume Manager (LVM) ermöglicht es, mehrere physische Laufwerke oder Partitionen zu einem einzigen logischen Volumen zu kombinieren. Dadurch können Speicherressourcen flexibel verwaltet und dynamisch erweitert werden, ohne feste Partitionsgrenzen."
-},
-"en": {
-"question": "What is the primary advantage of using Logical Volume Manager (LVM) over traditional partitioning in Linux storage management?",
-"options": {
-"A": "LVM is only compatible with external storage devices connected via USB.",
-"B": "LVM allows storage space to be aggregated from multiple disks into a single logical unit.",
-"C": "LVM eliminates the need for creating partitions on storage devices.",
-"D": "LVM automatically increases the speed of data retrieval from storage devices."
-},
-"answer": "B",
-"explanation": "The Logical Volume Manager (LVM) allows combining storage space from multiple physical drives or partitions into a single logical volume. This provides flexible storage management and dynamic resizing without fixed partition boundaries."
-}
-},
-{
-"id": 56,
-"de": {
-"frage": "Du bist Linux-Administrator und verwaltest einen Server, bei dem häufig Probleme mit stark wachsenden Logdateien im Verzeichnis /var/log aufgrund von Anwendungsfehlern auftreten. Kürzlich war das Root-Dateisystem (/) vollständig belegt, wodurch der Server abstürzte.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem künftig zu verhindern?",
-"optionen": {
-"A": "Die Größe des Root-Dateisystems (/) erhöhen, um mehr Platz für Logdateien bereitzustellen.",
-"B": "Alte Logdateien in /var/log regelmäßig löschen, um Speicherplatz auf dem Root-Dateisystem (/) freizugeben.",
-"C": "Das Logging für Anwendungen deaktivieren, um zu verhindern, dass Logdateien zu groß werden.",
-"D": "Das Verzeichnis /var auf eine separate Partition verschieben, um dessen Wachstum vom Root-Dateisystem (/) zu isolieren."
-},
-"antwort": "D",
-"erklärung": "Das Verschieben von /var auf eine separate Partition verhindert, dass stark wachsende Logdateien den verfügbaren Speicherplatz des Root-Dateisystems beanspruchen. Dadurch bleibt das System stabil, selbst wenn /var/log stark anwächst."
-},
-"en": {
-"question": "You are a Linux administrator managing a server that frequently experiences issues with log files in /var/log growing unexpectedly large due to application errors. Recently, the root filesystem (/) filled up, causing the server to crash.\n\nWhat is the BEST solution to prevent this issue from happening again?",
-"options": {
-"A": "Increase the size of the root filesystem (/) to accommodate the growing log files.",
-"B": "Delete old log files in /var/log regularly to free up space on the root filesystem (/).",
-"C": "Disable logging for applications to prevent log files from growing too large.",
-"D": "Move the /var directory to a separate partition to isolate its growth from the root filesystem (/)."
-},
-"answer": "D",
-"explanation": "Moving the /var directory to a separate partition prevents large log files from consuming space on the root filesystem. This keeps the system stable even if log files in /var/log grow significantly."
-}
-},
-{
-"id": 57,
-"de": {
-"frage": "Welcher Standard wird von Linux-Distributionen verwendet, um die Struktur von Dateien und Verzeichnissen im Linux-System festzulegen?",
-"optionen": {
-"A": "Redundant Array of Independent Disks (RAID)",
-"B": "Filesystem in USErspace (FUSE)",
-"C": "Filesystem Hierarchy Standard (FHS)",
-"D": "Storage Area Network (SAN)"
-},
-"antwort": "C",
-"erklärung": "Der Filesystem Hierarchy Standard (FHS) definiert die Struktur und den Zweck von Verzeichnissen und Dateien unter Linux. Er sorgt für Konsistenz zwischen verschiedenen Distributionen und erleichtert Systemadministration und Softwareentwicklung."
-},
-"en": {
-"question": "What is the standard used by Linux distributions to determine the layout of files and folders in the Linux system?",
-"options": {
-"A": "Redundant Array of Independent Disks (RAID)",
-"B": "Filesystem in USErspace (FUSE)",
-"C": "Filesystem Hierarchy Standard (FHS)",
-"D": "Storage Area Network (SAN)"
-},
-"answer": "C",
-"explanation": "The Filesystem Hierarchy Standard (FHS) defines the layout and purpose of directories and files in Linux. It ensures consistency across distributions and simplifies system administration and software development."
-}
-},
-{
-"id": 58,
-"de": {
-"frage": "Du bist Linux-Systemadministrator und verwaltest einen Server mit begrenztem Speicherplatz auf dem Boot-Laufwerk. Um die Leistung zu optimieren, entscheidest du dich, den Swap-Bereich auf eine andere Partition auf einem sekundären Laufwerk zu verschieben. Nachdem du eine neue Partition erstellt und den Befehl mkswap ausgeführt hast, welchen Befehl solltest du verwenden, um den neuen Swap-Bereich zu aktivieren?",
-"optionen": {
-"A": "swapoff -a",
-"B": "mkswap -L swap_partition",
-"C": "swapon -a",
-"D": "swapon /dev/sdb1"
-},
-"antwort": "D",
-"erklärung": "Nachdem eine neue Swap-Partition mit mkswap eingerichtet wurde, wird sie mit dem Befehl swapon /dev/sdb1 aktiviert. Dadurch steht die neue Partition sofort als Swap-Speicher zur Verfügung."
-},
-"en": {
-"question": "You are a Linux system administrator managing a server with limited storage space on the boot drive. To optimize performance, you decide to move the swap space to a different partition on a secondary drive. After creating a new partition and running the mkswap command, which of the following commands should you use to activate the new swap space?",
-"options": {
-"A": "swapoff -a",
-"B": "mkswap -L swap_partition",
-"C": "swapon -a",
-"D": "swapon /dev/sdb1"
-},
-"answer": "D",
-"explanation": "After creating a new swap partition using mkswap, you activate it with the command swapon /dev/sdb1, making the new swap partition available for use immediately."
-}
-},
-{
-"id": 49,
-"de": {
-"frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server, der nicht startet. Nach der Untersuchung vermutest du, dass die Ursache ein beschädigtes ext4-Dateisystem auf der Partition /dev/sdb2 ist. Du entscheidest dich, den Befehl fsck zu verwenden, um das Dateisystem zu diagnostizieren und zu reparieren.\n\nWelche der folgenden Vorgehensweisen ist die RICHTIGE Reihenfolge, um diese Aufgabe sicher durchzuführen?",
-"optionen": {
-"A": "Das System neu starten und den fsck-Befehl automatisch beim Start ausführen lassen",
-"B": "Den Befehl resize2fs verwenden, um Dateisystemprobleme zu beheben, und anschließend das Dateisystem erneut einhängen",
-"C": "Den Befehl fsck -y /dev/sdb2 sofort ausführen, um das Dateisystem zu reparieren, während es eingehängt ist",
-"D": "Das Dateisystem mit dem Befehl umount aushängen und anschließend fsck -y /dev/sdb2 ausführen, um das Dateisystem zu überprüfen und zu reparieren"
-},
-"antwort": "D",
-"erklärung": "Die sichere Methode zur Überprüfung und Reparatur eines ext4-Dateisystems besteht darin, es zuerst auszuhängen, um Datenverlust zu vermeiden, und dann fsck -y /dev/sdb2 auszuführen, um Fehler zu erkennen und automatisch zu beheben."
-},
-"en": {
-"question": "You are a system administrator troubleshooting a Linux server that fails to boot. After investigation, you suspect the issue is caused by a corrupted ext4 filesystem on the /dev/sdb2 partition. You decide to use the fsck command to diagnose and repair the filesystem.\n\nWhich of the following is the CORRECT sequence of actions to safely perform this task?",
-"options": {
-"A": "Reboot the system and let the fsck command run automatically during startup",
-"B": "Use the resize2fs command to fix the filesystem issues, then remount the filesystem",
-"C": "Run fsck -y /dev/sdb2 immediately to repair the filesystem while it is mounted",
-"D": "Unmount the filesystem using the umount command, then run fsck -y /dev/sdb2 to check and repair the filesystem"
-},
-"answer": "D",
-"explanation": "The safe way to check and repair an ext4 filesystem is to unmount it first to avoid data corruption, then run fsck -y /dev/sdb2 to detect and fix any issues automatically."
-}
-},
-{
-"id": 50,
-"de": {
-"frage": "Du verwaltest einen Linux-Server, der das XFS-Dateisystem auf der Partition /dev/sdb2 verwendet. Kürzlich wurde die Partition beschädigt, und du musst das beste Werkzeug auswählen, um das Dateisystem zu reparieren und dabei so viele Daten wie möglich zu erhalten.\n\nWelches der folgenden Werkzeuge solltest du dafür verwenden?",
-"optionen": {
-"A": "xfs_copy",
-"B": "xfs_info",
-"C": "xfs_metadump",
-"D": "xfs_repair"
-},
-"antwort": "D",
-"erklärung": "Das Werkzeug xfs_repair wird verwendet, um beschädigte XFS-Dateisysteme zu überprüfen und zu reparieren. Es erkennt und behebt Inkonsistenzen in den Metadaten, ohne die Benutzerdaten zu überschreiben, sofern möglich."
-},
-"en": {
-"question": "You are managing a Linux server that uses the XFS filesystem on the /dev/sdb2 partition. Recently, the partition became corrupted, and you need to evaluate the best tool to repair and recover the filesystem while preserving as much data as possible.\n\nWhich of the following tools should you use to achieve this?",
-"options": {
-"A": "xfs_copy",
-"B": "xfs_info",
-"C": "xfs_metadump",
-"D": "xfs_repair"
-},
-"answer": "D",
-"explanation": "The xfs_repair tool is used to check and repair damaged XFS filesystems. It detects and fixes metadata inconsistencies while preserving user data whenever possible."
-}
-},
-{
-"id": 51,
-"de": {
-"frage": "Welche der folgenden Aussagen beschreibt das Temporary File System (tmpfs), wie es in Linux verwendet wird, am BESTEN?",
-"optionen": {
-"A": "tmpfs speichert Daten im Speicher, was es schnell, aber flüchtig macht.",
-"B": "tmpfs speichert Daten im Speicher und bewahrt sie über Systemneustarts hinweg.",
-"C": "tmpfs ist ein festplattenbasiertes Dateisystem, das Swap-Speicher für den virtuellen Speicher organisiert.",
-"D": "tmpfs ist ein Verzeichnis unter /var/tmp, das Daten während Systemneustarts beibehält."
-},
-"antwort": "A",
-"erklärung": "tmpfs ist ein temporäres Dateisystem, das Daten im Arbeitsspeicher speichert. Dies ermöglicht schnellen Zugriff, aber die Daten gehen beim Neustart verloren, da sie nicht auf der Festplatte gespeichert werden."
-},
-"en": {
-"question": "Which of the following statements BEST describes the Temporary File System (tmpfs) as used in Linux?",
-"options": {
-"A": "tmpfs stores data in memory, making it fast but volatile.",
-"B": "tmpfs stores data in memory and preserves it across system reboots.",
-"C": "tmpfs is a disk-based filesystem that organizes swap space for virtual memory.",
-"D": "tmpfs is a directory located at /var/tmp that preserves data during system restarts."
-},
-"answer": "A",
-"explanation": "tmpfs is a temporary filesystem that stores data in system memory. This makes it very fast, but all data is lost when the system reboots since it is not stored on disk."
-}
-},
-{
-"id": 52,
-"de": {
-"frage": "Ein Projektmanager koordiniert die Hardwarebeschaffung für den Aufbau einer neuen Anwendung. Der Speicher soll schneller sein als herkömmlicher Serverspeicher, jedoch nicht die teuerste Option darstellen.\n\nWelche Lösung wäre ideal?",
-"optionen": {
-"A": "SATA",
-"B": "SSD",
-"C": "SCSI",
-"D": "SAS"
-},
-"antwort": "D",
-"erklärung": "SAS (Serial Attached SCSI) bietet eine höhere Leistung und Zuverlässigkeit als SATA, ist aber günstiger als High-End-Speicherlösungen. Daher ist es eine ausgewogene Wahl zwischen Geschwindigkeit und Kosten."
-},
-"en": {
-"question": "A project manager coordinates hardware procurement for an upcoming application build-out. The storage needs to be faster than normal server storage, but the manager also does not want to buy the most expensive storage.\n\nWhich solution would be ideal?",
-"options": {
-"A": "SATA",
-"B": "SSD",
-"C": "SCSI",
-"D": "SAS"
-},
-"answer": "D",
-"explanation": "SAS (Serial Attached SCSI) provides faster performance and better reliability than SATA but at a lower cost than high-end storage solutions. It offers a good balance between speed and affordability."
-}
-},
-{
-"id": 53,
-"de": {
-"frage": "Du hast gerade eine neue Festplatte auf einem Linux-Server installiert. Du möchtest bestätigen, dass das System das neue Laufwerk erkennt und dessen Kapazität sowie Partitionsdetails anzeigen.\n\nWelchen Befehl solltest du verwenden?",
-"optionen": {
-"A": "df -h",
-"B": "hwinfo --short --storage",
-"C": "lsscsi -s",
-"D": "lsblk"
-},
-"antwort": "D",
-"erklärung": "Der Befehl lsblk zeigt alle erkannten Blockgeräte, einschließlich Festplatten und ihrer Partitionen, in einer strukturierten Übersicht mit Kapazität, Gerätenamen und Mountpoints an."
-},
-"en": {
-"question": "You have just installed a new hard disk drive on a Linux server. You want to confirm that the system recognizes the new drive and view its capacity and partition details.\n\nWhich command should you use?",
-"options": {
-"A": "df -h",
-"B": "hwinfo --short --storage",
-"C": "lsscsi -s",
-"D": "lsblk"
-},
-"answer": "D",
-"explanation": "The lsblk command lists all recognized block devices, including drives and their partitions, showing their names, sizes, and mount points in a clear hierarchical structure."
-}
-},
-{
-"id": 54,
-"de": {
-"frage": "Ein Speicheradministrator plant die Speicherarchitektur für ein bevorstehendes Projekt, das hauptsächlich mit statischen Daten arbeitet.\n\nWelche Speicherart sollte der Administrator verwenden?",
-"optionen": {
-"A": "Block",
-"B": "Verzeichnis",
-"C": "Datei",
-"D": "Objekt"
-},
-"antwort": "D",
-"erklärung": "Objektspeicher eignet sich ideal für statische Daten, da er große Mengen unveränderlicher Informationen effizient speichert und verwaltet. Er bietet Skalierbarkeit, hohe Verfügbarkeit und wird häufig für Backups, Multimedia-Dateien und Archive verwendet."
-},
-"en": {
-"question": "A storage administrator plans out storage architecture for an upcoming project dealing with fairly static data.\n\nWhich type of storage should the administrator use?",
-"options": {
-"A": "Block",
-"B": "Directory",
-"C": "File",
-"D": "Object"
-},
-"answer": "D",
-"explanation": "Object storage is ideal for static data because it efficiently stores and manages large amounts of unchanging information. It offers scalability, durability, and is commonly used for backups, media files, and archives."
-}
-},
-{
-"id": 55,
-"de": {
-"frage": "Was ist der wichtigste Vorteil der Verwendung des Logical Volume Managers (LVM) gegenüber der traditionellen Partitionierung in der Linux-Speicherverwaltung?",
-"optionen": {
-"A": "LVM ist nur mit externen Speichergeräten kompatibel, die über USB verbunden sind.",
-"B": "LVM ermöglicht es, Speicherplatz aus mehreren Festplatten zu einem einzigen logischen Laufwerk zusammenzufassen.",
-"C": "LVM macht das Erstellen von Partitionen auf Speichergeräten überflüssig.",
-"D": "LVM erhöht automatisch die Geschwindigkeit des Datenzugriffs auf Speichergeräte."
-},
-"antwort": "B",
-"erklärung": "Der Logical Volume Manager (LVM) ermöglicht es, mehrere physische Laufwerke oder Partitionen zu einem einzigen logischen Volumen zu kombinieren. Dadurch können Speicherressourcen flexibel verwaltet und dynamisch erweitert werden, ohne feste Partitionsgrenzen."
-},
-"en": {
-"question": "What is the primary advantage of using Logical Volume Manager (LVM) over traditional partitioning in Linux storage management?",
-"options": {
-"A": "LVM is only compatible with external storage devices connected via USB.",
-"B": "LVM allows storage space to be aggregated from multiple disks into a single logical unit.",
-"C": "LVM eliminates the need for creating partitions on storage devices.",
-"D": "LVM automatically increases the speed of data retrieval from storage devices."
-},
-"answer": "B",
-"explanation": "The Logical Volume Manager (LVM) allows combining storage space from multiple physical drives or partitions into a single logical volume. This provides flexible storage management and dynamic resizing without fixed partition boundaries."
-}
-},
-{
-"id": 56,
-"de": {
-"frage": "Du bist Linux-Administrator und verwaltest einen Server, bei dem häufig Probleme mit stark wachsenden Logdateien im Verzeichnis /var/log aufgrund von Anwendungsfehlern auftreten. Kürzlich war das Root-Dateisystem (/) vollständig belegt, wodurch der Server abstürzte.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem künftig zu verhindern?",
-"optionen": {
-"A": "Die Größe des Root-Dateisystems (/) erhöhen, um mehr Platz für Logdateien bereitzustellen.",
-"B": "Alte Logdateien in /var/log regelmäßig löschen, um Speicherplatz auf dem Root-Dateisystem (/) freizugeben.",
-"C": "Das Logging für Anwendungen deaktivieren, um zu verhindern, dass Logdateien zu groß werden.",
-"D": "Das Verzeichnis /var auf eine separate Partition verschieben, um dessen Wachstum vom Root-Dateisystem (/) zu isolieren."
-},
-"antwort": "D",
-"erklärung": "Das Verschieben von /var auf eine separate Partition verhindert, dass stark wachsende Logdateien den verfügbaren Speicherplatz des Root-Dateisystems beanspruchen. Dadurch bleibt das System stabil, selbst wenn /var/log stark anwächst."
-},
-"en": {
-"question": "You are a Linux administrator managing a server that frequently experiences issues with log files in /var/log growing unexpectedly large due to application errors. Recently, the root filesystem (/) filled up, causing the server to crash.\n\nWhat is the BEST solution to prevent this issue from happening again?",
-"options": {
-"A": "Increase the size of the root filesystem (/) to accommodate the growing log files.",
-"B": "Delete old log files in /var/log regularly to free up space on the root filesystem (/).",
-"C": "Disable logging for applications to prevent log files from growing too large.",
-"D": "Move the /var directory to a separate partition to isolate its growth from the root filesystem (/)."
-},
-"answer": "D",
-"explanation": "Moving the /var directory to a separate partition prevents large log files from consuming space on the root filesystem. This keeps the system stable even if log files in /var/log grow significantly."
-}
-},
-{
-"id": 57,
-"de": {
-"frage": "Welcher Standard wird von Linux-Distributionen verwendet, um die Struktur von Dateien und Verzeichnissen im Linux-System festzulegen?",
-"optionen": {
-"A": "Redundant Array of Independent Disks (RAID)",
-"B": "Filesystem in USErspace (FUSE)",
-"C": "Filesystem Hierarchy Standard (FHS)",
-"D": "Storage Area Network (SAN)"
-},
-"antwort": "C",
-"erklärung": "Der Filesystem Hierarchy Standard (FHS) definiert die Struktur und den Zweck von Verzeichnissen und Dateien unter Linux. Er sorgt für Konsistenz zwischen verschiedenen Distributionen und erleichtert Systemadministration und Softwareentwicklung."
-},
-"en": {
-"question": "What is the standard used by Linux distributions to determine the layout of files and folders in the Linux system?",
-"options": {
-"A": "Redundant Array of Independent Disks (RAID)",
-"B": "Filesystem in USErspace (FUSE)",
-"C": "Filesystem Hierarchy Standard (FHS)",
-"D": "Storage Area Network (SAN)"
-},
-"answer": "C",
-"explanation": "The Filesystem Hierarchy Standard (FHS) defines the layout and purpose of directories and files in Linux. It ensures consistency across distributions and simplifies system administration and software development."
-}
-},
-{
-"id": 58,
-"de": {
-"frage": "Du bist Linux-Systemadministrator und verwaltest einen Server mit begrenztem Speicherplatz auf dem Boot-Laufwerk. Um die Leistung zu optimieren, entscheidest du dich, den Swap-Bereich auf eine andere Partition auf einem sekundären Laufwerk zu verschieben. Nachdem du eine neue Partition erstellt und den Befehl mkswap ausgeführt hast, welchen Befehl solltest du verwenden, um den neuen Swap-Bereich zu aktivieren?",
-"optionen": {
-"A": "swapoff -a",
-"B": "mkswap -L swap_partition",
-"C": "swapon -a",
-"D": "swapon /dev/sdb1"
-},
-"antwort": "D",
-"erklärung": "Nachdem eine neue Swap-Partition mit mkswap eingerichtet wurde, wird sie mit dem Befehl swapon /dev/sdb1 aktiviert. Dadurch steht die neue Partition sofort als Swap-Speicher zur Verfügung."
-},
-"en": {
-"question": "You are a Linux system administrator managing a server with limited storage space on the boot drive. To optimize performance, you decide to move the swap space to a different partition on a secondary drive. After creating a new partition and running the mkswap command, which of the following commands should you use to activate the new swap space?",
-"options": {
-"A": "swapoff -a",
-"B": "mkswap -L swap_partition",
-"C": "swapon -a",
-"D": "swapon /dev/sdb1"
-},
-"answer": "D",
-"explanation": "After creating a new swap partition using mkswap, you activate it with the command swapon /dev/sdb1, making the new swap partition available for use immediately."
-}
-},
-{
-"id": 59,
-"de": {
-"frage": "Ein Systemadministrator verwaltet einen Linux-Server und erhält Berichte, dass Benutzer keine neuen Dateien mehr in ihren Home-Verzeichnissen erstellen können, obwohl auf der /home-Partition noch Speicherplatz verfügbar ist. Der Administrator vermutet eine Erschöpfung der Inodes als Ursache. Nach dem Ausführen des Befehls df -i bestätigt sich, dass die Inode-Auslastung für die /home-Partition bei 100 % liegt.\n\nWas sollte der Administrator tun, um das Problem zu analysieren und zu beheben?",
-"optionen": {
-"A": "Den Befehl du --inodes -d /home verwenden, um Verzeichnisse mit hohem Inode-Verbrauch zu identifizieren und unnötige kleine Dateien zu löschen.",
-"B": "Den Befehl resize2fs verwenden, um die Anzahl der Inodes für die /home-Partition zu erhöhen.",
-"C": "Den Befehl growpart verwenden, um die /home-Partition zu erweitern und deren Inode-Anzahl zu erhöhen.",
-"D": "Den Befehl tar verwenden, um das gesamte /home-Verzeichnis zu archivieren und zu komprimieren, um Inodes freizugeben."
-},
-"antwort": "A",
-"erklärung": "Wenn die Inodes einer Partition erschöpft sind, müssen unnötige kleine Dateien identifiziert und gelöscht werden. Der Befehl du --inodes -d /home hilft, Verzeichnisse mit hohem Inode-Verbrauch zu erkennen, sodass gezielt bereinigt werden kann."
-},
-"en": {
-"question": "A system administrator is managing a Linux server and receives reports that users are unable to create new files in their home directories, even though the /home partition still has available storage space. The administrator suspects inode exhaustion as the root cause. After running the df -i command, they confirm that the inode usage for the /home partition is at 100%.\n\nWhat should the administrator do to analyze and resolve the issue?",
-"options": {
-"A": "Use the du --inodes -d /home command to identify directories consuming the most inodes and delete unnecessary small files.",
-"B": "Use the resize2fs command to increase the inode count for the /home partition.",
-"C": "Use the growpart command to expand the /home partition and increase its inode count.",
-"D": "Use the tar command to archive and compress the entire /home directory to free up inodes."
-},
-"answer": "A",
-"explanation": "When a partition runs out of inodes, new files cannot be created even if space is available. The du --inodes -d /home command helps locate directories consuming excessive inodes so unnecessary small files can be identified and removed."
-}
-},
-{
-"id": 60,
-"de": {
-"frage": "Ein mittelständisches Unternehmen richtet ein Network-Attached Storage (NAS)-System ein, um Dateien unter seinen Mitarbeitern zu speichern und gemeinsam zu nutzen. Das Unternehmen verwendet sowohl Windows- als auch Linux-Systeme für Server und Clients.\n\nWelches Protokoll sollte das Unternehmen auf dem NAS konfigurieren, um optimale Dateifreigabeleistung und Kompatibilität zwischen allen Systemen sicherzustellen?",
-"optionen": {
-"A": "CIFS (Common Internet File System)",
-"B": "SMB (Server Message Block)",
-"C": "NFS (Network File System)",
-"D": "FTP (File Transfer Protocol)"
-},
-"antwort": "B",
-"erklärung": "Das SMB-Protokoll (Server Message Block) ist der Standard für die Dateifreigabe unter Windows und wird auch von Linux über Samba unterstützt. Es bietet hohe Leistung und ermöglicht die nahtlose Zusammenarbeit zwischen unterschiedlichen Betriebssystemen."
-},
-"en": {
-"question": "A medium-sized company is setting up a Network-Attached Storage (NAS) device to store and share files among its employees. The company uses a mix of Windows and Linux systems for both servers and client machines.\n\nWhich protocol should the company configure on the NAS to ensure optimal file sharing performance and compatibility across all systems?",
-"options": {
-"A": "CIFS (Common Internet File System)",
-"B": "SMB (Server Message Block)",
-"C": "NFS (Network File System)",
-"D": "FTP (File Transfer Protocol)"
-},
-"answer": "B",
-"explanation": "The SMB (Server Message Block) protocol is the standard for Windows file sharing and is also supported by Linux systems through Samba. It provides optimal performance and interoperability between different operating systems."
-}
-},
-{
-"id": 61,
-"de": {
-"frage": "Ein Servertechniker hat eine Festplatte zu einem Server hinzugefügt und muss nun die Speicherdatenträger und eventuelle Partitionsänderungen erneut erkennen lassen.\n\nWelches Werkzeug sollte der Techniker dafür verwenden?",
-"optionen": {
-"A": "parted",
-"B": "fdisk",
-"C": "blkid",
-"D": "partprobe"
-},
-"antwort": "D",
-"erklärung": "Der Befehl partprobe weist den Kernel an, die Partitionstabellen neu einzulesen, damit Änderungen an den Datenträgern erkannt werden, ohne dass ein Neustart erforderlich ist."
-},
-"en": {
-"question": "A server engineer added a hard drive to a server and is now at the stage where the engineer needs to redetect the storage disks and any partition changes.\n\nWhat should the engineer use to carry this out?",
-"options": {
-"A": "parted",
-"B": "fdisk",
-"C": "blkid",
-"D": "partprobe"
-},
-"answer": "D",
-"explanation": "The partprobe command instructs the kernel to re-read the partition tables so that new disks or changes are detected without requiring a reboot."
-}
-},
-{
-"id": 62,
-"de": {
-"frage": "Welche der folgenden Aussagen beschreibt die Beziehung zwischen den drei Konfigurationsebenen des Logical Volume Managers (LVM) am BESTEN?",
-"optionen": {
-"A": "Logische Volumes (LVs) werden zuerst erstellt und anschließend in Volume Groups (VGs) aufgeteilt, die wiederum in Physical Volumes (PVs) unterteilt werden.",
-"B": "Logische Volumes (LVs) werden direkt auf Physical Volumes (PVs) erstellt, ohne dass Volume Groups (VGs) benötigt werden.",
-"C": "Volume Groups (VGs) werden unabhängig erstellt und direkt auf Logische Volumes (LVs) abgebildet, ohne Physical Volumes (PVs) zu verwenden.",
-"D": "Physical Volumes (PVs) werden kombiniert, um Volume Groups (VGs) zu bilden, die anschließend in Logische Volumes (LVs) unterteilt werden, um den Speicheranforderungen zu entsprechen."
-},
-"antwort": "D",
-"erklärung": "Beim Logical Volume Manager (LVM) werden zunächst Physical Volumes (PVs) erstellt, aus denen Volume Groups (VGs) gebildet werden. Diese Gruppen werden dann in Logische Volumes (LVs) unterteilt, die wie Partitionen verwendet werden können. Diese Schichtung bietet Flexibilität und einfache Speichererweiterung."
-},
-"en": {
-"question": "Which of the following BEST describes the relationship between the three configuration layers of Logical Volume Manager (LVM)?",
-"options": {
-"A": "Logical Volumes (LVs) are created first, and then they are divided into Volume Groups (VGs), which are further split into Physical Volumes (PVs).",
-"B": "Logical Volumes (LVs) are directly created on Physical Volumes (PVs) without the need for Volume Groups (VGs).",
-"C": "Volume Groups (VGs) are created independently and then mapped directly to Logical Volumes (LVs) without requiring Physical Volumes (PVs).",
-"D": "Physical Volumes (PVs) are combined to form Volume Groups (VGs), which are then divided into Logical Volumes (LVs) to meet storage needs."
-},
-"answer": "D",
-"explanation": "In Logical Volume Manager (LVM), Physical Volumes (PVs) are combined to create Volume Groups (VGs), which are then divided into Logical Volumes (LVs). This layered structure provides flexibility and scalability in storage management."
-}
-},
-{
-"id": 63,
-"de": {
-"frage": "Ein Benutzer meldet, dass er keine Dateien mehr in seinem Home-Verzeichnis auf einem Linux-Server speichern kann, obwohl scheinbar ausreichend Speicherplatz verfügbar ist. Du vermutest, dass das Problem auf eine Erschöpfung der Inodes zurückzuführen ist.\n\nWelchen Befehl würdest du verwenden, um deine Vermutung zu bestätigen?",
-"optionen": {
-"A": "tar -cvf archive.tar /home",
-"B": "df -i",
-"C": "lsblk",
-"D": "du /home"
-},
-"antwort": "B",
-"erklärung": "Mit dem Befehl df -i werden die Inode-Nutzung und -Auslastung aller Dateisysteme angezeigt. Wenn der Inode-Wert 100 % erreicht, können keine neuen Dateien mehr erstellt werden, auch wenn noch Speicherplatz vorhanden ist."
-},
-"en": {
-"question": "A user reports that they are unable to save files to their home directory on a Linux server, even though there appears to be sufficient storage space available. You suspect that the issue might be related to inode exhaustion.\n\nWhich of the following commands would you use to confirm your suspicion?",
-"options": {
-"A": "tar -cvf archive.tar /home",
-"B": "df -i",
-"C": "lsblk",
-"D": "du /home"
-},
-"answer": "B",
-"explanation": "The df -i command displays inode usage for mounted filesystems. If inode usage is at 100%, new files cannot be created even if there is free disk space."
-}
-},
-{
-"id": 64,
-"de": {
-"frage": "Ein kleines Unternehmen muss einen Server einrichten, um wichtige Finanzdaten zu speichern. Der Server soll Datenredundanz priorisieren, damit bei einem Festplattenausfall keine Daten verloren gehen. Die Leistung ist zweitrangig, und es stehen nur wenige Festplatten zur Verfügung.\n\nWelcher RAID-Standard wäre nach Analyse der Anforderungen am BESTEN geeignet?",
-"optionen": {
-"A": "RAID 0",
-"B": "RAID 5",
-"C": "RAID 1",
-"D": "RAID 0+1"
-},
-"antwort": "C",
-"erklärung": "RAID 1 (Mirroring) speichert identische Kopien der Daten auf zwei Laufwerken, was eine hohe Datenredundanz bietet. Es schützt vollständig vor Datenverlust durch den Ausfall einer Festplatte und erfordert nur zwei Laufwerke – ideal für kleine Umgebungen mit begrenzten Ressourcen."
-},
-"en": {
-"question": "A small business needs to set up a server to store critical financial records. The server must prioritize data redundancy to ensure no data is lost in the event of a disk failure. Performance is a secondary concern, and the business has a limited number of disks available.\n\nAfter analyzing the requirements, which RAID standard would be the MOST appropriate choice?",
-"options": {
-"A": "RAID 0",
-"B": "RAID 5",
-"C": "RAID 1",
-"D": "RAID 0+1"
-},
-"answer": "C",
-"explanation": "RAID 1 (mirroring) stores identical copies of data on two drives, providing strong data redundancy. It fully protects against data loss from a single disk failure and requires only two drives, making it ideal for small setups with limited resources."
-}
-},
-{
-"id": 65,
-"de": {
-"frage": "Ein Projektmanager koordiniert die Hardwarebeschaffung für den Aufbau einer neuen Anwendung. Der Speicher soll schneller sein als herkömmlicher Serverspeicher, jedoch nicht die teuerste Option darstellen.\n\nWelche Lösung wäre ideal?",
-"optionen": {
-"A": "SATA",
-"B": "SSD",
-"C": "SCSI",
-"D": "SAS"
-},
-"antwort": "C",
-"erklärung": "SAS (Serial Attached SCSI) bietet eine höhere Leistung und Zuverlässigkeit als SATA, ist aber wesentlich günstiger als SSDs oder High-End-Speicherlösungen. Damit stellt SAS eine gute Balance zwischen Leistung und Kosten dar."
-},
-"en": {
-"question": "A project manager coordinates hardware procurement for an upcoming application build-out. The storage needs to be faster than normal server storage, but the manager also does not want to buy the most expensive storage.\n\nWhich solution would be ideal?",
-"options": {
-"A": "SATA",
-"B": "SSD",
-"C": "SCSI",
-"D": "SAS"
-},
-"answer": "C",
-"explanation": "SAS (Serial Attached SCSI) provides better speed and reliability than SATA while being more affordable than SSDs or enterprise-grade storage, making it an ideal balance of performance and cost."
-}
-},
-{
-"id": 66,
-"de": {
-"frage": "Du verwaltest ein Linux-System, das den Logical Volume Manager (LVM) zur Speicherverwaltung nutzt. Die aktuelle Volume Group (VG) hat eine Gesamtkapazität von 8 TB, die aus zwei 4 TB großen Physical Volumes (PVs) besteht. Das darin enthaltene Logical Volume (LV) ist fast voll, und du musst den Speicher erweitern, ohne die Benutzer zu unterbrechen.\n\nWas ist die richtige Reihenfolge der Schritte, um die Speicherkapazität zu vergrößern?",
-"optionen": {
-"A": "Ein neues Logical Volume (LV) direkt auf der neuen 4 TB-Festplatte erstellen und separat einhängen, um die vorhandene Volume Group (VG) nicht zu ändern.",
-"B": "Das bestehende Logical Volume (LV) löschen, es mit größerer Größe neu erstellen und die Daten aus einem Backup wiederherstellen.",
-"C": "Ein neues 4 TB Physical Volume (PV) hinzufügen und es direkt dem Logical Volume (LV) zuweisen, ohne die Volume Group (VG) zu ändern.",
-"D": "Ein neues 4 TB Physical Volume (PV) hinzufügen, die Volume Group (VG) erweitern, um das neue PV einzubeziehen, und dann den zusätzlichen Speicher dem Logical Volume (LV) zuweisen."
-},
-"antwort": "D",
-"erklärung": "Um ein Logical Volume in LVM zu vergrößern, wird zunächst ein neues Physical Volume (PV) erstellt, dann die Volume Group (VG) mit vgextend um dieses PV erweitert. Anschließend wird mit lvextend das Logical Volume vergrößert und das Dateisystem mit resizefs oder xfs_growfs angepasst, ohne die Benutzeraktivität zu stören."
-},
-"en": {
-"question": "You are managing a Linux system that uses Logical Volume Manager (LVM) for storage. The current Volume Group (VG) has a total capacity of 8 TB, created from two 4 TB Physical Volumes (PVs). The Logical Volume (LV) within this VG is almost full, and you need to add more storage without interrupting users.\n\nWhat is the correct sequence of actions to expand the storage capacity?",
-"options": {
-"A": "Create a new Logical Volume (LV) directly on the new 4 TB disk and mount it separately to avoid modifying the existing Volume Group (VG).",
-"B": "Delete the existing Logical Volume (LV), recreate it with a larger size, and restore the data from a backup.",
-"C": "Add a new 4 TB Physical Volume (PV) and directly allocate it to the Logical Volume (LV) without modifying the Volume Group (VG).",
-"D": "Add a new 4 TB Physical Volume (PV), extend the Volume Group (VG) to include the new PV, and then allocate the additional space to the Logical Volume (LV)."
-},
-"answer": "D",
-"explanation": "To expand an LVM Logical Volume, first create a new Physical Volume (PV), then extend the Volume Group (VG) using vgextend to include the new PV. Finally, use lvextend to increase the Logical Volume size and resize the filesystem with resize2fs or xfs_growfs, all without service interruption."
-}
-},
-{
-"id": 67,
-"de": {
-"frage": "Welcher Befehl kann verwendet werden, um die vom System erkannten verfügbaren Partitionen und Mounts unter Linux anzuzeigen?",
-"optionen": {
-"A": "cat /proc/partitions",
-"B": "ls /projects",
-"C": "df -h /projects",
-"D": "du -h /projects"
-},
-"antwort": "A",
-"erklärung": "Der Befehl cat /proc/partitions zeigt eine Liste aller vom Kernel erkannten Festplatten und Partitionen an. Damit lässt sich überprüfen, welche Partitionen dem System derzeit bekannt sind."
-},
-"en": {
-"question": "Which command can be used to view the system's knowledge of available partitions and mounts in Linux?",
-"options": {
-"A": "cat /proc/partitions",
-"B": "ls /projects",
-"C": "df -h /projects",
-"D": "du -h /projects"
-},
-"answer": "A",
-"explanation": "The cat /proc/partitions command displays a list of all partitions and disks recognized by the kernel, allowing administrators to verify the system’s current understanding of storage devices."
-}
-},
-{
-"id": 68,
-"de": {
-"frage": "Du bist Linux-Administrator und sollst mit dem Dienstprogramm parted auf einer GPT-formatierten Festplatte /dev/sdd eine neue primäre Partition mit einer Größe von 5 GB erstellen. Die Partition soll das ext4-Dateisystem verwenden und bei 1 MB beginnen.\n\nWelche Befehlsreihenfolge solltest du verwenden, um diese Aufgabe auszuführen?",
-"optionen": {
-"A": "parted /dev/sdd, mkpart primary ext4 1MB 5000MB, mklabel gpt, quit",
-"B": "parted /dev/sdd, mkpart primary 1MB 5000MB, mklabel gpt, quit",
-"C": "parted /dev/sdd, mklabel gpt, mkpart primary ext4 1MB 5000MB, quit",
-"D": "parted /dev/sdd, mklabel gpt, mkpart ext4 primary 1MB 5000MB, quit"
-},
-"antwort": "C",
-"erklärung": "Die korrekte Reihenfolge ist, zunächst eine GPT-Partitionstabelle mit mklabel gpt zu erstellen, und dann die Partition mit mkpart primary ext4 1MB 5000MB anzulegen. Dadurch wird eine 5 GB große ext4-Partition auf /dev/sdd ab dem Offset von 1 MB erstellt."
-},
-"en": {
-"question": "You are a Linux administrator tasked with creating a new 5 GB primary partition on a GPT-formatted disk /dev/sdd using the parted utility. The partition should use the ext4 filesystem and start at 1 MB.\n\nWhat sequence of commands should you use to accomplish this task?",
-"options": {
-"A": "parted /dev/sdd, mkpart primary ext4 1MB 5000MB, mklabel gpt, quit",
-"B": "parted /dev/sdd, mkpart primary 1MB 5000MB, mklabel gpt, quit",
-"C": "parted /dev/sdd, mklabel gpt, mkpart primary ext4 1MB 5000MB, quit",
-"D": "parted /dev/sdd, mklabel gpt, mkpart ext4 primary 1MB 5000MB, quit"
-},
-"answer": "C",
-"explanation": "The correct sequence is to first create a GPT partition table with mklabel gpt, then create the 5 GB ext4 partition starting at 1 MB using mkpart primary ext4 1MB 5000MB. This ensures the disk is properly initialized before partitioning."
-}
-},
-{
-"id": 69,
-"de": {
-"frage": "Welchen Linux-Befehl würdest du verwenden, um zu bestätigen, dass eine neu installierte Festplatte vom System erkannt wurde, und um deren Partitionen anzuzeigen?",
-"optionen": {
-"A": "hwinfo --short --storage",
-"B": "lsscsi -s",
-"C": "lsblk",
-"D": "fdisk -l"
-},
-"antwort": "D",
-"erklärung": "Der Befehl fdisk -l listet alle vom System erkannten Festplatten und deren Partitionstabellen auf. Damit lässt sich überprüfen, ob ein neues Laufwerk verfügbar ist und korrekt erkannt wurde."
-},
-"en": {
-"question": "Which Linux command would you use to confirm that a newly installed hard disk drive is recognized by the system and to view its partitions?",
-"options": {
-"A": "hwinfo --short --storage",
-"B": "lsscsi -s",
-"C": "lsblk",
-"D": "fdisk -l"
-},
-"answer": "D",
-"explanation": "The fdisk -l command lists all disks and their partition tables detected by the system, allowing administrators to confirm that a new disk has been recognized correctly."
-}
-},
-{
-"id": 70,
-"de": {
-"frage": "Was ist der Hauptzweck des fstrim-Befehls in Linux?",
-"optionen": {
-"A": "Ein Remote-Dateisystem über NFS- oder SMB-Protokolle einzuhängen.",
-"B": "Informationen über logische Volumes in einem Speichersystem anzuzeigen.",
-"C": "Gelöschte Daten proaktiv von Solid-State-Drives (SSDs) zu entfernen und Platz für neue Daten freizugeben.",
-"D": "Die Partitionstabelleninformationen im System zu aktualisieren."
-},
-"antwort": "C",
-"erklärung": "Der fstrim-Befehl führt einen TRIM-Befehl auf SSDs aus, um gelöschte Datenblöcke freizugeben. Dies ermöglicht es der SSD, diese Bereiche für neue Daten zu verwenden und die Leistung zu optimieren."
-},
-"en": {
-"question": "What is the primary purpose of the fstrim command in Linux?",
-"options": {
-"A": "To mount a remote filesystem using NFS or SMB protocols.",
-"B": "To display information about logical volumes in a storage system.",
-"C": "To proactively remove deleted data from solid-state drives (SSDs) and free up space for new data.",
-"D": "To refresh the partition table information in the system."
-},
-"answer": "C",
-"explanation": "The fstrim command issues TRIM commands to SSDs to release deleted data blocks, allowing the SSD to reuse those areas for new data and maintain optimal performance."
-}
-},
-{
-"id": 71,
-"de": {
-"frage": "Welcher der folgenden Befehle initialisiert ein Physical Volume?",
-"optionen": {
-"A": "pvscan",
-"B": "lvcreate",
-"C": "vgcreate",
-"D": "pvcreate"
-},
-"antwort": "D",
-"erklärung": "Der Befehl pvcreate initialisiert ein Laufwerk oder eine Partition als Physical Volume (PV) für die Verwendung mit dem Logical Volume Manager (LVM). Damit wird das Gerät für die Einbindung in eine Volume Group vorbereitet."
-},
-"en": {
-"question": "Which of the following commands initializes a physical volume?",
-"options": {
-"A": "pvscan",
-"B": "lvcreate",
-"C": "vgcreate",
-"D": "pvcreate"
-},
-"answer": "D",
-"explanation": "The pvcreate command initializes a disk or partition as a Physical Volume (PV) for use with the Logical Volume Manager (LVM), preparing it to be added to a Volume Group."
-}
-},
-{
-"id": 72,
-"de": {
-"frage": "Du verwaltest einen Fileserver, dessen logisches Volume (LV) mit dem Namen data_lv, das Teil der Volume Group (VG) data_vg ist, fast keinen Speicherplatz mehr hat. Du hast dem Server eine neue 500-GB-Festplatte hinzugefügt und möchtest sie verwenden, um die Speicherkapazität von data_lv zu erweitern.\n\nWelche Befehlsreihenfolge solltest du ausführen, um das logische Volume erfolgreich zu erweitern und den zusätzlichen Speicher nutzbar zu machen?",
-"optionen": {
-"A": "pvcreate /dev/sdd\npvcreate /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
-"B": "pvcreate /dev/sdd\nvgcreate data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nmkfs.ext4 /dev/data_vg/data_lv",
-"C": "pvmove /dev/sdd /dev/data_vg/data_lv\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
-"D": "vgextend data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv"
-},
-"antwort": "A",
-"erklärung": "Zuerst muss die neue Festplatte als Physical Volume initialisiert werden (pvcreate /dev/sdd). Danach wird sie mit vgextend data_vg /dev/sdd der bestehenden Volume Group hinzugefügt. Anschließend wird das Logical Volume mit lvextend vergrößert und das Dateisystem mit resize2fs angepasst, um den zusätzlichen Speicherplatz zu nutzen."
-},
-"en": {
-"question": "You are managing a file server that is running out of storage space on its logical volume (LV) named data_lv, which is part of the volume group (VG) named data_vg. You have added a new 500 GB disk to the server and want to use it to extend the storage capacity of data_lv.\n\nWhich of the following sequences of commands should you execute to successfully extend the logical volume and make the additional space available for use?",
-"options": {
-"A": "pvcreate /dev/sdd\npvcreate /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
-"B": "pvcreate /dev/sdd\nvgcreate data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nmkfs.ext4 /dev/data_vg/data_lv",
-"C": "pvmove /dev/sdd /dev/data_vg/data_lv\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
-"D": "vgextend data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv"
-},
-"answer": "A",
-"explanation": "First, initialize the new disk as a Physical Volume using pvcreate /dev/sdd, then extend the existing Volume Group with vgextend data_vg /dev/sdd. Next, use lvextend to increase the size of the Logical Volume, and finally run resize2fs to make the new space available in the filesystem."
-}
-},
-{
-"id": 73,
-"de": {
-"frage": "Du bist Systemadministrator und sollst einen Linux-Server so konfigurieren, dass eine Partition beim Systemstart automatisch eingehängt wird. Die Partition befindet sich auf /dev/sdb1 und soll unter /data eingehängt werden. Du hast bereits eine systemd-Unit-Datei namens data.mount mit der richtigen UUID und den Mount-Optionen erstellt. Nach dem Speichern führst du die folgenden Befehle aus:\n\nsystemctl daemon-reload\nsystemctl start data.mount\n\nNach dem Neustart des Servers stellst du jedoch fest, dass die Partition nicht eingehängt wurde.\n\nWelchen Schritt hast du höchstwahrscheinlich vergessen?",
-"optionen": {
-"A": "Du hast vergessen, die Partitionsdetails in die Datei /etc/fstab einzutragen.",
-"B": "Du hast vergessen, das Mounten mit dem Befehl systemctl enable data.mount zu aktivieren.",
-"C": "Du hast vergessen, den Server nach dem Ausführen von systemctl start data.mount neu zu starten.",
-"D": "Du hast vergessen, die UUID der Partition mit dem Befehl blkid zu überprüfen."
-},
-"antwort": "B",
-"erklärung": "Damit eine systemd-Mount-Unit wie data.mount beim Start automatisch aktiviert wird, muss sie mit systemctl enable data.mount aktiviert werden. Der Befehl systemctl start startet das Mounten nur für die aktuelle Sitzung, nicht dauerhaft über Neustarts hinweg."
-},
-"en": {
-"question": "You are a system administrator tasked with configuring a Linux server to automatically mount a partition during boot. The partition is located at /dev/sdb1, and it should be mounted to /data. You have already created a systemd unit file named data.mount with the correct UUID and mount options. After saving the file, you run the following commands:\n\nsystemctl daemon-reload\nsystemctl start data.mount\n\nHowever, after rebooting the server, you notice that the partition is not mounted.\n\nWhat is the MOST likely step you missed?",
-"options": {
-"A": "You forgot to add the partition details to the /etc/fstab file.",
-"B": "You forgot to enable the mount with the systemctl enable data.mount command.",
-"C": "You forgot to restart the server after running systemctl start data.mount.",
-"D": "You forgot to verify the UUID of the partition using the blkid command."
-},
-"answer": "B",
-"explanation": "For a systemd mount unit to persist across reboots, it must be enabled with the systemctl enable data.mount command. The systemctl start command only starts the unit for the current session without enabling it for automatic startup."
-}
-},
-{
-"id": 74,
-"de": {
-"frage": "Du verwaltest einen Linux-Server mit einem ext4-Dateisystem auf der Partition /dev/sdb2. Du stellst fest, dass das Dateisystem so konfiguriert ist, dass es nach jeweils 20 Einbindungen (Mounts) eine Dateisystemprüfung durchführt. Du möchtest dieses Intervall auf 50 Mounts erhöhen, um Ausfallzeiten beim Neustart zu verringern.\n\nWelcher der folgenden Befehle ändert das Mount-Zählintervall korrekt?",
-"optionen": {
-"A": "resize2fs -c 50 /dev/sdb2",
-"B": "e2label /dev/sdb2 50",
-"C": "tune2fs -c 50 /dev/sdb2",
-"D": "fsck -c 50 /dev/sdb2"
-},
-"antwort": "C",
-"erklärung": "Mit dem Befehl tune2fs -c 50 /dev/sdb2 kann das maximale Mount-Zählintervall festgelegt werden, bevor eine automatische Dateisystemprüfung (fsck) ausgelöst wird. Dadurch werden unnötige Prüfungen reduziert und Neustartzeiten verkürzt."
-},
-"en": {
-"question": "You are managing a Linux server with an ext4 filesystem on the /dev/sdb2 partition. You notice that the filesystem is configured to perform a filesystem check after every 20 mounts, but you want to increase this interval to 50 mounts to reduce downtime during reboots.\n\nWhich of the following commands will correctly update the mount count interval?",
-"options": {
-"A": "resize2fs -c 50 /dev/sdb2",
-"B": "e2label /dev/sdb2 50",
-"C": "tune2fs -c 50 /dev/sdb2",
-"D": "fsck -c 50 /dev/sdb2"
-},
-"answer": "C",
-"explanation": "The tune2fs -c 50 /dev/sdb2 command sets the maximum mount count before a filesystem check is triggered. This helps reduce unnecessary fsck runs and minimizes downtime during system reboots."
-}
-},
-{
-"id": 75,
-"de": {
-"frage": "Welcher der folgenden Befehle partitioniert die zweite Festplatte auf einem Linux-System?",
-"optionen": {
-"A": "fdisk /dev/sdb",
-"B": "fdisk /sd0-1",
-"C": "format /dev/sdb1",
-"D": "fdisk /dev/sdc"
-},
-"antwort": "A",
-"erklärung": "Der Befehl fdisk /dev/sdb öffnet das Partitionierungstool für die zweite Festplatte im System. In Linux sind Festplatten typischerweise als /dev/sda, /dev/sdb, /dev/sdc usw. benannt."
-},
-"en": {
-"question": "Which of the following commands partitions the second hard disk on a Linux system?",
-"options": {
-"A": "fdisk /dev/sdb",
-"B": "fdisk /sd0-1",
-"C": "format /dev/sdb1",
-"D": "fdisk /dev/sdc"
-},
-"answer": "A",
-"explanation": "The command fdisk /dev/sdb opens the partitioning utility for the second hard disk in the system. In Linux, hard drives are typically named /dev/sda, /dev/sdb, /dev/sdc, and so on."
-}
-},
-{
-"id": 76,
-"de": {
-"frage": "Du bist Systemadministrator und behebst Speicherprobleme auf einem Linux-Server. Du musst alle erkannten Speichergeräte und deren Partitionen identifizieren, um festzustellen, ob es nicht beschreibbare Partitionen oder falsch erkannte Geräte gibt.\n\nWelchen der folgenden Befehle würdest du verwenden, um diese Informationen anzuzeigen?",
-"optionen": {
-"A": "tar -cvf archive.tar /data",
-"B": "df -h",
-"C": "cat /proc/partitions",
-"D": "du /home"
-},
-"antwort": "C",
-"erklärung": "Der Befehl cat /proc/partitions zeigt alle vom Kernel erkannten Speichergeräte und deren Partitionen an. Damit können Administratoren prüfen, ob Geräte korrekt erkannt und Partitionen verfügbar sind."
-},
-"en": {
-"question": "You are a system administrator troubleshooting a Linux server that is experiencing storage issues. You need to identify all recognized storage devices and their partitions to determine if there are any unwritable partitions or misidentified devices.\n\nWhich of the following commands would you use to display this information?",
-"options": {
-"A": "tar -cvf archive.tar /data",
-"B": "df -h",
-"C": "cat /proc/partitions",
-"D": "du /home"
-},
-"answer": "C",
-"explanation": "The cat /proc/partitions command lists all storage devices and partitions recognized by the kernel, helping administrators verify whether drives and partitions are correctly detected and writable."
-}
-},
-{
-"id": 77,
-"de": {
-"frage": "Du behebst ein Problem auf einem Linux-System, das den Logical Volume Manager (LVM) für die Speicherverwaltung verwendet. Ein Benutzer meldet, dass er auf ein bestimmtes Logical Volume (LV), das verfügbar sein sollte, nicht zugreifen kann. Beim Überprüfen des Verzeichnisses /dev/mapper/ stellst du fest, dass der erwartete Eintrag für das LV fehlt.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem zu beheben?",
-"optionen": {
-"A": "Das Verzeichnis /dev/mapper/ löschen und das System neu starten, um die Logical-Volume-Zuordnungen neu zu generieren.",
-"B": "Den Befehl lvscan verwenden, um zu überprüfen, ob das Logical Volume (LV) aktiv ist, und sicherstellen, dass es korrekt zugeordnet ist.",
-"C": "Die gesamte Volume Group (VG) neu formatieren, um das Logical Volume (LV) und dessen Zuordnung in /dev/mapper/ neu zu erstellen.",
-"D": "Einen neuen Eintrag im Verzeichnis /dev/mapper/ manuell für das fehlende Logical Volume (LV) anlegen."
-},
-"antwort": "B",
-"erklärung": "Mit dem Befehl lvscan kann überprüft werden, ob ein Logical Volume aktiv oder inaktiv ist. Wenn es inaktiv ist, kann es mit lvchange -ay <LV> aktiviert werden, wodurch der entsprechende Eintrag in /dev/mapper/ automatisch erstellt wird."
-},
-"en": {
-"question": "You are troubleshooting a Linux system that uses Logical Volume Manager (LVM) for storage. A user reports that they cannot access a specific Logical Volume (LV) that should be available. You check the /dev/mapper/ directory and do not see the expected entry for the LV.\n\nWhat is the MOST appropriate action to resolve this issue?",
-"options": {
-"A": "Delete the /dev/mapper/ directory and restart the system to regenerate the Logical Volume (LV) mappings.",
-"B": "Use the lvscan command to check if the Logical Volume (LV) is active and ensure it is properly mapped.",
-"C": "Reformat the entire Volume Group (VG) to recreate the Logical Volume (LV) and its mapping in /dev/mapper/.",
-"D": "Manually create a new entry in the /dev/mapper/ directory for the missing Logical Volume (LV)."
-},
-"answer": "B",
-"explanation": "The lvscan command is used to check whether Logical Volumes are active or inactive. If the LV is inactive, it can be activated with lvchange -ay <LV>, which automatically regenerates the missing entry in /dev/mapper/."
-}
-},
-{
-"id": 78,
-"de": {
-"frage": "Wie wird unter Linux die erste Festplatte im System typischerweise im Verzeichnis /dev dargestellt?",
-"optionen": {
-"A": "/dev/sda",
-"B": "/dev/sdb",
-"C": "/dev/sda1",
-"D": "/dev/hda"
-},
-"antwort": "A",
-"erklärung": "Unter Linux werden moderne Festplatten in der Regel mit dem Präfix /dev/sd erkannt. Die erste Festplatte wird als /dev/sda bezeichnet, die zweite als /dev/sdb und so weiter. Partitionen auf diesen Laufwerken heißen /dev/sda1, /dev/sda2 usw."
-},
-"en": {
-"question": "In Linux, how is the first storage disk in the system typically represented in the /dev directory?",
-"options": {
-"A": "/dev/sda",
-"B": "/dev/sdb",
-"C": "/dev/sda1",
-"D": "/dev/hda"
-},
-"answer": "A",
-"explanation": "In Linux, modern storage devices are typically represented with the /dev/sd prefix. The first detected disk is /dev/sda, the second is /dev/sdb, and so on. Individual partitions appear as /dev/sda1, /dev/sda2, etc."
-}
-}
-
+    "id": 49,
+    "de": {
+      "frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server, der nicht startet. Nach der Untersuchung vermutest du, dass die Ursache ein beschädigtes ext4-Dateisystem auf der Partition /dev/sdb2 ist. Du entscheidest dich, den Befehl fsck zu verwenden, um das Dateisystem zu diagnostizieren und zu reparieren.\n\nWelche der folgenden Vorgehensweisen ist die RICHTIGE Reihenfolge, um diese Aufgabe sicher durchzuführen?",
+      "optionen": {
+        "A": "Das System neu starten und den fsck-Befehl automatisch beim Start ausführen lassen",
+        "B": "Den Befehl resize2fs verwenden, um Dateisystemprobleme zu beheben, und anschließend das Dateisystem erneut einhängen",
+        "C": "Den Befehl fsck -y /dev/sdb2 sofort ausführen, um das Dateisystem zu reparieren, während es eingehängt ist",
+        "D": "Das Dateisystem mit dem Befehl umount aushängen und anschließend fsck -y /dev/sdb2 ausführen, um das Dateisystem zu überprüfen und zu reparieren"
+      },
+      "antwort": "D",
+      "erklärung": "Die sichere Methode zur Überprüfung und Reparatur eines ext4-Dateisystems besteht darin, es zuerst auszuhängen, um Datenverlust zu vermeiden, und dann fsck -y /dev/sdb2 auszuführen, um Fehler zu erkennen und automatisch zu beheben."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server that fails to boot. After investigation, you suspect the issue is caused by a corrupted ext4 filesystem on the /dev/sdb2 partition. You decide to use the fsck command to diagnose and repair the filesystem.\n\nWhich of the following is the CORRECT sequence of actions to safely perform this task?",
+      "options": {
+        "A": "Reboot the system and let the fsck command run automatically during startup",
+        "B": "Use the resize2fs command to fix the filesystem issues, then remount the filesystem",
+        "C": "Run fsck -y /dev/sdb2 immediately to repair the filesystem while it is mounted",
+        "D": "Unmount the filesystem using the umount command, then run fsck -y /dev/sdb2 to check and repair the filesystem"
+      },
+      "answer": "D",
+      "explanation": "The safe way to check and repair an ext4 filesystem is to unmount it first to avoid data corruption, then run fsck -y /dev/sdb2 to detect and fix any issues automatically."
+    }
+  },
+  {
+    "id": 50,
+    "de": {
+      "frage": "Du verwaltest einen Linux-Server, der das XFS-Dateisystem auf der Partition /dev/sdb2 verwendet. Kürzlich wurde die Partition beschädigt, und du musst das beste Werkzeug auswählen, um das Dateisystem zu reparieren und dabei so viele Daten wie möglich zu erhalten.\n\nWelches der folgenden Werkzeuge solltest du dafür verwenden?",
+      "optionen": {
+        "A": "xfs_copy",
+        "B": "xfs_info",
+        "C": "xfs_metadump",
+        "D": "xfs_repair"
+      },
+      "antwort": "D",
+      "erklärung": "Das Werkzeug xfs_repair wird verwendet, um beschädigte XFS-Dateisysteme zu überprüfen und zu reparieren. Es erkennt und behebt Inkonsistenzen in den Metadaten, ohne die Benutzerdaten zu überschreiben, sofern möglich."
+    },
+    "en": {
+      "question": "You are managing a Linux server that uses the XFS filesystem on the /dev/sdb2 partition. Recently, the partition became corrupted, and you need to evaluate the best tool to repair and recover the filesystem while preserving as much data as possible.\n\nWhich of the following tools should you use to achieve this?",
+      "options": {
+        "A": "xfs_copy",
+        "B": "xfs_info",
+        "C": "xfs_metadump",
+        "D": "xfs_repair"
+      },
+      "answer": "D",
+      "explanation": "The xfs_repair tool is used to check and repair damaged XFS filesystems. It detects and fixes metadata inconsistencies while preserving user data whenever possible."
+    }
+  },
+  {
+    "id": 51,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt das Temporary File System (tmpfs), wie es in Linux verwendet wird, am BESTEN?",
+      "optionen": {
+        "A": "tmpfs speichert Daten im Speicher, was es schnell, aber flüchtig macht.",
+        "B": "tmpfs speichert Daten im Speicher und bewahrt sie über Systemneustarts hinweg.",
+        "C": "tmpfs ist ein festplattenbasiertes Dateisystem, das Swap-Speicher für den virtuellen Speicher organisiert.",
+        "D": "tmpfs ist ein Verzeichnis unter /var/tmp, das Daten während Systemneustarts beibehält."
+      },
+      "antwort": "A",
+      "erklärung": "tmpfs ist ein temporäres Dateisystem, das Daten im Arbeitsspeicher speichert. Dies ermöglicht schnellen Zugriff, aber die Daten gehen beim Neustart verloren, da sie nicht auf der Festplatte gespeichert werden."
+    },
+    "en": {
+      "question": "Which of the following statements BEST describes the Temporary File System (tmpfs) as used in Linux?",
+      "options": {
+        "A": "tmpfs stores data in memory, making it fast but volatile.",
+        "B": "tmpfs stores data in memory and preserves it across system reboots.",
+        "C": "tmpfs is a disk-based filesystem that organizes swap space for virtual memory.",
+        "D": "tmpfs is a directory located at /var/tmp that preserves data during system restarts."
+      },
+      "answer": "A",
+      "explanation": "tmpfs is a temporary filesystem that stores data in system memory. This makes it very fast, but all data is lost when the system reboots since it is not stored on disk."
+    }
+  },
+  {
+    "id": 53,
+    "de": {
+      "frage": "Du hast gerade eine neue Festplatte auf einem Linux-Server installiert. Du möchtest bestätigen, dass das System das neue Laufwerk erkennt und dessen Kapazität sowie Partitionsdetails anzeigen.\n\nWelchen Befehl solltest du verwenden?",
+      "optionen": {
+        "A": "df -h",
+        "B": "hwinfo --short --storage",
+        "C": "lsscsi -s",
+        "D": "lsblk"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl lsblk zeigt alle erkannten Blockgeräte, einschließlich Festplatten und ihrer Partitionen, in einer strukturierten Übersicht mit Kapazität, Gerätenamen und Mountpoints an."
+    },
+    "en": {
+      "question": "You have just installed a new hard disk drive on a Linux server. You want to confirm that the system recognizes the new drive and view its capacity and partition details.\n\nWhich command should you use?",
+      "options": {
+        "A": "df -h",
+        "B": "hwinfo --short --storage",
+        "C": "lsscsi -s",
+        "D": "lsblk"
+      },
+      "answer": "D",
+      "explanation": "The lsblk command lists all recognized block devices, including drives and their partitions, showing their names, sizes, and mount points in a clear hierarchical structure."
+    }
+  },
+  {
+    "id": 54,
+    "de": {
+      "frage": "Ein Speicheradministrator plant die Speicherarchitektur für ein bevorstehendes Projekt, das hauptsächlich mit statischen Daten arbeitet.\n\nWelche Speicherart sollte der Administrator verwenden?",
+      "optionen": {
+        "A": "Block",
+        "B": "Verzeichnis",
+        "C": "Datei",
+        "D": "Objekt"
+      },
+      "antwort": "D",
+      "erklärung": "Objektspeicher eignet sich ideal für statische Daten, da er große Mengen unveränderlicher Informationen effizient speichert und verwaltet. Er bietet Skalierbarkeit, hohe Verfügbarkeit und wird häufig für Backups, Multimedia-Dateien und Archive verwendet."
+    },
+    "en": {
+      "question": "A storage administrator plans out storage architecture for an upcoming project dealing with fairly static data.\n\nWhich type of storage should the administrator use?",
+      "options": {
+        "A": "Block",
+        "B": "Directory",
+        "C": "File",
+        "D": "Object"
+      },
+      "answer": "D",
+      "explanation": "Object storage is ideal for static data because it efficiently stores and manages large amounts of unchanging information. It offers scalability, durability, and is commonly used for backups, media files, and archives."
+    }
+  },
+  {
+    "id": 55,
+    "de": {
+      "frage": "Was ist der wichtigste Vorteil der Verwendung des Logical Volume Managers (LVM) gegenüber der traditionellen Partitionierung in der Linux-Speicherverwaltung?",
+      "optionen": {
+        "A": "LVM ist nur mit externen Speichergeräten kompatibel, die über USB verbunden sind.",
+        "B": "LVM ermöglicht es, Speicherplatz aus mehreren Festplatten zu einem einzigen logischen Laufwerk zusammenzufassen.",
+        "C": "LVM macht das Erstellen von Partitionen auf Speichergeräten überflüssig.",
+        "D": "LVM erhöht automatisch die Geschwindigkeit des Datenzugriffs auf Speichergeräte."
+      },
+      "antwort": "B",
+      "erklärung": "Der Logical Volume Manager (LVM) ermöglicht es, mehrere physische Laufwerke oder Partitionen zu einem einzigen logischen Volumen zu kombinieren. Dadurch können Speicherressourcen flexibel verwaltet und dynamisch erweitert werden, ohne feste Partitionsgrenzen."
+    },
+    "en": {
+      "question": "What is the primary advantage of using Logical Volume Manager (LVM) over traditional partitioning in Linux storage management?",
+      "options": {
+        "A": "LVM is only compatible with external storage devices connected via USB.",
+        "B": "LVM allows storage space to be aggregated from multiple disks into a single logical unit.",
+        "C": "LVM eliminates the need for creating partitions on storage devices.",
+        "D": "LVM automatically increases the speed of data retrieval from storage devices."
+      },
+      "answer": "B",
+      "explanation": "The Logical Volume Manager (LVM) allows combining storage space from multiple physical drives or partitions into a single logical volume. This provides flexible storage management and dynamic resizing without fixed partition boundaries."
+    }
+  },
+  {
+    "id": 56,
+    "de": {
+      "frage": "Du bist Linux-Administrator und verwaltest einen Server, bei dem häufig Probleme mit stark wachsenden Logdateien im Verzeichnis /var/log aufgrund von Anwendungsfehlern auftreten. Kürzlich war das Root-Dateisystem (/) vollständig belegt, wodurch der Server abstürzte.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem künftig zu verhindern?",
+      "optionen": {
+        "A": "Die Größe des Root-Dateisystems (/) erhöhen, um mehr Platz für Logdateien bereitzustellen.",
+        "B": "Alte Logdateien in /var/log regelmäßig löschen, um Speicherplatz auf dem Root-Dateisystem (/) freizugeben.",
+        "C": "Das Logging für Anwendungen deaktivieren, um zu verhindern, dass Logdateien zu groß werden.",
+        "D": "Das Verzeichnis /var auf eine separate Partition verschieben, um dessen Wachstum vom Root-Dateisystem (/) zu isolieren."
+      },
+      "antwort": "D",
+      "erklärung": "Das Verschieben von /var auf eine separate Partition verhindert, dass stark wachsende Logdateien den verfügbaren Speicherplatz des Root-Dateisystems beanspruchen. Dadurch bleibt das System stabil, selbst wenn /var/log stark anwächst."
+    },
+    "en": {
+      "question": "You are a Linux administrator managing a server that frequently experiences issues with log files in /var/log growing unexpectedly large due to application errors. Recently, the root filesystem (/) filled up, causing the server to crash.\n\nWhat is the BEST solution to prevent this issue from happening again?",
+      "options": {
+        "A": "Increase the size of the root filesystem (/) to accommodate the growing log files.",
+        "B": "Delete old log files in /var/log regularly to free up space on the root filesystem (/).",
+        "C": "Disable logging for applications to prevent log files from growing too large.",
+        "D": "Move the /var directory to a separate partition to isolate its growth from the root filesystem (/)."
+      },
+      "answer": "D",
+      "explanation": "Moving the /var directory to a separate partition prevents large log files from consuming space on the root filesystem. This keeps the system stable even if log files in /var/log grow significantly."
+    }
+  },
+  {
+    "id": 57,
+    "de": {
+      "frage": "Welcher Standard wird von Linux-Distributionen verwendet, um die Struktur von Dateien und Verzeichnissen im Linux-System festzulegen?",
+      "optionen": {
+        "A": "Redundant Array of Independent Disks (RAID)",
+        "B": "Filesystem in USErspace (FUSE)",
+        "C": "Filesystem Hierarchy Standard (FHS)",
+        "D": "Storage Area Network (SAN)"
+      },
+      "antwort": "C",
+      "erklärung": "Der Filesystem Hierarchy Standard (FHS) definiert die Struktur und den Zweck von Verzeichnissen und Dateien unter Linux. Er sorgt für Konsistenz zwischen verschiedenen Distributionen und erleichtert Systemadministration und Softwareentwicklung."
+    },
+    "en": {
+      "question": "What is the standard used by Linux distributions to determine the layout of files and folders in the Linux system?",
+      "options": {
+        "A": "Redundant Array of Independent Disks (RAID)",
+        "B": "Filesystem in USErspace (FUSE)",
+        "C": "Filesystem Hierarchy Standard (FHS)",
+        "D": "Storage Area Network (SAN)"
+      },
+      "answer": "C",
+      "explanation": "The Filesystem Hierarchy Standard (FHS) defines the layout and purpose of directories and files in Linux. It ensures consistency across distributions and simplifies system administration and software development."
+    }
+  },
+  {
+    "id": 58,
+    "de": {
+      "frage": "Du bist Linux-Systemadministrator und verwaltest einen Server mit begrenztem Speicherplatz auf dem Boot-Laufwerk. Um die Leistung zu optimieren, entscheidest du dich, den Swap-Bereich auf eine andere Partition auf einem sekundären Laufwerk zu verschieben. Nachdem du eine neue Partition erstellt und den Befehl mkswap ausgeführt hast, welchen Befehl solltest du verwenden, um den neuen Swap-Bereich zu aktivieren?",
+      "optionen": {
+        "A": "swapoff -a",
+        "B": "mkswap -L swap_partition",
+        "C": "swapon -a",
+        "D": "swapon /dev/sdb1"
+      },
+      "antwort": "D",
+      "erklärung": "Nachdem eine neue Swap-Partition mit mkswap eingerichtet wurde, wird sie mit dem Befehl swapon /dev/sdb1 aktiviert. Dadurch steht die neue Partition sofort als Swap-Speicher zur Verfügung."
+    },
+    "en": {
+      "question": "You are a Linux system administrator managing a server with limited storage space on the boot drive. To optimize performance, you decide to move the swap space to a different partition on a secondary drive. After creating a new partition and running the mkswap command, which of the following commands should you use to activate the new swap space?",
+      "options": {
+        "A": "swapoff -a",
+        "B": "mkswap -L swap_partition",
+        "C": "swapon -a",
+        "D": "swapon /dev/sdb1"
+      },
+      "answer": "D",
+      "explanation": "After creating a new swap partition using mkswap, you activate it with the command swapon /dev/sdb1, making the new swap partition available for use immediately."
+    }
+  },
+  {
+    "id": 49,
+    "de": {
+      "frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server, der nicht startet. Nach der Untersuchung vermutest du, dass die Ursache ein beschädigtes ext4-Dateisystem auf der Partition /dev/sdb2 ist. Du entscheidest dich, den Befehl fsck zu verwenden, um das Dateisystem zu diagnostizieren und zu reparieren.\n\nWelche der folgenden Vorgehensweisen ist die RICHTIGE Reihenfolge, um diese Aufgabe sicher durchzuführen?",
+      "optionen": {
+        "A": "Das System neu starten und den fsck-Befehl automatisch beim Start ausführen lassen",
+        "B": "Den Befehl resize2fs verwenden, um Dateisystemprobleme zu beheben, und anschließend das Dateisystem erneut einhängen",
+        "C": "Den Befehl fsck -y /dev/sdb2 sofort ausführen, um das Dateisystem zu reparieren, während es eingehängt ist",
+        "D": "Das Dateisystem mit dem Befehl umount aushängen und anschließend fsck -y /dev/sdb2 ausführen, um das Dateisystem zu überprüfen und zu reparieren"
+      },
+      "antwort": "D",
+      "erklärung": "Die sichere Methode zur Überprüfung und Reparatur eines ext4-Dateisystems besteht darin, es zuerst auszuhängen, um Datenverlust zu vermeiden, und dann fsck -y /dev/sdb2 auszuführen, um Fehler zu erkennen und automatisch zu beheben."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server that fails to boot. After investigation, you suspect the issue is caused by a corrupted ext4 filesystem on the /dev/sdb2 partition. You decide to use the fsck command to diagnose and repair the filesystem.\n\nWhich of the following is the CORRECT sequence of actions to safely perform this task?",
+      "options": {
+        "A": "Reboot the system and let the fsck command run automatically during startup",
+        "B": "Use the resize2fs command to fix the filesystem issues, then remount the filesystem",
+        "C": "Run fsck -y /dev/sdb2 immediately to repair the filesystem while it is mounted",
+        "D": "Unmount the filesystem using the umount command, then run fsck -y /dev/sdb2 to check and repair the filesystem"
+      },
+      "answer": "D",
+      "explanation": "The safe way to check and repair an ext4 filesystem is to unmount it first to avoid data corruption, then run fsck -y /dev/sdb2 to detect and fix any issues automatically."
+    }
+  },
+  {
+    "id": 50,
+    "de": {
+      "frage": "Du verwaltest einen Linux-Server, der das XFS-Dateisystem auf der Partition /dev/sdb2 verwendet. Kürzlich wurde die Partition beschädigt, und du musst das beste Werkzeug auswählen, um das Dateisystem zu reparieren und dabei so viele Daten wie möglich zu erhalten.\n\nWelches der folgenden Werkzeuge solltest du dafür verwenden?",
+      "optionen": {
+        "A": "xfs_copy",
+        "B": "xfs_info",
+        "C": "xfs_metadump",
+        "D": "xfs_repair"
+      },
+      "antwort": "D",
+      "erklärung": "Das Werkzeug xfs_repair wird verwendet, um beschädigte XFS-Dateisysteme zu überprüfen und zu reparieren. Es erkennt und behebt Inkonsistenzen in den Metadaten, ohne die Benutzerdaten zu überschreiben, sofern möglich."
+    },
+    "en": {
+      "question": "You are managing a Linux server that uses the XFS filesystem on the /dev/sdb2 partition. Recently, the partition became corrupted, and you need to evaluate the best tool to repair and recover the filesystem while preserving as much data as possible.\n\nWhich of the following tools should you use to achieve this?",
+      "options": {
+        "A": "xfs_copy",
+        "B": "xfs_info",
+        "C": "xfs_metadump",
+        "D": "xfs_repair"
+      },
+      "answer": "D",
+      "explanation": "The xfs_repair tool is used to check and repair damaged XFS filesystems. It detects and fixes metadata inconsistencies while preserving user data whenever possible."
+    }
+  },
+  {
+    "id": 51,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt das Temporary File System (tmpfs), wie es in Linux verwendet wird, am BESTEN?",
+      "optionen": {
+        "A": "tmpfs speichert Daten im Speicher, was es schnell, aber flüchtig macht.",
+        "B": "tmpfs speichert Daten im Speicher und bewahrt sie über Systemneustarts hinweg.",
+        "C": "tmpfs ist ein festplattenbasiertes Dateisystem, das Swap-Speicher für den virtuellen Speicher organisiert.",
+        "D": "tmpfs ist ein Verzeichnis unter /var/tmp, das Daten während Systemneustarts beibehält."
+      },
+      "antwort": "A",
+      "erklärung": "tmpfs ist ein temporäres Dateisystem, das Daten im Arbeitsspeicher speichert. Dies ermöglicht schnellen Zugriff, aber die Daten gehen beim Neustart verloren, da sie nicht auf der Festplatte gespeichert werden."
+    },
+    "en": {
+      "question": "Which of the following statements BEST describes the Temporary File System (tmpfs) as used in Linux?",
+      "options": {
+        "A": "tmpfs stores data in memory, making it fast but volatile.",
+        "B": "tmpfs stores data in memory and preserves it across system reboots.",
+        "C": "tmpfs is a disk-based filesystem that organizes swap space for virtual memory.",
+        "D": "tmpfs is a directory located at /var/tmp that preserves data during system restarts."
+      },
+      "answer": "A",
+      "explanation": "tmpfs is a temporary filesystem that stores data in system memory. This makes it very fast, but all data is lost when the system reboots since it is not stored on disk."
+    }
+  },
+  {
+    "id": 52,
+    "de": {
+      "frage": "Ein Projektmanager koordiniert die Hardwarebeschaffung für den Aufbau einer neuen Anwendung. Der Speicher soll schneller sein als herkömmlicher Serverspeicher, jedoch nicht die teuerste Option darstellen.\n\nWelche Lösung wäre ideal?",
+      "optionen": {
+        "A": "SATA",
+        "B": "SSD",
+        "C": "SCSI",
+        "D": "SAS"
+      },
+      "antwort": "D",
+      "erklärung": "SAS (Serial Attached SCSI) bietet eine höhere Leistung und Zuverlässigkeit als SATA, ist aber günstiger als High-End-Speicherlösungen. Daher ist es eine ausgewogene Wahl zwischen Geschwindigkeit und Kosten."
+    },
+    "en": {
+      "question": "A project manager coordinates hardware procurement for an upcoming application build-out. The storage needs to be faster than normal server storage, but the manager also does not want to buy the most expensive storage.\n\nWhich solution would be ideal?",
+      "options": {
+        "A": "SATA",
+        "B": "SSD",
+        "C": "SCSI",
+        "D": "SAS"
+      },
+      "answer": "D",
+      "explanation": "SAS (Serial Attached SCSI) provides faster performance and better reliability than SATA but at a lower cost than high-end storage solutions. It offers a good balance between speed and affordability."
+    }
+  },
+  {
+    "id": 53,
+    "de": {
+      "frage": "Du hast gerade eine neue Festplatte auf einem Linux-Server installiert. Du möchtest bestätigen, dass das System das neue Laufwerk erkennt und dessen Kapazität sowie Partitionsdetails anzeigen.\n\nWelchen Befehl solltest du verwenden?",
+      "optionen": {
+        "A": "df -h",
+        "B": "hwinfo --short --storage",
+        "C": "lsscsi -s",
+        "D": "lsblk"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl lsblk zeigt alle erkannten Blockgeräte, einschließlich Festplatten und ihrer Partitionen, in einer strukturierten Übersicht mit Kapazität, Gerätenamen und Mountpoints an."
+    },
+    "en": {
+      "question": "You have just installed a new hard disk drive on a Linux server. You want to confirm that the system recognizes the new drive and view its capacity and partition details.\n\nWhich command should you use?",
+      "options": {
+        "A": "df -h",
+        "B": "hwinfo --short --storage",
+        "C": "lsscsi -s",
+        "D": "lsblk"
+      },
+      "answer": "D",
+      "explanation": "The lsblk command lists all recognized block devices, including drives and their partitions, showing their names, sizes, and mount points in a clear hierarchical structure."
+    }
+  },
+  {
+    "id": 54,
+    "de": {
+      "frage": "Ein Speicheradministrator plant die Speicherarchitektur für ein bevorstehendes Projekt, das hauptsächlich mit statischen Daten arbeitet.\n\nWelche Speicherart sollte der Administrator verwenden?",
+      "optionen": {
+        "A": "Block",
+        "B": "Verzeichnis",
+        "C": "Datei",
+        "D": "Objekt"
+      },
+      "antwort": "D",
+      "erklärung": "Objektspeicher eignet sich ideal für statische Daten, da er große Mengen unveränderlicher Informationen effizient speichert und verwaltet. Er bietet Skalierbarkeit, hohe Verfügbarkeit und wird häufig für Backups, Multimedia-Dateien und Archive verwendet."
+    },
+    "en": {
+      "question": "A storage administrator plans out storage architecture for an upcoming project dealing with fairly static data.\n\nWhich type of storage should the administrator use?",
+      "options": {
+        "A": "Block",
+        "B": "Directory",
+        "C": "File",
+        "D": "Object"
+      },
+      "answer": "D",
+      "explanation": "Object storage is ideal for static data because it efficiently stores and manages large amounts of unchanging information. It offers scalability, durability, and is commonly used for backups, media files, and archives."
+    }
+  },
+  {
+    "id": 55,
+    "de": {
+      "frage": "Was ist der wichtigste Vorteil der Verwendung des Logical Volume Managers (LVM) gegenüber der traditionellen Partitionierung in der Linux-Speicherverwaltung?",
+      "optionen": {
+        "A": "LVM ist nur mit externen Speichergeräten kompatibel, die über USB verbunden sind.",
+        "B": "LVM ermöglicht es, Speicherplatz aus mehreren Festplatten zu einem einzigen logischen Laufwerk zusammenzufassen.",
+        "C": "LVM macht das Erstellen von Partitionen auf Speichergeräten überflüssig.",
+        "D": "LVM erhöht automatisch die Geschwindigkeit des Datenzugriffs auf Speichergeräte."
+      },
+      "antwort": "B",
+      "erklärung": "Der Logical Volume Manager (LVM) ermöglicht es, mehrere physische Laufwerke oder Partitionen zu einem einzigen logischen Volumen zu kombinieren. Dadurch können Speicherressourcen flexibel verwaltet und dynamisch erweitert werden, ohne feste Partitionsgrenzen."
+    },
+    "en": {
+      "question": "What is the primary advantage of using Logical Volume Manager (LVM) over traditional partitioning in Linux storage management?",
+      "options": {
+        "A": "LVM is only compatible with external storage devices connected via USB.",
+        "B": "LVM allows storage space to be aggregated from multiple disks into a single logical unit.",
+        "C": "LVM eliminates the need for creating partitions on storage devices.",
+        "D": "LVM automatically increases the speed of data retrieval from storage devices."
+      },
+      "answer": "B",
+      "explanation": "The Logical Volume Manager (LVM) allows combining storage space from multiple physical drives or partitions into a single logical volume. This provides flexible storage management and dynamic resizing without fixed partition boundaries."
+    }
+  },
+  {
+    "id": 56,
+    "de": {
+      "frage": "Du bist Linux-Administrator und verwaltest einen Server, bei dem häufig Probleme mit stark wachsenden Logdateien im Verzeichnis /var/log aufgrund von Anwendungsfehlern auftreten. Kürzlich war das Root-Dateisystem (/) vollständig belegt, wodurch der Server abstürzte.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem künftig zu verhindern?",
+      "optionen": {
+        "A": "Die Größe des Root-Dateisystems (/) erhöhen, um mehr Platz für Logdateien bereitzustellen.",
+        "B": "Alte Logdateien in /var/log regelmäßig löschen, um Speicherplatz auf dem Root-Dateisystem (/) freizugeben.",
+        "C": "Das Logging für Anwendungen deaktivieren, um zu verhindern, dass Logdateien zu groß werden.",
+        "D": "Das Verzeichnis /var auf eine separate Partition verschieben, um dessen Wachstum vom Root-Dateisystem (/) zu isolieren."
+      },
+      "antwort": "D",
+      "erklärung": "Das Verschieben von /var auf eine separate Partition verhindert, dass stark wachsende Logdateien den verfügbaren Speicherplatz des Root-Dateisystems beanspruchen. Dadurch bleibt das System stabil, selbst wenn /var/log stark anwächst."
+    },
+    "en": {
+      "question": "You are a Linux administrator managing a server that frequently experiences issues with log files in /var/log growing unexpectedly large due to application errors. Recently, the root filesystem (/) filled up, causing the server to crash.\n\nWhat is the BEST solution to prevent this issue from happening again?",
+      "options": {
+        "A": "Increase the size of the root filesystem (/) to accommodate the growing log files.",
+        "B": "Delete old log files in /var/log regularly to free up space on the root filesystem (/).",
+        "C": "Disable logging for applications to prevent log files from growing too large.",
+        "D": "Move the /var directory to a separate partition to isolate its growth from the root filesystem (/)."
+      },
+      "answer": "D",
+      "explanation": "Moving the /var directory to a separate partition prevents large log files from consuming space on the root filesystem. This keeps the system stable even if log files in /var/log grow significantly."
+    }
+  },
+  {
+    "id": 57,
+    "de": {
+      "frage": "Welcher Standard wird von Linux-Distributionen verwendet, um die Struktur von Dateien und Verzeichnissen im Linux-System festzulegen?",
+      "optionen": {
+        "A": "Redundant Array of Independent Disks (RAID)",
+        "B": "Filesystem in USErspace (FUSE)",
+        "C": "Filesystem Hierarchy Standard (FHS)",
+        "D": "Storage Area Network (SAN)"
+      },
+      "antwort": "C",
+      "erklärung": "Der Filesystem Hierarchy Standard (FHS) definiert die Struktur und den Zweck von Verzeichnissen und Dateien unter Linux. Er sorgt für Konsistenz zwischen verschiedenen Distributionen und erleichtert Systemadministration und Softwareentwicklung."
+    },
+    "en": {
+      "question": "What is the standard used by Linux distributions to determine the layout of files and folders in the Linux system?",
+      "options": {
+        "A": "Redundant Array of Independent Disks (RAID)",
+        "B": "Filesystem in USErspace (FUSE)",
+        "C": "Filesystem Hierarchy Standard (FHS)",
+        "D": "Storage Area Network (SAN)"
+      },
+      "answer": "C",
+      "explanation": "The Filesystem Hierarchy Standard (FHS) defines the layout and purpose of directories and files in Linux. It ensures consistency across distributions and simplifies system administration and software development."
+    }
+  },
+  {
+    "id": 58,
+    "de": {
+      "frage": "Du bist Linux-Systemadministrator und verwaltest einen Server mit begrenztem Speicherplatz auf dem Boot-Laufwerk. Um die Leistung zu optimieren, entscheidest du dich, den Swap-Bereich auf eine andere Partition auf einem sekundären Laufwerk zu verschieben. Nachdem du eine neue Partition erstellt und den Befehl mkswap ausgeführt hast, welchen Befehl solltest du verwenden, um den neuen Swap-Bereich zu aktivieren?",
+      "optionen": {
+        "A": "swapoff -a",
+        "B": "mkswap -L swap_partition",
+        "C": "swapon -a",
+        "D": "swapon /dev/sdb1"
+      },
+      "antwort": "D",
+      "erklärung": "Nachdem eine neue Swap-Partition mit mkswap eingerichtet wurde, wird sie mit dem Befehl swapon /dev/sdb1 aktiviert. Dadurch steht die neue Partition sofort als Swap-Speicher zur Verfügung."
+    },
+    "en": {
+      "question": "You are a Linux system administrator managing a server with limited storage space on the boot drive. To optimize performance, you decide to move the swap space to a different partition on a secondary drive. After creating a new partition and running the mkswap command, which of the following commands should you use to activate the new swap space?",
+      "options": {
+        "A": "swapoff -a",
+        "B": "mkswap -L swap_partition",
+        "C": "swapon -a",
+        "D": "swapon /dev/sdb1"
+      },
+      "answer": "D",
+      "explanation": "After creating a new swap partition using mkswap, you activate it with the command swapon /dev/sdb1, making the new swap partition available for use immediately."
+    }
+  },
+  {
+    "id": 59,
+    "de": {
+      "frage": "Ein Systemadministrator verwaltet einen Linux-Server und erhält Berichte, dass Benutzer keine neuen Dateien mehr in ihren Home-Verzeichnissen erstellen können, obwohl auf der /home-Partition noch Speicherplatz verfügbar ist. Der Administrator vermutet eine Erschöpfung der Inodes als Ursache. Nach dem Ausführen des Befehls df -i bestätigt sich, dass die Inode-Auslastung für die /home-Partition bei 100 % liegt.\n\nWas sollte der Administrator tun, um das Problem zu analysieren und zu beheben?",
+      "optionen": {
+        "A": "Den Befehl du --inodes -d /home verwenden, um Verzeichnisse mit hohem Inode-Verbrauch zu identifizieren und unnötige kleine Dateien zu löschen.",
+        "B": "Den Befehl resize2fs verwenden, um die Anzahl der Inodes für die /home-Partition zu erhöhen.",
+        "C": "Den Befehl growpart verwenden, um die /home-Partition zu erweitern und deren Inode-Anzahl zu erhöhen.",
+        "D": "Den Befehl tar verwenden, um das gesamte /home-Verzeichnis zu archivieren und zu komprimieren, um Inodes freizugeben."
+      },
+      "antwort": "A",
+      "erklärung": "Wenn die Inodes einer Partition erschöpft sind, müssen unnötige kleine Dateien identifiziert und gelöscht werden. Der Befehl du --inodes -d /home hilft, Verzeichnisse mit hohem Inode-Verbrauch zu erkennen, sodass gezielt bereinigt werden kann."
+    },
+    "en": {
+      "question": "A system administrator is managing a Linux server and receives reports that users are unable to create new files in their home directories, even though the /home partition still has available storage space. The administrator suspects inode exhaustion as the root cause. After running the df -i command, they confirm that the inode usage for the /home partition is at 100%.\n\nWhat should the administrator do to analyze and resolve the issue?",
+      "options": {
+        "A": "Use the du --inodes -d /home command to identify directories consuming the most inodes and delete unnecessary small files.",
+        "B": "Use the resize2fs command to increase the inode count for the /home partition.",
+        "C": "Use the growpart command to expand the /home partition and increase its inode count.",
+        "D": "Use the tar command to archive and compress the entire /home directory to free up inodes."
+      },
+      "answer": "A",
+      "explanation": "When a partition runs out of inodes, new files cannot be created even if space is available. The du --inodes -d /home command helps locate directories consuming excessive inodes so unnecessary small files can be identified and removed."
+    }
+  },
+  {
+    "id": 60,
+    "de": {
+      "frage": "Ein mittelständisches Unternehmen richtet ein Network-Attached Storage (NAS)-System ein, um Dateien unter seinen Mitarbeitern zu speichern und gemeinsam zu nutzen. Das Unternehmen verwendet sowohl Windows- als auch Linux-Systeme für Server und Clients.\n\nWelches Protokoll sollte das Unternehmen auf dem NAS konfigurieren, um optimale Dateifreigabeleistung und Kompatibilität zwischen allen Systemen sicherzustellen?",
+      "optionen": {
+        "A": "CIFS (Common Internet File System)",
+        "B": "SMB (Server Message Block)",
+        "C": "NFS (Network File System)",
+        "D": "FTP (File Transfer Protocol)"
+      },
+      "antwort": "B",
+      "erklärung": "Das SMB-Protokoll (Server Message Block) ist der Standard für die Dateifreigabe unter Windows und wird auch von Linux über Samba unterstützt. Es bietet hohe Leistung und ermöglicht die nahtlose Zusammenarbeit zwischen unterschiedlichen Betriebssystemen."
+    },
+    "en": {
+      "question": "A medium-sized company is setting up a Network-Attached Storage (NAS) device to store and share files among its employees. The company uses a mix of Windows and Linux systems for both servers and client machines.\n\nWhich protocol should the company configure on the NAS to ensure optimal file sharing performance and compatibility across all systems?",
+      "options": {
+        "A": "CIFS (Common Internet File System)",
+        "B": "SMB (Server Message Block)",
+        "C": "NFS (Network File System)",
+        "D": "FTP (File Transfer Protocol)"
+      },
+      "answer": "B",
+      "explanation": "The SMB (Server Message Block) protocol is the standard for Windows file sharing and is also supported by Linux systems through Samba. It provides optimal performance and interoperability between different operating systems."
+    }
+  },
+  {
+    "id": 61,
+    "de": {
+      "frage": "Ein Servertechniker hat eine Festplatte zu einem Server hinzugefügt und muss nun die Speicherdatenträger und eventuelle Partitionsänderungen erneut erkennen lassen.\n\nWelches Werkzeug sollte der Techniker dafür verwenden?",
+      "optionen": {
+        "A": "parted",
+        "B": "fdisk",
+        "C": "blkid",
+        "D": "partprobe"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl partprobe weist den Kernel an, die Partitionstabellen neu einzulesen, damit Änderungen an den Datenträgern erkannt werden, ohne dass ein Neustart erforderlich ist."
+    },
+    "en": {
+      "question": "A server engineer added a hard drive to a server and is now at the stage where the engineer needs to redetect the storage disks and any partition changes.\n\nWhat should the engineer use to carry this out?",
+      "options": {
+        "A": "parted",
+        "B": "fdisk",
+        "C": "blkid",
+        "D": "partprobe"
+      },
+      "answer": "D",
+      "explanation": "The partprobe command instructs the kernel to re-read the partition tables so that new disks or changes are detected without requiring a reboot."
+    }
+  },
+  {
+    "id": 62,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Beziehung zwischen den drei Konfigurationsebenen des Logical Volume Managers (LVM) am BESTEN?",
+      "optionen": {
+        "A": "Logische Volumes (LVs) werden zuerst erstellt und anschließend in Volume Groups (VGs) aufgeteilt, die wiederum in Physical Volumes (PVs) unterteilt werden.",
+        "B": "Logische Volumes (LVs) werden direkt auf Physical Volumes (PVs) erstellt, ohne dass Volume Groups (VGs) benötigt werden.",
+        "C": "Volume Groups (VGs) werden unabhängig erstellt und direkt auf Logische Volumes (LVs) abgebildet, ohne Physical Volumes (PVs) zu verwenden.",
+        "D": "Physical Volumes (PVs) werden kombiniert, um Volume Groups (VGs) zu bilden, die anschließend in Logische Volumes (LVs) unterteilt werden, um den Speicheranforderungen zu entsprechen."
+      },
+      "antwort": "D",
+      "erklärung": "Beim Logical Volume Manager (LVM) werden zunächst Physical Volumes (PVs) erstellt, aus denen Volume Groups (VGs) gebildet werden. Diese Gruppen werden dann in Logische Volumes (LVs) unterteilt, die wie Partitionen verwendet werden können. Diese Schichtung bietet Flexibilität und einfache Speichererweiterung."
+    },
+    "en": {
+      "question": "Which of the following BEST describes the relationship between the three configuration layers of Logical Volume Manager (LVM)?",
+      "options": {
+        "A": "Logical Volumes (LVs) are created first, and then they are divided into Volume Groups (VGs), which are further split into Physical Volumes (PVs).",
+        "B": "Logical Volumes (LVs) are directly created on Physical Volumes (PVs) without the need for Volume Groups (VGs).",
+        "C": "Volume Groups (VGs) are created independently and then mapped directly to Logical Volumes (LVs) without requiring Physical Volumes (PVs).",
+        "D": "Physical Volumes (PVs) are combined to form Volume Groups (VGs), which are then divided into Logical Volumes (LVs) to meet storage needs."
+      },
+      "answer": "D",
+      "explanation": "In Logical Volume Manager (LVM), Physical Volumes (PVs) are combined to create Volume Groups (VGs), which are then divided into Logical Volumes (LVs). This layered structure provides flexibility and scalability in storage management."
+    }
+  },
+  {
+    "id": 63,
+    "de": {
+      "frage": "Ein Benutzer meldet, dass er keine Dateien mehr in seinem Home-Verzeichnis auf einem Linux-Server speichern kann, obwohl scheinbar ausreichend Speicherplatz verfügbar ist. Du vermutest, dass das Problem auf eine Erschöpfung der Inodes zurückzuführen ist.\n\nWelchen Befehl würdest du verwenden, um deine Vermutung zu bestätigen?",
+      "optionen": {
+        "A": "tar -cvf archive.tar /home",
+        "B": "df -i",
+        "C": "lsblk",
+        "D": "du /home"
+      },
+      "antwort": "B",
+      "erklärung": "Mit dem Befehl df -i werden die Inode-Nutzung und -Auslastung aller Dateisysteme angezeigt. Wenn der Inode-Wert 100 % erreicht, können keine neuen Dateien mehr erstellt werden, auch wenn noch Speicherplatz vorhanden ist."
+    },
+    "en": {
+      "question": "A user reports that they are unable to save files to their home directory on a Linux server, even though there appears to be sufficient storage space available. You suspect that the issue might be related to inode exhaustion.\n\nWhich of the following commands would you use to confirm your suspicion?",
+      "options": {
+        "A": "tar -cvf archive.tar /home",
+        "B": "df -i",
+        "C": "lsblk",
+        "D": "du /home"
+      },
+      "answer": "B",
+      "explanation": "The df -i command displays inode usage for mounted filesystems. If inode usage is at 100%, new files cannot be created even if there is free disk space."
+    }
+  },
+  {
+    "id": 64,
+    "de": {
+      "frage": "Ein kleines Unternehmen muss einen Server einrichten, um wichtige Finanzdaten zu speichern. Der Server soll Datenredundanz priorisieren, damit bei einem Festplattenausfall keine Daten verloren gehen. Die Leistung ist zweitrangig, und es stehen nur wenige Festplatten zur Verfügung.\n\nWelcher RAID-Standard wäre nach Analyse der Anforderungen am BESTEN geeignet?",
+      "optionen": {
+        "A": "RAID 0",
+        "B": "RAID 5",
+        "C": "RAID 1",
+        "D": "RAID 0+1"
+      },
+      "antwort": "C",
+      "erklärung": "RAID 1 (Mirroring) speichert identische Kopien der Daten auf zwei Laufwerken, was eine hohe Datenredundanz bietet. Es schützt vollständig vor Datenverlust durch den Ausfall einer Festplatte und erfordert nur zwei Laufwerke – ideal für kleine Umgebungen mit begrenzten Ressourcen."
+    },
+    "en": {
+      "question": "A small business needs to set up a server to store critical financial records. The server must prioritize data redundancy to ensure no data is lost in the event of a disk failure. Performance is a secondary concern, and the business has a limited number of disks available.\n\nAfter analyzing the requirements, which RAID standard would be the MOST appropriate choice?",
+      "options": {
+        "A": "RAID 0",
+        "B": "RAID 5",
+        "C": "RAID 1",
+        "D": "RAID 0+1"
+      },
+      "answer": "C",
+      "explanation": "RAID 1 (mirroring) stores identical copies of data on two drives, providing strong data redundancy. It fully protects against data loss from a single disk failure and requires only two drives, making it ideal for small setups with limited resources."
+    }
+  },
+  {
+    "id": 65,
+    "de": {
+      "frage": "Ein Projektmanager koordiniert die Hardwarebeschaffung für den Aufbau einer neuen Anwendung. Der Speicher soll schneller sein als herkömmlicher Serverspeicher, jedoch nicht die teuerste Option darstellen.\n\nWelche Lösung wäre ideal?",
+      "optionen": {
+        "A": "SATA",
+        "B": "SSD",
+        "C": "SCSI",
+        "D": "SAS"
+      },
+      "antwort": "C",
+      "erklärung": "SAS (Serial Attached SCSI) bietet eine höhere Leistung und Zuverlässigkeit als SATA, ist aber wesentlich günstiger als SSDs oder High-End-Speicherlösungen. Damit stellt SAS eine gute Balance zwischen Leistung und Kosten dar."
+    },
+    "en": {
+      "question": "A project manager coordinates hardware procurement for an upcoming application build-out. The storage needs to be faster than normal server storage, but the manager also does not want to buy the most expensive storage.\n\nWhich solution would be ideal?",
+      "options": {
+        "A": "SATA",
+        "B": "SSD",
+        "C": "SCSI",
+        "D": "SAS"
+      },
+      "answer": "C",
+      "explanation": "SAS (Serial Attached SCSI) provides better speed and reliability than SATA while being more affordable than SSDs or enterprise-grade storage, making it an ideal balance of performance and cost."
+    }
+  },
+  {
+    "id": 66,
+    "de": {
+      "frage": "Du verwaltest ein Linux-System, das den Logical Volume Manager (LVM) zur Speicherverwaltung nutzt. Die aktuelle Volume Group (VG) hat eine Gesamtkapazität von 8 TB, die aus zwei 4 TB großen Physical Volumes (PVs) besteht. Das darin enthaltene Logical Volume (LV) ist fast voll, und du musst den Speicher erweitern, ohne die Benutzer zu unterbrechen.\n\nWas ist die richtige Reihenfolge der Schritte, um die Speicherkapazität zu vergrößern?",
+      "optionen": {
+        "A": "Ein neues Logical Volume (LV) direkt auf der neuen 4 TB-Festplatte erstellen und separat einhängen, um die vorhandene Volume Group (VG) nicht zu ändern.",
+        "B": "Das bestehende Logical Volume (LV) löschen, es mit größerer Größe neu erstellen und die Daten aus einem Backup wiederherstellen.",
+        "C": "Ein neues 4 TB Physical Volume (PV) hinzufügen und es direkt dem Logical Volume (LV) zuweisen, ohne die Volume Group (VG) zu ändern.",
+        "D": "Ein neues 4 TB Physical Volume (PV) hinzufügen, die Volume Group (VG) erweitern, um das neue PV einzubeziehen, und dann den zusätzlichen Speicher dem Logical Volume (LV) zuweisen."
+      },
+      "antwort": "D",
+      "erklärung": "Um ein Logical Volume in LVM zu vergrößern, wird zunächst ein neues Physical Volume (PV) erstellt, dann die Volume Group (VG) mit vgextend um dieses PV erweitert. Anschließend wird mit lvextend das Logical Volume vergrößert und das Dateisystem mit resizefs oder xfs_growfs angepasst, ohne die Benutzeraktivität zu stören."
+    },
+    "en": {
+      "question": "You are managing a Linux system that uses Logical Volume Manager (LVM) for storage. The current Volume Group (VG) has a total capacity of 8 TB, created from two 4 TB Physical Volumes (PVs). The Logical Volume (LV) within this VG is almost full, and you need to add more storage without interrupting users.\n\nWhat is the correct sequence of actions to expand the storage capacity?",
+      "options": {
+        "A": "Create a new Logical Volume (LV) directly on the new 4 TB disk and mount it separately to avoid modifying the existing Volume Group (VG).",
+        "B": "Delete the existing Logical Volume (LV), recreate it with a larger size, and restore the data from a backup.",
+        "C": "Add a new 4 TB Physical Volume (PV) and directly allocate it to the Logical Volume (LV) without modifying the Volume Group (VG).",
+        "D": "Add a new 4 TB Physical Volume (PV), extend the Volume Group (VG) to include the new PV, and then allocate the additional space to the Logical Volume (LV)."
+      },
+      "answer": "D",
+      "explanation": "To expand an LVM Logical Volume, first create a new Physical Volume (PV), then extend the Volume Group (VG) using vgextend to include the new PV. Finally, use lvextend to increase the Logical Volume size and resize the filesystem with resize2fs or xfs_growfs, all without service interruption."
+    }
+  },
+  {
+    "id": 67,
+    "de": {
+      "frage": "Welcher Befehl kann verwendet werden, um die vom System erkannten verfügbaren Partitionen und Mounts unter Linux anzuzeigen?",
+      "optionen": {
+        "A": "cat /proc/partitions",
+        "B": "ls /projects",
+        "C": "df -h /projects",
+        "D": "du -h /projects"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl cat /proc/partitions zeigt eine Liste aller vom Kernel erkannten Festplatten und Partitionen an. Damit lässt sich überprüfen, welche Partitionen dem System derzeit bekannt sind."
+    },
+    "en": {
+      "question": "Which command can be used to view the system's knowledge of available partitions and mounts in Linux?",
+      "options": {
+        "A": "cat /proc/partitions",
+        "B": "ls /projects",
+        "C": "df -h /projects",
+        "D": "du -h /projects"
+      },
+      "answer": "A",
+      "explanation": "The cat /proc/partitions command displays a list of all partitions and disks recognized by the kernel, allowing administrators to verify the system’s current understanding of storage devices."
+    }
+  },
+  {
+    "id": 68,
+    "de": {
+      "frage": "Du bist Linux-Administrator und sollst mit dem Dienstprogramm parted auf einer GPT-formatierten Festplatte /dev/sdd eine neue primäre Partition mit einer Größe von 5 GB erstellen. Die Partition soll das ext4-Dateisystem verwenden und bei 1 MB beginnen.\n\nWelche Befehlsreihenfolge solltest du verwenden, um diese Aufgabe auszuführen?",
+      "optionen": {
+        "A": "parted /dev/sdd, mkpart primary ext4 1MB 5000MB, mklabel gpt, quit",
+        "B": "parted /dev/sdd, mkpart primary 1MB 5000MB, mklabel gpt, quit",
+        "C": "parted /dev/sdd, mklabel gpt, mkpart primary ext4 1MB 5000MB, quit",
+        "D": "parted /dev/sdd, mklabel gpt, mkpart ext4 primary 1MB 5000MB, quit"
+      },
+      "antwort": "C",
+      "erklärung": "Die korrekte Reihenfolge ist, zunächst eine GPT-Partitionstabelle mit mklabel gpt zu erstellen, und dann die Partition mit mkpart primary ext4 1MB 5000MB anzulegen. Dadurch wird eine 5 GB große ext4-Partition auf /dev/sdd ab dem Offset von 1 MB erstellt."
+    },
+    "en": {
+      "question": "You are a Linux administrator tasked with creating a new 5 GB primary partition on a GPT-formatted disk /dev/sdd using the parted utility. The partition should use the ext4 filesystem and start at 1 MB.\n\nWhat sequence of commands should you use to accomplish this task?",
+      "options": {
+        "A": "parted /dev/sdd, mkpart primary ext4 1MB 5000MB, mklabel gpt, quit",
+        "B": "parted /dev/sdd, mkpart primary 1MB 5000MB, mklabel gpt, quit",
+        "C": "parted /dev/sdd, mklabel gpt, mkpart primary ext4 1MB 5000MB, quit",
+        "D": "parted /dev/sdd, mklabel gpt, mkpart ext4 primary 1MB 5000MB, quit"
+      },
+      "answer": "C",
+      "explanation": "The correct sequence is to first create a GPT partition table with mklabel gpt, then create the 5 GB ext4 partition starting at 1 MB using mkpart primary ext4 1MB 5000MB. This ensures the disk is properly initialized before partitioning."
+    }
+  },
+  {
+    "id": 69,
+    "de": {
+      "frage": "Welchen Linux-Befehl würdest du verwenden, um zu bestätigen, dass eine neu installierte Festplatte vom System erkannt wurde, und um deren Partitionen anzuzeigen?",
+      "optionen": {
+        "A": "hwinfo --short --storage",
+        "B": "lsscsi -s",
+        "C": "lsblk",
+        "D": "fdisk -l"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl fdisk -l listet alle vom System erkannten Festplatten und deren Partitionstabellen auf. Damit lässt sich überprüfen, ob ein neues Laufwerk verfügbar ist und korrekt erkannt wurde."
+    },
+    "en": {
+      "question": "Which Linux command would you use to confirm that a newly installed hard disk drive is recognized by the system and to view its partitions?",
+      "options": {
+        "A": "hwinfo --short --storage",
+        "B": "lsscsi -s",
+        "C": "lsblk",
+        "D": "fdisk -l"
+      },
+      "answer": "D",
+      "explanation": "The fdisk -l command lists all disks and their partition tables detected by the system, allowing administrators to confirm that a new disk has been recognized correctly."
+    }
+  },
+  {
+    "id": 70,
+    "de": {
+      "frage": "Was ist der Hauptzweck des fstrim-Befehls in Linux?",
+      "optionen": {
+        "A": "Ein Remote-Dateisystem über NFS- oder SMB-Protokolle einzuhängen.",
+        "B": "Informationen über logische Volumes in einem Speichersystem anzuzeigen.",
+        "C": "Gelöschte Daten proaktiv von Solid-State-Drives (SSDs) zu entfernen und Platz für neue Daten freizugeben.",
+        "D": "Die Partitionstabelleninformationen im System zu aktualisieren."
+      },
+      "antwort": "C",
+      "erklärung": "Der fstrim-Befehl führt einen TRIM-Befehl auf SSDs aus, um gelöschte Datenblöcke freizugeben. Dies ermöglicht es der SSD, diese Bereiche für neue Daten zu verwenden und die Leistung zu optimieren."
+    },
+    "en": {
+      "question": "What is the primary purpose of the fstrim command in Linux?",
+      "options": {
+        "A": "To mount a remote filesystem using NFS or SMB protocols.",
+        "B": "To display information about logical volumes in a storage system.",
+        "C": "To proactively remove deleted data from solid-state drives (SSDs) and free up space for new data.",
+        "D": "To refresh the partition table information in the system."
+      },
+      "answer": "C",
+      "explanation": "The fstrim command issues TRIM commands to SSDs to release deleted data blocks, allowing the SSD to reuse those areas for new data and maintain optimal performance."
+    }
+  },
+  {
+    "id": 71,
+    "de": {
+      "frage": "Welcher der folgenden Befehle initialisiert ein Physical Volume?",
+      "optionen": {
+        "A": "pvscan",
+        "B": "lvcreate",
+        "C": "vgcreate",
+        "D": "pvcreate"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl pvcreate initialisiert ein Laufwerk oder eine Partition als Physical Volume (PV) für die Verwendung mit dem Logical Volume Manager (LVM). Damit wird das Gerät für die Einbindung in eine Volume Group vorbereitet."
+    },
+    "en": {
+      "question": "Which of the following commands initializes a physical volume?",
+      "options": {
+        "A": "pvscan",
+        "B": "lvcreate",
+        "C": "vgcreate",
+        "D": "pvcreate"
+      },
+      "answer": "D",
+      "explanation": "The pvcreate command initializes a disk or partition as a Physical Volume (PV) for use with the Logical Volume Manager (LVM), preparing it to be added to a Volume Group."
+    }
+  },
+  {
+    "id": 72,
+    "de": {
+      "frage": "Du verwaltest einen Fileserver, dessen logisches Volume (LV) mit dem Namen data_lv, das Teil der Volume Group (VG) data_vg ist, fast keinen Speicherplatz mehr hat. Du hast dem Server eine neue 500-GB-Festplatte hinzugefügt und möchtest sie verwenden, um die Speicherkapazität von data_lv zu erweitern.\n\nWelche Befehlsreihenfolge solltest du ausführen, um das logische Volume erfolgreich zu erweitern und den zusätzlichen Speicher nutzbar zu machen?",
+      "optionen": {
+        "A": "pvcreate /dev/sdd\npvcreate /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
+        "B": "pvcreate /dev/sdd\nvgcreate data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nmkfs.ext4 /dev/data_vg/data_lv",
+        "C": "pvmove /dev/sdd /dev/data_vg/data_lv\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
+        "D": "vgextend data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv"
+      },
+      "antwort": "A",
+      "erklärung": "Zuerst muss die neue Festplatte als Physical Volume initialisiert werden (pvcreate /dev/sdd). Danach wird sie mit vgextend data_vg /dev/sdd der bestehenden Volume Group hinzugefügt. Anschließend wird das Logical Volume mit lvextend vergrößert und das Dateisystem mit resize2fs angepasst, um den zusätzlichen Speicherplatz zu nutzen."
+    },
+    "en": {
+      "question": "You are managing a file server that is running out of storage space on its logical volume (LV) named data_lv, which is part of the volume group (VG) named data_vg. You have added a new 500 GB disk to the server and want to use it to extend the storage capacity of data_lv.\n\nWhich of the following sequences of commands should you execute to successfully extend the logical volume and make the additional space available for use?",
+      "options": {
+        "A": "pvcreate /dev/sdd\npvcreate /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
+        "B": "pvcreate /dev/sdd\nvgcreate data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nmkfs.ext4 /dev/data_vg/data_lv",
+        "C": "pvmove /dev/sdd /dev/data_vg/data_lv\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv",
+        "D": "vgextend data_vg /dev/sdd\nlvextend --size +500G /dev/data_vg/data_lv\nresize2fs /dev/data_vg/data_lv"
+      },
+      "answer": "A",
+      "explanation": "First, initialize the new disk as a Physical Volume using pvcreate /dev/sdd, then extend the existing Volume Group with vgextend data_vg /dev/sdd. Next, use lvextend to increase the size of the Logical Volume, and finally run resize2fs to make the new space available in the filesystem."
+    }
+  },
+  {
+    "id": 73,
+    "de": {
+      "frage": "Du bist Systemadministrator und sollst einen Linux-Server so konfigurieren, dass eine Partition beim Systemstart automatisch eingehängt wird. Die Partition befindet sich auf /dev/sdb1 und soll unter /data eingehängt werden. Du hast bereits eine systemd-Unit-Datei namens data.mount mit der richtigen UUID und den Mount-Optionen erstellt. Nach dem Speichern führst du die folgenden Befehle aus:\n\nsystemctl daemon-reload\nsystemctl start data.mount\n\nNach dem Neustart des Servers stellst du jedoch fest, dass die Partition nicht eingehängt wurde.\n\nWelchen Schritt hast du höchstwahrscheinlich vergessen?",
+      "optionen": {
+        "A": "Du hast vergessen, die Partitionsdetails in die Datei /etc/fstab einzutragen.",
+        "B": "Du hast vergessen, das Mounten mit dem Befehl systemctl enable data.mount zu aktivieren.",
+        "C": "Du hast vergessen, den Server nach dem Ausführen von systemctl start data.mount neu zu starten.",
+        "D": "Du hast vergessen, die UUID der Partition mit dem Befehl blkid zu überprüfen."
+      },
+      "antwort": "B",
+      "erklärung": "Damit eine systemd-Mount-Unit wie data.mount beim Start automatisch aktiviert wird, muss sie mit systemctl enable data.mount aktiviert werden. Der Befehl systemctl start startet das Mounten nur für die aktuelle Sitzung, nicht dauerhaft über Neustarts hinweg."
+    },
+    "en": {
+      "question": "You are a system administrator tasked with configuring a Linux server to automatically mount a partition during boot. The partition is located at /dev/sdb1, and it should be mounted to /data. You have already created a systemd unit file named data.mount with the correct UUID and mount options. After saving the file, you run the following commands:\n\nsystemctl daemon-reload\nsystemctl start data.mount\n\nHowever, after rebooting the server, you notice that the partition is not mounted.\n\nWhat is the MOST likely step you missed?",
+      "options": {
+        "A": "You forgot to add the partition details to the /etc/fstab file.",
+        "B": "You forgot to enable the mount with the systemctl enable data.mount command.",
+        "C": "You forgot to restart the server after running systemctl start data.mount.",
+        "D": "You forgot to verify the UUID of the partition using the blkid command."
+      },
+      "answer": "B",
+      "explanation": "For a systemd mount unit to persist across reboots, it must be enabled with the systemctl enable data.mount command. The systemctl start command only starts the unit for the current session without enabling it for automatic startup."
+    }
+  },
+  {
+    "id": 74,
+    "de": {
+      "frage": "Du verwaltest einen Linux-Server mit einem ext4-Dateisystem auf der Partition /dev/sdb2. Du stellst fest, dass das Dateisystem so konfiguriert ist, dass es nach jeweils 20 Einbindungen (Mounts) eine Dateisystemprüfung durchführt. Du möchtest dieses Intervall auf 50 Mounts erhöhen, um Ausfallzeiten beim Neustart zu verringern.\n\nWelcher der folgenden Befehle ändert das Mount-Zählintervall korrekt?",
+      "optionen": {
+        "A": "resize2fs -c 50 /dev/sdb2",
+        "B": "e2label /dev/sdb2 50",
+        "C": "tune2fs -c 50 /dev/sdb2",
+        "D": "fsck -c 50 /dev/sdb2"
+      },
+      "antwort": "C",
+      "erklärung": "Mit dem Befehl tune2fs -c 50 /dev/sdb2 kann das maximale Mount-Zählintervall festgelegt werden, bevor eine automatische Dateisystemprüfung (fsck) ausgelöst wird. Dadurch werden unnötige Prüfungen reduziert und Neustartzeiten verkürzt."
+    },
+    "en": {
+      "question": "You are managing a Linux server with an ext4 filesystem on the /dev/sdb2 partition. You notice that the filesystem is configured to perform a filesystem check after every 20 mounts, but you want to increase this interval to 50 mounts to reduce downtime during reboots.\n\nWhich of the following commands will correctly update the mount count interval?",
+      "options": {
+        "A": "resize2fs -c 50 /dev/sdb2",
+        "B": "e2label /dev/sdb2 50",
+        "C": "tune2fs -c 50 /dev/sdb2",
+        "D": "fsck -c 50 /dev/sdb2"
+      },
+      "answer": "C",
+      "explanation": "The tune2fs -c 50 /dev/sdb2 command sets the maximum mount count before a filesystem check is triggered. This helps reduce unnecessary fsck runs and minimizes downtime during system reboots."
+    }
+  },
+  {
+    "id": 75,
+    "de": {
+      "frage": "Welcher der folgenden Befehle partitioniert die zweite Festplatte auf einem Linux-System?",
+      "optionen": {
+        "A": "fdisk /dev/sdb",
+        "B": "fdisk /sd0-1",
+        "C": "format /dev/sdb1",
+        "D": "fdisk /dev/sdc"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl fdisk /dev/sdb öffnet das Partitionierungstool für die zweite Festplatte im System. In Linux sind Festplatten typischerweise als /dev/sda, /dev/sdb, /dev/sdc usw. benannt."
+    },
+    "en": {
+      "question": "Which of the following commands partitions the second hard disk on a Linux system?",
+      "options": {
+        "A": "fdisk /dev/sdb",
+        "B": "fdisk /sd0-1",
+        "C": "format /dev/sdb1",
+        "D": "fdisk /dev/sdc"
+      },
+      "answer": "A",
+      "explanation": "The command fdisk /dev/sdb opens the partitioning utility for the second hard disk in the system. In Linux, hard drives are typically named /dev/sda, /dev/sdb, /dev/sdc, and so on."
+    }
+  },
+  {
+    "id": 76,
+    "de": {
+      "frage": "Du bist Systemadministrator und behebst Speicherprobleme auf einem Linux-Server. Du musst alle erkannten Speichergeräte und deren Partitionen identifizieren, um festzustellen, ob es nicht beschreibbare Partitionen oder falsch erkannte Geräte gibt.\n\nWelchen der folgenden Befehle würdest du verwenden, um diese Informationen anzuzeigen?",
+      "optionen": {
+        "A": "tar -cvf archive.tar /data",
+        "B": "df -h",
+        "C": "cat /proc/partitions",
+        "D": "du /home"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl cat /proc/partitions zeigt alle vom Kernel erkannten Speichergeräte und deren Partitionen an. Damit können Administratoren prüfen, ob Geräte korrekt erkannt und Partitionen verfügbar sind."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server that is experiencing storage issues. You need to identify all recognized storage devices and their partitions to determine if there are any unwritable partitions or misidentified devices.\n\nWhich of the following commands would you use to display this information?",
+      "options": {
+        "A": "tar -cvf archive.tar /data",
+        "B": "df -h",
+        "C": "cat /proc/partitions",
+        "D": "du /home"
+      },
+      "answer": "C",
+      "explanation": "The cat /proc/partitions command lists all storage devices and partitions recognized by the kernel, helping administrators verify whether drives and partitions are correctly detected and writable."
+    }
+  },
+  {
+    "id": 77,
+    "de": {
+      "frage": "Du behebst ein Problem auf einem Linux-System, das den Logical Volume Manager (LVM) für die Speicherverwaltung verwendet. Ein Benutzer meldet, dass er auf ein bestimmtes Logical Volume (LV), das verfügbar sein sollte, nicht zugreifen kann. Beim Überprüfen des Verzeichnisses /dev/mapper/ stellst du fest, dass der erwartete Eintrag für das LV fehlt.\n\nWelche Maßnahme ist am BESTEN geeignet, um dieses Problem zu beheben?",
+      "optionen": {
+        "A": "Das Verzeichnis /dev/mapper/ löschen und das System neu starten, um die Logical-Volume-Zuordnungen neu zu generieren.",
+        "B": "Den Befehl lvscan verwenden, um zu überprüfen, ob das Logical Volume (LV) aktiv ist, und sicherstellen, dass es korrekt zugeordnet ist.",
+        "C": "Die gesamte Volume Group (VG) neu formatieren, um das Logical Volume (LV) und dessen Zuordnung in /dev/mapper/ neu zu erstellen.",
+        "D": "Einen neuen Eintrag im Verzeichnis /dev/mapper/ manuell für das fehlende Logical Volume (LV) anlegen."
+      },
+      "antwort": "B",
+      "erklärung": "Mit dem Befehl lvscan kann überprüft werden, ob ein Logical Volume aktiv oder inaktiv ist. Wenn es inaktiv ist, kann es mit lvchange -ay <LV> aktiviert werden, wodurch der entsprechende Eintrag in /dev/mapper/ automatisch erstellt wird."
+    },
+    "en": {
+      "question": "You are troubleshooting a Linux system that uses Logical Volume Manager (LVM) for storage. A user reports that they cannot access a specific Logical Volume (LV) that should be available. You check the /dev/mapper/ directory and do not see the expected entry for the LV.\n\nWhat is the MOST appropriate action to resolve this issue?",
+      "options": {
+        "A": "Delete the /dev/mapper/ directory and restart the system to regenerate the Logical Volume (LV) mappings.",
+        "B": "Use the lvscan command to check if the Logical Volume (LV) is active and ensure it is properly mapped.",
+        "C": "Reformat the entire Volume Group (VG) to recreate the Logical Volume (LV) and its mapping in /dev/mapper/.",
+        "D": "Manually create a new entry in the /dev/mapper/ directory for the missing Logical Volume (LV)."
+      },
+      "answer": "B",
+      "explanation": "The lvscan command is used to check whether Logical Volumes are active or inactive. If the LV is inactive, it can be activated with lvchange -ay <LV>, which automatically regenerates the missing entry in /dev/mapper/."
+    }
+  },
+  {
+    "id": 78,
+    "de": {
+      "frage": "Wie wird unter Linux die erste Festplatte im System typischerweise im Verzeichnis /dev dargestellt?",
+      "optionen": {
+        "A": "/dev/sda",
+        "B": "/dev/sdb",
+        "C": "/dev/sda1",
+        "D": "/dev/hda"
+      },
+      "antwort": "A",
+      "erklärung": "Unter Linux werden moderne Festplatten in der Regel mit dem Präfix /dev/sd erkannt. Die erste Festplatte wird als /dev/sda bezeichnet, die zweite als /dev/sdb und so weiter. Partitionen auf diesen Laufwerken heißen /dev/sda1, /dev/sda2 usw."
+    },
+    "en": {
+      "question": "In Linux, how is the first storage disk in the system typically represented in the /dev directory?",
+      "options": {
+        "A": "/dev/sda",
+        "B": "/dev/sdb",
+        "C": "/dev/sda1",
+        "D": "/dev/hda"
+      },
+      "answer": "A",
+      "explanation": "In Linux, modern storage devices are typically represented with the /dev/sd prefix. The first detected disk is /dev/sda, the second is /dev/sdb, and so on. Individual partitions appear as /dev/sda1, /dev/sda2, etc."
+    }
+  },
+  {
+    "id": 79,
+    "de": {
+      "frage": "Du untersuchst das Verhalten eines Prozesses auf einem Linux-System. Der Prozess hat die PID 5678. Du musst herausfinden, welche Datei im Verzeichnis /proc/5678 dir hilft, die ausführbare Datei des Prozesses zu identifizieren.\n\nWelche Datei würdest du prüfen, und warum?",
+      "optionen": {
+        "A": "/proc/5678/cmdline",
+        "B": "/proc/5678/stat",
+        "C": "/proc/5678/exe",
+        "D": "/proc/5678/environ"
+      },
+      "antwort": "C",
+      "erklärung": "Die Datei /proc/[PID]/exe ist ein symbolischer Link, der auf die ausführbare Datei des Prozesses verweist. Durch Lesen dieses Links kann man genau feststellen, welche Binärdatei der Prozess ausführt."
+    },
+    "en": {
+      "question": "You are evaluating a process on a Linux system with PID 5678. You need to determine which file in the /proc/5678 directory helps identify the executable file being run by the process.\n\nWhich file should you check, and why?",
+      "options": {
+        "A": "/proc/5678/cmdline",
+        "B": "/proc/5678/stat",
+        "C": "/proc/5678/exe",
+        "D": "/proc/5678/environ"
+      },
+      "answer": "C",
+      "explanation": "The /proc/[PID]/exe file is a symbolic link that points to the executable file that the process is running. Reading this link allows you to identify the exact binary being executed."
+    }
+  },
+  {
+    "id": 80,
+    "de": {
+      "frage": "Ein Benutzer bemerkt eine erhebliche Leistungseinbuße auf seinem System. Außerdem stellt der Benutzer fest, dass der Computer ständig auf den Swap-Speicher zugreift. Was sollte der Benutzer tun, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Einen besseren Prozessor installieren.",
+        "B": "Den Arbeitsspeicher vergrößern.",
+        "C": "Den Befehl top verwenden.",
+        "D": "Eine schnellere Festplatte installieren."
+      },
+      "antwort": "B",
+      "erklärung": "Wenn ein System häufig auf den Swap-Speicher zugreift, bedeutet das, dass der physische Arbeitsspeicher (RAM) knapp ist. Durch das Erhöhen des RAM kann das System mehr Prozesse im Speicher halten und muss weniger auf den langsameren Swap-Bereich ausweichen, was die Gesamtleistung verbessert."
+    },
+    "en": {
+      "question": "A user experiences a significant performance hit on their system and notices that the computer frequently accesses swap space. What should the user do to alleviate the issue?",
+      "options": {
+        "A": "Install a better CPU.",
+        "B": "Increase the amount of memory.",
+        "C": "Use the top command.",
+        "D": "Install a faster hard drive."
+      },
+      "answer": "B",
+      "explanation": "Frequent swap space usage indicates insufficient physical memory (RAM). Increasing the amount of memory allows the system to keep more processes in RAM and rely less on slower swap space, improving overall performance."
+    }
+  },
+  {
+    "id": 81,
+    "de": {
+      "frage": "Du möchtest eine Liste der laufenden Prozesse und den Systemstatus wie Speicher- und CPU-Auslastung anzeigen. Welchen Befehl kannst du verwenden, um diese Übersicht zu erhalten?",
+      "optionen": {
+        "A": "cpustat -a",
+        "B": "top",
+        "C": "systat -al",
+        "D": "ps -A"
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl top zeigt eine Echtzeitübersicht mit laufenden Prozessen, CPU-Auslastung, Speichernutzung und anderen wichtigen Systeminformationen an. Er wird häufig zur Systemüberwachung verwendet."
+    },
+    "en": {
+      "question": "You need to see a listing of running processes and system status, such as memory and CPU usage. Which command can you use to produce this listing?",
+      "options": {
+        "A": "cpustat -a",
+        "B": "top",
+        "C": "systat -al",
+        "D": "ps -A"
+      },
+      "answer": "B",
+      "explanation": "The top command provides a real-time view of running processes, CPU utilization, memory usage, and other key system metrics. It is commonly used for monitoring system performance."
+    }
+  },
+  {
+    "id": 82,
+    "de": {
+      "frage": "Du bist Entwickler und arbeitest an einem neuen Projekt für ein Forschungslabor, das eine stark anpassbare und kostengünstige Serverarchitektur benötigt. Das Labor plant, mit neuen Hardware-Designs zu experimentieren und leichte Linux-Distributionen auszuführen. Allerdings ist dem Team bewusst, dass einige Anwendungen aufgrund eingeschränkter Softwareverfügbarkeit neu kompiliert oder emuliert werden müssen.\n\nWelche Serverarchitektur würde die Anforderungen des Labors am BESTEN erfüllen?",
+      "optionen": {
+        "A": "AArch64",
+        "B": "x86_64",
+        "C": "x86",
+        "D": "RISC-V"
+      },
+      "antwort": "D",
+      "erklärung": "RISC-V ist eine offene, lizenzfreie Architektur, die große Flexibilität für Forschung und Entwicklung bietet. Sie ist ideal für Experimente mit neuen Hardwarekonzepten und kosteneffektive Implementierungen. Der Nachteil ist die eingeschränkte Softwareunterstützung, was mit der beschriebenen Situation übereinstimmt."
+    },
+    "en": {
+      "question": "You are a developer working on a new project for a research lab that requires a highly customizable and cost-effective server architecture. The lab plans to experiment with new hardware designs and run lightweight Linux distributions. However, the team is aware that some applications may need to be rebuilt or emulated due to limited software availability.\n\nWhich server architecture would BEST meet the lab's requirements?",
+      "options": {
+        "A": "AArch64",
+        "B": "x86_64",
+        "C": "x86",
+        "D": "RISC-V"
+      },
+      "answer": "D",
+      "explanation": "RISC-V is an open and license-free architecture that offers high flexibility for research and innovation. It is ideal for experimental hardware work and cost-effective systems, though it has limited software support—matching the lab’s scenario."
+    }
+  },
+  {
+    "id": 83,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt am BESTEN den Unterschied zwischen der Prozess­erstellung von Binärdateien und Shell-Skripten unter Linux?",
+      "optionen": {
+        "A": "Binäre ausführbare Dateien sind in maschinenlesbaren Code kompiliert und werden direkt von der CPU ausgeführt, während Shell-Skripte zeilenweise von der Shell interpretiert werden.",
+        "B": "Shell-Skripte werden vor der Ausführung in Binärdateien kompiliert, während Binärdateien zeilenweise von der Shell interpretiert werden.",
+        "C": "Binäre ausführbare Dateien und Shell-Skripte werden beide als Binärdateien auf der Festplatte gespeichert und direkt von der CPU ausgeführt.",
+        "D": "Sowohl Binärdateien als auch Shell-Skripte werden in maschinenlesbaren Code kompiliert, bevor sie von der CPU ausgeführt werden."
+      },
+      "antwort": "A",
+      "erklärung": "Binäre ausführbare Dateien enthalten kompilierten Maschinencode, den der Prozessor direkt ausführt. Shell-Skripte hingegen bestehen aus Textdateien, deren Befehle von einer Shell wie Bash interpretiert und nacheinander als Prozesse gestartet werden."
+    },
+    "en": {
+      "question": "Which of the following BEST describes the differences between how binary executables and shell scripts create processes in Linux?",
+      "options": {
+        "A": "Binary executables are compiled into machine-readable code and directly executed by the CPU, while shell scripts are interpreted line-by-line by the shell.",
+        "B": "Shell scripts are precompiled into binary files, while binary executables are interpreted line-by-line by the shell.",
+        "C": "Binary executables and shell scripts are both stored as binary files on the disk and executed directly by the CPU.",
+        "D": "Both binary executables and shell scripts are compiled into machine-readable code before being executed by the CPU."
+      },
+      "answer": "A",
+      "explanation": "Binary executables contain compiled machine code that the processor executes directly. Shell scripts, by contrast, are text files whose commands are interpreted line-by-line by a shell such as Bash, creating processes as needed."
+    }
+  },
+  {
+    "id": 84,
+    "de": {
+      "frage": "Du bist Techniker und sollst ein Laptop mit langsamer Leistung und häufigen Abstürzen untersuchen. Der Benutzer vermutet ein Hardwareproblem. Du führst den Befehl 'sudo lshw -short' aus und siehst folgende Ausgabe:\n\nH/W path        Device      Class          Description  \n=======================================================  \n/0                          system         Laptop Model X  \n/0/0                        memory         4GiB System Memory  \n/0/1                        processor      Intel(R) Core(TM) i5 CPU  \n/0/2                        disk           128GB SSD  \n/0/3                        network        Ethernet interface\n\nWelche Maßnahme solltest du als NÄCHSTES ergreifen?",
+      "optionen": {
+        "A": "Das Betriebssystem neu installieren, um die Abstürze zu beheben.",
+        "B": "Den Prozessor austauschen, da er veraltet ist und die Leistung beeinträchtigt.",
+        "C": "Die SSD austauschen, da sie zu klein für moderne Systeme ist.",
+        "D": "Den Arbeitsspeicher aufrüsten, um die Leistung zu verbessern."
+      },
+      "antwort": "D",
+      "erklärung": "Die Ausgabe zeigt, dass das System nur über 4 GB RAM verfügt, was für moderne Anwendungen oft zu wenig ist. Dies kann zu langsamer Leistung und Abstürzen führen, wenn der Speicher nicht ausreicht. Eine RAM-Aufrüstung ist die beste Maßnahme zur Leistungsverbesserung."
+    },
+    "en": {
+      "question": "You are troubleshooting a laptop with slow performance and frequent crashes. The user suspects a hardware issue. You run 'sudo lshw -short' and see the following output:\n\nH/W path        Device      Class          Description  \n=======================================================  \n/0                          system         Laptop Model X  \n/0/0                        memory         4GiB System Memory  \n/0/1                        processor      Intel(R) Core(TM) i5 CPU  \n/0/2                        disk           128GB SSD  \n/0/3                        network        Ethernet interface\n\nBased on this output, what is the MOST appropriate action to take next?",
+      "options": {
+        "A": "Reinstall the operating system to resolve the crashes.",
+        "B": "Replace the processor, as it is outdated and causing slow performance.",
+        "C": "Replace the SSD, as it is too small for modern systems.",
+        "D": "Upgrade the system memory to improve performance."
+      },
+      "answer": "D",
+      "explanation": "The system has only 4 GB of RAM, which is often insufficient for modern workloads. Limited memory can lead to poor performance and system instability. Upgrading the RAM is the most effective next step to improve performance and reduce crashes."
+    }
+  },
+  {
+    "id": 85,
+    "de": {
+      "frage": "Ein Linux-Server kann nicht starten, und du vermutest eine Beschädigung des Kernels. Beim Überprüfen des /boot-Verzeichnisses stellst du fest, dass die Kernel-Image-Datei vmlinuz fehlt. Außerdem scheint die Bootloader-Konfiguration veraltet zu sein. Du möchtest sicherstellen, dass das System wieder ordnungsgemäß starten kann, indem du das Kernel-Problem behebst.\n\nWelche der folgenden Maßnahmen solltest du ergreifen, um das Problem zu lösen und die Systemfunktionalität wiederherzustellen?",
+      "optionen": {
+        "A": "Mit 'sudo fsck /dev/sdX' das Dateisystem überprüfen und reparieren, auf dem sich das /boot-Verzeichnis befindet.",
+        "B": "Das Initramfs mit 'sudo update-initramfs -u' neu erstellen, um das fehlende Kernel-Image zu regenerieren.",
+        "C": "Den Kernel mit 'sudo apt-get install --reinstall linux-image-$(uname -r)' neu installieren, um das fehlende Kernel-Image zu ersetzen.",
+        "D": "Mit 'sudo update-grub' die Bootloader-Konfiguration aktualisieren, um das fehlende Kernel-Image zu erkennen."
+      },
+      "antwort": "C",
+      "erklärung": "Wenn die vmlinuz-Kerneldatei fehlt, muss der Kernel selbst neu installiert werden. Der Befehl 'sudo apt-get install --reinstall linux-image-$(uname -r)' lädt den aktuellen Kernel neu und stellt die verlorene Datei wieder her. Erst danach sollte der Bootloader mit 'update-grub' aktualisiert werden."
+    },
+    "en": {
+      "question": "A Linux server fails to boot, and you suspect kernel corruption. When inspecting the /boot directory, you find that the vmlinuz kernel image file is missing. Additionally, the bootloader configuration appears outdated. You want to ensure the system can boot properly by addressing the kernel issue.\n\nWhich of the following steps should you take to resolve the issue and restore the system's functionality?",
+      "options": {
+        "A": "Run 'sudo fsck /dev/sdX' to check and repair the file system where the /boot directory resides.",
+        "B": "Rebuild the initramfs using 'sudo update-initramfs -u' to regenerate the missing kernel image.",
+        "C": "Reinstall the kernel using 'sudo apt-get install --reinstall linux-image-$(uname -r)' to replace the missing kernel image.",
+        "D": "Use 'sudo update-grub' to update the bootloader configuration and detect the missing kernel image."
+      },
+      "answer": "C",
+      "explanation": "If the vmlinuz kernel file is missing, the kernel must be reinstalled. Running 'sudo apt-get install --reinstall linux-image-$(uname -r)' retrieves and restores the kernel image. Afterward, updating the bootloader ensures correct configuration for booting."
+    }
+  },
+  {
+    "id": 86,
+    "de": {
+      "frage": "Ein Systemadministrator bemerkt Latenzprobleme auf seinem Linux-System und möchte feststellen, ob eine starke Nutzung des virtuellen Speichers vorliegt. Welchen Befehl sollte der Administrator verwenden?",
+      "optionen": {
+        "A": "mount",
+        "B": "renice",
+        "C": "vmstat",
+        "D": "pgrep"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl 'vmstat' zeigt Statistiken über virtuelle Speicheraktivität, Prozesse, CPU-Auslastung und Paging an. Er hilft festzustellen, ob das System stark auf Swap-Speicher zugreift und somit Speichermangel die Latenz verursacht."
+    },
+    "en": {
+      "question": "A systems administrator experiences latency with their Linux system and wants to determine if there is significant use of virtual memory. Which command should the administrator use?",
+      "options": {
+        "A": "mount",
+        "B": "renice",
+        "C": "vmstat",
+        "D": "pgrep"
+      },
+      "answer": "C",
+      "explanation": "The 'vmstat' command provides statistics about virtual memory usage, processes, CPU activity, and paging. It helps identify if excessive virtual memory or swap usage is contributing to system latency."
+    }
+  },
+  {
+    "id": 87,
+    "de": {
+      "frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server. Ein Benutzer meldet, dass sein externes USB-Speichergerät vom System nicht erkannt wird. Nach einer Diagnose hast du folgende Informationen gesammelt:\n\ndmesg | grep -i error →\n[ 789.123456] usb 2-1: device descriptor read/64, error -71\n\nlsmod | grep usb_storage → keine Ausgabe\n\nsudo journalctl -k | grep driver →\nkernel: usb_storage: USB Mass Storage driver initialized\n\ngrep blacklist /etc/modprobe.d/*.conf →\n/etc/modprobe.d/blacklist.conf:blacklist usb_storage\n\nWas ist die BESTE Vorgehensweise, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Das USB-Speichergerät austauschen, da der Fehler auf einen Hardwaredefekt hinweist.",
+        "B": "Den Eintrag 'blacklist usb_storage' in /etc/modprobe.d/blacklist.conf entfernen oder auskommentieren und das System neu starten.",
+        "C": "Mit dem Befehl 'depmod' die Treiber-Datenbank neu aufbauen, um alle Abhängigkeiten zu konfigurieren.",
+        "D": "Das Modul 'usb_storage' manuell mit dem Befehl 'modprobe' laden."
+      },
+      "antwort": "B",
+      "erklärung": "Das Modul 'usb_storage' ist in der Datei /etc/modprobe.d/blacklist.conf blockiert, wodurch das System USB-Speichergeräte nicht laden kann. Durch Entfernen oder Auskommentieren des Eintrags 'blacklist usb_storage' und anschließendem Neustart wird das Modul normal geladen und das Gerät erkannt."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server. A user reports that their external USB storage device is not recognized by the system. After running diagnostics, you collect the following information:\n\ndmesg | grep -i error →\n[ 789.123456] usb 2-1: device descriptor read/64, error -71\n\nlsmod | grep usb_storage → no output\n\nsudo journalctl -k | grep driver →\nkernel: usb_storage: USB Mass Storage driver initialized\n\ngrep blacklist /etc/modprobe.d/*.conf →\n/etc/modprobe.d/blacklist.conf:blacklist usb_storage\n\nBased on this information, what is the BEST course of action to resolve the issue?",
+      "options": {
+        "A": "Replace the USB storage device, as the error indicates a hardware failure.",
+        "B": "Remove or comment out the 'blacklist usb_storage' entry in /etc/modprobe.d/blacklist.conf and reboot the system.",
+        "C": "Rebuild the driver database using the 'depmod' command to ensure all dependencies are properly configured.",
+        "D": "Use the 'modprobe' command to manually load the 'usb_storage' driver module."
+      },
+      "answer": "B",
+      "explanation": "The usb_storage driver is blacklisted in /etc/modprobe.d/blacklist.conf, preventing the system from loading it. Removing or commenting out the 'blacklist usb_storage' line and rebooting allows the driver to load and recognize USB storage devices."
+    }
+  },
+  {
+    "id": 88,
+    "de": {
+      "frage": "Was ist das Ergebnis des Befehls 'nohup gedit &'?",
+      "optionen": {
+        "A": "gedit wird gestartet, nachdem man sich aus der Shell abgemeldet hat.",
+        "B": "gedit wird im Hintergrund gestartet und beendet, nachdem man sich aus der Shell abgemeldet hat.",
+        "C": "gedit wird im Hintergrund gestartet und bleibt auch nach der Abmeldung aus der Shell aktiv.",
+        "D": "gedit wird im Vordergrund gestartet und beendet, nachdem man sich aus der Shell abgemeldet hat."
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl 'nohup gedit &' startet 'gedit' im Hintergrund und verhindert, dass das Programm beendet wird, wenn die Benutzer-Sitzung geschlossen oder die Shell verlassen wird. 'nohup' leitet die Ausgabe in eine Datei um und ignoriert das SIGHUP-Signal, wodurch der Prozess bestehen bleibt."
+    },
+    "en": {
+      "question": "What is the result of the 'nohup gedit &' command?",
+      "options": {
+        "A": "gedit will start after logging out of the shell.",
+        "B": "gedit will start in the background and terminate after logging out of the shell.",
+        "C": "gedit will start in the background and persist in the background after logging out of the shell.",
+        "D": "gedit will start in the foreground and terminate after logging out of the shell."
+      },
+      "answer": "C",
+      "explanation": "The command 'nohup gedit &' starts 'gedit' in the background and prevents it from being terminated when the user logs out. 'nohup' ignores the hangup signal (SIGHUP), keeping the process running independently of the shell."
+    }
+  },
+  {
+    "id": 89,
+    "de": {
+      "frage": "Du behebst Leistungsprobleme einer Anwendung, die auf einem lokalen Linux-Server gehostet wird. Benutzer melden, dass die Anwendung während der Spitzenlastzeiten deutlich langsamer reagiert. Bei der Untersuchung stellst du fest, dass der Server die Mindestanforderungen der Anwendung erfüllt, die CPU- und Speichernutzung jedoch während dieser Zeiten konstant hoch ist.\n\nWas ist der BESTE nächste Schritt, um die Leistung der Anwendung zu verbessern?",
+      "optionen": {
+        "A": "Die Anwendung mit anderen Compiler-Optionen neu kompilieren, um die Leistung zu optimieren.",
+        "B": "Von journald zu rsyslog wechseln, um die Protokollierungsleistung zu verbessern.",
+        "C": "Die Protokolldateien der Anwendung auf Fehler und Warnungen im Zusammenhang mit Speicherlecks überprüfen.",
+        "D": "Die Hardware-Ressourcen des Servers erweitern, um den Leistungsanforderungen der Anwendung gerecht zu werden."
+      },
+      "antwort": "D",
+      "erklärung": "Da CPU und Speicher während der Spitzenzeiten konstant ausgelastet sind, liegt das Problem höchstwahrscheinlich an unzureichenden Ressourcen. Eine Skalierung der Hardware — etwa durch Hinzufügen von RAM oder CPU-Kernen — ist die effektivste Lösung, um die Anwendungsleistung zu verbessern."
+    },
+    "en": {
+      "question": "You are troubleshooting a slow-performing application hosted on an on-premises Linux server. Users report that the application becomes significantly slower during peak usage hours. Upon investigation, you find that the server meets the application's minimum hardware requirements, but CPU and memory usage are consistently high during these times.\n\nWhat is the BEST next step to improve the application's performance?",
+      "options": {
+        "A": "Recompile the application with different compile options to optimize its performance.",
+        "B": "Switch from journald to rsyslog for better logging performance.",
+        "C": "Review the application's log files for errors and warnings related to memory leaks.",
+        "D": "Scale the server's hardware resources to meet the application's performance requirements."
+      },
+      "answer": "D",
+      "explanation": "Consistently high CPU and memory utilization during peak hours indicates resource saturation. Scaling the hardware—such as increasing RAM or adding CPU cores—is the most direct way to improve application performance under load."
+    }
+  },
+  {
+    "id": 90,
+    "de": {
+      "frage": "Du bist Linux-Systemadministrator und behebst ein Problem auf einem Server, der nicht den gesamten installierten Speicher erkennt. Der Server sollte 64 GB RAM haben, aber es werden nur 32 GB angezeigt. Du vermutest, dass einige Speichermodule nicht richtig im Motherboard sitzen.\n\nWelchen der folgenden Befehle oder Dateien würdest du verwenden, um Informationen über die Speicher­konfiguration zu erhalten und das Problem zu identifizieren?",
+      "optionen": {
+        "A": "Den Befehl 'tail /proc/meminfo' verwenden, um die letzten Zeilen der Speicherstatistik anzuzeigen.",
+        "B": "Den Befehl 'lsmem' verwenden, um Informationen über Speicherblöcke einschließlich ihrer Größe und ihres Zustands anzuzeigen.",
+        "C": "Den Befehl 'df -h' verwenden, um die Festplattennutzung zu überprüfen, was auf speicherbezogene Probleme hinweisen könnte.",
+        "D": "Den Befehl 'head /proc/cpuinfo' verwenden, um CPU-bezogene Speicherprobleme zu prüfen."
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl 'lsmem' zeigt detaillierte Informationen über die vorhandenen Speicher­blöcke, deren Größe und Aktivierungsstatus an. Damit lässt sich erkennen, ob bestimmte Speicherbänke oder Module nicht erkannt oder deaktiviert sind."
+    },
+    "en": {
+      "question": "You are a Linux system administrator troubleshooting a server that is not recognizing all installed memory. The server should have 64 GB of RAM, but only 32 GB is being reported. You suspect that some memory sticks are not properly seated in the motherboard.\n\nWhich of the following commands or files would you use to gather information about the memory configuration and identify the issue?",
+      "options": {
+        "A": "Use the 'tail /proc/meminfo' command to display the last few lines of memory statistics.",
+        "B": "Use the 'lsmem' command to display information about memory blocks, including their size and state.",
+        "C": "Use the 'df -h' command to check disk space usage, which could indicate memory-related problems.",
+        "D": "Use the 'head /proc/cpuinfo' command to check for CPU-related memory issues."
+      },
+      "answer": "B",
+      "explanation": "The 'lsmem' command provides detailed information about memory blocks, their sizes, and whether they are online. It helps identify if some memory modules are unrecognized or not active due to hardware seating issues."
+    }
+  },
+  {
+    "id": 91,
+    "de": {
+      "frage": "Ein von dir verwalteter Linux-Server hat während des Bootvorgangs einen Kernel-Panic erlitten. Die Fehlermeldung enthält folgende Details:\n\n\"BUG: unable to handle kernel NULL pointer dereference at 0000000000000000\"\n\nEine Stack-Trace zeigt eine bestimmte Funktion (some_function) und ein Kernel-Modul (ext4), das mit dem Fehler verknüpft ist. Die Systemprotokolle des vorherigen Boots (sudo journalctl -k -b -1) zeigen wiederholte Fehler im Zusammenhang mit dem ext4-Dateisystem.\n\nWelche der folgenden Maßnahmen solltest du ergreifen, um die Ursache des Kernel-Panics zu identifizieren und zu beheben?",
+      "optionen": {
+        "A": "Das ext4-Kernelmodul mit 'sudo modprobe -r ext4' entladen und es blocklisten, um das Laden zu verhindern.",
+        "B": "Mit 'sudo fsck /dev/sdX' das mit dem ext4-Modul verbundene Dateisystem überprüfen und reparieren.",
+        "C": "Mit 'sudo update-initramfs -u' das Initramfs neu erstellen, um sicherzustellen, dass das ext4-Modul korrekt eingebunden ist.",
+        "D": "Den Kernel mit 'sudo apt-get install --reinstall linux-image-$(uname -r)' neu installieren, um möglicherweise beschädigte Kernel-Dateien zu ersetzen."
+      },
+      "antwort": "B",
+      "erklärung": "Da die Logs auf wiederholte Fehler im Zusammenhang mit dem ext4-Dateisystem hinweisen und der Kernel-Panic durch das ext4-Modul ausgelöst wurde, ist die wahrscheinlichste Ursache eine Dateisystembeschädigung. Der Befehl 'sudo fsck /dev/sdX' überprüft und repariert beschädigte Strukturen des ext4-Volumes, was den Fehler beheben kann."
+    },
+    "en": {
+      "question": "A Linux server you manage has experienced a kernel panic during boot. The error message includes:\n\n\"BUG: unable to handle kernel NULL pointer dereference at 0000000000000000\"\n\nA stack trace references a specific function (some_function) and a kernel module (ext4) linked to the error. System logs from the previous boot (sudo journalctl -k -b -1) show repeated errors related to the ext4 file system.\n\nBased on this information, which step should you take to identify and resolve the root cause of the kernel panic?",
+      "options": {
+        "A": "Unload the ext4 kernel module using 'sudo modprobe -r ext4' and blocklist it to prevent it from loading.",
+        "B": "Run 'sudo fsck /dev/sdX' to check and repair the file system associated with the ext4 module.",
+        "C": "Rebuild the initramfs using 'sudo update-initramfs -u' to ensure the ext4 module is properly included.",
+        "D": "Reinstall the kernel using 'sudo apt-get install --reinstall linux-image-$(uname -r)' to replace potentially corrupted kernel files."
+      },
+      "answer": "B",
+      "explanation": "Since the kernel panic and previous logs indicate repeated ext4-related errors, the most likely cause is file system corruption. Running 'sudo fsck /dev/sdX' checks and repairs the ext4 volume’s structures, which can restore stability and prevent further kernel panics."
+    }
+  },
+  {
+    "id": 92,
+    "de": {
+      "frage": "Welcher der folgenden Befehle überprüft Abhängigkeiten, bevor das Debug-Modul aus dem Kernel entfernt wird?",
+      "optionen": {
+        "A": "rmmod debug",
+        "B": "rmmod -r debug",
+        "C": "modprobe -r debug",
+        "D": "modprobe -rd debug"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl 'modprobe -r' entfernt ein Kernelmodul und überprüft dabei automatisch alle Abhängigkeiten. Falls andere Module das 'debug'-Modul verwenden, sorgt 'modprobe -r' dafür, dass diese in der richtigen Reihenfolge entladen werden oder warnt, wenn dies nicht möglich ist."
+    },
+    "en": {
+      "question": "Which of the following commands will check for dependencies before removing the debug module from the kernel?",
+      "options": {
+        "A": "rmmod debug",
+        "B": "rmmod -r debug",
+        "C": "modprobe -r debug",
+        "D": "modprobe -rd debug"
+      },
+      "answer": "C",
+      "explanation": "The 'modprobe -r' command removes a kernel module while checking for dependencies. It ensures that modules depending on 'debug' are properly handled or warns the user if removal could cause issues."
+    }
+  },
+  {
+    "id": 93,
+    "de": {
+      "frage": "Ein Entwickler hat versehentlich einen neuen Daemon auf der Produktionsmaschine statt auf dem Testsystem ausgeführt. Damit andere Prozesse von der CPU bevorzugt behandelt werden, soll die Priorität dieses Daemons verringert werden. Die PID des Prozesses ist 2345.\n\nWelchen Befehl würdest du verwenden, um die Priorität des Daemons zu senken?",
+      "optionen": {
+        "A": "renice -n 10 2345",
+        "B": "renice -n -10 2345",
+        "C": "renice -n 0 2345",
+        "D": "nice -n 0 2345"
+      },
+      "antwort": "A",
+      "erklärung": "Ein höherer Nice-Wert bedeutet geringere Priorität. Der Befehl 'renice -n 10 2345' erhöht den Nice-Wert des Prozesses auf 10 und senkt damit seine Priorität, sodass andere Prozesse bevorzugt CPU-Zeit erhalten."
+    },
+    "en": {
+      "question": "A developer accidentally ran a new daemon on the production machine instead of the lab machine. To ensure the CPU gives preference to other processes, you need to lower the daemon’s priority. The process ID (PID) is 2345.\n\nWhich command would you use to decrease the daemon’s priority?",
+      "options": {
+        "A": "renice -n 10 2345",
+        "B": "renice -n -10 2345",
+        "C": "renice -n 0 2345",
+        "D": "nice -n 0 2345"
+      },
+      "answer": "A",
+      "explanation": "Increasing the nice value lowers a process’s CPU priority. The command 'renice -n 10 2345' raises the nice value to 10, reducing the daemon’s scheduling priority so other processes get more CPU resources."
+    }
+  }
 ]
