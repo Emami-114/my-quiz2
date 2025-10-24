@@ -2559,5 +2559,405 @@
       "answer": "A",
       "explanation": "Increasing the nice value lowers a process’s CPU priority. The command 'renice -n 10 2345' raises the nice value to 10, reducing the daemon’s scheduling priority so other processes get more CPU resources."
     }
+  },
+  {
+    "id": 94,
+    "de": {
+      "frage": "Ein Linux-Administrator konfiguriert einen Apache-Webserver und muss sicherstellen, dass der Webserver nur auf dem lokalen System für Testzwecke erreichbar ist. Der Administrator ändert die Listen-Direktive in der Konfigurationsdatei.\n\nWelche der folgenden Konfigurationen ist für dieses Szenario am BESTEN geeignet?",
+      "optionen": {
+        "A": "Listen 192.168.1.1:80",
+        "B": "Listen localhost:80",
+        "C": "Listen 0.0.0.0:80",
+        "D": "Listen *:80"
+      },
+      "antwort": "B",
+      "erklärung": "Die Direktive 'Listen localhost:80' bindet den Apache-Webserver ausschließlich an die lokale Schnittstelle. Dadurch ist der Zugriff nur vom gleichen System aus möglich, was ideal für Testzwecke ist. Andere Optionen würden externe Zugriffe erlauben."
+    },
+    "en": {
+      "question": "A Linux administrator is configuring an Apache webserver and needs to ensure the webserver is accessible only on the local system for testing purposes. The administrator modifies the Listen directive in the configuration file.\n\nWhich of the following configurations is the MOST appropriate for this scenario?",
+      "options": {
+        "A": "Listen 192.168.1.1:80",
+        "B": "Listen localhost:80",
+        "C": "Listen 0.0.0.0:80",
+        "D": "Listen *:80"
+      },
+      "answer": "B",
+      "explanation": "The 'Listen localhost:80' directive binds the Apache webserver only to the local interface, making it accessible only from the same system. This setup is ideal for local testing. Other options would allow external access."
+    }
+  },
+  {
+    "id": 95,
+    "de": {
+      "frage": "Ein Administrator konfiguriert Systeme und möchte sich aus der Ferne mit einem Server verbinden, um Verwaltungsaufgaben durchzuführen. Welchen Dienst sollte der Administrator verwenden?",
+      "optionen": {
+        "A": "SSH-Dienst",
+        "B": "Webdienst",
+        "C": "NTP-Dienst",
+        "D": "NFS-Dienst"
+      },
+      "antwort": "A",
+      "erklärung": "Der SSH-Dienst (Secure Shell) ermöglicht eine sichere, verschlüsselte Fernverbindung zu Servern. Er wird häufig für administrative Aufgaben wie die Verwaltung und Konfiguration von Systemen verwendet."
+    },
+    "en": {
+      "question": "An administrator is configuring systems and wants to connect remotely to a server for administration purposes. Which service should the administrator use?",
+      "options": {
+        "A": "SSH service",
+        "B": "Web service",
+        "C": "NTP service",
+        "D": "NFS service"
+      },
+      "answer": "A",
+      "explanation": "The SSH (Secure Shell) service allows secure, encrypted remote connections to servers. It is commonly used for performing administrative and configuration tasks on remote systems."
+    }
+  },
+  {
+    "id": 96,
+    "de": {
+      "frage": "Sie konfigurieren den ntpd-Dienst auf einem Linux-Server, um die Zeit mit einem bestimmten internen Zeitserver unter der Adresse 192.168.1.100 zu synchronisieren. Nachdem Sie die Datei /etc/ntp.conf bearbeitet und die folgende Zeile hinzugefügt haben:\n               server 192.168.1.100\n\nWas ist der nächste Schritt, um sicherzustellen, dass der Server mit dem angegebenen Zeitserver zu synchronisieren beginnt?",
+      "optionen": {
+        "A": "Den chronyd-Dienst mit dem Befehl systemctl restart chronyd neu starten.",
+        "B": "Den ntpd-Dienst mit dem Befehl systemctl restart ntp neu starten.",
+        "C": "Die Datei /etc/chrony.conf bearbeiten, um denselben Zeitserver einzutragen.",
+        "D": "Den Befehl ntpd -q ausführen, um die Änderungen sofort anzuwenden."
+      },
+      "antwort": "B",
+      "erklärung": "Nachdem die Datei /etc/ntp.conf geändert wurde, muss der ntpd-Dienst neu gestartet werden, damit die neue Konfiguration aktiv wird. Der korrekte Befehl lautet 'systemctl restart ntp'. Dies startet den NTP-Dienst neu und ermöglicht die Synchronisierung mit dem angegebenen Zeitserver."
+    },
+    "en": {
+      "question": "You are configuring the ntpd service on a Linux server to synchronize time with a specific internal time server located at 192.168.1.100. After editing the /etc/ntp.conf file to include the following line:\n               server 192.168.1.100\n\nWhat is the next step to ensure the server begins synchronizing time with the specified time server?",
+      "options": {
+        "A": "Restart the chronyd service using the command systemctl restart chronyd.",
+        "B": "Restart the ntpd service using the command systemctl restart ntp.",
+        "C": "Edit the /etc/chrony.conf file to include the same time server.",
+        "D": "Run the command ntpd -q to apply the changes immediately."
+      },
+      "answer": "B",
+      "explanation": "After modifying the /etc/ntp.conf file, the ntpd service must be restarted for the configuration changes to take effect. The correct command is 'systemctl restart ntp', which restarts the NTP service and initiates synchronization with the specified time server."
+    }
+  },
+  {
+    "id": 97,
+    "de": {
+      "frage": "Sie sind Systemadministrator eines Linux-Servers. Ein Benutzer meldet, dass die Zeitzone des Servers falsch ist, was Probleme mit geplanten Cron-Jobs verursacht. Nach der Untersuchung stellen Sie fest, dass die Datei /etc/localtime nicht korrekt mit einer gültigen Zeitzonendatei verknüpft ist.\n\nWie sollten Sie dieses Problem beheben?",
+      "optionen": {
+        "A": "Eine symbolische Verknüpfung von der entsprechenden Zeitzonendatei in /usr/share/zoneinfo/ zu /etc/localtime erstellen.",
+        "B": "Die Datei /etc/localtime direkt bearbeiten und die korrekten Zeitzoneninformationen eintragen.",
+        "C": "Die Datei /etc/timezone bearbeiten, um die richtige Zeitzone anzugeben, und das System neu starten.",
+        "D": "Die gewünschte Zeitzonendatei von /usr/share/zoneinfo/ nach /etc/localtime kopieren."
+      },
+      "antwort": "A",
+      "erklärung": "Die empfohlene Methode zur Festlegung der Zeitzone unter Linux besteht darin, eine symbolische Verknüpfung von der passenden Datei in /usr/share/zoneinfo/ nach /etc/localtime zu erstellen. Beispiel: 'ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime'. Dies stellt sicher, dass das System die korrekte Zeitzone verwendet."
+    },
+    "en": {
+      "question": "You are a system administrator managing a Linux server. A user reports that the server's time zone is incorrect, causing issues with scheduled cron jobs. Upon investigation, you find that the /etc/localtime file is not properly linked to a valid time zone file.\n\nHow should you resolve this issue?",
+      "options": {
+        "A": "Create a symbolic link from the appropriate time zone file in /usr/share/zoneinfo/ to /etc/localtime.",
+        "B": "Edit the /etc/localtime file directly and input the correct time zone information.",
+        "C": "Modify the /etc/timezone file to specify the correct time zone and restart the system.",
+        "D": "Copy the desired time zone file from /usr/share/zoneinfo/ to /etc/localtime."
+      },
+      "answer": "A",
+      "explanation": "The recommended method to set the time zone in Linux is to create a symbolic link from the appropriate region file in /usr/share/zoneinfo/ to /etc/localtime. For example: 'ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime'. This ensures the system uses the correct time zone configuration."
+    }
+  },
+  {
+    "id": 98,
+    "de": {
+      "frage": "Ein Linux-Systemadministrator identifiziert Systemprozesse, die nicht interaktiv sind, im Hintergrund laufen und keine Benutzerinteraktion zulassen. Welche Systemprozesse identifiziert der Administrator?",
+      "optionen": {
+        "A": "Daemons",
+        "B": "SSH",
+        "C": "NTP",
+        "D": "Dienste"
+      },
+      "antwort": "A",
+      "erklärung": "Daemons sind nicht-interaktive Hintergrundprozesse unter Linux, die ohne direkte Benutzerinteraktion ausgeführt werden. Sie übernehmen Aufgaben wie Systemüberwachung, Protokollierung und Netzwerkdienste."
+    },
+    "en": {
+      "question": "A Linux systems administrator is identifying system processes that are non-interactive, operate in the background, and do NOT allow users to interact with them. Which system processes is the systems administrator identifying?",
+      "options": {
+        "A": "Daemons",
+        "B": "SSH",
+        "C": "NTP",
+        "D": "Services"
+      },
+      "answer": "A",
+      "explanation": "Daemons are non-interactive background processes in Linux that run without direct user interaction. They handle various tasks such as logging, monitoring, and providing network services."
+    }
+  },
+  {
+    "id": 99,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt den Zweck von Lokalisierungsoptionen in einem Linux-System am BESTEN?",
+      "optionen": {
+        "A": "Zur Installation zusätzlicher Softwarepakete, die für eine bestimmte Region erforderlich sind.",
+        "B": "Zur Anpassung der Systemsprache, des Datums-, Zeit- und Formatierungsschemas an eine bestimmte Region oder Kultur.",
+        "C": "Zur Optimierung der Systemleistung basierend auf dem geografischen Standort.",
+        "D": "Zur Konfiguration der Netzwerkeinstellungen des Systems für eine bestimmte Region."
+      },
+      "antwort": "B",
+      "erklärung": "Lokalisierungsoptionen (Localization oder 'Locale'-Einstellungen) passen das System an sprachliche und kulturelle Konventionen einer bestimmten Region an. Dazu gehören Sprache, Datums- und Zeitformate, Zahlen- und Währungsdarstellung."
+    },
+    "en": {
+      "question": "Which of the following BEST describes the purpose of localization options in a Linux system?",
+      "options": {
+        "A": "To install additional software packages required for a specific region.",
+        "B": "To adapt the system's language, date, time, and formatting conventions to match a specific region or culture.",
+        "C": "To optimize the system's performance based on geographic location.",
+        "D": "To configure the system's network settings for a specific region."
+      },
+      "answer": "B",
+      "explanation": "Localization options, or locale settings, adapt the system to the language and cultural conventions of a specific region. This includes language, date and time formats, number formatting, and currency representation."
+    }
+  },
+  {
+    "id": 100,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt den Zweck von Lokalisierungsoptionen in einem Linux-System am BESTEN?",
+      "optionen": {
+        "A": "Zur Installation zusätzlicher Softwarepakete, die für eine bestimmte Region erforderlich sind.",
+        "B": "Zur Anpassung der Systemsprache, des Datums-, Zeit- und Formatierungsschemas an eine bestimmte Region oder Kultur.",
+        "C": "Zur Optimierung der Systemleistung basierend auf dem geografischen Standort.",
+        "D": "Zur Konfiguration der Netzwerkeinstellungen des Systems für eine bestimmte Region."
+      },
+      "antwort": "B",
+      "erklärung": "Lokalisierungsoptionen (Locales) in Linux werden verwendet, um Sprache, Datums- und Zeitformat, Zahlen- und Währungsdarstellung sowie andere kulturelle Einstellungen an eine bestimmte Region oder Sprache anzupassen."
+    },
+    "en": {
+      "question": "Which of the following BEST describes the purpose of localization options in a Linux system?",
+      "options": {
+        "A": "To install additional software packages required for a specific region.",
+        "B": "To adapt the system's language, date, time, and formatting conventions to match a specific region or culture.",
+        "C": "To optimize the system's performance based on geographic location.",
+        "D": "To configure the system's network settings for a specific region."
+      },
+      "answer": "B",
+      "explanation": "Localization options (locales) in Linux are used to adjust the language, date and time formats, number formatting, and currency symbols to match the conventions of a specific region or culture."
+    }
+  },
+  {
+    "id": 101,
+    "de": {
+      "frage": "Ein Administrator erstellt eine neue systemd-Unit-Datei für einen benutzerdefinierten Dienst. Der Dienst soll beim Systemstart automatisch gestartet werden und sicherstellen, dass ein anderer Dienst (network.service) vorher gestartet wird.\n\nWelche der folgenden Konfigurationen sollte der Administrator in die Unit-Datei aufnehmen?",
+      "optionen": {
+        "A": "Requires=multi-user.target im Abschnitt [Install] hinzufügen und WantedBy=network.service im Abschnitt [Unit] hinzufügen.",
+        "B": "Requires=multi-user.target im Abschnitt [Unit] hinzufügen und WantedBy=network.service im Abschnitt [Install] hinzufügen.",
+        "C": "WantedBy=multi-user.target im Abschnitt [Unit] hinzufügen und Requires=network.service im Abschnitt [Install] hinzufügen.",
+        "D": "WantedBy=multi-user.target im Abschnitt [Install] hinzufügen und Requires=network.service im Abschnitt [Unit] hinzufügen."
+      },
+      "antwort": "D",
+      "erklärung": "Um sicherzustellen, dass der benutzerdefinierte Dienst beim Booten startet, wird 'WantedBy=multi-user.target' im Abschnitt [Install] gesetzt. Damit der Dienst erst nach dem network.service startet, wird 'Requires=network.service' im Abschnitt [Unit] eingetragen. Dies stellt sicher, dass die Netzwerkinitialisierung abgeschlossen ist, bevor der Dienst startet."
+    },
+    "en": {
+      "question": "An administrator is creating a new systemd unit file for a custom service. The service must start automatically when the system boots and must also ensure that another service (network.service) is started before it.\n\nWhich of the following configurations should the administrator include in the unit file?",
+      "options": {
+        "A": "Add Requires=multi-user.target in the [Install] section and WantedBy=network.service in the [Unit] section.",
+        "B": "Add Requires=multi-user.target in the [Unit] section and WantedBy=network.service in the [Install] section.",
+        "C": "Add WantedBy=multi-user.target in the [Unit] section and Requires=network.service in the [Install] section.",
+        "D": "Add WantedBy=multi-user.target in the [Install] section and Requires=network.service in the [Unit] section."
+      },
+      "answer": "D",
+      "explanation": "To ensure the custom service starts automatically at boot, 'WantedBy=multi-user.target' should be placed in the [Install] section. To ensure it starts only after the network service, 'Requires=network.service' should be placed in the [Unit] section. This guarantees the network is up before the custom service starts."
+    }
+  },
+  {
+    "id": 102,
+    "de": {
+      "frage": "Sie sind Systemadministrator und sollen auf einem Linux-System einen Druckserver mit CUPS einrichten. Nach der Installation von CUPS führen Sie die Befehle 'systemctl enable cups' und 'systemctl start cups' aus. Dennoch können Benutzer im Netzwerk keine Druckaufträge an den Server senden.\n\nWas sollten Sie als Nächstes tun, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Den Standarddrucker mit dem Befehl lpr konfigurieren.",
+        "B": "Port 631/tcp in der Systemfirewall öffnen.",
+        "C": "Die Datei /etc/cups/cups-files.conf ändern, um Netzwerkzugriff zu ermöglichen.",
+        "D": "Den CUPS-Dienst mit dem Befehl systemctl restart cups neu starten."
+      },
+      "antwort": "B",
+      "erklärung": "CUPS verwendet standardmäßig TCP-Port 631 für den Druckverkehr. Wenn Benutzer im Netzwerk keine Druckaufträge senden können, ist häufig die Firewall die Ursache. Durch das Öffnen von Port 631/tcp (z. B. mit 'firewall-cmd --permanent --add-port=631/tcp' und 'firewall-cmd --reload') wird der Netzwerkzugriff auf den Druckserver ermöglicht."
+    },
+    "en": {
+      "question": "You are a system administrator tasked with setting up a print server on a Linux system using CUPS. After installing CUPS, you run the commands 'systemctl enable cups' and 'systemctl start cups'. However, users on the network are unable to send print jobs to the server.\n\nWhat should you do next to resolve the issue?",
+      "options": {
+        "A": "Configure the default printer using the lpr command.",
+        "B": "Open port 631/tcp in the system's firewall.",
+        "C": "Modify the /etc/cups/cups-files.conf file to allow network access.",
+        "D": "Restart the CUPS service using the systemctl restart cups command."
+      },
+      "answer": "B",
+      "explanation": "CUPS communicates over TCP port 631. If network users cannot send print jobs, it is likely blocked by the system firewall. Opening port 631/tcp (for example, using 'firewall-cmd --permanent --add-port=631/tcp' followed by 'firewall-cmd --reload') allows remote clients to connect and send print jobs to the server."
+    }
+  },
+  {
+    "id": 103,
+    "de": {
+      "frage": "Wie können Sie die Umgebungsvariable TZ (Zeitzone) dauerhaft für Ihre Shell-Umgebung ändern?",
+      "optionen": {
+        "A": "Den date-Befehl verwenden.",
+        "B": "Die Variable TZ zur Datei ~/bash_profile hinzufügen.",
+        "C": "Die Datei /etc/sysconfig/clock bearbeiten.",
+        "D": "Den Befehl export TZ verwenden."
+      },
+      "antwort": "B",
+      "erklärung": "Um die TZ-Umgebungsvariable dauerhaft für eine Benutzerumgebung festzulegen, sollte sie in der Datei ~/bash_profile oder ~/.profile hinzugefügt werden. Dadurch wird die Zeitzonenvariable bei jeder neuen Anmeldung automatisch gesetzt. Der Befehl 'export TZ' wirkt nur temporär innerhalb der aktuellen Sitzung."
+    },
+    "en": {
+      "question": "How can you permanently change the time zone (TZ) environment variable for your shell environment?",
+      "options": {
+        "A": "Use the date command.",
+        "B": "Add the TZ variable to the ~/bash_profile file.",
+        "C": "Edit the /etc/sysconfig/clock file.",
+        "D": "Use the export TZ command."
+      },
+      "answer": "B",
+      "explanation": "To make the TZ environment variable persistent for a user, it should be added to the ~/bash_profile or ~/.profile file. This ensures the time zone setting is applied automatically each time the user logs in. The 'export TZ' command alone only changes the setting temporarily for the current session."
+    }
+  },
+  {
+    "id": 104,
+    "de": {
+      "frage": "Sie sollen die Zeitzone auf einem Linux-Server so konfigurieren, dass sie der Ortszeit in Denver, Colorado, USA entspricht.\n\nWelchen der folgenden Befehle würden Sie verwenden, um dies zu erreichen?",
+      "optionen": {
+        "A": "timedatectl set-locale \"America/Denver\"",
+        "B": "timedatectl set-time \"America/Denver\"",
+        "C": "timedatectl list-timezones | grep Denver",
+        "D": "timedatectl set-timezone \"America/Denver\""
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl 'timedatectl set-timezone \"America/Denver\"' wird verwendet, um dauerhaft die Zeitzone auf einem Linux-System zu ändern. Der Befehl 'timedatectl list-timezones | grep Denver' dient lediglich dazu, verfügbare Zeitzonen anzuzeigen, ändert sie jedoch nicht."
+    },
+    "en": {
+      "question": "You are tasked with configuring the time zone on a Linux server to match the local time in Denver, Colorado, USA.\n\nWhich of the following commands would you use to accomplish this?",
+      "options": {
+        "A": "timedatectl set-locale \"America/Denver\"",
+        "B": "timedatectl set-time \"America/Denver\"",
+        "C": "timedatectl list-timezones | grep Denver",
+        "D": "timedatectl set-timezone \"America/Denver\""
+      },
+      "answer": "D",
+      "explanation": "The command 'timedatectl set-timezone \"America/Denver\"' is used to permanently change the system’s timezone on Linux. The 'timedatectl list-timezones | grep Denver' command only lists available timezones without making any configuration changes."
+    }
+  },
+  {
+    "id": 105,
+    "de": {
+      "frage": "Ein Systemadministrator hat gerade eine neue Webserver-Anwendung auf einem Linux-System installiert. Der Administrator möchte, dass der Webserver sofort gestartet wird und außerdem bei jedem Systemstart automatisch startet.\n\nWelche Kombination von systemctl-Unterbefehlen sollte der Administrator verwenden?",
+      "optionen": {
+        "A": "enable und restart",
+        "B": "restart und mask",
+        "C": "start und disable",
+        "D": "start und enable"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl 'systemctl start <dienst>' startet den Dienst sofort, während 'systemctl enable <dienst>' dafür sorgt, dass der Dienst beim Systemstart automatisch ausgeführt wird. Diese Kombination erfüllt beide Anforderungen – sofortiges Starten und automatischer Start beim Booten."
+    },
+    "en": {
+      "question": "A system administrator has just installed a new web server application on a Linux system. The administrator wants the web server to start immediately and also ensure that it starts automatically every time the system boots.\n\nWhich combination of systemctl subcommands should the administrator use?",
+      "options": {
+        "A": "enable and restart",
+        "B": "restart and mask",
+        "C": "start and disable",
+        "D": "start and enable"
+      },
+      "answer": "D",
+      "explanation": "The 'systemctl start <service>' command starts the service immediately, while 'systemctl enable <service>' ensures it starts automatically at system boot. This combination satisfies both the immediate and persistent startup requirements."
+    }
+  },
+  {
+    "id": 106,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt den Zweck der OnCalendar-Direktive in einer systemd-.timer-Datei korrekt?",
+      "optionen": {
+        "A": "Sie gibt das Zeitintervall an, das ab dem Systemstart beginnt.",
+        "B": "Sie wird verwendet, um Timer zu konfigurieren, die nur einmal nach einem Systemneustart ausgeführt werden.",
+        "C": "Sie definiert einen Zeitausdruck basierend auf der Systemuhr, um Ereignisse zu planen.",
+        "D": "Sie ersetzt die Notwendigkeit von systemd-.service-Dateien."
+      },
+      "antwort": "C",
+      "erklärung": "Die Direktive 'OnCalendar' in einer systemd-.timer-Datei definiert eine Zeit- und Datumsangabe basierend auf der Systemuhr, nach der das zugehörige .service-Ereignis ausgeführt wird. Sie ermöglicht flexible Zeitangaben wie täglich, wöchentlich oder zu bestimmten Uhrzeiten."
+    },
+    "en": {
+      "question": "Which of the following statements correctly describes the purpose of the OnCalendar directive in a systemd .timer file?",
+      "options": {
+        "A": "It specifies the time interval starting from system startup.",
+        "B": "It is used to configure timers that only run once after a system reboot.",
+        "C": "It defines a time expression based on the system clock to schedule events.",
+        "D": "It replaces the need for systemd .service files."
+      },
+      "answer": "C",
+      "explanation": "The 'OnCalendar' directive in a systemd .timer file defines a time and date expression based on the system clock to schedule when a corresponding .service unit should run. It supports flexible scheduling, such as daily, weekly, or specific time-based triggers."
+    }
+  },
+  {
+    "id": 107,
+    "de": {
+      "frage": "Sie sind Systemadministrator, und ein Benutzer meldet, dass sein Druckauftrag nicht an den richtigen Drucker gesendet wird. Nach Überprüfung des verwendeten Befehls stellen Sie Folgendes fest: 'lpr -# 2 report.txt'. Der Benutzer wollte zwei Kopien des Dokuments an einen bestimmten Drucker mit dem Namen 'OfficePrinter' senden.\n\nWas sollten Sie tun, um den Befehl zu korrigieren?",
+      "optionen": {
+        "A": "Die Option -P OfficePrinter hinzufügen, um den richtigen Drucker anzugeben.",
+        "B": "Die Option -# 2 durch -P OfficePrinter ersetzen, um den Auftrag an den richtigen Drucker zu senden.",
+        "C": "Die Option -T OfficePrinter hinzufügen, um den Druckernamen festzulegen.",
+        "D": "Den Befehl lpq anstelle von lpr verwenden, um den Drucker anzugeben."
+      },
+      "antwort": "A",
+      "erklärung": "Die Option '-P' im Befehl 'lpr' gibt den Drucker an, an den der Auftrag gesendet werden soll. Um zwei Kopien an den Drucker 'OfficePrinter' zu senden, lautet der korrekte Befehl: 'lpr -P OfficePrinter -# 2 report.txt'."
+    },
+    "en": {
+      "question": "You are a system administrator, and a user reports that their print job is not being sent to the correct printer. After reviewing the command they used, you find the following: 'lpr -# 2 report.txt'. The user intended to print two copies of the document to a specific printer named 'OfficePrinter.'\n\nWhat should you do to correct the command?",
+      "options": {
+        "A": "Add the -P OfficePrinter option to specify the correct printer.",
+        "B": "Replace the -# 2 option with -P OfficePrinter to direct the job to the correct printer.",
+        "C": "Add the -T OfficePrinter option to set the printer name.",
+        "D": "Use the lpq command instead of lpr to specify the printer."
+      },
+      "answer": "A",
+      "explanation": "The '-P' option in the 'lpr' command specifies which printer to send the job to. To print two copies to the 'OfficePrinter', the correct command is: 'lpr -P OfficePrinter -# 2 report.txt'."
+    }
+  },
+  {
+    "id": 108,
+    "de": {
+      "frage": "Sie müssen das Systemdatum und die Systemzeit mit dem Befehl 'date' festlegen.\n\nWelche Option des 'date'-Befehls sollten Sie verwenden?",
+      "optionen": {
+        "A": "-d",
+        "B": "-s",
+        "C": "-u",
+        "D": "-utc"
+      },
+      "antwort": "B",
+      "erklärung": "Die Option '-s' des 'date'-Befehls wird verwendet, um Datum und Uhrzeit des Systems festzulegen. Beispiel: 'date -s \"2025-10-24 15:30:00\"'. Die Option '-d' zeigt ein bestimmtes Datum an, ohne es zu ändern, und '-u' zeigt die Zeit in UTC an."
+    },
+    "en": {
+      "question": "You need to set the system date and time using the date command.\n\nWhich date option should you use?",
+      "options": {
+        "A": "-d",
+        "B": "-s",
+        "C": "-u",
+        "D": "-utc"
+      },
+      "answer": "B",
+      "explanation": "The '-s' option of the 'date' command is used to set the system’s date and time. For example: 'date -s \"2025-10-24 15:30:00\"'. The '-d' option displays a specified date without changing the system time, and '-u' displays the time in UTC format."
+    }
+  },
+  {
+    "id": 109,
+    "de": {
+      "frage": "Wie heißt das Druckverwaltungssystem für Linux, das es einem Computer ermöglicht, als Druckserver zu fungieren?",
+      "optionen": {
+        "A": "NTP",
+        "B": "SFTP",
+        "C": "CUPS",
+        "D": "NFS"
+      },
+      "antwort": "C",
+      "erklärung": "CUPS (Common Unix Printing System) ist das Standard-Druckverwaltungssystem unter Linux. Es ermöglicht das Drucken sowohl lokal als auch über das Netzwerk und bietet eine Weboberfläche zur Verwaltung von Druckern und Druckaufträgen."
+    },
+    "en": {
+      "question": "The print management system for Linux, which enables a computer to function as a print server, is known as what?",
+      "options": {
+        "A": "NTP",
+        "B": "SFTP",
+        "C": "CUPS",
+        "D": "NFS"
+      },
+      "answer": "C",
+      "explanation": "CUPS (Common Unix Printing System) is the standard print management system for Linux. It allows a computer to act as a print server, supports both local and network printing, and provides a web interface for printer and job management."
+    }
   }
 ]
