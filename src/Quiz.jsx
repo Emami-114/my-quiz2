@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./linux-comptia.json";
+import questions2 from "./linuxPlus.json";
+import compQuiz from "./linux-comptia.json";
 
 export default function Quiz() {
   const [questions, setQuestions] = useState(questions2);
@@ -13,6 +14,19 @@ export default function Quiz() {
   const [answeredIds, setAnsweredIds] = useState([]);
   const [totalFalse, setTotalFalse] = useState(0);
   const [isRandom, setIsRandom] = useState(false);
+  const [quizType, setQuizType] = useState("linuxPlus"); // "linuxPlus" oder "compQuiz"
+
+  const switchQuiz = () => {
+    const newQuizType = quizType === "linuxPlus" ? "compQuiz" : "linuxPlus";
+    setQuizType(newQuizType);
+    setQuestions(newQuizType === "compQuiz" ? compQuiz : questions2);
+    setCurrent(0);
+    setScore(0);
+    setSelected("");
+    setShowAnswer(false);
+    setAnsweredIds([]);
+    setTotalFalse(0);
+  };
 
   const handleSelect = (option) => {
     setSelected(option);
@@ -158,11 +172,17 @@ export default function Quiz() {
           ? `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`
           : `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`}
       </Button>
-      <Button
+      {/* <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={repeatWrongQuestions}
       >
         {lang === "de" ? "FFW" : "RWQ"}
+      </Button> */}
+       <Button
+        className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
+        onClick={switchQuiz}
+      >
+        {quizType === "compQuiz" ? "Linux+" : "CompTIA"}
       </Button>
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
@@ -178,6 +198,15 @@ export default function Quiz() {
           <p className="text-center text-2xl mb-8 font-medium leading-relaxed">
             {currentQuestion.frage || currentQuestion.question}
           </p>
+          {(currentQuestion.image || currentQuestion.bild) && (
+            <div className="flex justify-center mb-8">
+              <img
+                src={`./public/assets/${currentQuestion.image}`}
+                alt="Question illustration"
+                className="max-w-md max-h-80 rounded-lg shadow-lg object-contain"
+              />
+            </div>
+          )}
           <div className="space-y-5">
             {optionEntries.map(([key, value]) => (
               <Button

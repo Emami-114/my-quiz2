@@ -10,6 +10,7 @@
         "D": "/usr"
       },
       "antwort": "C",
+      "image": "./public/assets/react.svg",
       "erklärung": "Das /home-Verzeichnis enthält die persönlichen Dateien und Konfigurationseinstellungen für jeden Benutzer. Beim Start des Terminals werden Profildateien wie .bashrc oder .zshrc aus diesem Verzeichnis geladen."
     },
     "en": {
@@ -35,6 +36,8 @@
         "D": "Ihre Lösung dokumentieren."
       },
       "antwort": "B",
+      "image": "./public/assets/question2.png",
+
       "erklärung": "Da die Neuinstallation das Problem nicht behoben hat, war Rishas ursprüngliche Theorie wahrscheinlich falsch. Der nächste logische Schritt in der Fehlerbehebung ist, eine neue wahrscheinliche Ursache für das Problem zu identifizieren."
     },
     "en": {
