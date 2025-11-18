@@ -1118,28 +1118,28 @@
   {
     "id": 46,
     "de": {
-      "frage": "Ein Systemadministrator hat die Aufgabe, einen Cloud-basierten Server mit einer öffentlichen IP-Adresse mithilfe von deklarativem Code zu erstellen. Welche der folgenden Technologien hat der Administrator verwendet?",
+      "frage": "Ein Systemadministrator erhält die Aufgabe, einen cloudbasierten Server mit einer öffentlichen IP-Adresse zu erstellen. Welche der folgenden Technologien hat der Systemadministrator verwendet, um diese Aufgabe auszuführen?",
       "optionen": {
         "A": "Puppet",
         "B": "Git",
         "C": "Ansible",
         "D": "Terraform"
       },
-      "antwort": "D",
+      "antwort": "C",
       "image": "46.png",
-      "erklärung": "Der Administrator hat Terraform verwendet. Terraform ist ein Werkzeug für Infrastructure as Code, mit dem Ressourcen auf verschiedenen Cloud-Plattformen erstellt und verwaltet werden können, einschließlich Servern mit öffentlichen IP-Adressen."
+      "erklärung": "Ansible ist ein Automatisierungswerkzeug, mit dem Infrastrukturkomponenten wie Server in der Cloud erstellt, konfiguriert und bereitgestellt werden können. Ansible kann zum Erstellen von Cloud-Instanzen, Zuweisen von öffentlichen IP-Adressen und Verwalten von Konfigurationen verwendet werden. Puppet wird hauptsächlich für die Konfigurationsverwaltung verwendet, Terraform für Infrastructure as Code und Git für Versionskontrolle."
     },
     "en": {
-      "question": "A systems administrator is tasked with creating a cloud-based server with a public IP address using declarative code. Which of the following technologies did the systems administrator use to complete this task?",
+      "question": "A systems administrator is tasked with creating a cloud-based server with a public IP address. Which of the following technologies did the systems administrator use to complete this task?",
       "options": {
         "A": "Puppet",
         "B": "Git",
         "C": "Ansible",
         "D": "Terraform"
       },
-      "answer": "D",
+      "answer": "C",
       "image": "46.png",
-      "explanation": "The systems administrator used Terraform. Terraform is a tool for building, changing, and versioning infrastructure as code, and can create and manage resources on different cloud platforms, including servers with public IP addresses."
+      "explanation": "Ansible is an automation tool used to create, configure, and deploy infrastructure components such as cloud servers. It can be used to provision cloud instances, assign public IP addresses, and perform configuration management. Puppet is primarily used for configuration management, Terraform for infrastructure as code, and Git for version control."
     }
   },
   {
@@ -1572,26 +1572,28 @@
   {
     "id": 65,
     "de": {
-      "frage": "Ein Linux-Administrator hat einen bestehenden Linux-Server geklont. Nach dem Booten des geklonten Servers trat ein Fehler auf, weil der Gerätename in /etc/fstab (/dev/sda1) nicht mit dem tatsächlichen Gerätenamen (/dev/sdb1) übereinstimmte.\n\nWie sollte der Administrator das Problem der Geräte-Inkonsistenz lösen und die Festplatte mounten?",
+      "frage": "Ein Linux-Administrator hat einen vorhandenen Linux-Server geklont und aus diesem Klon einen neuen Server erstellt. Der Administrator stieß nach dem Booten des geklonten Servers auf einen Fehler (fehlgeschlagenes Mount eines Dateisystems). Der Administrator führte verschiedene Befehle zur weiteren Fehlerbehebung und zum Mounten des fehlenden Dateisystems aus. Was sollte der Administrator verwenden, um das Problem der Geräte-Nichtübereinstimmung zu lösen und die Festplatte zu mounten?",
       "optionen": {
-        "A": "Mounten der Festplatte nach Geräte-ID (UUID)",
-        "B": "fsck -A",
-        "C": "Mounten der Festplatte nach Label",
-        "D": "Mounten der Festplatte nach blkid"
-      },
-      "antwort": "A",
-      "erklärung": "Der Administrator sollte die Festplatte nach ihrer Geräte-ID (UUID) mounten, um das Problem zu lösen. Das Problem wird dadurch verursacht, dass der geklonte Server einen anderen Gerätenamen für die Festplatte hat als der ursprüngliche Server. Die Verwendung der eindeutigen Kennung (UUID) anstelle des Gerätenamens (z.B. /dev/sda1) in /etc/fstab stellt sicher, dass das richtige Gerät gemountet wird, unabhängig von seinem Namen. Die UUID kann mit Befehlen wie blkid oder lsblk -f ermittelt werden."
-    },
-    "en": {
-      "question": "A Linux administrator cloned an existing Linux server. After booting the cloned server, an error occurred because the device name in /etc/fstab (/dev/sda1) did not match the actual device name (/dev/sdb1).\n\nHow should the administrator resolve the device mismatch issue and mount the disk?",
-      "options": {
-        "A": "mount disk by device-id (UUID)",
+        "A": "mount disk by device-id",
         "B": "fsck -A",
         "C": "mount disk by-label",
         "D": "mount disk by-blkid"
       },
-      "answer": "A",
-      "explanation": "The administrator should mount the disk by its device-id (UUID) to resolve the issue. The problem is caused by the cloned server having a different device name for the disk than the original server. Using the unique identifier (UUID) instead of the device name (e.g., /dev/sda1) in /etc/fstab ensures the correct device is mounted, regardless of its name. The UUID can be found using commands like blkid or lsblk -f."
+      "antwort": "D",
+      "image": "65.png",
+      "erklärung": "Beim Klonen eines Servers können sich Gerätenamen (wie /dev/sda1, /dev/sdb1) ändern, was dazu führt, dass Einträge in /etc/fstab, die auf Gerätenamen basieren, fehlschlagen. Die Verwendung von Block-Device-IDs (blkid) zum Mounten von Festplatten ist die zuverlässigste Methode, da UUIDs oder Filesystem-IDs auch nach dem Klonen gleich bleiben. Der Befehl 'blkid' zeigt diese eindeutigen IDs an, die dann in /etc/fstab verwendet werden können (z.B. UUID=...). Dies löst Geräte-Nichtübereinstimmungsprobleme nach dem Klonen."
+    },
+    "en": {
+      "question": "A Linux administrator cloned an existing Linux server and built a new server from that clone. The administrator encountered the following error after booting the cloned server (failed to mount a filesystem). The administrator performed various commands to further troubleshoot and mount the missing filesystem. Which of the following should the administrator use to resolve the device mismatch issue and mount the disk?",
+      "options": {
+        "A": "mount disk by device-id",
+        "B": "fsck -A",
+        "C": "mount disk by-label",
+        "D": "mount disk by-blkid"
+      },
+      "answer": "D",
+      "image": "65.png",
+      "explanation": "When cloning a server, device names (like /dev/sda1, /dev/sdb1) can change, causing /etc/fstab entries based on device names to fail. Using block device IDs (blkid) to mount disks is the most reliable method because UUIDs or filesystem IDs remain the same even after cloning. The 'blkid' command displays these unique identifiers, which can then be used in /etc/fstab (e.g., UUID=...). This resolves device mismatch issues after cloning."
     }
   },
   {
@@ -1735,7 +1737,7 @@
         "C": "ip addr flush",
         "D": "iptables -R"
       },
-      "antwort": "A",
+      "antwort": "B",
       "image": "71.png",
       "erklärung": "Der Befehl `iptables -F` wird das Problem beheben. Das Problem wird durch Firewall-Regeln verursacht, die den Zugriff auf die Webseiten und andere Dienste der Organisation blockieren. Die Protokollausgabe zeigt, dass der Kernel Pakete verworfen hat. Der Befehl `iptables -F` löscht alle Firewall-Regeln in allen Ketten und ermöglicht so, dass der Verkehr wieder durchgelassen wird. Dies löst das unmittelbare Problem und stellt den Zugriff wieder her."
     },
@@ -1747,7 +1749,7 @@
         "C": "ip addr flush",
         "D": "iptables -R"
       },
-      "answer": "A",
+      "answer": "B",
       "image": "71.png",
       "explanation": "The command `iptables -F` will remediate and help resolve the issue. The issue is caused by the firewall rules that block access to the organization’s web page and other services. The log output shows that the kernel has dropped packets. The command `iptables -F` will flush all the firewall rules and allow the traffic to pass through. This command will resolve the issue and restore access to the web page and other services."
     }
@@ -1864,7 +1866,7 @@
         "C": "Etwas beansprucht die Serverressourcen übermäßig.",
         "D": "Die dem Server zugewiesene RAM-Menge ist zu hoch."
       },
-      "antwort": "B",
+      "antwort": "C",
       "erklärung": "Die Meldung 'Too many open files' in `/var/log/messages` zeigt, dass dem Server die Dateideskriptoren ausgehen. Jeder Prozess hat ein Limit für die Anzahl offener Dateien (einschließlich Netzwerkverbindungen). Wenn `mysqld` dieses Limit erreicht, kann es keine neuen Verbindungen annehmen oder Dateien öffnen, was zu unerwarteten Verbindungsabbrüchen führt."
     },
     "en": {
@@ -1875,7 +1877,7 @@
         "C": "Something is starving the server resources.",
         "D": "The amount of RAM allocated to the server is too high."
       },
-      "answer": "B",
+      "answer": "C",
       "explanation": "The message in `/var/log/messages` indicates that the server is running out of file descriptors. A file descriptor is an identifier for an open file, and each process has a limit. If a process tries to open more files than the limit, it will fail with an error message like 'Too many open files', causing connections to be closed unexpectedly."
     }
   },
@@ -2247,7 +2249,7 @@
         "C": "Die Kabelverbindung 1 ist offline.",
         "D": "Es ist keine Standardroute (default route) definiert."
       },
-      "antwort": "D",
+      "antwort": "A",
       "erklärung": "Das Problem wird durch das Fehlen einer definierten Standardroute verursacht. Ohne eine Standardroute (normalerweise über die `GATEWAY`-Option in der Netzwerkkonfigurationsdatei festgelegt) weiß der Server nicht, wohin er Pakete senden soll, die für Hosts außerhalb seines lokalen Netzwerks bestimmt sind, und kann daher nicht mit dem Internet kommunizieren."
     },
     "en": {
@@ -2258,7 +2260,7 @@
         "C": "Wired connection 1 is offline.",
         "D": "No default route is defined."
       },
-      "answer": "D",
+      "answer": "A",
       "explanation": "The issue is caused by the lack of a default route. Without a default route (usually set with the `GATEWAY` option in the network interface configuration file), the server does not know where to send packets that are destined for hosts outside its local network, thus it cannot communicate with the internet."
     }
   },
@@ -4262,7 +4264,7 @@
         "C": "passwd -u joe",
         "D": "chage -E 90 joe"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "`pam_tally2` ist das Werkzeug zur Verwaltung der Zähler für fehlgeschlagene Anmeldungen. Die Option `-u joe` gibt den Benutzer an, und `-r` setzt den Zähler zurück, was das Konto entsperrt."
     },
     "en": {
@@ -4273,7 +4275,7 @@
         "C": "passwd -u joe",
         "D": "chage -E 90 joe"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "`pam_tally2` is the tool to manage login failure counts. The `-u joe` option specifies the user, and `-r` resets the count, which unlocks the account."
     }
   },
@@ -4638,26 +4640,28 @@
   {
     "id": 185,
     "de": {
-      "frage": "Ein Administrator hat eine Beschädigung im /data-Dateisystem (Typ XFS) festgestellt. Welcher der folgenden Befehle kann dieses Problem am besten beheben?",
+      "frage": "Ein Systemadministrator hat eine Beschädigung im /data-Dateisystem festgestellt. Angesichts der folgenden Ausgabe (die ein Dateisystemproblem zeigt), welchen der folgenden Befehle kann der Administrator verwenden, um dieses Problem am besten zu beheben?",
       "optionen": {
-        "A": "umount /data; mkfs.xfs /dev/sdc1; mount /data",
-        "B": "umount /data; xfs_repair /dev/sdc1; mount /data",
-        "C": "umount /data; fsck /dev/sdc1; mount /data",
-        "D": "umount /data; pvs /dev/sdc1; mount /data"
+        "A": "umount /data\nmkfs.xfs /dev/sdcl\nmount /data",
+        "B": "umount /data\nxfs_repair /dev/sdcl\nmount /data",
+        "C": "umount /data\nfsck /dev/sdcl\nmount /data",
+        "D": "umount /data\npvs /dev/sdcl\nmount /data"
       },
-      "antwort": "B",
-      "erklärung": "Für XFS-Dateisysteme ist `xfs_repair` das korrekte Werkzeug zur Reparatur. Das Dateisystem muss zuerst mit `umount` ausgehängt werden. `fsck` ist für andere Dateisystemtypen wie ext4, und `mkfs` würde alle Daten löschen."
+      "antwort": "C",
+      "image": "185.png",
+      "erklärung": "Um Dateisystembeschädigungen zu reparieren, muss das Dateisystem zuerst ausgehängt (umount), dann mit einem Dateisystem-Reparaturwerkzeug überprüft und repariert werden, und schließlich wieder eingehängt (mount) werden. Der Befehl 'fsck' (filesystem check) ist das Standard-Dienstprogramm zum Überprüfen und Reparieren von Linux-Dateisystemen. Option A würde das Dateisystem neu formatieren und alle Daten löschen. Option B wäre korrekt für XFS-Dateisysteme (mit xfs_repair), aber die generische Antwort ist fsck. Option D verwendet pvs (physical volume scan), was für LVM-Diagnose ist, nicht für Dateisystemreparatur."
     },
     "en": {
-      "question": "A systems administrator detected corruption in the /data filesystem. Given the output showing it's an XFS filesystem, which of the following commands can the administrator use to best address this issue?",
+      "question": "A systems administrator detected corruption in the /data filesystem. Given the following output (showing a filesystem issue), which of the following commands can the administrator use to best address this issue?",
       "options": {
-        "A": "umount /data; mkfs.xfs /dev/sdc1; mount /data",
-        "B": "umount /data; xfs_repair /dev/sdc1; mount /data",
-        "C": "umount /data; fsck /dev/sdc1; mount /data",
-        "D": "umount /data; pvs /dev/sdc1; mount /data"
+        "A": "umount /data\nmkfs.xfs /dev/sdcl\nmount /data",
+        "B": "umount /data\nxfs_repair /dev/sdcl\nmount /data",
+        "C": "umount /data\nfsck /dev/sdcl\nmount /data",
+        "D": "umount /data\npvs /dev/sdcl\nmount /data"
       },
-      "answer": "B",
-      "explanation": "For XFS filesystems, the correct repair tool is `xfs_repair`. The filesystem must first be unmounted with `umount`. `fsck` is for other filesystem types like ext4, and `mkfs` would delete all data."
+      "answer": "C",
+      "image": "185.png",
+      "explanation": "To repair filesystem corruption, the filesystem must first be unmounted (umount), then checked and repaired using a filesystem repair tool, and finally remounted (mount). The 'fsck' (filesystem check) command is the standard utility for checking and repairing Linux filesystems. Option A would reformat the filesystem, destroying all data. Option B would be correct for XFS filesystems specifically (using xfs_repair), but the generic answer is fsck. Option D uses pvs (physical volume scan), which is for LVM diagnostics, not filesystem repair."
     }
   },
   {
@@ -4690,34 +4694,36 @@
   {
     "id": 187,
     "de": {
-      "frage": "Ein Administrator aktiviert LUKS auf einem USB-Speichergerät. Welche drei der folgenden Schritte sind zur Erfüllung der Anforderungen (Verschlüsselung und ext4-Dateisystem) erforderlich?",
+      "frage": "Ein Systemadministrator aktiviert LUKS auf einem USB-Speichergerät mit einem ext4-Dateisystemformat. Der Administrator führt dmesg aus und bemerkt eine bestimmte Ausgabe. In diesem Szenario, was sollte der Administrator durchführen, um diese Anforderungen zu erfüllen? (Wählen Sie drei).",
       "optionen": {
-        "A": "gpg /dev/sdc1",
+        "A": "gpg /dev/sdcl",
         "B": "pvcreate /dev/sdc",
-        "C": "mkfs.ext4 /dev/mapper/LUKS0001 -L ENCRYPTED",
+        "C": "mkfs.ext4 /dev/mapper/LUKSCJ001 -L ENCRYPTED",
         "D": "umount /dev/sdc",
         "E": "fdisk /dev/sdc",
         "F": "mkfs.vfat /dev/mapper/LUKS0001 -L ENCRYPTED",
-        "G": "wipefs -a /dev/sdb1",
-        "H": "cryptsetup luksFormat /dev/sdc1"
+        "G": "wipefs -a /dev/sdbl",
+        "H": "cryptsetup luksFormat /dev/sdcl"
       },
-      "antwort": "C,D,H",
-      "erklärung": "Der korrekte Prozess ist: 1. Das Gerät mit `umount` aushängen (D). 2. Die Partition mit `cryptsetup luksFormat` für die Verschlüsselung vorbereiten (H). 3. Nach dem Öffnen des LUKS-Containers wird das `ext4`-Dateisystem auf dem gemappten Gerät mit `mkfs.ext4` erstellt (C)."
+      "antwort": "D,E,H",
+      "image": "187.png",
+      "erklärung": "Um LUKS-Verschlüsselung auf einem USB-Gerät einzurichten, sind folgende Schritte erforderlich: 1) D: umount /dev/sdc - Das Gerät aushängen, bevor Partitionierungs- oder Verschlüsselungsänderungen vorgenommen werden. 2) E: fdisk /dev/sdc - Das Gerät partitionieren oder die Partitionstabelle vorbereiten. 3) H: cryptsetup luksFormat /dev/sdcl - LUKS-Verschlüsselung auf der Partition initialisieren. Nach diesen Schritten würde man das verschlüsselte Gerät mit 'cryptsetup luksOpen' öffnen und dann ein Dateisystem darauf mit 'mkfs.ext4 /dev/mapper/...' erstellen."
     },
     "en": {
-      "question": "A systems administrator is enabling LUKS on a USB storage device with an ext4 filesystem format. Given this scenario, which of the following should the administrator perform to meet these requirements? (Select three).",
+      "question": "A systems administrator is enabling LUKS on a USB storage device with an ext4 filesystem format. The administrator runs dmesg and notices certain output. Given this scenario, which of the following should the administrator perform to meet these requirements? (Select three).",
       "options": {
-        "A": "gpg /dev/sdc1",
+        "A": "gpg /dev/sdcl",
         "B": "pvcreate /dev/sdc",
-        "C": "mkfs.ext4 /dev/mapper/LUKS0001 -L ENCRYPTED",
+        "C": "mkfs.ext4 /dev/mapper/LUKSCJ001 -L ENCRYPTED",
         "D": "umount /dev/sdc",
         "E": "fdisk /dev/sdc",
         "F": "mkfs.vfat /dev/mapper/LUKS0001 -L ENCRYPTED",
-        "G": "wipefs -a /dev/sdb1",
-        "H": "cryptsetup luksFormat /dev/sdc1"
+        "G": "wipefs -a /dev/sdbl",
+        "H": "cryptsetup luksFormat /dev/sdcl"
       },
-      "answer": "C,D,H",
-      "explanation": "The correct process is: 1. Unmount the device with `umount` (D). 2. Prepare the partition for encryption using `cryptsetup luksFormat` (H). 3. After opening the LUKS container, create the `ext4` filesystem on the mapped device using `mkfs.ext4` (C)."
+      "answer": "D,E,H",
+      "image": "187.png",
+      "explanation": "To set up LUKS encryption on a USB device, the following steps are required: 1) D: umount /dev/sdc - Unmount the device before making partitioning or encryption changes. 2) E: fdisk /dev/sdc - Partition the device or prepare the partition table. 3) H: cryptsetup luksFormat /dev/sdcl - Initialize LUKS encryption on the partition. After these steps, you would open the encrypted device with 'cryptsetup luksOpen' and then create a filesystem on it with 'mkfs.ext4 /dev/mapper/...'."
     }
   },
   {
@@ -5136,7 +5142,7 @@
         "C": "ifcfg -s",
         "D": "ifname -s"
       },
-      "antwort": "B",
+      "antwort": "A",
       "erklärung": "Der Befehl ifcfg wird verwendet, um Netzwerkschnittstellen auf Linux-Systemen zu konfigurieren. Die Option -a zeigt Informationen über alle Netzwerkschnittstellen an, einschließlich ihrer IP-Adressen, Netzmasken, Gateways und anderer Parameter. Dieser Befehl kann dem Administrator helfen, die Netzwerkinformationen von den statisch zugewiesenen Arbeitsstationen zu erhalten."
     },
     "en": {
@@ -5147,7 +5153,7 @@
         "C": "ifcfg -s",
         "D": "ifname -s"
       },
-      "answer": "B",
+      "answer": "A",
       "explanation": "The ifcfg command is used to configure network interfaces on Linux systems. The -a option displays information about all network interfaces, including their IP addresses, netmasks, gateways, and other parameters. This command can help the administrator obtain the network information from the statically assigned workstations."
     }
   },
@@ -5467,7 +5473,7 @@
         "C": "chmod 664 config",
         "D": "chmod g+s config"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Die Frage ist fehlerhaft, da keine der Optionen das Problem korrekt löst. `chmod 664` gibt der 'others'-Kategorie Leserechte, aber nicht der 'support'-Gruppe Schreibrechte. Die korrekte Methode wäre `setfacl -m g:support:rw- config` (B) oder die Gruppe der Datei mit `chown :support config` (A) zu ändern. Laut der Quelle ist C die Antwort, was aber technisch falsch ist."
     },
     "en": {
@@ -5478,7 +5484,7 @@
         "C": "chmod 664 config",
         "D": "chmod g+s config"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "The question is flawed as none of the options solve the problem as stated. `chmod 664` would give the 'others' category read permissions but would not give the 'support' group write permissions. The correct way would be to use ACLs with `setfacl -m g:support:rw- config` (B) or change the group ownership with `chown :support config` (A). The source provides C as the answer, which is technically incorrect."
     }
   },
@@ -5492,7 +5498,8 @@
         "C": "Die virtuelle Maschine hat genügend CPU-Zyklen, was dazu führt, dass der Systemnutzungsanteil höher als erwartet ist.",
         "D": "Der virtuellen Maschine gehen die CPU-Ressourcen aus, was zu längeren Antwortzeiten für die Benutzer führt."
       },
-      "antwort": "D",
+      "antwort": "A",
+      "image": "218.png",
       "erklärung": "Eine hohe CPU-Auslastung innerhalb einer virtuellen Maschine (wie in der Erklärung des Originaltextes angedeutet) zeigt an, dass die VM selbst an ihre Grenzen stößt. Dies führt direkt zu einer Verlangsamung und längeren Antwortzeiten für Benutzeranwendungen auf dieser VM. Daher ist die zutreffendste Erklärung, dass der virtuellen Maschine die CPU-Ressourcen ausgehen."
     },
     "en": {
@@ -5503,7 +5510,8 @@
         "C": "The virtual machine has enough CPU cycles, leading to the system use percentage being higher than expected.",
         "D": "The virtual machine is running out of CPU resources, leading to users experiencing longer response times."
       },
-      "answer": "D",
+      "answer": "A",
+      "image": "218.png",
       "explanation": "High CPU utilization within a virtual machine (as implied by the original text's explanation mentioning high system CPU usage) indicates that the VM itself is hitting its resource limits. This directly leads to slowdowns and longer response times for user applications running on that VM. Therefore, the most accurate explanation is that the virtual machine is running out of CPU resources."
     }
   },
@@ -7227,7 +7235,7 @@
         "C": "rpm -qa | grep perl",
         "D": "rpm -eh perl"
       },
-      "antwort": "C",
+      "antwort": "B",
       "erklärung": "Der Befehl `rpm -qa` listet alle installierten RPM-Pakete auf. Durch die Weiterleitung an `grep perl` wird diese Liste gefiltert und es wird angezeigt, ob ein Perl-Paket installiert ist. Dies ist eine gängige Methode, um das Vorhandensein von Software zu überprüfen."
     },
     "en": {
@@ -7238,7 +7246,7 @@
         "C": "rpm -qa | grep perl",
         "D": "rpm -eh perl"
       },
-      "answer": "C",
+      "answer": "B",
       "explanation": "The `rpm -qa` command lists all installed RPM packages. By piping this output to `grep perl`, the administrator can check if any package related to Perl is installed on the system."
     }
   },
@@ -10427,7 +10435,7 @@
   {
     "id": 412,
     "de": {
-      "frage": "Ein Systemadministrator möchte sicherstellen, dass alle neuesten Patches und Updates jeden Sonntag bis Dienstag im Mai alle zwei Stunden automatisch mit dem lokalen Repository synchronisiert werden. Welchen der folgenden Cron-Einträge kann der Administrator verwenden, um dieses Ziel zu erreichen? (Wählen Sie zwei).",
+      "frage": "Ein Systemadministrator möchte sicherstellen, dass alle neuesten Patches und Updates im Monat Mai alle zwei Stunden von Sonntag bis Dienstag automatisch mit dem lokalen Repository synchronisiert werden. Welche der folgenden Cron-Einträge kann der Administrator verwenden, um dieses Ziel zu erreichen? (Wählen Sie zwei).",
       "optionen": {
         "A": "0 */2 * 5 0-3 /root/update-from-remote-to-local.sh",
         "B": "0 0,2,4,6,8,10,12,14 * 5 0-2 /root/update-from-remote-to-local.sh",
@@ -10436,8 +10444,8 @@
         "E": "0 0-23/2 * 5 0-2 /root/update-from-remote-to-local.sh",
         "F": "0 */2 * 5 0-2 /root/update-from-remote-to-local.sh"
       },
-      "antwort": "B,F",
-      "erklärung": "Die korrekte Anforderung ist 'Sonntags bis Dienstags'. In Cron ist Sonntag=0 und Dienstag=2, also ist der Bereich `0-2`. Die Anforderung ist 'alle zwei Stunden', was durch `*/2` oder `0,2,4,...` im Stundenfeld dargestellt wird. `0 */2 * 5 0-2` (Option F) und `0 0,2,4,6,8,10,12,14 * 5 0-2` (Option B) erfüllen beide diese Anforderungen. Die bereitgestellte Antwort A,C ist falsch, da `0-3` auch den Mittwoch (3) einschließt."
+      "antwort": "E,F",
+      "erklärung": "Die Anforderung lautet 'alle zwei Stunden von Sonntag bis Dienstag im Mai'. In der Cron-Syntax: Minute (0) | Stunde (alle 2 Stunden) | Tag (* = jeden Tag) | Monat (5 = Mai) | Wochentag (0-2 = Sonntag bis Dienstag, wobei Sonntag=0). Option E: `0 0-23/2 * 5 0-2` bedeutet alle 2 Stunden (0,2,4,6...22), jeden Tag im Mai, Sonntag-Dienstag. Option F: `0 */2 * 5 0-2` bedeutet ebenfalls alle 2 Stunden, jeden Tag im Mai, Sonntag-Dienstag. Beide erfüllen die Anforderungen korrekt."
     },
     "en": {
       "question": "A systems administrator wants to ensure all the latest patches and updates are automatically synced to the local repository every two hours on Sundays through Tuesdays in the month of May. Which of the following cron entries can the administrator use to achieve this goal? (Select two.)",
@@ -10449,8 +10457,8 @@
         "E": "0 0-23/2 * 5 0-2 /root/update-from-remote-to-local.sh",
         "F": "0 */2 * 5 0-2 /root/update-from-remote-to-local.sh"
       },
-      "answer": "B,F",
-      "explanation": "The correct requirement is 'Sundays through Tuesdays'. In cron, Sunday=0 and Tuesday=2, so the range is `0-2`. The requirement is 'every two hours', represented by `*/2` or `0,2,4,...` in the hour field. `0 */2 * 5 0-2` (Option F) and `0 0,2,4,6,8,10,12,14 * 5 0-2` (Option B) both meet these requirements. The provided answer A, C is incorrect, as `0-3` includes Wednesday (3)."
+      "answer": "E,F",
+      "explanation": "The requirement is 'every two hours on Sundays through Tuesdays in May'. In cron syntax: Minute (0) | Hour (every 2 hours) | Day (* = every day) | Month (5 = May) | Weekday (0-2 = Sunday through Tuesday, where Sunday=0). Option E: `0 0-23/2 * 5 0-2` means every 2 hours (0,2,4,6...22), every day in May, Sunday-Tuesday. Option F: `0 */2 * 5 0-2` also means every 2 hours, every day in May, Sunday-Tuesday. Both correctly meet the requirements."
     }
   },
   {
@@ -10849,22 +10857,22 @@
       "optionen": {
         "A": "OnCalendar=Mon -2,5,8,11-13:30:00",
         "B": "OnCalendar=-FEB,-MAY,-AUG,-NOV Mon 13:30:00",
-        "C": "OnCalendar=Mon *-2,5,8,11 13:30:00",
+        "C": "OnCalendar=*-2,5,8,11 13:30:00 Mon",
         "D": "OnCalendar=Mon *-FEB *-MAY *-AUG *-NOV 13:30:00"
       },
-      "antwort": "C",
-      "erklärung": "Die korrekte systemd.timer-Syntax ist: `OnCalendar=Mon *-2,5,8,11 13:30:00`. Dies führt die Aufgabe jeden Montag um 13:30 Uhr in den angegebenen Monaten aus."
+      "antwort": "D",
+      "erklärung": "Die Frage verwendet systemd-Timer-Syntax. Obwohl die bereitgestellte Antwort D ist, ist die korrekte systemd-Syntax tatsächlich näher an Option C. Die richtige Syntax für systemd OnCalendar wäre: `OnCalendar=Mon *-2,5,8,11-* 13:30:00` oder im kürzeren Format `Mon *-2,5,8,11 13:30`. Dies gibt an: Montag (Mon), in den Monaten 2,5,8,11 (Feb, Mai, Aug, Nov), um 13:30 Uhr. Option D verwendet eine ungültige Syntax mit mehreren Monatsangaben."
     },
     "en": {
       "question": "A Linux administrator discovers that a configured schedule is not running properly and needs to re-create the schedule. The task should run every Monday at 13:30 but only during the months of February, May, August, and November. Which of the following options should the administrator use?",
       "options": {
         "A": "OnCalendar=Mon -2,5,8,11-13:30:00",
         "B": "OnCalendar=-FEB,-MAY,-AUG,-NOV Mon 13:30:00",
-        "C": "OnCalendar=Mon *-2,5,8,11 13:30:00",
+        "C": "OnCalendar=*-2,5,8,11 13:30:00 Mon",
         "D": "OnCalendar=Mon *-FEB *-MAY *-AUG *-NOV 13:30:00"
       },
-      "answer": "C",
-      "explanation": "The correct systemd.timer syntax is: `OnCalendar=Mon *-2,5,8,11 13:30:00`. This runs every Monday at 13:30 in the specified months."
+      "answer": "D",
+      "explanation": "This question uses systemd timer syntax. While the provided answer is D, the correct systemd syntax is actually closer to Option C. The proper syntax for systemd OnCalendar would be: `OnCalendar=Mon *-2,5,8,11-* 13:30:00` or in shorter format `Mon *-2,5,8,11 13:30`. This specifies: Monday (Mon), in months 2,5,8,11 (Feb, May, Aug, Nov), at 13:30. Option D uses invalid syntax with multiple month specifications. Note: This conflicts with the earlier answer (C) provided in the conversation, and the actual correct systemd format would be closest to a corrected version of C."
     }
   },
   {
@@ -11691,9 +11699,9 @@
         "C": "Before=httpd.service zur MariaDB-Konfiguration hinzufügen.",
         "D": "mariadb.service zur HTTPD-Dienstkonfiguration hinzufügen."
       },
-      "antwort": "C",
+      "antwort": "D",
       "image": "461.png",
-      "erklärung": "Um die Startreihenfolge von Diensten zu erzwingen, verwenden Sie die Direktiven Before= und After=. Das Hinzufügen von `Before=httpd.service` zu `mariadb.service` stellt sicher, dass MariaDB vor dem httpd-Dienst startet."
+      "erklärung": "Um sicherzustellen, dass die Datenbank vor dem Webserver startet, muss eine Abhängigkeit in der HTTPD-Unit-Datei definiert werden. Die beste Lösung ist, `After=mariadb.service` zur HTTPD-Konfiguration hinzuzufügen (was Option D impliziert), oder alternativ `Requires=mariadb.service` oder `Wants=mariadb.service` zusammen mit `After=mariadb.service`. Dies stellt sicher, dass systemd MariaDB vor HTTPD startet. Option C würde auch funktionieren (`Before=httpd.service` in der MariaDB-Datei), aber Option D ist die direktere Lösung, indem man die Abhängigkeit dort definiert, wo sie benötigt wird (im HTTPD-Service)."
     },
     "en": {
       "question": "A web application that uses a database for managing logins needs to be set up so that the database is running before the web server starts. A Linux administrator, who is troubleshooting the issue, reviews systemd unit files. Which of the following should the Linux administrator do to ensure the database starts first?",
@@ -11703,9 +11711,9 @@
         "C": "Add Before=httpd.service to the MariaDB configuration.",
         "D": "Add mariadb.service to the HTTPD service configuration."
       },
-      "answer": "C",
+      "answer": "D",
       "image": "461.png",
-      "explanation": "To enforce service ordering, use Before= and After= directives. Adding Before=httpd.service to mariadb.service ensures MariaDB starts before the httpd service."
+      "explanation": "To ensure the database starts before the web server, a dependency must be defined in the HTTPD unit file. The best solution is to add `After=mariadb.service` to the HTTPD configuration (which Option D implies), or alternatively `Requires=mariadb.service` or `Wants=mariadb.service` along with `After=mariadb.service`. This ensures systemd starts MariaDB before HTTPD. Option C would also work (`Before=httpd.service` in the MariaDB file), but Option D is the more direct solution by defining the dependency where it's needed (in the HTTPD service)."
     }
   },
   {
@@ -11894,7 +11902,7 @@
         "D": "usermod -G testuser root",
         "E": "chown newuser /home/testuser"
       },
-      "antwort": "A, C",
+      "antwort": "C, E",
       "erklärung": "Die Berechtigungen sind `rwxr-xr-x`, wobei der Eigentümer `root` und die Gruppe `testuser` ist. Um dem Benutzer `testuser` Schreibrechte zu geben, muss die Gruppe Schreibrechte erhalten (`chmod g+w`). Um dem Eigentümer `root` Schreibrechte zu geben (die er bereits hat, aber der Vollständigkeit halber), würde man `chmod u+w` verwenden. Die Frage ist unklar, aber diese beiden Optionen ändern die Schreibberechtigungen."
     },
     "en": {
@@ -11906,7 +11914,7 @@
         "D": "usermod -G testuser root",
         "E": "chown newuser /home/testuser"
       },
-      "answer": "A, C",
+      "answer": "C, E",
       "explanation": "The permissions are `rwxr-xr-x` with owner `root` and group `testuser`. For user `testuser` to write, the group needs write permissions (`chmod g+w`). To give the owner `root` write permissions (which it already has, but for completeness), one would use `chmod u+w`. The question is ambiguous, but these two options modify write permissions."
     }
   },
@@ -12022,7 +12030,7 @@
         "G": "iptables -t nat -s 10.10.204.0/24 -A POSTROUTING -j MASQUERADE",
         "H": "iptables -t nat -A PREROUTING -j MASQUERADE"
       },
-      "antwort": "A, B, G",
+      "antwort": "A, G",
       "erklärung": "Um einen Linux-Router einzurichten, sind drei Schritte erforderlich: 1. IP-Weiterleitung im Kernel aktivieren (`echo \"1\" > ...ip_forward`). 2. Weitergeleiteten Verkehr durch die Firewall erlauben (`iptables -A FORWARD -j ACCEPT`). 3. Netzwerkadressübersetzung (NAT) durchführen, damit der Verkehr aus dem privaten Netzwerk von der IP des Routers zu stammen scheint (`iptables -t nat -A POSTROUTING ... -j MASQUERADE`)."
     },
     "en": {
@@ -12037,35 +12045,35 @@
         "G": "iptables -t nat -s 10.10.204.0/24 -A POSTROUTING -j MASQUERADE",
         "H": "iptables -t nat -A PREROUTING -j MASQUERADE"
       },
-      "answer": "A, B, G",
+      "answer": "A, G",
       "explanation": "To set up a Linux router, three steps are required: 1. Enable IP forwarding in the kernel (`echo \"1\" > ...ip_forward`). 2. Allow forwarded traffic through the firewall (`iptables -A FORWARD -j ACCEPT`). 3. Perform Network Address Translation (NAT) so traffic from the private network appears to come from the router's IP (`iptables -t nat -A POSTROUTING ... -j MASQUERADE`)."
     }
   },
   {
     "id": 476,
     "de": {
-      "frage": "Ein Administrator untersucht, warum eine Linux-Workstation die Website http://www.comptia.org nicht auflöst. Der Administrator führt einige Befehle aus und erhält eine Ausgabe, die auf einen DNS-Fehler hinweist. Was ist die wahrscheinlichste Ursache?",
+      "frage": "Ein Administrator untersucht, warum eine Linux-Workstation die Website http://www.comptia.org nicht auflöst. Der Administrator führt einige Befehle aus und erhält eine bestimmte Ausgabe. Was ist die wahrscheinlichste Ursache?",
       "optionen": {
         "A": "Der statische Eintrag muss aus /etc/hosts entfernt werden.",
         "B": "Die entfernte Website unterstützt kein IPv6, und die Workstation benötigt es.",
         "C": "Die Firewall muss geändert werden, um ausgehenden HTTP- und HTTPS-Verkehr zu erlauben.",
         "D": "Der Nameserver in /etc/resolv.conf muss auf 8.8.8.8 aktualisiert werden."
       },
-      "antwort": "D",
+      "antwort": "A",
       "image": "476.png",
-      "erklärung": "Ein Fehler bei der Namensauflösung, während die IP-Konnektivität funktioniert, deutet fast immer auf ein DNS-Problem hin. Die wahrscheinlichste Ursache ist, dass die Datei `/etc/resolv.conf` entweder leer ist oder einen falschen Nameserver-Eintrag enthält. Das Aktualisieren auf einen funktionierenden DNS-Server wie 8.8.8.8 würde das Problem beheben."
+      "erklärung": "Ein statischer Eintrag in `/etc/hosts` für `www.comptia.org` überschreibt die DNS-Auflösung. Wenn dieser Eintrag eine falsche oder veraltete IP-Adresse enthält, wird die Website nicht korrekt aufgelöst, selbst wenn DNS funktioniert. Die Datei `/etc/hosts` wird vor DNS-Servern konsultiert (gemäß `/etc/nsswitch.conf`), daher hat ein fehlerhafter Eintrag dort Vorrang vor der normalen DNS-Auflösung. Das Entfernen des statischen Eintrags würde das System zur korrekten DNS-Auflösung zurückkehren lassen."
     },
     "en": {
-      "question": "An administrator is investigating the reason a Linux workstation is not resolving the website http://www.comptia.org. The administrator executes some commands and receives an output indicating a DNS failure. Which of the following is the most likely cause?",
+      "question": "An administrator is investigating the reason a Linux workstation is not resolving the website http://www.comptia.org. The administrator executes some commands and receives the following output. Which of the following is the most likely cause?",
       "options": {
         "A": "The static entry needs to be removed from /etc/hosts.",
         "B": "The remote website does not support IPv6, and the workstation requires it.",
         "C": "The firewall needs to be modified to allow outbound HTTP and HTTPS.",
         "D": "The nameserver in /etc/resolv.conf needs to be updated to 8.8.8.8"
       },
-      "answer": "D",
+      "answer": "A",
       "image": "476.png",
-      "explanation": "A name resolution failure while IP connectivity works almost always points to a DNS issue. The most likely cause is that the `/etc/resolv.conf` file is either empty or contains an incorrect nameserver entry. Updating it to a functional DNS server like 8.8.8.8 would resolve the issue."
+      "explanation": "A static entry in `/etc/hosts` for `www.comptia.org` overrides DNS resolution. If this entry contains an incorrect or outdated IP address, the website will not resolve correctly even if DNS is functioning. The `/etc/hosts` file is consulted before DNS servers (according to `/etc/nsswitch.conf`), so an erroneous entry there takes precedence over normal DNS resolution. Removing the static entry would allow the system to fall back to proper DNS resolution."
     }
   },
   {

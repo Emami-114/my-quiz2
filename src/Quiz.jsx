@@ -178,7 +178,7 @@ export default function Quiz() {
       >
         {lang === "de" ? "FFW" : "RWQ"}
       </Button> */}
-       <Button
+      <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={switchQuiz}
       >
@@ -201,7 +201,7 @@ export default function Quiz() {
           {(currentQuestion.image || currentQuestion.bild) && (
             <div className="flex justify-center mb-8">
               <img
-                src={`./public/assets/${currentQuestion.image}`}
+                src={`https://emami-114.github.io/my-quiz2/assets/${currentQuestion.image || currentQuestion.bild}`}
                 alt="Question illustration"
                 className="max-w-md max-h-80 rounded-lg shadow-lg object-contain"
               />
