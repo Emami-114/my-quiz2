@@ -2959,5 +2959,905 @@
       "answer": "C",
       "explanation": "CUPS (Common Unix Printing System) is the standard print management system for Linux. It allows a computer to act as a print server, supports both local and network printing, and provides a web interface for printer and job management."
     }
+  },
+  {
+    "id": 110,
+    "de": {
+      "frage": "Sie haben die Aufgabe, ein neues logisches Volume für einen Dateiserver bereitzustellen. Der Server verfügt über zwei zusätzliche Festplatten, /dev/sdb und /dev/sdc, die für LVM konfiguriert werden müssen.\n\nNachdem Sie die Festplatten als Physical Volumes eingerichtet haben, müssen Sie den nächsten Schritt festlegen.\n\nWelche Aktion wäre am BESTEN geeignet, um mit der Bereitstellung fortzufahren?",
+      "optionen": {
+        "A": "Ein logisches Volume mit dem Befehl lvcreate erstellen, um Speicherplatz zuzuweisen",
+        "B": "Eine Volume Group mit dem Befehl vgcreate erstellen, um die Physical Volumes zu aggregieren",
+        "C": "Die Physical Volumes direkt mounten, um sie für den Dateiserver verfügbar zu machen",
+        "D": "Die Physical Volumes mit dem Befehl mkfs formatieren, um sie für die Verwendung vorzubereiten"
+      },
+      "antwort": "B",
+      "erklärung": "In der LVM-Hierarchie folgt nach der Erstellung von Physical Volumes die Erstellung einer Volume Group mit vgcreate. Diese Volume Group aggregiert die Physical Volumes zu einem Speicherpool, aus dem dann logische Volumes erstellt werden können. Erst danach kann lvcreate verwendet werden."
+    },
+    "en": {
+      "question": "You are tasked with deploying a new logical volume for a file server. The server has two additional disks, /dev/sdb and /dev/sdc, which need to be configured for LVM.\n\nAfter designating the disks as physical volumes, you must decide the next step.\n\nWhich action would be the MOST appropriate to proceed with the deployment?",
+      "options": {
+        "A": "Create a logical volume using the lvcreate command to allocate storage space",
+        "B": "Create a volume group using the vgcreate command to aggregate the physical volumes",
+        "C": "Mount the physical volumes directly to make them available to the file server",
+        "D": "Format the physical volumes with the mkfs command to prepare them for use"
+      },
+      "answer": "B",
+      "explanation": "In the LVM hierarchy, after creating physical volumes, the next step is to create a volume group using vgcreate. This volume group aggregates the physical volumes into a storage pool from which logical volumes can then be created. Only after this step can lvcreate be used."
+    }
+  },
+  {
+    "id": 111,
+    "de": {
+      "frage": "Welcher der folgenden Befehle kann verwendet werden, um alle virtuellen Maschinen aufzulisten, die auf einem KVM-Hypervisor laufen?",
+      "optionen": {
+        "A": "virt-install --list",
+        "B": "virsh console {VM}",
+        "C": "virt-manager list",
+        "D": "virsh list"
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl virsh list zeigt alle laufenden virtuellen Maschinen auf einem KVM-Hypervisor an. virsh ist das Kommandozeilen-Tool zur Verwaltung von VMs. virt-install wird zum Erstellen neuer VMs verwendet, virsh console verbindet sich mit der Konsole einer VM, und virt-manager list ist kein gültiger Befehl."
+    },
+    "en": {
+      "question": "Which of the following commands can be used to list all the virtual machines running on a KVM hypervisor?",
+      "options": {
+        "A": "virt-install --list",
+        "B": "virsh console {VM}",
+        "C": "virt-manager list",
+        "D": "virsh list"
+      },
+      "answer": "D",
+      "explanation": "The virsh list command displays all running virtual machines on a KVM hypervisor. virsh is the command-line tool for managing VMs. virt-install is used to create new VMs, virsh console connects to a VM's console, and virt-manager list is not a valid command."
+    }
+  },
+  {
+    "id": 112,
+    "de": {
+      "frage": "Sie verwalten einen Linux-Server, der das XFS-Dateisystem auf der Partition /dev/sdb2 verwendet.\n\nKürzlich wurde die Partition beschädigt, und Sie müssen das beste Tool auswählen, um das Dateisystem zu reparieren und wiederherzustellen, während so viele Daten wie möglich erhalten bleiben.\n\nWelches der folgenden Tools sollten Sie verwenden, um dies zu erreichen?",
+      "optionen": {
+        "A": "xfs_copy",
+        "B": "xfs_repair",
+        "C": "xfs_info",
+        "D": "xfs_metadump"
+      },
+      "antwort": "B",
+      "erklärung": "xfs_repair ist das spezialisierte Tool zur Reparatur und Wiederherstellung beschädigter XFS-Dateisysteme. Es prüft und behebt Inkonsistenzen im Dateisystem. xfs_copy wird zum Kopieren von XFS-Dateisystemen verwendet, xfs_info zeigt nur Dateisysteminformationen an, und xfs_metadump erstellt Metadaten-Dumps für Debugging-Zwecke."
+    },
+    "en": {
+      "question": "You are managing a Linux server that uses the XFS filesystem on the /dev/sdb2 partition.\n\nRecently, the partition became corrupted, and you need to evaluate the best tool to repair and recover the filesystem while preserving as much data as possible.\n\nWhich of the following tools should you use to achieve this?",
+      "options": {
+        "A": "xfs_copy",
+        "B": "xfs_repair",
+        "C": "xfs_info",
+        "D": "xfs_metadump"
+      },
+      "answer": "B",
+      "explanation": "xfs_repair is the specialized tool for repairing and recovering corrupted XFS filesystems. It checks and fixes inconsistencies in the filesystem. xfs_copy is used to copy XFS filesystems, xfs_info only displays filesystem information, and xfs_metadump creates metadata dumps for debugging purposes."
+    }
+  },
+  {
+    "id": 113,
+    "de": {
+      "frage": "Welcher der folgenden Befehle erstellt eine Verknüpfung, die zum Ausführen des Befehls tail -f /var/log/messages verwendet werden kann?",
+      "optionen": {
+        "A": "export sysmesg=\"tail -f /var/log/messages\"",
+        "B": "env alias=\"tail -f /var/log/messages\"",
+        "C": "export alias=\"tail -f /var/log/messages\"",
+        "D": "alias sysmesg=\"tail -f /var/log/messages\""
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl alias wird verwendet, um Verknüpfungen (Aliase) für Befehle in der Shell zu erstellen. Die korrekte Syntax ist alias name=\"befehl\". export wird für Umgebungsvariablen verwendet, nicht für Befehlsverknüpfungen. env ist ein Befehl zum Ausführen von Programmen in einer modifizierten Umgebung."
+    },
+    "en": {
+      "question": "Which of the following commands creates a shortcut that can be used to run the tail -f /var/log/messages command?",
+      "options": {
+        "A": "export sysmesg=\"tail -f /var/log/messages\"",
+        "B": "env alias=\"tail -f /var/log/messages\"",
+        "C": "export alias=\"tail -f /var/log/messages\"",
+        "D": "alias sysmesg=\"tail -f /var/log/messages\""
+      },
+      "answer": "D",
+      "explanation": "The alias command is used to create shortcuts (aliases) for commands in the shell. The correct syntax is alias name=\"command\". export is used for environment variables, not command shortcuts. env is a command for running programs in a modified environment."
+    }
+  },
+  {
+    "id": 114,
+    "de": {
+      "frage": "Ein Benutzer namens employee-user möchte den absoluten Pfad zu einer bestimmten Datei finden. Das Unterverzeichnis 2025 im Projektverzeichnis seines Home-Ordners enthält beispielsweise die Datei projectxyz.doc. Wie lautet der absolute Pfad für diese Datei?",
+      "optionen": {
+        "A": "/home/employee-user/2025/projects/projectxyz.doc",
+        "B": "/home/projectxyz.doc/2025/projects/employee-user",
+        "C": "/employee-user/home/projects/2025/projectxyz.doc",
+        "D": "/home/employee-user/projects/2025/projectxyz.doc"
+      },
+      "antwort": "D",
+      "erklärung": "Der absolute Pfad beginnt mit dem Root-Verzeichnis (/), gefolgt von home (Standard-Speicherort für Benutzerverzeichnisse), dem Benutzernamen (employee-user), dem Projektverzeichnis (projects), dem Unterverzeichnis (2025) und schließlich dem Dateinamen (projectxyz.doc). Die korrekte Hierarchie ist daher /home/employee-user/projects/2025/projectxyz.doc."
+    },
+    "en": {
+      "question": "A user named employee-user wants to find the absolute path to a specific file. For example, the 2025 subdirectory of the project's directory of their home folder stores the projectxyz.doc file. What would the absolute path be for this file?",
+      "options": {
+        "A": "/home/employee-user/2025/projects/projectxyz.doc",
+        "B": "/home/projectxyz.doc/2025/projects/employee-user",
+        "C": "/employee-user/home/projects/2025/projectxyz.doc",
+        "D": "/home/employee-user/projects/2025/projectxyz.doc"
+      },
+      "answer": "D",
+      "explanation": "The absolute path starts with the root directory (/), followed by home (the standard location for user directories), the username (employee-user), the projects directory, the subdirectory (2025), and finally the filename (projectxyz.doc). The correct hierarchy is therefore /home/employee-user/projects/2025/projectxyz.doc."
+    }
+  },
+  {
+    "id": 115,
+    "de": {
+      "frage": "Ein Linux-Administrator behebt ein Netzwerkproblem, bei dem Benutzer hohe Latenz und inkonsistente Verzögerungen in der Kommunikation erleben.\n\nNachdem überprüft wurde, dass die Schnittstelle die richtige IP-Adresse, Subnetzmaske und Gateway hat, vermutet der Administrator, dass das Problem mit Netzwerk-Jitter zusammenhängt.\n\nWelches der folgenden Tools würde dem Administrator am BESTEN helfen, die Quelle des Jitters zu bewerten und zu identifizieren?",
+      "optionen": {
+        "A": "iftop",
+        "B": "netstat",
+        "C": "traceroute",
+        "D": "ping"
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl ping ist das beste Tool zur Bewertung von Jitter, da er kontinuierlich Pakete sendet und Antwortzeiten misst. Die Variation in den Ping-Zeiten zeigt Jitter an. ping zeigt auch Statistiken wie Min/Max/Durchschnitt und Standardabweichung der Latenz. iftop zeigt Bandbreitennutzung, netstat zeigt Netzwerkverbindungen, und traceroute zeigt den Pfad zum Ziel, aber keines dieser Tools misst Jitter so effektiv wie ping."
+    },
+    "en": {
+      "question": "A Linux administrator is troubleshooting a network issue where users are experiencing high latency and inconsistent delays in communication.\n\nAfter verifying that the interface has the correct IP address, subnet mask, and gateway, the administrator suspects the issue is related to network jitter.\n\nWhich of the following tools would BEST help the administrator evaluate and identify the source of the jitter?",
+      "options": {
+        "A": "iftop",
+        "B": "netstat",
+        "C": "traceroute",
+        "D": "ping"
+      },
+      "answer": "A",
+      "explanation": "The ping command is the best tool for evaluating jitter because it continuously sends packets and measures response times. The variation in ping times indicates jitter. ping also displays statistics like min/max/average and standard deviation of latency. iftop shows bandwidth usage, netstat displays network connections, and traceroute shows the path to the destination, but none of these tools measure jitter as effectively as ping."
+    }
+  },
+  {
+    "id": 116,
+    "de": {
+      "frage": "Ein Systemadministrator verwaltet einen Linux-Server und erhält eine Warnung, dass die Partition /var fast voll ist.\n\nBei der Untersuchung stellt er fest, dass das Verzeichnis /var/log einen erheblichen Teil des Speicherplatzes verbraucht. Der Administrator muss dieses Problem lösen, ohne zusätzliche Speicher-Hardware zu kaufen.\n\nWelche der folgenden Aktionen sollte der Administrator durchführen, um das Kapazitätsproblem zu lösen?",
+      "optionen": {
+        "A": "Den Befehl df -i verwenden, um die Inode-Nutzung zu überprüfen und Dateien mit hohem Inode-Verbrauch zu löschen",
+        "B": "Alte Log-Dateien im Verzeichnis /var/log mit dem Befehl tar archivieren und komprimieren",
+        "C": "Die Partition /var mit dem Befehl growpart erweitern und die Dateisystemgröße mit xfs_growfs erhöhen",
+        "D": "Den Befehl resize2fs verwenden, um die Partition /var zu verkleinern und den freigegebenen Speicherplatz einer anderen Partition zuzuweisen"
+      },
+      "antwort": "B",
+      "erklärung": "Das Archivieren und Komprimieren alter Log-Dateien mit tar ist die beste Lösung, um Speicherplatz freizugeben, ohne zusätzliche Hardware zu kaufen. Dies reduziert die Größe der Log-Dateien erheblich und bewahrt sie gleichzeitig für zukünftige Referenzen auf. Option A prüft Inodes, nicht den Speicherplatz. Option C erfordert verfügbaren ungenutzten Speicherplatz. Option D würde die Partition verkleinern, was das Problem verschlimmern würde."
+    },
+    "en": {
+      "question": "A system administrator is managing a Linux server and receives an alert that the /var partition is nearly full.\n\nUpon investigation, they discover that the /var/log directory is consuming a significant amount of storage space. The administrator needs to resolve this issue without purchasing additional storage hardware.\n\nWhich of the following actions should the administrator take to resolve the capacity issue?",
+      "options": {
+        "A": "Use the df -i command to check inode usage and delete files with high inode consumption",
+        "B": "Archive and compress old log files in the /var/log directory using the tar command",
+        "C": "Expand the /var partition using the growpart command and increase the filesystem size with xfs_growfs",
+        "D": "Use the resize2fs command to shrink the /var partition and allocate the freed space to another partition"
+      },
+      "answer": "B",
+      "explanation": "Archiving and compressing old log files using tar is the best solution to free up space without purchasing additional hardware. This significantly reduces the size of log files while preserving them for future reference. Option A checks inodes, not disk space. Option C requires available unallocated space. Option D would shrink the partition, which would worsen the problem."
+    }
+  },
+  {
+    "id": 117,
+    "de": {
+      "frage": "Sie unterstützen den Netzwerkadministrator bei der Konfiguration einiger virtueller Maschinen auf dem lokalen Server. Der Netzwerkadministrator hat Sie beauftragt, einige virtuelle Maschinen zu erstellen und zu konfigurieren, die für das Hosting von E-Mail- und verschiedenen Webdiensten verwendet werden.\n\nWas ist der HAUPTVORTEIL der Verwendung virtueller Maschinen für diese Aufgaben?",
+      "optionen": {
+        "A": "Virtuelle Maschinen benötigen keine CPU- oder Speicherzuweisung",
+        "B": "Virtuelle Maschinen können einfach skaliert und migriert werden",
+        "C": "Virtuelle Maschinen machen einen Hypervisor überflüssig",
+        "D": "Virtuelle Maschinen sind sicherer als physische Server"
+      },
+      "antwort": "B",
+      "erklärung": "Der Hauptvorteil virtueller Maschinen ist ihre Flexibilität bei Skalierung und Migration. VMs können schnell geklont, verschoben oder auf andere Hardware migriert werden, ohne dass physische Änderungen erforderlich sind. Dies ermöglicht einfaches Ressourcenmanagement und Lastverteilung. Option A ist falsch, da VMs Ressourcen benötigen. Option C ist falsch, da VMs einen Hypervisor erfordern. Option D ist nicht der Hauptvorteil, da Sicherheit von der Konfiguration abhängt."
+    },
+    "en": {
+      "question": "You are assisting the network administrator with configuring some virtual machines on the local server. The network administrator has tasked you with creating and configuring some virtual machines that will be used for hosting email and different web services.\n\nWhich of the following is the primary advantage of using virtual machines for these tasks?",
+      "options": {
+        "A": "Virtual machines do not require CPU or memory allocation",
+        "B": "Virtual machines can be easily scaled and migrated",
+        "C": "Virtual machines eliminate the need for a hypervisor",
+        "D": "Virtual machines are more secure than physical servers"
+      },
+      "answer": "B",
+      "explanation": "The primary advantage of virtual machines is their flexibility in scaling and migration. VMs can be quickly cloned, moved, or migrated to different hardware without requiring physical changes. This enables easy resource management and load balancing. Option A is incorrect as VMs require resource allocation. Option C is incorrect as VMs require a hypervisor. Option D is not the primary advantage, as security depends on configuration."
+    }
+  },
+  {
+    "id": 118,
+    "de": {
+      "frage": "Ein Linux-Auszubildender studiert TCP/IP und beschließt, das Modell auswendig zu lernen, verwechselt jedoch TCP/IP mit einem anderen Modell. Bestimmen Sie, welche Option NICHT zur TCP/IP-Protokollsuite gehört.",
+      "optionen": {
+        "A": "Transport",
+        "B": "Application",
+        "C": "Session",
+        "D": "Internet"
+      },
+      "antwort": "C",
+      "erklärung": "Die Session-Schicht gehört zum OSI-Modell, nicht zum TCP/IP-Modell. Das TCP/IP-Modell besteht aus vier Schichten: Application, Transport, Internet und Network Access (Link). Das OSI-Modell hat sieben Schichten, darunter die Session-Schicht, die im TCP/IP-Modell in die Application-Schicht integriert ist."
+    },
+    "en": {
+      "question": "A Linux trainee is studying TCP/IP and decides to put the model to memory but is getting confused between TCP/IP and another model. Determine which option does NOT come from the TCP/IP protocol suite.",
+      "options": {
+        "A": "Transport",
+        "B": "Application",
+        "C": "Session",
+        "D": "Internet"
+      },
+      "answer": "C",
+      "explanation": "The Session layer belongs to the OSI model, not the TCP/IP model. The TCP/IP model consists of four layers: Application, Transport, Internet, and Network Access (Link). The OSI model has seven layers, including the Session layer, which is integrated into the Application layer in the TCP/IP model."
+    }
+  },
+  {
+    "id": 119,
+    "de": {
+      "frage": "Sie sind ein Linux-Systemadministrator und bewerten die beste RAID-Konfiguration für einen neuen Server, der kritische Geschäftsdaten hosten wird.\n\nDer Server verfügt über vier verfügbare Festplatten, und die Hauptanforderungen sind Fehlertoleranz und effiziente Nutzung der Speicherkapazität. Die Leistung ist eine sekundäre Überlegung.\n\nWelche RAID-Konfiguration würden Sie basierend auf diesen Anforderungen empfehlen und warum?",
+      "optionen": {
+        "A": "RAID 1",
+        "B": "RAID 0",
+        "C": "RAID 5",
+        "D": "RAID 0+1"
+      },
+      "antwort": "C",
+      "erklärung": "RAID 5 ist die beste Wahl für diese Anforderungen. Es bietet Fehlertoleranz (kann den Ausfall einer Festplatte verkraften) und effiziente Speichernutzung, da nur die Kapazität einer Festplatte für Parität verwendet wird. Bei vier Festplatten sind 75% der Gesamtkapazität nutzbar. RAID 0 hat keine Fehlertoleranz. RAID 1 nutzt nur 50% der Kapazität. RAID 0+1 benötigt mindestens vier Festplatten, nutzt aber auch nur 50% der Kapazität und ist weniger effizient als RAID 5."
+    },
+    "en": {
+      "question": "You are a Linux system administrator evaluating the best RAID configuration for a new server that will host critical business data.\n\nThe server has four available disks, and the primary requirements are fault tolerance and efficient use of storage capacity. Performance is a secondary concern.\n\nBased on these requirements, which RAID configuration would you recommend, and why?",
+      "options": {
+        "A": "RAID 1",
+        "B": "RAID 0",
+        "C": "RAID 5",
+        "D": "RAID 0+1"
+      },
+      "answer": "C",
+      "explanation": "RAID 5 is the best choice for these requirements. It provides fault tolerance (can survive one disk failure) and efficient storage utilization, as only one disk's capacity is used for parity. With four disks, 75% of total capacity is usable. RAID 0 has no fault tolerance. RAID 1 only uses 50% of capacity. RAID 0+1 requires at least four disks but also only uses 50% of capacity and is less efficient than RAID 5."
+    }
+  },
+  {
+    "id": 120,
+    "de": {
+      "frage": "Sie sind ein Netzwerkadministrator, der mit der Modernisierung der Netzwerkinfrastruktur Ihres Unternehmens beauftragt ist, um eine wachsende Anzahl von Geräten zu unterstützen.\n\nDas aktuelle IPv4-Adressierungsschema hat keine verfügbaren Adressen mehr, und Sie müssen eine Lösung implementieren, die einen deutlich größeren Adressraum, integrierte Verschlüsselung und effizienteres Routing bietet.\n\nWelche der folgenden Lösungen wäre am BESTEN geeignet, um diese Herausforderungen zu bewältigen?",
+      "optionen": {
+        "A": "Das Netzwerk auf IPv6-Adressierung umstellen",
+        "B": "Network Address Translation (NAT) verwenden, um die Nutzbarkeit der aktuellen IPv4-Adressen zu erweitern",
+        "C": "Einen privaten IPv4-Adressbereich der Klasse A implementieren (10.0.0.0–10.255.255.255)",
+        "D": "Die Subnetzmaske des bestehenden IPv4-Netzwerks erhöhen, um mehr Geräte zu ermöglichen"
+      },
+      "antwort": "A",
+      "erklärung": "Die Umstellung auf IPv6 ist die beste Lösung für alle genannten Anforderungen. IPv6 bietet einen massiv erweiterten Adressraum (128-Bit gegenüber 32-Bit bei IPv4), hat IPsec-Verschlüsselung integriert und ermöglicht effizienteres Routing durch vereinfachte Header. NAT (Option B) ist nur eine temporäre Lösung und bietet keine Verschlüsselung oder besseres Routing. Ein privater Klasse-A-Bereich (Option C) löst das Adressproblem nicht grundlegend. Das Erhöhen der Subnetzmaske (Option D) reduziert tatsächlich die Anzahl verfügbarer Host-Adressen."
+    },
+    "en": {
+      "question": "You are a network administrator tasked with upgrading your company's network infrastructure to support a growing number of devices.\n\nThe current IPv4 addressing scheme is running out of available addresses, and you need to implement a solution that provides a significantly larger address space, built-in encryption, and more efficient routing.\n\nWhich of the following would be the MOST appropriate solution to address these challenges?",
+      "options": {
+        "A": "Transition the network to IPv6 addressing",
+        "B": "Use Network Address Translation (NAT) to extend the usability of the current IPv4 addresses",
+        "C": "Implement a Class A private IPv4 address range (10.0.0.0–10.255.255.255)",
+        "D": "Increase the subnet mask of the existing IPv4 network to allow for more devices"
+      },
+      "answer": "A",
+      "explanation": "Transitioning to IPv6 is the best solution for all stated requirements. IPv6 provides a massively expanded address space (128-bit versus 32-bit in IPv4), has built-in IPsec encryption, and enables more efficient routing through simplified headers. NAT (Option B) is only a temporary solution and provides no encryption or better routing. A private Class A range (Option C) does not fundamentally solve the address problem. Increasing the subnet mask (Option D) actually reduces the number of available host addresses."
+    }
+  },
+  {
+    "id": 121,
+    "de": {
+      "frage": "Jedes Mal, wenn Sie Anmeldedaten eingeben, soll ein bestimmter Eintrag in eine Log-Datei geschrieben werden. Diese Aktion soll nur für Sie selbst gelten. Sie verwenden die Bash-Shell.\n\nWelche der folgenden Konfigurationsdateien ist die BESTE Datei, um diese Aktion zu aktivieren?",
+      "optionen": {
+        "A": "/etc/profile",
+        "B": ".sh",
+        "C": ".profile",
+        "D": ".bashrc"
+      },
+      "antwort": "C",
+      "erklärung": ".profile ist die beste Wahl, da sie benutzerspezifische Einstellungen und Befehle enthält, die beim Login-Shell-Start (z. B. bei interaktiver Anmeldung) ausgeführt werden. .bashrc gilt für nicht-login Shells. /etc/profile ist global für alle Benutzer. .sh ist keine Standard-Konfigurationsdatei."
+    },
+    "en": {
+      "question": "Each time you present credentials to log in, you want a particular entry to be written to a log file. This action will only apply to yourself. You are using the bash shell.\n\nWhich of the following configuration files is the BEST file to modify in order to enable this action?",
+      "options": {
+        "A": "/etc/profile",
+        "B": ".sh",
+        "C": ".profile",
+        "D": ".bashrc"
+      },
+      "answer": "C",
+      "explanation": ".profile is the best choice because it contains user-specific settings and commands executed at login shell startup (such as an interactive login). .bashrc is used for non-login shells. /etc/profile is global for all users. .sh is not a standard configuration file."
+    }
+  },
+  {
+    "id": 122,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Unterschiede zwischen iSCSI- und Fibre Channel (FC)-Protokollen in einer Storage Area Network (SAN)-Umgebung am BESTEN?",
+      "optionen": {
+        "A": "iSCSI und Fibre Channel verwenden beide Standard-IP-Netzwerke, wodurch sie gleichermaßen einfach zu konfigurieren sind",
+        "B": "Fibre Channel und iSCSI erfordern beide spezialisierte Hardware, wodurch sie gleichermaßen komplex zu implementieren sind",
+        "C": "iSCSI ist schwieriger zu konfigurieren als Fibre Channel, bietet aber eine bessere Leistung",
+        "D": "Fibre Channel ist schwieriger zu konfigurieren als iSCSI, bietet aber eine bessere Leistung"
+      },
+      "antwort": "D",
+      "erklärung": "Fibre Channel ist schwieriger zu konfigurieren als iSCSI, da es spezialisierte Hardware (HBAs, FC-Switches) und dedizierte Infrastruktur erfordert. Im Gegenzug bietet FC jedoch höhere Leistung, niedrigere Latenz und höhere Zuverlässigkeit. iSCSI nutzt Standard-IP-Netzwerke und Ethernet, was die Implementierung kostengünstiger und einfacher macht, aber typischerweise eine geringere Leistung als FC aufweist."
+    },
+    "en": {
+      "question": "Which of the following statements BEST describes the differences between iSCSI and Fibre Channel (FC) protocols in a Storage Area Network (SAN) environment?",
+      "options": {
+        "A": "iSCSI and Fibre Channel both use standard IP networks, making them equally easy to configure",
+        "B": "Fibre Channel and iSCSI both require specialized hardware, making them equally complex to implement",
+        "C": "iSCSI is more difficult to configure than Fibre Channel but offers better performance",
+        "D": "Fibre Channel is more difficult to configure than iSCSI but provides better performance"
+      },
+      "answer": "D",
+      "explanation": "Fibre Channel is more difficult to configure than iSCSI because it requires specialized hardware (HBAs, FC switches) and dedicated infrastructure. In return, FC offers higher performance, lower latency, and greater reliability. iSCSI uses standard IP networks and Ethernet, making implementation more cost-effective and simpler, but it typically has lower performance than FC."
+    }
+  },
+  {
+    "id": 123,
+    "de": {
+      "frage": "Sie sind ein Systemadministrator, der einen Linux-Server behebt, bei dem die Partition mit dem Betriebssystem fast voll ist.\n\nSie vermuten, dass große Log-Dateien im Verzeichnis /var/log übermäßig viel Speicherplatz verbrauchen.\n\nWelcher der folgenden Ansätze würde Ihnen am BESTEN helfen, zu analysieren und zu bestätigen, welche spezifischen Dateien oder Verzeichnisse für die hohe Speichernutzung verantwortlich sind?",
+      "optionen": {
+        "A": "Den Befehl lsblk verwenden, um die erkannten Speichergeräte und ihre Mount-Punkte zu analysieren",
+        "B": "Den Befehl df verwenden, um die Gesamtspeicherkapazität und -nutzung der Betriebssystempartition zu analysieren",
+        "C": "Den Befehl du /var/log verwenden, um die Speichernutzung innerhalb des Verzeichnisses /var/log zu analysieren und große Dateien oder Unterverzeichnisse zu identifizieren",
+        "D": "Den Befehl cat /proc/partitions verwenden, um die vom Betriebssystem erkannten Partitionen zu analysieren"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl du /var/log (disk usage) ist das beste Tool, um die Speichernutzung innerhalb eines bestimmten Verzeichnisses zu analysieren. Mit Optionen wie -h (human-readable) und -s (summary) oder --max-depth kann man schnell identifizieren, welche Dateien oder Unterverzeichnisse den meisten Speicherplatz verbrauchen. lsblk zeigt nur Geräte und Mount-Punkte, df zeigt nur Gesamtnutzung pro Partition, und cat /proc/partitions listet nur Partitionen auf."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server where the partition containing the operating system is nearly full.\n\nYou suspect that large log files in the /var/log directory are consuming excessive storage space.\n\nWhich of the following approaches would BEST help you analyze and confirm which specific files or directories are responsible for the high storage usage?",
+      "options": {
+        "A": "Use the lsblk command to analyze the recognized storage devices and their mount points",
+        "B": "Use the df command to analyze the overall storage capacity and usage of the operating system partition",
+        "C": "Use the du /var/log command to analyze storage usage within the /var/log directory and identify large files or subdirectories",
+        "D": "Use the cat /proc/partitions command to analyze the partitions recognized by the operating system"
+      },
+      "answer": "C",
+      "explanation": "The du /var/log command (disk usage) is the best tool for analyzing storage usage within a specific directory. With options like -h (human-readable) and -s (summary) or --max-depth, you can quickly identify which files or subdirectories consume the most space. lsblk only shows devices and mount points, df only shows overall usage per partition, and cat /proc/partitions only lists partitions."
+    }
+  },
+  {
+    "id": 124,
+    "de": {
+      "frage": "Ein Linux-Ingenieur möchte Befehle vereinfachen, indem er Kurzformen für längere Ausdrücke verwendet. Welcher Befehl könnte verwendet werden, um einen Befehl wie ls –al zu vereinfachen?",
+      "optionen": {
+        "A": "set",
+        "B": "chmod",
+        "C": "alias",
+        "D": "crontab"
+      },
+      "antwort": "C",
+      "erklärung": "Der Befehl alias wird verwendet, um Kurzformen für längere Befehle zu erstellen. Beispiel: alias ll='ls -al' erstellt die Kurzform 'll' für 'ls -al'. set wird für Shell-Optionen verwendet, chmod ändert Dateiberechtigungen, und crontab plant wiederkehrende Aufgaben."
+    },
+    "en": {
+      "question": "A Linux engineer is looking to simplify the commands using shorthand for longer expressions. Which command could be used to simplify a command such as ls –al?",
+      "options": {
+        "A": "set",
+        "B": "chmod",
+        "C": "alias",
+        "D": "crontab"
+      },
+      "answer": "C",
+      "explanation": "The alias command is used to create shortcuts for longer commands. Example: alias ll='ls -al' creates the shortcut 'll' for 'ls -al'. set is used for shell options, chmod changes file permissions, and crontab schedules recurring tasks."
+    }
+  },
+  {
+    "id": 125,
+    "de": {
+      "frage": "Ihr Unternehmen möchte Linux-Umgebungen für Benutzer in der Finanzabteilung bereitstellen. Diese Benutzer sind am meisten mit macOS- und Windows-Desktop-Oberflächen vertraut, daher möchten Sie etwas empfehlen, das den Umstieg auf Linux so einfach wie möglich macht.\n\nWelche der folgenden Desktop-Umgebungen ist hochgradig anpassbar und ähnelt macOS- und Windows-Oberflächen?",
+      "optionen": {
+        "A": "Wayland",
+        "B": "Xfce",
+        "C": "GNOME",
+        "D": "LXDE"
+      },
+      "antwort": "C",
+      "erklärung": "GNOME ist eine moderne, hochgradig anpassbare Desktop-Umgebung mit einer intuitiven Benutzeroberfläche, die macOS und Windows ähnelt. Sie bietet eine polierte, benutzerfreundliche Erfahrung mit modernem Design. Wayland ist ein Display-Server-Protokoll, keine Desktop-Umgebung. Xfce ist leichtgewichtig, aber weniger modern. LXDE ist sehr minimalistisch und für ältere Hardware konzipiert."
+    },
+    "en": {
+      "question": "Your company wants to deploy Linux environments to users in the finance department. These users are most familiar with macOS and Windows desktop interfaces, so you want to recommend something that will make the switch to Linux as easy as possible.\n\nWhich of the following desktop environments is highly customizable and similar to macOS and Windows interfaces?",
+      "options": {
+        "A": "Wayland",
+        "B": "Xfce",
+        "C": "GNOME",
+        "D": "LXDE"
+      },
+      "answer": "C",
+      "explanation": "GNOME is a modern, highly customizable desktop environment with an intuitive user interface similar to macOS and Windows. It offers a polished, user-friendly experience with modern design. Wayland is a display server protocol, not a desktop environment. Xfce is lightweight but less modern. LXDE is very minimalistic and designed for older hardware."
+    }
+  },
+  {
+    "id": 126,
+    "de": {
+      "frage": "Die Preboot Execution Environment (PXE) erfordert, dass bestimmte Netzwerkdienste ausgeführt werden, bevor ein PXE-Boot-Prozess ausgeführt wird. Welcher Dienst ist für PXE-Boot-Operationen kritisch?",
+      "optionen": {
+        "A": "DNS",
+        "B": "DHCP",
+        "C": "HTTP",
+        "D": "SFTP"
+      },
+      "antwort": "B",
+      "erklärung": "DHCP (Dynamic Host Configuration Protocol) ist kritisch für PXE-Boot, da es dem Client eine IP-Adresse zuweist und wichtige Boot-Informationen wie den TFTP-Server-Standort und den Boot-Dateinamen bereitstellt. Ohne DHCP kann der PXE-Client keine Netzwerkkonfiguration erhalten. DNS ist optional für Namensauflösung, HTTP/SFTP werden nicht direkt für PXE-Boot verwendet (TFTP ist das Standard-Protokoll für PXE)."
+    },
+    "en": {
+      "question": "The Preboot Execution Environment (PXE) requires certain network services to be running before executing a PXE boot process. Which service is critical for PXE boot operations?",
+      "options": {
+        "A": "DNS",
+        "B": "DHCP",
+        "C": "HTTP",
+        "D": "SFTP"
+      },
+      "answer": "B",
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) is critical for PXE boot because it assigns an IP address to the client and provides essential boot information such as the TFTP server location and boot filename. Without DHCP, the PXE client cannot obtain network configuration. DNS is optional for name resolution, HTTP/SFTP are not directly used for PXE boot (TFTP is the standard protocol for PXE)."
+    }
+  },
+  {
+    "id": 127,
+    "de": {
+      "frage": "Welches der folgenden Verzeichnisse ist das Home-Verzeichnis für das root-Benutzerkonto?",
+      "optionen": {
+        "A": "/root",
+        "B": "/",
+        "C": "/home",
+        "D": "/home/root"
+      },
+      "antwort": "A",
+      "erklärung": "Das Home-Verzeichnis des root-Benutzers ist /root, nicht /home/root. Dies unterscheidet sich von normalen Benutzern, deren Home-Verzeichnisse sich in /home befinden (z. B. /home/username). / ist das Root-Verzeichnis des Dateisystems, nicht das Home-Verzeichnis. /home ist das übergeordnete Verzeichnis für normale Benutzer-Home-Verzeichnisse."
+    },
+    "en": {
+      "question": "Which of the following directories is the home directory for the root user account?",
+      "options": {
+        "A": "/root",
+        "B": "/",
+        "C": "/home",
+        "D": "/home/root"
+      },
+      "answer": "A",
+      "explanation": "The home directory for the root user is /root, not /home/root. This differs from normal users whose home directories are located in /home (e.g., /home/username). / is the root directory of the filesystem, not the home directory. /home is the parent directory for normal user home directories."
+    }
+  },
+  {
+    "id": 128,
+    "de": {
+      "frage": "Sie arbeiten am Help Desk einer kleinen IT-Firma und wurden beauftragt, bei Linux-basierten Problemen zu helfen. Ein Benutzer meldet, dass sein System in eine textbasierte Oberfläche anstatt in eine GUI startet.\n\nWelche der folgenden Konfigurationsdateien sollten Sie überprüfen, um dieses Problem zu beheben?",
+      "optionen": {
+        "A": "/etc/passwd",
+        "B": "/etc/default/grub",
+        "C": "/etc/fstab",
+        "D": "/default.target"
+      },
+      "antwort": "B",
+      "erklärung": "/etc/default/grub ist die Konfigurationsdatei, die bestimmt, wie das System startet. Sie können hier den Standard-Runlevel oder das systemd-Target ändern. Wenn das System in den Textmodus bootet, könnte die GRUB-Konfiguration auf einen nicht-grafischen Runlevel eingestellt sein. Nach Änderungen muss update-grub oder grub2-mkconfig ausgeführt werden. /etc/passwd enthält Benutzerinformationen, /etc/fstab definiert Dateisystem-Mounts, und /default.target ist kein gültiger Pfad (der korrekte Pfad wäre /etc/systemd/system/default.target)."
+    },
+    "en": {
+      "question": "You are working help desk at a small IT firm and have been assigned to assist with Linux based issues. A user reports that their system boots into a text-based interface instead of a GUI.\n\nWhich of the following configuration files should you check to resolve this issue?",
+      "options": {
+        "A": "/etc/passwd",
+        "B": "/etc/default/grub",
+        "C": "/etc/fstab",
+        "D": "/default.target"
+      },
+      "answer": "B",
+      "explanation": "/etc/default/grub is the configuration file that determines how the system boots. You can change the default runlevel or systemd target here. If the system boots into text mode, the GRUB configuration might be set to a non-graphical runlevel. After changes, update-grub or grub2-mkconfig must be run. /etc/passwd contains user information, /etc/fstab defines filesystem mounts, and /default.target is not a valid path (the correct path would be /etc/systemd/system/default.target)."
+    }
+  },
+  {
+    "id": 129,
+    "de": {
+      "frage": "Ein Linux-Systemadministrator hat die Aufgabe, eine genaue Zeitsynchronisation über alle Server in einem Netzwerk sicherzustellen.\n\nDie Organisation verfügt über eine Mischung aus Servern mit intermittierender Netzwerkverbindung und benötigt einen Zeitsynchronisationsdienst, der unter diesen Bedingungen flexibel und konsistent ist.\n\nWelchen der folgenden sollte der Administrator wählen?",
+      "optionen": {
+        "A": "chronyd",
+        "B": "Sowohl ntpd als auch chronyd gleichzeitig",
+        "C": "ntpd",
+        "D": "PTP"
+      },
+      "antwort": "A",
+      "erklärung": "chronyd ist die beste Wahl für Umgebungen mit intermittierender Netzwerkverbindung. Es ist speziell für solche Szenarien konzipiert und synchronisiert die Zeit schneller nach Netzwerkunterbrechungen. chronyd ist flexibler, verbraucht weniger Ressourcen und passt sich besser an wechselnde Netzwerkbedingungen an als ntpd. PTP (Precision Time Protocol) wird für hochpräzise Synchronisation in speziellen Anwendungen verwendet. Beide Dienste gleichzeitig zu betreiben würde zu Konflikten führen."
+    },
+    "en": {
+      "question": "A Linux system administrator is tasked with ensuring accurate time synchronization across all servers in a network.\n\nThe organization has a mix of servers with intermittent network connectivity and requires a time synchronization service that is flexible and consistent under these conditions.\n\nWhich of the following should the administrator choose?",
+      "options": {
+        "A": "chronyd",
+        "B": "Both ntpd and chronyd simultaneously",
+        "C": "ntpd",
+        "D": "PTP"
+      },
+      "answer": "A",
+      "explanation": "chronyd is the best choice for environments with intermittent network connectivity. It is specifically designed for such scenarios and synchronizes time faster after network interruptions. chronyd is more flexible, consumes fewer resources, and adapts better to changing network conditions than ntpd. PTP (Precision Time Protocol) is used for high-precision synchronization in specialized applications. Running both services simultaneously would cause conflicts."
+    }
+  },
+  {
+    "id": 130,
+    "de": {
+      "frage": "Welchen der folgenden Befehle sollten Sie verwenden, um die primäre Gruppe des Benutzers jdeng in projects_temp zu ändern?",
+      "optionen": {
+        "A": "groupmod -g jdeng projects_temp",
+        "B": "useradd -g projects_temp jdeng",
+        "C": "usermod -L projects_temp jdeng",
+        "D": "usermod -g projects_temp jdeng"
+      },
+      "antwort": "D",
+      "erklärung": "usermod -g projects_temp jdeng ist der korrekte Befehl, um die primäre Gruppe eines bestehenden Benutzers zu ändern. Die Option -g gibt die neue primäre Gruppe an. groupmod wird zum Ändern von Gruppeneigenschaften verwendet, nicht für Benutzerzuweisungen. useradd erstellt neue Benutzer. usermod -L sperrt ein Benutzerkonto."
+    },
+    "en": {
+      "question": "Which of the following commands should you use to change user jdeng's primary group to projects_temp?",
+      "options": {
+        "A": "groupmod -g jdeng projects_temp",
+        "B": "useradd -g projects_temp jdeng",
+        "C": "usermod -L projects_temp jdeng",
+        "D": "usermod -g projects_temp jdeng"
+      },
+      "answer": "D",
+      "explanation": "usermod -g projects_temp jdeng is the correct command to change an existing user's primary group. The -g option specifies the new primary group. groupmod is used to modify group properties, not for user assignments. useradd creates new users. usermod -L locks a user account."
+    }
+  },
+  {
+    "id": 131,
+    "de": {
+      "frage": "Welche der folgenden ist die richtige Syntax eines Docker-Befehls?",
+      "optionen": {
+        "A": "subcommand {options} {arguments}",
+        "B": "container {subcommands} (options} {arguments}",
+        "C": "docker {subcommand} {options} {arguments}",
+        "D": "docker {options} {arguments}"
+      },
+      "antwort": "C",
+      "erklärung": "Die korrekte Syntax für Docker-Befehle ist docker {subcommand} {options} {arguments}. Der Befehl beginnt mit 'docker', gefolgt von einem Unterbefehl (z. B. run, build, ps), optionalen Optionen (z. B. -d, --name) und Argumenten (z. B. Image-Name). Beispiel: docker run -d --name mycontainer nginx."
+    },
+    "en": {
+      "question": "Which of the following is the proper syntax of a Docker command?",
+      "options": {
+        "A": "subcommand {options} {arguments}",
+        "B": "container {subcommands} (options} {arguments}",
+        "C": "docker {subcommand} {options} {arguments}",
+        "D": "docker {options} {arguments}"
+      },
+      "answer": "C",
+      "explanation": "The correct syntax for Docker commands is docker {subcommand} {options} {arguments}. The command begins with 'docker', followed by a subcommand (e.g., run, build, ps), optional options (e.g., -d, --name), and arguments (e.g., image name). Example: docker run -d --name mycontainer nginx."
+    }
+  },
+  {
+    "id": 132,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt die Unterschiede zwischen der Prozesserstellung durch binäre ausführbare Dateien und Shell-Skripte in Linux am BESTEN?",
+      "optionen": {
+        "A": "Shell-Skripte werden in Binärdateien vorkompiliert, während binäre ausführbare Dateien Zeile für Zeile von der Shell interpretiert werden",
+        "B": "Sowohl binäre ausführbare Dateien als auch Shell-Skripte werden in maschinenlesbaren Code kompiliert, bevor sie von der CPU ausgeführt werden",
+        "C": "Binäre ausführbare Dateien und Shell-Skripte werden beide als Binärdateien auf der Festplatte gespeichert und direkt von der CPU ausgeführt",
+        "D": "Binäre ausführbare Dateien werden in maschinenlesbaren Code kompiliert und direkt von der CPU ausgeführt, während Shell-Skripte Zeile für Zeile von der Shell interpretiert werden"
+      },
+      "antwort": "D",
+      "erklärung": "Binäre ausführbare Dateien sind vorkompilierter Maschinencode, der direkt von der CPU ausgeführt wird. Shell-Skripte hingegen sind Textdateien, die von einem Interpreter (wie bash) Zeile für Zeile gelesen und ausgeführt werden. Dies ist der fundamentale Unterschied: Kompilierung vs. Interpretation. Binäre Programme sind in der Regel schneller, während Skripte flexibler und einfacher zu modifizieren sind."
+    },
+    "en": {
+      "question": "Which of the following BEST describes the differences between how binary executables and shell scripts create processes in Linux?",
+      "options": {
+        "A": "Shell scripts are precompiled into binary files, while binary executables are interpreted line-by-line by the shell",
+        "B": "Both binary executables and shell scripts are compiled into machine-readable code before being executed by the CPU",
+        "C": "Binary executables and shell scripts are both stored as binary files on the disk and executed directly by the CPU",
+        "D": "Binary executables are compiled into machine-readable code and directly executed by the CPU, while shell scripts are interpreted line-by-line by the shell"
+      },
+      "answer": "D",
+      "explanation": "Binary executables are precompiled machine code executed directly by the CPU. Shell scripts, on the other hand, are text files that are read and executed line-by-line by an interpreter (such as bash). This is the fundamental difference: compilation vs. interpretation. Binary programs are typically faster, while scripts are more flexible and easier to modify."
+    }
+  },
+  {
+    "id": 133,
+    "de": {
+      "frage": "Ein Linux-Server hat ungewöhnlich lange Boot-Zeiten, und Sie vermuten, dass ein bestimmter Dienst falsch konfiguriert ist oder Syntaxfehler in seiner Unit-Datei aufweist.\n\nSie möchten den Boot-Prozess analysieren, um den problematischen Dienst zu identifizieren und die Korrektheit seiner Unit-Datei zu überprüfen.\n\nWelchen systemd-analyze-Unterbefehl sollten Sie verwenden, um dies zu erreichen?",
+      "optionen": {
+        "A": "systemd-analyze time",
+        "B": "systemd-analyze blame",
+        "C": "systemd-analyze filesystems",
+        "D": "systemd-analyze verify"
+      },
+      "antwort": "D",
+      "erklärung": "systemd-analyze verify überprüft die Syntax und Konfiguration von Unit-Dateien auf Fehler. Dies ist das richtige Tool, um Syntaxfehler oder Konfigurationsprobleme in Service-Dateien zu identifizieren. systemd-analyze time zeigt die Gesamt-Boot-Zeit, systemd-analyze blame listet Services nach ihrer Boot-Zeit auf, und systemd-analyze filesystems zeigt Dateisystem-Typen. Für die Identifizierung von Boot-Verzögerungen wäre blame hilfreich, aber für Syntaxfehler ist verify die richtige Wahl."
+    },
+    "en": {
+      "question": "A Linux server is experiencing unusually long boot times, and you suspect that a specific service is misconfigured or has syntax errors in its unit file.\n\nYou want to analyze the boot process to identify the problematic service and verify the correctness of its unit file.\n\nWhich systemd-analyze subcommand should you use to achieve this?",
+      "options": {
+        "A": "systemd-analyze time",
+        "B": "systemd-analyze blame",
+        "C": "systemd-analyze filesystems",
+        "D": "systemd-analyze verify"
+      },
+      "answer": "D",
+      "explanation": "systemd-analyze verify checks the syntax and configuration of unit files for errors. This is the right tool to identify syntax errors or configuration problems in service files. systemd-analyze time shows total boot time, systemd-analyze blame lists services by boot time, and systemd-analyze filesystems shows filesystem types. For identifying boot delays, blame would be helpful, but for syntax errors, verify is the correct choice."
+    }
+  },
+  {
+    "id": 134,
+    "de": {
+      "frage": "Sie sind ein Systemadministrator, der einen Prozess untersucht, der im Verdacht steht, übermäßig viel Speicher auf einem Linux-System zu verbrauchen. Der Prozessname ist memory_hog.\n\nWelche der folgenden Schritte würden Sie unternehmen, um die Speichernutzung dieses Prozesses mithilfe des Verzeichnisses /proc/PID zu ermitteln?",
+      "optionen": {
+        "A": "Verwenden Sie den Befehl ps aux | grep memory_hog, um die PID zu finden, navigieren Sie zu /proc/PID und verwenden Sie dann cat /proc/PID/cmdline, um die Speichernutzung zu überprüfen",
+        "B": "Verwenden Sie den Befehl top, um die PID zu finden, navigieren Sie zu /proc/PID und verwenden Sie dann ls -l /proc/PID/fd, um die Speichernutzung zu überprüfen",
+        "C": "Verwenden Sie grep memory_hog /proc, um den Prozess zu finden, und verwenden Sie dann cat /proc/PID/limits, um die Speichernutzung zu überprüfen",
+        "D": "Verwenden Sie den Befehl ps aux | grep memory_hog, um die PID zu finden, navigieren Sie zu /proc/PID und verwenden Sie dann cat /proc/PID/status | grep VmRSS"
+      },
+      "antwort": "D",
+      "erklärung": "Die richtige Vorgehensweise ist, zuerst die PID mit ps aux | grep memory_hog zu finden und dann cat /proc/PID/status | grep VmRSS zu verwenden. VmRSS (Virtual Memory Resident Set Size) zeigt den tatsächlich verwendeten physischen Speicher des Prozesses an. /proc/PID/cmdline zeigt nur die Befehlszeile, /proc/PID/fd zeigt offene Dateideskriptoren, und /proc/PID/limits zeigt Ressourcenlimits, aber keine aktuelle Speichernutzung."
+    },
+    "en": {
+      "question": "You are a system administrator investigating a process that is suspected of consuming excessive memory on a Linux system. The process name is memory_hog.\n\nWhich of the following steps would you take to determine the memory usage of this process using the /proc/PID directory?",
+      "options": {
+        "A": "Use the ps aux | grep memory_hog command to find the PID, navigate to /proc/PID, and then use cat /proc/PID/cmdline to check memory usage",
+        "B": "Use the top command to find the PID, navigate to /proc/PID, and then use ls -l /proc/PID/fd to check memory usage",
+        "C": "Use the grep memory_hog /proc command to find the process and then use cat /proc/PID/limits to check memory usage",
+        "D": "Use the ps aux | grep memory_hog command to find the PID, navigate to /proc/PID, and then use cat /proc/PID/status | grep VmRSS"
+      },
+      "answer": "D",
+      "explanation": "The correct procedure is to first find the PID with ps aux | grep memory_hog and then use cat /proc/PID/status | grep VmRSS. VmRSS (Virtual Memory Resident Set Size) shows the actual physical memory used by the process. /proc/PID/cmdline only shows the command line, /proc/PID/fd shows open file descriptors, and /proc/PID/limits shows resource limits but not current memory usage."
+    }
+  },
+  {
+    "id": 135,
+    "de": {
+      "frage": "Ein Unternehmen entscheidet zwischen der Verwendung einer Red Hat-basierten (RPM) Linux-Distribution oder einer Debian-basierten Linux-Distribution für ihre Softwareentwicklungsumgebung.\n\nBasierend auf den Konzepten der Paketverwaltung, welcher der folgenden Faktoren wäre am WICHTIGSTEN bei dieser Entscheidung zu bewerten?",
+      "optionen": {
+        "A": "Die historische Beliebtheit jeder Linux-Familie in der Open-Source-Community",
+        "B": "Die Anzahl der Linux-Distributionen, die von jeder Familie abgeleitet sind",
+        "C": "Die Kompatibilität des Paketverwaltungssystems mit der bestehenden Software und den Workflows des Unternehmens",
+        "D": "Die Verfügbarkeit von Open-Source-Lizenzen für beide Distributionen"
+      },
+      "antwort": "C",
+      "erklärung": "Die Kompatibilität des Paketverwaltungssystems mit bestehender Software und Workflows ist der wichtigste Faktor. RPM-basierte Systeme (yum/dnf) und Debian-basierte Systeme (apt) haben unterschiedliche Paketformate und Repositories. Die Wahl sollte davon abhängen, welche Software das Unternehmen benötigt, welche Pakete verfügbar sind und wie gut sich das System in bestehende Entwicklungs-Workflows integriert. Historische Beliebtheit und Anzahl der Derivate sind weniger relevant für praktische Anforderungen."
+    },
+    "en": {
+      "question": "A company is deciding between using a Red Hat-based (RPM) Linux distribution or a Debian-based Linux distribution for their software development environment.\n\nBased on the concepts of package management, which of the following would be the MOST important factor to evaluate when making this decision?",
+      "options": {
+        "A": "The historical popularity of each Linux family in the open-source community",
+        "B": "The number of Linux distributions derived from each family",
+        "C": "The compatibility of the package management system with the company's existing software and workflows",
+        "D": "The availability of open-source licenses for both distributions"
+      },
+      "answer": "C",
+      "explanation": "The compatibility of the package management system with existing software and workflows is the most important factor. RPM-based systems (yum/dnf) and Debian-based systems (apt) have different package formats and repositories. The choice should depend on what software the company needs, which packages are available, and how well the system integrates into existing development workflows. Historical popularity and number of derivatives are less relevant for practical requirements."
+    }
+  },
+  {
+    "id": 136,
+    "de": {
+      "frage": "Sie verwalten eine Docker-Umgebung und stellen fest, dass ein Image namens oldapp:1.0 nicht mehr verwendet wird und unnötigen Speicherplatz belegt.\n\nNachdem Sie überprüft haben, dass keine Container von diesem Image abhängig sind, entscheiden Sie sich, es zu entfernen.\n\nWelchen der folgenden Befehle sollten Sie verwenden, um dieses Problem zu analysieren und zu beheben?",
+      "optionen": {
+        "A": "docker stop oldapp:1.0",
+        "B": "docker rmi oldapp:1.0",
+        "C": "docker rm oldapp:1.0",
+        "D": "docker prune images oldapp:1.0"
+      },
+      "antwort": "B",
+      "erklärung": "docker rmi (remove image) ist der korrekte Befehl zum Entfernen von Docker-Images. Der Befehl löscht das angegebene Image vom System. docker stop stoppt laufende Container, docker rm entfernt Container (nicht Images), und docker prune images oldapp:1.0 ist keine gültige Syntax (der korrekte Befehl wäre docker image prune ohne spezifischen Image-Namen)."
+    },
+    "en": {
+      "question": "You are managing a Docker environment and notice that an image named oldapp:1.0 is no longer being used and is taking up unnecessary disk space.\n\nAfter verifying that no containers are dependent on this image, you decide to remove it.\n\nWhich of the following commands should you use to analyze and resolve this issue?",
+      "options": {
+        "A": "docker stop oldapp:1.0",
+        "B": "docker rmi oldapp:1.0",
+        "C": "docker rm oldapp:1.0",
+        "D": "docker prune images oldapp:1.0"
+      },
+      "answer": "B",
+      "explanation": "docker rmi (remove image) is the correct command for removing Docker images. The command deletes the specified image from the system. docker stop stops running containers, docker rm removes containers (not images), and docker prune images oldapp:1.0 is not valid syntax (the correct command would be docker image prune without a specific image name)."
+    }
+  },
+  {
+    "id": 137,
+    "de": {
+      "frage": "Welche der folgenden Unit-Dateien identifiziert einen Timer, der von systemd verwaltet werden soll und die Zeit bis zum Eintreten eines Ereignisses herunterzählt?",
+      "optionen": {
+        "A": ".crontab",
+        "B": ".timer",
+        "C": ".socket",
+        "D": ".service"
+      },
+      "antwort": "B",
+      "erklärung": ".timer ist die korrekte Unit-Datei für systemd-Timer. Timer-Units definieren zeitbasierte Aktivierungen von Services und können sowohl einmalige als auch wiederkehrende Ereignisse planen. Sie sind die systemd-Alternative zu cron. .crontab ist keine systemd-Unit-Datei, sondern gehört zum klassischen cron-System. .socket definiert Socket-basierte Aktivierung, und .service definiert System-Services."
+    },
+    "en": {
+      "question": "Which of the following unit files identifies a timer that should be managed by systemd and counts down the time an event occurs?",
+      "options": {
+        "A": ".crontab",
+        "B": ".timer",
+        "C": ".socket",
+        "D": ".service"
+      },
+      "answer": "B",
+      "explanation": ".timer is the correct unit file for systemd timers. Timer units define time-based activation of services and can schedule both one-time and recurring events. They are the systemd alternative to cron. .crontab is not a systemd unit file but belongs to the classic cron system. .socket defines socket-based activation, and .service defines system services."
+    }
+  },
+  {
+    "id": 138,
+    "de": {
+      "frage": "Sie verwalten einen Debian-basierten Linux-Server und versuchen, ein Softwarepaket mit dem Befehl dpkg zu installieren:\n\nsudo dpkg -i example-package.deb\n\nWährend der Installation erhalten Sie einen Fehler, der anzeigt, dass dem Paket Abhängigkeiten fehlen. Sie möchten das Problem lösen und sicherstellen, dass das Paket erfolgreich installiert wird.\n\nWas sollten Sie als nächstes tun?",
+      "optionen": {
+        "A": "Verwenden Sie den Befehl sudo dpkg -i --force-depends example-package.deb, um die Abhängigkeitsfehler zu umgehen und das Paket zu installieren",
+        "B": "Führen Sie den Befehl apt-cache depends example-package aus, um die Abhängigkeiten aufzulisten und jede einzeln manuell zu installieren",
+        "C": "Verwenden Sie den Befehl sudo apt-get install -f, um die fehlenden Abhängigkeiten zu beheben und die Installation abzuschließen",
+        "D": "Aktualisieren Sie die Paketliste mit sudo apt update und wiederholen Sie dann den dpkg-Befehl"
+      },
+      "antwort": "C",
+      "erklärung": "sudo apt-get install -f (oder apt install -f) ist die beste Lösung. Die Option -f (fix-broken) behebt automatisch fehlende Abhängigkeiten und vervollständigt die Installation. Dies ist der empfohlene Weg nach einem fehlgeschlagenen dpkg-Installationsversuch. --force-depends (Option A) umgeht nur Fehler, löst sie aber nicht wirklich. Manuelle Installation (Option B) ist aufwendig und fehleranfällig. apt update (Option D) aktualisiert nur die Paketliste, löst aber keine Abhängigkeiten."
+    },
+    "en": {
+      "question": "You are managing a Debian-based Linux server and attempt to install a software package using the dpkg command:\n\nsudo dpkg -i example-package.deb\n\nDuring the installation, you receive an error indicating that the package has missing dependencies. You want to resolve the issue and ensure the package is installed successfully.\n\nWhat should you do next?",
+      "options": {
+        "A": "Use the sudo dpkg -i --force-depends example-package.deb command to bypass the dependency errors and install the package",
+        "B": "Run the apt-cache depends example-package command to list the dependencies and manually install each one",
+        "C": "Use the sudo apt-get install -f command to fix the missing dependencies and complete the installation",
+        "D": "Update the package list using sudo apt update and then retry the dpkg command"
+      },
+      "answer": "C",
+      "explanation": "sudo apt-get install -f (or apt install -f) is the best solution. The -f (fix-broken) option automatically resolves missing dependencies and completes the installation. This is the recommended approach after a failed dpkg installation attempt. --force-depends (Option A) only bypasses errors but doesn't actually resolve them. Manual installation (Option B) is tedious and error-prone. apt update (Option D) only updates the package list but doesn't resolve dependencies."
+    }
+  },
+  {
+    "id": 139,
+    "de": {
+      "frage": "Sie sind ein Linux-Administrator, der beauftragt wurde, ein Datenbankbereinigungs-Skript zu planen, das sich unter /usr/bin/dbcleanup.sh befindet. Das Skript muss jeden Wochentag (Montag bis Freitag) um 20:00 Uhr ausgeführt werden.\n\nWelchen der folgenden crontab-Einträge sollten Sie verwenden, um diese Anforderung zu erfüllen?",
+      "optionen": {
+        "A": "0 8 * * 1-5 /usr/bin/dbcleanup.sh",
+        "B": "0 20 * * 1-5 /usr/bin/dbcleanup.sh",
+        "C": "* 20 * * 1-5 /usr/bin/dbcleanup.sh",
+        "D": "0 20 * * 6-7 /usr/bin/dbcleanup.sh"
+      },
+      "antwort": "B",
+      "erklärung": "Das crontab-Format ist: Minute Stunde Tag Monat Wochentag. 0 20 * * 1-5 bedeutet: 0 Minuten (zur vollen Stunde), 20 Uhr (8:00 p.m.), jeden Tag des Monats, jeden Monat, Montag bis Freitag (1-5). Option A wäre 8:00 Uhr morgens. Option C würde jede Minute zwischen 20:00 und 20:59 Uhr ausgeführt. Option D wäre Samstag und Sonntag (6-7)."
+    },
+    "en": {
+      "question": "You are a Linux administrator tasked with scheduling a database cleanup script located at /usr/bin/dbcleanup.sh. The script must run every weekday (Monday through Friday) at 8:00 p.m.\n\nWhich of the following crontab entries should you use to meet this requirement?",
+      "options": {
+        "A": "0 8 * * 1-5 /usr/bin/dbcleanup.sh",
+        "B": "0 20 * * 1-5 /usr/bin/dbcleanup.sh",
+        "C": "* 20 * * 1-5 /usr/bin/dbcleanup.sh",
+        "D": "0 20 * * 6-7 /usr/bin/dbcleanup.sh"
+      },
+      "answer": "B",
+      "explanation": "The crontab format is: Minute Hour Day Month Weekday. 0 20 * * 1-5 means: 0 minutes (on the hour), 20 hours (8:00 p.m.), every day of the month, every month, Monday through Friday (1-5). Option A would be 8:00 a.m. Option C would run every minute between 20:00 and 20:59. Option D would be Saturday and Sunday (6-7)."
+    }
+  },
+  {
+    "id": 140,
+    "de": {
+      "frage": "Welchen der folgenden Befehle würden Sie verwenden, um das aktuelle Datum im Format \"YYYY-MM-DD\" anzuzeigen?",
+      "optionen": {
+        "A": "date +%x",
+        "B": "date +%A",
+        "C": "date +%F",
+        "D": "date +%B"
+      },
+      "antwort": "C",
+      "erklärung": "date +%F zeigt das Datum im Format YYYY-MM-DD an (z. B. 2025-11-18). %F ist die Kurzform für %Y-%m-%d. %x zeigt das Datum im lokalen Format, %A zeigt den vollen Wochentagsnamen, und %B zeigt den vollen Monatsnamen."
+    },
+    "en": {
+      "question": "Which of the following commands would you use to display the current date in the format \"YYYY-MM-DD\"?",
+      "options": {
+        "A": "date +%x",
+        "B": "date +%A",
+        "C": "date +%F",
+        "D": "date +%B"
+      },
+      "answer": "C",
+      "explanation": "date +%F displays the date in YYYY-MM-DD format (e.g., 2025-11-18). %F is the shorthand for %Y-%m-%d. %x shows the date in locale-specific format, %A shows the full weekday name, and %B shows the full month name."
+    }
+  },
+  {
+    "id": 141,
+    "de": {
+      "frage": "Sie sind ein Linux-Systemadministrator, der beauftragt wurde, einen E-Mail-Server für Ihre Organisation zu konfigurieren. Der Server muss in der Lage sein, E-Mails sicher an externe Domains zu senden.\n\nWährend der Konfiguration müssen Sie sicherstellen, dass der E-Mail-Server Verschlüsselung verwendet, um die Kommunikation zwischen Ihrem Server und dem SMTP-Server des Empfängers zu schützen.\n\nWelche der folgenden Konfigurationen würden Sie implementieren, um diese Anforderung zu erfüllen?",
+      "optionen": {
+        "A": "Konfigurieren Sie den SMTP-Server zur Verwendung von Transport Layer Security (TLS) und setzen Sie smtp_use_tls = yes in der Postfix-Konfigurationsdatei",
+        "B": "Aktivieren Sie Simple Authentication and Security Layer (SASL) ohne TLS zu konfigurieren",
+        "C": "Verwenden Sie den Standard-SMTP-Port 25 ohne zusätzliche Sicherheitseinstellungen",
+        "D": "Setzen Sie den relayhost-Parameter auf {smtp.example.com}:143 in der Postfix-Konfigurationsdatei"
+      },
+      "antwort": "A",
+      "erklärung": "Die Konfiguration von TLS mit smtp_use_tls = yes in Postfix ist die richtige Lösung, um verschlüsselte Kommunikation zwischen SMTP-Servern sicherzustellen. TLS verschlüsselt die Datenübertragung zwischen Mailservern. SASL (Option B) ist für Authentifizierung, nicht für Verschlüsselung. Port 25 ohne Sicherheit (Option C) ist unverschlüsselt. Port 143 (Option D) ist für IMAP, nicht für SMTP-Relay."
+    },
+    "en": {
+      "question": "You are a Linux system administrator tasked with configuring an email server for your organization. The server must be able to send emails securely to external domains.\n\nDuring the configuration, you need to ensure that the email server uses encryption to protect the communication between your server and the recipient's SMTP server.\n\nWhich of the following configurations would you implement to meet this requirement?",
+      "options": {
+        "A": "Configure the SMTP server to use Transport Layer Security (TLS) and set smtp_use_tls = yes in the Postfix configuration file",
+        "B": "Enable Simple Authentication and Security Layer (SASL) without configuring TLS",
+        "C": "Use the default SMTP port 25 without additional security settings",
+        "D": "Set the relayhost parameter to {smtp.example.com}:143 in the Postfix configuration file"
+      },
+      "answer": "A",
+      "explanation": "Configuring TLS with smtp_use_tls = yes in Postfix is the correct solution to ensure encrypted communication between SMTP servers. TLS encrypts data transmission between mail servers. SASL (Option B) is for authentication, not encryption. Port 25 without security (Option C) is unencrypted. Port 143 (Option D) is for IMAP, not SMTP relay."
+    }
+  },
+  {
+    "id": 142,
+    "de": {
+      "frage": "Welcher systemctl-Unterbefehl wird verwendet, um sicherzustellen, dass ein Dienst automatisch bei jedem Systemstart startet?",
+      "optionen": {
+        "A": "enable",
+        "B": "start",
+        "C": "restart",
+        "D": "mask"
+      },
+      "antwort": "A",
+      "erklärung": "systemctl enable ist der richtige Befehl, um einen Dienst so zu konfigurieren, dass er beim Systemstart automatisch gestartet wird. Dies erstellt symbolische Links in den entsprechenden systemd-Zielverzeichnissen. start startet einen Dienst sofort, aber nicht automatisch beim Booten. restart startet einen laufenden Dienst neu. mask verhindert komplett, dass ein Dienst gestartet werden kann."
+    },
+    "en": {
+      "question": "Which systemctl subcommand is used to ensure a service starts automatically every time the system boots?",
+      "options": {
+        "A": "enable",
+        "B": "start",
+        "C": "restart",
+        "D": "mask"
+      },
+      "answer": "A",
+      "explanation": "systemctl enable is the correct command to configure a service to start automatically at system boot. This creates symbolic links in the appropriate systemd target directories. start starts a service immediately but not automatically at boot. restart restarts a running service. mask completely prevents a service from being started."
+    }
+  },
+  {
+    "id": 143,
+    "de": {
+      "frage": "Welche Portnummer wird vom Network Time Protocol (NTP) verwendet, um Uhren auf Netzwerkgeräten zu synchronisieren?",
+      "optionen": {
+        "A": "443",
+        "B": "22",
+        "C": "80",
+        "D": "123"
+      },
+      "antwort": "D",
+      "erklärung": "NTP verwendet Port 123 (UDP) für die Zeitsynchronisation. Dies ist der Standard-Port für NTP-Kommunikation zwischen Clients und Zeitservern. Port 443 ist für HTTPS, Port 22 für SSH und Port 80 für HTTP."
+    },
+    "en": {
+      "question": "Which port number is used by the Network Time Protocol (NTP) to synchronize clocks on network devices?",
+      "options": {
+        "A": "443",
+        "B": "22",
+        "C": "80",
+        "D": "123"
+      },
+      "answer": "D",
+      "explanation": "NTP uses port 123 (UDP) for time synchronization. This is the standard port for NTP communication between clients and time servers. Port 443 is for HTTPS, port 22 for SSH, and port 80 for HTTP."
+    }
+  },
+  {
+    "id": 144,
+    "de": {
+      "frage": "Sie müssen ein Benutzerkonto mit den folgenden Parametern erstellen:\n\nLogin-Name: pmorrill\nKommentar: Paul Morrill\nHome-Verzeichnis: /home/pmorrill_temp\nUID: 683\n\nWelchen der folgenden Befehle sollten Sie verwenden?",
+      "optionen": {
+        "A": "useradd -d \"Paul Morrill\" -h /home/pmorrill_temp -u 683 pmorrill",
+        "B": "useradd -c \"Paul Morrill\" -d ~/pmorrill_temp -u 683 pmorrill",
+        "C": "useradd -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683 pmorrill",
+        "D": "useradd pmorrill -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683"
+      },
+      "antwort": "C",
+      "erklärung": "useradd -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683 pmorrill ist korrekt. Die Option -c setzt den Kommentar (GECOS-Feld), -d gibt das Home-Verzeichnis an, und -u setzt die UID. Der Benutzername kommt normalerweise am Ende, aber Option D ist ebenfalls technisch korrekt. Option C folgt jedoch der Standardkonvention. Option A verwendet -h statt -d, Option B verwendet ~/pmorrill_temp, was zu /root/pmorrill_temp expandieren würde."
+    },
+    "en": {
+      "question": "You need to create a user account with the following parameters:\n\nLogin name: pmorrill\nComment: Paul Morrill\nHome directory: /home/pmorrill_temp\nUID: 683\n\nWhich of the following commands should you use?",
+      "options": {
+        "A": "useradd -d \"Paul Morrill\" -h /home/pmorrill_temp -u 683 pmorrill",
+        "B": "useradd -c \"Paul Morrill\" -d ~/pmorrill_temp -u 683 pmorrill",
+        "C": "useradd -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683 pmorrill",
+        "D": "useradd pmorrill -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683"
+      },
+      "answer": "C",
+      "explanation": "useradd -c \"Paul Morrill\" -d /home/pmorrill_temp -u 683 pmorrill is correct. The -c option sets the comment (GECOS field), -d specifies the home directory, and -u sets the UID. The username normally comes at the end, but Option D is also technically correct. However, Option C follows the standard convention. Option A uses -h instead of -d, Option B uses ~/pmorrill_temp, which would expand to /root/pmorrill_temp."
+    }
+  },
+  {
+    "id": 145,
+    "de": {
+      "frage": "Ein Systemadministrator behebt Probleme bei einem Dienst, der während des Bootvorgangs nicht startet. Bei der Überprüfung der .service-Unit-Datei stellt er die folgende Konfiguration fest:\n\n[Unit]\nRequires=network.target\nAfter=network.target\n\nDer Administrator vermutet, dass das Problem in der Abhängigkeitskonfiguration liegt.\n\nBasierend auf dieser Konfiguration, was ist die WAHRSCHEINLICHSTE Ursache dafür, dass der Dienst nicht startet?",
+      "optionen": {
+        "A": "Die Direktive Requires=network.target sollte durch Wants=network.target ersetzt werden, um eine harte Abhängigkeit zu vermeiden",
+        "B": "Die Direktive After=network.target ist falsch im Abschnitt [Service] statt im Abschnitt [Unit] platziert",
+        "C": "Die Direktive Requires=network.target stellt sicher, dass der Dienst fehlschlägt, wenn das Netzwerk nicht verfügbar ist",
+        "D": "Die Direktive After=network.target ist unnötig und sollte entfernt werden"
+      },
+      "antwort": "C",
+      "erklärung": "Requires= erstellt eine harte Abhängigkeit. Wenn network.target fehlschlägt oder nicht verfügbar ist, wird auch der abhängige Dienst fehlschlagen. Dies ist die wahrscheinlichste Ursache für das Problem. Die Lösung wäre, Requires= durch Wants= zu ersetzen (Option A), was eine weiche Abhängigkeit erstellt – der Dienst würde trotzdem starten, selbst wenn das Netzwerk nicht verfügbar ist. After= ist korrekt im [Unit]-Abschnitt platziert und definiert nur die Startreihenfolge, nicht die Abhängigkeit."
+    },
+    "en": {
+      "question": "A system administrator is troubleshooting a service that fails to start during boot. Upon reviewing the .service unit file, they notice the following configuration:\n\n[Unit]\nRequires=network.target\nAfter=network.target\n\nThe administrator suspects the issue lies in the dependency configuration.\n\nBased on this configuration, which of the following is the MOST likely cause of the service failing to start?",
+      "options": {
+        "A": "The Requires=network.target directive should be replaced with Wants=network.target to avoid a hard dependency",
+        "B": "The After=network.target directive is incorrectly placed in the [Service] section instead of the [Unit] section",
+        "C": "The Requires=network.target directive ensures the service will fail if the network is unavailable",
+        "D": "The After=network.target directive is unnecessary and should be removed"
+      },
+      "answer": "C",
+      "explanation": "Requires= creates a hard dependency. If network.target fails or is unavailable, the dependent service will also fail. This is the most likely cause of the problem. The solution would be to replace Requires= with Wants= (Option A), which creates a soft dependency – the service would still start even if the network is unavailable. After= is correctly placed in the [Unit] section and only defines the start order, not the dependency."
+    }
   }
 ]
