@@ -3859,5 +3859,936 @@
       "answer": "C",
       "explanation": "Requires= creates a hard dependency. If network.target fails or is unavailable, the dependent service will also fail. This is the most likely cause of the problem. The solution would be to replace Requires= with Wants= (Option A), which creates a soft dependency – the service would still start even if the network is unavailable. After= is correctly placed in the [Unit] section and only defines the start order, not the dependency."
     }
+  },
+  {
+    "id": 146,
+    "de": {
+      "frage": "Sie konfigurieren eine Firewall für ein Unternehmen, das einen Webserver in seinem internen Netzwerk hostet. Externe Benutzer müssen auf den Webserver über dessen öffentliche IP-Adresse zugreifen, aber der Server ist mit einer privaten IP-Adresse konfiguriert. Welche der folgenden Konfigurationen würde diese Anforderung am besten erfüllen?",
+      "optionen": {
+        "A": "Konfigurieren Sie eine Regel, die den gesamten Datenverkehr zur öffentlichen IP-Adresse ohne Übersetzung zulässt.",
+        "B": "Konfigurieren Sie eine DNAT-Regel, um die öffentliche IP-Adresse auf die private IP-Adresse des Webservers abzubilden.",
+        "C": "Blockieren Sie den gesamten eingehenden Datenverkehr zur privaten IP-Adresse des Webservers.",
+        "D": "Konfigurieren Sie eine SNAT-Regel, um die private IP-Adresse des Webservers in eine öffentliche IP-Adresse zu übersetzen."
+      },
+      "antwort": "B",
+      "erklärung": "Um externen Benutzern den Zugriff auf einen internen Server über eine öffentliche IP-Adresse zu ermöglichen, ist Destination NAT (DNAT) erforderlich. DNAT übersetzt die öffentliche Ziel-IP-Adresse im Header des eingehenden Pakets in die private IP-Adresse des internen Servers und leitet den Datenverkehr so korrekt weiter."
+    },
+    "en": {
+      "question": "You are configuring a firewall for a company that hosts a web server on its internal network. External users need to access the web server using its public IP address, but the server is configured with a private IP address. Which of the following configurations would best meet this requirement?",
+      "options": {
+        "A": "Configure a rule to allow all traffic to the public IP address without translation.",
+        "B": "Configure a DNAT rule to map the public IP address to the private IP address of the web server.",
+        "C": "Block all inbound traffic to the private IP address of the web server.",
+        "D": "Configure an SNAT rule to translate the private IP address of the web server to a public IP address."
+      },
+      "answer": "B",
+      "explanation": "To allow external users to access an internal server using a public IP address, Destination NAT (DNAT) is required. DNAT translates the public destination IP address in the incoming packet's header to the private IP address of the internal server, directing the traffic correctly."
+    }
+  },
+  {
+    "id": 147,
+    "de": {
+      "frage": "Sie haben den Befehl ls -l verwendet, um die Berechtigungen einer Datei marketing_figures.txt anzuzeigen. Sie haben folgende Ausgabe erhalten:\n               -rwxrw-r--+ 1 jmace employees 27 Oct 3 19:19 marketing_figures.txt\n            \nWelches der folgenden Elemente zeigt an, dass ACLs (Access Control Lists) für die Datei verwendet werden?",
+      "optionen": {
+        "A": "Die rw- Berechtigungen für die Gruppe",
+        "B": "Der Bindestrich (-) am Anfang der Berechtigungsliste",
+        "C": "Die rwx Berechtigungen für den Benutzer",
+        "D": "Das Pluszeichen (+) am Ende der Berechtigungsliste"
+      },
+      "antwort": "D",
+      "erklärung": "Das Pluszeichen (+) am Ende der Berechtigungsliste zeigt an, dass erweiterte ACLs (Access Control Lists) auf die Datei angewendet werden. Dieses Symbol signalisiert, dass zusätzlich zu den Standardberechtigungen (Benutzer, Gruppe, Andere) weitere, granularere Zugriffskontrollen konfiguriert sind."
+    },
+    "en": {
+      "question": "You have used the ls -l command to view the permissions of a marketing_figures.txt file. You have received the following output:\n               -rwxrw-r--+ 1 jmace employees 27 Oct 3 19:19 marketing_figures.txt\n            \nWhich of the following indicates that the ACLs are being used with the file?",
+      "options": {
+        "A": "The rw- permissions for the group",
+        "B": "The dash (-) at the beginning of the permissions list",
+        "C": "The rwx permissions for the user",
+        "D": "The plus sign (+) at the end of the permissions list"
+      },
+      "answer": "D",
+      "explanation": "The plus sign (+) at the end of the permissions list indicates that extended ACLs (Access Control Lists) are applied to the file. This symbol signals that in addition to the standard permissions (user, group, others), more granular access controls are configured."
+    }
+  },
+  {
+    "id": 148,
+    "de": {
+      "frage": "Welches der folgenden Passwörter entspricht den Best Practices und würde als stärker als die anderen angesehen?",
+      "optionen": {
+        "A": "QWertyASdfgh!@#123",
+        "B": "P@ssw0rd123",
+        "C": "@pp!316",
+        "D": "QW1ckBr0wnF0x!3"
+      },
+      "antwort": "D",
+      "erklärung": "QW1ckBr0wnF0x!3 ist das stärkste Passwort, da es eine gute Länge hat, Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen kombiniert und nicht auf leicht zu erratenden Mustern basiert. Option A verwendet eine Tastatursequenz (QWERTY, ASDFGH), Option B basiert auf dem häufig verwendeten Wort 'Password', und Option C ist zu kurz. Ein starkes Passwort sollte mindestens 12-16 Zeichen lang sein und keine vorhersehbaren Muster enthalten."
+    },
+    "en": {
+      "question": "Which of the following passwords follows best practices and would be considered stronger than the others?",
+      "options": {
+        "A": "QWertyASdfgh!@#123",
+        "B": "P@ssw0rd123",
+        "C": "@pp!316",
+        "D": "QW1ckBr0wnF0x!3"
+      },
+      "answer": "D",
+      "explanation": "QW1ckBr0wnF0x!3 is the strongest password because it has good length, combines uppercase and lowercase letters, numbers, and special characters, and doesn't rely on easily guessable patterns. Option A uses keyboard sequences (QWERTY, ASDFGH), Option B is based on the commonly used word 'Password', and Option C is too short. A strong password should be at least 12-16 characters long and avoid predictable patterns."
+    }
+  },
+  {
+    "id": 149,
+    "de": {
+      "frage": "Sie arbeiten als Junior-Systemadministrator und wurden beauftragt, ein gemeinsam genutztes Verzeichnis auf einem Linux-System zu sichern, in dem mehrere Benutzer Schreib- und Ausführungsberechtigungen haben. Sie müssen sicherstellen, dass Benutzer keine Dateien löschen können, die ihnen nicht gehören, während sie weiterhin ihre eigenen Dateien erstellen und ändern können.\n\nWelchen der folgenden Befehle sollten Sie verwenden, um dies zu erreichen?",
+      "optionen": {
+        "A": "chmod +t shared_directory",
+        "B": "chmod +x shared_directory",
+        "C": "chmod 777 shared_directory",
+        "D": "chmod +s shared_directory"
+      },
+      "antwort": "A",
+      "erklärung": "Das Sticky Bit (+t) ist die richtige Lösung für dieses Szenario. Wenn es auf ein Verzeichnis angewendet wird, verhindert das Sticky Bit, dass Benutzer Dateien löschen oder umbenennen, die ihnen nicht gehören, auch wenn sie Schreibrechte für das Verzeichnis haben. Benutzer können jedoch weiterhin ihre eigenen Dateien erstellen, ändern und löschen. Dies wird häufig für gemeinsam genutzte Verzeichnisse wie /tmp verwendet."
+    },
+    "en": {
+      "question": "You are working as a junior systems administrator and have been tasked with securing a shared directory on a Linux system where multiple users have write and execute permissions. You need to make sure that users are unable to delete files they do not own while still being able to create and modify their own files.\n\nWhich of the following commands should you use to accomplish this?",
+      "options": {
+        "A": "chmod +t shared_directory",
+        "B": "chmod +x shared_directory",
+        "C": "chmod 777 shared_directory",
+        "D": "chmod +s shared_directory"
+      },
+      "answer": "A",
+      "explanation": "The sticky bit (+t) is the correct solution for this scenario. When applied to a directory, the sticky bit prevents users from deleting or renaming files they don't own, even if they have write permissions on the directory. However, users can still create, modify, and delete their own files. This is commonly used for shared directories like /tmp."
+    }
+  },
+  {
+    "id": 150,
+    "de": {
+      "frage": "Sie prüfen ein Linux-System und stellen fest, dass einem Benutzer über den Befehl su - root vollständiger Root-Zugriff gewährt wurde. Welches potenzielle Sicherheitsrisiko besteht hierbei und wie kann es gemindert werden?",
+      "optionen": {
+        "A": "Der Benutzer kann keine Befehle als Root ausführen, was seine Fähigkeit zur Durchführung administrativer Aufgaben einschränkt. Mindern Sie dies, indem Sie ihm vollständigen Root-Zugriff gewähren.",
+        "B": "Der Benutzer kann nur bestimmte Befehle als Root ausführen, was seine Fähigkeit zur Durchführung notwendiger Aufgaben einschränkt. Mindern Sie dies, indem Sie ihm das Root-Passwort geben.",
+        "C": "Der Benutzer kann Befehle als Root ausführen, ohne zur Eingabe eines Passworts aufgefordert zu werden. Mindern Sie dies, indem Sie den Befehl su - root vollständig deaktivieren.",
+        "D": "Der Benutzer kann jeden Befehl als Root ausführen, was das Risiko versehentlicher oder böswilliger Änderungen erhöht. Mindern Sie dies, indem Sie sudo verwenden, um bestimmte Aufgaben zu delegieren."
+      },
+      "antwort": "D",
+      "erklärung": "Wenn ein Benutzer mit su - root vollständigen Root-Zugriff erhält, kann er beliebige Befehle mit höchsten Rechten ausführen, was erhebliche Sicherheitsrisiken birgt. Die beste Methode zur Risikominderung ist die Verwendung von sudo, das granulare Berechtigungen ermöglicht. Mit sudo können Administratoren präzise festlegen, welche Befehle ein Benutzer als Root ausführen darf, und alle Aktivitäten werden protokolliert, was Auditierbarkeit und Accountability gewährleistet."
+    },
+    "en": {
+      "question": "You are auditing a Linux system and notice that a user has been granted full root access via the su - root command. What potential security risk does this pose, and how can it be mitigated?",
+      "options": {
+        "A": "The user cannot execute commands as root, which limits their ability to perform administrative tasks. Mitigate this by granting them full root access.",
+        "B": "The user can only execute specific commands as root, which limits their ability to perform necessary tasks. Mitigate this by giving them the root password.",
+        "C": "The user can execute commands as root without being prompted for a password. Mitigate this by disabling the su - root command entirely.",
+        "D": "The user can execute any command as root, which increases the risk of accidental or malicious changes. Mitigate this by using sudo to delegate specific tasks."
+      },
+      "answer": "D",
+      "explanation": "When a user is granted full root access via su - root, they can execute any command with the highest privileges, which poses significant security risks. The best mitigation method is using sudo, which allows granular permissions. With sudo, administrators can precisely specify which commands a user can execute as root, and all activities are logged, ensuring auditability and accountability."
+    }
+  },
+  {
+    "id": 151,
+    "de": {
+      "frage": "Ein Verzeichnis namens 'shared' enthält mehrere Unterverzeichnisse und Dateien. Sie müssen sicherstellen, dass alle neuen Dateien und Unterverzeichnisse, die innerhalb von 'shared' erstellt werden, bestimmte ACL-Berechtigungen für die Gruppe 'team' erben.\n\nWelchen Befehl sollten Sie verwenden?",
+      "optionen": {
+        "A": "setfacl -m g:team:rwx shared",
+        "B": "setfacl -x g:team shared",
+        "C": "setfacl -m d:g:team:rwx shared",
+        "D": "chmod 777 shared"
+      },
+      "antwort": "C",
+      "erklärung": "Mit dem Befehl 'setfacl -m d:g:team:rwx shared' wird eine Standard-ACL (default ACL) für das Verzeichnis 'shared' gesetzt. Dadurch wird sichergestellt, dass alle neu erstellten Dateien und Unterverzeichnisse innerhalb dieses Verzeichnisses automatisch die spezifizierten Berechtigungen (rwx) für die Gruppe 'team' übernehmen. Ohne das Präfix 'd:' würden die Berechtigungen nur auf das aktuelle Verzeichnis angewendet."
+    },
+    "en": {
+      "question": "A directory named 'shared' contains multiple subdirectories and files. You need to ensure that all new files and subdirectories created within 'shared' inherit specific ACL permissions for the 'team' group.\n\nWhich command would you use?",
+      "options": {
+        "A": "setfacl -m g:team:rwx shared",
+        "B": "setfacl -x g:team shared",
+        "C": "setfacl -m d:g:team:rwx shared",
+        "D": "chmod 777 shared"
+      },
+      "answer": "C",
+      "explanation": "The command 'setfacl -m d:g:team:rwx shared' sets a default ACL for the 'shared' directory. This ensures that all new files and subdirectories created within it automatically inherit the specified permissions (rwx) for the 'team' group. Without the 'd:' prefix, the ACL would only apply to the existing directory itself."
+    }
+  },
+  {
+    "id": 152,
+    "de": {
+      "frage": "Sie sind als Standardbenutzer auf einem Linux-System angemeldet und müssen die Datei /etc/hosts bearbeiten, die administrative Berechtigungen erfordert. Wie gehen Sie korrekt vor, um den Sicherheitsrichtlinien zu entsprechen?",
+      "optionen": {
+        "A": "Verwenden Sie den Befehl sudo nano /etc/hosts, um die Datei zu bearbeiten, und geben Sie Ihr Passwort ein, wenn Sie dazu aufgefordert werden.",
+        "B": "Verwenden Sie den Befehl su - root, bearbeiten Sie die Datei und geben Sie anschließend exit ein, um zum Standardbenutzer zurückzukehren.",
+        "C": "Melden Sie sich vom Standardbenutzerkonto ab und als Root an, um die Datei direkt zu bearbeiten.",
+        "D": "Verwenden Sie den Befehl su, bearbeiten Sie die Datei und geben Sie anschließend exit ein."
+      },
+      "antwort": "A",
+      "erklärung": "Die sicherste und empfohlene Methode ist die Verwendung von sudo, um privilegierte Aufgaben auszuführen. Der Befehl 'sudo nano /etc/hosts' erlaubt dem Benutzer, temporär administrative Rechte zu erlangen, ohne sich als Root anzumelden. Dadurch wird das Risiko reduziert, unbeabsichtigte Systemänderungen vorzunehmen, und alle Aktionen werden im Systemprotokoll erfasst."
+    },
+    "en": {
+      "question": "You are logged in as a standard user on a Linux system and need to edit the /etc/hosts file, which requires administrative privileges. What is the correct way to proceed while following security best practices?",
+      "options": {
+        "A": "Use the sudo nano /etc/hosts command to edit the file and provide your password when prompted.",
+        "B": "Use the su - root command, edit the file, and then type exit to return to the standard user account.",
+        "C": "Log out of the standard user account and log in as root to edit the file directly.",
+        "D": "Use the su command, edit the file, and then type exit."
+      },
+      "answer": "A",
+      "explanation": "The safest and recommended method is to use sudo to perform privileged tasks. The command 'sudo nano /etc/hosts' allows a user to temporarily gain administrative rights without logging in as root. This reduces the risk of unintended system changes, and all actions are logged for auditing purposes."
+    }
+  },
+  {
+    "id": 153,
+    "de": {
+      "frage": "Sie wurden beauftragt, die Sicherheit der SSH-Konfiguration einer Organisation zu bewerten.\nWelche der folgenden Einstellungen würden Sie gemäß den Best Practices ändern, um die Sicherheit zu verbessern?",
+      "optionen": {
+        "A": "Eine Banner-Nachricht ist konfiguriert, um Benutzer über die ordnungsgemäße Nutzung zu informieren.",
+        "B": "Root-Authentifizierung über SSH ist deaktiviert.",
+        "C": "Die Standard-Portnummer ist auf 22/tcp gesetzt.",
+        "D": "Schlüsselbasierte Authentifizierung ist für alle Benutzer konfiguriert."
+      },
+      "antwort": "C",
+      "erklärung": "Die Verwendung des Standard-SSH-Ports (22/tcp) macht das System anfälliger für automatisierte Angriffe und Scans. Es wird empfohlen, diesen Port auf eine nicht standardmäßige Nummer zu ändern, um Angriffsversuche zu reduzieren. Die anderen Einstellungen – deaktivierte Root-Authentifizierung, konfigurierte Banner-Nachricht und Schlüsselbasierte Authentifizierung – entsprechen den Best Practices und sollten beibehalten werden."
+    },
+    "en": {
+      "question": "You are tasked with evaluating the security of an organization's SSH configuration.\nWhich of the following settings would you recommend changing to improve security based on best practices?",
+      "options": {
+        "A": "A banner message is configured to warn users of proper use.",
+        "B": "Root authentication over SSH is disabled.",
+        "C": "The default port number is set to 22/tcp.",
+        "D": "Key-based authentication is configured for all users."
+      },
+      "answer": "C",
+      "explanation": "Using the default SSH port (22/tcp) makes the system more vulnerable to automated scans and brute-force attacks. It is recommended to change this port to a non-standard number to reduce unwanted connection attempts. The other settings—disabled root login, a warning banner, and key-based authentication—are already aligned with security best practices and should be kept as they are."
+    }
+  },
+  {
+    "id": 154,
+    "de": {
+      "frage": "Sie müssen eine große Anzahl von Dateien erstellen und möchten sicherstellen, dass nur Sie als Dateibesitzer Lese- und Schreibberechtigungen für diese Dateien haben. Die Dateien werden sich in mehreren verschiedenen Verzeichnissen befinden, die bereits andere Dateien enthalten, die Sie nicht ändern möchten.\nWie können Sie diese neuen Dateien am besten mit den richtigen Berechtigungen und mit dem geringsten Aufwand erstellen?",
+      "optionen": {
+        "A": "Geben Sie umask 0066 ein, um Ihre umask zu ändern.",
+        "B": "Erstellen Sie eine Liste aller erstellten Dateien und führen Sie umask 0066 für jede einzeln aus, um die Berechtigungen zu ändern.",
+        "C": "Geben Sie umask 6600 ein, um Ihre umask zu ändern.",
+        "D": "Führen Sie chmod -R 600 für alle Verzeichnisse aus, in denen Sie die neuen Dateien erstellt haben."
+      },
+      "antwort": "A",
+      "erklärung": "Der Befehl 'umask 0066' legt die Standardberechtigungen so fest, dass nur der Dateibesitzer Lese- und Schreibrechte erhält (rw- für den Benutzer, keine Rechte für Gruppe oder Andere). Durch das Ändern der umask vor dem Erstellen neuer Dateien benötigen Sie keine nachträgliche Anpassung der Berechtigungen, wodurch Aufwand und Fehlerrisiko reduziert werden."
+    },
+    "en": {
+      "question": "You need to create a large number of files, and you would like to ensure that you, the user owner, are the only person that has read and write permissions to the files. The files will be located in a number of different directories that already contain other files you don't want modified.\nHow could you BEST create these files with the correct permissions using the LEAST amount of effort?",
+      "options": {
+        "A": "Type umask 0066 to change your umask.",
+        "B": "Make a list of all the files you created and run umask 0066 on each of them to change their permissions.",
+        "C": "Type umask 6600 to change your umask.",
+        "D": "Run chmod -R 600 on all the directories in which you created the new files."
+      },
+      "answer": "A",
+      "explanation": "The command 'umask 0066' sets the default permissions so that only the file owner has read and write access (rw- for user, no access for group or others). By changing the umask before creating the new files, you ensure they are created with the desired permissions automatically, avoiding the need to manually adjust permissions afterward."
+    }
+  },
+  {
+    "id": 155,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt DNAT am besten?",
+      "optionen": {
+        "A": "Ordnet dynamisch einen internen Knoten einer bestimmten IP-Adresse zu.",
+        "B": "Ordnet die private IP eines ausgehenden Datenverkehrs dynamisch einer externen IP-Adresse zu.",
+        "C": "Übersetzt Ziel-IP-Adressen und -Ports in eine neue Ziel-IP-Adresse und einen neuen Port.",
+        "D": "Übersetzt die Quell-IP-Adresse und den Port in eine neue interne Ziel-IP-Adresse und einen neuen Port."
+      },
+      "antwort": "C",
+      "erklärung": "DNAT (Destination Network Address Translation) wird verwendet, um Ziel-IP-Adressen und Ports eines eingehenden Pakets in eine andere Ziel-IP-Adresse und einen anderen Port zu übersetzen. Dies ermöglicht es, externen Zugriff auf interne Ressourcen bereitzustellen, indem eingehender Datenverkehr an den richtigen internen Server weitergeleitet wird, häufig z. B. bei der Weiterleitung von Webanfragen an einen internen Webserver."
+    },
+    "en": {
+      "question": "Which of the following best describes DNAT?",
+      "options": {
+        "A": "Dynamically maps an internal node to a specific IP address.",
+        "B": "Dynamically maps the private IP of outgoing traffic to an external IP address.",
+        "C": "Translates destination IP addresses and ports to a new destination IP and port.",
+        "D": "Translates the source IP address and port to a new internal destination IP and port."
+      },
+      "answer": "C",
+      "explanation": "DNAT (Destination Network Address Translation) is used to translate the destination IP address and port of an incoming packet to a new destination IP and port. This allows external users to access internal resources by forwarding inbound traffic to the correct internal host, such as when routing web traffic to an internal web server."
+    }
+  },
+  {
+    "id": 156,
+    "de": {
+      "frage": "Sie bewerten die Verschlüsselungsstrategie für ein sicheres Dateifreigabesystem. Das System verschlüsselt große Dateien aus Effizienzgründen mit einem symmetrischen Schlüssel und verschlüsselt diesen symmetrischen Schlüssel anschließend mit dem öffentlichen Schlüssel des Empfängers, bevor die Daten gesendet werden.\nWelche der folgenden Aussagen beschreibt die Effektivität dieses Ansatzes am besten?",
+      "optionen": {
+        "A": "Dieser Ansatz ist unwirksam, da symmetrische Verschlüsselung grundsätzlich unsicher ist und auch in Kombination mit asymmetrischer Verschlüsselung nicht verwendet werden sollte.",
+        "B": "Dieser Ansatz ist unwirksam, da die Verschlüsselung des symmetrischen Schlüssels mit dem öffentlichen Schlüssel des Empfängers die Vertraulichkeit der Dateien nicht gewährleistet.",
+        "C": "Dieser Ansatz ist effektiv, da er die Geschwindigkeit der symmetrischen Verschlüsselung mit der Sicherheit der asymmetrischen Verschlüsselung für die Schlüsselübertragung kombiniert.",
+        "D": "Dieser Ansatz ist effektiv, da er sowohl die Vertraulichkeit der Dateien als auch die Authentizität des Absenders sicherstellt."
+      },
+      "antwort": "C",
+      "erklärung": "Dieser hybride Ansatz nutzt die Stärken beider Verschlüsselungsverfahren: Symmetrische Verschlüsselung bietet effiziente Verarbeitung großer Datenmengen, während asymmetrische Verschlüsselung eine sichere Schlüsselverteilung ermöglicht. Durch das Verschlüsseln des symmetrischen Schlüssels mit dem öffentlichen Schlüssel des Empfängers kann nur der Empfänger (mit seinem privaten Schlüssel) den Schlüssel entschlüsseln und die Dateien sicher lesen. Diese Methode wird in vielen modernen Verschlüsselungsprotokollen wie PGP und TLS verwendet."
+    },
+    "en": {
+      "question": "You are evaluating the encryption strategy for a secure file-sharing system. The system encrypts large files using a symmetric key for efficiency and then encrypts the symmetric key using the recipient's public key before sending it.\nWhich of the following BEST describes the effectiveness of this approach?",
+      "options": {
+        "A": "This approach is ineffective because symmetric encryption is inherently insecure and should not be used, even in combination with asymmetric encryption.",
+        "B": "This approach is ineffective because encrypting the symmetric key with the recipient's public key does not ensure the confidentiality of the files.",
+        "C": "This approach is effective because it combines the speed of symmetric encryption with the security of asymmetric encryption for key delivery.",
+        "D": "This approach is effective because it ensures both the confidentiality of the files and the authenticity of the sender."
+      },
+      "answer": "C",
+      "explanation": "This hybrid approach leverages the strengths of both encryption methods: symmetric encryption provides efficient processing for large files, while asymmetric encryption ensures secure key exchange. Encrypting the symmetric key with the recipient's public key allows only the recipient (with the corresponding private key) to decrypt the key and access the files. This strategy is widely used in modern encryption protocols such as PGP and TLS."
+    }
+  },
+  {
+    "id": 157,
+    "de": {
+      "frage": "Was ermöglicht der Befehl su in Linux einem Benutzer zu tun?",
+      "optionen": {
+        "A": "Systemdienste neu starten.",
+        "B": "Zu einem anderen Benutzerkonto wechseln.",
+        "C": "Die Sitzung eines anderen Benutzers beenden.",
+        "D": "Das Passwort eines anderen Benutzers ändern."
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl 'su' (switch user) ermöglicht es einem Benutzer, zu einem anderen Benutzerkonto zu wechseln, typischerweise zum Root-Benutzer, wenn kein Benutzername angegeben wird. Nach Eingabe des entsprechenden Passworts werden Befehle mit den Rechten des Zielbenutzers ausgeführt. Dadurch können administrative Aufgaben durchgeführt werden, ohne sich vollständig ab- und anzumelden."
+    },
+    "en": {
+      "question": "What does the su command in Linux allow a user to do?",
+      "options": {
+        "A": "Restart the system services.",
+        "B": "Switch to another user account.",
+        "C": "Terminate another user's session.",
+        "D": "Change the password of another user."
+      },
+      "answer": "B",
+      "explanation": "The 'su' (switch user) command allows a user to switch to another user account, typically the root account if no username is specified. After providing the correct password, the user can execute commands with the privileges of the target account. This allows administrative tasks to be performed without logging out and back in."
+    }
+  },
+  {
+    "id": 158,
+    "de": {
+      "frage": "Eine umask kann mit einer symbolischen (buchstabenbasierten) Darstellung der Maske angezeigt und geändert werden.\nWelcher der folgenden Buchstaben ist gleichbedeutend mit allen Maskensymbolen?",
+      "optionen": {
+        "A": "g",
+        "B": "a",
+        "C": "u",
+        "D": "o"
+      },
+      "antwort": "B",
+      "erklärung": "In der symbolischen Darstellung einer umask steht der Buchstabe 'a' (für 'all') für alle Klassen von Benutzern: Benutzer (u), Gruppe (g) und andere (o). Wenn 'a' verwendet wird, wirkt sich die Änderung auf alle Benutzerkategorien gleichzeitig aus, beispielsweise in einem Befehl wie 'umask a-w'."
+    },
+    "en": {
+      "question": "A umask can be represented and changed using a symbolic (letter) representation of the mask.\nWhich of the following letters is equivalent to all the mask symbols?",
+      "options": {
+        "A": "g",
+        "B": "a",
+        "C": "u",
+        "D": "o"
+      },
+      "answer": "B",
+      "explanation": "In the symbolic representation of a umask, the letter 'a' (for 'all') represents all categories of users: user (u), group (g), and others (o). When 'a' is used, the change applies to all these user classes simultaneously, such as in a command like 'umask a-w'."
+    }
+  },
+  {
+    "id": 159,
+    "de": {
+      "frage": "Welcher der folgenden Befehle würde verwendet werden, um den gesamten Ping-Datenverkehr mit firewalld daran zu hindern, in ein System einzudringen?",
+      "optionen": {
+        "A": "firewalld --add-icmp-block",
+        "B": "firewalld --add-ping 'block'",
+        "C": "firewalld --add-block-icmp",
+        "D": "firewalld -add-ping-block"
+      },
+      "antwort": "A",
+      "erklärung": "Der korrekte Befehl, um ICMP-Ping-Anfragen (echo-request) mit firewalld zu blockieren, lautet 'firewall-cmd --add-icmp-block=echo-request'. Mit der Option '--add-icmp-block' wird der ICMP-Typ angegeben, der blockiert werden soll. Dadurch wird das System so konfiguriert, dass es nicht auf Ping-Anfragen antwortet und somit weniger Informationen nach außen preisgibt."
+    },
+    "en": {
+      "question": "Which of the following commands would be utilized to block all ping traffic from entering a system with firewalld?",
+      "options": {
+        "A": "firewalld --add-icmp-block",
+        "B": "firewalld --add-ping 'block'",
+        "C": "firewalld --add-block-icmp",
+        "D": "firewalld -add-ping-block"
+      },
+      "answer": "A",
+      "explanation": "The correct command to block ICMP ping (echo-request) traffic using firewalld is 'firewall-cmd --add-icmp-block=echo-request'. The '--add-icmp-block' option specifies which ICMP type to block, preventing the system from responding to ping requests and reducing information exposure to external sources."
+    }
+  },
+  {
+    "id": 160,
+    "de": {
+      "frage": "Ein Benutzer ruft an und berichtet, dass er nicht zum Root-Benutzer wechseln kann, wenn er den Befehl su verwendet. Er gibt an, dass er nach Eingabe von 'su root' in seinem Home-Verzeichnis bleibt und nicht die Profil-Einstellungen des Root-Benutzers lädt.\nNach weiterer Untersuchung stellen Sie fest, dass der Benutzer die falsche Syntax für den su-Befehl verwendet hat.\nWas ist der wahrscheinlichste Grund für dieses Problem?",
+      "optionen": {
+        "A": "Der Benutzer ist kein Mitglied der wheel-Gruppe, die erforderlich ist, um den su-Befehl zu verwenden.",
+        "B": "Der su-Befehl ist beschädigt und muss auf dem System neu installiert werden.",
+        "C": "Die Datei /etc/sudoers ist falsch konfiguriert und verhindert, dass der Benutzer zum Root-Benutzer wechselt.",
+        "D": "Der Benutzer hat das notwendige Minuszeichen (-) im su-Befehl nicht angegeben, um die Umgebung des Root-Benutzers zu laden."
+      },
+      "antwort": "D",
+      "erklärung": "Der Befehl 'su' ohne Parameter wechselt zwar zum angegebenen Benutzer, lädt jedoch nicht dessen Umgebung oder Profileinstellungen. Wenn 'su -' oder 'su - root' verwendet wird, wird eine Login-Shell gestartet, die die vollständige Umgebung und Pfade des Root-Benutzers lädt. Ohne das Minuszeichen bleibt der Benutzer im eigenen Home-Verzeichnis mit der alten Umgebung."
+    },
+    "en": {
+      "question": "A user calls and reports that they are unable to switch to the root user using the su command. They mention that when they type su root, they remain in their home directory and do not gain the root user's profile settings.\nAfter further investigation, you determine that the user is not using the correct syntax for the su command.\nWhat is the MOST likely reason for this issue?",
+      "options": {
+        "A": "The user is not a member of the wheel group, which is required to use the su command.",
+        "B": "The su command is broken and needs to be reinstalled on the system.",
+        "C": "The /etc/sudoers file is misconfigured, preventing the user from switching to the root user.",
+        "D": "The user failed to include the necessary dash (-) in the su command to load the root user's environment."
+      },
+      "answer": "D",
+      "explanation": "The 'su' command without options switches to the target user but does not load their environment or profile settings. Using 'su -' or 'su - root' starts a login shell that loads the full environment, including the root user's paths and profile configurations. Without the dash, the user remains in their home directory with their original environment."
+    }
+  },
+  {
+    "id": 161,
+    "de": {
+      "frage": "Welche der folgenden Optionen würde als Multi-Faktor-Authentifizierung (MFA) angesehen werden?",
+      "optionen": {
+        "A": "Benutzername und PIN",
+        "B": "Benutzername und Passwort",
+        "C": "Benutzername, Passwort und per SMS gesendete PIN",
+        "D": "Benutzername, Passwort und eine Konten-PIN"
+      },
+      "antwort": "C",
+      "erklärung": "Multi-Faktor-Authentifizierung (MFA) erfordert die Kombination von mindestens zwei verschiedenen Faktoren aus unterschiedlichen Kategorien: Wissen (etwas, das man weiß, z. B. Passwort), Besitz (etwas, das man hat, z. B. ein Telefon oder Token) und Inhärenz (etwas, das man ist, z. B. Fingerabdruck). Option C enthält sowohl Wissen (Benutzername und Passwort) als auch Besitz (eine per SMS gesendete PIN), wodurch die Anforderungen an MFA erfüllt werden."
+    },
+    "en": {
+      "question": "Which of the following would be considered multifactor authentication?",
+      "options": {
+        "A": "username and pin",
+        "B": "username and password",
+        "C": "username, password, texted pin",
+        "D": "username, password, and an account pin"
+      },
+      "answer": "C",
+      "explanation": "Multifactor authentication (MFA) requires combining at least two factors from different categories: something you know (e.g., password), something you have (e.g., phone or token), and something you are (e.g., fingerprint). Option C includes both knowledge (username and password) and possession (a texted PIN), satisfying the criteria for MFA."
+    }
+  },
+  {
+    "id": 162,
+    "de": {
+      "frage": "Sie beheben ein Problem auf einem Linux-Server, bei dem Benutzer Schwierigkeiten beim Ändern ihrer Passwörter melden. Bei der Überprüfung der PAM-Konfiguration finden Sie die folgende Direktive in /etc/pam.d/system-auth:\n\npassword requisite pam_pwquality.so local_users_only\n\nNach der Analyse stellen Sie fest, dass nicht lokale Benutzer (die nicht in /etc/passwd enthalten sind) nicht den Passwortqualitätsstandards unterliegen.\nWas ist der wahrscheinlichste Grund für dieses Problem?",
+      "optionen": {
+        "A": "Das Modul pam_pwquality.so ist nicht dafür ausgelegt, die Passwortqualität für beliebige Benutzer zu erzwingen.",
+        "B": "Das Argument local_users_only beschränkt die Passwortqualitätsprüfung nur auf lokale Benutzer.",
+        "C": "Das Modul pam_cracklib.so sollte anstelle von pam_pwquality.so verwendet werden, um die Passwortqualität zu erzwingen.",
+        "D": "Das Modul pam_pwquality.so ist an der falschen Stelle in der PAM-Konfigurationsdatei platziert."
+      },
+      "antwort": "B",
+      "erklärung": "Die Option local_users_only im Modul pam_pwquality.so beschränkt die Anwendung der Passwortqualitätsprüfungen auf Benutzer, die in /etc/passwd definiert sind. Dies bedeutet, dass Benutzer, die über entfernte Authentifizierungsdienste wie LDAP oder Kerberos verwaltet werden, von diesen Prüfungen ausgenommen sind. Um sicherzustellen, dass alle Benutzer die gleichen Passwortanforderungen erfüllen, sollte das Argument local_users_only entfernt werden."
+    },
+    "en": {
+      "question": "You are troubleshooting a Linux server where users are reporting issues with password changes. Upon reviewing the PAM configuration, you find the following directive in /etc/pam.d/system-auth:\n\npassword requisite pam_pwquality.so local_users_only\n\nAfter analyzing the situation, you determine that non-local users (those not found in /etc/passwd) are not being required to meet password quality standards.\nWhat is the MOST likely reason for this issue?",
+      "options": {
+        "A": "The pam_pwquality.so module is not designed to enforce password quality for any users.",
+        "B": "The local_users_only argument restricts the password quality checks to local users only.",
+        "C": "The pam_cracklib.so module should be used instead of pam_pwquality.so to enforce password quality.",
+        "D": "The pam_pwquality.so module is incorrectly placed in the PAM configuration file."
+      },
+      "answer": "B",
+      "explanation": "The local_users_only option in the pam_pwquality.so module restricts password quality enforcement to users defined in /etc/passwd. This means that remote or network-based users managed via LDAP or Kerberos bypass these quality checks. To ensure all users are subject to the same password policies, the local_users_only argument should be removed."
+    }
+  },
+  {
+    "id": 163,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt am besten, wie SELinux Sicherheitsrichtlinien im Vergleich zu den standardmäßigen Linux-Zugriffskontrollen durchsetzt?",
+      "optionen": {
+        "A": "SELinux verwendet Discretionary Access Control (DAC)-Richtlinien, die es Benutzern und Anwendungen ermöglichen, Berechtigungen nach Bedarf zu ändern.",
+        "B": "SELinux ist eine All-in-One-Sicherheitslösung, die Firewalls und Passwörter überflüssig macht.",
+        "C": "SELinux erzwingt Mandatory Access Control (MAC)-Richtlinien, die nicht von Benutzern oder Anwendungen geändert werden können.",
+        "D": "SELinux ersetzt die Standard-Linux-Zugriffskontrollen, indem es Antivirensoftware verwendet, um unbefugten Zugriff zu verhindern."
+      },
+      "antwort": "C",
+      "erklärung": "SELinux (Security-Enhanced Linux) verwendet Mandatory Access Control (MAC), um den Zugriff von Benutzern und Prozessen streng nach Sicherheitsrichtlinien zu steuern, die selbst Administratoren nicht leicht umgehen können. Im Gegensatz zum Standard-Linux-Modell (DAC), bei dem Eigentümer von Dateien Berechtigungen ändern können, erzwingt SELinux Richtlinien auf Systemebene, um sicherzustellen, dass Anwendungen und Prozesse nur auf die Ressourcen zugreifen dürfen, die ausdrücklich erlaubt sind."
+    },
+    "en": {
+      "question": "Which of the following BEST explains how SELinux enforces security policies compared to standard Linux access controls?",
+      "options": {
+        "A": "SELinux uses discretionary access control (DAC) policies, allowing users and applications to modify permissions as needed.",
+        "B": "SELinux is an all-in-one security solution that eliminates the need for firewalls and passwords.",
+        "C": "SELinux enforces mandatory access control (MAC) policies that cannot be modified by users or applications.",
+        "D": "SELinux replaces standard Linux access controls by using antivirus software to prevent unauthorized access."
+      },
+      "answer": "C",
+      "explanation": "SELinux (Security-Enhanced Linux) uses Mandatory Access Control (MAC) to strictly regulate access by users and processes according to defined security policies that even administrators cannot easily bypass. Unlike standard Linux Discretionary Access Control (DAC), where file owners can modify permissions, SELinux enforces system-wide policies ensuring applications and processes only access explicitly authorized resources."
+    }
+  },
+  {
+  "id": 164,
+  "de": {
+    "frage": "Welche der folgenden Optionen ist KEIN Vorteil der Verwendung von KI zur Codeerzeugung?",
+    "optionen": {
+      "A": "Schnellere Entwicklungszeit.",
+      "B": "Code wird basierend auf Best Practices analysiert und optimiert.",
+      "C": "Entfernung menschlicher Logik und Verständnis.",
+      "D": "Erhöhte Produktivität."
+    },
+    "antwort": "C",
+    "erklärung": "Während KI-gestützte Tools bei der Codeerstellung Geschwindigkeit, Konsistenz und Produktivität verbessern können, ist das Entfernen menschlicher Logik und Verständnis kein Vorteil, sondern ein Nachteil. Menschliches Urteilsvermögen ist entscheidend, um Zielanforderungen, ethische Aspekte und Kontext korrekt zu interpretieren, was KI allein nicht leisten kann."
+  },
+  "en": {
+    "question": "Which of the following is NOT an advantage of using AI to generate code?",
+    "options": {
+      "A": "Faster development time.",
+      "B": "Code is analyzed and optimized based on best practices.",
+      "C": "Removing human logic and understanding.",
+      "D": "Increased productivity."
+    },
+    "answer": "C",
+    "explanation": "While AI-assisted code generation improves speed, consistency, and productivity, removing human logic and understanding is not an advantage. Human judgment remains essential for interpreting project goals, context, and ethical considerations that AI systems alone cannot fully grasp."
   }
+},
+{
+  "id": 165,
+  "de": {
+    "frage": "Sie arbeiten im Helpdesk, und ein Ticket wurde bezüglich einiger Ansible-Playbooks eingereicht. Ein Playbook wendet die gewünschte Konfiguration nicht auf eine Gruppe von verwalteten Knoten an. Nach Durchsicht des Playbooks vermuten Sie, dass das Problem mit der Gruppierung der Knoten im Inventory zusammenhängt.\nWas sollten Sie zuerst überprüfen, um das Problem zu lösen?",
+    "optionen": {
+      "A": "Bestätigen, dass der Kontrollknoten unter Windows läuft.",
+      "B": "Überprüfen, ob das Playbook im JSON-Format geschrieben ist.",
+      "C": "Prüfen, ob die verwalteten Knoten Ansible installiert haben.",
+      "D": "Sicherstellen, dass das richtige Playbook mit der Inventargruppe verknüpft ist."
+    },
+    "antwort": "D",
+    "erklärung": "In Ansible werden Konfigurationen basierend auf den Gruppen und Hosts angewendet, die im Inventory definiert sind. Wenn ein Playbook die gewünschte Konfiguration nicht auf bestimmte Knoten anwendet, liegt häufig ein Problem mit der Zuweisung oder dem Namen der Inventargruppe vor. Die erste Maßnahme ist daher, zu überprüfen, ob das Playbook tatsächlich auf die richtige Gruppe oder Hosts im Inventory verweist."
+  },
+  "en": {
+    "question": "You are working helpdesk and a ticket has come in regarding some Ansible playbooks. A playbook is not applying the desired configuration to a group of managed nodes. After reviewing the playbook, you suspect the issue is related to how the nodes are grouped in the inventory.\nWhat should you check first to resolve the issue?",
+    "options": {
+      "A": "Confirm that the control node is running Windows",
+      "B": "Verify that the playbook is written in JSON format",
+      "C": "Check if the managed nodes have Ansible installed",
+      "D": "Ensure the correct playbook is associated with the inventory group"
+    },
+    "answer": "D",
+    "explanation": "In Ansible, configurations are applied based on the groups and hosts defined in the inventory file. If a playbook does not apply the desired configuration to certain nodes, the issue is often due to incorrect or mismatched inventory group associations. The first step is to verify that the playbook targets the correct group or hosts in the inventory."
+  }
+},
+{
+  "id": 166,
+  "de": {
+    "frage": "Sie analysieren ein Problem mit einer Kickstart-Datei, die zur Automatisierung von Linux-Installationen verwendet wird. Der Installationsprozess schlägt fehl, und bei der Überprüfung der Kickstart-Datei bemerken Sie den folgenden Abschnitt:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWas ist der wahrscheinlichste Grund für den Installationsfehler?",
+    "optionen": {
+      "A": "Der network-Befehl enthält keine Angaben zum Gateway und DNS-Server.",
+      "B": "Die Kickstart-Datei enthält keinen Abschnitt zur Konfiguration von Benutzerkonten.",
+      "C": "Der network-Befehl verwendet eine statische IP, was in Kickstart-Dateien nicht unterstützt wird.",
+      "D": "Der firewall-Befehl ist fälschlicherweise deaktiviert, was einen Konflikt verursacht."
+    },
+    "antwort": "A",
+    "erklärung": "Bei Verwendung einer statischen IP-Adresse in einer Kickstart-Datei müssen neben der IP-Adresse und der Netzmaske auch das Standardgateway und der DNS-Server angegeben werden, damit die Netzwerkverbindung während der Installation korrekt funktioniert. Fehlen diese Angaben, kann das Installationsprogramm keine Netzverbindung herstellen und die Installation schlägt fehl, insbesondere wenn Installationspakete aus einem Netzwerk-Repository bezogen werden."
+  },
+  "en": {
+    "question": "You are analyzing an issue with a Kickstart file used to automate Linux installations. The installation process fails, and upon reviewing the Kickstart file, you notice the following section:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWhat is the most likely reason for the installation failure?",
+    "options": {
+      "A": "The network command is missing the gateway and DNS server information.",
+      "B": "The Kickstart file is missing a section to configure user accounts.",
+      "C": "The network command is using a static IP, which is not supported in Kickstart files.",
+      "D": "The firewall command is incorrectly disabled, causing a conflict."
+    },
+    "answer": "A",
+    "explanation": "When using a static IP configuration in a Kickstart file, you must specify not only the IP address and netmask but also the default gateway and DNS servers. Without this information, the installation process cannot establish a proper network connection, especially when it needs to retrieve installation packages from a network repository, leading to failure."
+  }
+},
+{
+  "id": 167,
+  "de": {
+    "frage": "Welche der folgenden Optionen gelten NICHT als Best Practice beim Schreiben oder Verwenden von Skripten? (Wählen Sie zwei aus.)",
+    "optionen": {
+      "A": "Stellen Sie sicher, dass der zu verwendende Interpreter für das Skript definiert ist.",
+      "B": "Verwenden Sie aussagekräftige Namen für Ihre Variablen.",
+      "C": "Halten Sie Kommentare auf ein Minimum.",
+      "D": "Verwenden Sie immer die Dateiendung .sh.",
+      "E": "Verwenden Sie einen Skripteditor mit Syntaxhervorhebung.",
+      "F": "Verwenden Sie aussagekräftige Namen für das Skript."
+    },
+    "antwort": ["C", "D"],
+    "erklärung": "Es ist keine Best Practice, Kommentare auf ein Minimum zu beschränken – gut kommentierter Code verbessert die Wartbarkeit und Verständlichkeit erheblich. Ebenso ist die Verwendung der Dateiendung .sh keine zwingende Best Practice, da Linux-Skripte anhand der Shebang-Zeile (#!) und Ausführungsrechte erkannt werden, nicht anhand der Dateiendung. Die anderen Optionen fördern saubere, lesbare und wartbare Skripte."
+  },
+  "en": {
+    "question": "Which of the following is NOT considered a best practice when writing or using scripts? (Select two.)",
+    "options": {
+      "A": "Be sure to define which interpreter to use for the script.",
+      "B": "Be sure to use descriptive names for your variables.",
+      "C": "Keep comments to a minimum.",
+      "D": "Always use the .sh file extension.",
+      "E": "Use a script editor with highlighting.",
+      "F": "Use descriptive names for the script."
+    },
+    "answer": ["C", "D"],
+    "explanation": "Minimizing comments is not a best practice; clear and helpful comments improve code readability and maintenance. Likewise, always using the .sh extension is not required, as Linux identifies scripts through the shebang (#!) line and execution permissions, not the file extension. The other options support better organization and maintainability of scripts."
+  }
+},
+{
+  "id": 168,
+  "de": {
+    "frage": "Sie überprüfen ein Shell-Skript, das sich unerwartet verhält. Sie vermuten, dass eine Shell- oder Umgebungsvariable das Problem verursacht.\nSie müssen die aktuelle Shell-Sitzung auswerten, um alle Shell-Variablen, Umgebungsvariablen und Shell-Funktionen zu identifizieren.\nWelchen Befehl würden Sie verwenden, um diese Informationen umfassend anzuzeigen?",
+    "optionen": {
+      "A": "printenv",
+      "B": "set",
+      "C": "env",
+      "D": "export"
+    },
+    "antwort": "B",
+    "erklärung": "Der Befehl 'set' zeigt eine vollständige Liste aller Shell-Variablen, Umgebungsvariablen und Shell-Funktionen in der aktuellen Sitzung an. 'env' und 'printenv' zeigen nur Umgebungsvariablen, während 'export' nur exportierte Variablen anzeigt. Daher ist 'set' der umfassendste Befehl zur Analyse der Shell-Umgebung."
+  },
+  "en": {
+    "question": "You are reviewing a shell script that is behaving unexpectedly. You suspect that a shell variable or environment variable is causing the issue.\nYou need to evaluate the current shell session to identify all shell variables, environment variables, and shell functions.\nWhich command would you use to comprehensively evaluate and display this information?",
+    "options": {
+      "A": "printenv",
+      "B": "set",
+      "C": "env",
+      "D": "export"
+    },
+    "answer": "B",
+    "explanation": "The 'set' command displays a complete list of all shell variables, environment variables, and shell functions in the current session. The 'env' and 'printenv' commands list only environment variables, while 'export' shows only exported variables. Therefore, 'set' is the most comprehensive command for analyzing the shell environment."
+  }
+},
+{
+  "id": 169,
+  "de": {
+    "frage": "Sie sollen ein Bash-Skript schreiben, das eine tabulatorgetrennte Datei (TSV) in eine kommagetrennte Datei (CSV) konvertiert. Das Skript liest die Eingabedatei zeilenweise, verarbeitet die Felder und gibt das Ergebnis im CSV-Format aus. Allerdings verwendet die Ausgabedatei derzeit Leerzeichen anstelle von Kommas als Trennzeichen.\nWas sollten Sie tun, um sicherzustellen, dass die Felder in der Ausgabedatei durch Kommas getrennt werden?",
+    "optionen": {
+      "A": "Verwenden Sie den sed-Befehl, um Leerzeichen in der Ausgabedatei durch Kommas zu ersetzen.",
+      "B": "Ändern Sie die IFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden.",
+      "C": "Schreiben Sie das Skript so um, dass Felder manuell mit Kommas verbunden werden.",
+      "D": "Ändern Sie die OFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden."
+    },
+    "antwort": "D",
+    "erklärung": "In einem Bash-Skript wird die Variable OFS (Output Field Separator) verwendet, um das Feldtrennzeichen für Ausgaben, insbesondere bei der Verwendung von 'awk' oder 'print', zu definieren. Wenn die Ausgabe derzeit durch Leerzeichen getrennt ist, liegt das wahrscheinlich daran, dass OFS auf das Standardzeichen ' ' gesetzt ist. Durch das Setzen von 'OFS=','' werden Felder korrekt durch Kommas getrennt ausgegeben."
+  },
+  "en": {
+    "question": "You are tasked with writing a Bash script that converts a tab-separated value (TSV) file into a comma-separated value (CSV) file. The script reads the input file line by line, processes the fields, and outputs the result in CSV format. However, the output file currently uses spaces to separate fields instead of commas.\nWhat should you do to ensure the fields in the output file are separated by commas?",
+    "options": {
+      "A": "Use the sed command to replace spaces with commas in the output file.",
+      "B": "Modify the IFS variable in your script to use a comma (,).",
+      "C": "Rewrite the script to manually concatenate fields with commas between them.",
+      "D": "Modify the OFS variable in your script to use a comma (,)."
+    },
+    "answer": "D",
+    "explanation": "In a Bash script, the OFS (Output Field Separator) variable defines how output fields are separated, particularly when using tools like 'awk' or the 'print' command. If the output currently uses spaces, it means OFS is set to the default space character. By setting 'OFS=','', the script will correctly output comma-separated fields."
+  }
+},
+{
+  "id": 170,
+  "de": {
+    "frage": "Sie haben eine Python-virtuelle Umgebung mit dem Namen 'challenge' erstellt und dokumentieren derzeit deren Konfiguration. Welche der folgenden Dateien sollten Sie für diese Informationen erstellen?",
+    "optionen": {
+      "A": "LICENSE",
+      "B": "README.md",
+      "C": "requirements.txt",
+      "D": "requirements.py"
+    },
+    "antwort": "C",
+    "erklärung": "Die Datei 'requirements.txt' wird in Python-Projekten verwendet, um alle Abhängigkeiten (Bibliotheken und ihre Versionen) einer virtuellen Umgebung aufzulisten. Diese Datei kann mit dem Befehl 'pip freeze > requirements.txt' erstellt werden und ermöglicht anderen Benutzern, dieselbe Umgebung durch 'pip install -r requirements.txt' zu reproduzieren."
+  },
+  "en": {
+    "question": "You have created a Python virtual environment labeled 'challenge'. You are working on documenting the environment's configuration. Which of the following documents should you create for this information?",
+    "options": {
+      "A": "LICENSE",
+      "B": "README.md",
+      "C": "requirements.txt",
+      "D": "requirements.py"
+    },
+    "answer": "C",
+    "explanation": "The 'requirements.txt' file is used in Python projects to list all dependencies (libraries and their versions) associated with a virtual environment. It can be generated using the command 'pip freeze > requirements.txt', allowing others to recreate the same environment with 'pip install -r requirements.txt'."
+  }
+},
+{
+  "id": 171,
+  "de": {
+    "frage": "Welche der folgenden Punkte gelten als gute Praktiken beim Hinzufügen von Kommentaren zu einem Skript? (Wählen Sie 2 aus.)",
+    "optionen": {
+      "A": "Fügen Sie am Ende des Skripts einen Kommentar hinzu, der erklärt, was es tut.",
+      "B": "Fügen Sie vor jeder Zeile einen Kommentar hinzu.",
+      "C": "Kommentare sollten nicht verwendet werden.",
+      "D": "Fügen Sie am Anfang des Skripts Kommentare hinzu, die erklären, was es tut.",
+      "E": "Kommentieren Sie Zeilen, die eine Erklärung benötigen."
+    },
+    "antwort": ["D", "E"],
+    "erklärung": "Gute Kommentierungspraktiken umfassen das Hinzufügen einer Beschreibung am Anfang des Skripts, die Zweck, Funktionsweise und gegebenenfalls Autor oder Version erklärt. Zudem sollten nur die Codeabschnitte kommentiert werden, die zusätzliche Erläuterungen benötigen, um die Lesbarkeit und Wartbarkeit des Skripts zu verbessern. Zu viele oder überflüssige Kommentare können das Verständnis eher behindern."
+  },
+  "en": {
+    "question": "Which of the following are considered good practices when adding comments to a script? (Select 2)",
+    "options": {
+      "A": "Add a comment at the end of the script explaining what it does.",
+      "B": "Add a comment before every line.",
+      "C": "Comments should not be used.",
+      "D": "Add comments at the top of the script explaining what it does.",
+      "E": "Comment lines that need explanation."
+    },
+    "answer": ["D", "E"],
+    "explanation": "Good commenting practices include adding a description at the top of the script explaining its purpose, functionality, and possibly author or version information. Additionally, comment only lines or sections of code that require clarification to improve readability and maintainability. Excessive or unnecessary comments can make code harder to follow."
+  }
+},
+{
+  "id": 172,
+  "de": {
+    "frage": "Sie sind Linux-Administrator und sollen eine wiederkehrende Aufgabe automatisieren, bei der Logdateien analysiert und bestimmte Fehlermeldungen extrahiert werden. Sie entscheiden sich, ein KI-Tool zu verwenden, um den Python-Code für diese Aufgabe zu generieren.\nNachdem Sie den KI-generierten Code erhalten haben, was ist der beste nächste Schritt, um sicherzustellen, dass der Code für den Produktionseinsatz bereit ist?",
+    "optionen": {
+      "A": "Den KI-generierten Code sofort in der Produktionsumgebung bereitstellen, um Zeit zu sparen.",
+      "B": "Den KI-generierten Code auf Fehler, Logikfehler und Sicherheitslücken überprüfen, bevor er bereitgestellt wird.",
+      "C": "Annehmen, dass der KI-generierte Code optimiert und sicher ist, da KI-Tools Best Practices befolgen.",
+      "D": "Den KI-generierten Code unverändert verwenden, aber Inline-Kommentare für die Dokumentation hinzufügen."
+    },
+    "antwort": "B",
+    "erklärung": "KI-generierter Code kann zwar Zeit sparen, muss aber immer überprüft und getestet werden, bevor er in der Produktion eingesetzt wird. Eine gründliche Prüfung hilft, Logikfehler, ineffiziente Operationen oder Sicherheitslücken zu erkennen, die ein KI-Modell möglicherweise übersehen hat. Dies ist ein wesentlicher Schritt, um Produktionsstabilität und Datensicherheit zu gewährleisten."
+  },
+  "en": {
+    "question": "You are a Linux administrator tasked with automating a repetitive task that involves parsing log files and extracting specific error messages. You decide to use an AI tool to generate Python code for this task.\nAfter receiving the AI-generated code, what is the BEST next step to ensure the code is ready for production use?",
+    "options": {
+      "A": "Deploy the AI-generated code immediately to the production environment to save time.",
+      "B": "Review the AI-generated code for errors, logic flaws, and security vulnerabilities before deploying it.",
+      "C": "Assume the AI-generated code is optimized and secure since AI tools follow best practices.",
+      "D": "Use the AI-generated code without modifications but add inline comments for documentation purposes."
+    },
+    "answer": "B",
+    "explanation": "While AI-generated code can speed up development, it must always be reviewed and tested before production deployment. Thoroughly checking the code helps identify logic errors, inefficiencies, or potential security vulnerabilities that an AI tool may miss. This step ensures production reliability, performance, and security."
+  }
+},
+{
+  "id": 173,
+  "de": {
+    "frage": "Sie arbeiten an einem kleinen Projekt, das die Bereitstellung mehrerer Container auf einem einzelnen Server umfasst. Das Projekt erfordert keine Multi-Host-Funktionalität oder erweiterte Funktionen wie Lastverteilung oder Fehlertoleranz. Welches Container-Orchestrierungstool wäre in diesem Szenario am geeignetsten?",
+    "optionen": {
+      "A": "Docker Swarm",
+      "B": "Docker Compose",
+      "C": "Ein VM-Hypervisor",
+      "D": "Kubernetes"
+    },
+    "antwort": "B",
+    "erklärung": "Docker Compose ist ideal für kleinere Projekte und Entwicklungsumgebungen, bei denen mehrere Container auf einem einzigen Host konfiguriert und ausgeführt werden sollen. Es ermöglicht die Definition und Verwaltung von Multi-Container-Anwendungen über eine YAML-Datei, ohne den administrativen Aufwand komplexer Orchestrierungstools wie Docker Swarm oder Kubernetes."
+  },
+  "en": {
+    "question": "You are working on a small-scale project that involves deploying multiple containers on a single server. The project does not require multi-host functionality or advanced features like load balancing or fault tolerance. Which container orchestration tool would be the most appropriate for this scenario?",
+    "options": {
+      "A": "Docker Swarm",
+      "B": "Docker Compose",
+      "C": "A VM hypervisor",
+      "D": "Kubernetes"
+    },
+    "answer": "B",
+    "explanation": "Docker Compose is best suited for small-scale projects and development environments where multiple containers need to be defined and run together on a single host. It uses a simple YAML configuration file to define services, networks, and volumes, without the overhead or complexity of advanced orchestration solutions like Docker Swarm or Kubernetes."
+  }
+},
+{
+  "id": 174,
+  "de": {
+    "frage": "Sie arbeiten mit dem Netzwerkadministrator an der Bereitstellung einer cloudbasierten Linux-VM. Sie müssen den SSH-Zugriff konfigurieren, bestimmte Software installieren und die Netzwerkeinstellungen automatisch einrichten.\nWelches der folgenden Tools ist der beste Weg, um dies zu erreichen?",
+    "optionen": {
+      "A": "Manuelle Konfiguration nach der Bereitstellung",
+      "B": "Firewall-Konfigurationstool",
+      "C": "Kickstart-Antwortdatei",
+      "D": "Das cloud-init-Paket"
+    },
+    "antwort": "D",
+    "erklärung": "Das Paket 'cloud-init' ist das Standardtool zur Automatisierung der Erstkonfiguration von Cloud-basierten Linux-Instanzen. Es ermöglicht das automatische Setzen von Hostnamen, Benutzern, SSH-Schlüsseln, Netzwerkeinstellungen und das Installieren von Softwarepaketen beim ersten Start einer VM. Kickstart wird hingegen vor allem für physische oder manuell bereitgestellte Systeme verwendet."
+  },
+  "en": {
+    "question": "You are working with the network administrator on deploying a cloud-based Linux virtual machine. You need to configure SSH access, install specific software, and have the network settings configured automatically.\nWhich of the following tools is the BEST way to accomplish this?",
+    "options": {
+      "A": "Manual configuration post-deployment",
+      "B": "Firewall configuration tool",
+      "C": "Kickstart answer file",
+      "D": "The cloud-init package"
+    },
+    "answer": "D",
+    "explanation": "The 'cloud-init' package is the standard tool for automating the initial configuration of cloud-based Linux instances. It allows you to automatically set hostnames, users, SSH keys, network settings, and install software upon first boot. Kickstart, on the other hand, is typically used for automated installations of physical or manually deployed systems, not for cloud environments."
+  }
+},
+{
+  "id": 175,
+  "de": {
+    "frage": "Welche der folgenden Konfigurationen in der Datei /etc/exports erlaubt allen Clients im Netzwerk einen schreibgeschützten Zugriff auf ein freigegebenes Verzeichnis?",
+    "optionen": {
+      "A": "/media/projects 192.168.2.0/24(rw,sync)",
+      "B": "/media/resources *(ro,sync)",
+      "C": "/media/files *(rw,async)",
+      "D": "/media/data 192.168.1.0/24(ro,async)"
+    },
+    "antwort": "B",
+    "erklärung": "Die Konfiguration '/media/resources *(ro,sync)' gewährt allen Clients im Netzwerk (durch '*') schreibgeschützten Zugriff (Option 'ro') auf das freigegebene Verzeichnis. Die Option 'sync' stellt sicher, dass Schreibvorgänge sofort auf den Datenträger geschrieben werden, was die Datensicherheit erhöht. Andere Optionen erlauben Schreibzugriff ('rw') oder beschränken den Zugriff auf bestimmte Subnetze."
+  },
+  "en": {
+    "question": "Which of the following configurations in the /etc/exports file correctly allows read-only access to a shared directory for all clients on the network?",
+    "options": {
+      "A": "/media/projects 192.168.2.0/24(rw,sync)",
+      "B": "/media/resources *(ro,sync)",
+      "C": "/media/files *(rw,async)",
+      "D": "/media/data 192.168.1.0/24(ro,async)"
+    },
+    "answer": "B",
+    "explanation": "The configuration '/media/resources *(ro,sync)' grants read-only access (ro) to all clients in the network (using '*') for the shared directory. The 'sync' option ensures that all data changes are written to disk immediately, enhancing data integrity. The other options either allow write access ('rw') or limit access to specific subnets."
+  }
+},
+{
+  "id": 176,
+  "de": {
+    "frage": "Welche der folgenden Optionen wird als Interpreter-Direktive (Shebang) für Bash-Skripte verwendet?",
+    "optionen": {
+      "A": "# /bin/bash",
+      "B": "*! /bin/bash",
+      "C": "#! /bin/bash",
+      "D": "#! /bin/bash.exe"
+    },
+    "antwort": "C",
+    "erklärung": "Die korrekte Interpreter-Direktive (Shebang) für Bash-Skripte ist '#! /bin/bash'. Sie wird in der ersten Zeile eines Skripts platziert und teilt dem System mit, dass das Skript mit der Bash-Shell ausgeführt werden soll. Die Zeichen '#!' (Shebang) sind entscheidend – ohne sie wird das Skript nicht automatisch mit Bash interpretiert."
+  },
+  "en": {
+    "question": "Which of the following is used as the interpreter directive for Bash scripts?",
+    "options": {
+      "A": "# /bin/bash",
+      "B": "*! /bin/bash",
+      "C": "#! /bin/bash",
+      "D": "#! /bin/bash.exe"
+    },
+    "answer": "C",
+    "explanation": "The correct interpreter directive (Shebang) for Bash scripts is '#! /bin/bash'. It is placed on the first line of a script to tell the system to execute the script with the Bash shell. The '#!' characters (called Shebang) are required for proper interpretation; without them, the system will not automatically run the script using Bash."
+  }
+},
+{
+  "id": 177,
+  "de": {
+    "frage": "Ihr Unternehmen erwägt die Einführung von Infrastructure as Code (IaC), um die hybride Cloud-Infrastruktur zu verwalten. Das Team diskutiert, ob ein deklaratives oder ein imperatives IaC-Tool verwendet werden soll. Sie wurden beauftragt, die Optionen zu bewerten und eine Empfehlung abzugeben.\nWelcher der folgenden Faktoren würde am stärksten dafür sprechen, ein deklaratives IaC-Tool gegenüber einem imperativen zu wählen?",
+    "optionen": {
+      "A": "Die Infrastruktur ist einfach, und das Team ist mit der manuellen Ausführung von Konfigurationsbefehlen vertraut.",
+      "B": "Das Team bevorzugt es, detaillierte Skripte für jeden Konfigurationsschritt zu schreiben, um die volle Kontrolle zu behalten.",
+      "C": "Das Unternehmen legt Wert auf schnelle Bereitstellung und Konsistenz über verschiedene Umgebungen hinweg, ohne jeden Schritt explizit angeben zu müssen.",
+      "D": "Das Team möchte ein Tool verwenden, das wenig Einarbeitung erfordert und mit vorhandenen Shell-Skripten kompatibel ist."
+    },
+    "antwort": "C",
+    "erklärung": "Deklarative IaC-Tools wie Terraform oder CloudFormation beschreiben den gewünschten Endzustand der Infrastruktur, anstatt einzelne Befehle zur Erreichung dieses Zustands zu definieren. Dadurch werden Konsistenz, Wiederholbarkeit und eine geringere Fehleranfälligkeit erreicht, was insbesondere in Umgebungen mit häufigen, automatisierten Bereitstellungen von Vorteil ist. Imperative Tools hingegen verlangen die genaue Angabe jedes Schrittes der Konfiguration."
+  },
+  "en": {
+    "question": "Your organization is considering adopting Infrastructure as Code (IaC) to manage its hybrid cloud infrastructure. The team is debating between using a declarative IaC tool or an imperative IaC tool. You have been tasked with evaluating the options and recommending the best approach.\nWhich of the following factors would most strongly support choosing a declarative IaC tool over an imperative one?",
+    "options": {
+      "A": "The infrastructure is simple, and the team is comfortable manually executing commands for configuration.",
+      "B": "The team prefers to write detailed scripts for every configuration step to maintain full control over the process.",
+      "C": "The organization prioritizes rapid deployment and consistency across environments without needing to specify every step.",
+      "D": "The team wants to use a tool that requires minimal learning and is compatible with existing shell scripts."
+    },
+    "answer": "C",
+    "explanation": "Declarative IaC tools like Terraform or CloudFormation define the desired end state of infrastructure rather than individual steps to reach it. This approach ensures consistency, repeatability, and faster deployment across environments, which is especially valuable in large-scale or automated setups. Imperative IaC tools, by contrast, require manually defining each configuration step, offering more control but less efficiency."
+  }
+},
+{
+  "id": 178,
+  "de": {
+    "frage": "Sie arbeiten im Helpdesk, und ein Entwickler meldet, dass seine Kubernetes-basierte Anwendung keine Verbindung zur richtigen Datenbank in der Produktionsumgebung herstellen kann. Die Anwendung verwendet eine Datenbank-URL, die sich zwischen Entwicklungs- und Produktionsumgebung unterscheidet, aber der Entwickler möchte den Anwendungscode nicht jedes Mal ändern, wenn sich die Umgebung ändert.\nWelche Kubernetes-Funktion sollten Sie evaluieren, um dem Entwickler bei der Lösung dieses Problems zu helfen?",
+    "optionen": {
+      "A": "Deployments",
+      "B": "Umgebungsvariablen",
+      "C": "ConfigMaps",
+      "D": "Secrets"
+    },
+    "antwort": "B",
+    "erklärung": "Kubernetes-ConfigMaps werden verwendet, um Konfigurationsdaten außerhalb des Anwendungscodes zu speichern. Dadurch können Umgebungsvariablen, Konfigurationsdateien oder Parameter wie Datenbank-URLs einfach geändert werden, ohne den Anwendungscode anzupassen oder das Container-Image neu zu erstellen. Secrets werden für vertrauliche Daten wie Passwörter oder Tokens verwendet."
+  },
+  "en": {
+    "question": "You are working the helpdesk and a developer reaches out because their Kubernetes-based application is failing to connect to the correct database in the production environment. The application uses a database URL that changes between development and production, but the developer doesn't want to modify the application code every time the environment changes.\nWhich Kubernetes feature should you evaluate to help the developer resolve this issue?",
+    "options": {
+      "A": "Deployments",
+      "B": "Environment variables",
+      "C": "ConfigMaps",
+      "D": "Secrets"
+    },
+    "answer": "B",
+    "explanation": "Kubernetes ConfigMaps are used to store non-sensitive configuration data separately from the application code. They allow developers to define environment-specific parameters, such as database URLs, without modifying the app itself or rebuilding the container image. Secrets, on the other hand, are reserved for storing sensitive information like passwords or API keys."
+  }
+},
+{
+  "id": 179,
+  "de": {
+    "frage": "Welche der folgenden Dateien können Sie konfigurieren, um bestimmte Dateitypen vom Commit in ein lokales Git-Repository auszuschließen?",
+    "optionen": {
+      "A": "ignore.conf",
+      "B": ".config.worktree",
+      "C": "gitignore.ini",
+      "D": ".gitignore"
+    },
+    "antwort": "D",
+    "erklärung": "Die Datei '.gitignore' wird verwendet, um bestimmte Dateien oder Dateitypen vom Tracking durch Git auszuschließen. In dieser Datei können Sie Pfade oder Muster (z. B. *.log oder /tmp/) definieren, damit Git diese Dateien ignoriert und nicht in Commits aufnimmt. Diese Funktion ist besonders nützlich, um temporäre Dateien, Build-Outputs oder vertrauliche Daten von Versionskontrollen auszuschließen."
+  },
+  "en": {
+    "question": "Which of the following files can you configure to ignore certain file types from being committed to the local Git repository?",
+    "options": {
+      "A": "ignore.conf",
+      "B": ".config.worktree",
+      "C": "gitignore.ini",
+      "D": ".gitignore"
+    },
+    "answer": "D",
+    "explanation": "The '.gitignore' file is used to specify which files or file patterns Git should ignore. By listing patterns such as *.log or /tmp/, you prevent Git from tracking or committing those files. This helps keep the repository clean and free of temporary, compiled, or sensitive files."
+  }
+},
+{
+  "id": 180,
+  "de": {
+    "frage": "Sie sollen ein neues Entwicklungsprojekt starten und müssen ein lokales Git-Repository erstellen, um Ihre Dateien zu verwalten.\nWelche Befehlsreihenfolge ist korrekt, um ein Verzeichnis für Ihr Projekt zu erstellen und es als Git-Repository zu initialisieren?",
+    "optionen": {
+      "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
+      "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
+      "C": "mkdir /dev-project cd /dev-project git init",
+      "D": "git init /dev-project mkdir /dev-project cd /dev-project"
+    },
+    "antwort": "C",
+    "erklärung": "Die richtige Reihenfolge zum Erstellen eines neuen lokalen Git-Repositories lautet:\n1. 'mkdir /dev-project' erstellt das Projektverzeichnis.\n2. 'cd /dev-project' wechselt in dieses Verzeichnis.\n3. 'git init' initialisiert darin ein neues Git-Repository. Danach kann der Benutzer Dateien hinzufügen und Commits erstellen. Die Konfiguration von Benutzername und E-Mail erfolgt in der Regel vorher global oder nach Bedarf separat."
+  },
+  "en": {
+    "question": "You are tasked with starting a new development project and need to create a local Git repository to manage your files.\nWhat is the correct sequence of commands to create a directory for your project and initialize it as a Git repository?",
+    "options": {
+      "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
+      "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
+      "C": "mkdir /dev-project cd /dev-project git init",
+      "D": "git init /dev-project mkdir /dev-project cd /dev-project"
+    },
+    "answer": "C",
+    "explanation": "The correct sequence to create a new local Git repository is:\n1. 'mkdir /dev-project' creates the project directory.\n2. 'cd /dev-project' navigates into it.\n3. 'git init' initializes a new Git repository inside the directory. After this, you can start adding files and committing changes. The user name and email configuration is typically done globally or separately as needed."
+  }
+},
+{
+  "id": 181,
+  "de": {
+    "frage": "Sie sind Systemadministrator und sollen eine hybride Cloud-Umgebung für Ihr Unternehmen konfigurieren. Sie müssen virtuelle Maschinen, Cloud-Speicher-Buckets und Netzwerk-Load-Balancer über mehrere Cloud-Anbieter hinweg verwalten und möchten sicherstellen, dass die Konfiguration in einem lesbaren Format für zukünftige Aktualisierungen gespeichert wird.\nWelche der folgenden Funktionen oder Tools von OpenTofu hilft Ihnen am besten, dieses Ziel zu erreichen?",
+    "optionen": {
+      "A": "State Configuration",
+      "B": "Registry API",
+      "C": "Provider API",
+      "D": "Documentation API"
+    },
+    "antwort": "A",
+    "erklärung": "Die 'State Configuration' in OpenTofu (wie auch in Terraform) verfolgt und verwaltet den aktuellen Zustand der bereitgestellten Infrastrukturressourcen. Sie ermöglicht das definieren, versionieren und reproduzieren der Infrastruktur in einer deklarativen und menschenlesbaren Formatdatei (z. B. HCL). Dadurch kann die Infrastruktur über mehrere Cloud-Anbieter hinweg konsistent verwaltet und bei Bedarf einfach aktualisiert werden."
+  },
+  "en": {
+    "question": "You are the systems administrator and have been tasked with configuring a hybrid cloud environment for your organization. You need to manage virtual machines, cloud storage buckets, and network load balancers across multiple cloud providers. You also want to ensure that the configuration is stored in a readable format for future updates.\nWhich of the following tools or features of OpenTofu will best help you achieve this goal?",
+    "options": {
+      "A": "State Configuration",
+      "B": "Registry API",
+      "C": "Provider API",
+      "D": "Documentation API"
+    },
+    "answer": "A",
+    "explanation": "The 'State Configuration' feature in OpenTofu (similar to Terraform) tracks and manages the current state of deployed infrastructure resources. It allows administrators to define, version, and reproduce infrastructure using declarative and human-readable configuration files (such as HCL). This ensures consistent infrastructure management across multiple cloud providers and simplifies updates and automation."
+  }
+},
+{
+  "id": 182,
+  "de": {
+    "frage": "Sie verwalten einen Docker-Swarm-Cluster und müssen sicherstellen, dass ein bestimmter Dienst dynamisch skaliert werden kann, um schwankende Arbeitslasten zu bewältigen. Was sollten Sie tun, um dies zu erreichen?",
+    "optionen": {
+      "A": "Den gewünschten Zustand des Dienstes in Docker Swarm definieren.",
+      "B": "Container manuell nach Bedarf hinzufügen oder entfernen.",
+      "C": "Die Worker-Knoten so konfigurieren, dass sie automatisch neue Container erstellen.",
+      "D": "Eigenständige Docker-Container verwenden, um die Arbeitslast zu verwalten."
+    },
+    "antwort": "A",
+    "erklärung": "In Docker Swarm wird die Skalierung über den ‚desired state‘ bzw. den gewünschten Zustand des Dienstes gesteuert. Dieser wird in der Dienstdefinition festgelegt, und Docker Swarm sorgt automatisch dafür, dass die tatsächliche Anzahl der laufenden Container dem definierten Zustand entspricht. Dadurch kann die Anwendungsbereitstellung dynamisch und konsistent verwaltet werden, ohne manuelle Eingriffe."
+  },
+  "en": {
+    "question": "You are managing a Docker Swarm cluster and need to ensure that a specific service can scale dynamically to handle fluctuating workloads. What should you do to achieve this?",
+    "options": {
+      "A": "Define the desired state of the service in Docker Swarm.",
+      "B": "Manually add or remove containers as needed.",
+      "C": "Configure the worker nodes to automatically create new containers.",
+      "D": "Use standalone Docker containers to manage the workload."
+    },
+    "answer": "A",
+    "explanation": "In Docker Swarm, scaling is controlled by defining the 'desired state' of a service. This state specifies how many replicas should be running, and Swarm automatically ensures that the actual number of containers matches this definition. This approach enables dynamic, consistent service scaling without manual intervention."
+  }
+}
 ]

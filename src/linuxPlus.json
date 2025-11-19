@@ -568,10 +568,10 @@
     "de": {
       "frage": "Ein Systemingenieur fügt ein neues 1GB großes XFS-Dateisystem hinzu, das temporär unter /ops/app eingehängt werden soll. Welches ist die korrekte Befehlsfolge, um dieses Ziel zu erreichen?",
       "optionen": {
-        "A": "dd if=/dev/zero of=/ops/app.img bs=1G count=1; mkfs.xfs /ops/app.img; mount -t loop /ops/app.img /ops/app",
-        "B": "truncate -s 1G /ops/app.img; mkfs.xfs /ops/app.img; mount /ops/app /ops/app.img",
-        "C": "fallocate -l 1G /ops/app.img; mkfs.xfs /ops/app; mount -o loop /ops/app.img /ops/app",
-        "D": "fallocate -l 1G /ops/app.img; mkfs.xfs /ops/app.img; mount -o loop /ops/app.img /ops/app"
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
       "antwort": "D",
       "image": "24.png",
@@ -580,10 +580,10 @@
     "en": {
       "question": "A systems engineer is adding a new 1GB XFS filesystem that should be temporarily mounted under /ops/app. Which of the following is the correct list of commands to achieve this goal?",
       "options": {
-        "A": "dd if=/dev/zero of=/ops/app.img bs=1G count=1; mkfs.xfs /ops/app.img; mount -t loop /ops/app.img /ops/app",
-        "B": "truncate -s 1G /ops/app.img; mkfs.xfs /ops/app.img; mount /ops/app /ops/app.img",
-        "C": "fallocate -l 1G /ops/app.img; mkfs.xfs /ops/app; mount -o loop /ops/app.img /ops/app",
-        "D": "fallocate -l 1G /ops/app.img; mkfs.xfs /ops/app.img; mount -o loop /ops/app.img /ops/app"
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
       "answer": "D",
       "image": "24.png",
