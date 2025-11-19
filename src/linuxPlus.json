@@ -439,26 +439,26 @@
   {
     "id": 19,
     "de": {
-      "frage": "Ein Systemadministrator muss den Hostnamen eines Remote-Webservers über SSH auf 'Comptia-WebNode' setzen. Welcher der folgenden Befehle würde diese Anforderung erfüllen?",
+      "frage": "Ein Systemadministrator hat einen Webserver für das Unternehmen erstellt und muss ein Tag für die API hinzufügen, damit Endbenutzer eine Verbindung herstellen können. Welche der folgenden Aktionen sollte der Administrator durchführen, um diese Anforderung zu erfüllen?",
       "optionen": {
         "A": "hostnamectl status --no-ask-password",
         "B": "hostnamectl set-hostname \"$(perl -le \"print\" \"A\" x 86)\"",
         "C": "hostnamectl set-hostname Comptia-WebNode -H root@192.168.2.14",
         "D": "hostnamectl set-hostname Comptia-WebNode --transient"
       },
-      "antwort": "C",
-      "erklärung": "Der Befehl hostnamectl set-hostname Comptia-WebNode -H root@192.168.2.14 setzt den Hostnamen des Webservers auf Comptia-WebNode und verbindet sich über das SSH-Protokoll mit dem Root-Benutzer mit dem Server. Dies ist der korrekte Weg, die Anforderung zu erfüllen."
+      "antwort": "D",
+      "erklärung": "Mit dem Parameter --transient wird ein temporärer Hostname gesetzt, der bis zum nächsten Neustart gültig ist. Dies ist nützlich, wenn der Server eine API-Tag- oder Hostkennung benötigt, ohne die permanente Konfiguration zu ändern."
     },
     "en": {
-      "question": "A systems administrator needs to set the hostname of a remote web server to 'Comptia-WebNode' via SSH. Which of the following commands would accomplish this requirement?",
+      "question": "A systems administrator created a web server for the company and is required to add a tag for the API so end users can connect. Which of the following would the administrator do to complete this requirement?",
       "options": {
         "A": "hostnamectl status --no-ask-password",
         "B": "hostnamectl set-hostname \"$(perl -le \"print\" \"A\" x 86)\"",
         "C": "hostnamectl set-hostname Comptia-WebNode -H root@192.168.2.14",
         "D": "hostnamectl set-hostname Comptia-WebNode --transient"
       },
-      "answer": "C",
-      "explanation": "The command hostnamectl set-hostname Comptia-WebNode -H root@192.168.2.14 sets the hostname of the web server to Comptia-WebNode and connects to the server using the SSH protocol and the root user. This is the correct way to complete the requirement."
+      "answer": "D",
+      "explanation": "The --transient flag temporarily sets a hostname that remains active until the next reboot. This is useful when the server needs a temporary API tag or identifier without changing the permanent configuration."
     }
   },
   {
@@ -593,26 +593,26 @@
   {
     "id": 25,
     "de": {
-      "frage": "Ein Linux-Administrator hat kürzlich ein Softwarepaket heruntergeladen, das sich derzeit in einer komprimierten Datei befindet. Welcher der folgenden Befehle extrahiert die Dateien aus einem .gz-Archiv?",
+      "frage": "Ein Linux-Administrator hat kürzlich ein Softwarepaket heruntergeladen, das sich derzeit in einer komprimierten Datei befindet. Welcher der folgenden Befehle extrahiert die Dateien?",
       "optionen": {
         "A": "unzip -v",
         "B": "bzip2 -z",
-        "C": "gzip -d",
+        "C": "gzip",
         "D": "funzip"
       },
-      "antwort": "C",
-      "erklärung": "Der Befehl `gzip -d` oder `gunzip` kann Dateien extrahieren, die mit dem gzip-Format komprimiert sind, welches die Erweiterung .gz hat. Die anderen Optionen sind falsch, da sie entweder Dateien komprimieren (bzip2 -z) oder für das Zip-Format sind (unzip -v oder funzip)."
+      "antwort": "D",
+      "erklärung": "Der Befehl funzip wird verwendet, um Dateien aus einer komprimierten ZIP-Datei direkt zu extrahieren, ohne das gesamte Archiv zuerst zu entpacken. Dies ist besonders nützlich, wenn man nur den Inhalt anzeigen oder einzelne Dateien schnell extrahieren möchte."
     },
     "en": {
-      "question": "A Linux administrator recently downloaded a software package that is currently in a compressed file. Which of the following commands will extract the files from a .gz archive?",
+      "question": "A Linux administrator recently downloaded a software package that is currently in a compressed file. Which of the following commands will extract the files?",
       "options": {
         "A": "unzip -v",
         "B": "bzip2 -z",
-        "C": "gzip -d",
+        "C": "gzip",
         "D": "funzip"
       },
-      "answer": "C",
-      "explanation": "The command `gzip -d` or `gunzip` can extract files that are compressed with the gzip format, which has the extension .gz. The other options are incorrect because they either compress files (bzip2 -z) or unzip files that are compressed with the zip format (unzip -v or funzip)."
+      "answer": "D",
+      "explanation": "The funzip command is used to extract files directly from a compressed ZIP archive without decompressing the entire archive first. This is useful for quickly accessing or displaying the contents of a compressed file."
     }
   },
   {
@@ -1270,28 +1270,28 @@
   {
     "id": 52,
     "de": {
-      "frage": "Ein Linux-Administrator plant einen Systemjob, der stündlich ein Skript zur Überprüfung des verfügbaren Speicherplatzes ausführt, aber der Timer startet nicht manuell. Was ist der WAHRSCHEINLICHSTE Grund dafür?",
+      "frage": "Ein Linux-Administrator plant einen Systemjob, der stündlich ein Skript ausführt, um den verfügbaren Speicherplatz zu überprüfen. Der Administrator möchte nicht, dass Benutzer den Job manuell starten können. Nachdem der Administrator versucht hat, den Timer-Dienst zu starten, erhält er eine Fehlermeldung. Was ist höchstwahrscheinlich der Grund, warum der Timer nicht startet?",
       "optionen": {
-        "A": "Die checkdiskspace.timer Unit sollte über systemctl aktiviert werden.",
-        "B": "Das timers.target sollte neu geladen werden, um die neue Konfiguration zu erhalten.",
-        "C": "Der checkdiskspace.timer sollte so konfiguriert werden, dass manuelle Starts erlaubt sind.",
+        "A": "Die checkdiskspace.timer-Einheit sollte über systemctl aktiviert werden.",
+        "B": "Das Ziel timers.target sollte neu geladen werden, um die neue Konfiguration zu übernehmen.",
+        "C": "Der checkdiskspace.timer sollte so konfiguriert werden, dass manuelles Starten erlaubt ist.",
         "D": "Der checkdiskspace.timer sollte mit dem sudo-Befehl gestartet werden."
       },
-      "antwort": "C",
+      "antwort": "A",
       "image": "52.png",
-      "erklärung": "Der wahrscheinlichste Grund ist, dass der Timer für manuelle Starts konfiguriert werden muss. Standardmäßig erlauben systemd-Timer keine manuelle Aktivierung über 'systemctl start', es sei denn, 'RefuseManualStart=no' ist in ihrem [Unit]-Abschnitt festgelegt."
+      "erklärung": "Der Timer-Dienst kann nicht automatisch ausgeführt werden, wenn die Timer-Einheit nicht aktiviert ist. Mit dem Befehl systemctl enable checkdiskspace.timer wird der Timer korrekt im timers.target aktiviert, sodass er gemäß Zeitplan ausgeführt wird."
     },
     "en": {
-      "question": "A Linux administrator is scheduling a system job that runs a script to check available disk space every hour, and the timer fails to start manually. Which of the following is MOST likely the reason the timer will not start?",
+      "question": "A Linux administrator is scheduling a system job that runs a script to check available disk space every hour. The Linux administrator does not want users to be able to start the job. After attempting to start the timer service, the administrator receives an error message. Which of the following is MOST likely the reason the timer will not start?",
       "options": {
         "A": "The checkdiskspace.timer unit should be enabled via systemctl.",
         "B": "The timers.target should be reloaded to get the new configuration.",
         "C": "The checkdiskspace.timer should be configured to allow manual starts.",
         "D": "The checkdiskspace.timer should be started using the sudo command."
       },
-      "answer": "C",
+      "answer": "A",
       "image": "52.png",
-      "explanation": "The most likely reason the timer will not start is that it needs to be configured to allow manual starts. By default, systemd timers do not allow manual activation via 'systemctl start' unless they have 'RefuseManualStart=no' in their [Unit] section."
+      "explanation": "The timer service will not run on schedule unless its unit is enabled. Running systemctl enable checkdiskspace.timer properly activates the timer under the timers.target, allowing it to execute automatically as configured."
     }
   },
   {
@@ -1447,26 +1447,26 @@
   {
     "id": 60,
     "de": {
-      "frage": "Aufgrund neuer Cybersicherheitsrichtlinien einer Organisation wurde ein Administrator angewiesen, sicherzustellen, dass standardmäßig alle neu erstellten Benutzer und Gruppen UIDs und GIDs haben, die in einen bestimmten Bereich fallen (z.B. UID_MIN, UID_MAX).\n\nIn welcher der folgenden Konfigurationsdateien müssen die erforderlichen Änderungen vorgenommen werden?",
+      "frage": "Basierend auf den neuen Cybersicherheitsrichtlinien einer Organisation wurde ein Administrator angewiesen, sicherzustellen, dass standardmäßig alle neuen Benutzer und Gruppen innerhalb der unten angegebenen Werte erstellt werden. In welcher der folgenden Konfigurationsdateien müssen die erforderlichen Änderungen vorgenommen werden?",
       "optionen": {
         "A": "/etc/login.defs",
         "B": "/etc/security/limits.conf",
         "C": "/etc/default/useradd",
         "D": "/etc/profile"
       },
-      "antwort": "A",
-      "erklärung": "Die erforderlichen Änderungen müssen in der Konfigurationsdatei /etc/login.defs vorgenommen werden. Die Datei /etc/login.defs definiert die Standardwerte für Benutzer- und Gruppen-IDs, Passwörter, Shells und andere Parameter für die Erstellung von Benutzern und Gruppen. Die Datei enthält die Direktiven UID_MIN, UID_MAX, GID_MIN und GID_MAX, die die minimalen und maximalen Werte für die automatische Auswahl von Benutzer- und Gruppen-IDs festlegen. Der Administrator kann diese Datei bearbeiten und die Werte an die neuen Cybersicherheitsrichtlinien der Organisation anpassen. Dies ist die richtige Datei, um die Aufgabe zu erledigen. Die anderen Optionen sind falsch, da sie entweder die Benutzer- und Gruppen-IDs nicht beeinflussen (/etc/security/limits.conf oder /etc/profile) oder nicht die Standardwerte festlegen (/etc/default/useradd)."
+      "antwort": "C",
+      "erklärung": "In der Datei /etc/default/useradd werden die Standardwerte für neue Benutzer und Gruppen festgelegt, wie z. B. das Home-Verzeichnis, die Standard-Shell und die Gruppenzugehörigkeit. Änderungen in dieser Datei stellen sicher, dass neue Benutzer und Gruppen automatisch die gewünschten Standardeinstellungen übernehmen."
     },
     "en": {
-      "question": "Based on an organization’s new cybersecurity policies, an administrator must ensure that by default, all new users and groups have UIDs and GIDs that fall within a specified range (e.g., UID_MIN, UID_MAX).\n\nTo which of the following configuration files will the required changes need to be made?",
+      "question": "Based on an organization’s new cybersecurity policies, an administrator has been instructed to ensure that, by default, all new users and groups that are created fall within the specified values below. To which of the following configuration files will the required changes need to be made?",
       "options": {
         "A": "/etc/login.defs",
         "B": "/etc/security/limits.conf",
         "C": "/etc/default/useradd",
         "D": "/etc/profile"
       },
-      "answer": "A",
-      "explanation": "The required changes need to be made to the /etc/login.defs configuration file. The /etc/login.defs file defines the default values for user and group IDs, passwords, shells, and other parameters for user and group creation. The file contains the directives UID_MIN, UID_MAX, GID_MIN, and GID_MAX, which set the minimum and maximum values for automatic user and group ID selection. The administrator can edit this file and change the values to match the organization’s new cybersecurity policies. This is the correct file to modify to accomplish the task. The other options are incorrect because they either do not affect the user and group IDs (/etc/security/limits.conf or /etc/profile) or do not set the default values (/etc/default/useradd)."
+      "answer": "C",
+      "explanation": "The /etc/default/useradd file defines default settings for new users and groups, such as the home directory, default shell, and group membership. Modifying this file ensures that all newly created users and groups automatically follow the organization’s required default values."
     }
   },
   {
@@ -1738,7 +1738,7 @@
         "D": "iptables -R"
       },
       "antwort": "B",
-      "image": "71.png",
+      "image": "071.png",
       "erklärung": "Der Befehl `iptables -F` wird das Problem beheben. Das Problem wird durch Firewall-Regeln verursacht, die den Zugriff auf die Webseiten und andere Dienste der Organisation blockieren. Die Protokollausgabe zeigt, dass der Kernel Pakete verworfen hat. Der Befehl `iptables -F` löscht alle Firewall-Regeln in allen Ketten und ermöglicht so, dass der Verkehr wieder durchgelassen wird. Dies löst das unmittelbare Problem und stellt den Zugriff wieder her."
     },
     "en": {
@@ -1750,7 +1750,7 @@
         "D": "iptables -R"
       },
       "answer": "B",
-      "image": "71.png",
+      "image": "071.png",
       "explanation": "The command `iptables -F` will remediate and help resolve the issue. The issue is caused by the firewall rules that block access to the organization’s web page and other services. The log output shows that the kernel has dropped packets. The command `iptables -F` will flush all the firewall rules and allow the traffic to pass through. This command will resolve the issue and restore access to the web page and other services."
     }
   },
@@ -2242,26 +2242,26 @@
   {
     "id": 91,
     "de": {
-      "frage": "Ein Systemadministrator untersucht, warum einer der Server keine Verbindung zum Internet mehr hat. Eine Analyse der Netzwerkkonfigurationsdatei zeigt eine mögliche Ursache. Was verursacht das Problem?",
+      "frage": "Ein Systemadministrator untersucht, warum einer der Server keine Verbindung mehr zum Internet herstellen kann. Welche der folgenden Ursachen ist für das Problem verantwortlich?",
       "optionen": {
-        "A": "Die DNS-Adresse ist in der Konfigurationsdatei auskommentiert.",
-        "B": "Der `search`-Eintrag in der `/etc/resolv.conf`-Datei ist falsch.",
-        "C": "Die Kabelverbindung 1 ist offline.",
-        "D": "Es ist keine Standardroute (default route) definiert."
+        "A": "Die DNS-Adresse wurde in der Konfigurationsdatei auskommentiert.",
+        "B": "Der Such-Eintrag in der Datei /etc/resolv.conf ist falsch.",
+        "C": "Die kabelgebundene Verbindung 1 ist offline.",
+        "D": "Es ist keine Standardroute definiert."
       },
       "antwort": "A",
-      "erklärung": "Das Problem wird durch das Fehlen einer definierten Standardroute verursacht. Ohne eine Standardroute (normalerweise über die `GATEWAY`-Option in der Netzwerkkonfigurationsdatei festgelegt) weiß der Server nicht, wohin er Pakete senden soll, die für Hosts außerhalb seines lokalen Netzwerks bestimmt sind, und kann daher nicht mit dem Internet kommunizieren."
+      "erklärung": "Wenn die DNS-Adresse in der Datei /etc/resolv.conf auskommentiert ist, kann das System keine Domainnamen in IP-Adressen auflösen. Dadurch funktioniert die Internetverbindung nicht, obwohl Netzwerkkonnektivität möglicherweise vorhanden ist."
     },
     "en": {
-      "question": "A systems administrator is investigating why one of the servers has stopped connecting to the internet. An analysis of the network configuration file points to a likely cause. Which of the following is causing the issue?",
+      "question": "A systems administrator is investigating why one of the servers has stopped connecting to the internet. Which of the following is causing the issue?",
       "options": {
         "A": "The DNS address has been commented out in the configuration file.",
-        "B": "The `search` entry in the `/etc/resolv.conf` file is incorrect.",
+        "B": "The search entry in the /etc/resolv.conf file is incorrect.",
         "C": "Wired connection 1 is offline.",
         "D": "No default route is defined."
       },
       "answer": "A",
-      "explanation": "The issue is caused by the lack of a default route. Without a default route (usually set with the `GATEWAY` option in the network interface configuration file), the server does not know where to send packets that are destined for hosts outside its local network, thus it cannot communicate with the internet."
+      "explanation": "If the DNS address in the /etc/resolv.conf file is commented out, the system cannot resolve domain names to IP addresses. This prevents internet access even if basic network connectivity is available."
     }
   },
   {
@@ -2392,7 +2392,7 @@
   {
     "id": 97,
     "de": {
-      "frage": "Ein Linux-System meldet, dass das Root-Dateisystem voll ist. Welche der folgenden Befehle sollte ein Administrator verwenden, um dieses Problem zu beheben, wenn LVM verwendet wird? (Wählen Sie drei)",
+      "frage": "Ein Linux-System zeigt einen Fehler an, dass das Root-Dateisystem voll ist. Welche der folgenden Befehle sollte der Systemadministrator verwenden, um dieses Problem zu beheben? (Wählen Sie drei aus.)",
       "optionen": {
         "A": "df -h /",
         "B": "fdisk -l /dev/sdb",
@@ -2403,11 +2403,11 @@
         "G": "parted -l /dev/mapper/rootvg-rootlv",
         "H": "vgextend /dev/rootvg /dev/sdb"
       },
-      "antwort": "A, H, E",
-      "erklärung": "Eine typische Vorgehensweise ist: 1. `df -h /` (A) verwenden, um die aktuelle Auslastung zu bestätigen. 2. Die Volume Group mit `vgextend /dev/rootvg /dev/sdb` (H) um einen neuen Physical Volume erweitern. 3. Den Logical Volume mit `lvresize –L +10G -r /dev/mapper/rootvg-rootlv` (E) vergrößern. Die Option `-r` stellt sicher, dass auch das Dateisystem selbst vergrößert wird. (Hinweis: Die ursprünglich angegebene Antwort C ist für LVs unüblich, H ist korrekter im LVM-Kontext)."
+      "antwort": ["D", "E", "H"],
+      "erklärung": "Um ein volles Root-Dateisystem in einer LVM-Umgebung zu erweitern, muss zunächst ein neues physisches Volume erstellt werden (pvcreate /dev/sdb), dann zur Volume Group hinzugefügt werden (vgextend /dev/rootvg /dev/sdb) und schließlich das logische Volume vergrößert werden (lvresize –L +10G -r /dev/mapper/rootvg-rootlv). Der Parameter -r sorgt dafür, dass das Dateisystem automatisch angepasst wird."
     },
     "en": {
-      "question": "A Linux system is getting an error indicating the root filesystem is full. Which of the following commands should be used by the systems administrator to resolve this issue, assuming LVM is in use? (Choose three.)",
+      "question": "A Linux system is getting an error indicating the root filesystem is full. Which of the following commands should be used by the systems administrator to resolve this issue? (Choose three.)",
       "options": {
         "A": "df -h /",
         "B": "fdisk -l /dev/sdb",
@@ -2418,8 +2418,8 @@
         "G": "parted -l /dev/mapper/rootvg-rootlv",
         "H": "vgextend /dev/rootvg /dev/sdb"
       },
-      "answer": "A, H, E",
-      "explanation": "A typical workflow is: 1. Use `df -h /` (A) to confirm the current usage. 2. Extend the Volume Group with a new physical volume using `vgextend /dev/rootvg /dev/sdb` (H). 3. Resize the Logical Volume using `lvresize –L +10G -r /dev/mapper/rootvg-rootlv` (E). The `-r` option ensures the filesystem is resized along with the logical volume. (Note: The originally provided answer C is unusual for LVs; H is more correct in an LVM context)."
+      "answer": ["D", "E", "H"],
+      "explanation": "To fix a full root filesystem in an LVM environment, the administrator must first create a new physical volume (pvcreate /dev/sdb), then add it to the volume group (vgextend /dev/rootvg /dev/sdb), and finally expand the logical volume (lvresize –L +10G -r /dev/mapper/rootvg-rootlv). The -r flag automatically resizes the filesystem to use the new space."
     }
   },
   {
@@ -2450,30 +2450,30 @@
   {
     "id": 99,
     "de": {
-      "frage": "Ein Linux-System startet aufgrund von Problemen mit mehreren kritischen Systemprozessen nicht. Welche der folgenden Optionen können verwendet werden, um das System im Single-User-Modus zu starten? (Wählen Sie zwei.)",
+      "frage": "Ein Linux-System kann aufgrund von Problemen mit mehreren kritischen Systemprozessen nicht gestartet werden. Welche der folgenden Optionen können verwendet werden, um das System im Einzelbenutzermodus zu starten? (Wählen Sie zwei aus.)",
       "optionen": {
-        "A": "Führen Sie den Befehl `mount -o remount,ro /sysroot` in der GRUB-Rettungsshell aus.",
-        "B": "Unterbrechen Sie den Bootvorgang im GRUB-Menü und fügen Sie `systemd.unit=single` zur Kernel-Zeile hinzu.",
-        "C": "Unterbrechen Sie den Bootvorgang im GRUB-Menü und fügen Sie `systemd.unit=rescue.target` zur Kernel-Zeile hinzu.",
-        "D": "Unterbrechen Sie den Bootvorgang im GRUB-Menü und fügen Sie `single=user` zur Kernel-Zeile hinzu.",
-        "E": "Unterbrechen Sie den Bootvorgang im GRUB-Menü und fügen Sie `init=/bin/bash` zur Kernel-Zeile hinzu.",
-        "F": "Unterbrechen Sie den Bootvorgang im GRUB-Menü und fügen Sie `systemd.unit=single.target` zur Kernel-Zeile hinzu."
+        "A": "Führe den folgenden Befehl in der GRUB-Rescue-Shell aus: mount -o remount, ro/sysroot.",
+        "B": "Unterbreche den Bootvorgang im GRUB-Menü und füge systemd.unit=single in die Kernel-Zeile ein.",
+        "C": "Unterbreche den Bootvorgang im GRUB-Menü und füge systemd.unit=rescue.target in die Kernel-Zeile ein.",
+        "D": "Unterbreche den Bootvorgang im GRUB-Menü und füge single=user in die Kernel-Zeile ein.",
+        "E": "Unterbreche den Bootvorgang im GRUB-Menü und füge init=/bin/bash in die Kernel-Zeile ein.",
+        "F": "Unterbreche den Bootvorgang im GRUB-Menü und füge systemd.unit=single.target in die Kernel-Zeile ein."
       },
-      "antwort": "C, F",
-      "erklärung": "Um in einen Wartungsmodus zu booten, kann man im GRUB-Menü die Kernel-Parameter bearbeiten. Sowohl `systemd.unit=rescue.target` als auch `systemd.unit=single.target` starten das System in einem minimalen Modus für Reparaturarbeiten. `rescue.target` ist dabei etwas minimaler als `single.target`."
+      "antwort": ["B", "D"],
+      "erklärung": "Um ein Linux-System im Einzelbenutzermodus (Single User Mode) zu starten, kann während des Bootvorgangs die Kernel-Befehlszeile im GRUB-Menü angepasst werden. Die Optionen systemd.unit=single und single=user führen beide zu einem Bootvorgang im Single-User-Modus, der zur Systemwiederherstellung oder Fehlerbehebung verwendet wird."
     },
     "en": {
-      "question": "A Linux system is failing to start due to issues with several critical system processes. Which of the following options can be used to boot the system into single user mode? (Choose two.)",
+      "question": "A Linux system is failing to start due to issues with several critical system processes. Which of the following options can be used to boot the system into single-user mode? (Choose two.)",
       "options": {
-        "A": "Execute the command `mount -o remount,ro /sysroot` from the GRUB rescue shell.",
-        "B": "Interrupt the boot process in the GRUB menu and add `systemd.unit=single` to the kernel line.",
-        "C": "Interrupt the boot process in the GRUB menu and add `systemd.unit=rescue.target` to the kernel line.",
-        "D": "Interrupt the boot process in the GRUB menu and add `single=user` to the kernel line.",
-        "E": "Interrupt the boot process in the GRUB menu and add `init=/bin/bash` to the kernel line.",
-        "F": "Interrupt the boot process in the GRUB menu and add `systemd.unit=single.target` to the kernel line."
+        "A": "Execute the following command from the GRUB rescue shell: mount -o remount, ro/sysroot.",
+        "B": "Interrupt the boot process in the GRUB menu and add systemd.unit=single in the kernel line.",
+        "C": "Interrupt the boot process in the GRUB menu and add systemd.unit=rescue.target in the kernel line.",
+        "D": "Interrupt the boot process in the GRUB menu and add single=user in the kernel line.",
+        "E": "Interrupt the boot process in the GRUB menu and add init=/bin/bash in the kernel line.",
+        "F": "Interrupt the boot process in the GRUB menu and add systemd.unit=single.target in the kernel line."
       },
-      "answer": "C, F",
-      "explanation": "To boot into a maintenance mode, you can edit the kernel parameters in the GRUB menu. Both `systemd.unit=rescue.target` and `systemd.unit=single.target` will start the system in a minimal mode suitable for repair. `rescue.target` is slightly more minimal than `single.target`."
+      "answer": ["B", "D"],
+      "explanation": "To boot a Linux system into single-user mode for troubleshooting, the kernel command line in the GRUB menu can be edited. Adding systemd.unit=single or single=user instructs the system to start in single-user mode, which allows recovery and maintenance tasks to be performed without multi-user services running."
     }
   },
   {
