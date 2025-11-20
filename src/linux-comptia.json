@@ -4311,484 +4311,938 @@
     }
   },
   {
-  "id": 164,
-  "de": {
-    "frage": "Welche der folgenden Optionen ist KEIN Vorteil der Verwendung von KI zur Codeerzeugung?",
-    "optionen": {
-      "A": "Schnellere Entwicklungszeit.",
-      "B": "Code wird basierend auf Best Practices analysiert und optimiert.",
-      "C": "Entfernung menschlicher Logik und Verständnis.",
-      "D": "Erhöhte Produktivität."
+    "id": 164,
+    "de": {
+      "frage": "Welche der folgenden Optionen ist KEIN Vorteil der Verwendung von KI zur Codeerzeugung?",
+      "optionen": {
+        "A": "Schnellere Entwicklungszeit.",
+        "B": "Code wird basierend auf Best Practices analysiert und optimiert.",
+        "C": "Entfernung menschlicher Logik und Verständnis.",
+        "D": "Erhöhte Produktivität."
+      },
+      "antwort": "C",
+      "erklärung": "Während KI-gestützte Tools bei der Codeerstellung Geschwindigkeit, Konsistenz und Produktivität verbessern können, ist das Entfernen menschlicher Logik und Verständnis kein Vorteil, sondern ein Nachteil. Menschliches Urteilsvermögen ist entscheidend, um Zielanforderungen, ethische Aspekte und Kontext korrekt zu interpretieren, was KI allein nicht leisten kann."
     },
-    "antwort": "C",
-    "erklärung": "Während KI-gestützte Tools bei der Codeerstellung Geschwindigkeit, Konsistenz und Produktivität verbessern können, ist das Entfernen menschlicher Logik und Verständnis kein Vorteil, sondern ein Nachteil. Menschliches Urteilsvermögen ist entscheidend, um Zielanforderungen, ethische Aspekte und Kontext korrekt zu interpretieren, was KI allein nicht leisten kann."
+    "en": {
+      "question": "Which of the following is NOT an advantage of using AI to generate code?",
+      "options": {
+        "A": "Faster development time.",
+        "B": "Code is analyzed and optimized based on best practices.",
+        "C": "Removing human logic and understanding.",
+        "D": "Increased productivity."
+      },
+      "answer": "C",
+      "explanation": "While AI-assisted code generation improves speed, consistency, and productivity, removing human logic and understanding is not an advantage. Human judgment remains essential for interpreting project goals, context, and ethical considerations that AI systems alone cannot fully grasp."
+    }
   },
-  "en": {
-    "question": "Which of the following is NOT an advantage of using AI to generate code?",
-    "options": {
-      "A": "Faster development time.",
-      "B": "Code is analyzed and optimized based on best practices.",
-      "C": "Removing human logic and understanding.",
-      "D": "Increased productivity."
+  {
+    "id": 165,
+    "de": {
+      "frage": "Sie arbeiten im Helpdesk, und ein Ticket wurde bezüglich einiger Ansible-Playbooks eingereicht. Ein Playbook wendet die gewünschte Konfiguration nicht auf eine Gruppe von verwalteten Knoten an. Nach Durchsicht des Playbooks vermuten Sie, dass das Problem mit der Gruppierung der Knoten im Inventory zusammenhängt.\nWas sollten Sie zuerst überprüfen, um das Problem zu lösen?",
+      "optionen": {
+        "A": "Bestätigen, dass der Kontrollknoten unter Windows läuft.",
+        "B": "Überprüfen, ob das Playbook im JSON-Format geschrieben ist.",
+        "C": "Prüfen, ob die verwalteten Knoten Ansible installiert haben.",
+        "D": "Sicherstellen, dass das richtige Playbook mit der Inventargruppe verknüpft ist."
+      },
+      "antwort": "D",
+      "erklärung": "In Ansible werden Konfigurationen basierend auf den Gruppen und Hosts angewendet, die im Inventory definiert sind. Wenn ein Playbook die gewünschte Konfiguration nicht auf bestimmte Knoten anwendet, liegt häufig ein Problem mit der Zuweisung oder dem Namen der Inventargruppe vor. Die erste Maßnahme ist daher, zu überprüfen, ob das Playbook tatsächlich auf die richtige Gruppe oder Hosts im Inventory verweist."
     },
-    "answer": "C",
-    "explanation": "While AI-assisted code generation improves speed, consistency, and productivity, removing human logic and understanding is not an advantage. Human judgment remains essential for interpreting project goals, context, and ethical considerations that AI systems alone cannot fully grasp."
-  }
-},
-{
-  "id": 165,
-  "de": {
-    "frage": "Sie arbeiten im Helpdesk, und ein Ticket wurde bezüglich einiger Ansible-Playbooks eingereicht. Ein Playbook wendet die gewünschte Konfiguration nicht auf eine Gruppe von verwalteten Knoten an. Nach Durchsicht des Playbooks vermuten Sie, dass das Problem mit der Gruppierung der Knoten im Inventory zusammenhängt.\nWas sollten Sie zuerst überprüfen, um das Problem zu lösen?",
-    "optionen": {
-      "A": "Bestätigen, dass der Kontrollknoten unter Windows läuft.",
-      "B": "Überprüfen, ob das Playbook im JSON-Format geschrieben ist.",
-      "C": "Prüfen, ob die verwalteten Knoten Ansible installiert haben.",
-      "D": "Sicherstellen, dass das richtige Playbook mit der Inventargruppe verknüpft ist."
-    },
-    "antwort": "D",
-    "erklärung": "In Ansible werden Konfigurationen basierend auf den Gruppen und Hosts angewendet, die im Inventory definiert sind. Wenn ein Playbook die gewünschte Konfiguration nicht auf bestimmte Knoten anwendet, liegt häufig ein Problem mit der Zuweisung oder dem Namen der Inventargruppe vor. Die erste Maßnahme ist daher, zu überprüfen, ob das Playbook tatsächlich auf die richtige Gruppe oder Hosts im Inventory verweist."
+    "en": {
+      "question": "You are working helpdesk and a ticket has come in regarding some Ansible playbooks. A playbook is not applying the desired configuration to a group of managed nodes. After reviewing the playbook, you suspect the issue is related to how the nodes are grouped in the inventory.\nWhat should you check first to resolve the issue?",
+      "options": {
+        "A": "Confirm that the control node is running Windows",
+        "B": "Verify that the playbook is written in JSON format",
+        "C": "Check if the managed nodes have Ansible installed",
+        "D": "Ensure the correct playbook is associated with the inventory group"
+      },
+      "answer": "D",
+      "explanation": "In Ansible, configurations are applied based on the groups and hosts defined in the inventory file. If a playbook does not apply the desired configuration to certain nodes, the issue is often due to incorrect or mismatched inventory group associations. The first step is to verify that the playbook targets the correct group or hosts in the inventory."
+    }
   },
-  "en": {
-    "question": "You are working helpdesk and a ticket has come in regarding some Ansible playbooks. A playbook is not applying the desired configuration to a group of managed nodes. After reviewing the playbook, you suspect the issue is related to how the nodes are grouped in the inventory.\nWhat should you check first to resolve the issue?",
-    "options": {
-      "A": "Confirm that the control node is running Windows",
-      "B": "Verify that the playbook is written in JSON format",
-      "C": "Check if the managed nodes have Ansible installed",
-      "D": "Ensure the correct playbook is associated with the inventory group"
+  {
+    "id": 166,
+    "de": {
+      "frage": "Sie analysieren ein Problem mit einer Kickstart-Datei, die zur Automatisierung von Linux-Installationen verwendet wird. Der Installationsprozess schlägt fehl, und bei der Überprüfung der Kickstart-Datei bemerken Sie den folgenden Abschnitt:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWas ist der wahrscheinlichste Grund für den Installationsfehler?",
+      "optionen": {
+        "A": "Der network-Befehl enthält keine Angaben zum Gateway und DNS-Server.",
+        "B": "Die Kickstart-Datei enthält keinen Abschnitt zur Konfiguration von Benutzerkonten.",
+        "C": "Der network-Befehl verwendet eine statische IP, was in Kickstart-Dateien nicht unterstützt wird.",
+        "D": "Der firewall-Befehl ist fälschlicherweise deaktiviert, was einen Konflikt verursacht."
+      },
+      "antwort": "A",
+      "erklärung": "Bei Verwendung einer statischen IP-Adresse in einer Kickstart-Datei müssen neben der IP-Adresse und der Netzmaske auch das Standardgateway und der DNS-Server angegeben werden, damit die Netzwerkverbindung während der Installation korrekt funktioniert. Fehlen diese Angaben, kann das Installationsprogramm keine Netzverbindung herstellen und die Installation schlägt fehl, insbesondere wenn Installationspakete aus einem Netzwerk-Repository bezogen werden."
     },
-    "answer": "D",
-    "explanation": "In Ansible, configurations are applied based on the groups and hosts defined in the inventory file. If a playbook does not apply the desired configuration to certain nodes, the issue is often due to incorrect or mismatched inventory group associations. The first step is to verify that the playbook targets the correct group or hosts in the inventory."
-  }
-},
-{
-  "id": 166,
-  "de": {
-    "frage": "Sie analysieren ein Problem mit einer Kickstart-Datei, die zur Automatisierung von Linux-Installationen verwendet wird. Der Installationsprozess schlägt fehl, und bei der Überprüfung der Kickstart-Datei bemerken Sie den folgenden Abschnitt:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWas ist der wahrscheinlichste Grund für den Installationsfehler?",
-    "optionen": {
-      "A": "Der network-Befehl enthält keine Angaben zum Gateway und DNS-Server.",
-      "B": "Die Kickstart-Datei enthält keinen Abschnitt zur Konfiguration von Benutzerkonten.",
-      "C": "Der network-Befehl verwendet eine statische IP, was in Kickstart-Dateien nicht unterstützt wird.",
-      "D": "Der firewall-Befehl ist fälschlicherweise deaktiviert, was einen Konflikt verursacht."
-    },
-    "antwort": "A",
-    "erklärung": "Bei Verwendung einer statischen IP-Adresse in einer Kickstart-Datei müssen neben der IP-Adresse und der Netzmaske auch das Standardgateway und der DNS-Server angegeben werden, damit die Netzwerkverbindung während der Installation korrekt funktioniert. Fehlen diese Angaben, kann das Installationsprogramm keine Netzverbindung herstellen und die Installation schlägt fehl, insbesondere wenn Installationspakete aus einem Netzwerk-Repository bezogen werden."
+    "en": {
+      "question": "You are analyzing an issue with a Kickstart file used to automate Linux installations. The installation process fails, and upon reviewing the Kickstart file, you notice the following section:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWhat is the most likely reason for the installation failure?",
+      "options": {
+        "A": "The network command is missing the gateway and DNS server information.",
+        "B": "The Kickstart file is missing a section to configure user accounts.",
+        "C": "The network command is using a static IP, which is not supported in Kickstart files.",
+        "D": "The firewall command is incorrectly disabled, causing a conflict."
+      },
+      "answer": "A",
+      "explanation": "When using a static IP configuration in a Kickstart file, you must specify not only the IP address and netmask but also the default gateway and DNS servers. Without this information, the installation process cannot establish a proper network connection, especially when it needs to retrieve installation packages from a network repository, leading to failure."
+    }
   },
-  "en": {
-    "question": "You are analyzing an issue with a Kickstart file used to automate Linux installations. The installation process fails, and upon reviewing the Kickstart file, you notice the following section:\n\nnetwork --bootproto=static --ip=192.168.1.100 --netmask=255.255.255.0  \nfirewall --disabled  \n\nWhat is the most likely reason for the installation failure?",
-    "options": {
-      "A": "The network command is missing the gateway and DNS server information.",
-      "B": "The Kickstart file is missing a section to configure user accounts.",
-      "C": "The network command is using a static IP, which is not supported in Kickstart files.",
-      "D": "The firewall command is incorrectly disabled, causing a conflict."
+  {
+    "id": 167,
+    "de": {
+      "frage": "Welche der folgenden Optionen gelten NICHT als Best Practice beim Schreiben oder Verwenden von Skripten? (Wählen Sie zwei aus.)",
+      "optionen": {
+        "A": "Stellen Sie sicher, dass der zu verwendende Interpreter für das Skript definiert ist.",
+        "B": "Verwenden Sie aussagekräftige Namen für Ihre Variablen.",
+        "C": "Halten Sie Kommentare auf ein Minimum.",
+        "D": "Verwenden Sie immer die Dateiendung .sh.",
+        "E": "Verwenden Sie einen Skripteditor mit Syntaxhervorhebung.",
+        "F": "Verwenden Sie aussagekräftige Namen für das Skript."
+      },
+      "antwort": ["C", "D"],
+      "erklärung": "Es ist keine Best Practice, Kommentare auf ein Minimum zu beschränken – gut kommentierter Code verbessert die Wartbarkeit und Verständlichkeit erheblich. Ebenso ist die Verwendung der Dateiendung .sh keine zwingende Best Practice, da Linux-Skripte anhand der Shebang-Zeile (#!) und Ausführungsrechte erkannt werden, nicht anhand der Dateiendung. Die anderen Optionen fördern saubere, lesbare und wartbare Skripte."
     },
-    "answer": "A",
-    "explanation": "When using a static IP configuration in a Kickstart file, you must specify not only the IP address and netmask but also the default gateway and DNS servers. Without this information, the installation process cannot establish a proper network connection, especially when it needs to retrieve installation packages from a network repository, leading to failure."
-  }
-},
-{
-  "id": 167,
-  "de": {
-    "frage": "Welche der folgenden Optionen gelten NICHT als Best Practice beim Schreiben oder Verwenden von Skripten? (Wählen Sie zwei aus.)",
-    "optionen": {
-      "A": "Stellen Sie sicher, dass der zu verwendende Interpreter für das Skript definiert ist.",
-      "B": "Verwenden Sie aussagekräftige Namen für Ihre Variablen.",
-      "C": "Halten Sie Kommentare auf ein Minimum.",
-      "D": "Verwenden Sie immer die Dateiendung .sh.",
-      "E": "Verwenden Sie einen Skripteditor mit Syntaxhervorhebung.",
-      "F": "Verwenden Sie aussagekräftige Namen für das Skript."
-    },
-    "antwort": ["C", "D"],
-    "erklärung": "Es ist keine Best Practice, Kommentare auf ein Minimum zu beschränken – gut kommentierter Code verbessert die Wartbarkeit und Verständlichkeit erheblich. Ebenso ist die Verwendung der Dateiendung .sh keine zwingende Best Practice, da Linux-Skripte anhand der Shebang-Zeile (#!) und Ausführungsrechte erkannt werden, nicht anhand der Dateiendung. Die anderen Optionen fördern saubere, lesbare und wartbare Skripte."
+    "en": {
+      "question": "Which of the following is NOT considered a best practice when writing or using scripts? (Select two.)",
+      "options": {
+        "A": "Be sure to define which interpreter to use for the script.",
+        "B": "Be sure to use descriptive names for your variables.",
+        "C": "Keep comments to a minimum.",
+        "D": "Always use the .sh file extension.",
+        "E": "Use a script editor with highlighting.",
+        "F": "Use descriptive names for the script."
+      },
+      "answer": ["C", "D"],
+      "explanation": "Minimizing comments is not a best practice; clear and helpful comments improve code readability and maintenance. Likewise, always using the .sh extension is not required, as Linux identifies scripts through the shebang (#!) line and execution permissions, not the file extension. The other options support better organization and maintainability of scripts."
+    }
   },
-  "en": {
-    "question": "Which of the following is NOT considered a best practice when writing or using scripts? (Select two.)",
-    "options": {
-      "A": "Be sure to define which interpreter to use for the script.",
-      "B": "Be sure to use descriptive names for your variables.",
-      "C": "Keep comments to a minimum.",
-      "D": "Always use the .sh file extension.",
-      "E": "Use a script editor with highlighting.",
-      "F": "Use descriptive names for the script."
+  {
+    "id": 168,
+    "de": {
+      "frage": "Sie überprüfen ein Shell-Skript, das sich unerwartet verhält. Sie vermuten, dass eine Shell- oder Umgebungsvariable das Problem verursacht.\nSie müssen die aktuelle Shell-Sitzung auswerten, um alle Shell-Variablen, Umgebungsvariablen und Shell-Funktionen zu identifizieren.\nWelchen Befehl würden Sie verwenden, um diese Informationen umfassend anzuzeigen?",
+      "optionen": {
+        "A": "printenv",
+        "B": "set",
+        "C": "env",
+        "D": "export"
+      },
+      "antwort": "B",
+      "erklärung": "Der Befehl 'set' zeigt eine vollständige Liste aller Shell-Variablen, Umgebungsvariablen und Shell-Funktionen in der aktuellen Sitzung an. 'env' und 'printenv' zeigen nur Umgebungsvariablen, während 'export' nur exportierte Variablen anzeigt. Daher ist 'set' der umfassendste Befehl zur Analyse der Shell-Umgebung."
     },
-    "answer": ["C", "D"],
-    "explanation": "Minimizing comments is not a best practice; clear and helpful comments improve code readability and maintenance. Likewise, always using the .sh extension is not required, as Linux identifies scripts through the shebang (#!) line and execution permissions, not the file extension. The other options support better organization and maintainability of scripts."
-  }
-},
-{
-  "id": 168,
-  "de": {
-    "frage": "Sie überprüfen ein Shell-Skript, das sich unerwartet verhält. Sie vermuten, dass eine Shell- oder Umgebungsvariable das Problem verursacht.\nSie müssen die aktuelle Shell-Sitzung auswerten, um alle Shell-Variablen, Umgebungsvariablen und Shell-Funktionen zu identifizieren.\nWelchen Befehl würden Sie verwenden, um diese Informationen umfassend anzuzeigen?",
-    "optionen": {
-      "A": "printenv",
-      "B": "set",
-      "C": "env",
-      "D": "export"
-    },
-    "antwort": "B",
-    "erklärung": "Der Befehl 'set' zeigt eine vollständige Liste aller Shell-Variablen, Umgebungsvariablen und Shell-Funktionen in der aktuellen Sitzung an. 'env' und 'printenv' zeigen nur Umgebungsvariablen, während 'export' nur exportierte Variablen anzeigt. Daher ist 'set' der umfassendste Befehl zur Analyse der Shell-Umgebung."
+    "en": {
+      "question": "You are reviewing a shell script that is behaving unexpectedly. You suspect that a shell variable or environment variable is causing the issue.\nYou need to evaluate the current shell session to identify all shell variables, environment variables, and shell functions.\nWhich command would you use to comprehensively evaluate and display this information?",
+      "options": {
+        "A": "printenv",
+        "B": "set",
+        "C": "env",
+        "D": "export"
+      },
+      "answer": "B",
+      "explanation": "The 'set' command displays a complete list of all shell variables, environment variables, and shell functions in the current session. The 'env' and 'printenv' commands list only environment variables, while 'export' shows only exported variables. Therefore, 'set' is the most comprehensive command for analyzing the shell environment."
+    }
   },
-  "en": {
-    "question": "You are reviewing a shell script that is behaving unexpectedly. You suspect that a shell variable or environment variable is causing the issue.\nYou need to evaluate the current shell session to identify all shell variables, environment variables, and shell functions.\nWhich command would you use to comprehensively evaluate and display this information?",
-    "options": {
-      "A": "printenv",
-      "B": "set",
-      "C": "env",
-      "D": "export"
+  {
+    "id": 169,
+    "de": {
+      "frage": "Sie sollen ein Bash-Skript schreiben, das eine tabulatorgetrennte Datei (TSV) in eine kommagetrennte Datei (CSV) konvertiert. Das Skript liest die Eingabedatei zeilenweise, verarbeitet die Felder und gibt das Ergebnis im CSV-Format aus. Allerdings verwendet die Ausgabedatei derzeit Leerzeichen anstelle von Kommas als Trennzeichen.\nWas sollten Sie tun, um sicherzustellen, dass die Felder in der Ausgabedatei durch Kommas getrennt werden?",
+      "optionen": {
+        "A": "Verwenden Sie den sed-Befehl, um Leerzeichen in der Ausgabedatei durch Kommas zu ersetzen.",
+        "B": "Ändern Sie die IFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden.",
+        "C": "Schreiben Sie das Skript so um, dass Felder manuell mit Kommas verbunden werden.",
+        "D": "Ändern Sie die OFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden."
+      },
+      "antwort": "D",
+      "erklärung": "In einem Bash-Skript wird die Variable OFS (Output Field Separator) verwendet, um das Feldtrennzeichen für Ausgaben, insbesondere bei der Verwendung von 'awk' oder 'print', zu definieren. Wenn die Ausgabe derzeit durch Leerzeichen getrennt ist, liegt das wahrscheinlich daran, dass OFS auf das Standardzeichen ' ' gesetzt ist. Durch das Setzen von 'OFS=','' werden Felder korrekt durch Kommas getrennt ausgegeben."
     },
-    "answer": "B",
-    "explanation": "The 'set' command displays a complete list of all shell variables, environment variables, and shell functions in the current session. The 'env' and 'printenv' commands list only environment variables, while 'export' shows only exported variables. Therefore, 'set' is the most comprehensive command for analyzing the shell environment."
-  }
-},
-{
-  "id": 169,
-  "de": {
-    "frage": "Sie sollen ein Bash-Skript schreiben, das eine tabulatorgetrennte Datei (TSV) in eine kommagetrennte Datei (CSV) konvertiert. Das Skript liest die Eingabedatei zeilenweise, verarbeitet die Felder und gibt das Ergebnis im CSV-Format aus. Allerdings verwendet die Ausgabedatei derzeit Leerzeichen anstelle von Kommas als Trennzeichen.\nWas sollten Sie tun, um sicherzustellen, dass die Felder in der Ausgabedatei durch Kommas getrennt werden?",
-    "optionen": {
-      "A": "Verwenden Sie den sed-Befehl, um Leerzeichen in der Ausgabedatei durch Kommas zu ersetzen.",
-      "B": "Ändern Sie die IFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden.",
-      "C": "Schreiben Sie das Skript so um, dass Felder manuell mit Kommas verbunden werden.",
-      "D": "Ändern Sie die OFS-Variable in Ihrem Skript, um ein Komma (,) zu verwenden."
-    },
-    "antwort": "D",
-    "erklärung": "In einem Bash-Skript wird die Variable OFS (Output Field Separator) verwendet, um das Feldtrennzeichen für Ausgaben, insbesondere bei der Verwendung von 'awk' oder 'print', zu definieren. Wenn die Ausgabe derzeit durch Leerzeichen getrennt ist, liegt das wahrscheinlich daran, dass OFS auf das Standardzeichen ' ' gesetzt ist. Durch das Setzen von 'OFS=','' werden Felder korrekt durch Kommas getrennt ausgegeben."
+    "en": {
+      "question": "You are tasked with writing a Bash script that converts a tab-separated value (TSV) file into a comma-separated value (CSV) file. The script reads the input file line by line, processes the fields, and outputs the result in CSV format. However, the output file currently uses spaces to separate fields instead of commas.\nWhat should you do to ensure the fields in the output file are separated by commas?",
+      "options": {
+        "A": "Use the sed command to replace spaces with commas in the output file.",
+        "B": "Modify the IFS variable in your script to use a comma (,).",
+        "C": "Rewrite the script to manually concatenate fields with commas between them.",
+        "D": "Modify the OFS variable in your script to use a comma (,)."
+      },
+      "answer": "D",
+      "explanation": "In a Bash script, the OFS (Output Field Separator) variable defines how output fields are separated, particularly when using tools like 'awk' or the 'print' command. If the output currently uses spaces, it means OFS is set to the default space character. By setting 'OFS=','', the script will correctly output comma-separated fields."
+    }
   },
-  "en": {
-    "question": "You are tasked with writing a Bash script that converts a tab-separated value (TSV) file into a comma-separated value (CSV) file. The script reads the input file line by line, processes the fields, and outputs the result in CSV format. However, the output file currently uses spaces to separate fields instead of commas.\nWhat should you do to ensure the fields in the output file are separated by commas?",
-    "options": {
-      "A": "Use the sed command to replace spaces with commas in the output file.",
-      "B": "Modify the IFS variable in your script to use a comma (,).",
-      "C": "Rewrite the script to manually concatenate fields with commas between them.",
-      "D": "Modify the OFS variable in your script to use a comma (,)."
+  {
+    "id": 170,
+    "de": {
+      "frage": "Sie haben eine Python-virtuelle Umgebung mit dem Namen 'challenge' erstellt und dokumentieren derzeit deren Konfiguration. Welche der folgenden Dateien sollten Sie für diese Informationen erstellen?",
+      "optionen": {
+        "A": "LICENSE",
+        "B": "README.md",
+        "C": "requirements.txt",
+        "D": "requirements.py"
+      },
+      "antwort": "C",
+      "erklärung": "Die Datei 'requirements.txt' wird in Python-Projekten verwendet, um alle Abhängigkeiten (Bibliotheken und ihre Versionen) einer virtuellen Umgebung aufzulisten. Diese Datei kann mit dem Befehl 'pip freeze > requirements.txt' erstellt werden und ermöglicht anderen Benutzern, dieselbe Umgebung durch 'pip install -r requirements.txt' zu reproduzieren."
     },
-    "answer": "D",
-    "explanation": "In a Bash script, the OFS (Output Field Separator) variable defines how output fields are separated, particularly when using tools like 'awk' or the 'print' command. If the output currently uses spaces, it means OFS is set to the default space character. By setting 'OFS=','', the script will correctly output comma-separated fields."
-  }
-},
-{
-  "id": 170,
-  "de": {
-    "frage": "Sie haben eine Python-virtuelle Umgebung mit dem Namen 'challenge' erstellt und dokumentieren derzeit deren Konfiguration. Welche der folgenden Dateien sollten Sie für diese Informationen erstellen?",
-    "optionen": {
-      "A": "LICENSE",
-      "B": "README.md",
-      "C": "requirements.txt",
-      "D": "requirements.py"
-    },
-    "antwort": "C",
-    "erklärung": "Die Datei 'requirements.txt' wird in Python-Projekten verwendet, um alle Abhängigkeiten (Bibliotheken und ihre Versionen) einer virtuellen Umgebung aufzulisten. Diese Datei kann mit dem Befehl 'pip freeze > requirements.txt' erstellt werden und ermöglicht anderen Benutzern, dieselbe Umgebung durch 'pip install -r requirements.txt' zu reproduzieren."
+    "en": {
+      "question": "You have created a Python virtual environment labeled 'challenge'. You are working on documenting the environment's configuration. Which of the following documents should you create for this information?",
+      "options": {
+        "A": "LICENSE",
+        "B": "README.md",
+        "C": "requirements.txt",
+        "D": "requirements.py"
+      },
+      "answer": "C",
+      "explanation": "The 'requirements.txt' file is used in Python projects to list all dependencies (libraries and their versions) associated with a virtual environment. It can be generated using the command 'pip freeze > requirements.txt', allowing others to recreate the same environment with 'pip install -r requirements.txt'."
+    }
   },
-  "en": {
-    "question": "You have created a Python virtual environment labeled 'challenge'. You are working on documenting the environment's configuration. Which of the following documents should you create for this information?",
-    "options": {
-      "A": "LICENSE",
-      "B": "README.md",
-      "C": "requirements.txt",
-      "D": "requirements.py"
+  {
+    "id": 171,
+    "de": {
+      "frage": "Welche der folgenden Punkte gelten als gute Praktiken beim Hinzufügen von Kommentaren zu einem Skript? (Wählen Sie 2 aus.)",
+      "optionen": {
+        "A": "Fügen Sie am Ende des Skripts einen Kommentar hinzu, der erklärt, was es tut.",
+        "B": "Fügen Sie vor jeder Zeile einen Kommentar hinzu.",
+        "C": "Kommentare sollten nicht verwendet werden.",
+        "D": "Fügen Sie am Anfang des Skripts Kommentare hinzu, die erklären, was es tut.",
+        "E": "Kommentieren Sie Zeilen, die eine Erklärung benötigen."
+      },
+      "antwort": ["D", "E"],
+      "erklärung": "Gute Kommentierungspraktiken umfassen das Hinzufügen einer Beschreibung am Anfang des Skripts, die Zweck, Funktionsweise und gegebenenfalls Autor oder Version erklärt. Zudem sollten nur die Codeabschnitte kommentiert werden, die zusätzliche Erläuterungen benötigen, um die Lesbarkeit und Wartbarkeit des Skripts zu verbessern. Zu viele oder überflüssige Kommentare können das Verständnis eher behindern."
     },
-    "answer": "C",
-    "explanation": "The 'requirements.txt' file is used in Python projects to list all dependencies (libraries and their versions) associated with a virtual environment. It can be generated using the command 'pip freeze > requirements.txt', allowing others to recreate the same environment with 'pip install -r requirements.txt'."
-  }
-},
-{
-  "id": 171,
-  "de": {
-    "frage": "Welche der folgenden Punkte gelten als gute Praktiken beim Hinzufügen von Kommentaren zu einem Skript? (Wählen Sie 2 aus.)",
-    "optionen": {
-      "A": "Fügen Sie am Ende des Skripts einen Kommentar hinzu, der erklärt, was es tut.",
-      "B": "Fügen Sie vor jeder Zeile einen Kommentar hinzu.",
-      "C": "Kommentare sollten nicht verwendet werden.",
-      "D": "Fügen Sie am Anfang des Skripts Kommentare hinzu, die erklären, was es tut.",
-      "E": "Kommentieren Sie Zeilen, die eine Erklärung benötigen."
-    },
-    "antwort": ["D", "E"],
-    "erklärung": "Gute Kommentierungspraktiken umfassen das Hinzufügen einer Beschreibung am Anfang des Skripts, die Zweck, Funktionsweise und gegebenenfalls Autor oder Version erklärt. Zudem sollten nur die Codeabschnitte kommentiert werden, die zusätzliche Erläuterungen benötigen, um die Lesbarkeit und Wartbarkeit des Skripts zu verbessern. Zu viele oder überflüssige Kommentare können das Verständnis eher behindern."
+    "en": {
+      "question": "Which of the following are considered good practices when adding comments to a script? (Select 2)",
+      "options": {
+        "A": "Add a comment at the end of the script explaining what it does.",
+        "B": "Add a comment before every line.",
+        "C": "Comments should not be used.",
+        "D": "Add comments at the top of the script explaining what it does.",
+        "E": "Comment lines that need explanation."
+      },
+      "answer": ["D", "E"],
+      "explanation": "Good commenting practices include adding a description at the top of the script explaining its purpose, functionality, and possibly author or version information. Additionally, comment only lines or sections of code that require clarification to improve readability and maintainability. Excessive or unnecessary comments can make code harder to follow."
+    }
   },
-  "en": {
-    "question": "Which of the following are considered good practices when adding comments to a script? (Select 2)",
-    "options": {
-      "A": "Add a comment at the end of the script explaining what it does.",
-      "B": "Add a comment before every line.",
-      "C": "Comments should not be used.",
-      "D": "Add comments at the top of the script explaining what it does.",
-      "E": "Comment lines that need explanation."
+  {
+    "id": 172,
+    "de": {
+      "frage": "Sie sind Linux-Administrator und sollen eine wiederkehrende Aufgabe automatisieren, bei der Logdateien analysiert und bestimmte Fehlermeldungen extrahiert werden. Sie entscheiden sich, ein KI-Tool zu verwenden, um den Python-Code für diese Aufgabe zu generieren.\nNachdem Sie den KI-generierten Code erhalten haben, was ist der beste nächste Schritt, um sicherzustellen, dass der Code für den Produktionseinsatz bereit ist?",
+      "optionen": {
+        "A": "Den KI-generierten Code sofort in der Produktionsumgebung bereitstellen, um Zeit zu sparen.",
+        "B": "Den KI-generierten Code auf Fehler, Logikfehler und Sicherheitslücken überprüfen, bevor er bereitgestellt wird.",
+        "C": "Annehmen, dass der KI-generierte Code optimiert und sicher ist, da KI-Tools Best Practices befolgen.",
+        "D": "Den KI-generierten Code unverändert verwenden, aber Inline-Kommentare für die Dokumentation hinzufügen."
+      },
+      "antwort": "B",
+      "erklärung": "KI-generierter Code kann zwar Zeit sparen, muss aber immer überprüft und getestet werden, bevor er in der Produktion eingesetzt wird. Eine gründliche Prüfung hilft, Logikfehler, ineffiziente Operationen oder Sicherheitslücken zu erkennen, die ein KI-Modell möglicherweise übersehen hat. Dies ist ein wesentlicher Schritt, um Produktionsstabilität und Datensicherheit zu gewährleisten."
     },
-    "answer": ["D", "E"],
-    "explanation": "Good commenting practices include adding a description at the top of the script explaining its purpose, functionality, and possibly author or version information. Additionally, comment only lines or sections of code that require clarification to improve readability and maintainability. Excessive or unnecessary comments can make code harder to follow."
-  }
-},
-{
-  "id": 172,
-  "de": {
-    "frage": "Sie sind Linux-Administrator und sollen eine wiederkehrende Aufgabe automatisieren, bei der Logdateien analysiert und bestimmte Fehlermeldungen extrahiert werden. Sie entscheiden sich, ein KI-Tool zu verwenden, um den Python-Code für diese Aufgabe zu generieren.\nNachdem Sie den KI-generierten Code erhalten haben, was ist der beste nächste Schritt, um sicherzustellen, dass der Code für den Produktionseinsatz bereit ist?",
-    "optionen": {
-      "A": "Den KI-generierten Code sofort in der Produktionsumgebung bereitstellen, um Zeit zu sparen.",
-      "B": "Den KI-generierten Code auf Fehler, Logikfehler und Sicherheitslücken überprüfen, bevor er bereitgestellt wird.",
-      "C": "Annehmen, dass der KI-generierte Code optimiert und sicher ist, da KI-Tools Best Practices befolgen.",
-      "D": "Den KI-generierten Code unverändert verwenden, aber Inline-Kommentare für die Dokumentation hinzufügen."
-    },
-    "antwort": "B",
-    "erklärung": "KI-generierter Code kann zwar Zeit sparen, muss aber immer überprüft und getestet werden, bevor er in der Produktion eingesetzt wird. Eine gründliche Prüfung hilft, Logikfehler, ineffiziente Operationen oder Sicherheitslücken zu erkennen, die ein KI-Modell möglicherweise übersehen hat. Dies ist ein wesentlicher Schritt, um Produktionsstabilität und Datensicherheit zu gewährleisten."
+    "en": {
+      "question": "You are a Linux administrator tasked with automating a repetitive task that involves parsing log files and extracting specific error messages. You decide to use an AI tool to generate Python code for this task.\nAfter receiving the AI-generated code, what is the BEST next step to ensure the code is ready for production use?",
+      "options": {
+        "A": "Deploy the AI-generated code immediately to the production environment to save time.",
+        "B": "Review the AI-generated code for errors, logic flaws, and security vulnerabilities before deploying it.",
+        "C": "Assume the AI-generated code is optimized and secure since AI tools follow best practices.",
+        "D": "Use the AI-generated code without modifications but add inline comments for documentation purposes."
+      },
+      "answer": "B",
+      "explanation": "While AI-generated code can speed up development, it must always be reviewed and tested before production deployment. Thoroughly checking the code helps identify logic errors, inefficiencies, or potential security vulnerabilities that an AI tool may miss. This step ensures production reliability, performance, and security."
+    }
   },
-  "en": {
-    "question": "You are a Linux administrator tasked with automating a repetitive task that involves parsing log files and extracting specific error messages. You decide to use an AI tool to generate Python code for this task.\nAfter receiving the AI-generated code, what is the BEST next step to ensure the code is ready for production use?",
-    "options": {
-      "A": "Deploy the AI-generated code immediately to the production environment to save time.",
-      "B": "Review the AI-generated code for errors, logic flaws, and security vulnerabilities before deploying it.",
-      "C": "Assume the AI-generated code is optimized and secure since AI tools follow best practices.",
-      "D": "Use the AI-generated code without modifications but add inline comments for documentation purposes."
+  {
+    "id": 173,
+    "de": {
+      "frage": "Sie arbeiten an einem kleinen Projekt, das die Bereitstellung mehrerer Container auf einem einzelnen Server umfasst. Das Projekt erfordert keine Multi-Host-Funktionalität oder erweiterte Funktionen wie Lastverteilung oder Fehlertoleranz. Welches Container-Orchestrierungstool wäre in diesem Szenario am geeignetsten?",
+      "optionen": {
+        "A": "Docker Swarm",
+        "B": "Docker Compose",
+        "C": "Ein VM-Hypervisor",
+        "D": "Kubernetes"
+      },
+      "antwort": "B",
+      "erklärung": "Docker Compose ist ideal für kleinere Projekte und Entwicklungsumgebungen, bei denen mehrere Container auf einem einzigen Host konfiguriert und ausgeführt werden sollen. Es ermöglicht die Definition und Verwaltung von Multi-Container-Anwendungen über eine YAML-Datei, ohne den administrativen Aufwand komplexer Orchestrierungstools wie Docker Swarm oder Kubernetes."
     },
-    "answer": "B",
-    "explanation": "While AI-generated code can speed up development, it must always be reviewed and tested before production deployment. Thoroughly checking the code helps identify logic errors, inefficiencies, or potential security vulnerabilities that an AI tool may miss. This step ensures production reliability, performance, and security."
-  }
-},
-{
-  "id": 173,
-  "de": {
-    "frage": "Sie arbeiten an einem kleinen Projekt, das die Bereitstellung mehrerer Container auf einem einzelnen Server umfasst. Das Projekt erfordert keine Multi-Host-Funktionalität oder erweiterte Funktionen wie Lastverteilung oder Fehlertoleranz. Welches Container-Orchestrierungstool wäre in diesem Szenario am geeignetsten?",
-    "optionen": {
-      "A": "Docker Swarm",
-      "B": "Docker Compose",
-      "C": "Ein VM-Hypervisor",
-      "D": "Kubernetes"
-    },
-    "antwort": "B",
-    "erklärung": "Docker Compose ist ideal für kleinere Projekte und Entwicklungsumgebungen, bei denen mehrere Container auf einem einzigen Host konfiguriert und ausgeführt werden sollen. Es ermöglicht die Definition und Verwaltung von Multi-Container-Anwendungen über eine YAML-Datei, ohne den administrativen Aufwand komplexer Orchestrierungstools wie Docker Swarm oder Kubernetes."
+    "en": {
+      "question": "You are working on a small-scale project that involves deploying multiple containers on a single server. The project does not require multi-host functionality or advanced features like load balancing or fault tolerance. Which container orchestration tool would be the most appropriate for this scenario?",
+      "options": {
+        "A": "Docker Swarm",
+        "B": "Docker Compose",
+        "C": "A VM hypervisor",
+        "D": "Kubernetes"
+      },
+      "answer": "B",
+      "explanation": "Docker Compose is best suited for small-scale projects and development environments where multiple containers need to be defined and run together on a single host. It uses a simple YAML configuration file to define services, networks, and volumes, without the overhead or complexity of advanced orchestration solutions like Docker Swarm or Kubernetes."
+    }
   },
-  "en": {
-    "question": "You are working on a small-scale project that involves deploying multiple containers on a single server. The project does not require multi-host functionality or advanced features like load balancing or fault tolerance. Which container orchestration tool would be the most appropriate for this scenario?",
-    "options": {
-      "A": "Docker Swarm",
-      "B": "Docker Compose",
-      "C": "A VM hypervisor",
-      "D": "Kubernetes"
+  {
+    "id": 174,
+    "de": {
+      "frage": "Sie arbeiten mit dem Netzwerkadministrator an der Bereitstellung einer cloudbasierten Linux-VM. Sie müssen den SSH-Zugriff konfigurieren, bestimmte Software installieren und die Netzwerkeinstellungen automatisch einrichten.\nWelches der folgenden Tools ist der beste Weg, um dies zu erreichen?",
+      "optionen": {
+        "A": "Manuelle Konfiguration nach der Bereitstellung",
+        "B": "Firewall-Konfigurationstool",
+        "C": "Kickstart-Antwortdatei",
+        "D": "Das cloud-init-Paket"
+      },
+      "antwort": "D",
+      "erklärung": "Das Paket 'cloud-init' ist das Standardtool zur Automatisierung der Erstkonfiguration von Cloud-basierten Linux-Instanzen. Es ermöglicht das automatische Setzen von Hostnamen, Benutzern, SSH-Schlüsseln, Netzwerkeinstellungen und das Installieren von Softwarepaketen beim ersten Start einer VM. Kickstart wird hingegen vor allem für physische oder manuell bereitgestellte Systeme verwendet."
     },
-    "answer": "B",
-    "explanation": "Docker Compose is best suited for small-scale projects and development environments where multiple containers need to be defined and run together on a single host. It uses a simple YAML configuration file to define services, networks, and volumes, without the overhead or complexity of advanced orchestration solutions like Docker Swarm or Kubernetes."
-  }
-},
-{
-  "id": 174,
-  "de": {
-    "frage": "Sie arbeiten mit dem Netzwerkadministrator an der Bereitstellung einer cloudbasierten Linux-VM. Sie müssen den SSH-Zugriff konfigurieren, bestimmte Software installieren und die Netzwerkeinstellungen automatisch einrichten.\nWelches der folgenden Tools ist der beste Weg, um dies zu erreichen?",
-    "optionen": {
-      "A": "Manuelle Konfiguration nach der Bereitstellung",
-      "B": "Firewall-Konfigurationstool",
-      "C": "Kickstart-Antwortdatei",
-      "D": "Das cloud-init-Paket"
-    },
-    "antwort": "D",
-    "erklärung": "Das Paket 'cloud-init' ist das Standardtool zur Automatisierung der Erstkonfiguration von Cloud-basierten Linux-Instanzen. Es ermöglicht das automatische Setzen von Hostnamen, Benutzern, SSH-Schlüsseln, Netzwerkeinstellungen und das Installieren von Softwarepaketen beim ersten Start einer VM. Kickstart wird hingegen vor allem für physische oder manuell bereitgestellte Systeme verwendet."
+    "en": {
+      "question": "You are working with the network administrator on deploying a cloud-based Linux virtual machine. You need to configure SSH access, install specific software, and have the network settings configured automatically.\nWhich of the following tools is the BEST way to accomplish this?",
+      "options": {
+        "A": "Manual configuration post-deployment",
+        "B": "Firewall configuration tool",
+        "C": "Kickstart answer file",
+        "D": "The cloud-init package"
+      },
+      "answer": "D",
+      "explanation": "The 'cloud-init' package is the standard tool for automating the initial configuration of cloud-based Linux instances. It allows you to automatically set hostnames, users, SSH keys, network settings, and install software upon first boot. Kickstart, on the other hand, is typically used for automated installations of physical or manually deployed systems, not for cloud environments."
+    }
   },
-  "en": {
-    "question": "You are working with the network administrator on deploying a cloud-based Linux virtual machine. You need to configure SSH access, install specific software, and have the network settings configured automatically.\nWhich of the following tools is the BEST way to accomplish this?",
-    "options": {
-      "A": "Manual configuration post-deployment",
-      "B": "Firewall configuration tool",
-      "C": "Kickstart answer file",
-      "D": "The cloud-init package"
+  {
+    "id": 175,
+    "de": {
+      "frage": "Welche der folgenden Konfigurationen in der Datei /etc/exports erlaubt allen Clients im Netzwerk einen schreibgeschützten Zugriff auf ein freigegebenes Verzeichnis?",
+      "optionen": {
+        "A": "/media/projects 192.168.2.0/24(rw,sync)",
+        "B": "/media/resources *(ro,sync)",
+        "C": "/media/files *(rw,async)",
+        "D": "/media/data 192.168.1.0/24(ro,async)"
+      },
+      "antwort": "B",
+      "erklärung": "Die Konfiguration '/media/resources *(ro,sync)' gewährt allen Clients im Netzwerk (durch '*') schreibgeschützten Zugriff (Option 'ro') auf das freigegebene Verzeichnis. Die Option 'sync' stellt sicher, dass Schreibvorgänge sofort auf den Datenträger geschrieben werden, was die Datensicherheit erhöht. Andere Optionen erlauben Schreibzugriff ('rw') oder beschränken den Zugriff auf bestimmte Subnetze."
     },
-    "answer": "D",
-    "explanation": "The 'cloud-init' package is the standard tool for automating the initial configuration of cloud-based Linux instances. It allows you to automatically set hostnames, users, SSH keys, network settings, and install software upon first boot. Kickstart, on the other hand, is typically used for automated installations of physical or manually deployed systems, not for cloud environments."
-  }
-},
-{
-  "id": 175,
-  "de": {
-    "frage": "Welche der folgenden Konfigurationen in der Datei /etc/exports erlaubt allen Clients im Netzwerk einen schreibgeschützten Zugriff auf ein freigegebenes Verzeichnis?",
-    "optionen": {
-      "A": "/media/projects 192.168.2.0/24(rw,sync)",
-      "B": "/media/resources *(ro,sync)",
-      "C": "/media/files *(rw,async)",
-      "D": "/media/data 192.168.1.0/24(ro,async)"
-    },
-    "antwort": "B",
-    "erklärung": "Die Konfiguration '/media/resources *(ro,sync)' gewährt allen Clients im Netzwerk (durch '*') schreibgeschützten Zugriff (Option 'ro') auf das freigegebene Verzeichnis. Die Option 'sync' stellt sicher, dass Schreibvorgänge sofort auf den Datenträger geschrieben werden, was die Datensicherheit erhöht. Andere Optionen erlauben Schreibzugriff ('rw') oder beschränken den Zugriff auf bestimmte Subnetze."
+    "en": {
+      "question": "Which of the following configurations in the /etc/exports file correctly allows read-only access to a shared directory for all clients on the network?",
+      "options": {
+        "A": "/media/projects 192.168.2.0/24(rw,sync)",
+        "B": "/media/resources *(ro,sync)",
+        "C": "/media/files *(rw,async)",
+        "D": "/media/data 192.168.1.0/24(ro,async)"
+      },
+      "answer": "B",
+      "explanation": "The configuration '/media/resources *(ro,sync)' grants read-only access (ro) to all clients in the network (using '*') for the shared directory. The 'sync' option ensures that all data changes are written to disk immediately, enhancing data integrity. The other options either allow write access ('rw') or limit access to specific subnets."
+    }
   },
-  "en": {
-    "question": "Which of the following configurations in the /etc/exports file correctly allows read-only access to a shared directory for all clients on the network?",
-    "options": {
-      "A": "/media/projects 192.168.2.0/24(rw,sync)",
-      "B": "/media/resources *(ro,sync)",
-      "C": "/media/files *(rw,async)",
-      "D": "/media/data 192.168.1.0/24(ro,async)"
+  {
+    "id": 176,
+    "de": {
+      "frage": "Welche der folgenden Optionen wird als Interpreter-Direktive (Shebang) für Bash-Skripte verwendet?",
+      "optionen": {
+        "A": "# /bin/bash",
+        "B": "*! /bin/bash",
+        "C": "#! /bin/bash",
+        "D": "#! /bin/bash.exe"
+      },
+      "antwort": "C",
+      "erklärung": "Die korrekte Interpreter-Direktive (Shebang) für Bash-Skripte ist '#! /bin/bash'. Sie wird in der ersten Zeile eines Skripts platziert und teilt dem System mit, dass das Skript mit der Bash-Shell ausgeführt werden soll. Die Zeichen '#!' (Shebang) sind entscheidend – ohne sie wird das Skript nicht automatisch mit Bash interpretiert."
     },
-    "answer": "B",
-    "explanation": "The configuration '/media/resources *(ro,sync)' grants read-only access (ro) to all clients in the network (using '*') for the shared directory. The 'sync' option ensures that all data changes are written to disk immediately, enhancing data integrity. The other options either allow write access ('rw') or limit access to specific subnets."
-  }
-},
-{
-  "id": 176,
-  "de": {
-    "frage": "Welche der folgenden Optionen wird als Interpreter-Direktive (Shebang) für Bash-Skripte verwendet?",
-    "optionen": {
-      "A": "# /bin/bash",
-      "B": "*! /bin/bash",
-      "C": "#! /bin/bash",
-      "D": "#! /bin/bash.exe"
-    },
-    "antwort": "C",
-    "erklärung": "Die korrekte Interpreter-Direktive (Shebang) für Bash-Skripte ist '#! /bin/bash'. Sie wird in der ersten Zeile eines Skripts platziert und teilt dem System mit, dass das Skript mit der Bash-Shell ausgeführt werden soll. Die Zeichen '#!' (Shebang) sind entscheidend – ohne sie wird das Skript nicht automatisch mit Bash interpretiert."
+    "en": {
+      "question": "Which of the following is used as the interpreter directive for Bash scripts?",
+      "options": {
+        "A": "# /bin/bash",
+        "B": "*! /bin/bash",
+        "C": "#! /bin/bash",
+        "D": "#! /bin/bash.exe"
+      },
+      "answer": "C",
+      "explanation": "The correct interpreter directive (Shebang) for Bash scripts is '#! /bin/bash'. It is placed on the first line of a script to tell the system to execute the script with the Bash shell. The '#!' characters (called Shebang) are required for proper interpretation; without them, the system will not automatically run the script using Bash."
+    }
   },
-  "en": {
-    "question": "Which of the following is used as the interpreter directive for Bash scripts?",
-    "options": {
-      "A": "# /bin/bash",
-      "B": "*! /bin/bash",
-      "C": "#! /bin/bash",
-      "D": "#! /bin/bash.exe"
+  {
+    "id": 177,
+    "de": {
+      "frage": "Ihr Unternehmen erwägt die Einführung von Infrastructure as Code (IaC), um die hybride Cloud-Infrastruktur zu verwalten. Das Team diskutiert, ob ein deklaratives oder ein imperatives IaC-Tool verwendet werden soll. Sie wurden beauftragt, die Optionen zu bewerten und eine Empfehlung abzugeben.\nWelcher der folgenden Faktoren würde am stärksten dafür sprechen, ein deklaratives IaC-Tool gegenüber einem imperativen zu wählen?",
+      "optionen": {
+        "A": "Die Infrastruktur ist einfach, und das Team ist mit der manuellen Ausführung von Konfigurationsbefehlen vertraut.",
+        "B": "Das Team bevorzugt es, detaillierte Skripte für jeden Konfigurationsschritt zu schreiben, um die volle Kontrolle zu behalten.",
+        "C": "Das Unternehmen legt Wert auf schnelle Bereitstellung und Konsistenz über verschiedene Umgebungen hinweg, ohne jeden Schritt explizit angeben zu müssen.",
+        "D": "Das Team möchte ein Tool verwenden, das wenig Einarbeitung erfordert und mit vorhandenen Shell-Skripten kompatibel ist."
+      },
+      "antwort": "C",
+      "erklärung": "Deklarative IaC-Tools wie Terraform oder CloudFormation beschreiben den gewünschten Endzustand der Infrastruktur, anstatt einzelne Befehle zur Erreichung dieses Zustands zu definieren. Dadurch werden Konsistenz, Wiederholbarkeit und eine geringere Fehleranfälligkeit erreicht, was insbesondere in Umgebungen mit häufigen, automatisierten Bereitstellungen von Vorteil ist. Imperative Tools hingegen verlangen die genaue Angabe jedes Schrittes der Konfiguration."
     },
-    "answer": "C",
-    "explanation": "The correct interpreter directive (Shebang) for Bash scripts is '#! /bin/bash'. It is placed on the first line of a script to tell the system to execute the script with the Bash shell. The '#!' characters (called Shebang) are required for proper interpretation; without them, the system will not automatically run the script using Bash."
-  }
-},
-{
-  "id": 177,
-  "de": {
-    "frage": "Ihr Unternehmen erwägt die Einführung von Infrastructure as Code (IaC), um die hybride Cloud-Infrastruktur zu verwalten. Das Team diskutiert, ob ein deklaratives oder ein imperatives IaC-Tool verwendet werden soll. Sie wurden beauftragt, die Optionen zu bewerten und eine Empfehlung abzugeben.\nWelcher der folgenden Faktoren würde am stärksten dafür sprechen, ein deklaratives IaC-Tool gegenüber einem imperativen zu wählen?",
-    "optionen": {
-      "A": "Die Infrastruktur ist einfach, und das Team ist mit der manuellen Ausführung von Konfigurationsbefehlen vertraut.",
-      "B": "Das Team bevorzugt es, detaillierte Skripte für jeden Konfigurationsschritt zu schreiben, um die volle Kontrolle zu behalten.",
-      "C": "Das Unternehmen legt Wert auf schnelle Bereitstellung und Konsistenz über verschiedene Umgebungen hinweg, ohne jeden Schritt explizit angeben zu müssen.",
-      "D": "Das Team möchte ein Tool verwenden, das wenig Einarbeitung erfordert und mit vorhandenen Shell-Skripten kompatibel ist."
-    },
-    "antwort": "C",
-    "erklärung": "Deklarative IaC-Tools wie Terraform oder CloudFormation beschreiben den gewünschten Endzustand der Infrastruktur, anstatt einzelne Befehle zur Erreichung dieses Zustands zu definieren. Dadurch werden Konsistenz, Wiederholbarkeit und eine geringere Fehleranfälligkeit erreicht, was insbesondere in Umgebungen mit häufigen, automatisierten Bereitstellungen von Vorteil ist. Imperative Tools hingegen verlangen die genaue Angabe jedes Schrittes der Konfiguration."
+    "en": {
+      "question": "Your organization is considering adopting Infrastructure as Code (IaC) to manage its hybrid cloud infrastructure. The team is debating between using a declarative IaC tool or an imperative IaC tool. You have been tasked with evaluating the options and recommending the best approach.\nWhich of the following factors would most strongly support choosing a declarative IaC tool over an imperative one?",
+      "options": {
+        "A": "The infrastructure is simple, and the team is comfortable manually executing commands for configuration.",
+        "B": "The team prefers to write detailed scripts for every configuration step to maintain full control over the process.",
+        "C": "The organization prioritizes rapid deployment and consistency across environments without needing to specify every step.",
+        "D": "The team wants to use a tool that requires minimal learning and is compatible with existing shell scripts."
+      },
+      "answer": "C",
+      "explanation": "Declarative IaC tools like Terraform or CloudFormation define the desired end state of infrastructure rather than individual steps to reach it. This approach ensures consistency, repeatability, and faster deployment across environments, which is especially valuable in large-scale or automated setups. Imperative IaC tools, by contrast, require manually defining each configuration step, offering more control but less efficiency."
+    }
   },
-  "en": {
-    "question": "Your organization is considering adopting Infrastructure as Code (IaC) to manage its hybrid cloud infrastructure. The team is debating between using a declarative IaC tool or an imperative IaC tool. You have been tasked with evaluating the options and recommending the best approach.\nWhich of the following factors would most strongly support choosing a declarative IaC tool over an imperative one?",
-    "options": {
-      "A": "The infrastructure is simple, and the team is comfortable manually executing commands for configuration.",
-      "B": "The team prefers to write detailed scripts for every configuration step to maintain full control over the process.",
-      "C": "The organization prioritizes rapid deployment and consistency across environments without needing to specify every step.",
-      "D": "The team wants to use a tool that requires minimal learning and is compatible with existing shell scripts."
+  {
+    "id": 178,
+    "de": {
+      "frage": "Sie arbeiten im Helpdesk, und ein Entwickler meldet, dass seine Kubernetes-basierte Anwendung keine Verbindung zur richtigen Datenbank in der Produktionsumgebung herstellen kann. Die Anwendung verwendet eine Datenbank-URL, die sich zwischen Entwicklungs- und Produktionsumgebung unterscheidet, aber der Entwickler möchte den Anwendungscode nicht jedes Mal ändern, wenn sich die Umgebung ändert.\nWelche Kubernetes-Funktion sollten Sie evaluieren, um dem Entwickler bei der Lösung dieses Problems zu helfen?",
+      "optionen": {
+        "A": "Deployments",
+        "B": "Umgebungsvariablen",
+        "C": "ConfigMaps",
+        "D": "Secrets"
+      },
+      "antwort": "B",
+      "erklärung": "Kubernetes-ConfigMaps werden verwendet, um Konfigurationsdaten außerhalb des Anwendungscodes zu speichern. Dadurch können Umgebungsvariablen, Konfigurationsdateien oder Parameter wie Datenbank-URLs einfach geändert werden, ohne den Anwendungscode anzupassen oder das Container-Image neu zu erstellen. Secrets werden für vertrauliche Daten wie Passwörter oder Tokens verwendet."
     },
-    "answer": "C",
-    "explanation": "Declarative IaC tools like Terraform or CloudFormation define the desired end state of infrastructure rather than individual steps to reach it. This approach ensures consistency, repeatability, and faster deployment across environments, which is especially valuable in large-scale or automated setups. Imperative IaC tools, by contrast, require manually defining each configuration step, offering more control but less efficiency."
-  }
-},
-{
-  "id": 178,
-  "de": {
-    "frage": "Sie arbeiten im Helpdesk, und ein Entwickler meldet, dass seine Kubernetes-basierte Anwendung keine Verbindung zur richtigen Datenbank in der Produktionsumgebung herstellen kann. Die Anwendung verwendet eine Datenbank-URL, die sich zwischen Entwicklungs- und Produktionsumgebung unterscheidet, aber der Entwickler möchte den Anwendungscode nicht jedes Mal ändern, wenn sich die Umgebung ändert.\nWelche Kubernetes-Funktion sollten Sie evaluieren, um dem Entwickler bei der Lösung dieses Problems zu helfen?",
-    "optionen": {
-      "A": "Deployments",
-      "B": "Umgebungsvariablen",
-      "C": "ConfigMaps",
-      "D": "Secrets"
-    },
-    "antwort": "B",
-    "erklärung": "Kubernetes-ConfigMaps werden verwendet, um Konfigurationsdaten außerhalb des Anwendungscodes zu speichern. Dadurch können Umgebungsvariablen, Konfigurationsdateien oder Parameter wie Datenbank-URLs einfach geändert werden, ohne den Anwendungscode anzupassen oder das Container-Image neu zu erstellen. Secrets werden für vertrauliche Daten wie Passwörter oder Tokens verwendet."
+    "en": {
+      "question": "You are working the helpdesk and a developer reaches out because their Kubernetes-based application is failing to connect to the correct database in the production environment. The application uses a database URL that changes between development and production, but the developer doesn't want to modify the application code every time the environment changes.\nWhich Kubernetes feature should you evaluate to help the developer resolve this issue?",
+      "options": {
+        "A": "Deployments",
+        "B": "Environment variables",
+        "C": "ConfigMaps",
+        "D": "Secrets"
+      },
+      "answer": "B",
+      "explanation": "Kubernetes ConfigMaps are used to store non-sensitive configuration data separately from the application code. They allow developers to define environment-specific parameters, such as database URLs, without modifying the app itself or rebuilding the container image. Secrets, on the other hand, are reserved for storing sensitive information like passwords or API keys."
+    }
   },
-  "en": {
-    "question": "You are working the helpdesk and a developer reaches out because their Kubernetes-based application is failing to connect to the correct database in the production environment. The application uses a database URL that changes between development and production, but the developer doesn't want to modify the application code every time the environment changes.\nWhich Kubernetes feature should you evaluate to help the developer resolve this issue?",
-    "options": {
-      "A": "Deployments",
-      "B": "Environment variables",
-      "C": "ConfigMaps",
-      "D": "Secrets"
+  {
+    "id": 179,
+    "de": {
+      "frage": "Welche der folgenden Dateien können Sie konfigurieren, um bestimmte Dateitypen vom Commit in ein lokales Git-Repository auszuschließen?",
+      "optionen": {
+        "A": "ignore.conf",
+        "B": ".config.worktree",
+        "C": "gitignore.ini",
+        "D": ".gitignore"
+      },
+      "antwort": "D",
+      "erklärung": "Die Datei '.gitignore' wird verwendet, um bestimmte Dateien oder Dateitypen vom Tracking durch Git auszuschließen. In dieser Datei können Sie Pfade oder Muster (z. B. *.log oder /tmp/) definieren, damit Git diese Dateien ignoriert und nicht in Commits aufnimmt. Diese Funktion ist besonders nützlich, um temporäre Dateien, Build-Outputs oder vertrauliche Daten von Versionskontrollen auszuschließen."
     },
-    "answer": "B",
-    "explanation": "Kubernetes ConfigMaps are used to store non-sensitive configuration data separately from the application code. They allow developers to define environment-specific parameters, such as database URLs, without modifying the app itself or rebuilding the container image. Secrets, on the other hand, are reserved for storing sensitive information like passwords or API keys."
-  }
-},
-{
-  "id": 179,
-  "de": {
-    "frage": "Welche der folgenden Dateien können Sie konfigurieren, um bestimmte Dateitypen vom Commit in ein lokales Git-Repository auszuschließen?",
-    "optionen": {
-      "A": "ignore.conf",
-      "B": ".config.worktree",
-      "C": "gitignore.ini",
-      "D": ".gitignore"
-    },
-    "antwort": "D",
-    "erklärung": "Die Datei '.gitignore' wird verwendet, um bestimmte Dateien oder Dateitypen vom Tracking durch Git auszuschließen. In dieser Datei können Sie Pfade oder Muster (z. B. *.log oder /tmp/) definieren, damit Git diese Dateien ignoriert und nicht in Commits aufnimmt. Diese Funktion ist besonders nützlich, um temporäre Dateien, Build-Outputs oder vertrauliche Daten von Versionskontrollen auszuschließen."
+    "en": {
+      "question": "Which of the following files can you configure to ignore certain file types from being committed to the local Git repository?",
+      "options": {
+        "A": "ignore.conf",
+        "B": ".config.worktree",
+        "C": "gitignore.ini",
+        "D": ".gitignore"
+      },
+      "answer": "D",
+      "explanation": "The '.gitignore' file is used to specify which files or file patterns Git should ignore. By listing patterns such as *.log or /tmp/, you prevent Git from tracking or committing those files. This helps keep the repository clean and free of temporary, compiled, or sensitive files."
+    }
   },
-  "en": {
-    "question": "Which of the following files can you configure to ignore certain file types from being committed to the local Git repository?",
-    "options": {
-      "A": "ignore.conf",
-      "B": ".config.worktree",
-      "C": "gitignore.ini",
-      "D": ".gitignore"
+  {
+    "id": 180,
+    "de": {
+      "frage": "Sie sollen ein neues Entwicklungsprojekt starten und müssen ein lokales Git-Repository erstellen, um Ihre Dateien zu verwalten.\nWelche Befehlsreihenfolge ist korrekt, um ein Verzeichnis für Ihr Projekt zu erstellen und es als Git-Repository zu initialisieren?",
+      "optionen": {
+        "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
+        "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
+        "C": "mkdir /dev-project cd /dev-project git init",
+        "D": "git init /dev-project mkdir /dev-project cd /dev-project"
+      },
+      "antwort": "C",
+      "erklärung": "Die richtige Reihenfolge zum Erstellen eines neuen lokalen Git-Repositories lautet:\n1. 'mkdir /dev-project' erstellt das Projektverzeichnis.\n2. 'cd /dev-project' wechselt in dieses Verzeichnis.\n3. 'git init' initialisiert darin ein neues Git-Repository. Danach kann der Benutzer Dateien hinzufügen und Commits erstellen. Die Konfiguration von Benutzername und E-Mail erfolgt in der Regel vorher global oder nach Bedarf separat."
     },
-    "answer": "D",
-    "explanation": "The '.gitignore' file is used to specify which files or file patterns Git should ignore. By listing patterns such as *.log or /tmp/, you prevent Git from tracking or committing those files. This helps keep the repository clean and free of temporary, compiled, or sensitive files."
-  }
-},
-{
-  "id": 180,
-  "de": {
-    "frage": "Sie sollen ein neues Entwicklungsprojekt starten und müssen ein lokales Git-Repository erstellen, um Ihre Dateien zu verwalten.\nWelche Befehlsreihenfolge ist korrekt, um ein Verzeichnis für Ihr Projekt zu erstellen und es als Git-Repository zu initialisieren?",
-    "optionen": {
-      "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
-      "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
-      "C": "mkdir /dev-project cd /dev-project git init",
-      "D": "git init /dev-project mkdir /dev-project cd /dev-project"
-    },
-    "antwort": "C",
-    "erklärung": "Die richtige Reihenfolge zum Erstellen eines neuen lokalen Git-Repositories lautet:\n1. 'mkdir /dev-project' erstellt das Projektverzeichnis.\n2. 'cd /dev-project' wechselt in dieses Verzeichnis.\n3. 'git init' initialisiert darin ein neues Git-Repository. Danach kann der Benutzer Dateien hinzufügen und Commits erstellen. Die Konfiguration von Benutzername und E-Mail erfolgt in der Regel vorher global oder nach Bedarf separat."
+    "en": {
+      "question": "You are tasked with starting a new development project and need to create a local Git repository to manage your files.\nWhat is the correct sequence of commands to create a directory for your project and initialize it as a Git repository?",
+      "options": {
+        "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
+        "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
+        "C": "mkdir /dev-project cd /dev-project git init",
+        "D": "git init /dev-project mkdir /dev-project cd /dev-project"
+      },
+      "answer": "C",
+      "explanation": "The correct sequence to create a new local Git repository is:\n1. 'mkdir /dev-project' creates the project directory.\n2. 'cd /dev-project' navigates into it.\n3. 'git init' initializes a new Git repository inside the directory. After this, you can start adding files and committing changes. The user name and email configuration is typically done globally or separately as needed."
+    }
   },
-  "en": {
-    "question": "You are tasked with starting a new development project and need to create a local Git repository to manage your files.\nWhat is the correct sequence of commands to create a directory for your project and initialize it as a Git repository?",
-    "options": {
-      "A": "git config --global user.name 'User' git config --global user.email 'user@domain.tld' mkdir /dev-project",
-      "B": "mkdir /dev-project git clone /dev-project cd /dev-project",
-      "C": "mkdir /dev-project cd /dev-project git init",
-      "D": "git init /dev-project mkdir /dev-project cd /dev-project"
+  {
+    "id": 181,
+    "de": {
+      "frage": "Sie sind Systemadministrator und sollen eine hybride Cloud-Umgebung für Ihr Unternehmen konfigurieren. Sie müssen virtuelle Maschinen, Cloud-Speicher-Buckets und Netzwerk-Load-Balancer über mehrere Cloud-Anbieter hinweg verwalten und möchten sicherstellen, dass die Konfiguration in einem lesbaren Format für zukünftige Aktualisierungen gespeichert wird.\nWelche der folgenden Funktionen oder Tools von OpenTofu hilft Ihnen am besten, dieses Ziel zu erreichen?",
+      "optionen": {
+        "A": "State Configuration",
+        "B": "Registry API",
+        "C": "Provider API",
+        "D": "Documentation API"
+      },
+      "antwort": "A",
+      "erklärung": "Die 'State Configuration' in OpenTofu (wie auch in Terraform) verfolgt und verwaltet den aktuellen Zustand der bereitgestellten Infrastrukturressourcen. Sie ermöglicht das definieren, versionieren und reproduzieren der Infrastruktur in einer deklarativen und menschenlesbaren Formatdatei (z. B. HCL). Dadurch kann die Infrastruktur über mehrere Cloud-Anbieter hinweg konsistent verwaltet und bei Bedarf einfach aktualisiert werden."
     },
-    "answer": "C",
-    "explanation": "The correct sequence to create a new local Git repository is:\n1. 'mkdir /dev-project' creates the project directory.\n2. 'cd /dev-project' navigates into it.\n3. 'git init' initializes a new Git repository inside the directory. After this, you can start adding files and committing changes. The user name and email configuration is typically done globally or separately as needed."
-  }
-},
-{
-  "id": 181,
-  "de": {
-    "frage": "Sie sind Systemadministrator und sollen eine hybride Cloud-Umgebung für Ihr Unternehmen konfigurieren. Sie müssen virtuelle Maschinen, Cloud-Speicher-Buckets und Netzwerk-Load-Balancer über mehrere Cloud-Anbieter hinweg verwalten und möchten sicherstellen, dass die Konfiguration in einem lesbaren Format für zukünftige Aktualisierungen gespeichert wird.\nWelche der folgenden Funktionen oder Tools von OpenTofu hilft Ihnen am besten, dieses Ziel zu erreichen?",
-    "optionen": {
-      "A": "State Configuration",
-      "B": "Registry API",
-      "C": "Provider API",
-      "D": "Documentation API"
-    },
-    "antwort": "A",
-    "erklärung": "Die 'State Configuration' in OpenTofu (wie auch in Terraform) verfolgt und verwaltet den aktuellen Zustand der bereitgestellten Infrastrukturressourcen. Sie ermöglicht das definieren, versionieren und reproduzieren der Infrastruktur in einer deklarativen und menschenlesbaren Formatdatei (z. B. HCL). Dadurch kann die Infrastruktur über mehrere Cloud-Anbieter hinweg konsistent verwaltet und bei Bedarf einfach aktualisiert werden."
+    "en": {
+      "question": "You are the systems administrator and have been tasked with configuring a hybrid cloud environment for your organization. You need to manage virtual machines, cloud storage buckets, and network load balancers across multiple cloud providers. You also want to ensure that the configuration is stored in a readable format for future updates.\nWhich of the following tools or features of OpenTofu will best help you achieve this goal?",
+      "options": {
+        "A": "State Configuration",
+        "B": "Registry API",
+        "C": "Provider API",
+        "D": "Documentation API"
+      },
+      "answer": "A",
+      "explanation": "The 'State Configuration' feature in OpenTofu (similar to Terraform) tracks and manages the current state of deployed infrastructure resources. It allows administrators to define, version, and reproduce infrastructure using declarative and human-readable configuration files (such as HCL). This ensures consistent infrastructure management across multiple cloud providers and simplifies updates and automation."
+    }
   },
-  "en": {
-    "question": "You are the systems administrator and have been tasked with configuring a hybrid cloud environment for your organization. You need to manage virtual machines, cloud storage buckets, and network load balancers across multiple cloud providers. You also want to ensure that the configuration is stored in a readable format for future updates.\nWhich of the following tools or features of OpenTofu will best help you achieve this goal?",
-    "options": {
-      "A": "State Configuration",
-      "B": "Registry API",
-      "C": "Provider API",
-      "D": "Documentation API"
+  {
+    "id": 182,
+    "de": {
+      "frage": "Sie verwalten einen Docker-Swarm-Cluster und müssen sicherstellen, dass ein bestimmter Dienst dynamisch skaliert werden kann, um schwankende Arbeitslasten zu bewältigen. Was sollten Sie tun, um dies zu erreichen?",
+      "optionen": {
+        "A": "Den gewünschten Zustand des Dienstes in Docker Swarm definieren.",
+        "B": "Container manuell nach Bedarf hinzufügen oder entfernen.",
+        "C": "Die Worker-Knoten so konfigurieren, dass sie automatisch neue Container erstellen.",
+        "D": "Eigenständige Docker-Container verwenden, um die Arbeitslast zu verwalten."
+      },
+      "antwort": "A",
+      "erklärung": "In Docker Swarm wird die Skalierung über den ‚desired state‘ bzw. den gewünschten Zustand des Dienstes gesteuert. Dieser wird in der Dienstdefinition festgelegt, und Docker Swarm sorgt automatisch dafür, dass die tatsächliche Anzahl der laufenden Container dem definierten Zustand entspricht. Dadurch kann die Anwendungsbereitstellung dynamisch und konsistent verwaltet werden, ohne manuelle Eingriffe."
     },
-    "answer": "A",
-    "explanation": "The 'State Configuration' feature in OpenTofu (similar to Terraform) tracks and manages the current state of deployed infrastructure resources. It allows administrators to define, version, and reproduce infrastructure using declarative and human-readable configuration files (such as HCL). This ensures consistent infrastructure management across multiple cloud providers and simplifies updates and automation."
-  }
-},
-{
-  "id": 182,
-  "de": {
-    "frage": "Sie verwalten einen Docker-Swarm-Cluster und müssen sicherstellen, dass ein bestimmter Dienst dynamisch skaliert werden kann, um schwankende Arbeitslasten zu bewältigen. Was sollten Sie tun, um dies zu erreichen?",
-    "optionen": {
-      "A": "Den gewünschten Zustand des Dienstes in Docker Swarm definieren.",
-      "B": "Container manuell nach Bedarf hinzufügen oder entfernen.",
-      "C": "Die Worker-Knoten so konfigurieren, dass sie automatisch neue Container erstellen.",
-      "D": "Eigenständige Docker-Container verwenden, um die Arbeitslast zu verwalten."
-    },
-    "antwort": "A",
-    "erklärung": "In Docker Swarm wird die Skalierung über den ‚desired state‘ bzw. den gewünschten Zustand des Dienstes gesteuert. Dieser wird in der Dienstdefinition festgelegt, und Docker Swarm sorgt automatisch dafür, dass die tatsächliche Anzahl der laufenden Container dem definierten Zustand entspricht. Dadurch kann die Anwendungsbereitstellung dynamisch und konsistent verwaltet werden, ohne manuelle Eingriffe."
+    "en": {
+      "question": "You are managing a Docker Swarm cluster and need to ensure that a specific service can scale dynamically to handle fluctuating workloads. What should you do to achieve this?",
+      "options": {
+        "A": "Define the desired state of the service in Docker Swarm.",
+        "B": "Manually add or remove containers as needed.",
+        "C": "Configure the worker nodes to automatically create new containers.",
+        "D": "Use standalone Docker containers to manage the workload."
+      },
+      "answer": "A",
+      "explanation": "In Docker Swarm, scaling is controlled by defining the 'desired state' of a service. This state specifies how many replicas should be running, and Swarm automatically ensures that the actual number of containers matches this definition. This approach enables dynamic, consistent service scaling without manual intervention."
+    }
   },
-  "en": {
-    "question": "You are managing a Docker Swarm cluster and need to ensure that a specific service can scale dynamically to handle fluctuating workloads. What should you do to achieve this?",
-    "options": {
-      "A": "Define the desired state of the service in Docker Swarm.",
-      "B": "Manually add or remove containers as needed.",
-      "C": "Configure the worker nodes to automatically create new containers.",
-      "D": "Use standalone Docker containers to manage the workload."
+  {
+    "id": 183,
+    "de": {
+      "frage": "Welche Hauptmethode verwendet Linux, um Multitasking auf einer einzelnen CPU zu ermöglichen?",
+      "optionen": {
+        "A": "Linux verwendet Multithreading, um sicherzustellen, dass alle Prozesse gleichzeitig ohne Umschalten ausgeführt werden.",
+        "B": "Linux führt Prozesse nacheinander aus und wartet, bis jeder beendet ist, bevor der nächste startet.",
+        "C": "Linux führt alle Prozesse gleichzeitig aus, indem es jedem Prozess einen eigenen CPU-Kern zuweist.",
+        "D": "Linux wechselt schnell zwischen Prozessen, um die Illusion zu erzeugen, dass sie gleichzeitig laufen."
+      },
+      "antwort": "D",
+      "erklärung": "Linux verwendet präemptives Multitasking, bei dem der Scheduler die CPU schnell zwischen Prozessen wechselt. Dadurch scheint es, als würden alle Prozesse gleichzeitig laufen, obwohl auf einer einzelnen CPU immer nur ein Prozess aktiv ist."
     },
-    "answer": "A",
-    "explanation": "In Docker Swarm, scaling is controlled by defining the 'desired state' of a service. This state specifies how many replicas should be running, and Swarm automatically ensures that the actual number of containers matches this definition. This approach enables dynamic, consistent service scaling without manual intervention."
+    "en": {
+      "question": "What is the primary method Linux uses to achieve multitasking on a single CPU?",
+      "options": {
+        "A": "Linux uses multithreading to ensure that all processes are executed concurrently without switching.",
+        "B": "Linux executes processes one at a time, waiting for each to finish before starting the next.",
+        "C": "Linux runs all processes simultaneously by allocating a separate CPU core to each process.",
+        "D": "Linux rapidly switches between processes, giving the illusion that they are running simultaneously."
+      },
+      "answer": "D",
+      "explanation": "Linux uses preemptive multitasking, where the scheduler rapidly switches the CPU between processes. This creates the illusion of simultaneous execution, even though only one process runs at a time on a single CPU."
+    }
+  },
+  {
+    "id": 184,
+    "de": {
+      "frage": "Was ist der Hauptzweck des Kernel-Panic-Mechanismus in einem Betriebssystem?",
+      "optionen": {
+        "A": "Automatische Reparatur beschädigter Kernel-Dateien und Neustart des Systems.",
+        "B": "Benachrichtigung des Benutzers über notwendige Softwareaktualisierungen zur Vermeidung von Systemabstürzen.",
+        "C": "Optimierung der Systemleistung durch Entladen unnötiger Kernel-Module.",
+        "D": "Erkennung schwerwiegender Systemfehler und Reaktion durch Anhalten oder Neustarten des Systems."
+      },
+      "antwort": "D",
+      "erklärung": "Eine Kernel-Panic tritt auf, wenn das Betriebssystem einen kritischen Fehler feststellt, von dem es sich nicht sicher erholen kann. Um Datenverlust und weitere Schäden zu vermeiden, stoppt oder startet das System neu, anstatt den fehlerhaften Zustand fortzusetzen."
+    },
+    "en": {
+      "question": "What is the primary purpose of the kernel panic mechanism in an operating system?",
+      "options": {
+        "A": "To automatically repair corrupted kernel files and reboot the system.",
+        "B": "To notify the user of software updates required to prevent system crashes.",
+        "C": "To optimize system performance by unloading unnecessary kernel modules.",
+        "D": "To detect fatal system errors and respond by halting or rebooting the system."
+      },
+      "answer": "D",
+      "explanation": "A kernel panic occurs when the operating system encounters a critical error from which it cannot safely recover. To prevent data loss or further corruption, the system halts or reboots instead of continuing in an unstable state."
+    }
+  },
+  {
+    "id": 185,
+    "de": {
+      "frage": "Du überprüfst die Netzwerkkonfiguration eines neu installierten Servers, der von anderen Geräten im Netzwerk nicht erreichbar ist. Bei der Inspektion stellst du Folgendes fest:\nDer Server hat einen korrekt konfigurierten Hostnamen.\nDer Server hat eine gültige IP-Adresse innerhalb des Netzbereichs.\nDie MAC-Adresse des Servers ist korrekt in der MAC-Adress-Tabelle des Switches registriert.\nWelche der folgenden Optionen solltest du als Nächstes prüfen, um die Ursache des Problems zu ermitteln?",
+      "optionen": {
+        "A": "Überprüfen, ob die MAC-Adresse des Servers im Netzwerk doppelt vorhanden ist.",
+        "B": "Prüfen, ob die IP-Adresse des Servers mit der richtigen Subnetzmaske konfiguriert ist.",
+        "C": "Überprüfen, ob die IP-Adresse korrekt im DNS dem Hostnamen zugeordnet ist.",
+        "D": "Sicherstellen, dass der Hostname im Netzwerk eindeutig ist."
+      },
+      "antwort": "B",
+      "erklärung": "Wenn ein Server eine gültige IP-Adresse und MAC-Adress-Zuordnung hat, aber nicht erreichbar ist, liegt das Problem häufig an einer falsch konfigurierten Subnetzmaske. Eine falsche Subnetzmaske verhindert, dass der Server mit anderen Geräten im gleichen Netzwerksegment kommunizieren kann."
+    },
+    "en": {
+      "question": "You are evaluating the network configuration of a newly installed server that is not accessible by other devices on the network. Upon inspection, you find the following configuration details:\nThe server has a properly configured hostname.\nThe server has a valid IP address within the network's range.\nThe server's MAC address is correctly registered in the switch's MAC address table.\nWhich of the following should you evaluate next to determine the root cause of the issue?",
+      "options": {
+        "A": "Determine if the server's MAC address is duplicated on the network.",
+        "B": "Check if the server's IP address is configured with the correct subnet mask.",
+        "C": "Evaluate if the IP address is correctly mapped to the hostname in the DNS.",
+        "D": "Verify if the hostname is unique on the network."
+      },
+      "answer": "B",
+      "explanation": "When the server has a valid IP address and MAC registration but is still unreachable, the next step is to check the subnet mask configuration. An incorrect subnet mask can prevent communication with other devices in the same network segment."
+    }
+  },
+  {
+    "id": 186,
+    "de": {
+      "frage": "Ein Administrator behebt einen Fehler in einer systemd-Unit-Datei.\nWas ist die wahrscheinlichste Ursache des Problems?",
+      "optionen": {
+        "A": "Der systemd-Manager unterstützt keine Abhängigkeitsverwaltung zwischen Units, was zu einem Fehler führt.",
+        "B": "Der Abschnitt [Install] in der Unit-Datei fehlt, wodurch die Unit nicht gestartet werden kann.",
+        "C": "Der Administrator hat eine Unit-Datei in /lib/systemd/system bearbeitet, aber das System verwendet weiterhin die Standardkonfiguration.",
+        "D": "Ein Tippfehler in der Unit-Datei führte dazu, dass systemd die Konfiguration nicht richtig einlesen konnte."
+      },
+      "antwort": "D",
+      "erklärung": "Ein häufiges Problem bei systemd-Unit-Dateien ist ein Syntax- oder Tippfehler. Schon ein kleiner Fehler in der Datei kann dazu führen, dass systemd die Unit nicht korrekt lädt oder startet. Mit dem Befehl 'systemd-analyze verify' lässt sich die Datei auf solche Fehler prüfen."
+    },
+    "en": {
+      "question": "An administrator is troubleshooting a systemd unit file failure. Which of the following is the MOST likely root cause of the issue?",
+      "options": {
+        "A": "The systemd manager does not support managing dependencies between units, leading to a failure.",
+        "B": "The [Install] section of the unit file is missing, which prevents the unit from starting.",
+        "C": "The administrator edited a unit file in /lib/systemd/system, but the system is still using the default configuration.",
+        "D": "A typographical error in the unit file caused systemd to fail to read the configuration properly."
+      },
+      "answer": "D",
+      "explanation": "A common reason for systemd unit file failures is a syntax or typographical error in the configuration file. Even a small mistake can prevent systemd from parsing or starting the unit correctly. Using the 'systemd-analyze verify' command helps detect such issues."
+    }
+  },
+  {
+    "id": 187,
+    "de": {
+      "frage": "Ein Prozess verbraucht alle CPU-Ressourcen. Welche der folgenden Maßnahmen ist der beste Weg, um das Problem zu beheben und das System am schnellsten wieder in einen funktionsfähigen Zustand zu versetzen?",
+      "optionen": {
+        "A": "Alle Prozesse beenden.",
+        "B": "Den fehlerhaften Prozess beenden.",
+        "C": "Alle Protokolle im Verzeichnis /var löschen.",
+        "D": "Das System neu starten."
+      },
+      "antwort": "B",
+      "erklärung": "Wenn ein einzelner Prozess die CPU vollständig auslastet, ist es am effektivsten, diesen Prozess gezielt zu beenden. Dadurch werden die Ressourcen sofort freigegeben, ohne dass andere Prozesse oder das gesamte System neu gestartet werden müssen."
+    },
+    "en": {
+      "question": "A process is consuming all CPU resources. Which of the following is the best way to handle this issue and return the system to an operational state the quickest?",
+      "options": {
+        "A": "Kill all processes.",
+        "B": "Kill the offending process.",
+        "C": "Clear all logs in the /var directory.",
+        "D": "Reboot the system."
+      },
+      "answer": "B",
+      "explanation": "When a single process consumes all CPU resources, the most efficient solution is to terminate that specific process. This immediately frees up CPU resources without affecting other processes or requiring a system reboot."
+    }
+  },
+  {
+    "id": 188,
+    "de": {
+      "frage": "Welcher Teil der IP-Adresskonfiguration muss angegeben werden, um eine Verbindung zu Systemen außerhalb des Subnetzes eines Knotens herzustellen?",
+      "optionen": {
+        "A": "IP-Adresse",
+        "B": "Broadcast",
+        "C": "Subnetzmaske",
+        "D": "Standard-Gateway"
+      },
+      "antwort": "D",
+      "erklärung": "Das Standard-Gateway ist die Router-Adresse, über die Pakete das lokale Subnetz verlassen. Ohne ein konfiguriertes Gateway kann ein Knoten nur mit Geräten im eigenen Subnetz kommunizieren."
+    },
+    "en": {
+      "question": "Which of the following portions of the IP address configuration must be provided to connect to systems outside of a node’s subnet?",
+      "options": {
+        "A": "IP address",
+        "B": "Broadcast",
+        "C": "Subnet mask",
+        "D": "Default Gateway"
+      },
+      "answer": "D",
+      "explanation": "The default gateway specifies the router’s address that forwards traffic destined for networks outside the local subnet. Without it, the system can only communicate with devices within its own subnet."
+    }
+  },
+  {
+    "id": 189,
+    "de": {
+      "frage": "Du arbeitest im Helpdesk. Ein Benutzer ruft an, weil er eine Datei in einem freigegebenen Verzeichnis nicht öffnen kann, obwohl die ACLs für das Verzeichnis korrekt konfiguriert zu sein scheinen. Was solltest du als Nächstes überprüfen, wenn du mit der Fehlersuche beginnst?",
+      "optionen": {
+        "A": "Überprüfen, ob die Option -R beim Setzen der Berechtigungen auf das übergeordnete Verzeichnis verwendet wurde.",
+        "B": "Den Benutzer zur root-Gruppe hinzufügen, um sicherzustellen, dass er Zugriff hat.",
+        "C": "Den chmod-Befehl verwenden, um die Dateiberechtigungen auf 777 zurückzusetzen.",
+        "D": "Die ACLs aus dem Verzeichnis entfernen und sich nur auf Standardberechtigungen verlassen."
+      },
+      "antwort": "A",
+      "erklärung": "Wenn ACLs oder Berechtigungen nur auf ein bestimmtes Verzeichnis angewendet wurden, könnte der Fehler darin liegen, dass die rekursive Option (-R) nicht benutzt wurde. Dadurch könnten untergeordnete Dateien oder Unterverzeichnisse weiterhin falsche Berechtigungen haben."
+    },
+    "en": {
+      "question": "You are working the helpdesk. A user calls in because they cannot open a file in a shared directory, even though the ACLs for the directory appear to be configured correctly. As you begin troubleshooting this issue, what should you check next?",
+      "options": {
+        "A": "Verify if the -R option was used when setting permissions on the parent directory.",
+        "B": "Add the user to the root group to ensure they have access.",
+        "C": "Use the chmod command to reset the file’s permissions to 777.",
+        "D": "Remove the ACLs from the directory and rely solely on standard permissions."
+      },
+      "answer": "A",
+      "explanation": "If ACLs or permissions were applied only to the directory itself, the issue could be that the recursive (-R) option was not used. As a result, subdirectories or files may still have incorrect permissions, preventing access."
+    }
+  },
+  {
+    "id": 190,
+    "de": {
+      "frage": "Du bist Systemadministrator und behebst ein Problem auf einem Linux-Server. Ein Benutzer meldet, dass sein externes USB-Speichergerät vom System nicht erkannt wird.\nNach der Diagnose erhältst du folgende Informationen:\n\ndmesg | grep -i error zeigt:\n[ 789.123456] usb 2-1: device descriptor read/64, error -71\n\nlsmod | grep usb_storage zeigt keine Ausgabe.\n\nsudo journalctl -k | grep driver zeigt:\nkernel: usb_storage: USB Mass Storage driver initialized\n\ngrep blacklist /etc/modprobe.d/*.conf zeigt:\n/etc/modprobe.d/blacklist.conf:blacklist usb_storage\n\nWas ist anhand dieser Informationen die BESTE Vorgehensweise, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Mit dem Befehl modprobe das usb_storage-Treibermodul manuell laden.",
+        "B": "Das USB-Speichergerät austauschen, da der Fehler auf einen Hardwaredefekt hinweist.",
+        "C": "Den Eintrag 'blacklist usb_storage' in /etc/modprobe.d/blacklist.conf entfernen oder auskommentieren und das System neu starten.",
+        "D": "Die Treiberdatenbank mit dem Befehl depmod neu aufbauen, um alle Abhängigkeiten korrekt zu konfigurieren."
+      },
+      "antwort": "C",
+      "erklärung": "Der Fehler tritt auf, weil das Modul 'usb_storage' in der Blacklist-Datei deaktiviert ist. Dadurch wird es beim Booten nicht geladen, obwohl der Kernel den Treiber erkennt. Das Entfernen oder Auskommentieren des Blacklist-Eintrags und ein anschließender Neustart stellen sicher, dass das Modul automatisch geladen und das USB-Gerät erkannt wird."
+    },
+    "en": {
+      "question": "You are a system administrator troubleshooting a Linux server. A user reports that their external USB storage device is not being recognized by the system.\nAfter running diagnostics, you gather the following information:\n\ndmesg | grep -i error output:\n[ 789.123456] usb 2-1: device descriptor read/64, error -71\n\nlsmod | grep usb_storage shows no output.\n\nsudo journalctl -k | grep driver output:\nkernel: usb_storage: USB Mass Storage driver initialized\n\ngrep blacklist /etc/modprobe.d/*.conf output:\n/etc/modprobe.d/blacklist.conf:blacklist usb_storage\n\nBased on this information, what is the BEST course of action to resolve the issue?",
+      "options": {
+        "A": "Use the modprobe command to manually load the usb_storage driver module.",
+        "B": "Replace the USB storage device, as the error indicates a hardware failure.",
+        "C": "Remove or comment out the blacklist usb_storage entry in /etc/modprobe.d/blacklist.conf and reboot the system.",
+        "D": "Rebuild the driver database using the depmod command to ensure all dependencies are properly configured."
+      },
+      "answer": "C",
+      "explanation": "The issue occurs because the 'usb_storage' module is blacklisted, preventing it from being loaded at boot even though the kernel recognizes the driver. Removing or commenting out the blacklist entry and rebooting ensures the driver loads automatically and the USB storage device is detected properly."
+    }
+  },
+  {
+    "id": 191,
+    "de": {
+      "frage": "Ein Systemadministrator hat Malware auf dem Linux-Mailserver entdeckt. In welcher Phase der CompTIA-Fehlerbehebungsmethodik sollte der Techniker sicherstellen, dass nicht mehrere Systeme betroffen sind?",
+      "optionen": {
+        "A": "Die vollständige Systemfunktionalität überprüfen.",
+        "B": "Das Problem identifizieren.",
+        "C": "Einen Maßnahmenplan erstellen.",
+        "D": "Den Umfang des Problems bestimmen."
+      },
+      "antwort": "D",
+      "erklärung": "Das Feststellen, ob mehrere Systeme betroffen sind, gehört zur Bestimmung des Umfangs des Problems. Dies hilft, die Ausbreitung von Malware zu erkennen und priorisiert die nächsten Schritte im Bereinigungsprozess."
+    },
+    "en": {
+      "question": "A sysadmin has detected malware on the Linux mail server. At what stage of the CompTIA troubleshooting methodology should a technician ensure that multiple systems are not affected?",
+      "options": {
+        "A": "Verify full system functionality.",
+        "B": "Identify the problem.",
+        "C": "Establish a plan of action.",
+        "D": "Determine the scope of the problem."
+      },
+      "answer": "D",
+      "explanation": "Determining whether multiple systems are affected falls under defining the scope of the problem. This step helps understand the potential spread of malware and guides the prioritization of containment and remediation efforts."
+    }
+  },
+  {
+    "id": 192,
+    "de": {
+      "frage": "Ein Systemadministrator behebt ein Problem mit einem Linux-Server, der eine langsame Festplattenleistung aufweist. Er verwendet den Befehl iostat, um Informationen über die Speichergeräte zu sammeln.\nNach dem Ausführen des Befehls mit der Option -d stellt er fest, dass eines der Laufwerke deutlich niedrigere 'kB_wrtn/s'-Werte (geschriebene Blöcke pro Sekunde) aufweist als die anderen.\nWas sollte der Administrator als Nächstes tun, um das Problem zu beheben?",
+      "optionen": {
+        "A": "Das Intervall zwischen I/O-Anfragen mit dem iostat-Befehl erhöhen, um die Last auf dem Laufwerk zu verringern.",
+        "B": "Den ioping-Befehl verwenden, um die Latenz des Laufwerks zu testen und sie mit der erwarteten Leistung zu vergleichen.",
+        "C": "Den iostat-Befehl verwenden, um den 'tps'-Wert (Transfers pro Sekunde) des Laufwerks zu überwachen und die I/O-Last bei Bedarf neu zu verteilen.",
+        "D": "Das Laufwerk sofort austauschen, da niedrige 'kB_wrtn/s'-Werte auf einen Hardwarefehler hinweisen."
+      },
+      "antwort": "C",
+      "erklärung": "Ein niedriger 'kB_wrtn/s'-Wert kann verschiedene Ursachen haben, darunter hohe Latenz oder ein temporär ausgelastetes Laufwerk. Der nächste Schritt besteht darin, mit dem 'ioping'-Befehl die Laufwerkslatenz zu testen, um festzustellen, ob das Problem mit der Reaktionszeit oder mit der I/O-Verteilung zusammenhängt, bevor Hardwaremaßnahmen ergriffen werden."
+    },
+    "en": {
+      "question": "A system administrator is troubleshooting a Linux server experiencing slow disk performance. They decide to use the iostat command to gather information about the storage devices.\nAfter running the command with the -d option, they notice one of the drives has significantly lower 'kB_wrtn/s' (blocks written per second) compared to the others.\nWhat should the administrator do next to address the issue?",
+      "options": {
+        "A": "Increase the interval between I/O requests using the iostat command to reduce the load on the drive.",
+        "B": "Use the ioping command to test the latency of the drive and compare it to the expected performance.",
+        "C": "Use the iostat command to monitor the 'tps' (transfers per second) value for the drive and redistribute the I/O load if necessary.",
+        "D": "Replace the drive immediately, as low 'kB_wrtn/s' indicates a hardware failure."
+      },
+      "answer": "C",
+      "explanation": "A lower 'kB_wrtn/s' metric can indicate latency issues or uneven I/O load distribution. The next step is to use the 'ioping' command to measure the drive’s latency and compare it to expected performance levels before considering hardware replacement or configuration adjustments."
+    }
+  },
+  {
+    "id": 193,
+    "de": {
+      "frage": "Welches der folgenden Symptome weist am wahrscheinlichsten auf Speicherleistungsprobleme in einem System mit hoher Ein-/Ausgabe-Last und Latenzproblemen hin?",
+      "optionen": {
+        "A": "Häufige Anwendungsabstürze, verursacht durch Softwarefehler.",
+        "B": "Hohe Ein-/Ausgabe-Wartezeiten und Datenbeschädigung.",
+        "C": "Erhöhte CPU-Auslastung aufgrund intensiver Verarbeitungsvorgänge.",
+        "D": "Netzwerküberlastung durch übermäßigen Datenverkehr."
+      },
+      "antwort": "B",
+      "erklärung": "Bei hoher I/O-Last und Latenzproblemen zeigen Systeme typischerweise lange I/O-Wartezeiten, was bedeutet, dass Prozesse auf den Abschluss langsamer Speicheroperationen warten müssen. In extremen Fällen kann dies zu Datenverlust oder Datenbeschädigung führen, wenn Schreibvorgänge unvollständig bleiben."
+    },
+    "en": {
+      "question": "Which of the following is the MOST likely symptom of storage performance problems in a system experiencing high input/output workloads and latency issues?",
+      "options": {
+        "A": "Frequent application crashes caused by software bugs.",
+        "B": "High input/output wait times and data corruption.",
+        "C": "Increased CPU utilization due to intensive processing tasks.",
+        "D": "Network bandwidth saturation due to excessive traffic."
+      },
+      "answer": "B",
+      "explanation": "Systems under heavy I/O load and latency typically show increased I/O wait times as processes stall waiting for slow storage operations to complete. In severe cases, incomplete or delayed writes can also result in data corruption."
+    }
+  },
+  {
+    "id": 194,
+    "de": {
+      "frage": "Ein Dateiserver des Unternehmens weist aufgrund hoher Lese-/Schreib-Lasten eine verringerte Leistung auf. Benutzer melden langsame Dateizugriffszeiten, und das IT-Team hat festgestellt, dass die aktuellen Festplatten (HDDs) die Nachfrage nicht mehr bewältigen können.\nWelche der folgenden Maßnahmen ist die BESTE Lösung, um das Speicherleistungsproblem in diesem Szenario zu beheben?",
+      "optionen": {
+        "A": "Festplattenverschlüsselung deaktivieren, um die Leistung zu verbessern.",
+        "B": "Die CPU-Leistung des Servers erhöhen.",
+        "C": "Die Netzwerkbandbreite des Servers erhöhen.",
+        "D": "Die Festplatten durch Solid-State-Laufwerke (SSDs) ersetzen."
+      },
+      "antwort": "D",
+      "erklärung": "Langsame Dateizugriffszeiten bei hoher I/O-Last deuten auf ein Speicherengpassproblem hin. Der Austausch herkömmlicher Festplatten (HDDs) durch Solid-State-Laufwerke (SSDs) ist die effektivste Lösung, da SSDs deutlich schnellere Lese- und Schreibgeschwindigkeiten bieten und Latenzzeiten erheblich reduzieren."
+    },
+    "en": {
+      "question": "A company's file server is experiencing degraded performance due to high read/write workloads. Users are reporting slow file access times, and the IT team has identified that the current hard disk drives (HDDs) are struggling to keep up with the demand.\nWhich of the following is the BEST solution to resolve the storage performance issue in this scenario?",
+      "options": {
+        "A": "Disable disk encryption to improve performance.",
+        "B": "Increase the server's CPU processing power.",
+        "C": "Add more network bandwidth to the server.",
+        "D": "Replace the hard disk drives with solid-state drives (SSDs)."
+      },
+      "answer": "D",
+      "explanation": "Slow file access during heavy read/write workloads indicates a storage bottleneck. Replacing traditional hard drives (HDDs) with solid-state drives (SSDs) is the best solution, as SSDs provide much faster read and write speeds and dramatically lower latency."
+    }
+  },
+  {
+    "id": 195,
+    "de": {
+      "frage": "Du sollst der IP-Adresse 21.155.67.188 unter Verwendung der Standard-Subnetzmaske einem Host im Netzwerk zuweisen.\nWelche Subnetzmaske solltest du verwenden?",
+      "optionen": {
+        "A": "21.155.67.0",
+        "B": "255.255.255.0",
+        "C": "21.155.0.0",
+        "D": "21.0.0.0",
+        "E": "255.255.0.0",
+        "F": "255.0.0.0"
+      },
+      "antwort": "F",
+      "erklärung": "Die IP-Adresse 21.155.67.188 gehört zur Klasse A, da die erste Oktettzahl (21) im Bereich 1–126 liegt. Für Class-A-Adressen ist die Standard-Subnetzmaske 255.0.0.0. Daher ist 255.0.0.0 die korrekte Maske für diese IP-Adresse."
+    },
+    "en": {
+      "question": "You have been asked to assign the IP address 21.155.67.188 to a host on the network using the default subnet mask. Which mask should you use?",
+      "options": {
+        "A": "21.155.67.0",
+        "B": "255.255.255.0",
+        "C": "21.155.0.0",
+        "D": "21.0.0.0",
+        "E": "255.255.0.0",
+        "F": "255.0.0.0"
+      },
+      "answer": "F",
+      "explanation": "The IP address 21.155.67.188 belongs to Class A, because its first octet (21) falls in the range 1–126. The default subnet mask for Class A networks is 255.0.0.0, making it the correct mask for this address."
+    }
+  },
+  {
+    "id": 196,
+    "de": {
+      "frage": "Welches der folgenden Dokumente legt die Messkriterien fest, nach denen die Servicebereitstellung bewertet wird?",
+      "optionen": {
+        "A": "NDA",
+        "B": "SLA",
+        "C": "BPA",
+        "D": "RMF"
+      },
+      "antwort": "B",
+      "erklärung": "Ein Service Level Agreement (SLA) definiert die vereinbarten Leistungskennzahlen (KPIs) für einen Dienst, wie Verfügbarkeit, Antwortzeiten und Support-Level. Es wird zwischen Dienstanbieter und Kunde geschlossen, um messbare Servicequalität sicherzustellen."
+    },
+    "en": {
+      "question": "Which of the following documents specifies the metrics by which service delivery is measured?",
+      "options": {
+        "A": "NDA",
+        "B": "SLA",
+        "C": "BPA",
+        "D": "RMF"
+      },
+      "answer": "B",
+      "explanation": "A Service Level Agreement (SLA) defines the measurable performance metrics for service delivery, such as uptime, response time, and support levels. It serves as a formal contract between the service provider and the customer to ensure accountability and quality."
+    }
+  },
+  {
+    "id": 197,
+    "de": {
+      "frage": "Du sollst die Sicherheits-Compliance einer Linux-Server-Umgebung prüfen, die eine Gesundheitseinrichtung unterstützt. Während deiner Analyse stellst du Folgendes fest:\n- Einige Server fehlen wichtige Sicherheitsupdates.\n- Benutzerkonten verfügen über übermäßige Berechtigungen, die über ihre Aufgaben hinausgehen.\n- Protokolle werden lokal auf jedem Server gespeichert, ohne zentrale Überwachung.\nWelche der folgenden Maßnahmen würde ALLE diese Probleme am besten beheben und die Compliance-Anforderungen der Gesundheitsbranche erfüllen?",
+      "optionen": {
+        "A": "Zentrale Protokollarchivierung implementieren, das Prinzip der minimalen Berechtigungen durchsetzen und Sicherheitsupdates automatisieren.",
+        "B": "Auf Verschlüsselung verzichten, um den Zugriff zu vereinfachen, und sich auf manuelle Protokollüberprüfungen konzentrieren.",
+        "C": "Geteilte Konten zulassen, um die Anzahl der Benutzerkonten zu reduzieren, und Sicherheitsupdates manuell anwenden.",
+        "D": "Firewalls deaktivieren, um die Serverleistung zu verbessern und die Protokollspeicherung zu vereinfachen."
+      },
+      "antwort": "A",
+      "erklärung": "Die Kombination aus zentraler Protokollierung, automatisierten Sicherheitsupdates und dem Prinzip der minimalen Berechtigungen stellt sicher, dass alle Systeme den Sicherheits- und Compliance-Anforderungen der Gesundheitsbranche (z. B. HIPAA) entsprechen. Diese Maßnahmen verbessern Transparenz, Nachvollziehbarkeit und proaktive Bedrohungserkennung."
+    },
+    "en": {
+      "question": "You are tasked with auditing the security compliance of a Linux server environment that supports a healthcare organization. During your analysis, you discover the following issues:\n- Some servers are missing critical security patches.\n- User accounts have excessive permissions beyond their job roles.\n- Logs are stored locally on each server without centralized monitoring.\nWhich of the following actions would best address ALL these issues while aligning with compliance requirements for the healthcare industry?",
+      "options": {
+        "A": "Implement centralized log archiving, enforce the principle of least privilege, and automate security updates.",
+        "B": "Avoid using encryption to simplify access and focus on manual log reviews.",
+        "C": "Allow shared accounts to reduce the number of user accounts and manually apply security patches.",
+        "D": "Disable firewalls to improve server performance and simplify log storage."
+      },
+      "answer": "A",
+      "explanation": "Implementing centralized logging, enforcing least privilege, and automating security patch management addresses the missing updates, excessive permissions, and lack of log visibility. These actions align with healthcare compliance standards such as HIPAA, improving auditability and security posture."
+    }
+  },
+  {
+    "id": 198,
+    "de": {
+      "frage": "Du behebst ein Problem auf einem Linux-Computer. Du hast im BIOS manuell eine neue Festplatte als Bootlaufwerk definiert, aber das System startet trotzdem nicht. Was ist die wahrscheinlichste Ursache für dieses Problem?",
+      "optionen": {
+        "A": "Die Datei /etc/fstab enthält falsche Einträge.",
+        "B": "Der Befehl systemctl set-default wurde nicht ausgeführt.",
+        "C": "Die GRUB2-Konfigurationsdatei ist veraltet.",
+        "D": "Die Bootreihenfolge im BIOS ist falsch."
+      },
+      "antwort": "D",
+      "erklärung": "Wenn das System nach der Konfiguration einer neuen Festplatte im BIOS nicht startet, ist die wahrscheinlichste Ursache, dass die Bootreihenfolge im BIOS falsch eingestellt ist. Das System versucht möglicherweise, von einem anderen Laufwerk zu starten, auf dem kein Bootloader installiert ist."
+    },
+    "en": {
+      "question": "You are troubleshooting a Linux computer. You manually defined a new hard drive in the BIOS for the system to boot to, but the system still fails to boot. What is the most likely cause of this issue?",
+      "options": {
+        "A": "The /etc/fstab file contains incorrect entries.",
+        "B": "The systemctl set-default command was not run.",
+        "C": "The GRUB2 configuration file is outdated.",
+        "D": "The boot device order in the BIOS is incorrect."
+      },
+      "answer": "D",
+      "explanation": "If the system fails to boot after setting a new drive in the BIOS, the most likely reason is that the boot device order is incorrect. The BIOS may still attempt to boot from another drive that does not contain a valid bootloader."
+    }
+  },
+  {
+    "id": 199,
+    "de": {
+      "frage": "Welche der folgenden Aussagen beschreibt das Konzept der Integrität in der Systemsicherheit am besten?",
+      "optionen": {
+        "A": "Sicherstellen, dass Ressourcen bei Bedarf verfügbar sind.",
+        "B": "Sicherstellen, dass die Systemleistung optimiert ist.",
+        "C": "Sicherstellen, dass Daten nicht unerwartet verändert wurden.",
+        "D": "Sicherstellen, dass nur autorisierte Benutzer auf sensible Daten zugreifen können."
+      },
+      "antwort": "C",
+      "erklärung": "Integrität bedeutet, dass Daten korrekt, vollständig und unverändert bleiben. Sie schützt vor unbefugter oder unbeabsichtigter Änderung von Informationen und ist eine der drei Hauptkomponenten des Sicherheitsdreiecks (Vertraulichkeit, Integrität, Verfügbarkeit – CIA)."
+    },
+    "en": {
+      "question": "Which of the following best defines the concept of integrity in system security?",
+      "options": {
+        "A": "Ensuring that resources are available when needed.",
+        "B": "Ensuring that system performance is optimized.",
+        "C": "Ensuring that data has not been altered unexpectedly.",
+        "D": "Ensuring that only authorized users can access sensitive data."
+      },
+      "answer": "C",
+      "explanation": "Integrity ensures that data remains accurate, consistent, and unaltered from its original state. It protects against unauthorized or unintended modifications and forms one of the three pillars of the CIA security triad: confidentiality, integrity, and availability."
+    }
+  },
+  {
+    "id": 200,
+    "de": {
+      "frage": "Ein von dir verwalteter Linux-Server hat während des Bootvorgangs einen Kernel-Panic erlebt. Die Fehlermeldung enthält folgende Details:\n\"BUG: unable to handle kernel NULL pointer dereference at 0000000000000000\"\nEin Stack-Trace zeigt eine bestimmte Funktion (some_function) und ein Kernel-Modul (ext4), das mit dem Fehler in Verbindung steht.\nDie Systemprotokolle aus dem vorherigen Bootvorgang (sudo journalctl -k -b -1) zeigen wiederholte Fehler im Zusammenhang mit dem ext4-Dateisystem.\nBasierend auf diesen Informationen: Welche der folgenden Maßnahmen solltest du ergreifen, um die Ursache des Kernel-Panics zu identifizieren und zu beheben?",
+      "optionen": {
+        "A": "Das ext4-Kernelmodul mit sudo modprobe -r ext4 entladen und blockieren, um das Laden zu verhindern.",
+        "B": "Den Kernel mit sudo apt-get install --reinstall linux-image-$(uname -r) neu installieren, um mögliche beschädigte Kernel-Dateien zu ersetzen.",
+        "C": "Das initramfs mit sudo update-initramfs -u neu erstellen, um sicherzustellen, dass das ext4-Modul korrekt eingebunden ist.",
+        "D": "Mit sudo fsck /dev/sdX das mit dem ext4-Modul verbundene Dateisystem überprüfen und reparieren."
+      },
+      "antwort": "D",
+      "erklärung": "Da der Fehler mit dem ext4-Dateisystem zusammenhängt und wiederholte Dateisystemfehler im Journal auftauchen, weist dies auf eine Dateisystembeschädigung hin. Durch Ausführen von 'sudo fsck /dev/sdX' kann die betroffene Partition überprüft und repariert werden, um die Ursache des Kernel-Panics zu beseitigen."
+    },
+    "en": {
+      "question": "A Linux server you manage has experienced a kernel panic during boot. The error message includes the following details:\n\"BUG: unable to handle kernel NULL pointer dereference at 0000000000000000\"\nA stack trace showing a specific function (some_function) and a kernel module (ext4) linked to the error.\nThe system logs from the previous boot (sudo journalctl -k -b -1) indicate repeated errors related to the ext4 file system.\nBased on the information provided, which of the following steps should you take to identify and resolve the root cause of the kernel panic?",
+      "options": {
+        "A": "Unload the ext4 kernel module using sudo modprobe -r ext4 and blocklist it to prevent it from loading.",
+        "B": "Reinstall the kernel using sudo apt-get install --reinstall linux-image-$(uname -r) to replace potentially corrupted kernel files.",
+        "C": "Rebuild the initramfs using sudo update-initramfs -u to ensure the ext4 module is properly included.",
+        "D": "Run sudo fsck /dev/sdX to check and repair the file system associated with the ext4 module."
+      },
+      "answer": "D",
+      "explanation": "Because the error is tied to the ext4 file system and logs show repeated ext4-related issues, the most likely cause is file system corruption. Running 'sudo fsck /dev/sdX' checks and repairs the affected partition, resolving inconsistencies that may trigger the kernel panic."
+    }
   }
-}
 ]
