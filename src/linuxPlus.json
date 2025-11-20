@@ -8000,26 +8000,26 @@
   {
     "id": 316,
     "de": {
-      "frage": "Nach der Verbindung zu einem Remote-Host über SSH versucht ein Administrator, eine Anwendung auszuführen, erhält aber folgende Fehlermeldung:\n``````\nWas sollte der Administrator tun, um diesen Fehler zu beheben?",
+      "frage": "Nach der Verbindung mit einem Remote-Host über SSH versucht ein Administrator, eine Anwendung auszuführen, erhält jedoch folgenden Fehler:\n\nError: cannot open display:\n\nWelche der folgenden Maßnahmen sollte der Administrator ergreifen, um diesen Fehler zu beheben?",
       "optionen": {
-        "A": "Die SSH-Sitzung trennen und mit dem Befehl 'ssh -X' erneut verbinden",
+        "A": "Die SSH-Sitzung trennen und mit dem Befehl ssh -X erneut verbinden",
         "B": "Optionen X11 zur Datei /home/admin/.ssh/authorized_keys hinzufügen",
         "C": "Port 6000 auf der Workstation öffnen und den firewalld-Dienst neu starten",
         "D": "X11-Weiterleitung in /etc/ssh/ssh_config aktivieren und den Server neu starten"
       },
-      "antwort": "D",
-      "erklärung": "Der Fehler zeigt an, dass die X11-Weiterleitung nicht aktiviert ist. Die X11-Weiterleitung ermöglicht die Anzeige grafischer Anwendungen auf einem Remote-System über eine SSH-Verbindung. Die Aktivierung der X11-Weiterleitung in /etc/ssh/ssh_config und der Neustart des SSH-Dienstes stellen sicher, dass die erforderliche Konfiguration angewendet wird, sodass der Administrator grafische Anwendungen remote öffnen kann."
+      "antwort": "A",
+      "erklärung": "Der Fehler 'cannot open display' deutet darauf hin, dass keine X11-Weiterleitung aktiv ist. Der Parameter '-X' beim ssh-Befehl aktiviert diese Weiterleitung, sodass grafische Anwendungen vom Remote-Host auf dem lokalen Bildschirm angezeigt werden können."
     },
     "en": {
-      "question": "After connecting to a remote host via SSH, an administrator attempts to run an application but receives the following error:\n``````\nWhich of the following should the administrator do to resolve this error?",
+      "question": "After connecting to a remote host via SSH, an administrator attempts to run an application but receives the following error:\n\nError: cannot open display:\n\nWhich of the following should the administrator do to resolve this error?",
       "options": {
         "A": "Disconnect from the SSH session and reconnect using the ssh -X command",
         "B": "Add Options X11 to the /home/admin/.ssh/authorized_keys file",
         "C": "Open port 6000 on the workstation and restart the firewalld service",
         "D": "Enable X11 forwarding in /etc/ssh/ssh_config and restart the server"
       },
-      "answer": "D",
-      "explanation": "The error indicates that X11 forwarding is not enabled. X11 forwarding allows graphical applications to be displayed on a remote system over an SSH connection. Enabling X11 forwarding in /etc/ssh/ssh_config and restarting the SSH service ensures that the necessary configuration is applied, allowing the administrator to open graphical applications remotely."
+      "answer": "A",
+      "explanation": "The 'cannot open display' error indicates that X11 forwarding is not active. The '-X' flag enables X11 forwarding in SSH, allowing graphical applications to display on the local machine."
     }
   },
   {
@@ -8156,15 +8156,15 @@
   {
     "id": 322,
     "de": {
-      "frage": "Ein Linux-Administrator muss Port 8000 auf einem entfernten Server auf Port 8000 auf einem lokalen Server weiterleiten. Welchen der folgenden Befehle sollte der Administrator auf dem lokalen Server ausführen, um dieses Ziel zu erreichen?",
+      "frage": "Ein Linux-Administrator muss Port 8000 auf einem Remote-Server an Port 8000 auf einem lokalen Server weiterleiten. Welchen der folgenden Befehle sollte der Administrator auf dem lokalen Server ausführen, um dieses Ziel zu erreichen?",
       "optionen": {
         "A": "firewall-cmd --add-forward-port=port=8000=tcp=8000=remote",
         "B": "iptables -A FORWARD -m state -p tcp -d remote --dport 9000 -j accept",
         "C": "ssh -R 8000:localhost:9000 remote",
         "D": "socat TCP4-LISTEN:8000,fork TCP4:remote:8000"
       },
-      "antwort": "C",
-      "erklärung": "Der Befehl ssh -R richtet eine umgekehrte Portweiterleitung ein, die es ermöglicht, Verbindungen vom entfernten Server an die lokale Maschine weiterzuleiten. In diesem Fall leitet 'ssh -R 8000:localhost:9000 remote' den Verkehr auf Port 8000 des entfernten Servers an Port 9000 der lokalen Maschine weiter."
+      "antwort": "D",
+      "erklärung": "Der Befehl 'socat' ist ein vielseitiges Werkzeug für bidirektionale Datentransfers. Die Option 'TCP4-LISTEN:8000,fork' öffnet Port 8000 auf dem lokalen Rechner und wartet auf Verbindungen. 'TCP4:remote:8000' leitet den Verkehr dann an Port 8000 des Remote-Servers weiter. Die anderen Optionen sind entweder syntaktisch inkorrekt oder verwenden andere Mechanismen (wie SSH Reverse Tunneling), die hier nicht genau der Anforderung entsprechen."
     },
     "en": {
       "question": "A Linux administrator needs to forward port 8000 on a remote server to port 8000 on a local server. Which of the following commands should the administrator run on the local server to achieve this goal?",
@@ -8174,8 +8174,8 @@
         "C": "ssh -R 8000:localhost:9000 remote",
         "D": "socat TCP4-LISTEN:8000,fork TCP4:remote:8000"
       },
-      "answer": "C",
-      "explanation": "The ssh -R command sets up reverse port forwarding, which allows connections from the remote server to be forwarded to the local machine. In this case, ssh -R 8000:localhost:9000 remote will forward traffic on port 8000 on the remote server to port 9000 on the local machine."
+      "answer": "D",
+      "explanation": "The 'socat' command is a multipurpose relay tool. 'TCP4-LISTEN:8000,fork' sets up a listener on the local port 8000 that handles multiple connections (fork), and 'TCP4:remote:8000' forwards that traffic to port 8000 on the remote host. This effectively creates the requested port forwarding."
     }
   },
   {
@@ -8570,26 +8570,26 @@
   {
     "id": 338,
     "de": {
-      "frage": "Ein Systemadministrator erstellt neue Benutzerkonten auf mehreren Linux-Rechnern und möchte den Prozess von einem für den Betrieb verwendeten Linux-System aus automatisieren. In diesem Betriebssystem befindet sich die Liste der Server in der Datei `/home/user/serverslist` und die Liste der Benutzerkonten in der Datei `/home/user/userslist`. Welches der folgenden Skripte hilft, diese Aufgabe zu erledigen?",
+      "frage": "Ein Systemadministrator erstellt neue Benutzerkonten auf mehreren Linux-Maschinen und möchte den Prozess von einem für den Betrieb genutzten Linux-System aus automatisieren. Auf diesem System befindet sich die Liste der Server in der Datei /home/user/serverslist und die Liste der Benutzerkonten in der Datei /home/user/userslist. Welches der folgenden Skripte hilft dabei, diese Aufgabe zu erfüllen?",
       "optionen": {
         "A": "bashfor server in $(cat /home/user/serverslist) do for user in $(cat /home/user/userslist) do sudo useradd $user done done",
         "B": "bashfor server in $(cat /home/user/serverslist) do ssh -i user@$server \"for user in $(cat /home/user/userslist) do sudo useradd $user done; exit\" done",
-        "C": "bashfor server in $(cat /home/user/serverslist) do scp /home/user/userslist user@$server:/tmp ssh -i user@$server \"for user in $(cat /tmp/userslist) do sudo useradd $user done; exit\" done",
+        "C": "for server in $(cat /home/user/serverslist) do scp /home/user/userslist user@$server:/tmp ssh -i user@$server \"for user in $(cat /tmp/userslist) do sudo useradd $user done; exit\" done",
         "D": "bashssh user@$(cat /home/user/serverslist) \"sudo useradd $(cat /home/user/userslist); exit\""
       },
-      "antwort": "B",
-      "erklärung": "Das Skript in Option B führt die Aufgabe aus, indem es sich per SSH in jeden in 'serverslist' aufgeführten Server einloggt und dann jeden in 'userslist' aufgeführten Benutzer hinzufügt. Dies ist eine effektive Methode, um Benutzerkonten remote zu erstellen, ohne sich manuell bei jedem Server anzumelden. Der ssh-Befehl ermöglicht die Ausführung der useradd-Befehle auf den entfernten Rechnern."
+      "antwort": "C",
+      "erklärung": "Option C ist die einzig funktionierende Lösung. Zuerst iteriert sie durch die Serverliste. Da die Datei 'userslist' auf dem Remote-Server benötigt wird, um dort verarbeitet zu werden, kopiert der Befehl 'scp' diese Datei zunächst auf den Remote-Host (nach /tmp). Anschließend verbindet sich 'ssh' mit dem Remote-Server und führt dort eine Schleife über die nun lokale '/tmp/userslist' aus, um die Benutzer anzulegen. Option A führt die Befehle nur lokal aus, Option B versucht auf eine lokale Datei zuzugreifen, während sie sich auf dem Remote-Server befindet (was fehlschlägt), und Option D hat eine syntaktisch falsche Struktur."
     },
     "en": {
       "question": "A systems administrator is creating new user accounts on several Linux machines and wants to automate the process from a Linux system used for operations. In this operations system, the list of servers is located in the /home/user/serverslist file and the list of user accounts is located in the /home/user/userslist file. Which of the following scripts will help accomplish this task?",
       "options": {
         "A": "bashfor server in $(cat /home/user/serverslist) do for user in $(cat /home/user/userslist) do sudo useradd $user done done",
         "B": "bashfor server in $(cat /home/user/serverslist) do ssh -i user@$server \"for user in $(cat /home/user/userslist) do sudo useradd $user done; exit\" done",
-        "C": "bashfor server in $(cat /home/user/serverslist) do scp /home/user/userslist user@$server:/tmp ssh -i user@$server \"for user in $(cat /tmp/userslist) do sudo useradd $user done; exit\" done",
+        "C": "for server in $(cat /home/user/serverslist) do scp /home/user/userslist user@$server:/tmp ssh -i user@$server \"for user in $(cat /tmp/userslist) do sudo useradd $user done; exit\" done",
         "D": "bashssh user@$(cat /home/user/serverslist) \"sudo useradd $(cat /home/user/userslist); exit\""
       },
-      "answer": "B",
-      "explanation": "The script in option B performs the task by SSH-ing into each server listed in serverslist and then adding each user listed in userslist. This is an effective way to remotely create user accounts without manually logging into each server. The ssh command allows the execution of the useradd commands on the remote machines."
+      "answer": "C",
+      "explanation": "Option C is the only viable solution. It iterates through the list of servers, and critically, it uses 'scp' to copy the 'userslist' file to the remote server's /tmp directory first. Then, it uses 'ssh' to execute a loop on the remote server that reads from that now-local '/tmp/userslist' to create the users. Option A only runs commands locally. Option B fails because it tries to read a file path that exists on the local operations machine while executing inside the remote SSH session. Option D has invalid syntax."
     }
   },
   {
@@ -8749,26 +8749,26 @@
   {
     "id": 346,
     "de": {
-      "frage": "Ein Diagnosetool meldet ein \"Host scheint ausgefallen\" Ereignis für einen Server mit der IP-Adresse 192.168.47.44. Welchen der folgenden Befehle sollte der Administrator verwenden, um das Ausfallereignis des Hosts zu bestätigen?",
+      "frage": "Ein Diagnosetool meldet ein 'host seems down'-Ereignis für einen Server mit der IP-Adresse 192.168.47.44. Welchen der folgenden Befehle sollte der Administrator verwenden, um das Ereignis zu bestätigen?",
       "optionen": {
         "A": "nmap 192.168.47.0/32",
         "B": "netcat 192.168.47.44",
         "C": "nmap 192.168.47.44 -Pn",
         "D": "ping -c 1 192.168.47.44"
       },
-      "antwort": "D",
-      "erklärung": "Der Befehl 'ping -c 1 192.168.47.44' sendet eine ICMP-Echo-Anfrage an den angegebenen Host, um seine Verfügbarkeit zu überprüfen. Wenn der Host ausgefallen ist, gibt es keine Antwort. Dies ist der schnellste Weg, um zu bestätigen, ob ein Host erreichbar ist. 'nmap -Pn' kann ebenfalls verwendet werden, um den Status eines Hosts zu überprüfen, aber 'ping' ist schneller und ressourcenschonender."
+      "antwort": "C",
+      "erklärung": "Wenn ein Host als 'down' gemeldet wird, blockiert er möglicherweise ICMP-Ping-Anfragen, was dazu führt, dass normale Scans ihn ignorieren. Der Befehl 'nmap -Pn' weist nmap an, die Ping-Erkennung (Host Discovery) zu überspringen und so zu tun, als ob der Host online wäre. Dies ermöglicht es dem Administrator zu prüfen, ob Ports offen sind, selbst wenn der Host nicht auf Pings reagiert, und somit genauer zu bestimmen, ob der Host wirklich offline ist oder nur ICMP blockiert."
     },
     "en": {
-      "question": "A diagnostic tool reports a \"host seems down\" event for a server with an IP address of 192.168.47.44. Which of the following commands should the administrator use to confirm the host down event?",
+      "question": "A diagnostic tool reports a 'host seems down' event for a server with an IP address of 192.168.47.44. Which of the following commands should the administrator use to confirm the host down event?",
       "options": {
         "A": "nmap 192.168.47.0/32",
         "B": "netcat 192.168.47.44",
         "C": "nmap 192.168.47.44 -Pn",
         "D": "ping -c 1 192.168.47.44"
       },
-      "answer": "D",
-      "explanation": "The ping -c 1 192.168.47.44 command sends one ICMP echo request to the specified host to check its availability. If the host is down, there will be no response. This is the quickest way to confirm if a host is reachable. nmap -Pn can also be used to check a host status, but ping is faster and lighter."
+      "answer": "C",
+      "explanation": "If a host is reported as down, it might simply be blocking ICMP ping requests. The 'nmap -Pn' command instructs nmap to skip the host discovery (ping) phase and treat the host as if it were online. This allows the administrator to scan for open ports even if the server ignores pings, helping to confirm if the host is truly down or just firewalled against ICMP."
     }
   },
   {
@@ -9051,32 +9051,32 @@
   {
     "id": 358,
     "de": {
-      "frage": "Ein Linux-Administrator untersucht, warum ein systemd-Timer nicht jede Nacht um Mitternacht läuft. Der Administrator sieht die folgende Unit-Datei:\n[Unit]\nDescription=Execute backup every day at midnight\n[Timer]\nOnCalendar=--01 00:00:00\nUnit=backup.service\nRandomizedDelaySec=10800\n[Install]\nWantedBy=multi-user.target\nWelche der folgenden Änderungen sollte der Administrator in der Unit-Datei vornehmen? (Wählen Sie zwei).",
+      "frage": "Ein Linux-Administrator untersucht, warum ein systemd-Timer nicht wie geplant jede Nacht um Mitternacht ausgeführt wird. Der Administrator sieht folgende Unit-Datei:\n\n[Unit]\nDescription=Execute backup every day at midnight\n[Timer]\nOnCalendar=*-*-01 00:00:00\nUnit=backup.service\nRandomizedDelaySec=10800\n[Install]\nWantedBy=multi-user.target\n\nWelche der folgenden Änderungen sollte der Administrator in der Unit-Datei vornehmen? (Wählen Sie zwei).",
       "optionen": {
-        "A": "Remove RandomizedDelaySec=10800.",
-        "B": "Add WakeSystem=Midnight.",
-        "C": "Change OnCalendar to 00:00:00.",
-        "D": "Add OnCalendar=--* daily.",
-        "E": "Add AccuracySec=1.",
-        "F": "Remove OnCalendar=--01 00:00:00."
+        "A": "RandomizedDelaySec=10800 entfernen.",
+        "B": "WakeSystem=Midnight hinzufügen.",
+        "C": "OnCalendar auf 00:00:00 ändern.",
+        "D": "OnCalendar=*-*-* daily hinzufügen.",
+        "E": "AccuracySec=1 hinzufügen.",
+        "F": "OnCalendar=*-*-01 00:00:00 entfernen."
       },
-      "antwort": "A",
+      "antwort": "D, F",
       "image": "358.png",
-      "erklärung": "Der Parameter 'RandomizedDelaySec' verzögert den Timer um eine zufällige Zeit innerhalb der angegebenen Sekunden, was in diesem Fall bis zu 3 Stunden betragen kann. Das Entfernen stellt sicher, dass der Timer genau um Mitternacht auslöst. Zusätzlich plant die Verwendung von 'OnCalendar=--* daily' den Timer korrekt, um jeden Tag um Mitternacht zu laufen."
+      "erklärung": "Die aktuelle Konfiguration 'OnCalendar=*-*-01 00:00:00' führt den Timer nur am ersten Tag jedes Monats aus, nicht täglich. Um dies zu korrigieren, muss dieser falsche Eintrag entfernt werden (Option F) und durch einen Eintrag ersetzt werden, der täglich läuft, wie 'OnCalendar=daily' oder 'OnCalendar=*-*-* 00:00:00' (Option D). Hinweis: In der Systemd-Syntax steht '--01' oft abgekürzt für '*-*-01'."
     },
     "en": {
-      "question": "A Linux administrator is investigating the reason a systemd timer is not running every night at midnight. The administrator sees the following unit file:\n[Unit]\nDescription=Execute backup every day at midnight\n[Timer]\nOnCalendar=--01 00:00:00\nUnit=backup.service\nRandomizedDelaySec=10800\n[Install]\nWantedBy=multi-user.target\nWhich of the following modifications should the administrator make in the unit file? (Select two).",
+      "question": "A Linux administrator is investigating the reason a systemd timer is not running every night at midnight. The administrator sees the following unit file:\n\n[Unit]\nDescription=Execute backup every day at midnight\n[Timer]\nOnCalendar=*-*-01 00:00:00\nUnit=backup.service\nRandomizedDelaySec=10800\n[Install]\nWantedBy=multi-user.target\n\nWhich of the following modifications should the administrator make in the unit file? (Select two).",
       "options": {
         "A": "Remove RandomizedDelaySec=10800.",
         "B": "Add WakeSystem=Midnight.",
         "C": "Change OnCalendar to 00:00:00.",
-        "D": "Add OnCalendar=--* daily.",
+        "D": "Add OnCalendar=*-*-* daily.",
         "E": "Add AccuracySec=1.",
-        "F": "Remove OnCalendar=--01 00:00:00."
+        "F": "Remove OnCalendar=*-*-01 00:00:00."
       },
-      "answer": "A",
+      "answer": "D, F",
       "image": "358.png",
-      "explanation": "The RandomizedDelaySec parameter delays the timer by a random time within the specified seconds, which can be up to 3 hours in this case. Removing it will ensure the timer triggers at exactly midnight. Additionally, using OnCalendar=--* daily correctly schedules the timer to run every day at midnight."
+      "explanation": "The current configuration 'OnCalendar=*-*-01 00:00:00' (often represented as '--01') schedules the task only for the 1st day of every month, not every night. To fix this, the incorrect line must be removed (Option F) and replaced with a correct daily schedule, such as 'OnCalendar=daily' or 'OnCalendar=*-*-* 00:00:00' (Option D)."
     }
   },
   {
@@ -9288,15 +9288,15 @@
   {
     "id": 367,
     "de": {
-      "frage": "Ein Linux-Systemadministrator muss zusätzlichen Code zu einem Code hinzufügen, der sich in einem Repository befindet, ohne den ursprünglichen Code zu ändern. Nach Abschluss wird der zusätzliche Code in den Haupt-Branch gemerged. Welchen der folgenden Befehle sollte der Administrator zuerst verwenden?",
+      "frage": "Ein Linux-Systemadministrator muss zusätzlichen Code zu einem Code in einem Repository hinzufügen, ohne den ursprünglichen Code zu verändern. Nach Abschluss soll der zusätzliche Code in den Hauptbranch (Main Branch) zusammengeführt werden. Welchen der folgenden Befehle sollte der Administrator zuerst verwenden?",
       "optionen": {
         "A": "git push",
         "B": "git rebase",
         "C": "git tag",
         "D": "git clone"
       },
-      "antwort": "B",
-      "erklärung": "Die Frage ist mehrdeutig, aber `git rebase` wird verwendet, um Änderungen aus einem Branch in einen anderen zu integrieren. Es kann verwendet werden, um aktuelle Änderungen aus dem Haupt-Branch in einen Feature-Branch zu übernehmen, bevor dieser gemerged wird, um eine lineare Projekthistorie beizubehalten."
+      "antwort": "D",
+      "erklärung": "Der erste Schritt, um an einem Git-Repository zu arbeiten, besteht darin, eine lokale Kopie davon zu erstellen. Der Befehl 'git clone' lädt das Repository auf den lokalen Rechner herunter. Erst danach kann der Administrator einen neuen Branch erstellen, Änderungen vornehmen und diese später mergen. 'git push' lädt Änderungen hoch, 'git rebase' strukturiert die History um und 'git tag' markiert spezifische Punkte in der History – all dies setzt voraus, dass das Repository bereits lokal vorhanden ist."
     },
     "en": {
       "question": "A Linux systems administrator needs to add additional code to code that resides within a repository without changing the original code. Once completed, the additional code will be merged into the main branch. Which of the following commands should the administrator use first?",
@@ -9306,8 +9306,8 @@
         "C": "git tag",
         "D": "git clone"
       },
-      "answer": "B",
-      "explanation": "The question is ambiguous, but `git rebase` is used to integrate changes from one branch onto another. It can be used to incorporate recent changes from the main branch into a feature branch before merging, helping to maintain a linear project history."
+      "answer": "D",
+      "explanation": "The first step to working on a git repository is to create a local copy of it. The 'git clone' command downloads the repository to the local machine. Only then can the administrator create a new branch, make changes, and eventually merge them. 'git push' uploads changes, 'git rebase' rewrites history, and 'git tag' marks specific points in history—all of which require the repository to already be present locally."
     }
   },
   {
@@ -9646,15 +9646,15 @@
   {
     "id": 381,
     "de": {
-      "frage": "Ein Linux-Administrator muss die Berechtigungen auf einem Server festlegen. Der Administrator möchte, dass die Dateien innerhalb des Verzeichnisses Lese- und Schreibberechtigungen haben und das Verzeichnis Lese-, Schreib- und Ausführungsberechtigungen hat. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+      "frage": "Ein Linux-Administrator muss die Berechtigungen auf einem Server festlegen. Der Administrator möchte, dass die Dateien im Verzeichnis Lese- und Schreibrechte erhalten und das Verzeichnis selbst Lese-, Schreib- und Ausführungsrechte erhält. Welchen der folgenden Befehle sollte der Administrator verwenden?",
       "optionen": {
         "A": "chmod 0022",
         "B": "chown 0027",
         "C": "setfacl 0007",
         "D": "umask 0077"
       },
-      "antwort": "C",
-      "erklärung": "setfacl (Set File Access Control Lists) wird verwendet, um detailliertere Berechtigungen für Dateien und Verzeichnisse zu definieren. Die Frage impliziert die Notwendigkeit, Standardberechtigungen für neu erstellte Dateien festzulegen, was eine Funktion von ACLs ist. chmod 0022 setzt spezifische Berechtigungen für Dateien, beeinflusst aber nicht neu erstellte Dateien. chown 0027 ist falsch, da chown zum Ändern des Dateibesitzers und nicht der Berechtigungen verwendet wird. umask 0077 schränkt die Berechtigungen zu stark ein und macht Dateien privat anstatt nur les- und schreibbar."
+      "antwort": "D",
+      "erklärung": "Der Befehl 'umask' steuert die Standardberechtigungen für neu erstellte Dateien und Verzeichnisse. Ein umask-Wert von 0077 subtrahiert Rechte von den Systemstandards (üblicherweise 666 für Dateien und 777 für Verzeichnisse). Das Ergebnis sind Berechtigungen von 600 (rw-------) für Dateien und 700 (rwx------) für Verzeichnisse. Dies gewährt dem Eigentümer die gewünschten Lese-/Schreib- bzw. Lese-/Schreib-/Ausführungsrechte und schützt die Daten vor Zugriffen durch andere."
     },
     "en": {
       "question": "A Linux administrator needs to set the permissions on a server. The administrator wants to have the files within the directory set to read-write permissions and the directory set to read-write-execute permissions. Which of the following commands should the administrator use?",
@@ -9664,8 +9664,8 @@
         "C": "setfacl 0007",
         "D": "umask 0077"
       },
-      "answer": "C",
-      "explanation": "setfacl (Set File Access Control Lists) is used to define more granular permissions for files and directories. The question implies a need to set default permissions for newly created files, which is a feature of ACLs. chmod 0022 sets specific permissions on files but does not affect newly created files. chown 0027 is incorrect because chown is used to change file ownership, not permissions. umask 0077 restricts permissions too much, making files private rather than just read/write."
+      "answer": "D",
+      "explanation": "The 'umask' command sets the default file creation mask. A umask of 0077 subtracts permissions from the system defaults (usually 666 for files and 777 for directories). The resulting permissions will be 600 (rw-------) for files and 700 (rwx------) for directories, which grants read/write and read/write/execute permissions respectively to the owner, fulfilling the requirement."
     }
   },
   {
@@ -10004,15 +10004,15 @@
   {
     "id": 395,
     "de": {
-      "frage": "Ein Linux-Ingenieur entfernt eine zuvor erstellte Firewall-Regel. Welcher der folgenden Befehle hilft dem Administrator, diese Aufgabe zu erledigen?",
+      "frage": "Ein Linux-Ingenieur entfernt eine zuvor erstellte Firewall-Regel. Welcher der folgenden Befehle hilft dem Administrator, diese Aufgabe zu erfüllen?",
       "optionen": {
         "A": "ufw delete 80/tcp",
         "B": "ufw delete deny 80/tcp",
         "C": "ufw delete 80/tcp deny",
         "D": "delete7!"
       },
-      "antwort": "B",
-      "erklärung": "Der Befehl `ufw delete` wird verwendet, um Regeln zu entfernen. Wenn die ursprüngliche Regel `ufw deny 80/tcp` lautete, muss sie mit `ufw delete deny 80/tcp` gelöscht werden. Die Aktion (allow oder deny) muss angegeben werden."
+      "antwort": "A",
+      "erklärung": "Der Befehl 'ufw delete' wird verwendet, um Firewall-Regeln zu entfernen. Hinweis: Obwohl die Antwort A laut Quelle korrekt ist, erfordert die Syntax von UFW normalerweise die Angabe der kompletten Regel (z. B. 'ufw delete allow 80/tcp' oder 'ufw delete deny 80/tcp'). Option A ist eine vereinfachte Darstellung, die oft in Prüfungsfragen verwendet wird, um das Löschen einer Regel basierend auf dem Port zu implizieren."
     },
     "en": {
       "question": "A Linux engineer is removing a previously created firewall rule. Which of the following commands will help the administrator accomplish this task?",
@@ -10022,8 +10022,8 @@
         "C": "ufw delete 80/tcp deny",
         "D": "delete7!"
       },
-      "answer": "B",
-      "explanation": "The ufw (Uncomplicated Firewall) delete command is used to remove rules. If the original rule was ufw deny 80/tcp, it must be deleted with `ufw delete deny 80/tcp`. The action (allow or deny) must be specified."
+      "answer": "A",
+      "explanation": "The 'ufw delete' command is used to remove firewall rules. Note: While answer A is marked correct in the source, standard UFW syntax typically requires specifying the action found in the original rule (e.g., 'ufw delete allow 80/tcp' or 'ufw delete deny 80/tcp'). Option A is a shorthand often seen in exam contexts to imply removing the rule associated with that port."
     }
   },
   {
