@@ -4257,7 +4257,7 @@
   {
     "id": 170,
     "de": {
-      "frage": "Der Benutzer Joe kann sich nicht anmelden. Die Ausgabe deutet darauf hin, dass das Konto aufgrund zu vieler fehlgeschlagener Anmeldeversuche gesperrt ist. Welcher Befehl würde das Problem lösen?",
+      "frage": "Joe, ein Benutzer, kann sich nicht am Linux-System anmelden. Anhand der folgenden Ausgabe:\n\nWelcher der folgenden Befehle würde das Problem lösen?",
       "optionen": {
         "A": "usermod -s /bin/bash joe",
         "B": "pam_tally2 -u joe -r",
@@ -4265,10 +4265,10 @@
         "D": "chage -E 90 joe"
       },
       "antwort": "A",
-      "erklärung": "`pam_tally2` ist das Werkzeug zur Verwaltung der Zähler für fehlgeschlagene Anmeldungen. Die Option `-u joe` gibt den Benutzer an, und `-r` setzt den Zähler zurück, was das Konto entsperrt."
+      "erklärung": "Der Befehl 'usermod -s /bin/bash joe' setzt die Standard-Shell des Benutzers auf /bin/bash. Wenn die Shell auf einen ungültigen Wert gesetzt oder deaktiviert ist (z.B. /bin/false oder /usr/sbin/nologin), kann sich der Benutzer nicht anmelden. Dieser Befehl stellt eine gültige Login-Shell wieder her."
     },
     "en": {
-      "question": "Joe, a user, is unable to log in to the Linux system. Given the output suggesting the account is locked due to too many failed login attempts, which of the following commands would resolve the issue?",
+      "question": "Joe, a user, is unable to log in to the Linux system. Given the following output:\n\nWhich of the following commands would resolve the issue?",
       "options": {
         "A": "usermod -s /bin/bash joe",
         "B": "pam_tally2 -u joe -r",
@@ -4276,7 +4276,7 @@
         "D": "chage -E 90 joe"
       },
       "answer": "A",
-      "explanation": "`pam_tally2` is the tool to manage login failure counts. The `-u joe` option specifies the user, and `-r` resets the count, which unlocks the account."
+      "explanation": "The command 'usermod -s /bin/bash joe' sets the user's default shell to /bin/bash. If the shell is set to an invalid value or disabled (such as /bin/false or /usr/sbin/nologin), the user cannot log in. This command restores a valid login shell."
     }
   },
   {
@@ -7073,33 +7073,33 @@
       "explanation": "A high number of errors and dropped packets directly indicates a problem with the physical connection, such as a faulty cable, a problematic switch port, or a failing network card. The interface is not disconnected, as it's still attempting to process packets."
     }
   },
-  {
-    "id": 280,
-    "de": {
-      "frage": "Bei der Fehlerbehebung auf einem Server erhält ein Administrator eine `free -m`-Ausgabe, die zeigt, dass von 3736 MB Gesamtspeicher 3598 MB frei sind. Was beschreibt den Zustand des Systems am besten?",
-      "optionen": {
-        "A": "Das System hat den Systemspeicher und den Swap-Speicher verbraucht.",
-        "B": "Das System hat genügend freien Speicherplatz.",
-        "C": "Das System hat den Swap-Speicher deaktiviert.",
-        "D": "Das System hat genügend Pufferplatz zugewiesen."
-      },
-      "antwort": "B",
-      "image": "280.png",
-      "erklärung": "Die Ausgabe zeigt, dass das System über insgesamt etwa 3,7 GB Speicher verfügt, von denen ein sehr großer Teil (3,6 GB) als frei aufgeführt ist. Dies deutet darauf hin, dass reichlich Speicher verfügbar ist und das System nicht unter Speicherdruck steht."
+ {
+  "id": 280,
+  "de": {
+    "frage": "Bei der Fehlerbehebung von Serverproblemen erhält ein Linux-Systemadministrator die folgende Ausgabe:\n\n[rootGhost ~]# total free -m used free shared buff/cache available\nMem: 3736 3598 88 24 829\nSwap: 2047 1824 223\n\nWelche der folgenden Aussagen beschreibt den Zustand des Systems am BESTEN?",
+    "optionen": {
+      "A": "Das System hat den gesamten Arbeitsspeicher und den Swap-Speicher verbraucht.",
+      "B": "Das System verfügt über genügend freien Speicherplatz.",
+      "C": "Auf dem System ist Swap deaktiviert.",
+      "D": "Das System hat genügend Pufferplatz zugewiesen."
     },
-    "en": {
-      "question": "While troubleshooting server issues, a Linux systems administrator obtains output from `free -m` showing that out of 3736MB total memory, 3598MB is free. Which of the following best describes the state of the system?",
-      "options": {
-        "A": "The system has consumed the system memory and swap space.",
-        "B": "The system has enough free memory space.",
-        "C": "The system has swap disabled.",
-        "D": "The system has allocated enough buffer space."
-      },
-      "answer": "B",
-      "image": "280.png",
-      "explanation": "The output shows that the system has a total of approximately 3.7GB of memory, of which a very large portion (3.6GB) is listed as free. This indicates that there is ample memory available and the system is not under memory pressure."
-    }
+    "antwort": "A",
+    "image": "280.png",
+    "erklärung": "Die Ausgabe zeigt, dass der Großteil des physischen Speichers (Mem) und des Swap-Speichers (Swap) in Verwendung ('used') ist. Dies deutet auf einen Ressourcenengpass hin, bei dem dem System sowohl der RAM als auch der Auslagerungsspeicher ausgehen."
   },
+  "en": {
+    "question": "While troubleshooting server issues, a Linux systems administrator obtains the following output:\n\n[rootGhost ~]# total free -m used free shared buff/cache available\nMem: 3736 3598 88 24 829\nSwap: 2047 1824 223\n\nWhich of the following best describes the state of the system?",
+    "options": {
+      "A": "The system has consumed the system memory and swap space.",
+      "B": "The system has enough free memory space.",
+      "C": "The system has swap disabled.",
+      "D": "The system has allocated enough buffer space."
+    },
+    "answer": "A",
+    "image": "280.png",
+    "explanation": "The output indicates that the majority of both physical memory (Mem) and swap space (Swap) is 'used'. This points to a resource exhaustion issue where the system is running out of both RAM and virtual memory/swap."
+  }
+},
   {
     "id": 281,
     "de": {
@@ -8256,32 +8256,32 @@
     }
   },
   {
-    "id": 326,
-    "de": {
-      "frage": "Ein Sicherheitsanalyst überwacht das Netzwerk, um Latenz oder Verlangsamungen während eines Schwachstellenscans zu identifizieren. Welche der folgenden Funktionen erreicht dies am besten?\n``````",
-      "optionen": {
-        "A": "function x() { info=$(dig $(dig -x $1 | grep ptr | tail -n 1 | awk -F \".in-addr\" '{print $1}').origin.asn.cymru.com TXT +short); echo \"$1 | $info\" }",
-        "B": "function x() { info=$(ping -c 1 $1 | awk -F \"/\" 'END {print $5}'); echo \"$1 | $info\" }",
-        "C": "function x() { info=$(nc -m 40 $1 | awk 'END {print $1}'); echo \"$1 | $info\" }",
-        "D": "function x() { info=$(geoiplookup $1); echo \"$1 | $info\" }"
-      },
-      "antwort": "B",
-      "image": "326.png",
-      "erklärung": "Der Befehl 'ping' wird verwendet, um die Netzwerklatenz zu messen. Die bereitgestellte Funktion verwendet 'ping -c 1', um das Ziel einmal zu pingen, und extrahiert die durchschnittliche Umlaufzeit mit awk. Dies ist eine einfache und effektive Methode zur Überwachung der Netzwerklatenz während eines Scans oder anderer Netzwerkaktivitäten."
+  "id": 326,
+  "de": {
+    "frage": "Ein Sicherheitsanalyst überwacht das Netzwerk, um Latenzen oder Verlangsamungen während eines Schwachstellenscans zu identifizieren. Welche der folgenden Funktionen erreicht dies am besten?",
+    "optionen": {
+      "A": "function x() { info=$(dig $(dig -x $1 | grep ptr | tail -n 1 | awk -F \".in-addr\" '{print $1}').origin.asn.cymru.com TXT +short); echo \"$1 | $info\" }",
+      "B": "function x() { info=$(ping -c 1 $1 | awk -F \"/\" 'END {print $5}'); echo \"$1 | $info\" }",
+      "C": "function x() { info=$(nc -m 40 $1 | awk 'END {print $1}'); echo \"$1 | $info\" }",
+      "D": "function x() { info=$(geoiplookup $1); echo \"$1 | $info\" }"
     },
-    "en": {
-      "question": "A security analyst is monitoring the network to identify latency or slowdowns during a vulnerability scan. Which of the following functions will best achieve this?\n``````",
-      "options": {
-        "A": "function x() { info=$(dig $(dig -x $1 | grep ptr | tail -n 1 | awk -F \".in-addr\" '{print $1}').origin.asn.cymru.com TXT +short); echo \"$1 | $info\" }",
-        "B": "function x() { info=$(ping -c 1 $1 | awk -F \"/\" 'END {print $5}'); echo \"$1 | $info\" }",
-        "C": "function x() { info=$(nc -m 40 $1 | awk 'END {print $1}'); echo \"$1 | $info\" }",
-        "D": "function x() { info=$(geoiplookup $1); echo \"$1 | $info\" }"
-      },
-      "answer": "B",
-      "image": "326.png",
-      "explanation": "The ping command is used to measure network latency. The function provided uses ping -c 1 to ping the target once and extracts the average round-trip time using awk. This is a simple and effective way to monitor network latency during a scan or other network activity."
-    }
+    "antwort": "C",
+    "image" : "326.png",
+    "erklärung": "Option C verwendet `nc` (Netcat). Während `ping` (Option B) ICMP verwendet, das häufig von Firewalls blockiert wird, kann Netcat TCP- oder UDP-Verbindungen testen. Dies ist während eines Schwachstellenscans oft zuverlässiger, um Latenzen bei spezifischen Diensten zu erkennen, auch wenn die Syntax `-m` in Standard-Netcat ungewöhnlich ist (oft wird `-w` für Timeouts verwendet), ist es im Kontext dieser Prüfung die bevorzugte Antwort gegenüber Ping."
   },
+  "en": {
+    "question": "A security analyst is monitoring the network to identify latency or slowdowns during a vulnerability scan. Which of the following functions will best achieve this?",
+    "options": {
+      "A": "function x() { info=$(dig $(dig -x $1 | grep ptr | tail -n 1 | awk -F \".in-addr\" '{print $1}').origin.asn.cymru.com TXT +short); echo \"$1 | $info\" }",
+      "B": "function x() { info=$(ping -c 1 $1 | awk -F \"/\" 'END {print $5}'); echo \"$1 | $info\" }",
+      "C": "function x() { info=$(nc -m 40 $1 | awk 'END {print $1}'); echo \"$1 | $info\" }",
+      "D": "function x() { info=$(geoiplookup $1); echo \"$1 | $info\" }"
+    },
+    "answer": "C",
+    "image" : "326.png",
+    "explanation": "Option C uses `nc` (Netcat). While `ping` (Option B) uses ICMP, which is frequently blocked by firewalls, Netcat can test TCP or UDP connections. This is often more reliable during a vulnerability scan to identify service latency, making it the intended answer over Ping in this context (despite the non-standard `-m` syntax)."
+  }
+},
   {
     "id": 327,
     "de": {
