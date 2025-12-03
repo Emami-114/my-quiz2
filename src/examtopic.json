@@ -1,0 +1,1360 @@
+[
+    {
+        "id": 1,
+        "de": {
+            "frage": "Ein Linux-Administrator muss den Container app-01-image erstellen und sich dann mit ihm verbinden. Welcher der folgenden Befehle erfüllt diese Aufgabe?",
+            "optionen": {
+                "A": "docker run -it app-01-image",
+                "B": "docker start -td app-01-image",
+                "C": "docker build -ic app-01-image",
+                "D": "docker exec -dc app-01-image"
+            },
+            "antwort": "A",
+            "erklärung": "Der Befehl 'docker run -it app-01-image' erstellt einen neuen Container aus dem Image und verbindet sich direkt damit. Die Option '-i' (interactive) hält STDIN offen, während '-t' ein Pseudo-TTY zuweist. Dies ermöglicht eine interaktive Shell-Sitzung im Container. 'docker start' würde nur einen existierenden Container starten, 'docker build' ist zum Erstellen von Images, und 'docker exec' führt Befehle in bereits laufenden Containern aus."
+        },
+        "en": {
+            "question": "A Linux administrator needs to create and then connect to the app-01-image container. Which of the following commands accomplishes this task?",
+            "options": {
+                "A": "docker run -it app-01-image",
+                "B": "docker start -td app-01-image",
+                "C": "docker build -ic app-01-image",
+                "D": "docker exec -dc app-01-image"
+            },
+            "answer": "A",
+            "explanation": "The command 'docker run -it app-01-image' creates a new container from the image and connects to it directly. The '-i' (interactive) option keeps STDIN open, while '-t' allocates a pseudo-TTY. This enables an interactive shell session in the container. 'docker start' would only start an existing container, 'docker build' is for creating images, and 'docker exec' runs commands in already running containers."
+        }
+    },
+    {
+        "id": 2,
+        "de": {
+            "frage": "Welche der folgenden Voraussetzungen müssen auf beiden Host-Servern übereinstimmen, um eine Live-Migration durchzuführen? (Wählen Sie zwei).",
+            "optionen": {
+                "A": "USB-Anschlüsse",
+                "B": "Netzwerkgeschwindigkeit",
+                "C": "Verfügbarer Swap",
+                "D": "CPU-Architektur",
+                "E": "Verfügbarer Speicher",
+                "F": "Festplattenspeicherpfad"
+            },
+            "antwort": "D, F",
+            "erklärung": "Für eine erfolgreiche Live-Migration müssen die CPU-Architektur (D) und der Festplattenspeicherpfad (F) auf beiden Hosts übereinstimmen. Die CPU-Architektur muss identisch sein, damit der laufende Prozessor-Status kompatibel übertragen werden kann. Der Festplattenspeicherpfad muss übereinstimmen, damit die virtuelle Maschine nach der Migration auf ihre Daten zugreifen kann. USB-Anschlüsse, Netzwerkgeschwindigkeit, Swap und Speicher können unterschiedlich sein, solange ausreichende Ressourcen vorhanden sind."
+        },
+        "en": {
+            "question": "To perform a live migration, which of the following must match on both host servers? (Choose two).",
+            "options": {
+                "A": "USB ports",
+                "B": "Network speed",
+                "C": "Available swap",
+                "D": "CPU architecture",
+                "E": "Available memory",
+                "F": "Disk storage path"
+            },
+            "answer": "D, F",
+            "explanation": "For successful live migration, the CPU architecture (D) and disk storage path (F) must match on both hosts. The CPU architecture must be identical so that the running processor state can be transferred compatibly. The disk storage path must match so the virtual machine can access its data after migration. USB ports, network speed, swap, and memory can differ as long as sufficient resources are available."
+        }
+    },
+    {
+        "id": 3,
+        "de": {
+            "frage": "Ein Linux-Systemadministrator muss den Inhalt einer Datei namens /home/dev/web.bkp in das Verzeichnis /var/www/html/ extrahieren. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "cd /var/www/html/ && gzip -c /home/dev/web.bkp | tar xf -",
+                "B": "pushd /var/www/html/ $$ cpio -idv < /home/dev/web.bkp && popd",
+                "C": "tar -c -f /home/dev/web.bkp /var/www/html/",
+                "D": "unzip -c /home/dev/web.bkp /var/www/html/"
+            },
+            "antwort": "B",
+            "erklärung": "Der korrekte Befehl zum Extrahieren des Inhalts der Datei /home/dev/web.bkp in das Verzeichnis /var/www/html/ lautet: pushd /var/www/html/ && cpio -idv < /home/dev/web.bkp && popd. Dieser Befehl wechselt mit pushd in das Zielverzeichnis, extrahiert den Inhalt der Sicherungsdatei mit cpio unter Verwendung der Optionen -idv (Dateien extrahieren, Verzeichnisstruktur beibehalten, ausführliche Ausgabe) und kehrt dann mit popd in das ursprüngliche Verzeichnis zurück. Das $$ im Befehl scheint ein Tippfehler zu sein und sollte wahrscheinlich && heißen."
+        },
+        "en": {
+            "question": "A Linux systems administrator needs to extract the contents of a file named /home/dev/web.bkp to the /var/www/html/ directory. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "cd /var/www/html/ && gzip -c /home/dev/web.bkp | tar xf -",
+                "B": "pushd /var/www/html/ $$ cpio -idv < /home/dev/web.bkp && popd",
+                "C": "tar -c -f /home/dev/web.bkp /var/www/html/",
+                "D": "unzip -c /home/dev/web.bkp /var/www/html/"
+            },
+            "answer": "B",
+            "explanation": "The correct command to extract the contents of the file /home/dev/web.bkp to the /var/www/html/ directory is: pushd /var/www/html/ && cpio -idv < /home/dev/web.bkp && popd. This command changes to the target directory using pushd, extracts the contents of the backup file using cpio with the -idv options (which extract files, preserve directory structure, and provide verbose output), and then returns to the original directory using popd. The $$ in the command appears to be a typo and should likely be && to properly chain the commands."
+        }
+    },
+    {
+        "id": 4,
+        "de": {
+            "frage": "Welche der folgenden Ansible-Komponenten enthält eine Liste von Hosts und Hostgruppen?",
+            "optionen": {
+                "A": "Fact",
+                "B": "Inventory",
+                "C": "Playbook",
+                "D": "Collection"
+            },
+            "antwort": "B",
+            "erklärung": "Das Inventory ist die Ansible-Komponente, die eine Liste von Hosts und Hostgruppen enthält. Es definiert, auf welchen Systemen Ansible arbeiten soll, und kann diese in logische Gruppen organisieren. Facts sind Systeminformationen, die Ansible sammelt. Playbooks enthalten Anweisungen für Automatisierungsaufgaben. Collections sind Pakete von Ansible-Inhalten wie Modulen und Rollen."
+        },
+        "en": {
+            "question": "Which of the following Ansible components contains a list of hosts and host groups?",
+            "options": {
+                "A": "Fact",
+                "B": "Inventory",
+                "C": "Playbook",
+                "D": "Collection"
+            },
+            "answer": "B",
+            "explanation": "The Inventory is the Ansible component that contains a list of hosts and host groups. It defines which systems Ansible should work on and can organize them into logical groups. Facts are system information that Ansible collects. Playbooks contain instructions for automation tasks. Collections are packages of Ansible content such as modules and roles."
+        }
+    },
+    {
+        "id": 5,
+        "de": {
+            "frage": "Welches der folgenden Dateisysteme enthält nicht-persistente oder flüchtige Daten?",
+            "optionen": {
+                "A": "/boot",
+                "B": "/usr",
+                "C": "/proc",
+                "D": "/var"
+            },
+            "antwort": "C",
+            "erklärung": "Das /proc-Dateisystem ist ein virtuelles Dateisystem, das nicht-persistente, flüchtige Daten enthält. Es existiert nur im RAM und stellt Informationen über laufende Prozesse und Kernel-Parameter zur Verfügung. Die Daten werden bei jedem Neustart neu generiert. /boot enthält Boot-Dateien, /usr Programmdateien und /var variable Daten - alle drei sind persistente Dateisysteme auf der Festplatte."
+        },
+        "en": {
+            "question": "Which of the following filesystems contains non-persistent or volatile data?",
+            "options": {
+                "A": "/boot",
+                "B": "/usr",
+                "C": "/proc",
+                "D": "/var"
+            },
+            "answer": "C",
+            "explanation": "The /proc filesystem is a virtual filesystem that contains non-persistent, volatile data. It exists only in RAM and provides information about running processes and kernel parameters. The data is regenerated with each reboot. /boot contains boot files, /usr contains program files, and /var contains variable data - all three are persistent filesystems on disk."
+        }
+    },
+    {
+        "id": 6,
+        "de": {
+            "frage": "Ein Administrator muss die Benutzer-ID, das Home-Verzeichnis und die zugewiesene Shell für den Benutzer 'accounting' überprüfen. Welchen der folgenden Befehle sollte der Administrator verwenden, um diese Informationen abzurufen?",
+            "optionen": {
+                "A": "qetent passwd accounting",
+                "B": "id accounting",
+                "C": "grep accounting /etc/shadow",
+                "D": "who accounting"
+            },
+            "antwort": "B",
+            "erklärung": "Der Befehl 'id accounting' zeigt die Benutzer-ID, Gruppen-IDs sowie den Anmeldenamen des Benutzers an. Für vollständige Informationen inklusive Home-Verzeichnis und Shell wäre 'getent passwd accounting' oder 'grep accounting /etc/passwd' besser geeignet. Option A enthält einen Tippfehler ('qetent' statt 'getent'). Option C durchsucht /etc/shadow (Passwort-Datei), die diese Informationen nicht enthält. 'who' zeigt nur aktuell angemeldete Benutzer."
+        },
+        "en": {
+            "question": "An administrator needs to verify the user ID, home directory, and assigned shell for the user named 'accounting.' Which of the following commands should the administrator use to retrieve this information?",
+            "options": {
+                "A": "qetent passwd accounting",
+                "B": "id accounting",
+                "C": "grep accounting /etc/shadow",
+                "D": "who accounting"
+            },
+            "answer": "B",
+            "explanation": "The command 'id accounting' displays the user ID, group IDs, and login name of the user. For complete information including home directory and shell, 'getent passwd accounting' or 'grep accounting /etc/passwd' would be more suitable. Option A contains a typo ('qetent' instead of 'getent'). Option C searches /etc/shadow (password file), which doesn't contain this information. 'who' only shows currently logged-in users."
+        }
+    },
+    {
+        "id": 7,
+        "de": {
+            "frage": "Ein Linux-Benutzer muss das neueste Debian-Image aus einem Docker-Repository herunterladen. Welcher der folgenden Befehle ermöglicht diese Aufgabe?",
+            "optionen": {
+                "A": "docker image init debian",
+                "B": "docker image pull Debian",
+                "C": "docker image import debian",
+                "D": "docker image save debian"
+            },
+            "antwort": "B",
+            "erklärung": "Der Befehl 'docker image pull Debian' lädt das neueste Debian-Image aus dem Docker-Repository (Docker Hub) herunter. 'pull' ist der Standardbefehl zum Herunterladen von Images. 'docker image init' existiert nicht als Befehl. 'docker image import' importiert lokale Tar-Archive als Images. 'docker image save' exportiert ein vorhandenes Image in eine Tar-Datei, anstatt es herunterzuladen."
+        },
+        "en": {
+            "question": "A Linux user needs to download the latest Debian image from a Docker repository. Which of the following commands makes this task possible?",
+            "options": {
+                "A": "docker image init debian",
+                "B": "docker image pull Debian",
+                "C": "docker image import debian",
+                "D": "docker image save debian"
+            },
+            "answer": "B",
+            "explanation": "The command 'docker image pull Debian' downloads the latest Debian image from the Docker repository (Docker Hub). 'pull' is the standard command for downloading images. 'docker image init' does not exist as a command. 'docker image import' imports local tar archives as images. 'docker image save' exports an existing image to a tar file instead of downloading it."
+        }
+    },
+    {
+        "id": 8,
+        "de": {
+            "frage": "In der Zeile echo \"profile-$num-$name\" eines Shell-Skripts scheint die Variable $num während der Ausführung nicht erweitert zu werden. Welche der folgenden Schreibweisen stellt sicher, dass der Wert erweitert wird?",
+            "optionen": {
+                "A": "echo \"profile-$(num)-$name\"",
+                "B": "echo 'profile-$num-$name'",
+                "C": "echo \"profile-‘Snum‘-$name\"",
+                "D": "echo \"profile-${num}-$name\""
+            },
+            "antwort": "D",
+            "erklärung": "Die Syntax ${var} wird verwendet, um den Variablennamen explizit vom umgebenden Text abzugrenzen. Ohne die geschweiften Klammern könnte die Shell versuchen, eine Variable namens $num- zu interpretieren, was fehlschlägt. $(...) wird für Command Substitution verwendet, nicht für Variablen."
+        },
+        "en": {
+            "question": "In the echo \"profile-$num-$name\" line of a shell script, the variable $num seems to not be expanding during execution. Which of the following notations ensures the value is expanded?",
+            "options": {
+                "A": "echo \"profile-$(num)-$name\"",
+                "B": "echo 'profile-$num-$name'",
+                "C": "echo \"profile-‘Snum‘-$name\"",
+                "D": "echo \"profile-${num}-$name\""
+            },
+            "answer": "D",
+            "explanation": "The syntax ${var} is used to explicitly delimit the variable name from surrounding text. Without the curly braces, the shell might try to interpret a variable named $num-, which would fail. $(...) is used for command substitution, not variables."
+        }
+    },
+    {
+        "id": 9,
+        "de": {
+            "frage": "Ein Systemadministrator möchte die Protokolle einer Apache-2-error.log-Datei in Echtzeit überprüfen und die Informationen zur späteren Überprüfung in einer anderen Datei speichern. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "tail -f /var/log/apache2/error.log > logfile.txt",
+                "B": "tail -f /var/log/apache2/error.log | logfile.txt",
+                "C": "tail -f /var/log/apache2/error.log >> logfile.txt",
+                "D": "tail -f /var/log/apache2/error.log | tee logfile.txt"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'tail -f' folgt dem Log in Echtzeit. Durch das Piping (|) an 'tee' wird die Ausgabe sowohl auf dem Bildschirm (stdout) angezeigt als auch in die angegebene Datei geschrieben. Eine einfache Umleitung (>) würde die Bildschirmausgabe unterdrücken."
+        },
+        "en": {
+            "question": "A systems administrator wants to review the logs from an Apache 2 error.log file in real time and save the information to another file for later review. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "tail -f /var/log/apache2/error.log > logfile.txt",
+                "B": "tail -f /var/log/apache2/error.log | logfile.txt",
+                "C": "tail -f /var/log/apache2/error.log >> logfile.txt",
+                "D": "tail -f /var/log/apache2/error.log | tee logfile.txt"
+            },
+            "answer": "D",
+            "explanation": "The 'tail -f' command follows the log in real-time. Piping (|) this to 'tee' writes the output to both the screen (stdout) and the specified file simultaneously. Simple redirection (>) would suppress the screen output."
+        }
+    },
+    {
+        "id": 10,
+        "de": {
+            "frage": "Welcher der folgenden Begriffe beschreibt die Methode zur Konsolidierung von Systemereignissen an einem einzigen Ort?",
+            "optionen": {
+                "A": "Log-Aggregation",
+                "B": "Gesundheitschecks (Health checks)",
+                "C": "Webhooks",
+                "D": "Schwellenwertüberwachung (Threshold monitoring)"
+            },
+            "antwort": "A",
+            "erklärung": "Log-Aggregation ist der Prozess des Sammelns, Standardisierens und Konsolidierens von Log-Daten aus verschiedenen Quellen an einem zentralen Ort zur einfacheren Analyse und Überwachung."
+        },
+        "en": {
+            "question": "Which of the following describes the method of consolidating system events to a single location?",
+            "options": {
+                "A": "Log aggregation",
+                "B": "Health checks",
+                "C": "Webhooks",
+                "D": "Threshold monitoring"
+            },
+            "answer": "A",
+            "explanation": "Log aggregation is the process of collecting, standardizing, and consolidating log data from various sources into a single central location for easier analysis and monitoring."
+        }
+    },
+    {
+        "id": 11,
+        "de": {
+            "frage": "Ein Systemadministrator möchte verhindern, dass der aktuelle Inhalt einer Datei überschrieben wird, und möchte neue Ergänzungen am Ende der Datei zulassen. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "setenforce file",
+                "B": "setfacl -m m::t file",
+                "C": "chattr +a file",
+                "D": "chmod +t file"
+            },
+            "antwort": "C",
+            "erklärung": "Der Befehl 'chattr +a' setzt das 'append-only'-Attribut auf einer Datei. Dies erlaubt es, Daten an die Datei anzuhängen, verhindert aber das Überschreiben oder Löschen bestehender Inhalte. 'chmod +t' ist das Sticky-Bit (meist für Verzeichnisse), und 'setenforce' ist für SELinux-Modi."
+        },
+        "en": {
+            "question": "A systems administrator wants to prevent the current contents of a file from being overwritten and wants to allow new additions at the end of the file. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "setenforce file",
+                "B": "setfacl -m m::t file",
+                "C": "chattr +a file",
+                "D": "chmod +t file"
+            },
+            "answer": "C",
+            "explanation": "The command 'chattr +a' sets the 'append-only' attribute on a file. This allows data to be appended to the file but prevents existing content from being overwritten or deleted. 'chmod +t' is the sticky bit (usually for directories), and 'setenforce' is for SELinux modes."
+        }
+    },
+    {
+        "id": 12,
+        "de": {
+            "frage": "Ein Systemadministrator konfiguriert neue Linux-Systeme und muss eine passwortlose Authentifizierung zwischen zwei Servern aktivieren. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "ssh-keygen -t rsa && ssh-copy-id -i ~/.ssh/id_rsa.pub john@server2",
+                "B": "ssh-keyscan -t rsa && ssh-copy-id john@server2 -i ~/.ssh/key",
+                "C": "ssh-agent -i rsa && ssh-copy-id ~/.ssh/key john@server2",
+                "D": "ssh-add -t rsa && scp -rp ~/.ssh john@server2"
+            },
+            "antwort": "A",
+            "erklärung": "Der Prozess umfasst zwei Schritte: 1. Generieren eines Schlüsselpaars mit 'ssh-keygen'. 2. Kopieren des öffentlichen Schlüssels auf den Zielserver mit 'ssh-copy-id'. Das $$ im Originaltext ist wahrscheinlich ein Tippfehler für && (logisches UND), um die Befehle zu verketten."
+        },
+        "en": {
+            "question": "A systems administrator is configuring new Linux systems and needs to enable passwordless authentication between two of the servers. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "ssh-keygen -t rsa && ssh-copy-id -i ~/.ssh/id_rsa.pub john@server2",
+                "B": "ssh-keyscan -t rsa && ssh-copy-id john@server2 -i ~/.ssh/key",
+                "C": "ssh-agent -i rsa && ssh-copy-id ~/.ssh/key john@server2",
+                "D": "ssh-add -t rsa && scp -rp ~/.ssh john@server2"
+            },
+            "answer": "A",
+            "explanation": "The process involves two steps: 1. Generating a key pair using 'ssh-keygen'. 2. Copying the public key to the target server using 'ssh-copy-id'. The $$ in the original text is likely a typo for && (logical AND) to chain the commands."
+        }
+    },
+    {
+        "id": 13,
+        "de": {
+            "frage": "Ein Administrator aktualisiert die Netzwerkkonfiguration auf einem Server, möchte aber sicherstellen, dass die Änderung keinen Ausfall verursacht, falls etwas schiefgeht. Welcher der folgenden Befehle ermöglicht es dem Administrator, dieses Ziel zu erreichen?",
+            "optionen": {
+                "A": "netplan try",
+                "B": "netplan rebind",
+                "C": "netplan ip",
+                "D": "netplan apply"
+            },
+            "antwort": "A",
+            "erklärung": "'netplan try' wendet die Konfiguration an und wartet auf eine Bestätigung des Benutzers. Erfolgt diese nicht innerhalb eines Zeitlimits (Timeout), wird die Konfiguration automatisch zurückgesetzt. Dies verhindert, dass man sich bei fehlerhaften Netzwerkeinstellungen aussperrt. 'netplan apply' wendet Änderungen sofort und dauerhaft an."
+        },
+        "en": {
+            "question": "An administrator updates the network configuration on a server but wants to ensure the change will not cause an outage if something goes wrong. Which of the following commands allows the administrator to accomplish this goal?",
+            "options": {
+                "A": "netplan try",
+                "B": "netplan rebind",
+                "C": "netplan ip",
+                "D": "netplan apply"
+            },
+            "answer": "A",
+            "explanation": "'netplan try' applies the configuration and waits for user confirmation. If not confirmed within a timeout, it automatically reverts the changes. This prevents locking oneself out due to bad network settings. 'netplan apply' applies changes immediately and permanently."
+        }
+    },
+    {
+        "id": 14,
+        "de": {
+            "frage": "Welche der folgenden Aussagen beschreibt journald am besten?",
+            "optionen": {
+                "A": "Ein Systemdienst, der Protokolldaten sammelt und speichert",
+                "B": "Eine Funktion, die bei Kernel-Fehlern Crash-Dumps erstellt",
+                "C": "Ein Dienst, der für die Verwaltung des Dateisystem-Journals verantwortlich ist",
+                "D": "Ein Dienst, der für das Schreiben von Audit-Datensätzen auf einen Datenträger verantwortlich ist"
+            },
+            "antwort": "A",
+            "erklärung": "systemd-journald (kurz journald) ist ein Systemdienst, der Logging-Daten sammelt und speichert. Er zentralisiert Logs vom Kernel, Boot-Prozessen, Standardausgaben von Diensten und Syslog. Es hat nichts mit Dateisystem-Journaling (wie bei ext4/xfs) zu tun."
+        },
+        "en": {
+            "question": "Which of the following best describes journald?",
+            "options": {
+                "A": "A system service that collects and stores logging data",
+                "B": "A feature that creates crash dumps in case of kernel failure",
+                "C": "A service responsible for keeping the filesystem journal",
+                "D": "A service responsible for writing audit records to a disk"
+            },
+            "answer": "A",
+            "explanation": "systemd-journald (journald) is a system service that collects and stores logging data. It centralizes logs from the kernel, boot processes, service standard output, and syslog. It is unrelated to filesystem journaling (like in ext4/xfs)."
+        }
+    },
+    {
+        "id": 15,
+        "de": {
+            "frage": "Ein Linux-Administrator möchte einen Benutzer zur Docker-Gruppe hinzufügen, ohne seine primäre Gruppe zu ändern. Welchen der folgenden Befehle sollte der Administrator verwenden, um diese Aufgabe zu erledigen?",
+            "optionen": {
+                "A": "sudo groupmod docker user",
+                "B": "sudo usermod -g docker user",
+                "C": "sudo usermod -aG docker user",
+                "D": "sudo groupmod -G docker user"
+            },
+            "antwort": "C",
+            "erklärung": "Der Befehl 'usermod -aG' fügt den Benutzer zu einer zusätzlichen Gruppe hinzu (-G), wobei der 'append'-Modus (-a) verwendet wird, um sicherzustellen, dass der Benutzer nicht aus anderen sekundären Gruppen entfernt wird. '-g' würde die primäre Gruppe ändern, was hier explizit nicht gewünscht ist."
+        },
+        "en": {
+            "question": "A Linux administrator wants to add a user to the Docker group without changing their primary group. Which of the following commands should the administrator use to complete this task?",
+            "options": {
+                "A": "sudo groupmod docker user",
+                "B": "sudo usermod -g docker user",
+                "C": "sudo usermod -aG docker user",
+                "D": "sudo groupmod -G docker user"
+            },
+            "answer": "C",
+            "explanation": "The command 'usermod -aG' adds the user to a supplementary group (-G) using the append mode (-a) to ensure the user isn't removed from other secondary groups. '-g' would change the primary group, which is explicitly not desired here."
+        }
+    },
+    {
+        "id": 16,
+        "de": {
+            "frage": "Welches der folgenden Merkmale ist charakteristisch für Python 3?",
+            "optionen": {
+                "A": "Es ist Closed Source.",
+                "B": "Es ist durch Module erweiterbar.",
+                "C": "Es ist vollständig abwärtskompatibel.",
+                "D": "Es ist binärkompatibel mit Java."
+            },
+            "antwort": "B",
+            "erklärung": "Python ist Open Source und stark modular aufgebaut; seine Funktionalität lässt sich durch den Import von Modulen erweitern. Python 3 ist bekanntlich *nicht* vollständig abwärtskompatibel zu Python 2."
+        },
+        "en": {
+            "question": "Which of the following is a characteristic of Python 3?",
+            "options": {
+                "A": "It is closed source.",
+                "B": "It is extensible through modules.",
+                "C": "It is fully backwards compatible.",
+                "D": "It is binary compatible with Java."
+            },
+            "answer": "B",
+            "explanation": "Python is open source and highly modular; its functionality can be extended by importing modules. Python 3 is notably *not* fully backward compatible with Python 2."
+        }
+    },
+    {
+        "id": 17,
+        "de": {
+            "frage": "Ein Systemadministrator verwaltet mehrere Linux-Server und muss eine zuverlässige und sichere Methode einrichten, um die Komplexität der Verwaltung von Ereignisdatensätzen auf Betriebs- und Anwendungsebene zu bewältigen. Was sollte der Administrator tun?",
+            "optionen": {
+                "A": "Erstellen eines automatisierten Prozesses zum Abrufen von Protokollen vom Server bei Bedarf.",
+                "B": "Implementieren einer zentralisierten Log-Aggregationslösung.",
+                "C": "Konfigurieren täglicher automatischer Backups von Protokollen auf einen Remotespeicher.",
+                "D": "Bereitstellen von Log-Rotation-Verfahren zur Verwaltung der Datensätze."
+            },
+            "antwort": "B",
+            "erklärung": "Eine zentralisierte Log-Aggregationslösung (z. B. ELK Stack, Graylog, Splunk) ist der Industriestandard für die Verwaltung komplexer Logs über viele Server hinweg. Sie ermöglicht Sicherheit, Durchsuchbarkeit, Korrelation von Ereignissen und Echtzeitanalyse an einem einzigen Ort."
+        },
+        "en": {
+            "question": "A systems administrator manages multiple Linux servers and needs to set up a reliable and secure way to handle the complexity of managing event records on the OS and application levels. Which of the following should the administrator do?",
+            "options": {
+                "A": "Create an automated process to retrieve logs from the server by demand.",
+                "B": "Implement a centralized log aggregation solution.",
+                "C": "Configure daily automatic backups of logs to remote storage.",
+                "D": "Deploy log rotation procedures to manage the records."
+            },
+            "answer": "B",
+            "explanation": "A centralized log aggregation solution (e.g., ELK Stack, Graylog, Splunk) is the industry standard for managing complex logs across many servers. It enables security, searchability, event correlation, and real-time analysis in a single location."
+        }
+    },
+    {
+        "id": 18,
+        "de": {
+            "frage": "Was beschreibt die Rolle von initrd am besten?",
+            "optionen": {
+                "A": "Es ist erforderlich, um sich über SSH mit dem System zu verbinden.",
+                "B": "Es enthält grundlegende Kernel-Module und Treiber, die zum Starten des Systems erforderlich sind.",
+                "C": "Es enthält vertrauenswürdige Zertifikate und geheime Schlüssel des Systems.",
+                "D": "Es ist erforderlich, um ein Zufallsgerät innerhalb eines Linux-Systems zu initialisieren."
+            },
+            "antwort": "B",
+            "erklärung": "Die initrd (Initial RAM Disk) ist ein temporäres Dateisystem, das während des Bootvorgangs in den Arbeitsspeicher geladen wird. Es enthält Treiber und Module, die der Kernel benötigt, um das eigentliche Root-Dateisystem zu mounten (z. B. Dateisystemtreiber oder Festplattencontroller-Treiber)."
+        },
+        "en": {
+            "question": "Which of the following best describes the role of initrd?",
+            "options": {
+                "A": "It is required to connect to the system via SSH.",
+                "B": "It contains basic kernel modules and drivers required to start the system.",
+                "C": "It contains trusted certificates and secret keys of the system.",
+                "D": "It is required to initialize a random device within a Linux system."
+            },
+            "answer": "B",
+            "explanation": "The initrd (Initial RAM Disk) is a temporary file system loaded into memory during the boot process. It contains drivers and modules that the kernel needs to mount the actual root file system (e.g., filesystem drivers or disk controller drivers)."
+        }
+    },
+    {
+        "id": 19,
+        "de": {
+            "frage": "Ein Linux-Systemadministrator führt eine wichtige Wartungsaufgabe aus, die viel CPU verbraucht und andere Anwendungen verlangsamt. Welche Maßnahme sollte der Administrator ergreifen, um das Problem zu lindern?",
+            "optionen": {
+                "A": "Die verfügbare CPU-Zeit mit pidstat erhöhen.",
+                "B": "Die Priorität der Wartungsaufgabe mit renice senken.",
+                "C": "Die Wartungsaufgabe mit nohup ausführen.",
+                "D": "Die anderen Anwendungen mit dem bg-Dienstprogramm ausführen."
+            },
+            "antwort": "B",
+            "erklärung": "Der Befehl 'renice' wird verwendet, um die Priorität (Nice-Wert) laufender Prozesse zu ändern. Durch Erhöhen des Nice-Werts (Senken der Priorität) der Wartungsaufgabe erhalten andere Anwendungen mehr CPU-Zeit. 'nohup' verhindert nur das Beenden beim Logout, und 'bg' schickt Prozesse in den Hintergrund, ändert aber nicht deren CPU-Priorität."
+        },
+        "en": {
+            "question": "A Linux systems administrator is running an important maintenance task that consumes a large amount of CPU, causing other applications to slow. Which of the following actions should the administrator take to help alleviate the issue?",
+            "options": {
+                "A": "Increase the available CPU time with pidstat.",
+                "B": "Lower the priority of the maintenance task with renice.",
+                "C": "Run the maintenance task with nohup.",
+                "D": "Execute the other applications with the bg utility."
+            },
+            "answer": "B",
+            "explanation": "The 'renice' command is used to alter the priority (nice value) of running processes. By increasing the nice value (lowering the priority) of the maintenance task, other applications receive more CPU time. 'nohup' only prevents termination upon logout, and 'bg' sends processes to the background but does not change their CPU priority."
+        }
+    },
+    {
+        "id": 20,
+        "de": {
+            "frage": "Welches der folgenden Protokolle dient dem Zugriff auf verteilte Verzeichnisdienste, die eine Hierarchie von Benutzern, Gruppen, Maschinen und Organisationseinheiten enthalten?",
+            "optionen": {
+                "A": "SMB",
+                "B": "TLS",
+                "C": "LDAP",
+                "D": "KRB-5"
+            },
+            "antwort": "C",
+            "erklärung": "LDAP (Lightweight Directory Access Protocol) ist das Standardprotokoll für den Zugriff auf und die Verwaltung von verteilten Verzeichnisinformationen über ein IP-Netzwerk. Es wird häufig für die zentrale Authentifizierung und Benutzerverwaltung verwendet."
+        },
+        "en": {
+            "question": "Which of the following is a protocol for accessing distributed directory services containing a hierarchy of users, groups, machines, and organization units?",
+            "options": {
+                "A": "SMB",
+                "B": "TLS",
+                "C": "LDAP",
+                "D": "KRB-5"
+            },
+            "answer": "C",
+            "explanation": "LDAP (Lightweight Directory Access Protocol) is the standard protocol for accessing and maintaining distributed directory information services over an IP network. It is commonly used for centralized authentication and user management."
+        }
+    },
+    {
+        "id": 21,
+        "de": {
+            "frage": "Ein Linux-Administrator muss den Inhalt einer Festplatte sicher löschen. Welcher der folgenden Befehle ist für diese Aufgabe am besten geeignet?",
+            "optionen": {
+                "A": "sudo rm -rf /dev/sda1",
+                "B": "sudo shred /dev/sda1",
+                "C": "sudo parted rm /dev/sda1",
+                "D": "sudo dd if=/dev/null of=/dev/sda1"
+            },
+            "antwort": "B",
+            "erklärung": "Der Befehl 'shred' ist speziell dafür konzipiert, Dateien oder Geräteinhalte sicher zu löschen, indem er sie mehrfach mit zufälligen Mustern überschreibt, was die Datenwiederherstellung extrem erschwert. 'rm' löscht nur Referenzen, und 'dd' mit /dev/null überschreibt nur mit Nullen (weniger sicher als zufällige Muster)."
+        },
+        "en": {
+            "question": "A Linux administrator needs to securely erase the contents of a hard disk. Which of the following commands is the best for this task?",
+            "options": {
+                "A": "sudo rm -rf /dev/sda1",
+                "B": "sudo shred /dev/sda1",
+                "C": "sudo parted rm /dev/sda1",
+                "D": "sudo dd if=/dev/null of=/dev/sda1"
+            },
+            "answer": "B",
+            "explanation": "The 'shred' command is specifically designed to securely delete files or device contents by overwriting them multiple times with random patterns, making data recovery extremely difficult. 'rm' only removes references, and 'dd' from /dev/null only overwrites with zeros (less secure than random patterns)."
+        }
+    },
+    {
+        "id": 22,
+        "de": {
+            "frage": "Welches der folgenden Dienstprogramme unterstützt die Automatisierung von Sicherheits-Compliance und Schwachstellenmanagement?",
+            "optionen": {
+                "A": "SELinux",
+                "B": "Nmap",
+                "C": "AIDE",
+                "D": "OpenSCAP"
+            },
+            "antwort": "D",
+            "erklärung": "OpenSCAP ist ein Tool-Set zur Verwaltung von Sicherheitsrichtlinien und Compliance. Es ermöglicht das Scannen von Systemen gegen definierte Sicherheitsstandards (wie STIG oder PCI-DSS) und die Automatisierung von Vulnerability Management. SELinux ist für Zugriffskontrolle, Nmap für Netzwerkscans und AIDE für Dateiintegrität."
+        },
+        "en": {
+            "question": "Which of the following utilities supports the automation of security compliance and vulnerability management?",
+            "options": {
+                "A": "SELinux",
+                "B": "Nmap",
+                "C": "AIDE",
+                "D": "OpenSCAP"
+            },
+            "answer": "D",
+            "explanation": "OpenSCAP is a toolset for managing security policies and compliance. It allows scanning systems against defined security standards (like STIG or PCI-DSS) and automating vulnerability management. SELinux is for access control, Nmap for network scanning, and AIDE for file integrity."
+        }
+    },
+    {
+        "id": 23,
+        "de": {
+            "frage": "Welchen der folgenden Befehle sollte ein Administrator verwenden, um eine vollständige Hardware-Inventur eines Linux-Systems anzuzeigen?",
+            "optionen": {
+                "A": "dmidecode",
+                "B": "lsmod",
+                "C": "dmesg",
+                "D": "lscpu"
+            },
+            "antwort": "A",
+            "erklärung": "'dmidecode' liest die DMI-Tabelle (Desktop Management Interface) aus und liefert detaillierte Informationen über Hardwarekomponenten wie BIOS, Motherboard, RAM-Steckplätze und Seriennummern. 'lsmod' zeigt Kernel-Module, 'dmesg' Boot-Nachrichten und 'lscpu' nur CPU-Details."
+        },
+        "en": {
+            "question": "Which of the following commands should an administrator use to see a full hardware inventory of a Linux system?",
+            "options": {
+                "A": "dmidecode",
+                "B": "lsmod",
+                "C": "dmesg",
+                "D": "lscpu"
+            },
+            "answer": "A",
+            "explanation": "'dmidecode' dumps the DMI (Desktop Management Interface) table contents, providing detailed information about hardware components like BIOS, motherboard, RAM slots, and serial numbers. 'lsmod' shows kernel modules, 'dmesg' boot messages, and 'lscpu' only CPU details."
+        }
+    },
+    {
+        "id": 24,
+        "de": {
+            "frage": "Ein Linux-Administrator muss eine kompromittierte Festplatte auf Spuren von Malware analysieren. Um die Analyse durchzuführen, möchte der Administrator eine exakte Kopie der Festplatte auf Blockebene erstellen. Welcher der folgenden Befehle erfüllt diese Aufgabe?",
+            "optionen": {
+                "A": "cp -rp /dev/sdc/* /tmp/image",
+                "B": "cpio -i /dev/sdc -ov /tmp/image",
+                "C": "tar cvzf /tmp/image /dev/sdc",
+                "D": "dd if=/dev/sdc of=/tmp/image bs=8192"
+            },
+            "antwort": "D",
+            "erklärung": "'dd' ist das Standard-Tool für bitgenaue Kopien (Block-Level). Es liest Rohdaten vom Eingabegerät (if) und schreibt sie exakt in die Ausgabedatei (of). Dies ist entscheidend für forensische Analysen, da auch gelöschte Dateien und Slack Space kopiert werden. 'cp', 'cpio' und 'tar' arbeiten auf Dateiebene."
+        },
+        "en": {
+            "question": "A Linux administrator needs to analyze a compromised disk for traces of malware. To complete the analysis, the administrator wants to make an exact, block-level copy of the disk. Which of the following commands accomplishes this task?",
+            "options": {
+                "A": "cp -rp /dev/sdc/* /tmp/image",
+                "B": "cpio -i /dev/sdc -ov /tmp/image",
+                "C": "tar cvzf /tmp/image /dev/sdc",
+                "D": "dd if=/dev/sdc of=/tmp/image bs=8192"
+            },
+            "answer": "D",
+            "explanation": "'dd' is the standard tool for bit-for-bit (block-level) copying. It reads raw data from the input device (if) and writes it exactly to the output file (of). This is crucial for forensic analysis as it copies deleted files and slack space. 'cp', 'cpio', and 'tar' operate at the file level."
+        }
+    },
+    {
+        "id": 25,
+        "de": {
+            "frage": "Ein Systemadministrator muss die IP-Adresse eines neuen DNS-Servers festlegen. Welche der folgenden Dateien sollte der Administrator ändern, um diese Aufgabe zu erfüllen?",
+            "optionen": {
+                "A": "/etc/whois.conf",
+                "B": "/etc/resolv.conf",
+                "C": "/etc/nsswitch.conf",
+                "D": "/etc/dnsmasq.conf"
+            },
+            "antwort": "B",
+            "erklärung": "Die Datei '/etc/resolv.conf' ist die Konfigurationsdatei für den DNS-Resolver. Sie enthält die 'nameserver'-Einträge, die festlegen, welche DNS-Server das System zur Namensauflösung abfragt."
+        },
+        "en": {
+            "question": "A systems administrator needs to set the IP address of a new DNS server. Which of the following files should the administrator modify to complete this task?",
+            "options": {
+                "A": "/etc/whois.conf",
+                "B": "/etc/resolv.conf",
+                "C": "/etc/nsswitch.conf",
+                "D": "/etc/dnsmasq.conf"
+            },
+            "answer": "B",
+            "explanation": "The '/etc/resolv.conf' file is the configuration file for the DNS resolver. It contains the 'nameserver' entries that specify which DNS servers the system queries for name resolution."
+        }
+    },
+    {
+        "id": 26,
+        "de": {
+            "frage": "Nach Abschluss des monatlichen Server-Patchings erhält ein Linux-Administrator Berichte, dass eine kritische Anwendung nicht funktioniert. Welcher der folgenden Befehle sollte dem Administrator helfen festzustellen, welche Pakete installiert wurden?",
+            "optionen": {
+                "A": "dnf history",
+                "B": "dnf list",
+                "C": "dnf info",
+                "D": "dnf search"
+            },
+            "antwort": "A",
+            "erklärung": "'dnf history' zeigt eine zeitliche Abfolge aller Transaktionen (Installationen, Updates, Entfernungen) an, die mit dem DNF-Paketmanager durchgeführt wurden. Dies ist das wichtigste Werkzeug, um Änderungen nachzuvollziehen, die zu Problemen geführt haben könnten."
+        },
+        "en": {
+            "question": "Following the completion of monthly server patching, a Linux administrator receives reports that a critical application is not functioning. Which of the following commands should help the administrator determine which packages were installed?",
+            "options": {
+                "A": "dnf history",
+                "B": "dnf list",
+                "C": "dnf info",
+                "D": "dnf search"
+            },
+            "answer": "A",
+            "explanation": "'dnf history' shows a timeline of all transactions (installs, updates, removals) performed with the DNF package manager. This is the primary tool for tracing back changes that might have caused issues."
+        }
+    },
+    {
+        "id": 27,
+        "de": {
+            "frage": "Ein Linux-Administrator möchte die Variable ENABLE_AUTH auf 1 setzen und sie für die Umgebung nachfolgend ausgeführter Befehle verfügbar machen. Was sollte der Administrator dafür verwenden?",
+            "optionen": {
+                "A": "let ENABLE_AUTH=1",
+                "B": "ENABLE_AUTH=1",
+                "C": "ENABLE_AUTH=$(echo $ENABLE_AUTH)",
+                "D": "export ENABLE_AUTH=1"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'export' macht eine Variable zu einer Umgebungsvariable. Das bedeutet, dass sie an Kindprozesse (nachfolgend ausgeführte Befehle oder Skripte) vererbt wird. Eine einfache Zuweisung (Option B) erstellt nur eine lokale Shell-Variable, die für Kindprozesse unsichtbar ist."
+        },
+        "en": {
+            "question": "A Linux administrator wants to make the ENABLE_AUTH variable set to 1 and available to the environment of subsequently executed commands. Which of the following should the administrator use for this task?",
+            "options": {
+                "A": "let ENABLE_AUTH=1",
+                "B": "ENABLE_AUTH=1",
+                "C": "ENABLE_AUTH=$(echo $ENABLE_AUTH)",
+                "D": "export ENABLE_AUTH=1"
+            },
+            "answer": "D",
+            "explanation": "The 'export' command turns a variable into an environment variable. This means it will be inherited by child processes (subsequently executed commands or scripts). Simple assignment (Option B) only creates a local shell variable visible only to the current shell instance."
+        }
+    },
+    {
+        "id": 28,
+        "de": {
+            "frage": "Ein Linux-Administrator möchte KI nutzen, um Infrastructure as Code bereitzustellen. Welche der folgenden Vorgehensweisen ist eine Best Practice bezüglich der Verwendung von KI für diese Aufgabe?",
+            "optionen": {
+                "A": "Kopieren und Einfügen, wenn möglich",
+                "B": "Generieren von monolithischem Code",
+                "C": "Linting des generierten Codes",
+                "D": "Zusammenführen von CI/CD-Pipelines"
+            },
+            "antwort": "C",
+            "erklärung": "KI-generierter Code kann Fehler oder ineffiziente Strukturen enthalten. Das 'Linting' (statische Code-Analyse) ist entscheidend, um Syntaxfehler, Stilverstöße und potenzielle Bugs zu identifizieren, bevor der Code bereitgestellt wird. Monolithischer Code ist generell keine Best Practice, und blindes Copy-Paste birgt Sicherheitsrisiken."
+        },
+        "en": {
+            "question": "A Linux administrator wants to use AI to deploy infrastructure as code. Which of the following is a best practice regarding the use of AI for this task?",
+            "options": {
+                "A": "Using copy and paste when possible",
+                "B": "Generating monolithic code",
+                "C": "Linting generated code",
+                "D": "Merging CI/CD pipelines"
+            },
+            "answer": "C",
+            "explanation": "AI-generated code can contain errors or inefficient structures. Linting (static code analysis) is crucial to identify syntax errors, style violations, and potential bugs before the code is deployed. Monolithic code is generally not a best practice, and blind copy-pasting carries security risks."
+        }
+    },
+    {
+        "id": 29,
+        "de": {
+            "frage": "Welches der folgenden Passwörter ist am komplexesten?",
+            "optionen": {
+                "A": "H3sa1dt01d",
+                "B": "he$@ID$heTold",
+                "C": "H3s@1dSh3t0|d",
+                "D": "HeSaidShetold"
+            },
+            "antwort": "C",
+            "erklärung": "Passwort C ('H3s@1dSh3t0|d') enthält eine Mischung aus Großbuchstaben, Kleinbuchstaben, Zahlen (3, 1, 0) und Sonderzeichen (@, |). Dies bietet die höchste Entropie im Vergleich zu den anderen Optionen, die entweder keine Sonderzeichen oder weniger Variationen aufweisen."
+        },
+        "en": {
+            "question": "Which of the following passwords is the most complex?",
+            "options": {
+                "A": "H3sa1dt01d",
+                "B": "he$@ID$heTold",
+                "C": "H3s@1dSh3t0|d",
+                "D": "HeSaidShetold"
+            },
+            "answer": "C",
+            "explanation": "Password C ('H3s@1dSh3t0|d') contains a mix of uppercase letters, lowercase letters, numbers (3, 1, 0), and special characters (@, |). This offers the highest entropy compared to the other options, which either lack special characters or have fewer variations."
+        }
+    },
+    {
+        "id": 30,
+        "de": {
+            "frage": "Ein Administrator erhält beim Versuch, ein Dateisystem auszuhängen, folgende Ausgabe: umount /data1: target is busy. Welchen der folgenden Befehle sollte der Administrator als nächstes ausführen, um festzustellen, warum das Dateisystem belegt ist?",
+            "optionen": {
+                "A": "ps -f /data1",
+                "B": "du -sh /data1",
+                "C": "top -d /data1",
+                "D": "lsof | grep /data1"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'lsof' (List Open Files) listet alle offenen Dateien und die Prozesse auf, die sie verwenden. Durch das Filtern mit 'grep /data1' kann der Administrator genau sehen, welcher Prozess oder Benutzer noch auf das Verzeichnis zugreift und das Aushängen blockiert."
+        },
+        "en": {
+            "question": "An administrator receives the following output while attempting to unmount a filesystem: umount /data1: target is busy.\nWhich of the following commands should the administrator run next to determine why the filesystem is busy?",
+            "options": {
+                "A": "ps -f /data1",
+                "B": "du -sh /data1",
+                "C": "top -d /data1",
+                "D": "lsof | grep /data1"
+            },
+            "answer": "D",
+            "explanation": "The command 'lsof' (List Open Files) lists all open files and the processes using them. By filtering with 'grep /data1', the administrator can see exactly which process or user is still accessing the directory and blocking the unmount."
+        }
+    },
+    {
+        "id": 31,
+        "de": {
+            "frage": "Welche der folgenden Aussagen beschreibt einen Anwendungsfall für Playbooks in einem Linux-System am besten?",
+            "optionen": {
+                "A": "Bereitstellen einer Reihe von Aufgaben und Konfigurationen zur Implementierung einer Anwendung",
+                "B": "Bereitstellen der Anweisungen zur Implementierung der Versionskontrolle in einem Repository",
+                "C": "Bereitstellen der Sicherheitsinformationen, die für einen Container erforderlich sind",
+                "D": "Bereitstellen der Speicher-Volume-Informationen, die für einen Pod erforderlich sind"
+            },
+            "antwort": "A",
+            "erklärung": "In Ansible sind Playbooks YAML-Dateien, die eine Liste von Aufgaben (Tasks) und Konfigurationen definieren, um Systeme automatisiert einzurichten oder Anwendungen bereitzustellen. Sie beschreiben den gewünschten Zustand des Systems."
+        },
+        "en": {
+            "question": "Which of the following best describes a use case for playbooks in a Linux system?",
+            "options": {
+                "A": "To provide a set of tasks and configurations to deploy an application",
+                "B": "To provide the instructions for implementing version control on a repository",
+                "C": "To provide the security information required for a container",
+                "D": "To provide the storage volume information required for a pod"
+            },
+            "answer": "A",
+            "explanation": "In Ansible, playbooks are YAML files that define a list of tasks and configurations to automatically set up systems or deploy applications. They describe the desired state of the system."
+        }
+    },
+    {
+        "id": 32,
+        "de": {
+            "frage": "Ein Administrator muss ein Konto für einen Benutzer sichern, der in einen längeren Urlaub geht. Welche der folgenden Schritte sollte der Administrator unternehmen? (Wählen Sie zwei).",
+            "optionen": {
+                "A": "Die Dateien des Benutzers auf unveränderlich (immutable) setzen.",
+                "B": "Den Benutzer anweisen, sich einmal pro Woche einzuloggen.",
+                "C": "Den /home-Ordner des Benutzers löschen.",
+                "D": "Den Befehl passwd -l user ausführen.",
+                "E": "Das Datum im /home-Ordner auf das erwartete Rückkehrdatum ändern.",
+                "F": "Die Shell des Benutzers auf /sbin/nologin ändern."
+            },
+            "antwort": "D, F",
+            "erklärung": "'passwd -l user' sperrt das Passwort des Benutzers (lock), sodass kein Login via Passwort möglich ist. Das Ändern der Shell auf '/sbin/nologin' (Option F) verhindert zusätzlich, dass sich der Benutzer interaktiv anmelden kann, selbst wenn er einen anderen Authentifizierungsmechanismus (wie SSH-Keys) nutzt. Dies ist die Standardvorgehensweise zum Deaktivieren von Konten."
+        },
+        "en": {
+            "question": "An administrator must secure an account for a user who is going on extended leave. Which of the following steps should the administrator take? (Choose two).",
+            "options": {
+                "A": "Set the user’s files to immutable.",
+                "B": "Instruct the user to log in once per week.",
+                "C": "Delete the user’s /home folder.",
+                "D": "Run the command passwd -l user.",
+                "E": "Change the date on the /home folder to that of the expected return date.",
+                "F": "Change the user’s shell to /sbin/nologin."
+            },
+            "answer": "D, F",
+            "explanation": "'passwd -l user' locks the user's password so no password login is possible. Changing the shell to '/sbin/nologin' (Option F) additionally prevents the user from logging in interactively, even if they use another authentication mechanism (like SSH keys). This is standard procedure for disabling accounts."
+        }
+    },
+    {
+        "id": 33,
+        "de": {
+            "frage": "Ein Systemadministrator bereitet ein Linux-System für die Einrichtung einer Anwendung vor. Der Administrator muss eine Umgebungsvariable mit einem dauerhaften Wert in einem der Benutzerkonten erstellen. Welchen der folgenden Befehle sollte der Administrator für diese Aufgabe verwenden?",
+            "optionen": {
+                "A": "export \"VAR=$VAR:value\" >> ~/.ssh/profile",
+                "B": "export VAR=value",
+                "C": "VAR=value",
+                "D": "echo \"export VAR=value\" >> ~/.bashrc"
+            },
+            "antwort": "D",
+            "erklärung": "Um eine Umgebungsvariable dauerhaft (persistent) zu machen, muss sie in einer der Startdateien der Shell (wie ~/.bashrc) gespeichert werden. Der Befehl 'echo \"export VAR=value\" >> ~/.bashrc' hängt die Export-Anweisung an das Ende der Datei an, sodass sie bei jedem neuen Login oder Shell-Start ausgeführt wird. Option B gilt nur für die aktuelle Sitzung."
+        },
+        "en": {
+            "question": "A systems administrator is preparing a Linux system for application setup. The administrator needs to create an environment variable with a persistent value in one of the user accounts. Which of the following commands should the administrator use for this task?",
+            "options": {
+                "A": "export \"VAR=$VAR:value\" >> ~/.ssh/profile",
+                "B": "export VAR=value",
+                "C": "VAR=value",
+                "D": "echo \"export VAR=value\" >> ~/.bashrc"
+            },
+            "answer": "D",
+            "explanation": "To make an environment variable persistent, it must be stored in one of the shell's startup files (like ~/.bashrc). The command 'echo \"export VAR=value\" >> ~/.bashrc' appends the export statement to the end of the file, so it runs at every new login or shell start. Option B applies only to the current session."
+        }
+    },
+    {
+        "id": 34,
+        "de": {
+            "frage": "Welcher der folgenden Gründe erklärt, warum mehrfache Passwortänderungen am selben Tag nicht erlaubt sind?",
+            "optionen": {
+                "A": "Um Brute-Force-Passwortangriffe zu vermeiden, indem sie zu langwierig gemacht werden",
+                "B": "Um die Passwortkomplexität und die Sicherheit des Systems zu erhöhen",
+                "C": "Um zu verhindern, dass Benutzer durch die Passworthistorie rotieren, um zum ursprünglich verwendeten Passwort zurückzukehren",
+                "D": "Um die Verwendung von Multifaktor-Authentifizierung mit stärkeren Verschlüsselungsalgorithmen anstelle von Passwörtern zu erzwingen"
+            },
+            "antwort": "C",
+            "erklärung": "Viele Systeme erzwingen eine Passworthistorie (z. B. 'die letzten 5 Passwörter dürfen nicht wiederverwendet werden'). Benutzer versuchen oft, dies zu umgehen, indem sie ihr Passwort schnell fünfmal hintereinander ändern, um ihr altes Lieblingspasswort wiederherzustellen. Eine Mindestlaufzeit für Passwörter (Minimum Password Age) verhindert dies."
+        },
+        "en": {
+            "question": "Which of the following is a reason multiple password changes on the same day are not allowed?",
+            "options": {
+                "A": "To avoid brute-forced password attacks by making them too long to perform",
+                "B": "To increase password complexity and the system’s security",
+                "C": "To stop users from circulating through the password history to return to the originally used password",
+                "D": "To enforce using multifactor authentication with stronger encryption algorithms instead of passwords"
+            },
+            "answer": "C",
+            "explanation": "Many systems enforce a password history (e.g., 'cannot reuse the last 5 passwords'). Users often try to bypass this by quickly changing their password five times in a row to get back to their old favorite password. A minimum password age prevents this."
+        }
+    },
+    {
+        "id": 35,
+        "de": {
+            "frage": "Welchen der folgenden Befehle sollte ein Administrator verwenden, um eine KVM-Festplattendatei in ein anderes Format zu konvertieren?",
+            "optionen": {
+                "A": "qemu-kvm",
+                "B": "qemu-ng",
+                "C": "qemu-io",
+                "D": "qemu-img"
+            },
+            "antwort": "D",
+            "erklärung": "'qemu-img' ist das Standardwerkzeug zum Erstellen, Konvertieren und Überprüfen von Festplatten-Images für QEMU/KVM. Der typische Befehl wäre 'qemu-img convert -f qcow2 -O raw source.img target.img'."
+        },
+        "en": {
+            "question": "Which of the following commands should an administrator use to convert a KVM disk file to a different format?",
+            "options": {
+                "A": "qemu-kvm",
+                "B": "qemu-ng",
+                "C": "qemu-io",
+                "D": "qemu-img"
+            },
+            "answer": "D",
+            "explanation": "'qemu-img' is the standard tool for creating, converting, and checking disk images for QEMU/KVM. The typical command would be 'qemu-img convert -f qcow2 -O raw source.img target.img'."
+        }
+    },
+    {
+        "id": 36,
+        "de": {
+            "frage": "Ein Linux-Softwareentwickler möchte KI nutzen, um Quellcode zu optimieren, der in einem kommerziellen Produkt verwendet wird. Welchen der folgenden Schritte sollte der Entwickler zuerst unternehmen?",
+            "optionen": {
+                "A": "Recherchieren, welche der verfügbaren KI-Chatbots am besten für die Optimierung von Quellcode geeignet sind.",
+                "B": "Überprüfen, ob das Unternehmen eine Richtlinie für die Verwendung von KI in der Softwareentwicklung hat.",
+                "C": "Installieren eines privaten LLM zur Verwendung im internen Netzwerk für die Quellcodeoptimierung.",
+                "D": "Verwenden von Open-Source-LLMs, die regelmäßigen Sicherheitsüberprüfungen durch die Community unterzogen werden."
+            },
+            "antwort": "B",
+            "erklärung": "Bevor externe KI-Tools oder überhaupt KI für proprietären Code verwendet wird, muss aus rechtlichen, sicherheitstechnischen und Compliance-Gründen immer zuerst die Unternehmensrichtlinie geprüft werden. Das Hochladen von firmeneigenem Code zu öffentlichen KIs kann zu Datenschutzverletzungen und Verlust von geistigem Eigentum führen."
+        },
+        "en": {
+            "question": "A Linux software developer wants to use AI to optimize source code used in a commercial product. Which of the following steps should the developer take first?",
+            "options": {
+                "A": "Research which of the available AI chatbots are best at optimizing source code.",
+                "B": "Verify that the company has a policy governing the use of AI in software development.",
+                "C": "Install a private LLM to use on the internal network for source code optimization.",
+                "D": "Use open-source LLMs that undergo regular security reviews by the community."
+            },
+            "answer": "B",
+            "explanation": "Before using external AI tools or any AI for proprietary code, company policy must always be checked first for legal, security, and compliance reasons. Uploading proprietary code to public AIs can lead to data breaches and loss of intellectual property."
+        }
+    },
+    {
+        "id": 37,
+        "de": {
+            "frage": "Ein DevOps-Ingenieur hat einige Änderungen an Dateien in einem lokalen Repository vorgenommen. Der Ingenieur stellt fest, dass die Änderungen die Anwendung beschädigt haben und rückgängig gemacht werden müssen. Welcher der folgenden Befehle ist der beste Weg, um diese Aufgabe zu erfüllen?",
+            "optionen": {
+                "A": "git pull",
+                "B": "git reset",
+                "C": "git rebase",
+                "D": "git stash"
+            },
+            "antwort": "B",
+            "erklärung": "'git reset' (oft mit '--hard') wird verwendet, um den aktuellen Zustand des Arbeitsverzeichnisses auf einen früheren Commit zurückzusetzen und alle lokalen, nicht committeten Änderungen zu verwerfen. 'git stash' würde die Änderungen speichern statt sie zu verwerfen, 'git pull' holt Änderungen vom Remote."
+        },
+        "en": {
+            "question": "A DevOps engineer made some changes to files on a local repository. The engineer realizes that the changes broke the application and the changes need to be reverted back. Which of the following commands is the best way to accomplish this task?",
+            "options": {
+                "A": "git pull",
+                "B": "git reset",
+                "C": "git rebase",
+                "D": "git stash"
+            },
+            "answer": "B",
+            "explanation": "'git reset' (often with '--hard') is used to reset the current state of the working directory to a previous commit, discarding all local, uncommitted changes. 'git stash' would save the changes instead of discarding them, and 'git pull' fetches changes from remote."
+        }
+    },
+    {
+        "id": 38,
+        "de": {
+            "frage": "Ein Administrator muss das Verzeichnis /home/user1/data und dessen gesamten Inhalt entfernen. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "rmdir -p /home/user1/data",
+                "B": "ln -d /home/user1/data",
+                "C": "rm -r /home/user1/data",
+                "D": "cut -d /home/user1/data"
+            },
+            "antwort": "C",
+            "erklärung": "Der Befehl 'rm -r' (rekursiv) wird verwendet, um Verzeichnisse und deren Inhalte (Dateien und Unterverzeichnisse) zu löschen. 'rmdir' funktioniert nur bei leeren Verzeichnissen."
+        },
+        "en": {
+            "question": "An administrator needs to remove the directory /home/user1/data and all of its contents. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "rmdir -p /home/user1/data",
+                "B": "ln -d /home/user1/data",
+                "C": "rm -r /home/user1/data",
+                "D": "cut -d /home/user1/data"
+            },
+            "answer": "C",
+            "explanation": "The command 'rm -r' (recursive) is used to delete directories and their contents (files and subdirectories). 'rmdir' only works on empty directories."
+        }
+    },
+    {
+        "id": 39,
+        "de": {
+            "frage": "Benutzer können nicht auf eine Anwendung zugreifen, die in Containern ausgeführt wird. Der Administrator möchte überprüfen, ob die Container laufen. Welchen der folgenden Befehle sollte der Administrator verwenden?",
+            "optionen": {
+                "A": "docker start",
+                "B": "docker ps",
+                "C": "docker run",
+                "D": "docker images"
+            },
+            "antwort": "B",
+            "erklärung": "'docker ps' listet standardmäßig alle laufenden Container auf. Um auch gestoppte Container zu sehen, würde man 'docker ps -a' verwenden. 'docker images' listet nur die verfügbaren Images auf, nicht die laufenden Instanzen."
+        },
+        "en": {
+            "question": "Users cannot access an application that is running inside containers. The administrator wants to validate whether the containers are running. Which of the following commands should the administrator use?",
+            "options": {
+                "A": "docker start",
+                "B": "docker ps",
+                "C": "docker run",
+                "D": "docker images"
+            },
+            "answer": "B",
+            "explanation": "'docker ps' lists all currently running containers by default. To see stopped containers as well, one would use 'docker ps -a'. 'docker images' only lists available images, not running instances."
+        }
+    },
+    {
+        "id": 40,
+        "de": {
+            "frage": "Welchen der folgenden Befehle sollte ein Linux-Administrator verwenden, um die Version eines Kernel-Moduls zu ermitteln?",
+            "optionen": {
+                "A": "modprobe bluetooth",
+                "B": "lsmod bluetooth",
+                "C": "depmod bluetooth",
+                "D": "modinfo bluetooth"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'modinfo' zeigt detaillierte Informationen über ein Linux-Kernel-Modul an, einschließlich der Version, des Autors, der Lizenz und der Parameter. 'lsmod' listet nur geladene Module auf, 'modprobe' lädt/entlädt Module und 'depmod' verwaltet Abhängigkeiten."
+        },
+        "en": {
+            "question": "Which of the following commands should a Linux administrator use to determine the version of a kernel module?",
+            "options": {
+                "A": "modprobe bluetooth",
+                "B": "lsmod bluetooth",
+                "C": "depmod bluetooth",
+                "D": "modinfo bluetooth"
+            },
+            "answer": "D",
+            "explanation": "The 'modinfo' command displays detailed information about a Linux kernel module, including the version, author, license, and parameters. 'lsmod' only lists loaded modules, 'modprobe' loads/unloads modules, and 'depmod' handles dependencies."
+        }
+    },
+    {
+        "id": 41,
+        "de": {
+            "frage": "Ein Linux-Administrator nimmt Änderungen an lokalen Dateien vor, die Teil eines Git-Repositorys sind. Der Administrator muss Änderungen aus dem Remote-Git-Repository abrufen. Welchen der folgenden Befehle sollte der Administrator verwenden, um die lokalen Änderungen für eine spätere Überprüfung zu speichern?",
+            "optionen": {
+                "A": "git stash",
+                "B": "git pull",
+                "C": "git merge",
+                "D": "git fetch"
+            },
+            "antwort": "A",
+            "erklärung": "'git stash' speichert (bzw. 'versteckt') vorübergehend Änderungen im Arbeitsverzeichnis, die noch nicht committet wurden, damit das Verzeichnis sauber ist (z.B. für einen Pull). Die Änderungen können später wieder angewendet werden. 'git pull', 'merge' und 'fetch' dienen dem Abgleich mit dem Remote-Repository, speichern aber keine lokalen Arbeitsstände beiseite."
+        },
+        "en": {
+            "question": "A Linux administrator is making changes to local files that are part of a Git repository. The administrator needs to retrieve changes from the remote Git repository. Which of the following commands should the administrator use to save the local modifications for later review?",
+            "options": {
+                "A": "git stash",
+                "B": "git pull",
+                "C": "git merge",
+                "D": "git fetch"
+            },
+            "answer": "A",
+            "explanation": "'git stash' temporarily shelves (stashes) changes in the working directory that have not yet been committed, leaving a clean directory (e.g., for a pull). The changes can be reapplied later. 'git pull', 'merge', and 'fetch' are for syncing with the remote repository but do not set aside local work states."
+        }
+    },
+    {
+        "id": 42,
+        "de": {
+            "frage": "Ein Systemadministrator erstellt eine Sicherungskopie des Verzeichnisses /home/. Welcher der folgenden Befehle ermöglicht es dem Administrator, das Verzeichnis gleichzeitig zu archivieren und zu komprimieren?",
+            "optionen": {
+                "A": "cpio -o /backups/home.tar.xz /home/",
+                "B": "rsync -z /backups/home.tar.xz /home/",
+                "C": "tar -cJf /backups/home.tar.xz /home/",
+                "D": "dd of=/backups/home.tar.xz if=/home/"
+            },
+            "antwort": "C",
+            "erklärung": "Der Befehl 'tar' kann Dateien archivieren und komprimieren. Das Flag '-c' steht für create (erstellen), '-J' verwendet die xz-Komprimierung und '-f' gibt den Dateinamen an. 'rsync' ist für die Synchronisation, 'dd' für blockweises Kopieren und 'cpio' ist ein Archivierer, der normalerweise Pipe-Eingaben erwartet."
+        },
+        "en": {
+            "question": "A systems administrator is creating a backup copy of the /home/ directory. Which of the following commands allows the administrator to archive and compress the directory at the same time?",
+            "options": {
+                "A": "cpio -o /backups/home.tar.xz /home/",
+                "B": "rsync -z /backups/home.tar.xz /home/",
+                "C": "tar -cJf /backups/home.tar.xz /home/",
+                "D": "dd of=/backups/home.tar.xz if=/home/"
+            },
+            "answer": "C",
+            "explanation": "The 'tar' command can archive and compress files. The '-c' flag stands for create, '-J' uses xz compression, and '-f' specifies the filename. 'rsync' is for synchronization, 'dd' for block-level copying, and 'cpio' is an archiver that typically expects pipe input."
+        }
+    },
+    {
+        "id": 43,
+        "de": {
+            "frage": "Ein Linux-Benutzer führt den folgenden Befehl aus:\nnohup ping comptia.com &\nWelchen der folgenden Befehle sollte der Benutzer ausführen, um den Prozess an das aktuelle Terminal anzuhängen?",
+            "optionen": {
+                "A": "renice",
+                "B": "jobs",
+                "C": "exec",
+                "D": "fg"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'fg' (foreground) holt einen im Hintergrund laufenden Prozess (der mit & gestartet wurde) in den Vordergrund und verbindet ihn mit dem aktuellen Terminal. 'jobs' listet nur die Hintergrundjobs auf, 'renice' ändert die Priorität."
+        },
+        "en": {
+            "question": "A Linux user runs the following command:\nnohup ping comptia.com &\nWhich of the following commands should the user execute to attach the process to the current terminal?",
+            "options": {
+                "A": "renice",
+                "B": "jobs",
+                "C": "exec",
+                "D": "fg"
+            },
+            "answer": "D",
+            "explanation": "The 'fg' (foreground) command brings a process running in the background (started with &) to the foreground and attaches it to the current terminal. 'jobs' only lists the background jobs, 'renice' changes priority."
+        }
+    },
+    {
+        "id": 44,
+        "de": {
+            "frage": "Ein Systemadministrator möchte überprüfen, wie lange der Start des NetworkManager-Dienstes gedauert hat. Welcher der folgenden Befehle erreicht dieses Ziel?",
+            "optionen": {
+                "A": "resolvectl",
+                "B": "journalctl",
+                "C": "systemctl daemon-reload",
+                "D": "systemd-analyze blame"
+            },
+            "antwort": "D",
+            "erklärung": "'systemd-analyze blame' listet alle laufenden Units auf, sortiert nach der Zeit, die sie zum Initialisieren benötigt haben. Dies ist der Standardbefehl zur Analyse der Boot-Performance."
+        },
+        "en": {
+            "question": "A systems administrator wants to review the amount of time the NetworkManager service took to start. Which of the following commands accomplishes this goal?",
+            "options": {
+                "A": "resolvectl",
+                "B": "journalctl",
+                "C": "systemctl daemon-reload",
+                "D": "systemd-analyze blame"
+            },
+            "answer": "D",
+            "explanation": "'systemd-analyze blame' lists all running units, sorted by the time they took to initialize. This is the standard command for analyzing boot performance."
+        }
+    },
+    {
+        "id": 45,
+        "de": {
+            "frage": "Ein Systemadministrator muss den DNS-TCP-Port auf einem Linux-System für das Netzwerk 10.0.0.0/24 öffnen. Welchen der folgenden Befehle sollte der Administrator für diese Aufgabe verwenden?",
+            "optionen": {
+                "A": "ufw allow dns/tcp to 10.0.0.0/24",
+                "B": "ufw enable 53/tcp from 10.0.0.0/24",
+                "C": "ufw allow 53/tcp from 10.0.0.0/24",
+                "D": "ufw disable from 10.0.0.0/24"
+            },
+            "antwort": "C",
+            "erklärung": "Die korrekte Syntax für UFW (Uncomplicated Firewall) lautet 'ufw allow <port>/<protokoll> from <quelle>'. DNS verwendet Port 53. Daher erlaubt Option C eingehenden TCP-Verkehr auf Port 53 aus dem Subnetz 10.0.0.0/24."
+        },
+        "en": {
+            "question": "A systems administrator needs to open the DNS TCP port on a Linux system from network 10.0.0.0/24. Which of the following commands should the administrator use for this task?",
+            "options": {
+                "A": "ufw allow dns/tcp to 10.0.0.0/24",
+                "B": "ufw enable 53/tcp from 10.0.0.0/24",
+                "C": "ufw allow 53/tcp from 10.0.0.0/24",
+                "D": "ufw disable from 10.0.0.0/24"
+            },
+            "answer": "C",
+            "explanation": "The correct syntax for UFW (Uncomplicated Firewall) is 'ufw allow <port>/<protocol> from <source>'. DNS uses port 53. Therefore, Option C allows inbound TCP traffic on port 53 from the 10.0.0.0/24 subnet."
+        }
+    },
+    {
+        "id": 46,
+        "de": {
+            "frage": "Was beschreibt PEP 8 am besten?",
+            "optionen": {
+                "A": "Der Styleguide für Python-Code",
+                "B": "Virtuelle Python-Umgebungen",
+                "C": "Ein Paket-Installer für Python",
+                "D": "Eine Python-Variable, die Oktalwerte enthält"
+            },
+            "antwort": "A",
+            "erklärung": "PEP 8 (Python Enhancement Proposal 8) ist das offizielle Dokument, das die Richtlinien und Konventionen für die Formatierung von Python-Code beschreibt, um die Lesbarkeit zu gewährleisten."
+        },
+        "en": {
+            "question": "Which of the following describes PEP 8?",
+            "options": {
+                "A": "The style guide for Python code",
+                "B": "Python virtual environments",
+                "C": "A package installer for Python",
+                "D": "A Python variable holding octal values"
+            },
+            "answer": "A",
+            "explanation": "PEP 8 (Python Enhancement Proposal 8) is the official document that describes the guidelines and conventions for formatting Python code to ensure readability."
+        }
+    },
+    {
+        "id": 47,
+        "de": {
+            "frage": "Ein DevOps-Ingenieur muss ein lokales Git-Repository erstellen. Welchen der folgenden Befehle sollte der Ingenieur verwenden?",
+            "optionen": {
+                "A": "git init",
+                "B": "git clone",
+                "C": "git config",
+                "D": "git add"
+            },
+            "antwort": "A",
+            "erklärung": "'git init' ist der Befehl zum Initialisieren eines neuen, leeren Git-Repositorys in einem lokalen Verzeichnis. 'git clone' kopiert ein existierendes Repository."
+        },
+        "en": {
+            "question": "A DevOps engineer needs to create a local Git repository. Which of the following commands should the engineer use?",
+            "options": {
+                "A": "git init",
+                "B": "git clone",
+                "C": "git config",
+                "D": "git add"
+            },
+            "answer": "A",
+            "explanation": "'git init' is the command to initialize a new, empty Git repository in a local directory. 'git clone' copies an existing repository."
+        }
+    },
+    {
+        "id": 48,
+        "de": {
+            "frage": "Ein Systemadministrator muss das Routing von IP-Paketen zwischen Netzwerkschnittstellen aktivieren. Welchen der folgenden Kernel-Parameter sollte der Administrator ändern?",
+            "optionen": {
+                "A": "net.ipv4.ip_multicast",
+                "B": "net.ipv4.ip_route",
+                "C": "net.ipv4.ip_local_port_range",
+                "D": "net.ipv4.ip_forward"
+            },
+            "antwort": "D",
+            "erklärung": "Der Parameter 'net.ipv4.ip_forward' steuert, ob der Kernel Pakete von einer Schnittstelle zur anderen weiterleiten darf. Setzt man diesen Wert auf 1, agiert das System als Router."
+        },
+        "en": {
+            "question": "A systems administrator needs to enable routing of IP packets between network interfaces. Which of the following kernel parameters should the administrator change?",
+            "options": {
+                "A": "net.ipv4.ip_multicast",
+                "B": "net.ipv4.ip_route",
+                "C": "net.ipv4.ip_local_port_range",
+                "D": "net.ipv4.ip_forward"
+            },
+            "answer": "D",
+            "explanation": "The parameter 'net.ipv4.ip_forward' controls whether the kernel is allowed to forward packets from one interface to another. Setting this value to 1 enables the system to act as a router."
+        }
+    },
+    {
+        "id": 49,
+        "de": {
+            "frage": "Ein Linux-Benutzer testet häufig Shell-Skripte, die sich im Verzeichnis /home/user/scripts befinden. Welcher der folgenden Befehle ermöglicht es dem Benutzer, das Programm nur durch Aufruf des Skriptnamens auszuführen?",
+            "optionen": {
+                "A": "export SHELL=$SHELL=/home/user/scripts",
+                "B": "export TERM=$TERM=/home/user/scripts",
+                "C": "export PATH=$PATH:/home/user/scripts",
+                "D": "export alias /home/user/scripts='/bin'"
+            },
+            "antwort": "C",
+            "erklärung": "Die Umgebungsvariable PATH enthält eine Liste von Verzeichnissen, in denen die Shell nach ausführbaren Dateien sucht. Durch Hinzufügen von '/home/user/scripts' zur PATH-Variable können Skripte in diesem Verzeichnis direkt ausgeführt werden, ohne den vollen Pfad anzugeben."
+        },
+        "en": {
+            "question": "A Linux user frequently tests shell scripts located in the /home/user/scripts directory. Which of the following commands allows the user to run the program by invoking only the script name?",
+            "options": {
+                "A": "export SHELL=$SHELL=/home/user/scripts",
+                "B": "export TERM=$TERM=/home/user/scripts",
+                "C": "export PATH=$PATH:/home/user/scripts",
+                "D": "export alias /home/user/scripts='/bin'"
+            },
+            "answer": "C",
+            "explanation": "The PATH environment variable contains a list of directories where the shell searches for executable files. By appending '/home/user/scripts' to the PATH variable, scripts in that directory can be executed directly without specifying the full path."
+        }
+    },
+    {
+        "id": 50,
+        "de": {
+            "frage": "Ein Systemadministrator muss den Status aller Dienste auf einem Linux-Server überprüfen. Welcher der folgenden Befehle erfüllt diese Aufgabe?",
+            "optionen": {
+                "A": "systemctl is-active --services",
+                "B": "systemctl list-sockets --type-services",
+                "C": "systemctl is-enabled --services",
+                "D": "systemctl list-units --type-services"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'systemctl list-units --type=service' (in der Frage als --type-services abgekürzt) listet alle Systemd-Einheiten vom Typ 'Service' auf und zeigt deren aktuellen Status (loaded, active, running) an."
+        },
+        "en": {
+            "question": "A systems administrator needs to check the statuses of all the services on a Linux server. Which of the following commands accomplishes this task?",
+            "options": {
+                "A": "systemctl is-active --services",
+                "B": "systemctl list-sockets --type-services",
+                "C": "systemctl is-enabled --services",
+                "D": "systemctl list-units --type-services"
+            },
+            "answer": "D",
+            "explanation": "The command 'systemctl list-units --type=service' (abbreviated as --type-services in the question) lists all systemd units of the type 'service' and displays their current status (loaded, active, running)."
+        }
+    },
+    {
+        "id": 51,
+        "de": {
+            "frage": "Welche der folgenden kryptographischen Funktionen stellt sicher, dass eine Festplatte verschlüsselt ist, wenn sie nicht verwendet wird?",
+            "optionen": {
+                "A": "GPG",
+                "B": "LUKS",
+                "C": "PKI-Zertifikate",
+                "D": "OpenSSL"
+            },
+            "antwort": "B",
+            "erklärung": "LUKS (Linux Unified Key Setup) ist der Standard für die Festplattenverschlüsselung unter Linux. Es schützt Daten 'at rest' (im Ruhezustand), also wenn das Laufwerk ausgeschaltet oder nicht eingehängt ist."
+        },
+        "en": {
+            "question": "Which of the following cryptographic functions ensures a hard drive is encrypted when not in use?",
+            "options": {
+                "A": "GPG",
+                "B": "LUKS",
+                "C": "PKI certificates",
+                "D": "OpenSSL"
+            },
+            "answer": "B",
+            "explanation": "LUKS (Linux Unified Key Setup) is the standard for hard disk encryption on Linux. It protects data 'at rest', meaning when the drive is powered off or not mounted."
+        }
+    },
+    {
+        "id": 52,
+        "de": {
+            "frage": "Welche der folgenden Aussagen beschreibt einen Webhook am genauesten?",
+            "optionen": {
+                "A": "Eine Authentifizierungsmethode für Webserver-Kommunikation",
+                "B": "Eine SNMP-basierte API zur Überwachung von Netzwerkgeräten",
+                "C": "Ein Mittel zur Übertragung sensibler Informationen zwischen Systemen",
+                "D": "Eine HTTP-basierte Callback-Funktion"
+            },
+            "antwort": "D",
+            "erklärung": "Ein Webhook ist im Wesentlichen ein HTTP-Callback: Wenn in einem System ein bestimmtes Ereignis eintritt, sendet es automatisch Daten (normalerweise per POST-Request) an eine vordefinierte URL in einem anderen System."
+        },
+        "en": {
+            "question": "Which of the following most accurately describes a webhook?",
+            "options": {
+                "A": "An authentication method for web-server communication",
+                "B": "An SNMP-based API for network device monitoring",
+                "C": "A means to transmit sensitive information between systems",
+                "D": "An HTTP-based callback function"
+            },
+            "answer": "D",
+            "explanation": "A webhook is essentially an HTTP callback: when a specific event occurs in one system, it automatically sends data (usually via a POST request) to a predefined URL in another system."
+        }
+    },
+    {
+        "id": 53,
+        "de": {
+            "frage": "Ein Administrator versucht, Updates auf einem Linux-System zu installieren, erhält jedoch Fehlermeldungen bezüglich eines bestimmten Repositorys. Welchen der folgenden Befehle sollte der Administrator verwenden, um zu überprüfen, ob das Repository installiert und aktiviert ist?",
+            "optionen": {
+                "A": "yum repo-pkgs",
+                "B": "yum list installed repos",
+                "C": "yum reposync available",
+                "D": "yum repolist all"
+            },
+            "antwort": "D",
+            "erklärung": "Der Befehl 'yum repolist all' listet alle konfigurierten Repositorys auf und zeigt an, ob sie aktiviert ('enabled') oder deaktiviert ('disabled') sind. Dies hilft bei der Diagnose von Repository-Problemen."
+        },
+        "en": {
+            "question": "An administrator attempts to install updates on a Linux system but receives error messages regarding a specific repository. Which of the following commands should the administrator use to verify that the repository is installed and enabled?",
+            "options": {
+                "A": "yum repo-pkgs",
+                "B": "yum list installed repos",
+                "C": "yum reposync available",
+                "D": "yum repolist all"
+            },
+            "answer": "D",
+            "explanation": "The command 'yum repolist all' lists all configured repositories and indicates whether they are 'enabled' or 'disabled'. This helps in diagnosing repository issues."
+        }
+    },
+    {
+        "id": 54,
+        "de": {
+            "frage": "Was ist der Hauptgrund für die Einrichtung von Richtlinien zum Ablauf von Passwörtern?",
+            "optionen": {
+                "A": "Um die wiederholte Verwendung derselben Passwörter zu vermeiden",
+                "B": "Um die Verwendung von kompromittierten Passwörtern zu minimieren",
+                "C": "Um die Verwendung von passwortloser Authentifizierung zu erzwingen",
+                "D": "Um die Passwortstärke und -komplexität zu erhöhen"
+            },
+            "antwort": "B",
+            "erklärung": "Das regelmäßige Ändern von Passwörtern (Ablaufrichtlinie) soll das Zeitfenster begrenzen, in dem ein Angreifer ein gestohlenes oder kompromittiertes (exposed) Passwort missbrauchen kann."
+        },
+        "en": {
+            "question": "Which of the following is the main reason for setting up password expiry policies?",
+            "options": {
+                "A": "To avoid using the same passwords repeatedly",
+                "B": "To mitigate the use of exposed passwords",
+                "C": "To force usage of passwordless authentication",
+                "D": "To increase password strength and complexity"
+            },
+            "answer": "B",
+            "explanation": "Regularly changing passwords (expiry policy) is intended to limit the window of opportunity during which an attacker can abuse a stolen or compromised (exposed) password."
+        }
+    }
+]

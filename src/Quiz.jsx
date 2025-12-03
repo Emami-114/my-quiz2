@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
 import questions2 from "./linuxPlus.json";
-import compQuiz from "./linux-comptia.json";
+import compQuiz from "./examtopic.json";
 
 export default function Quiz() {
   const [questions, setQuestions] = useState(questions2);
@@ -182,7 +182,7 @@ export default function Quiz() {
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={switchQuiz}
       >
-        {quizType === "compQuiz" ? "Linux+" : "CompTia"}
+        {quizType === "compQuiz" ? "Linux+" : "Exam Topic"}
       </Button>
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
