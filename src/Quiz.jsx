@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./linuxPlus.json";
+import questions2 from "./secplus.json";
 import compQuiz from "./examtopic.json";
 
 export default function Quiz() {
@@ -182,7 +182,7 @@ export default function Quiz() {
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={switchQuiz}
       >
-        {quizType === "compQuiz" ? "Linux+" : "Exam Topic"}
+        {quizType === "compQuiz" ? "Sec+" : "Exam Topic"}
       </Button>
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
@@ -201,7 +201,7 @@ export default function Quiz() {
           {(currentQuestion.image || currentQuestion.bild) && (
             <div className="flex justify-center mb-8">
               <img
-                src={`https://emami-114.github.io/my-quiz2/assets/${currentQuestion.image || currentQuestion.bild}`}
+                src={`https://emami-114.github.io/my-quiz2/assets/secplus/${currentQuestion.image || currentQuestion.bild}`}
                 alt="Question illustration"
                 className="max-w-md max-h-80 rounded-lg shadow-lg object-contain"
               />
