@@ -104,13 +104,13 @@
         "de": {
             "frage": "Welches der folgenden Szenarien beschreibt einen möglichen Business-Email-Compromise-Angriff?",
             "optionen": {
-                "A": "Ein Mitarbeiter erhält eine Geschenkkarten-Anfrage in einer E-Mail, die den Namen eines Executives im Anzeigefeld der E-Mail hat.",
-                "B": "Mitarbeiter, die einen E-Mail-Anhang öffnen, erhalten Nachrichten, die Zahlung verlangen, um auf Dateien zuzugreifen.",
-                "C": "Ein Service-Desk-Mitarbeiter erhält eine E-Mail vom HR-Direktor, die nach Anmeldeinformationen für ein Cloud-Administrator-Konto fragt.",
-                "D": "Ein Mitarbeiter erhält eine E-Mail mit einem Link zu einer Phishing-Seite, die wie das E-Mail-Portal des Unternehmens gestaltet ist."
+                "A": "Ein Mitarbeiter erhält eine E-Mail mit der Bitte um Geschenkkarten, in deren Absenderfeld der Name eines Geschäftsführers steht.",
+                "B": "Mitarbeiter, die einen E-Mail-Anhang öffnen, erhalten Nachrichten, in denen Zahlungen gefordert werden, um Zugriff auf Dateien zu erhalten.",
+                "C": "Ein Mitarbeiter des Service-Desks erhält eine E-Mail vom HR-Direktor mit der Bitte um Anmeldedaten für ein Cloud-Administrator-Konto.",
+                "D": "Ein Mitarbeiter erhält eine E-Mail mit einem Link zu einer Phishing-Seite, die wie das E-Mail-Portal des Unternehmens aussieht."
             },
-            "antwort": "A",
-            "erklärung": "Ein Business-Email-Compromise (BEC)-Angriff ist ein Typ von Phishing-Angriff, der Mitarbeiter ins Visier nimmt, die Zugriff auf Unternehmensgelder oder sensible Informationen haben. Der Angreifer gibt sich als vertrauenswürdige Person aus, wie ein Executive, ein Lieferant oder ein Kunde, und fordert eine betrügerische Zahlung, Überweisung oder vertrauliche Daten an. Der Angreifer verwendet oft Social-Engineering-Techniken wie Dringlichkeit, Druck oder Vertrautheit, um das Opfer zur Erfüllung der Anfrage zu überreden. In diesem Szenario beschreibt Option A einen möglichen BEC-Angriff, bei dem ein Mitarbeiter eine Geschenkkarten-Anfrage in einer E-Mail erhält, die den Namen eines Executives im Anzeigefeld hat. Die E-Mail könnte so aussehen, als käme sie vom Executive, aber die tatsächliche E-Mail-Adresse könnte gefälscht oder kompromittiert sein."
+            "antwort": "C",
+            "erklärung": "Ein Business-Email-Compromise-Angriff (BEC) kann auch darin bestehen, dass Angreifer sich als Führungskraft ausgeben und sensible Informationen oder Zugangsdaten anfordern. In diesem Fall wird ein Mitarbeiter gezielt um Zugangsdaten für ein Cloud-Administrator-Konto gebeten, was typisch für einen BEC-Angriff ist."
         },
         "en": {
             "question": "Which of the following scenarios describes a possible business email compromise attack?",
@@ -120,8 +120,8 @@
                 "C": "A service desk employee receives an email from the HR director asking for log-in credentials to a cloud administrator account.",
                 "D": "An employee receives an email with a link to a phishing site that is designed to look like the company's email portal."
             },
-            "answer": "A",
-            "explanation": "A business email compromise (BEC) attack is a type of phishing attack that targets employees who have access to company funds or sensitive information. The attacker impersonates a trusted person, such as an executive, a vendor, or a client, and requests a fraudulent payment, a wire transfer, or confidential data. The attacker often uses social engineering techniques, such as urgency, pressure, or familiarity, to convince the victim to comply with the request. In this scenario, option A describes a possible BEC attack, where an employee receives a gift card request in an email that has an executive’s name in the display field of the email. The email may look like it is coming from the executive, but the actual email address may be spoofed or compromised."
+            "answer": "C",
+            "explanation": "A business email compromise (BEC) attack may involve attackers impersonating executives and requesting sensitive information or credentials. In this case, an employee is asked for login credentials to a cloud administrator account, which is typical of a BEC attack."
         }
     },
     {
@@ -202,17 +202,17 @@
     {
         "id": 9,
         "de": {
-            "frage": "Ein Mitarbeiter erhält eine SMS, die angeblich vom Lohnabrechnungsabteilung stammt und um Überprüfung der Anmeldeinformationen bittet. Welche der folgenden Social-Engineering-Techniken werden versucht? (Wählen Sie zwei.)",
+            "frage": "Ein Mitarbeiter erhält eine SMS, die von der Personalabteilung zu stammen scheint und zur Überprüfung der Zugangsdaten auffordert. Welche der folgenden Social-Engineering-Techniken werden hier versucht? (Wählen Sie zwei aus.)",
             "optionen": {
                 "A": "Typosquatting",
                 "B": "Phishing",
                 "C": "Impersonation",
                 "D": "Vishing",
                 "E": "Smishing",
-                "F": "Misinformation"
+                "F": "Fehlinformation"
             },
-            "antwort": "B,E",
-            "erklärung": "Smishing ist eine Social-Engineering-Technik, die SMS-Nachrichten verwendet, um Opfer dazu zu bringen, sensible Informationen preiszugeben, bösartige Links anzuklicken oder Malware herunterzuladen. Smishing-Nachrichten erscheinen oft von legitimen Quellen zu kommen und verwenden dringende oder bedrohliche Sprache. In diesem Szenario ist die SMS vom Lohnabrechnungsabteilung ein Beispiel für Smishing. Impersonation beinhaltet das Vortäuschen einer anderen Person, um Vertrauen zu gewinnen. Phishing verwendet betrügerische E-Mails, ist aber nicht spezifisch für SMS."
+            "antwort": "C,E",
+            "erklärung": "Die Nachricht wird per SMS versandt, was typisch für Smishing (SMS-Phishing) ist. Außerdem wird die Personalabteilung vorgegaukelt, was als Impersonation (Nachahmung einer vertrauenswürdigen Person oder Abteilung) gilt."
         },
         "en": {
             "question": "An employee receives a text message that appears to have been sent by the payroll department and is asking for credential verification. Which of the following social engineering techniques are being attempted? (Choose two.)",
@@ -224,8 +224,8 @@
                 "E": "Smishing",
                 "F": "Misinformation"
             },
-            "answer": "B,E",
-            "explanation": "Smishing is a type of social engineering technique that uses text messages (SMS) to trick victims into revealing sensitive information, clicking malicious links, or downloading malware. Smishing messages often appear to come from legitimate sources, such as banks, government agencies, or service providers, and use urgent or threatening language to persuade the recipients to take action. In this scenario, the text message that claims to be from the payroll department is an example of smishing."
+            "answer": "C,E",
+            "explanation": "The message is sent via SMS, which is typical for smishing (SMS phishing). Additionally, the payroll department is impersonated, which is known as impersonation."
         }
     },
     {
@@ -412,15 +412,15 @@
     {
         "id": 17,
         "de": {
-            "frage": "Ein Analyst bewertet die Implementierung von Zero-Trust-Prinzipien innerhalb der Data Plane. Was wäre für den Analysten am relevantesten zu bewerten?",
+            "frage": "Ein Analyst bewertet die Umsetzung von Zero-Trust-Prinzipien in der Datenebene. Was wäre für den Analysten am relevantesten zu bewerten?",
             "optionen": {
-                "A": "Secured Zones",
-                "B": "Subject Role",
-                "C": "Adaptive Identity",
-                "D": "Threat Scope Reduction"
+                "A": "Gesicherte Zonen",
+                "B": "Subjekt-Rolle",
+                "C": "Adaptive Identität",
+                "D": "Reduzierung des Bedrohungsumfangs"
             },
-            "antwort": "D",
-            "erklärung": "Die Data Plane ist der Teil des Netzwerks, der User-Traffic und Daten trägt. Ein Schlüsselprinzip von Zero Trust ist, Breach anzunehmen und den Blast Radius sowie den Segment-Zugriff zu minimieren. Dies wird als Threat Scope Reduction bezeichnet und reduziert den Umfang und die Auswirkungen potenzieller Bedrohungen durch Aufteilung des Netzwerks in isolierte Segmente."
+            "antwort": "A",
+            "erklärung": "In der Datenebene beziehen sich Zero-Trust-Prinzipien vor allem auf die Schaffung und Verwaltung von gesicherten Zonen, um den Zugriff auf Daten zu kontrollieren und zu schützen."
         },
         "en": {
             "question": "An analyst is evaluating the implementation of Zero Trust principles within the data plane. Which of the following would be most relevant for the analyst to evaluate?",
@@ -430,8 +430,8 @@
                 "C": "Adaptive identity",
                 "D": "Threat scope reduction"
             },
-            "answer": "D",
-            "explanation": "The data plane is the part of the network that carries user traffic and data. One of the key principles of Zero Trust is to assume breach and minimize the blast radius and segment access, known as threat scope reduction. This reduces the scope and impact of a potential threat by dividing the network into smaller, isolated segments."
+            "answer": "A",
+            "explanation": "Within the data plane, Zero Trust principles focus primarily on creating and managing secured zones to control and protect access to data."
         }
     },
     {
@@ -1016,17 +1016,17 @@
     {
         "id": 41,
         "de": {
-            "frage": "Was muss bei Design eines High-Availability-Netzwerks berücksichtigt werden? (Wählen Sie zwei.)",
+            "frage": "Was muss bei der Planung eines hochverfügbaren Netzwerks berücksichtigt werden? (Wählen Sie zwei aus.)",
             "optionen": {
-                "A": "Ease of Recovery",
-                "B": "Ability to Patch",
-                "C": "Physical Isolation",
-                "D": "Responsiveness",
-                "E": "Attack Surface",
-                "F": "Extensible Authentication"
+                "A": "Leichte Wiederherstellung",
+                "B": "Möglichkeit zum Patchen",
+                "C": "Physische Isolation",
+                "D": "Reaktionsfähigkeit",
+                "E": "Angriffsfläche",
+                "F": "Erweiterbare Authentifizierung"
             },
-            "antwort": "A,E",
-            "erklärung": "High-Availability-Netzwerke berücksichtigen Ease of Recovery (schnelle Wiederherstellung via Backup/Redundancy) und Attack Surface (Reduktion durch Controls wie Firewalls, um Downtime zu minimieren)."
+            "antwort": "A,D",
+            "erklärung": "Bei der Gestaltung eines hochverfügbaren Netzwerks sind die Leichte Wiederherstellung nach Ausfällen und die Reaktionsfähigkeit des Systems besonders wichtig, um Ausfallzeiten zu minimieren und den Betrieb schnell wiederherzustellen."
         },
         "en": {
             "question": "Which of the following must be considered when designing a high-availability network? (Choose two).",
@@ -1038,8 +1038,8 @@
                 "E": "Attack surface",
                 "F": "Extensible authentication"
             },
-            "answer": "A,E",
-            "explanation": "High-availability networks consider ease of recovery (quick restoration via backups/redundancy) and attack surface (reduction via controls like firewalls to minimize downtime)."
+            "answer": "A,D",
+            "explanation": "When designing a high-availability network, ease of recovery after failures and system responsiveness are critical to minimize downtime and quickly restore operations."
         }
     },
     {
@@ -1095,15 +1095,15 @@
     {
         "id": 44,
         "de": {
-            "frage": "Was ist die wahrscheinlichste Konsequenz, wenn eine große Bank eine interne PCI DSS Compliance-Assessment nicht besteht?",
+            "frage": "Was ist die wahrscheinlichste Folge, wenn eine große Bank eine interne PCI-DSS-Compliance-Prüfung nicht besteht?",
             "optionen": {
-                "A": "Fines",
-                "B": "Audit Findings",
-                "C": "Sanctions",
-                "D": "Reputation Damage"
+                "A": "Geldstrafen",
+                "B": "Audit-Feststellungen",
+                "C": "Sanktionen",
+                "D": "Reputationsschaden"
             },
-            "antwort": "A",
-            "erklärung": "PCI DSS Non-Compliance führt zu Fines von Card Brands (Visa etc.), abhängig von Schweregrad. Interne Assessments triggern Strafen bei Submission der Results."
+            "antwort": "B",
+            "erklärung": "Da es sich um eine interne Prüfung handelt, ist das unmittelbare Ergebnis die Dokumentation von Mängeln, also Audit-Feststellungen. Geldstrafen und Sanktionen werden in der Regel erst bei externen Prüfungen oder nach öffentlichen Vorfällen verhängt."
         },
         "en": {
             "question": "Which of the following is the most likely outcome if a large bank fails an internal PCI DSS compliance assessment?",
@@ -1113,8 +1113,8 @@
                 "C": "Sanctions",
                 "D": "Reputation damage"
             },
-            "answer": "A",
-            "explanation": "PCI DSS non-compliance results in fines from card brands (Visa etc.), based on severity, upon submission of internal assessment results."
+            "answer": "B",
+            "explanation": "Since the assessment is internal, the immediate outcome is the documentation of gaps or issues, known as audit findings. Fines and sanctions are typically imposed after external audits or public incidents."
         }
     },
     {
@@ -1220,15 +1220,15 @@
     {
         "id": 49,
         "de": {
-            "frage": "Ein Unternehmen baut ein Backup-Data-Center mit Cost-Benefit-Fokus und RTO/RPO ~2 Tage. Welcher Site-Typ ist am besten?",
+            "frage": "Ein Unternehmen baut ein neues Backup-Rechenzentrum auf, wobei Kosteneffizienz das Hauptkriterium ist und RTO- sowie RPO-Werte bei etwa zwei Tagen liegen. Welche Art von Standort ist für dieses Szenario am besten geeignet?",
             "optionen": {
-                "A": "Real-time Recovery",
-                "B": "Hot",
-                "C": "Cold",
-                "D": "Warm"
+                "A": "Echtzeit-Wiederherstellung",
+                "B": "Hot-Site",
+                "C": "Cold-Site",
+                "D": "Warm-Site"
             },
-            "antwort": "C",
-            "erklärung": "Ein Cold Site hat Infra, aber keine konfigurierten HW/SW. Günstigste Option mit RTO/RPO bis 2+ Tage, passend zu Cost-Fokus und tolerierbaren Werten."
+            "antwort": "D",
+            "erklärung": "Ein Warm-Site bietet eine ausgewogene Lösung: Er ist kostengünstiger als ein Hot-Site, aber schneller einsatzbereit als ein Cold-Site. Bei RTO- und RPO-Werten von etwa zwei Tagen ist ein Warm-Site optimal, da er eine schnelle, aber nicht sofortige Wiederherstellung ermöglicht."
         },
         "en": {
             "question": "An organization is building a new backup data center with cost-benefit as the primary requirement and RTO and RPO values around two days. Which of the following types of sites is the best for this scenario?",
@@ -1238,8 +1238,8 @@
                 "C": "Cold",
                 "D": "Warm"
             },
-            "answer": "C",
-            "explanation": "A cold site has infrastructure but no pre-configured HW/SW. Cheapest option with RTO/RPO up to 2+ days, fitting cost-focus and tolerable values."
+            "answer": "D",
+            "explanation": "A warm site offers a balanced solution: it is less expensive than a hot site but faster to activate than a cold site. With RTO and RPO values around two days, a warm site is optimal, as it allows for quick but not immediate recovery."
         }
     },
     {
@@ -1872,15 +1872,15 @@
     {
         "id": 77,
         "de": {
-            "frage": "Beste Handhabung für critical Business App auf Legacy Server?",
+            "frage": "Was wäre der beste Ansatz, um mit einer kritischen Geschäftsanwendung umzugehen, die auf einem veralteten Server läuft?",
             "optionen": {
-                "A": "Segmentation",
+                "A": "Segmentierung",
                 "B": "Isolation",
-                "C": "Hardening",
-                "D": "Decommissioning"
+                "C": "Härtung",
+                "D": "Außerbetriebnahme"
             },
-            "antwort": "C",
-            "erklärung": "Hardening reduziert Attack Surface auf Legacy Server (Patches, unnötige Services deaktivieren, Firewall, Encryption, Logging), schützt critical App."
+            "antwort": "A",
+            "erklärung": "Die Segmentierung des Netzwerks ist der beste Weg, um ein veraltetes System mit einer kritischen Anwendung zu schützen. Dadurch wird der Zugriff auf das System eingeschränkt und das Risiko einer Ausbreitung von Sicherheitsvorfällen minimiert."
         },
         "en": {
             "question": "Which of the following would be the best way to handle a critical business application that is running on a legacy server?",
@@ -1890,8 +1890,8 @@
                 "C": "Hardening",
                 "D": "Decommissioning"
             },
-            "answer": "C",
-            "explanation": "Hardening reduces attack surface on legacy server (patches, disable services, firewall, encryption, logging), protecting critical app."
+            "answer": "A",
+            "explanation": "Network segmentation is the best way to protect a legacy system running a critical application. This limits access to the system and minimizes the risk of security incidents spreading."
         }
     },
     {
