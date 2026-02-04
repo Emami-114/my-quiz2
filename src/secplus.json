@@ -2070,35 +2070,6 @@
         }
     },
     {
-        "id": 85,
-        "de": {
-            "frage": "High-Availability Network Design: Berücksichtigen? (Zwei)",
-            "optionen": {
-                "A": "Ease of Recovery",
-                "B": "Ability to Patch",
-                "C": "Physical Isolation",
-                "D": "Responsiveness",
-                "E": "Attack Surface",
-                "F": "Extensible Authentication"
-            },
-            "antwort": "A,E",
-            "erklärung": "Ease of Recovery: Schnelle Restore via Redundancy/Backup. Attack Surface: Minimieren durch Controls für Threat-Reduktion."
-        },
-        "en": {
-            "question": "Which of the following must be considered when designing a high-availability network? (Select two).",
-            "options": {
-                "A": "Ease of recovery",
-                "B": "Ability to patch",
-                "C": "Physical isolation",
-                "D": "Responsiveness",
-                "E": "Attack surface",
-                "F": "Extensible authentication"
-            },
-            "answer": "A,E",
-            "explanation": "Ease of recovery: Quick restore via redundancy/backup. Attack surface: Minimize via controls for threat reduction."
-        }
-    },
-    {
         "id": 86,
         "de": {
             "frage": "Secure CC-Data, nur last 4 Digits sichtbar: Beste Methode?",
@@ -2201,15 +2172,15 @@
     {
         "id": 90,
         "de": {
-            "frage": "Attacker als CEO ruft an, instruiert Gift Cards kaufen. Technik?",
+            "frage": "Ein Angreifer gibt sich als Chief Executive Officer aus, ruft einen Mitarbeiter an und weist ihn an, Geschenkkarten zu kaufen. Welche der folgenden Techniken verwendet der Angreifer?",
             "optionen": {
                 "A": "Smishing",
-                "B": "Disinformation",
-                "C": "Impersonation",
+                "B": "Desinformation",
+                "C": "Identitätsvortäuschung",
                 "D": "Whaling"
             },
-            "antwort": "D",
-            "erklärung": "Whaling (CEO Fraud): Phishing targetet High-Profile (Executives) via Impersonation für Fraud."
+            "antwort": "C",
+            "erklärung": "Der Angreifer nutzt Identitätsvortäuschung (Impersonation), indem er sich als CEO ausgibt, um den Mitarbeiter zu manipulieren. Während dies auch als Whaling (gezielte Angriffe auf hochrangige Personen) betrachtet werden könnte, beschreibt 'Impersonation' die spezifische Technik am präzisesten – das Vortäuschen einer falschen Identität, um Vertrauen zu gewinnen und die Zielperson zu einer Handlung zu bewegen."
         },
         "en": {
             "question": "An attacker posing as the Chief Executive Officer calls an employee and instructs the employee to buy gift cards. Which of the following techniques is the attacker using?",
@@ -2219,8 +2190,8 @@
                 "C": "Impersonation",
                 "D": "Whaling"
             },
-            "answer": "D",
-            "explanation": "Whaling (CEO fraud): Phishing targeting high-profile executives via impersonation for fraud."
+            "antwort": "C",
+            "explanation": "The attacker is using impersonation by pretending to be the CEO to manipulate the employee. While this could also be considered whaling (targeted attacks on high-level individuals), 'impersonation' most precisely describes the specific technique being used – falsely assuming someone else's identity to gain trust and convince the target to perform an action."
         }
     },
     {
@@ -2980,7 +2951,7 @@
             "erklärung": "False Positive: Scan flagt insecure, aber Encryption supportet – kein Vulnerability."
         },
         "en": {
-            "question": "After reviewing the following vulnerability scanning report: Server:192.168.14.6 Service: Telnet Port: 23 Protocol: TCP Status: Open Severity: High Vulnerability: Use of an insecure network protocol A security analyst performs the following test: nmap -p23 192.168.14.6 --script telnet-encryption PORT STATE SERVICE REASON 23/tcp open telnet syn-ack | telnet encryption: | _ Telnet server supports encryption Which of the following would the security analyst conclude for this reported vulnerability?",
+            "question": "After reviewing the following vulnerability scanning report: \nServer:192.168.14.6 Service: Telnet Port: 23 Protocol: TCP Status: Open Severity: High Vulnerability: Use of an insecure network protocol \nA security analyst performs the following test: \nnmap -p23 192.168.14.6 --script telnet-encryption PORT STATE SERVICE REASON 23/tcp open telnet syn-ack | telnet encryption: | _ Telnet server supports encryption \nWhich of the following would the security analyst conclude for this reported vulnerability?",
             "options": {
                 "A": "It is a false positive.",
                 "B": "A rescan is required.",
@@ -4537,26 +4508,26 @@
     {
         "id": 182,
         "de": {
-            "frage": "Malware nach File View (Shared), no Performance Degradation/no Failed Logins: Attack?",
+            "frage": "Ein Administrator untersucht einen Vorfall und stellt fest, dass mehrere Computer von Benutzern mit Malware infiziert wurden, nachdem sie Dateien angesehen haben, die mit ihnen geteilt wurden. Der Administrator stellt keine Leistungseinbußen bei den infizierten Rechnern fest, und eine Untersuchung der Protokolldateien zeigt keine übermäßig vielen fehlgeschlagenen Anmeldeversuche. Welcher der folgenden Angriffe ist höchstwahrscheinlich die Ursache für die Malware?",
             "optionen": {
-                "A": "Malicious Flash Drive",
-                "B": "RAT",
-                "C": "Brute-Force",
+                "A": "Bösartiger USB-Stick",
+                "B": "Remote Access Trojaner",
+                "C": "Brute-Force-Passwortangriff",
                 "D": "Cryptojacking"
             },
-            "antwort": "D",
-            "erklärung": "Cryptojacking: Stealthy Crypto Mining, low Performance Impact."
+            "antwort": "B",
+            "erklärung": "Ein Remote Access Trojaner (RAT) wird häufig über geteilte Dateien verbreitet und ermöglicht Angreifern verdeckten Zugriff auf infizierte Systeme. Da keine Leistungseinbußen auftreten (was gegen Cryptojacking spricht), keine fehlgeschlagenen Anmeldeversuche vorliegen (was Brute-Force ausschließt) und die Infektion über geteilte Dateien erfolgte (nicht über USB-Sticks), ist ein RAT die wahrscheinlichste Ursache."
         },
         "en": {
-            "question": "An administrator is investigating an incident and discovers several users’ computers were infected with malware after viewing files that were shared with them. The administrator discovers no degraded performance in the infected machines and an examination of the log files does not show excessive failed logins. Which of the following attacks is most likely the cause of the malware?",
+            "question": "An administrator is investigating an incident and discovers several users' computers were infected with malware after viewing files that were shared with them. The administrator discovers no degraded performance in the infected machines and an examination of the log files does not show excessive failed logins. Which of the following attacks is most likely the cause of the malware?",
             "options": {
                 "A": "Malicious flash drive",
                 "B": "Remote access Trojan",
                 "C": "Brute-forced password",
                 "D": "Cryptojacking"
             },
-            "answer": "D",
-            "explanation": "Cryptojacking: Stealthy crypto mining, low performance impact."
+            "answer": "B",
+            "explanation": "A Remote Access Trojan (RAT) is commonly distributed through shared files and allows attackers covert access to infected systems. Since there is no performance degradation (ruling out cryptojacking), no excessive failed login attempts (ruling out brute-force), and the infection occurred through shared files (not flash drives), a RAT is the most likely cause."
         }
     },
     {
@@ -4666,26 +4637,26 @@
     {
         "id": 187,
         "de": {
-            "frage": "Kiosk Clock-In (Inside Building) Credentials stolen (Website Internet-Accessible): Reason?",
+            "frage": "Ein Sicherheitsanalyst stellt fest, dass eine große Anzahl von Mitarbeiter-Anmeldedaten gestohlen wurde und im Dark Web verkauft wird. Der Analyst untersucht den Vorfall und entdeckt, dass Anmeldedaten von stundenweise beschäftigten Mitarbeitern kompromittiert wurden, die von festangestellten Mitarbeitern jedoch nicht betroffen waren. Die meisten Mitarbeiter stempelten sich ein und aus, während sie sich im Gebäude befanden, und nutzten dafür einen der mit dem Netzwerk verbundenen Kioske. Einige stempelten sich jedoch aus und erfassten ihre Zeit, nachdem sie das Gebäude verlassen hatten, um nach Hause zu gehen. Nur diejenigen, die sich im Gebäude ein- und ausstempelten, waren vom Diebstahl der Anmeldedaten betroffen. Die Kioske befinden sich auf verschiedenen Etagen, und es gibt mehrere Router, da das Unternehmen die Umgebungen für bestimmte Geschäftsfunktionen segmentiert. Stundenweise beschäftigte Mitarbeiter müssen eine Website namens acmetimekeeping.com nutzen, um sich ein- und auszustempeln. Diese Website ist über das Internet zugänglich. Welcher der folgenden Gründe ist die wahrscheinlichste Ursache für diese Kompromittierung?",
             "optionen": {
-                "A": "Brute-Force Common Passwords",
-                "B": "Unpatched Vuln Malicious Code on Site",
-                "C": "Internal DNS Poisoning",
-                "D": "ARP Poisoning Kiosks"
+                "A": "Ein Brute-Force-Angriff wurde gegen die Zeiterfassungs-Website eingesetzt, um nach gängigen Passwörtern zu suchen",
+                "B": "Ein böswilliger Akteur kompromittierte die Zeiterfassungs-Website mit schädlichem Code unter Ausnutzung einer ungepatchten Schwachstelle auf der Seite und stahl die Anmeldedaten",
+                "C": "Die internen DNS-Server wurden manipuliert (DNS-Poisoning) und leiteten acmetimekeeping.com auf eine bösartige Domain um, die die Anmeldedaten abfing und sie dann an die echte Seite weiterleitete",
+                "D": "ARP-Poisoning betraf die Maschinen im Gebäude und führte dazu, dass die Kioske eine Kopie aller übermittelten Anmeldedaten an eine bösartige Maschine sendeten"
             },
-            "antwort": "B",
-            "erklärung": "Unpatched Website Vuln: Malicious Code stiehlt Credentials von Kiosks."
+            "antwort": "C",
+            "erklärung": "Da nur Mitarbeiter betroffen waren, die sich innerhalb des Gebäudes befanden, muss der Angriff auf die interne Infrastruktur abzielen. DNS-Poisoning auf den internen Servern erklärt dies perfekt: Interne Benutzer werden auf eine gefälschte Seite umgeleitet, während externe Benutzer (die öffentliche DNS-Server nutzen) sicher auf die echte Seite zugreifen. ARP-Poisoning ist unwahrscheinlich, da es auf lokale Subnetze (Broadcast-Domänen) beschränkt ist und die Kioske über mehrere Router/Segmente verteilt sind."
         },
         "en": {
             "question": "A security analyst discovers that a large number of employee credentials had been stolen and were being sold on the dark web. The analyst investigates and discovers that some hourly employee credentials were compromised, but salaried employee credentials were not affected. Most employees clocked in and out while they were inside the building using one of the kiosks connected to the network. However, some clocked out and recorded their time after leaving to go home. Only those who clocked in and out while inside the building had credentials stolen. Each of the kiosks are on different floors, and there are multiple routers, since the business segments environments for certain business functions. Hourly employees are required to use a website called acmetimekeeping.com to clock in and out. This website is accessible from the internet. Which of the following is the most likely reason for this compromise?",
             "options": {
-                "A": "A brute-force attack was used against the time-keeping website to scan for common passwords.",
-                "B": "A malicious actor compromised the time-keeping website with malicious code using an unpatched vulnerability on the site, stealing the credentials.",
+                "A": "A brute-force attack was used against the time-keeping website to scan for common passwords",
+                "B": "A malicious actor compromised the time-keeping website with malicious code using an unpatched vulnerability on the site, stealing the credentials",
                 "C": "The internal DNS servers were poisoned and were redirecting acmetimekeeping.com to malicious domain that intercepted the credentials and then passed them through to the real site",
-                "D": "ARP poisoning affected the machines in the building and caused the kiosks to send a copy of all the submitted credentials to a malicious machine."
+                "D": "ARP poisoning affected the machines in the building and caused the kiosks to send a copy of all the submitted credentials to a malicious machine"
             },
-            "answer": "B",
-            "explanation": "Unpatched website vuln: Malicious code steals credentials from kiosks."
+            "answer": "C",
+            "explanation": "Since only users inside the building were affected, the attack vector must be specific to the internal network. Internal DNS poisoning fits this scenario: internal users resolving the URL via the poisoned internal DNS are redirected to a malicious site, while external users (using public DNS) access the safe, real site. ARP poisoning is unlikely because it is limited to a single subnet (broadcast domain), and the kiosks are distributed across multiple routers/segments."
         }
     },
     {
@@ -4766,15 +4737,15 @@
     {
         "id": 191,
         "de": {
-            "frage": "Detect Fraud durch Employee Role Assignment?",
+            "frage": "Welche der folgenden Methoden eignet sich am besten zur Aufdeckung von Betrug, indem Mitarbeiter verschiedenen Rollen zugewiesen werden?",
             "optionen": {
-                "A": "Least Privilege",
-                "B": "Mandatory Vacation",
-                "C": "Separation of Duties",
-                "D": "Job Rotation"
+                "A": "Prinzip der geringsten Rechte (Least Privilege)",
+                "B": "Zwangsurlaub (Mandatory Vacation)",
+                "C": "Aufgabentrennung (Separation of Duties)",
+                "D": "Jobrotation (Job Rotation)"
             },
-            "antwort": "D",
-            "erklärung": "Job Rotation: Periodische Roles wechseln, deckt Fraud auf (kein prolonged Control)."
+            "antwort": "C",
+            "erklärung": "Die Aufgabentrennung (Separation of Duties) unterteilt einen kritischen Prozess in mehrere Schritte, die von verschiedenen Personen (Rollen) ausgeführt werden müssen. Dadurch wird Betrug erkannt und verhindert, da eine einzelne Person den Prozess nicht allein abschließen kann, ohne dass eine andere Person (z. B. bei einer Überprüfung oder Genehmigung) die Unstimmigkeit bemerkt."
         },
         "en": {
             "question": "Which of the following is best used to detect fraud by assigning employees to different roles?",
@@ -4784,8 +4755,8 @@
                 "C": "Separation of duties",
                 "D": "Job rotation"
             },
-            "answer": "D",
-            "explanation": "Job rotation: Periodic role changes uncover fraud (no prolonged control)."
+            "answer": "C",
+            "explanation": "Separation of duties involves splitting a critical task into multiple parts assigned to different people (roles). This acts as a fraud detection and prevention mechanism because one person cannot complete a malicious action alone; the second person involved in the process acts as a check and would detect the discrepancy."
         }
     },
     {
@@ -5707,26 +5678,26 @@
     {
         "id": 228,
         "de": {
-            "frage": "Der CISO einer Organisation muss sicherstellen, dass die Wiederherstellung nach Ransomware wahrscheinlich innerhalb der vereinbarten RPOs und RTOs erfolgt. Welches Backup-Szenario würde die Wiederherstellung am besten gewährleisten?",
+            "frage": "Der Chief Information Security Officer einer Organisation muss sicherstellen, dass die Wiederherstellung nach einem Ransomware-Angriff innerhalb der vereinbarten RPOs und RTOs der Organisation wahrscheinlich ist. Welches der folgenden Backup-Szenarien würde die Wiederherstellung am besten gewährleisten?",
             "optionen": {
-                "A": "Stündliche differenzielle Backups auf einem lokalen SAN-Array",
-                "B": "Tägliche Vollbackups vor Ort auf magnetischen Offline-Medien",
-                "C": "Tägliche differenzielle Backups bei einem Drittanbieter in der Cloud",
-                "D": "Wöchentliche Vollbackups mit täglichen inkrementellen Backups auf einem NAS-Laufwerk"
+                "A": "Stündliche differenzielle Backups, gespeichert auf einem lokalen SAN-Array",
+                "B": "Tägliche vollständige Backups, gespeichert vor Ort auf magnetischen Offline-Medien",
+                "C": "Tägliche differenzielle Backups, verwaltet von einem Drittanbieter-Cloud-Provider",
+                "D": "Wöchentliche vollständige Backups mit täglichen inkrementellen Backups, gespeichert auf einem NAS-Laufwerk"
             },
-            "antwort": "D",
-            "erklärung": "Eine Backup-Strategie, die wöchentliche Vollbackups mit täglichen inkrementellen Backups auf einem NAS (Network Attached Storage) kombiniert, erfüllt wahrscheinlich die RPOs und RTOs. Dieser Ansatz stellt sicher, dass aktuelle Daten regelmäßig gesichert werden und die Wiederherstellung effizient erfolgen kann."
+            "antwort": "B",
+            "erklärung": "Gegen Ransomware sind Offline-Backups (Air-Gapped) der wichtigste Schutz. Wenn Backups auf einem lokalen SAN oder NAS (online) liegen, können sie ebenfalls verschlüsselt werden. Offline-Medien (wie Bänder) sind für die Ransomware nicht erreichbar. Tägliche Vollbackups bieten zudem gute Wiederherstellungspunkte (RPO) und schnelle Wiederherstellungszeiten (RTO), da keine inkrementellen Ketten wiederhergestellt werden müssen."
         },
         "en": {
-            "question": "The Chief Information Security Officer of an organization needs to ensure recovery from ransomware would likely occur within the organization's agreed-upon RPOs end RTOs. Which of the following backup scenarios would best ensure recovery?",
+            "question": "The Chief Information Security Officer of an organization needs to ensure recovery from ransomware would likely occur within the organization's agreed-upon RPOs and RTOs. Which of the following backup scenarios would best ensure recovery?",
             "options": {
                 "A": "Hourly differential backups stored on a local SAN array",
-                "B": "Dally full backups stored on premises in magnetic offline media",
-                "C": "Daly differential backups maintained by a third-party cloud provider",
+                "B": "Daily full backups stored on premises in magnetic offline media",
+                "C": "Daily differential backups maintained by a third-party cloud provider",
                 "D": "Weekly full backups with daily incremental stored on a NAS drive"
             },
-            "answer": "D",
-            "explanation": "A backup strategy that combines weekly full backups with daily incremental backups stored on a NAS (Network Attached Storage) drive is likely to meet an organization's Recovery Point Objectives (RPOs) and Recovery Time Objectives (RTOs)."
+            "answer": "B",
+            "explanation": "To ensure recovery from ransomware, the most critical factor is having an offline (air-gapped) backup copy. Online backups (like on a SAN or NAS) can be encrypted by the ransomware itself. Magnetic offline media cannot be reached by the malware. Daily full backups also support good RPOs and fast RTOs since no complex chains of incremental backups need to be restored."
         }
     },
     {
@@ -7117,15 +7088,15 @@
     {
         "id": 284,
         "de": {
-            "frage": "Eine Organisation plant, ihre Aktivitäten international auszuweiten, und muss die Daten am neuen Standort sicher aufbewahren. Die Organisation möchte das sicherste Architekturmodell verwenden. Welches der folgenden Modelle bietet das höchste Sicherheitsniveau?",
+            "frage": "Eine Organisation plant, ihre Aktivitäten international auszuweiten, und muss die Daten am neuen Standort sicher aufbewahren. Die Organisation möchte das sicherste Architekturmodell verwenden, das möglich ist. Welches der folgenden Modelle bietet das höchste Sicherheitsniveau?",
             "optionen": {
                 "A": "Cloud-basiert",
                 "B": "Peer-to-Peer",
-                "C": "On-Premises",
+                "C": "On-Premises (Lokal vor Ort)",
                 "D": "Hybrid"
             },
-            "antwort": "A",
-            "erklärung": "Cloud-basierte Modelle bieten starke Sicherheit mit Funktionen wie Verschlüsselung, Redundanz und Disaster Recovery, was sie zu einer sicheren Wahl für internationale Operationen macht (insbesondere im Vergleich zu schwer zu wartenden On-Premises-Lösungen an entfernten Standorten)."
+            "antwort": "C",
+            "erklärung": "Eine On-Premises-Architektur (lokal vor Ort) gilt im Allgemeinen als die sicherste Option, da die Organisation die vollständige Kontrolle über die physische Hardware, die Netzwerkinfrastruktur und die Daten behält. Im Gegensatz zu Cloud- oder Hybrid-Modellen gibt es keine Abhängigkeit von Drittanbietern oder geteilte Verantwortung, was das Risiko externer Zugriffe minimiert."
         },
         "en": {
             "question": "An organization plans to expand its operations internationally and needs to keep data at the new location secure. The organization wants to use the most secure architecture model possible. Which of the following models offers the highest level of security?",
@@ -7135,8 +7106,8 @@
                 "C": "On-premises",
                 "D": "Hybrid"
             },
-            "answer": "A",
-            "explanation": "Cloud-based models provide strong security with features like encryption, redundancy, and disaster recovery, making it a secure choice for international operations."
+            "answer": "C",
+            "explanation": "On-premises architecture is generally considered the most secure model because the organization retains complete control over the physical hardware, network infrastructure, and data. Unlike cloud or hybrid models, there is no reliance on third-party providers or shared responsibility, which minimizes the risk of external exposure or access."
         }
     },
     {
@@ -7392,26 +7363,26 @@
     {
         "id": 295,
         "de": {
-            "frage": "Die Online-Shopping-Website eines Unternehmens wurde kurz nach Mitternacht am 30. Januar 2023 unbrauchbar. Ein Sicherheitsanalyst überprüfte den Datenbankserver und bemerkte Code (z.B. rm -rf), der angeblich zum Sichern von Daten verwendet wurde. Was sollte der Analyst als Nächstes tun?",
+            "frage": "Die Online-Shopping-Website eines Unternehmens wurde kurz nach Mitternacht am 30. Januar 2023 unbenutzbar. Als ein Sicherheitsanalyst den Datenbankserver überprüfte, bemerkte er Code, der für die Datensicherung verwendet wurde (was auf bösartige Befehle hindeutet). Was sollte der Analyst als Nächstes tun?",
             "optionen": {
-                "A": "Nach kürzlich gekündigten DBAs suchen",
+                "A": "Nach kürzlich gekündigten Datenbankadministratoren (DBAs) suchen",
                 "B": "WAF-Protokolle auf Beweise für Command Injection überprüfen",
                 "C": "Den Datenbankserver auf Malware scannen",
                 "D": "Den Webserver nach Ransomware-Notizen durchsuchen"
             },
-            "antwort": "B",
-            "erklärung": "Der Analyst sollte die Web Application Firewall (WAF)-Protokolle überprüfen. Wenn bösartiger Systemcode (wie rm -rf oder ähnliche Befehle) ausgeführt wurde, deutet dies oft auf eine Command Injection hin, bei der Angreifer Betriebssystembefehle über eine Webanwendung einschleusen."
+            "antwort": "A",
+            "erklärung": "Das Szenario weist stark auf eine „Logische Bombe“ (Logic Bomb) hin. Der spezifische Zeitpunkt (kurz nach Mitternacht) und das Vorhandensein von administrativen Skripten (Backup-Code) deuten darauf hin, dass dies absichtlich von jemandem mit internem Zugriff eingerichtet wurde. Es ist ein klassisches Muster für verärgerte Mitarbeiter, schädliche Prozesse zu planen, die nach ihrem Ausscheiden ausgeführt werden. Daher ist die Überprüfung kürzlich entlassener DBAs der wichtigste nächste Schritt."
         },
         "en": {
             "question": "A company's online shopping website became unusable shortly after midnight on January 30, 2023. When a security analyst reviewed the database server, the analyst noticed code used for backing up data (implying malicious commands). Which of the following should the analyst do next?",
             "options": {
-                "A": "Check for recently terminated DBAs.",
-                "B": "Review WAF logs for evidence of command injection.",
-                "C": "Scan the database server for malware.",
-                "D": "Search the web server for ransomware notes."
+                "A": "Check for recently terminated DBAs",
+                "B": "Review WAF logs for evidence of command injection",
+                "C": "Scan the database server for malware",
+                "D": "Search the web server for ransomware notes"
             },
-            "answer": "B",
-            "explanation": "The analyst should review WAF logs for evidence of command injection. The presence of suspicious system commands suggests that an attacker may have injected malicious commands via the web application."
+            "answer": "A",
+            "explanation": "The scenario strongly suggests a \"Logic Bomb.\" The specific timing (shortly after midnight) and the nature of the code (administrative backup scripts) imply this was set up intentionally by someone with internal access privileges. This is a common tactic for disgruntled employees to schedule malicious tasks to trigger after they leave the company. Investigating recently terminated DBAs is the most logical next step to identify an insider threat."
         }
     },
     {
@@ -7492,15 +7463,15 @@
     {
         "id": 299,
         "de": {
-            "frage": "Ein Sicherheitsanalyst erhält einen Alarm von einem Endpunkt, der für die Ausgabe von Besucherausweisen verwendet wird. Der Alarm zeigt mehrere Verbindungsversuche auf Port 445 (SMB). Welcher Indikator hat den Alarm am wahrscheinlichsten ausgelöst?",
+            "frage": "Ein Sicherheitsanalyst erhält eine Warnmeldung von einem Unternehmens-Endgerät, das von Mitarbeitern zur Ausstellung von Besucherausweisen verwendet wird. Die Warnmeldung enthält Details zu mehreren Verbindungsversuchen auf Port 445. Welche der folgenden Optionen beschreibt den Indikator, der die Warnung ausgelöst hat, am besten?",
             "optionen": {
                 "A": "Blockierter Inhalt",
                 "B": "Brute-Force-Angriff",
                 "C": "Gleichzeitige Sitzungsnutzung",
                 "D": "Kontosperrung"
             },
-            "antwort": "B",
-            "erklärung": "Die Aktivität, bei der mehrere Verbindungsversuche auf Port 445 (SMB) gemacht werden, deutet auf einen Brute-Force-Angriff hin. Der Angreifer nutzt wahrscheinlich automatisierte Methoden, um Anmeldeinformationen für SMB-Shares zu erraten."
+            "antwort": "C",
+            "erklärung": "Port 445 wird für SMB (Server Message Block) verwendet, was Datei- und Druckerfreigaben ermöglicht. Mehrere Verbindungsversuche auf diesem Port von einem einzelnen Endpunkt (wie einem Kiosk für Besucherausweise) deuten oft darauf hin, dass mehrere Sitzungen gleichzeitig initiiert werden oder dass versucht wird, sich lateral im Netzwerk zu bewegen (Lateral Movement). In diesem Kontext deutet es am ehesten auf gleichzeitige Sitzungsnutzung hin, da SMB-Verbindungen Sitzungen aufbauen."
         },
         "en": {
             "question": "A security analyst receives an alert from a corporate endpoint used by employees to issue visitor badges. The alert contains details of multiple connection attempts on port 445. Which of the following best describes the indicator that triggered the alert?",
@@ -7510,8 +7481,8 @@
                 "C": "Concurrent session usage",
                 "D": "Account lockout"
             },
-            "answer": "B",
-            "explanation": "The activity described (multiple connection attempts on port 445/SMB) suggests a brute-force attack. The attacker is likely using automated methods to guess credentials to access shared resources."
+            "answer": "C",
+            "explanation": "Port 445 is used for SMB (Server Message Block), which handles file and printer sharing. Seeing multiple connection attempts on this port typically indicates multiple SMB sessions being established. While this can sometimes be part of an attack (like lateral movement), in the context of the given options, it best aligns with concurrent session usage, as SMB operates via sessions."
         }
     },
     {
@@ -7642,15 +7613,15 @@
     {
         "id": 305,
         "de": {
-            "frage": "Worauf sollte eine Organisation den größten Fokus legen, wenn sie Entscheidungen über die Priorisierung von Schwachstellen trifft?",
+            "frage": "Worauf sollte sich eine Organisation bei Entscheidungen zur Priorisierung von Schwachstellen am meisten konzentrieren?",
             "optionen": {
-                "A": "Expositionsfaktor",
+                "A": "Expositionsfaktor (Exposure factor)",
                 "B": "CVSS",
                 "C": "CVE",
-                "D": "Brancheneinfluss"
+                "D": "Auswirkungen auf die Branche (Industry impact)"
             },
-            "antwort": "B",
-            "erklärung": "Das Common Vulnerability Scoring System (CVSS) ist eine standardisierte Metrik zur Bewertung der Schwere von Schwachstellen, die Organisationen bei der Priorisierung ihrer Reaktion basierend auf Risiken unterstützt."
+            "antwort": "A",
+            "erklärung": "Während der CVSS-Score den technischen Schweregrad einer Schwachstelle angibt, fehlt ihm der geschäftliche Kontext. Der Expositionsfaktor (Exposure Factor) hingegen bezieht sich darauf, wie stark eine bestimmte Ressource tatsächlich gefährdet ist und welcher Schaden im Falle eines Angriffs entstehen würde. Für eine effektive Priorisierung ist das tatsächliche Risiko für das Unternehmen (die Exposition) wichtiger als eine isolierte technische Bewertung."
         },
         "en": {
             "question": "Which of the following should an organization focus on the most when making decisions about vulnerability prioritization?",
@@ -7660,8 +7631,8 @@
                 "C": "CVE",
                 "D": "Industry impact"
             },
-            "answer": "B",
-            "explanation": "The Common Vulnerability Scoring System (CVSS) is a standardized metric used to assess the severity of vulnerabilities, aiding organizations in prioritizing their response based on risk."
+            "answer": "A",
+            "explanation": "While CVSS provides a technical severity score, it lacks business context. The Exposure Factor relates to the specific impact and risk an exploited vulnerability poses to the organization's assets. Prioritization decisions should be based on the actual risk and exposure to the business (how much damage an exploit would actually cause in that specific environment) rather than just a generic severity score."
         }
     },
     {
@@ -7846,15 +7817,15 @@
     {
         "id": 313,
         "de": {
-            "frage": "Welche der Folgenden ist die beste Methode, um zu verhindern, dass ein unbefugter Benutzer einen Laptop in den Telefonnetzwerkport eines Mitarbeiters steckt und dann Tools verwendet, um nach Datenbankservern zu scannen?",
+            "frage": "Welche der folgenden Möglichkeiten ist der beste Weg, um zu verhindern, dass ein nicht autorisierter Benutzer einen Laptop in den Telefon-Netzwerkanschluss eines Mitarbeiters einsteckt und dann Tools verwendet, um nach Datenbankservern zu scannen?",
             "optionen": {
                 "A": "MAC-Filterung",
                 "B": "Segmentierung",
                 "C": "Zertifizierung",
                 "D": "Isolation"
             },
-            "antwort": "A",
-            "erklärung": "MAC-Filterung ermöglicht Netzwerkadministratoren, den Gerätezugang durch Angabe erlaubter MAC-Adressen zu kontrollieren. Dies verhindert, dass unbefugte Geräte wie ein Laptop, der in einen Netzwerkport gesteckt wird, Zugang erhalten."
+            "antwort": "B",
+            "erklärung": "Durch Netzwerksegmentierung (z. B. mittels VLANs) werden verschiedene Arten von Netzwerkverkehr voneinander getrennt. Telefonanschlüsse sollten sich in einem separaten Voice-VLAN befinden, das keinen Zugriff auf das Server-VLAN hat, in dem die Datenbanken liegen. Selbst wenn sich jemand physisch verbindet, verhindert die Segmentierung den Zugriff auf die Datenbankserver."
         },
         "en": {
             "question": "Which of the following is the best way to prevent an unauthorized user from plugging a laptop into an employee's phone network port and then using tools to scan for database servers?",
@@ -7864,8 +7835,8 @@
                 "C": "Certification",
                 "D": "Isolation"
             },
-            "answer": "A",
-            "explanation": "MAC filtering allows network administrators to control device access by specifying allowed MAC addresses. This prevents unauthorized devices, such as a laptop plugged into a network port, from gaining access."
+            "answer": "B",
+            "explanation": "Network segmentation involves separating traffic into different logical networks (like VLANs). By placing VoIP phones on a dedicated Voice VLAN and database servers on a separate restricted VLAN, traffic cannot pass between them by default. This ensures that a device plugged into a phone port is trapped in the voice segment and cannot scan or access the database servers."
         }
     },
     {
@@ -8325,15 +8296,16 @@
     {
         "id": 332,
         "de": {
-            "frage": "Eine Organisation hat eine neue regulatorische Anforderung, korrigierende Kontrollen in einem Finanzsystem zu implementieren. Welches der Folgenden ist der wahrscheinlichste Grund für die neue Anforderung?",
+            "frage": "Eine Organisation hat eine neue regulatorische Anforderung zur Implementierung von korrigierenden Kontrollen (Corrective Controls) in einem Finanzsystem. Welcher der folgenden Gründe ist die wahrscheinlichste Ursache für diese neue Anforderung?",
             "optionen": {
-                "A": "Zur Verteidigung gegen Insider-Bedrohungen, die Bankdetails ändern",
+                "A": "Um sich gegen Insider-Bedrohungen zu verteidigen, die Bankdaten ändern",
                 "B": "Um sicherzustellen, dass Fehler nicht an andere Systeme weitergegeben werden",
-                "C": "Um die Kaufmöglichkeit von Geschäftsversicherungen zu ermöglichen",
-                "D": "Um unbefugte Änderungen an Finanzdaten zu verhindern"
+                "C": "Um den Abschluss einer Unternehmensversicherung zu ermöglichen",
+                "D": "Um unbefugte Änderungen an Finanzdaten zu verhindern",
+                "E": ""
             },
-            "antwort": "D",
-            "erklärung": "Korrigierende Kontrollen wie Auditing und Versionierung helfen, unbefugte Änderungen an Finanzdaten zu verhindern und gewährleisten Datenintegrität sowie Einhaltung von Regulierungen."
+            "antwort": "B",
+            "erklärung": "Sicherheitskontrollen werden oft in präventiv (vorher), detektiv (währenddessen) und korrigierend (nachher) unterteilt. Die Optionen A und D beschreiben präventive Maßnahmen (Verhinderung). Korrigierende Kontrollen greifen, nachdem ein Fehler oder ein Ereignis bereits aufgetreten ist. Ihr Ziel ist es, den Schaden zu begrenzen oder das System wiederherzustellen. In diesem Fall verhindert die korrigierende Kontrolle, dass ein bereits aufgetretener Datenfehler sich auf nachgelagerte Systeme ausbreitet."
         },
         "en": {
             "question": "An organization has a new regulatory requirement to implement corrective controls on a financial system. Which of the following is the most likely reason for the new requirement?",
@@ -8343,8 +8315,8 @@
                 "C": "To allow for business insurance to be purchased",
                 "D": "To prevent unauthorized changes to financial data"
             },
-            "answer": "D",
-            "explanation": "Corrective controls, such as auditing and versioning, help prevent unauthorized changes to financial data, ensuring data integrity and compliance with regulations."
+            "answer": "B",
+            "explanation": "Security controls are often categorized as preventive (before), detective (during), and corrective (after). Options A and D describe preventive measures. Corrective controls are designed to act after an incident or error has occurred to mitigate damage or restore operations. In this specific scenario, the corrective control ensures that if an error occurs within the financial data, it is contained or fixed so that bad data does not propagate to other connected systems."
         }
     },
     {
@@ -8500,15 +8472,15 @@
     {
         "id": 339,
         "de": {
-            "frage": "Ein Unternehmen ändert seine Mobile-Device-Policy. Das Unternehmen hat folgende Anforderungen: Unternehmenseigene Geräte, Fähigkeit zur Härte, Reduziertes Sicherheitsrisiko, Kompatibilität mit Unternehmensressourcen. Welches der Folgenden würde diese Anforderungen am besten erfüllen?",
+            "frage": "Ein Unternehmen ändert seine Richtlinie für Mobilgeräte. Das Unternehmen hat folgende Anforderungen: Unternehmenseigene Geräte, Möglichkeit zur Härtung der Geräte, Reduziertes Sicherheitsrisiko, Kompatibilität mit Unternehmensressourcen. Welche der folgenden Optionen würde diese Anforderungen am besten erfüllen?",
             "optionen": {
-                "A": "BYOD",
-                "B": "CYOD",
-                "C": "COPE",
-                "D": "COBO"
+                "A": "BYOD (Bring Your Own Device)",
+                "B": "CYOD (Choose Your Own Device)",
+                "C": "COPE (Corporate Owned, Personally Enabled)",
+                "D": "COBO (Corporate Owned, Business Only)"
             },
-            "antwort": "C",
-            "erklärung": "COPE (Corporate-Owned, Personally Enabled)-Geräte ermöglichen Unternehmen, unternehmenseigene Geräte zu managen und zu härten, während begrenzte persönliche Nutzung erlaubt wird, reduziert Sicherheitsrisiken und erhält Kompatibilität mit Unternehmensressourcen."
+            "antwort": "D",
+            "erklärung": "COBO (Corporate Owned, Business Only) ist das strengste Modell. Da die Geräte ausschließlich für geschäftliche Zwecke genutzt werden dürfen, kann das Unternehmen sie vollständig härten und kontrollieren. Dies minimiert das Sicherheitsrisiko erheblich im Vergleich zu Modellen, die eine private Nutzung erlauben (wie COPE) oder dem Mitarbeiter gehören (wie BYOD/CYOD)."
         },
         "en": {
             "question": "A company is changing its mobile device policy. The company has the following requirements: Company-owned devices, Ability to harden the devices, Reduced security risk, Compatibility with company resources. Which of the following would best meet these requirements?",
@@ -8518,8 +8490,8 @@
                 "C": "COPE",
                 "D": "COBO"
             },
-            "answer": "C",
-            "explanation": "COPE (Corporate-Owned, Personally Enabled) devices allow companies to manage and harden company-owned devices while still enabling limited personal use, reducing security risks while maintaining compatibility with corporate resources."
+            "answer": "D",
+            "explanation": "COBO (Corporate Owned, Business Only) is the most restrictive deployment model. Because the devices are strictly for business use only, the company can fully harden and lock them down. This offers the lowest security risk compared to models that allow personal use (like COPE) or employee ownership (like BYOD/CYOD)."
         }
     },
     {
@@ -10193,15 +10165,15 @@
     {
         "id": 406,
         "de": {
-            "frage": "Ein Unternehmen verarbeitet und speichert sensible Daten auf seinen eigenen Systemen. Welchen Schritt sollte das Unternehmen zuerst unternehmen, um die Einhaltung von Datenschutzbestimmungen sicherzustellen?",
+            "frage": "Ein Unternehmen verarbeitet und speichert sensible Daten auf eigenen Systemen. Welchen der folgenden Schritte sollte das Unternehmen zuerst unternehmen, um die Einhaltung von Datenschutzbestimmungen sicherzustellen?",
             "optionen": {
-                "A": "Zugangskontrollen und Verschlüsselung implementieren",
-                "B": "Datenschutzrichtlinien entwickeln und Schulungen anbieten",
-                "C": "Pläne für Vorfallreaktion und Disaster Recovery erstellen",
-                "D": "Sicherheitssoftware kaufen und installieren"
+                "A": "Implementierung von Zugriffskontrollen und Verschlüsselung",
+                "B": "Entwicklung und Bereitstellung von Schulungen zu Datenschutzrichtlinien",
+                "C": "Erstellung von Plänen für die Reaktion auf Vorfälle und die Notfallwiederherstellung",
+                "D": "Kauf und Installation von Sicherheitssoftware"
             },
-            "antwort": "A",
-            "erklärung": "Datenschutz beginnt auf technischer Ebene mit dem Schutz der Daten selbst. Die Implementierung von Zugangskontrollen (wer darf die Daten sehen) und Verschlüsselung (Schutz bei Diebstahl) sind oft die primären technischen Anforderungen von Datenschutzgesetzen."
+            "antwort": "B",
+            "erklärung": "In der Compliance-Hierarchie stehen Governance und Richtlinien (Policies) an erster Stelle. Bevor man technische Kontrollen (wie Verschlüsselung) oder Software kauft, muss das Unternehmen definieren, welche Regeln gelten, und sicherstellen, dass die Mitarbeiter diese verstehen. Ohne etablierte Richtlinien und Schulungen fehlt die Grundlage für die Auswahl und Implementierung der korrekten technischen Maßnahmen."
         },
         "en": {
             "question": "A company processes and stores sensitive data on its own systems. Which of the following steps should the company take first to ensure compliance with privacy regulations?",
@@ -10211,8 +10183,8 @@
                 "C": "Create incident response and disaster recovery plans",
                 "D": "Purchase and install security software"
             },
-            "answer": "A",
-            "explanation": "Data privacy starts at the technical level with securing the data itself. Implementing access controls (limiting who sees data) and encryption (protecting data if stolen) are often the primary technical requirements of privacy regulations."
+            "answer": "B",
+            "explanation": "In compliance frameworks, governance and policy creation typically precede technical implementation. Before purchasing software or implementing encryption, the organization must establish the rules (policies) regarding data handling and ensure employees are trained on them. Without policies and training, technical controls may be misconfigured or misaligned with regulatory requirements."
         }
     },
     {
@@ -10268,15 +10240,15 @@
     {
         "id": 409,
         "de": {
-            "frage": "Ein Sicherheitsanalyst überprüft Protokolle, um das Ziel von Command-and-Control-Verkehr (C2) zu identifizieren, der von einem kompromittierten Gerät im lokalen Netzwerk ausgeht. Welches Protokoll eignet sich am besten für die Überprüfung?",
+            "frage": "Ein Sicherheitsanalyst überprüft Protokolle, um das Ziel von Command-and-Control-Verkehr zu identifizieren, der von einem kompromittierten Gerät im lokalen Netzwerk ausgeht. Welches der folgenden Protokolle eignet sich am besten für die Überprüfung?",
             "optionen": {
-                "A": "IDS",
+                "A": "IDS (Intrusion Detection System)",
                 "B": "Antivirus",
                 "C": "Firewall",
-                "D": "Anwendung"
+                "D": "Anwendung (Application)"
             },
-            "antwort": "D",
-            "erklärung": "HINWEIS: Die in der Quelle angegebene Antwort war 'D' (Anwendung), was im Kontext von DNS-Logs (oft als Application Layer betrachtet) Sinn ergibt, da C2 oft DNS nutzt. In vielen Kontexten wären jedoch DNS-Logs oder Firewall/Proxy-Logs (C) präziser. Basierend auf den verfügbaren Optionen und der Musterlösung wird D beibehalten, da DNS ein Anwendungsschichtprotokoll ist, das Ziele auflöst."
+            "antwort": "C",
+            "erklärung": "Die Firewall-Protokolle bieten die umfassendste Übersicht über den ein- und ausgehenden Netzwerkverkehr, einschließlich IP-Adressen und Portnummern. Um das *Ziel* (Destination IP) des Traffics zu identifizieren, der das Netzwerk verlässt, ist die Firewall die primäre Informationsquelle. IDS kann zwar Warnungen auslösen, aber die Firewall-Logs zeigen explizit alle Verbindungsversuche nach außen."
         },
         "en": {
             "question": "A security analyst is reviewing logs to identify the destination of command-and-control traffic originating from a compromised device within the on-premises network. Which of the following is the best log to review?",
@@ -10286,8 +10258,8 @@
                 "C": "Firewall",
                 "D": "Application"
             },
-            "answer": "D",
-            "explanation": "NOTE: While Firewall logs (C) show connections, the provided answer key points to 'D'. In the context of C2 traffic, attackers often use DNS (an application layer protocol) to resolve malicious domains. DNS/Application logs provide the specific domain names (destinations) being requested."
+            "answer": "C",
+            "explanation": "Firewall logs provide the most direct record of inbound and outbound network traffic, including source and destination IP addresses. To identify where traffic is going (the destination) as it leaves the network, the firewall log is the best source. While an IDS might alert on the nature of the traffic, the firewall log definitively records the connection details."
         }
     },
     {
@@ -10333,7 +10305,7 @@
             "options": {
                 "A": "Nation-state",
                 "B": "Organized crime",
-                "C": "Hacktvist",
+                "C": "Hacktivist",
                 "D": "Insider threat"
             },
             "answer": "C",
@@ -10368,15 +10340,15 @@
     {
         "id": 413,
         "de": {
-            "frage": "Ein Administrator möchte eine Aktualisierung der Kontoberechtigungen für eine große Anzahl von Konten automatisieren. Was würde diese Aufgabe am besten erfüllen?",
+            "frage": "Ein Administrator möchte ein Update der Kontoberechtigungen für eine große Anzahl von Konten automatisieren. Welche der folgenden Optionen würde diese Aufgabe am besten erfüllen?",
             "optionen": {
-                "A": "Sicherheitsgruppen",
-                "B": "Föderation",
-                "C": "Benutzerbereitstellung (User Provisioning)",
-                "D": "Vertikale Skalierung"
+                "A": "Sicherheitsgruppen (Security groups)",
+                "B": "Federation",
+                "C": "Benutzerbereitstellung (User provisioning)",
+                "D": "Vertikale Skalierung (Vertical scaling)"
             },
             "antwort": "A",
-            "erklärung": "HINWEIS: Die Quellantwort ist 'B' (Federation), was im Kontext der Automatisierung über Systemgrenzen hinweg Sinn machen kann. Jedoch ist 'A' (Sicherheitsgruppen) die klassische Methode für Massen-Updates (Gruppe ändern -> alle User erben Rechte). Da die Quelle 'B' angibt, wird dies hier übernommen, obwohl Gruppen logischer erscheinen für einfache Permission-Updates."
+            "erklärung": "Sicherheitsgruppen ermöglichen die Zuweisung von Berechtigungen an eine Gruppe, anstatt an einzelne Benutzer. Wenn viele Konten aktualisiert werden müssen, kann der Administrator die Berechtigungen einfach auf Gruppenebene ändern, und alle Mitglieder erhalten automatisch die neuen Rechte. Dies ist die effizienteste Methode zur Automatisierung von Berechtigungsupdates für viele Konten."
         },
         "en": {
             "question": "An administrator wants to automate an account permissions update for a large number of accounts. Which of the following would best accomplish this task?",
@@ -10386,8 +10358,8 @@
                 "C": "User provisioning",
                 "D": "Vertical scaling"
             },
-            "answer": "B",
-            "explanation": "NOTE: Source indicates 'B' (Federation). While Security Groups are standard for batch permissions, Federation allows centralized identity management across systems, potentially automating permission updates across disparate platforms."
+            "answer": "A",
+            "explanation": "Security groups allow permissions to be assigned at the group level rather than individually per user. When updating permissions for many accounts, the administrator can modify the group permissions once, and all members automatically inherit the new settings. This is the most efficient way to automate bulk permission updates."
         }
     },
     {
@@ -10493,17 +10465,17 @@
     {
         "id": 419,
         "de": {
-            "frage": "Ein Administrator gibt den Laptop eines ehemaligen Mitarbeiters neu aus. Welche Kombination von Maßnahmen sollte er durchführen? (Wählen Sie zwei).",
+            "frage": "Ein Sicherheitsadministrator gibt den Laptop eines ehemaligen Mitarbeiters neu aus. Welche der folgenden Kombinationen von Datenverarbeitungsaktivitäten sollte der Administrator am besten durchführen? (Wählen Sie zwei aus).",
             "optionen": {
-                "A": "Datenaufbewahrung (Retention)",
+                "A": "Datenaufbewahrung (Data retention)",
                 "B": "Zertifizierung",
                 "C": "Tokenisierung",
                 "D": "Klassifizierung",
-                "E": "Bereinigung (Sanitization)",
+                "E": "Sanitisierung (Datenbereinigung)",
                 "F": "Enumeration"
             },
-            "antwort": "A, E",
-            "erklärung": "Die Daten sollten zunächst gesichert werden (Retention), falls sie später benötigt werden, und das Gerät muss dann sicher gelöscht werden (Sanitization), bevor es neu ausgegeben wird."
+            "antwort": "D, E",
+            "erklärung": "Bevor der Laptop neu vergeben wird, müssen zwei Schritte erfolgen: Erstens muss festgestellt werden, welche Daten sich auf dem Gerät befinden und wie sensibel diese sind (Klassifizierung), um sicherzustellen, dass wichtige Unternehmensdaten gemäß den Richtlinien archiviert werden. Zweitens muss das Gerät, nachdem die Daten gesichert wurden, sicher gelöscht werden (Sanitisierung), damit der neue Benutzer keinen Zugriff auf die Daten des Vorgängers hat."
         },
         "en": {
             "question": "A security administrator is reissuing a former employee's laptop. Which of the following is the best combination of data handling activities for the administrator to perform? (Select two).",
@@ -10515,8 +10487,8 @@
                 "E": "Sanitization",
                 "F": "Enumeration"
             },
-            "answer": "A, E",
-            "explanation": "Data should first be preserved (Retention) in case it is needed, and then the device must be securely wiped (Sanitization) before reissue."
+            "answer": "D, E",
+            "explanation": "When reissuing a device, two critical steps are required regarding data: First, the administrator must identify the sensitivity and type of data on the drive (Classification) to decide if anything needs to be archived for legal or business reasons. Second, once necessary data is handled, the storage media must be securely wiped (Sanitization) to ensure the new user cannot access the previous employee's information."
         }
     },
     {
@@ -11105,15 +11077,15 @@
     {
         "id": 443,
         "de": {
-            "frage": "Welche der folgenden erlaubt es einem Exploit, vom Betriebssystem unentdeckt zu bleiben?",
+            "frage": "Welches der folgenden Verfahren ermöglicht es, dass ein Exploit vom Betriebssystem unentdeckt bleibt?",
             "optionen": {
                 "A": "Firmware-Schwachstellen",
-                "B": "Side Loading",
-                "C": "Memory Injection",
+                "B": "Sideloading",
+                "C": "Speicherinjektion (Memory Injection)",
                 "D": "Verschlüsselte Payloads"
             },
-            "antwort": "A",
-            "erklärung": "Firmware-Schwachstellen operieren außerhalb des OS-Kontexts und bleiben daher unentdeckt."
+            "antwort": "C",
+            "erklärung": "Speicherinjektion (Memory Injection) oder 'fileless malware' führt bösartigen Code direkt im flüchtigen Speicher (RAM) aus, ohne Dateien auf die Festplatte zu schreiben. Da herkömmliche Antivirensoftware und Betriebssystem-Sicherheitsmechanismen oft auf Datei-Scans basieren, können solche Angriffe der Erkennung entgehen, da sie keine Spuren im Dateisystem hinterlassen."
         },
         "en": {
             "question": "Which of the following allows an exploit to go undetected by the operating system?",
@@ -11123,22 +11095,22 @@
                 "C": "Memory injection",
                 "D": "Encrypted payloads"
             },
-            "answer": "A",
-            "explanation": "Firmware vulnerabilities operate outside the OS context, evading OS detection."
+            "answer": "C",
+            "explanation": "Memory injection (often associated with fileless malware) involves executing malicious code directly in the system's volatile memory (RAM) without writing files to the disk. Since many traditional operating system security tools and antivirus programs rely on scanning files on the storage drive, memory-resident attacks can often evade detection."
         }
     },
     {
         "id": 444,
         "de": {
-            "frage": "Welche der folgenden Aktivitäten ist in der Post-Incident-Review-Phase enthalten?",
+            "frage": "Welche der folgenden Aktivitäten ist in der Phase der Nachbereitung von Vorfällen (Post-Incident Review) enthalten?",
             "optionen": {
-                "A": "Feststellen der Root Cause des Incidents",
-                "B": "Entwickeln von Schritten zur Risikominderung des Incidents",
-                "C": "Validieren der Genauigkeit der gesammelten Beweise",
-                "D": "Wiederherstellen der Konfiguration des kompromittierten Systems"
+                "A": "Bestimmung der Grundursache des Vorfalls",
+                "B": "Entwicklung von Schritten zur Minderung der Risiken des Vorfalls",
+                "C": "Validierung der Genauigkeit der während der Untersuchung gesammelten Beweise",
+                "D": "Wiederherstellung der Konfiguration und Einstellungen des kompromittierten Systems"
             },
-            "antwort": "A",
-            "erklärung": "Die Post-Incident-Review analysiert die Root Cause, um zukünftige Vorfälle zu verhindern."
+            "antwort": "B",
+            "erklärung": "Die Phase der Nachbereitung (oft als 'Lessons Learned' bezeichnet) findet statt, nachdem der Vorfall bewältigt wurde. Ihr Hauptziel ist es, den Vorfall zu analysieren, um Verbesserungen für die Zukunft zu identifizieren. Dazu gehört vor allem die Entwicklung von Maßnahmen und Schritten zur Risikominderung, um sicherzustellen, dass sich ein solcher Vorfall nicht wiederholt. (Die Wiederherstellung, Option D, gehört zur Recovery-Phase). "
         },
         "en": {
             "question": "Which of the following activities is included in the post-incident review phase?",
@@ -11148,8 +11120,8 @@
                 "C": "Validating the accuracy of the evidence collected during the investigation",
                 "D": "Reestablishing the compromised system's configuration and settings"
             },
-            "answer": "A",
-            "explanation": "Post-incident review determines root causes to improve future prevention."
+            "answer": "B",
+            "explanation": "The post-incident review phase (often called 'Lessons Learned') occurs after the incident has been handled. Its primary goal is to analyze the event to identify improvements for the future. This specifically involves developing actionable steps and mitigation strategies to prevent the recurrence of similar incidents. (Reestablishing systems, Option D, is part of the Recovery phase)."
         }
     },
     {
@@ -11255,15 +11227,15 @@
     {
         "id": 449,
         "de": {
-            "frage": "Ein bösartiger Insider aus dem Marketing-Team verändert Aufzeichnungen und überweist Firmengelder auf ein persönliches Konto. Welche der folgenden Methoden wäre der beste Weg, Firmenaufzeichnungen künftig zu sichern?",
+            "frage": "Ein böswilliger Insider aus dem Marketingteam verändert Datensätze und überweist Unternehmensgelder auf ein persönliches Konto. Welche der folgenden Methoden wäre der beste Weg, um Unternehmensdaten in Zukunft zu sichern?",
             "optionen": {
-                "A": "Berechtigungsbeschränkungen",
+                "A": "Berechtigungseinschränkungen",
                 "B": "Hashing",
-                "C": "Input-Validierung",
-                "D": "Access Control List"
+                "C": "Eingabevalidierung",
+                "D": "Zugriffskontrollliste (Access Control List)"
             },
-            "antwort": "D",
-            "erklärung": "ACLs kontrollieren präzise, welche Benutzer auf welche Daten zugreifen können und verhindern unbefugte Änderungen."
+            "antwort": "A",
+            "erklärung": "Das Problem liegt hier darin, dass ein Mitarbeiter aus dem Marketingteam Zugriff auf Finanzfunktionen hatte, die für seine Rolle nicht notwendig sind. Berechtigungseinschränkungen (im Sinne des Prinzips der geringsten Rechte/Least Privilege) sind die effektivste Lösung. Wenn Marketingmitarbeiter keine Schreib- oder Überweisungsrechte für Finanzdatensätze haben, können sie diese Art von Betrug technisch gar nicht erst begehen."
         },
         "en": {
             "question": "A malicious insider from the marketing team alters records and transfers company funds to a personal account. Which of the following methods would be the best way to secure company records in the future?",
@@ -11273,8 +11245,8 @@
                 "C": "Input validation",
                 "D": "Access control list"
             },
-            "answer": "D",
-            "explanation": "ACLs provide granular control over who can access and modify specific records."
+            "answer": "A",
+            "explanation": "The core issue is that a marketing employee had access to financial capabilities unnecessary for their job function. Permission restrictions (aligning with the Principle of Least Privilege) are the most effective solution. If marketing staff do not have write or transfer permissions for financial records, they are technically prevented from committing this type of fraud."
         }
     },
     {
@@ -11686,15 +11658,15 @@
     {
         "id": 466,
         "de": {
-            "frage": "Ein Unternehmen erwägt, die Zugriffskontrollen für eine Anwendung, die sowohl von Auftragnehmenden als auch von internen Mitarbeitenden genutzt wird, zu erweitern, um Kosten zu senken. Welches der folgenden Risiko-Elemente sollte das Implementierungsteam verstehen, bevor es Zugriff auf die Anwendung gewährt?",
+            "frage": "Ein Unternehmen erwägt eine Erweiterung der Zugriffskontrollen für eine Anwendung, die von Auftragnehmern und internen Mitarbeitern genutzt wird, um Kosten zu senken. Welches der folgenden Risikoelemente sollte das Implementierungsteam verstehen, bevor es den Zugriff auf die Anwendung gewährt?",
             "optionen": {
-                "A": "Schwelle",
-                "B": "Risikobereitschaft",
-                "C": "Toleranz",
-                "D": "Risikoregister"
+                "A": "Risikoschwelle (Threshold)",
+                "B": "Risikoappetit (Appetite)",
+                "C": "Risikotoleranz (Tolerance)",
+                "D": "Risikoregister (Register)"
             },
-            "antwort": "C",
-            "erklärung": "Risikotoleranz beschreibt, in welchem Umfang ein Unternehmen Abweichungen vom gewünschten Risikoniveau akzeptieren kann, bevor Maßnahmen erforderlich werden. Wenn Zugriff auf eine Anwendung für ein breiteres Nutzerfeld gewährt wird, muss verstanden werden, wie viel zusätzliches Risiko durch externe oder wechselnde Nutzer akzeptabel ist. Risikobereitschaft (Appetite) ist das grundsätzliche Niveau an Risiko, das ein Unternehmen eingehen will, während Schwelle und Register eher Hilfsmittel im Risikomanagement sind. Für konkrete Entscheidungen zur Ausweitung von Zugriffen ist die Toleranz besonders wichtig."
+            "antwort": "B",
+            "erklärung": "Der Risikoappetit beschreibt das allgemeine Maß an Risiko, das eine Organisation bereit ist einzugehen, um ihre Ziele (in diesem Fall Kostensenkung durch erweiterten Zugriff) zu erreichen. Bevor man Zugriff an externe Auftragnehmer erweitert, muss das Team wissen, ob die Führungsebene bereit ist, das damit verbundene erhöhte Sicherheitsrisiko zu akzeptieren. Es ist die strategische Vorgabe, die der Entscheidung vorausgeht."
         },
         "en": {
             "question": "A company is considering an expansion of access controls for an application that contractors and internal employees use to reduce costs. Which of the following risk elements should the implementation team understand before granting access to the application?",
@@ -11704,8 +11676,8 @@
                 "C": "Tolerance",
                 "D": "Register"
             },
-            "answer": "C",
-            "explanation": "Risk tolerance describes the degree of variation from the desired risk level that an organization is willing to accept before corrective action is required. When expanding access to an application to a broader set of users, the team must understand how much additional risk from external or transient users is acceptable. Risk appetite refers to the overall level of risk the organization is willing to pursue, while thresholds and registers are tools used in risk management. For specific decisions about broadening access, tolerance is particularly relevant."
+            "answer": "B",
+            "explanation": "Risk appetite defines the general level of risk an organization is willing to accept in pursuit of its objectives (in this case, cost reduction via expanded access). Before granting access to external contractors, the team must understand if leadership is willing to 'eat' the increased security risk involved. It is the high-level strategic guidance required before making the decision."
         }
     },
     {
@@ -11811,15 +11783,15 @@
     {
         "id": 471,
         "de": {
-            "frage": "Ein Mitarbeiter klickte in einer E-Mail auf einen bösartigen Link und lud Malware in das Unternehmensnetzwerk herunter. Das Programm exfiltrierte Tausende von Kundendaten. Welche der folgenden Maßnahmen sollte das Unternehmen implementieren, um dies künftig zu verhindern?",
+            "frage": "Ein Mitarbeiter klickte auf einen bösartigen Link in einer E-Mail und lud Malware auf das Computernetzwerk des Unternehmens herunter. Das bösartige Programm schleuste Tausende von Kundendatensätzen aus. Was sollte das Unternehmen implementieren, um dies in Zukunft zu verhindern?",
             "optionen": {
-                "A": "Sensibilisierungsschulungen für Benutzer",
+                "A": "Benutzer-Awareness-Training",
                 "B": "Netzwerküberwachung",
-                "C": "Endpunktschutz",
+                "C": "Endpunktschutz (Endpoint Protection)",
                 "D": "Data Loss Prevention (DLP)"
             },
-            "antwort": "A",
-            "erklärung": "Benutzerschulungen zur Sensibilisierung sind entscheidend, um Vorfälle zu verhindern, bei denen Mitarbeitende auf bösartige Links klicken oder fragwürdige Anhänge öffnen. Durch regelmäßige Awareness-Trainings lernen Beschäftigte, Phishing-E-Mails zu erkennen, Absender zu überprüfen und verdächtige Inhalte zu melden. Netzwerküberwachung, Endpunktschutz und DLP sind wichtige technische Kontrollen, können aber Fehlverhalten oder Unachtsamkeit von Nutzenden nicht vollständig ausgleichen. Die Reduzierung menschlicher Fehler ist hier der zentrale Ansatzpunkt."
+            "antwort": "D",
+            "erklärung": "Obwohl Training (A) und Endpunktschutz (C) wichtige präventive Maßnahmen gegen die Infektion sind, adressiert Data Loss Prevention (DLP) direkt das schlimmste Ergebnis dieses Szenarios: die Datenexfiltration. Ein DLP-System erkennt sensible Informationen (wie Kundendaten) und blockiert deren Übertragung aus dem Netzwerk heraus, selbst wenn ein Gerät bereits mit Malware infiziert ist."
         },
         "en": {
             "question": "An employee clicked a malicious link in an email and downloaded malware onto the company's computer network. The malicious program exfiltrated thousands of customer records. Which of the following should the company implement to prevent this in the future?",
@@ -11829,8 +11801,8 @@
                 "C": "Endpoint protection",
                 "D": "Data loss prevention"
             },
-            "answer": "A",
-            "explanation": "User awareness training is essential to prevent incidents in which employees click malicious links or open suspicious attachments. Regular awareness programs teach users how to recognize phishing emails, verify senders, and report suspicious messages. Network monitoring, endpoint protection, and DLP are important technical controls but cannot fully compensate for user mistakes or lack of awareness. Reducing human error is the primary way to address the root cause in this scenario."
+            "answer": "D",
+            "explanation": "While training (A) and endpoint protection (C) are crucial for preventing the initial infection, Data Loss Prevention (DLP) specifically targets the outcome described: data exfiltration. A DLP system identifies sensitive information (like customer records) and blocks it from leaving the network, acting as a final safeguard even if a machine is already compromised by malware."
         }
     },
     {
@@ -11886,26 +11858,26 @@
     {
         "id": 474,
         "de": {
-            "frage": "Welcher der folgenden Schritte ist der ERSTE, um einen neu bereitgestellten Server abzusichern?",
+            "frage": "Welcher der folgenden Schritte ist der erste, um einen neu bereitgestellten Server zu sichern?",
             "optionen": {
-                "A": "Schließen nicht benötigter Service-Ports",
-                "B": "Aktualisieren der aktuell installierten Softwareversion",
-                "C": "Hinzufügen des Geräts zur ACL",
-                "D": "Aktualisieren der Betriebssystemversion"
+                "A": "Nicht benötigte Service-Ports schließen",
+                "B": "Die aktuelle Version der Software aktualisieren",
+                "C": "Das Gerät zur ACL hinzufügen",
+                "D": "Die Betriebssystemversion upgraden"
             },
-            "antwort": "A",
-            "erklärung": "Der erste Schritt bei der Absicherung eines neu bereitgestellten Servers besteht darin, nicht benötigte Service-Ports zu schließen. Dadurch wird die Angriffsfläche direkt reduziert, da nur die notwendigen Dienste extern erreichbar sind. Software- und OS-Updates sind ebenfalls wichtig, bauen aber auf einer grundlegend gehärteten Grundkonfiguration auf. Das Hinzufügen des Geräts zu einer ACL betrifft eher die Netzwerksegmentierung und den Zugriff von außen, schützt jedoch nicht per se vor überflüssig laufenden Diensten."
+            "antwort": "B",
+            "erklärung": "Wenn ein Server neu installiert wird (oft von einem Installationsmedium oder Image), fehlen ihm fast immer die neuesten Sicherheitsupdates. Der erste und kritischste Schritt ist das Einspielen von Patches und Updates für das Betriebssystem und die Anwendungen, um bekannte Sicherheitslücken (CVEs) zu schließen. Erst danach folgen Konfigurationsschritte wie das Schließen von Ports (Härtung)."
         },
         "en": {
             "question": "Which of the following is the first step to secure a newly deployed server?",
             "options": {
-                "A": "Close unnecessary service ports.",
-                "B": "Update the current version of the software.",
-                "C": "Add the device to the ACL.",
-                "D": "Upgrade the OS version."
+                "A": "Close unnecessary service ports",
+                "B": "Update the current version of the software",
+                "C": "Add the device to the ACL",
+                "D": "Upgrade the OS version"
             },
-            "answer": "A",
-            "explanation": "The first step in securing a newly deployed server is to close unnecessary service ports. This immediately reduces the attack surface by ensuring that only required services are externally accessible. Updating software and the operating system is also important but should be done on top of a hardened baseline configuration. Adding the device to an ACL concerns network access control but does not directly address unnecessary services running on the server itself."
+            "answer": "B",
+            "explanation": "When a server is newly deployed, it is typically installed from static media or an image that is older than the current date. Therefore, it is almost immediately vulnerable to known exploits. Applying the latest security patches and software updates is the primary first step to remediate these known vulnerabilities before moving on to configuration hardening tasks like closing ports."
         }
     },
     {
@@ -12086,26 +12058,26 @@
     {
         "id": 482,
         "de": {
-            "frage": "Im Rahmen neuer Compliance-Anforderungen müssen mehrere Server in unterschiedliche Netzwerke segmentiert werden und dürfen nur von autorisierten internen Systemen erreichbar sein. Welche der folgenden Maßnahmen erfüllt diese Anforderungen am BESTEN?",
+            "frage": "Im Rahmen neuer Compliance-Audit-Anforderungen müssen mehrere Server in verschiedene Netzwerke segmentiert werden und dürfen nur von autorisierten internen Systemen aus erreichbar sein. Welche der folgenden Maßnahmen würde die Anforderungen erfüllen?",
             "optionen": {
                 "A": "Firewall-Regeln konfigurieren, um externen Zugriff auf interne Ressourcen zu blockieren",
-                "B": "Einen WAP einrichten, um internen Zugriff von öffentlichen Netzwerken zu ermöglichen",
-                "C": "Einen neuen IPSec-Tunnel von internen Ressourcen aus implementieren",
+                "B": "Einen WAP (Wireless Access Point) einrichten, um internen Zugriff aus öffentlichen Netzwerken zu ermöglichen",
+                "C": "Einen neuen IPSec-Tunnel von internen Ressourcen implementieren",
                 "D": "Einen internen Jump-Server bereitstellen, um auf Ressourcen zuzugreifen"
             },
-            "antwort": "A",
-            "erklärung": "Durch gezielt konfigurierte Firewall-Regeln können Netzsegmente voneinander isoliert und der Zugriff auf bestimmte Server auf autorisierte interne Systeme beschränkt werden. Externer Zugriff wird dabei grundsätzlich blockiert, während definierte interne Verbindungen erlaubt werden, was die Compliance-Anforderungen an Segmentierung und Zugriffsbeschränkung erfüllt. Ein WAP würde eher zusätzlichen Zugang eröffnen, ein IPSec-Tunnel schützt Verbindungen, segmentiert aber nicht selbst, und ein Jump-Server steuert zwar Zugriffe, schafft jedoch keine saubere Netzwerksegmentierung."
+            "antwort": "D",
+            "erklärung": "Ein Jump-Server (oder Jump-Host) ist ein speziell gehärtetes System, das als einziges Tor zu einem geschützten Netzwerksegment dient. Wenn Server segmentiert und isoliert sind, bietet ein Jump-Server einen kontrollierten und überwachten Zugangspunkt für Administratoren, um diese isolierten Systeme zu erreichen, ohne sie direkt dem gesamten internen Netzwerk auszusetzen."
         },
         "en": {
             "question": "As part of new compliance audit requirements, multiple servers need to be segmented on different networks and should be reachable only from authorized internal systems. Which of the following would meet the requirements?",
             "options": {
-                "A": "Configure firewall rules to block external access to internal resources.",
-                "B": "Set up a WAP to allow internal access from public networks.",
-                "C": "Implement a new IPSec tunnel from internal resources.",
-                "D": "Deploy an internal jump server to access resources."
+                "A": "Configure firewall rules to block external access to internal resources",
+                "B": "Set up a WAP to allow internal access from public networks",
+                "C": "Implement a new IPSec tunnel from internal resources",
+                "D": "Deploy an internal jump server to access resources"
             },
-            "answer": "A",
-            "explanation": "Properly configured firewall rules can enforce network segmentation by isolating servers on separate networks and restricting access to only authorized internal systems. External access is blocked by default, while specific internal traffic is explicitly allowed, satisfying the compliance requirements for segmentation and controlled access. A WAP would more likely expose resources, an IPSec tunnel secures traffic but does not inherently segment networks, and a jump server governs access paths but does not itself create segmented network boundaries."
+            "answer": "D",
+            "explanation": "A jump server (or jump host) is a hardened intermediary device used to access devices in a separate security zone. When servers are segmented, deploying a jump server provides a single, controlled, and monitored point of entry for administrators to manage those isolated systems, satisfying the requirement for restricted access."
         }
     },
     {
@@ -12264,12 +12236,12 @@
             "frage": "Welche der folgenden Aktivitäten nutzt OSINT (Open Source Intelligence)?",
             "optionen": {
                 "A": "Social-Engineering-Tests",
-                "B": "Datenanalyse von Logs",
-                "C": "Sammeln von Beweisen für bösartige Aktivitäten",
-                "D": "Erstellung von IoCs für bösartige Artefakte"
+                "B": "Datenanalyse von Protokollen (Logs)",
+                "C": "Sammeln von Beweisen für böswillige Aktivitäten",
+                "D": "Erstellung von IOCs für bösartige Artefakte"
             },
-            "antwort": "C",
-            "erklärung": "OSINT bezeichnet das Sammeln und Auswerten öffentlich zugänglicher Informationen aus Quellen wie Webseiten, sozialen Medien, öffentlichen Registern oder Foren. Beim Sammeln von Beweisen für bösartige Aktivitäten werden häufig solche offenen Quellen genutzt, um etwa Domainregistrierungen, Forenbeiträge oder veröffentlichte Indikatoren zu recherchieren. Social-Engineering-Tests, Loganalysen und die Erzeugung von IoCs können zwar OSINT-Ergebnisse verwenden, sind aber nicht per se OSINT-Aktivitäten."
+            "antwort": "A",
+            "erklärung": "OSINT (Open Source Intelligence) bezeichnet das Sammeln von Informationen aus öffentlich zugänglichen Quellen (z. B. soziale Medien, Unternehmenswebseiten, öffentliche Register). Bei Social-Engineering-Tests ist OSINT der erste Schritt, um Informationen über Zielpersonen oder das Unternehmen zu sammeln, um glaubwürdige Phishing-E-Mails oder Vorwände (Pretexting) zu erstellen."
         },
         "en": {
             "question": "Which of the following activities uses OSINT?",
@@ -12279,8 +12251,8 @@
                 "C": "Collecting evidence of malicious activity",
                 "D": "Producing IOCs for malicious artifacts"
             },
-            "answer": "C",
-            "explanation": "OSINT refers to collecting and analyzing information from publicly available sources such as websites, social media, public records, and forums. When collecting evidence of malicious activity, investigators often rely on these open sources to research domain registrations, forum posts, or published indicators. Social engineering tests, log analysis, and producing IOCs may use OSINT-derived data but are not themselves inherently OSINT activities."
+            "answer": "A",
+            "explanation": "OSINT (Open Source Intelligence) involves gathering information from publicly available sources (e.g., social media, company websites, public records). In Social Engineering testing, OSINT is the crucial reconnaissance phase used to gather details about targets or the organization to craft convincing phishing emails or pretexts."
         }
     },
     {
@@ -17947,6 +17919,543 @@
             },
             "answer": "C",
             "explanation": "The best solution is Mobile Device Management (MDM), which allows IT administrators to centrally configure, update, and push applications or settings to company-owned devices."
+        }
+    },
+    {
+        "id": 715,
+        "de": {
+            "frage": "Ein Sicherheitsanalyst vermutet, dass sich bösartige Angreifer in der Umgebung befinden, hat aber keine Warnmeldungen über verdächtige Aktivitäten erhalten. Was sollte der Analyst durchführen, um das Vorhandensein dieser Angreifer weiter zu untersuchen?",
+            "optionen": {
+                "A": "Threat Hunting",
+                "B": "Digitale Forensik",
+                "C": "Vulnerability Scanning",
+                "D": "E‑Discovery"
+            },
+            "antwort": "A",
+            "erklärung": "Threat Hunting ist eine proaktive Sicherheitsmaßnahme, bei der gezielt nach versteckten oder nicht erkannten Bedrohungen in der Umgebung gesucht wird, selbst wenn keine Alarme ausgelöst wurden. Dabei werden Logs, Endpunkttelemetrie, Netzwerkverkehr und Verhaltensmuster manuell analysiert, um Anomalien zu finden, die automatisierte Systeme übersehen können."
+        },
+        "en": {
+            "question": "A security analyst is concerned malicious actors are lurking in an environment but has not received any alerts regarding suspicious activity. Which of the following should the analyst conduct to further investigate the presence of these actors?",
+            "options": {
+                "A": "Threat hunting",
+                "B": "Digital forensics",
+                "C": "Vulnerability scanning",
+                "D": "E‑discovery"
+            },
+            "answer": "A",
+            "explanation": "Threat hunting is a proactive security activity that focuses on identifying hidden or undetected threats within an environment, even when no alerts or indicators have been triggered. It involves manually analyzing logs, endpoint telemetry, network traffic, and behavioral patterns to uncover anomalies that automated systems may miss."
+        }
+    },
+    {
+        "id": 716,
+        "de": {
+            "frage": "Das Management möchte die Bereitschaft des Cyberteams bewerten, auf ein Bedrohungsszenario zu reagieren. Welche Maßnahme beurteilt und formalisiert innerhalb kurzer Zeit angemessen das Reagieren auf ein solches Szenario?",
+            "optionen": {
+                "A": "Eine Nachricht an alle IT‑Manager senden und formale Handlungspläne anfordern.",
+                "B": "Ein Bug‑Bounty‑Programm einrichten und die Ergebnisse bewerten.",
+                "C": "Eine Tabletop‑Übung durchführen und die Leistungsergebnisse dokumentieren.",
+                "D": "Einen externen Berater beauftragen, die Cybersicherheitsprozesse unabhängig zu bewerten."
+            },
+            "antwort": "C",
+            "erklärung": "Eine Tabletop‑Übung ist eine diskussionsbasierte Simulation, bei der das Incident‑Response‑Team ein realistisches Szenario durchgeht, um Verfahren, Entscheidungsfindung und Kommunikation zu bewerten. Solche Übungen können schnell durchgeführt werden und liefern strukturierte Ergebnisse, ohne einen echten Vorfall zu benötigen."
+        },
+        "en": {
+            "question": "The management team wants to assess the cybersecurity team's readiness to respond to a threat scenario. Which of the following will adequately assess and formalize a response within a short time?",
+            "options": {
+                "A": "Send a message to all IT managers and request formal action plans.",
+                "B": "Create a bug bounty program and assess the findings.",
+                "C": "Execute a tabletop exercise and document the performance results.",
+                "D": "Hire an external consultant to independently assess the cybersecurity processes."
+            },
+            "answer": "C",
+            "explanation": "A tabletop exercise is a discussion‑based simulation where the incident response team walks through a realistic scenario to evaluate procedures, decision‑making, communication, and coordination. It is specifically designed to be conducted quickly and provides meaningful insight into response readiness without executing a live incident."
+        }
+    },
+    {
+        "id": 717,
+        "de": {
+            "frage": "Welche der folgenden Methoden wird am ehesten eingesetzt, um Legacy‑Systeme zu identifizieren?",
+            "optionen": {
+                "A": "Bug‑Bounty‑Programm",
+                "B": "Vulnerability Scan",
+                "C": "Package Monitoring",
+                "D": "Dynamische Analyse"
+            },
+            "antwort": "B",
+            "erklärung": "Ein Vulnerability‑Scan prüft Hosts auf veraltete Betriebssysteme, nicht unterstützte Softwareversionen, fehlende Patches und bekannte Schwachstellen. Dadurch werden Systeme mit End‑of‑Life‑Betriebssystemen oder veralteten Konfigurationen schnell als Legacy‑Systeme erkannt."
+        },
+        "en": {
+            "question": "Which of the following methods will most likely be used to identify legacy systems?",
+            "options": {
+                "A": "Bug bounty program",
+                "B": "Vulnerability scan",
+                "C": "Package monitoring",
+                "D": "Dynamic analysis"
+            },
+            "answer": "B",
+            "explanation": "A vulnerability scan assesses hosts for outdated operating systems, unsupported software versions, missing patches, and known CVEs. Legacy systems typically stand out in scan results because they run end‑of‑life operating systems or use deprecated protocols, allowing security teams to quickly flag them."
+        }
+    },
+    {
+        "id": 718,
+        "de": {
+            "frage": "Ein Unternehmen beauftragt einen Anbieter, das interne Red‑Team bei einem Penetrationstest zu unterstützen, ohne zu viele Details über die Infrastruktur bereitzustellen. Welche Penetrationstest‑Methode beschreibt dieses Szenario?",
+            "optionen": {
+                "A": "Passive Reconnaissance",
+                "B": "Partially‑known environment",
+                "C": "Integrated testing",
+                "D": "Defensive testing"
+            },
+            "antwort": "B",
+            "erklärung": "Ein Partially‑known‑Environment‑Penetrationstest („Grau‑Box‑Test“) bedeutet, dass der Tester nur begrenzte Informationen über die Infrastruktur erhält. Dies simuliert einen Angreifer, der über einige Kenntnisse verfügt, aber nicht über alle Details oder vollständige Dokumentation."
+        },
+        "en": {
+            "question": "A company asks a vendor to help its internal red team with a penetration test without providing too much detail about the infrastructure. Which of the following penetration testing methods does this scenario describe?",
+            "options": {
+                "A": "Passive reconnaissance",
+                "B": "Partially‑known environment",
+                "C": "Integrated testing",
+                "D": "Defensive testing"
+            },
+            "answer": "B",
+            "explanation": "A partially‑known environment penetration test provides the tester with limited information, balancing realism and efficiency. This approach simulates an attacker who has some knowledge about the infrastructure but not full access or complete documentation."
+        }
+    },
+    {
+        "id": 719,
+        "de": {
+            "frage": "Ein Unternehmen möchte verhindern, dass seine ausgehenden Marketing‑E‑Mails als Spam markiert werden. Es trägt die E‑Mail‑Server in den passenden DNS‑Einträgen ein. Welches Protokoll sollte das Unternehmen als Nächstes implementieren?",
+            "optionen": {
+                "A": "DMARC",
+                "B": "DLP",
+                "C": "DKIM",
+                "D": "SPF"
+            },
+            "antwort": "C",
+            "erklärung": "Nachdem SPF die autorisierten E‑Mail‑Server in DNS definiert, sollte DKIM implementiert werden, um ausgehende E‑Mails digital zu signieren. Dieser Kryptografie‑Mechanismus gewährleistet die Integrität und Authentizität der Nachrichten, was die Wahrscheinlichkeit verringert, dass sie als Spam eingestuft werden."
+        },
+        "en": {
+            "question": "A company wants to minimize the chance of its outgoing marketing emails getting flagged as spam. The company decides to list the email servers on the proper DNS record. Which of the following protocols should the company apply next?",
+            "options": {
+                "A": "DMARC",
+                "B": "DLP",
+                "C": "DKIM",
+                "D": "SPF"
+            },
+            "answer": "C",
+            "explanation": "After listing authorized email servers in DNS using SPF, the next protocol the company should apply is DKIM. DKIM digitally signs outgoing emails using a private key, which recipient servers verify with a public key in DNS, ensuring message integrity and authenticity and improving email reputation."
+        }
+    },
+    {
+        "id": 720,
+        "de": {
+            "frage": "Welches der folgenden Elemente kann das Schwachstellenmanagement automatisieren?",
+            "optionen": {
+                "A": "CVE",
+                "B": "SCAP",
+                "C": "OSINT",
+                "D": "CVSS"
+            },
+            "antwort": "B",
+            "erklärung": "SCAP (Security Content Automation Protocol) standardisiert die Ausdrucksweise, Messung und den Austausch von Schwachstelleninformationen, sodass Sicherheitstools automatisch Systeme scannen, Schwächen identifizieren und Compliance gegenüber definierten Baselines prüfen können."
+        },
+        "en": {
+            "question": "Which of the following can automate vulnerability management?",
+            "options": {
+                "A": "CVE",
+                "B": "SCAP",
+                "C": "OSINT",
+                "D": "CVSS"
+            },
+            "answer": "B",
+            "explanation": "SCAP (Security Content Automation Protocol) standardizes how vulnerability information is expressed, measured, and shared, enabling security tools to automatically scan systems, identify weaknesses, and assess compliance against predefined baselines, which supports continuous vulnerability management."
+        }
+    },
+    {
+        "id": 721,
+        "de": {
+            "frage": "Ein Sicherheitsanalyst untersucht verdächtigen ausgehenden Datenverkehr von einem Unternehmens‑Endpunkt. Der Verkehr ist verschlüsselt und nutzt Nicht‑Standard‑Ports. Welche Datenquelle sollte der Analyst zuerst verwenden, um zu prüfen, ob dieser Verkehr bösartig ist?",
+            "optionen": {
+                "A": "Anwendungslogs",
+                "B": "Vulnerability‑Scans",
+                "C": "Endpunkt‑Logs",
+                "D": "Packet‑Captures"
+            },
+            "antwort": "C",
+            "erklärung": "Endpunkt‑Logs liefern detaillierte Informationen zu Prozessen, Benutzeraktionen und Netzwerkverbindungen, die direkt vom betroffenen Endpunkt ausgehen. Diese Daten ermöglichen es, schnell zu identifizieren, welcher Prozess den verschlüsselten Verkehr initiiert und ob er verdächtig ist, ohne große Ressourcen für tiefgehende Paketanalysen aufzuwenden."
+        },
+        "en": {
+            "question": "A security analyst investigates abnormal outbound traffic from a corporate endpoint. The traffic is encrypted and uses non‑standard ports. Which of the following data sources should the analyst use first to confirm whether this traffic is malicious?",
+            "options": {
+                "A": "Application logs",
+                "B": "Vulnerability scans",
+                "C": "Endpoint logs",
+                "D": "Packet captures"
+            },
+            "answer": "C",
+            "explanation": "Endpoint logs provide detailed visibility into process execution, user actions, and network connections initiated by applications on the endpoint. Starting the investigation at the source lets the analyst quickly determine which process caused the encrypted traffic and whether it is suspicious."
+        }
+    },
+    {
+        "id": 722,
+        "de": {
+            "frage": "Ein Netzwerkadministrator setzt FDE (Full Disk Encryption) auf allen Endbenutzer‑Arbeitsstationen ein. Auf welche Daten‑Schutzstrategie bezieht sich diese Maßnahme hauptsächlich?",
+            "optionen": {
+                "A": "Masking",
+                "B": "Data in transit",
+                "C": "Obfuscation",
+                "D": "Data at rest",
+                "E": "Data Sovereignty"
+            },
+            "antwort": "D",
+            "erklärung": "FDE verschlüsselt die gesamte Festplatte, sodass alle Daten—inklusive Betriebssystemdateien, Benutzerdaten und temporäre Dateien—geschützt sind, solange der Schlüssel nicht vorliegt. Dies schützt speziell Daten at rest, also solche, die auf Speichermedien ruhen."
+        },
+        "en": {
+            "question": "A network administrator deploys an FDE solution on all end user workstations. Which of the following data protection strategies does this describe?",
+            "options": {
+                "A": "Masking",
+                "B": "Data in transit",
+                "C": "Obfuscation",
+                "D": "Data at rest",
+                "E": "Data sovereignty"
+            },
+            "answer": "D",
+            "explanation": "FDE (Full Disk Encryption) encrypts the entire disk, ensuring that all stored data is unreadable without proper authentication. This directly implements protection for data at rest, such as information stored on hard drives, SSDs, or removable storage."
+        }
+    },
+    {
+        "id": 723,
+        "de": {
+            "frage": "Ein Unternehmen möchte Software in einer Container‑Umgebung einsetzen, um die Sicherheit zu verbessern. Welches der folgenden Elemente begrenzt die Fähigkeit des Unternehmens am stärksten, dieses Ziel zu erreichen?",
+            "optionen": {
+                "A": "Regulatorische Konformität",
+                "B": "Patch‑Verfügbarkeit",
+                "C": "Kernel‑Version",
+                "D": "Monolithischer Code"
+            },
+            "antwort": "D",
+            "erklärung": "Monolithischer Code ist in einer einzigen großen Anwendung zusammengefasst und schwer in kleinere, containerisierte Dienste zu zerlegen. Dies erschwert die Umsetzung von Sicherheitsvorteilen wie geringerem Angriffsfläche, klarer Isolation und feingranularen Patches, die Container üblicherweise bieten."
+        },
+        "en": {
+            "question": "An organization wants to deploy software in a container environment to increase security. Which of the following will limit the organization's ability to achieve this goal?",
+            "options": {
+                "A": "Regulatory compliance",
+                "B": "Patch availability",
+                "C": "Kernel version",
+                "D": "Monolithic code"
+            },
+            "answer": "D",
+            "explanation": "Monolithic code bundles all components into a single large codebase, making it difficult to isolate functions into separate containers. This limits the ability to achieve security benefits such as reduced attack surface, improved isolation, and granular patching that are characteristic of containerized, microservices‑style deployments."
+        }
+    },
+    {
+        "id": 724,
+        "de": {
+            "frage": "Welche der folgenden Methoden sollte verwendet werden, um sicherzustellen, dass eine neue Softwareversion vor Erreichen des Nutzers nicht verändert wurde?",
+            "optionen": {
+                "A": "Tokenization",
+                "B": "Encryption",
+                "C": "Hashing",
+                "D": "Obfuscation"
+            },
+            "antwort": "C",
+            "erklärung": "Hashing erzeugt einen festen Prüfwert (z. B. SHA‑256) aus der Softwaredatei. Durch den Vergleich des berechneten Hashwertes mit einem vom Hersteller veröffentlichten kann der Nutzer nachprüfen, ob die Datei unverändert ist. Ein kleiner Unterschied im Inhalt führt zu einem völlig anderen Hashwert."
+        },
+        "en": {
+            "question": "Which of the following should be used to ensure that a new software release has not been modified before reaching the user?",
+            "options": {
+                "A": "Tokenization",
+                "B": "Encryption",
+                "C": "Hashing",
+                "D": "Obfuscation"
+            },
+            "answer": "C",
+            "explanation": "Hashing generates a fixed‑length digest (such as SHA‑256) from the original software package. By comparing the locally computed hash with the hash published by the vendor, users can verify that the software has not been altered. Hashing is extremely sensitive to changes, making it ideal for integrity checks."
+        }
+    },
+    {
+        "id": 725,
+        "de": {
+            "frage": "Welches der folgenden Beispiele beschreibt ein False‑Negative‑Ergebnis bei der Schwachstellen‑Erkennung in einem Scan‑Bericht?",
+            "optionen": {
+                "A": "Eine Schwachstelle, die in Wirklichkeit nicht existiert",
+                "B": "Eine Schwachstelle, die bereits behoben wurde",
+                "C": "Ein Ergebnis, das keine bekannten Schwachstellen anzeigt",
+                "D": "Eine Zero‑Day‑Schwachstelle mit bekannter Behebung"
+            },
+            "antwort": "C",
+            "erklärung": "Ein False Negative liegt vor, wenn ein Scan eine tatsächlich vorhandene Schwachstelle nicht erkennt und das System fälschlich als sicher ausweist. Ergebnisse, die keine bekannten Schwachstellen anzeigen, obwohl Schwachstellen vorhanden sind, sind daher typische False‑Negative‑Fehler."
+        },
+        "en": {
+            "question": "Which of the following is an example of a false negative vulnerability detection in a scan report?",
+            "options": {
+                "A": "A vulnerability that does not actually exist",
+                "B": "A vulnerability that has already been remediated",
+                "C": "A result that shows no known vulnerability",
+                "D": "A zero‑day vulnerability with a known remediation"
+            },
+            "answer": "C",
+            "explanation": "A false negative occurs when a vulnerability exists but is not detected by the scanner. This creates a false sense of security because the report indicates no known vulnerabilities even though the system is actually vulnerable."
+        }
+    },
+    {
+        "id": 726,
+        "de": {
+            "frage": "Ein Büro möchte ein Wi‑Fi‑Netzwerk installieren. Das Sicherheitsteam soll für ein sicheres Design sorgen. Die Access‑Points sollen leistungsstark sein und WPA3 mit einem 16‑stelligen zufälligen Schlüssel verwenden. Was sollte das Sicherheitsteam als Nächstes tun?",
+            "optionen": {
+                "A": "Eine Heatmap des Gebäude‑Perimeters erstellen.",
+                "B": "IPSec‑Tunnel von jedem Access‑Point zum Controller einrichten.",
+                "C": "WPA2‑PSK mit 24‑stelligen zufälligen Schlüsseln aktivieren.",
+                "D": "SSH‑Administration auf allen Access‑Points deaktivieren."
+            },
+            "antwort": "A",
+            "erklärung": "Bei starken Access‑Points steigt die Gefahr, dass das Signal über das Gebäude hinaus dringt. Eine RF‑Heatmap hilft, Signalüberlappung, Blindzonen und Ausstrahlung nach außen zu visualisieren, um die Leistung und Position der Access‑Points so anzupassen, dass die interne Abdeckung erhalten bleibt, externe Zugriffe aber minimiert werden."
+        },
+        "en": {
+            "question": "An office wants to install a Wi‑Fi network. The security team must ensure a secure design. The access points will be more powerful and use WPA3 with a 16‑character randomized key. Which of the following should the security team do next?",
+            "options": {
+                "A": "Create a heat map of the building perimeter.",
+                "B": "Deploy IPSec tunnels from each access point to the controller.",
+                "C": "Enable WPA2‑PSK with a 24‑character randomized key.",
+                "D": "Disable SSH administration on all access points."
+            },
+            "answer": "A",
+            "explanation": "With higher‑power access points, RF signal bleed beyond the building perimeter increases, potentially allowing unauthorized access from outside. A wireless heat map helps visualize coverage and adjust power levels and placement to minimize external exposure while maintaining internal coverage."
+        }
+    },
+    {
+        "id": 727,
+        "de": {
+            "frage": "Welches der folgenden Elemente beschreibt am besten eine Methode für laufende Anbieterüberwachung im Drittanbieter‑Risikomanagement?",
+            "optionen": {
+                "A": "Für jedes Projekt eine neue MSA verlangen",
+                "B": "Selbstdeklarationen des Anbieters ohne weitere Überprüfung akzeptieren",
+                "C": "Bewertungen durchführen, um die Einhaltung von Sicherheitsanforderungen zu verifizieren",
+                "D": "SLAs zu Vertragsbeginn überprüfen"
+            },
+            "antwort": "C",
+            "erklärung": "Ongoing vendor monitoring bedeutet, kontinuierlich zu prüfen, ob Anbieter die Sicherheitsanforderungen erfüllen. Dazu werden wiederkehrende Assessments, Audits, Sicherheitsfragebögen oder externe Compliance‑Berichte genutzt, um Abweichungen schnell zu erkennen."
+        },
+        "en": {
+            "question": "Which of the following best describes a method for ongoing vendor monitoring in third‑party risk management?",
+            "options": {
+                "A": "Requiring a new MSA for each project",
+                "B": "Accepting vendor self‑attestation without further verification",
+                "C": "Conducting assessments to verify compliance with security requirements",
+                "D": "Reviewing SLAs at the start of the contract"
+            },
+            "answer": "C",
+            "explanation": "Ongoing vendor monitoring involves regularly assessing whether third parties continue to meet security requirements. This may include periodic questionnaires, security audits, or review of compliance reports to detect control drift and evolving risks."
+        }
+    },
+    {
+        "id": 728,
+        "de": {
+            "frage": "Der Chief Information Security Officer erlaubt der Sicherheitscommunity, Schwachstellen in den öffentlich zugänglichen Systemen des Unternehmens zu melden. Welche Maßnahme beschreibt dieses Szenario am besten?",
+            "optionen": {
+                "A": "Bug Bounty",
+                "B": "Red Teaming",
+                "C": "Open‑Source Intelligence",
+                "D": "Information Sharing mit Drittanbietern"
+            },
+            "antwort": "A",
+            "erklärung": "Ein Bug‑Bounty‑Programm ist eine strukturierte Initiative, bei der externe Sicherheitsforscher Schwachstellen in öffentlich zugänglichen Assets finden und im Rahmen klar definierter Regeln melden dürfen. Dadurch wird die interne Sicherheitsprüfung durch externe Tester erweitert."
+        },
+        "en": {
+            "question": "The Chief Information Security Officer gives the security community the opportunity to report vulnerabilities on the organization’s public‑facing assets. Which of the following does this scenario best describe?",
+            "options": {
+                "A": "Bug bounty",
+                "B": "Red teaming",
+                "C": "Open‑source intelligence",
+                "D": "Third‑party information sharing"
+            },
+            "answer": "A",
+            "explanation": "A bug bounty program invites external security researchers to discover and report vulnerabilities in public‑facing systems under defined rules. This extends security testing beyond internal teams and provides continuous, real‑world assessment of external assets."
+        }
+    },
+    {
+        "id": 729,
+        "de": {
+            "frage": "Ein Unternehmen hat einen kritischen Vorfall erlitten, bei dem 30 GB Daten aus dem Unternehmensnetzwerk exfiltriert wurden. Welche Maßnahme ist am effizientesten, um herauszufinden, von welchem System die Daten abgegriffen wurden und wohin sie gesendet wurden?",
+            "optionen": {
+                "A": "Firewall‑ und Netzwerklogs nach großen ausgehenden Datenmengen zu externen IP‑Adressen oder Domains analysieren.",
+                "B": "IPS‑ und IDS‑Logs auf IP‑Adressen untersuchen, die der Angreifer für Reconnaissance‑Scans verwendet hat.",
+                "C": "Endpunkt‑ und Anwendungslogs analysieren, um festzustellen, ob Datei‑Sharing‑Programme liefen.",
+                "D": "Externe Vulnerability‑Scans analysieren, um ausnutzbare Systeme zu identifizieren."
+            },
+            "antwort": "A",
+            "erklärung": "Netzwerk‑ und Firewalllogs zeigen direkt Quell‑IPs, Ziel‑IPs/Domains, Ports, Protokolle und Datenmengen und ermöglichen so eine schnelle Identifikation der Systeme, die Daten exfiltriert haben, sowie der Infrastruktur des Angreifers. Diese Daten sind die effizienteste Grundlage für die Rekonstruktion des Exfiltrationspfades."
+        },
+        "en": {
+            "question": "A company suffered a critical incident where 30GB of data was exfiltrated from the corporate network. Which of the following actions is the most efficient way to identify where the system data was exfiltrated from and where it was sent?",
+            "options": {
+                "A": "Analyze firewall and network logs for large amounts of outbound traffic to external IP addresses or domains.",
+                "B": "Analyze IPS and IDS logs to find the IP addresses used by the attacker for reconnaissance scans.",
+                "C": "Analyze endpoint and application logs to see whether file‑sharing programs were running.",
+                "D": "Analyze external vulnerability scans to identify exploitable systems."
+            },
+            "answer": "A",
+            "explanation": "Firewall and network flow logs provide direct evidence of data exfiltration, including source IPs, destination IPs or domains, ports, protocols, timestamps, and data volumes, making them the most efficient data source for mapping the data‑theft path."
+        }
+    },
+    {
+        "id": 730,
+        "de": {
+            "frage": "Welches der folgenden Punkte ist ein Sicherheitsrisiko bei Hardware, die das End‑of‑Life‑Datum erreicht hat?",
+            "optionen": {
+                "A": "Bei Nichtbefolgung der Hardware‑Entsorgungsverfahren kann unbeabsichtigte Datenoffenlegung auftreten.",
+                "B": "Die Lieferkette bietet möglicherweise keinen Ersatz der Hardware.",
+                "C": "Neu veröffentlichte Software erfordert Rechenressourcen, die auf Legacy‑Hardware nicht verfügbar sind.",
+                "D": "Der Hersteller stellt möglicherweise keine Patches und Updates mehr bereit."
+            },
+            "antwort": "D",
+            "erklärung": "Bei EOL‑Hardware stellt der größte Sicherheitsaspekt dar, dass keine Sicherheits‑Patches und Updates mehr bereitgestellt werden. Dadurch bleiben bekannte Schwachstellen dauerhaft offen und das System wird zunehmend anfällig für Angriffe."
+        },
+        "en": {
+            "question": "Which of the following is a vulnerability concern for end‑of‑life hardware?",
+            "options": {
+                "A": "Failure to follow hardware disposal procedures could result in unintended data release.",
+                "B": "The supply chain may not have replacement hardware.",
+                "C": "Newly released software may require computing resources not available on legacy hardware.",
+                "D": "The vendor may stop providing patches and updates."
+            },
+            "answer": "D",
+            "explanation": "The main security concern with end‑of‑life hardware is that vendors stop providing patches and updates, leaving known vulnerabilities unaddressed and increasing the risk of exploitation."
+        }
+    },
+    {
+        "id": 731,
+        "de": {
+            "frage": "Der Chief Information Security Officer (CISO) hat festgestellt, dass das Unternehmen nicht mit den lokalen Datenschutzvorschriften konform ist. Der CISO muss die Budgetanforderung für zusätzliche Ressourcen begründen. Welche der folgenden Konsequenzen sollte der CISO dem Aufsichtsgremium als direkte Folge der Nichtkonformität darstellen?",
+            "optionen": {
+                "A": "Bußgelder",
+                "B": "Rufschädigung",
+                "C": "Sanktionen",
+                "D": "Vertragsrechtliche Folgen"
+            },
+            "antwort": "A",
+            "erklärung": "Der direkteste und quantifizierbare Konsequenz von Datenschutz‑Nichtkonformität sind finanzielle Bußgelder, die von Regulierungsbehörden verhängt werden können. Diese messbare monetäre Risikoform ist für Vorstände besonders überzeugend, um zusätzliche Budgets für Sicherheit und Compliance zu rechtfertigen."
+        },
+        "en": {
+            "question": "The Chief Information Security Officer (CISO) has determined the company is non‑compliant with local data privacy regulations. The CISO needs to justify the budget request for more resources. Which of the following should the CISO present to the board as the direct consequence of non‑compliance?",
+            "options": {
+                "A": "Fines",
+                "B": "Reputational damage",
+                "C": "Sanctions",
+                "D": "Contractual implications"
+            },
+            "answer": "A",
+            "explanation": "The most direct consequence of non‑compliance with data privacy regulations is regulatory fines, which are measurable, enforceable, and frequently used by authorities as a primary enforcement mechanism."
+        }
+    },
+    {
+        "id": 732,
+        "de": {
+            "frage": "Welches der folgenden Elemente ist ein Beispiel für eine dirigierende Führungskontrolle (directive managerial control)?",
+            "optionen": {
+                "A": "Acceptable Use Policy (AUP)",
+                "B": "Login‑Warnhinweis",
+                "C": "Master Service Agreement",
+                "D": "Verbotsschild („No Trespassing“)"
+            },
+            "antwort": "A",
+            "erklärung": "Eine dirigierende Führungskontrolle gibt klare Richtlinien für das Verhalten der Nutzer vor. Die Acceptable Use Policy definiert, wie Systeme und Daten genutzt werden dürfen und schafft so ein verbindliches Verhaltensrahmen innerhalb der Organisation."
+        },
+        "en": {
+            "question": "Which of the following is a directive managerial control?",
+            "options": {
+                "A": "Acceptable use policy",
+                "B": "Login warning banner",
+                "C": "Master service agreement",
+                "D": "No‑trespassing sign"
+            },
+            "answer": "A",
+            "explanation": "A directive managerial control provides guidance and expectations for user behavior. The acceptable use policy defines how organizational systems and data may and may not be used, making it a classic example of such a control."
+        }
+    },
+    {
+        "id": 733,
+        "de": {
+            "frage": "Ein Softwareentwickler veröffentlicht eine neue Anwendung und verteilt die Dateien über die eigene Website. Welche der folgenden Informationen sollte der Entwickler auf der Website veröffentlichen, damit Nutzer die Integrität der heruntergeladenen Datei überprüfen können?",
+            "optionen": {
+                "A": "Hashes",
+                "B": "Zertifikate",
+                "C": "Algorithmen",
+                "D": "Salting"
+            },
+            "antwort": "A",
+            "erklärung": "Durch das Veröffentlichen von kryptografischen Hashes (z. B. SHA‑256) können Nutzer die heruntergeladene Datei selbst hashen und mit dem veröffentlichten Wert vergleichen. Wenn beide übereinstimmen, ist nachgewiesen, dass die Datei nicht verändert wurde."
+        },
+        "en": {
+            "question": "A software developer released a new application and is distributing application files via the developer’s website. Which of the following should the developer post on the website to allow users to verify the integrity of the downloaded files?",
+            "options": {
+                "A": "Hashes",
+                "B": "Certificates",
+                "C": "Algorithms",
+                "D": "Salting"
+            },
+            "answer": "A",
+            "explanation": "Publishing cryptographic hashes allows users to compute the hash of the downloaded file and compare it to the published value; a match confirms that the file has not been altered, providing a simple and effective integrity check."
+        }
+    },
+    {
+        "id": 734,
+        "de": {
+            "frage": "Ein Unternehmen möchte neue Wi‑Fi‑fähige Umweltsensoren einsetzen, um automatisch Metriken zu erfassen. Was wird das Sicherheitsteam mit größter Wahrscheinlichkeit tun?",
+            "optionen": {
+                "A": "Die Sensor‑Software im Risikoverzeichnis erfassen.",
+                "B": "Ein VLAN für die Sensoren einrichten.",
+                "C": "Die Sensoren physisch air‑gap gesichert betreiben.",
+                "D": "TLS 1.2 auf allen Sensoren konfigurieren."
+            },
+            "antwort": "B",
+            "erklärung": "Ein dediziertes VLAN für IoT‑Sensoren schränkt deren Erreichbarkeit ein und begrenzt die laterale Bewegung im Netzwerk, wenn ein Sensor kompromittiert wird. Dies reduziert die Angriffsfläche, während die Wi‑Fi‑Konnektivität erhalten bleibt."
+        },
+        "en": {
+            "question": "A company wants to use new Wi‑Fi‑enabled environmental sensors to automatically collect metrics. Which of the following will the security team most likely do?",
+            "options": {
+                "A": "Add the sensor software to the risk register.",
+                "B": "Create a VLAN for the sensors.",
+                "C": "Physically air gap the sensors.",
+                "D": "Configure TLS 1.2 on all sensors."
+            },
+            "answer": "B",
+            "explanation": "Creating a dedicated VLAN for Wi‑Fi‑enabled environmental sensors follows secure design principles by isolating IoT devices from critical systems and limiting lateral movement while still allowing necessary connectivity and data collection."
+        }
+    },
+    {
+        "id": 735,
+        "de": {
+            "frage": "Welche der folgenden Maßnahmen sind die besten Methoden zur Härterung von Endbenutzergeräten? (Wählen Sie zwei aus)",
+            "optionen": {
+                "A": "Vollständige Festplattenverschlüsselung",
+                "B": "Gruppenberechtigungen",
+                "C": "Account‑Sperrung",
+                "D": "Endpoint‑Schutz",
+                "E": "Proxy‑Server",
+                "F": "Segmentierung"
+            },
+            "antworten": [
+                "A",
+                "D"
+            ],
+            "erklärung": "Die besten Methoden zur Härterung von Endbenutzergeräten sind Vollständige Festplattenverschlüsselung (Full Disk Encryption) und Endpoint‑Schutz. FDE schützt Daten at rest, sodass sie bei Verlust oder Diebstahl des Geräts unlesbar bleiben. Endpoint‑Schutz (z. B. EDR oder Antivirus) erkennt, verhindert und reagiert auf bösartige Aktivitäten auf dem Endgerät selbst."
+        },
+        "en": {
+            "question": "Which of the following are the best methods for hardening end user devices? (Select two)",
+            "options": {
+                "A": "Full disk encryption",
+                "B": "Group‑level permissions",
+                "C": "Account lockout",
+                "D": "Endpoint protection",
+                "E": "Proxy server",
+                "F": "Segmentation"
+            },
+            "answers": [
+                "A",
+                "D"
+            ],
+            "explanation": "The best methods for hardening end user devices are Full Disk Encryption (FDE) and Endpoint Protection. FDE protects data at rest on laptops and workstations, ensuring it remains unreadable if devices are lost or stolen. Endpoint protection, including EDR/anti‑malware, hardens devices by preventing, detecting, and responding to malicious activity at the host level."
         }
     }
 ]
