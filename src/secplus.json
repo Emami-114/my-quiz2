@@ -7371,6 +7371,7 @@
                 "D": "Den Webserver nach Ransomware-Notizen durchsuchen"
             },
             "antwort": "A",
+            "image": "295.png",
             "erklärung": "Das Szenario weist stark auf eine „Logische Bombe“ (Logic Bomb) hin. Der spezifische Zeitpunkt (kurz nach Mitternacht) und das Vorhandensein von administrativen Skripten (Backup-Code) deuten darauf hin, dass dies absichtlich von jemandem mit internem Zugriff eingerichtet wurde. Es ist ein klassisches Muster für verärgerte Mitarbeiter, schädliche Prozesse zu planen, die nach ihrem Ausscheiden ausgeführt werden. Daher ist die Überprüfung kürzlich entlassener DBAs der wichtigste nächste Schritt."
         },
         "en": {
@@ -7382,6 +7383,7 @@
                 "D": "Search the web server for ransomware notes"
             },
             "answer": "A",
+            "image": "295.png",
             "explanation": "The scenario strongly suggests a \"Logic Bomb.\" The specific timing (shortly after midnight) and the nature of the code (administrative backup scripts) imply this was set up intentionally by someone with internal access privileges. This is a common tactic for disgruntled employees to schedule malicious tasks to trigger after they leave the company. Investigating recently terminated DBAs is the most logical next step to identify an insider threat."
         }
     },
@@ -7471,6 +7473,7 @@
                 "D": "Kontosperrung"
             },
             "antwort": "C",
+            "image": "299.png",
             "erklärung": "Port 445 wird für SMB (Server Message Block) verwendet, was Datei- und Druckerfreigaben ermöglicht. Mehrere Verbindungsversuche auf diesem Port von einem einzelnen Endpunkt (wie einem Kiosk für Besucherausweise) deuten oft darauf hin, dass mehrere Sitzungen gleichzeitig initiiert werden oder dass versucht wird, sich lateral im Netzwerk zu bewegen (Lateral Movement). In diesem Kontext deutet es am ehesten auf gleichzeitige Sitzungsnutzung hin, da SMB-Verbindungen Sitzungen aufbauen."
         },
         "en": {
@@ -7482,6 +7485,7 @@
                 "D": "Account lockout"
             },
             "answer": "C",
+            "image": "299.png",
             "explanation": "Port 445 is used for SMB (Server Message Block), which handles file and printer sharing. Seeing multiple connection attempts on this port typically indicates multiple SMB sessions being established. While this can sometimes be part of an attack (like lateral movement), in the context of the given options, it best aligns with concurrent session usage, as SMB operates via sessions."
         }
     },
