@@ -13390,15 +13390,15 @@
     {
         "id": 534,
         "de": {
-            "frage": "Ein Unternehmen bietet langfristige Cold-Storage-Dienste für Banken an, die regulatorische Vorgaben zur Datenaufbewahrung erfüllen müssen. Die Banken verlangen, dass Daten nach Ablauf der Aufbewahrungsfrist auf eine bestimmte Weise vernichtet werden. Welcher der folgenden Aspekte des Datenmanagements ist für die Bank bei der Datenvernichtung am wichtigsten?",
+            "frage": "Ein Unternehmen bietet Banken langfristige Cold-Storage-Dienste an, die regulatorisch vorgeschriebene Aufbewahrungsrichtlinien (Data Retention) einhalten müssen. Banken, die diese Dienste nutzen, verlangen, dass die Daten nach Ablauf der vorgeschriebenen Aufbewahrungsfrist auf eine bestimmte Art entsorgt/vernichtet werden.\n\nWelcher Aspekt des Datenmanagements ist für die Bank bei der Vernichtung dieser Daten am wichtigsten?",
             "optionen": {
                 "A": "Verschlüsselung",
                 "B": "Klassifizierung",
                 "C": "Zertifizierung",
                 "D": "Beschaffung"
             },
-            "antwort": "B",
-            "erklärung": "Die Datenklassifizierung legt fest, wie sensibel Daten sind und welche Aufbewahrungs- und Löschanforderungen gelten. Für regulierte Branchen wie Banken bestimmt die Klassifizierung, welche Daten wie lange gespeichert werden müssen und mit welchen Verfahren sie am Ende der Frist vernichtet werden. Verschlüsselung, Zertifizierung und Beschaffung sind ebenfalls wichtig, steuern aber nicht direkt die richtlinienkonforme Vernichtung nach Sensitivität."
+            "antwort": "C",
+            "erklärung": "Für regulatorische Vorgaben ist der wichtigste Punkt bei der Datenvernichtung der nachvollziehbare Nachweis, dass die Daten fristgerecht und nach einem definierten Verfahren vernichtet wurden. Das wird typischerweise durch eine Zertifizierung bzw. ein „Certificate of Destruction“ (inklusive Dokumentation/Chain of Custody) erfüllt. Verschlüsselung und Klassifizierung sind wichtig, belegen aber nicht allein die ordnungsgemäße Vernichtung."
         },
         "en": {
             "question": "A business provides long-term cold storage services to banks that are required to follow regulator-imposed data retention guidelines. Banks that use these services require that data is disposed of in a specific manner at the conclusion of the regulatory threshold for data retention. Which of the following aspects of data management is the most important to the bank in the destruction of this data?",
@@ -13408,8 +13408,8 @@
                 "C": "Certification",
                 "D": "Procurement"
             },
-            "answer": "B",
-            "explanation": "Data classification assigns sensitivity levels and handling requirements, which drive retention and destruction policies. In regulated industries such as banking, proper classification ensures that data subject to legal or regulatory mandates is destroyed in the required manner at the end of its retention period. Encryption, certification, and procurement are important but do not directly dictate destruction methods based on sensitivity."
+            "answer": "C",
+            "explanation": "For regulatory compliance, the bank most needs verifiable proof that the data was destroyed in the required manner and at the required time. This is provided through certification, often a formal certificate of destruction with supporting documentation/chain of custody. Encryption and classification matter, but they do not by themselves prove proper disposal."
         }
     },
     {
@@ -14025,15 +14025,15 @@
     {
         "id": 559,
         "de": {
-            "frage": "Welche der folgenden Methoden ist der BESTE Weg, um personenbezogene Daten aus einem nicht mehr genutzten Social-Media-Konto zu entfernen?",
+            "frage": "Welche der folgenden Methoden ist der beste Weg, um persönliche Daten von einem Social-Media-Konto zu entfernen, das nicht mehr genutzt wird?",
             "optionen": {
-                "A": "Right to be Forgotten ausüben",
-                "B": "Social-Media-App deinstallieren",
-                "C": "Factory Reset durchführen",
-                "D": "Social-Media-Konto kündigen"
+                "A": "Das Recht auf Vergessenwerden ausüben",
+                "B": "Die Social-Media-App deinstallieren",
+                "C": "Einen Werksreset durchführen",
+                "D": "Das Social-Media-Konto löschen"
             },
-            "antwort": "A",
-            "erklärung": "Das Ausüben des Right to be Forgotten verlangt vom Anbieter die vollständige Löschung aller personenbezogenen Daten, inklusive Backups. Konto-Kündigung reicht oft nicht aus, da Daten behalten werden können."
+            "antwort": "D",
+            "erklärung": "Die Löschung des Social-Media-Kontos (Account Termination) ist die direkteste und effektivste Methode, um alle persönlichen Daten dauerhaft vom Dienst zu entfernen. Das Recht auf Vergessenwerden kann helfen, aber erfordert oft einen formellen Antragsprozess und ist nicht in allen Rechtsräumen garantiert. Die Deinstallation der App oder ein Werksreset entfernen nur lokale Daten, nicht die auf den Servern des Anbieters gespeicherten Informationen."
         },
         "en": {
             "question": "Which of the following is the best way to remove personal data from a social media account that is no longer being used?",
@@ -14043,8 +14043,8 @@
                 "C": "Perform a factory reset",
                 "D": "Terminate the social media account"
             },
-            "answer": "A",
-            "explanation": "Exercising the right to be forgotten requires the provider to delete all personal data, including from backups. Account termination may leave data retained."
+            "answer": "D",
+            "explanation": "Terminating (deleting) the social media account is the most direct and effective method to permanently remove all personal data from the service. The right to be forgotten can help but often requires a formal request process and isn't guaranteed in all jurisdictions. Uninstalling the app or performing a factory reset only removes local data, not the information stored on the provider's servers."
         }
     },
     {
@@ -14175,15 +14175,15 @@
     {
         "id": 565,
         "de": {
-            "frage": "Ein Sicherheitsanalyst erfährt, dass ein Angriffsvektor, der bei einem kürzlichen Vorfall verwendet wurde, ein bekannter IoT-Geräte-Exploit war. Der Analyst muss Logs prüfen, um den Zeitpunkt des ersten Exploits zu identifizieren. Welche Logs sollte der Analyst zuerst prüfen?",
+            "frage": "Ein Security Analyst erfährt, dass ein Angriffsvektor, der Teil eines kürzlichen Vorfalls war, ein weithin bekannter Exploit für ein IoT-Gerät war. Der Analyst muss Protokolle prüfen, um den Zeitpunkt der ersten Ausnutzung zu ermitteln.\n\nWelche der folgenden Log-Quellen sollte der Analyst zuerst prüfen?",
             "optionen": {
                 "A": "Wireless Access Point",
                 "B": "Switch",
                 "C": "Firewall",
                 "D": "NAC"
             },
-            "antwort": "A",
-            "erklärung": "Viele IoT-Geräte verbinden sich über Wireless Access Points mit dem Netzwerk. Die Überprüfung dieser Logs zeigt, wann das IoT-Gerät erstmals verbunden wurde und kann verdächtige oder auffällige Verkehrsdaten im Zusammenhang mit dem Exploit aufzeigen."
+            "antwort": "C",
+            "erklärung": "Firewall-Logs sind meist der beste erste Einstieg, um den initialen Exploit-Zeitpunkt zu finden, weil sie eingehende/ausgehende Verbindungen an der Netzwerkgrenze protokollieren (z. B. erste eingehende Verbindungsversuche, geblockte/erlaubte Sessions, NAT-Zuordnungen). Switch- und WLAN-Logs helfen eher bei der internen Nachverfolgung, und NAC-Logs beziehen sich primär auf Geräteaufnahme/Authentisierung im Netz."
         },
         "en": {
             "question": "A security analyst learns that an attack vector, which was used as a part of a recent incident, was a well-known IoT device exploit. The analyst needs to review logs to identify the time of initial exploit. Which of the following logs should the analyst review first?",
@@ -14193,8 +14193,8 @@
                 "C": "Firewall",
                 "D": "NAC"
             },
-            "answer": "A",
-            "explanation": "Many IoT devices connect to the network via wireless access points. Reviewing these logs would reveal when the IoT device first connected, as well as any suspicious or anomalous traffic patterns associated with the exploit’s initiation."
+            "answer": "C",
+            "explanation": "Firewall logs are typically the best first place to identify the initial exploitation time because they record inbound and outbound traffic at the network boundary (for example, the first connection attempts, allowed/blocked sessions, and NAT mappings). Switch and wireless logs are more useful for internal tracking, and NAC logs focus on network admission/authentication events."
         }
     },
     {
@@ -14250,15 +14250,15 @@
     {
         "id": 570,
         "de": {
-            "frage": "Welche der folgenden Technologien unterstützt die passive Überprüfung des abgelaufenen Status eines digitalen Zertifikats?",
+            "frage": "Welche der folgenden Technologien hilft dabei, den (abgelaufenen/ungültigen) Status eines digitalen Zertifikats passiv zu überprüfen?",
             "optionen": {
                 "A": "OCSP",
                 "B": "CRL",
                 "C": "TPM",
                 "D": "CSR"
             },
-            "antwort": "A",
-            "erklärung": "Das Online Certificate Status Protocol (OCSP) ist eine Technologie, die entwickelt wurde, um den Widerrufsstatus digitaler Zertifikate in Echtzeit zu prüfen, ohne dass der Client die gesamten Widerrufslisten herunterladen muss. Im Gegensatz zu Certificate Revocation Lists (CRLs) fragt OCSP einen OCSP-Responder ab, um den Status eines bestimmten Zertifikats zu erhalten. OCSP gilt als passive Überprüfung, da Clients den aktuellen Gültigkeitsstatus eines Zertifikats bei Bedarf abfragen können, ohne lokale Kopien der Widerrufsdaten zu speichern. Der OCSP-Responder gibt zurück, ob das Zertifikat gültig, widerrufen oder abgelaufen ist."
+            "antwort": "B",
+            "erklärung": "Eine CRL (Certificate Revocation List) ist eine vom Zertifikatsaussteller signierte Sperrliste, die lokal zwischengespeichert und anschließend ohne Live-Anfrage („passiv“) geprüft werden kann. OCSP ist dagegen typischerweise eine aktive Online-Abfrage bei einem OCSP-Responder; TPM und CSR dienen anderen Zwecken (Hardware-Trust bzw. Zertifikatsantrag)."
         },
         "en": {
             "question": "Which of the following technologies assists in passively verifying the expired status of a digital certificate?",
@@ -14268,8 +14268,8 @@
                 "C": "TPM",
                 "D": "CSR"
             },
-            "answer": "A",
-            "explanation": "The Online Certificate Status Protocol (OCSP) is a technology designed to check the revocation status of digital certificates in real-time without requiring the client to download entire revocation lists. Unlike Certificate Revocation Lists (CRLs), which are periodically updated and can be large, OCSP queries an OCSP responder to receive the status of a specific certificate. OCSP is considered passive verification because it allows clients to check a certificate's current validity status on-demand without maintaining local copies of revocation data. The OCSP responder returns whether the certificate is valid, revoked, or expired."
+            "answer": "B",
+            "explanation": "A CRL (Certificate Revocation List) is a CA-signed revocation list that can be downloaded, cached, and checked locally, which enables a more passive/offline-style verification. OCSP typically requires an active online query to an OCSP responder; TPM and CSR serve different purposes (hardware root of trust and certificate signing request)."
         }
     },
     {
@@ -14920,15 +14920,15 @@
     {
         "id": 596,
         "de": {
-            "frage": "Welche der folgenden Situationen beschreibt einen Zustand, bei dem ein Nutzer autorisiert wird, bevor er authentifiziert wurde?",
+            "frage": "Welche der folgenden Situationen beschreibt einen Fall, in dem ein Benutzer autorisiert wird, bevor er authentifiziert wurde?",
             "optionen": {
-                "A": "Privilegien-Eskalation",
-                "B": "Race Condition",
-                "C": "Tailgating",
-                "D": "Impersonation"
+                "A": "Privilege Escalation (Rechteausweitung)",
+                "B": "Race Condition (Wettlaufsituation)",
+                "C": "Tailgating (Mitschleusen)",
+                "D": "Impersonation (Identitätstäuschung)"
             },
-            "antwort": "D",
-            "erklärung": "Impersonation tritt auf, wenn ein Angreifer oder ein nicht autorisierter Nutzer durch Identitätsbetrug Zugriff erhält, wodurch die Autorisierung fälschlicherweise erfolgt, bevor eine korrekte Authentifizierung stattfindet."
+            "antwort": "B",
+            "erklärung": "Eine Race Condition tritt auf, wenn zwei oder mehr Prozesse gleichzeitig auf gemeinsame Ressourcen zugreifen und das Timing die Ergebnisse beeinflusst. In diesem Sicherheitskontext kann ein Angreifer die zeitliche Lücke zwischen Authentifizierung und Autorisierung ausnutzen, sodass die Autorisierung vor der vollständigen Authentifizierung erfolgt. Dies ist ein klassisches Timing-Problem in der Zugriffskontrolle."
         },
         "en": {
             "question": "Which of the following describes a situation where a user is authorized before being authenticated?",
@@ -14938,8 +14938,8 @@
                 "C": "Tailgating",
                 "D": "Impersonation"
             },
-            "answer": "D",
-            "explanation": "Impersonation occurs when an attacker or unauthorized user is granted access (authorized) by masquerading as a legitimate user, effectively bypassing or exploiting the authentication process. This means authorization is mistakenly granted before proper authentication."
+            "answer": "B",
+            "explanation": "A race condition occurs when two or more processes access shared resources simultaneously and timing affects the outcome. In this security context, an attacker can exploit the timing gap between authentication and authorization, causing authorization to occur before complete authentication. This is a classic timing vulnerability in access control systems."
         }
     },
     {
@@ -15870,15 +15870,15 @@
     {
         "id": 634,
         "de": {
-            "frage": "Ein Unternehmen entdeckt verdächtige Transaktionen, die in die Firmendatenbank eingegeben wurden und einem Benutzerkonto zugeordnet sind, das als Falle für bösartige Aktivitäten erstellt wurde. Welche der folgenden Kategorien beschreibt das Benutzerkonto?",
+            "frage": "Ein Unternehmen entdeckt verdächtige Transaktionen, die in die Unternehmensdatenbank eingetragen und einem Benutzerkonto zugeordnet wurden, das als Falle für bösartige Aktivitäten erstellt wurde. Wofür ist das Benutzerkonto ein Beispiel?",
             "optionen": {
                 "A": "Honeytoken",
                 "B": "Honeynet",
                 "C": "Honeypot",
                 "D": "Honeyfile"
             },
-            "antwort": "C",
-            "erklärung": "Ein Honeypot ist ein Köder-System oder -Konto, das entwickelt wurde, um Angreifer anzulocken und bösartige Aktivitäten zu erkennen. Die Erstellung eines Benutzerkontos als Falle entspricht dieser Definition."
+            "antwort": "A",
+            "erklärung": "Ein Honeytoken ist eine digitale Falle in Form von Daten oder Anmeldeinformationen (wie einem Benutzerkonto), die absichtlich erstellt wird, um unbefugte Zugriffe zu erkennen. Wenn das Konto verwendet wird, signalisiert dies bösartige Aktivität. Ein Honeypot ist dagegen ein ganzes System, ein Honeynet ein Netzwerk aus mehreren Honeypots, und ein Honeyfile ist eine speziell präparierte Datei."
         },
         "en": {
             "question": "A company discovers suspicious transactions that were entered into the company's database and attached to a user account that was created as a trap for malicious activity. Which of the following is the user account an example of?",
@@ -15888,8 +15888,8 @@
                 "C": "Honeypot",
                 "D": "Honeyfile"
             },
-            "answer": "C",
-            "explanation": "A honeypot is a decoy system or account designed to attract attackers and detect malicious activity. Creating a user account as a trap fits this definition."
+            "answer": "A",
+            "explanation": "A honeytoken is a digital trap in the form of data or credentials (such as a user account) intentionally created to detect unauthorized access. When the account is used, it signals malicious activity. In contrast, a honeypot is an entire system, a honeynet is a network of multiple honeypots, and a honeyfile is a specifically crafted file."
         }
     },
     {

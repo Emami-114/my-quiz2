@@ -178,12 +178,12 @@ export default function Quiz() {
       >
         {lang === "de" ? "FFW" : "RWQ"}
       </Button> */}
-      <Button
+{/*       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={switchQuiz}
       >
         {quizType === "compQuiz" ? "Sec+" : "Exam Topic"}
-      </Button>
+      </Button> */}
       <Card className="bg-gray-800 w-full max-w-2xl rounded-3xl shadow-2xl p-8">
         <CardContent>
           <h2 className="text-center text-3xl font-bold mb-8 text-blue-400">
@@ -297,7 +297,7 @@ export default function Quiz() {
       >
         {lang === "de" ? "Weiter" : "Skip"}
       </Button>
-      <Button
+    {/*   <Button
         className="fixed bottom-4 left-4 bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={() => {
           localStorage.removeItem("wrongAnswers");
@@ -310,7 +310,7 @@ export default function Quiz() {
         }}
       >
         {lang === "de" ? "Falsche Fragen löschen" : "Delete wrong questions"}
-      </Button>
+      </Button> */}
     </div>
   );
 }
