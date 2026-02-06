@@ -12272,7 +12272,7 @@
                 "F": "Entfernen der Zahlungsinformationen von den Servern"
             },
             "antwort": [
-                "C",
+                "A",
                 "D"
             ],
             "erklärung": "Eine Web Application Firewall (WAF) (D) kann bösartige HTTP-Requests filtern und speziell gegen Angriffe auf Anwendungsebene, wie JavaScript-Injection oder XSS, schützen. Zusätzlich reduziert die Verschlüsselung sensibler Zahlungsdaten im Ruhezustand und in der Übertragung (C) das Risiko, dass ein Angreifer bei einem erfolgreichen Angriff verwertbare Informationen erbeutet. Regelmäßige Patches und Scans sind wichtig, adressieren aber nicht gezielt Script-Injection, und Passwort-Richtlinien betreffen primär Kontozugriff, nicht Web-Code. Das Entfernen von Zahlungsinformationen wäre ein Architekturwechsel, löst aber nicht die zugrunde liegende Injection-Schwachstelle."
@@ -12288,7 +12288,7 @@
                 "F": "Removing payment information from the servers"
             },
             "answer": [
-                "C",
+                "A",
                 "D"
             ],
             "explanation": "A Web Application Firewall (WAF) (D) can filter malicious HTTP requests and is specifically designed to protect against application-layer attacks such as JavaScript injection or XSS. Encrypting sensitive payment data at rest and in transit (C) further reduces the impact by making any captured data less useful to an attacker. While patching and vulnerability scanning are important, they do not directly target script injection, and password policies mainly affect account access. Removing payment data changes the architecture but does not address the underlying injection vulnerability in the web application."
