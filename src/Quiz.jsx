@@ -172,12 +172,12 @@ export default function Quiz() {
           ? `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`
           : `Total:  ${answeredIds.length} - Wrong: ${totalFalse}`}
       </Button>
-      {/* <Button
+      <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={repeatWrongQuestions}
       >
         {lang === "de" ? "FFW" : "RWQ"}
-      </Button> */}
+      </Button>
 {/*       <Button
         className="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={switchQuiz}
@@ -285,11 +285,11 @@ export default function Quiz() {
       >
         {isRandom
           ? lang === "de"
-            ? "Zufällige Fragen: Ein"
-            : "Random Questions: On"
+            ? "Zufällige: Ein"
+            : "Random: On"
           : lang === "de"
-          ? "Zufällige Fragen: Aus"
-          : "Random Questions: Off"}
+          ? "Zufällige: Aus"
+          : "Random: Off"}
       </Button>
       <Button
         className="fixed bottom-4 center-3 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
@@ -297,7 +297,7 @@ export default function Quiz() {
       >
         {lang === "de" ? "Weiter" : "Skip"}
       </Button>
-    {/*   <Button
+      <Button
         className="fixed bottom-4 left-4 bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-full shadow-lg z-50"
         onClick={() => {
           localStorage.removeItem("wrongAnswers");
@@ -309,8 +309,8 @@ export default function Quiz() {
           window.location.reload();
         }}
       >
-        {lang === "de" ? "Falsche Fragen löschen" : "Delete wrong questions"}
-      </Button> */}
+        {lang === "de" ? "Delete wrong" : "Delete wrong"}
+      </Button>
     </div>
   );
 }
