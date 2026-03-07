@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { Button } from "./Card";
-import questions2 from "./secplus.json";
+import questions2 from "./pentest-plus.json";
 import compQuiz from "./examtopic.json";
 
 export default function Quiz() {
