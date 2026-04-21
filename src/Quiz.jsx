@@ -201,7 +201,7 @@ export default function Quiz() {
           {(currentQuestion.image || currentQuestion.bild) && (
             <div className="flex justify-center mb-8">
               <img
-                src={`https://emami-114.github.io/my-quiz2/assets/${currentQuestion.image}`}
+                src={`https://emami-114.github.io/my-quiz2/assets/pentest${currentQuestion.image}`}
                 alt="Question illustration"
                 className="max-w-md max-h-80 rounded-lg shadow-lg object-contain"
               />
