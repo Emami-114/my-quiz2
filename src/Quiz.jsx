@@ -6,6 +6,9 @@ import networkplusData from "./networkplus.json";
 import secplusData from "./secplus.json";
 import pentestData from "./pentest-plus.json";
 import examtopicData from "./examtopic.json";
+import PasswordGate from "./components/PasswordGate";
+import ChangePasswordModal from "./components/ChangePasswordModal";
+import { isAuthenticated, logout } from "./services/authService";
 
 // Fisher-Yates unbiased shuffle
 function shuffleArray(arr) {
@@ -143,6 +146,8 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [lang, setLang] = useState("de"); // "de" oder "en"
+  const [isUnlocked, setIsUnlocked] = useState(() => isAuthenticated());
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [answeredIds, setAnsweredIds] = useState([]);
   const [totalFalse, setTotalFalse] = useState(0);
   const [isRandom, setIsRandom] = useState(false);
@@ -406,6 +411,11 @@ export default function Quiz() {
       accent: "from-blue-600 to-indigo-600",
     };
 
+  // 0. Security Gate: Render PasswordGate if not unlocked
+  if (!isUnlocked) {
+    return <PasswordGate onSuccess={() => setIsUnlocked(true)} lang={lang} />;
+  }
+
   // Quiz Finished Screen
   if (current >= questions.length || questions.length === 0) {
     const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
@@ -470,7 +480,34 @@ export default function Quiz() {
               </button>
             )}
           </div>
+
+          <div className="mt-8 pt-4 border-t border-slate-800 flex justify-center items-center gap-4">
+            <button
+              onClick={() => setShowPasswordModal(true)}
+              className="text-xs text-slate-400 hover:text-slate-200 transition cursor-pointer flex items-center gap-1.5"
+            >
+              <span>🔑</span>
+              <span>{lang === "de" ? "Passwort ändern" : "Change password"}</span>
+            </button>
+            <span className="text-slate-700">•</span>
+            <button
+              onClick={() => {
+                logout();
+                setIsUnlocked(false);
+              }}
+              className="text-xs text-rose-400 hover:text-rose-300 transition cursor-pointer flex items-center gap-1.5"
+            >
+              <span>🔒</span>
+              <span>{lang === "de" ? "App sperren" : "Lock app"}</span>
+            </button>
+          </div>
         </div>
+
+        <ChangePasswordModal
+          isOpen={showPasswordModal}
+          onClose={() => setShowPasswordModal(false)}
+          lang={lang}
+        />
       </div>
     );
   }
@@ -496,11 +533,11 @@ export default function Quiz() {
               </span>
             </div>
 
-            {/* Quick Actions: Language & Wrong repeat */}
-            <div className="flex items-center gap-2">
+            {/* Quick Actions: Language, Wrong repeat, Password & Lock */}
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <button
                 onClick={() => setLang((prev) => (prev === "de" ? "en" : "de"))}
-                className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition cursor-pointer flex items-center gap-1.5 shadow-sm"
+                className="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition cursor-pointer flex items-center gap-1 shadow-sm"
                 title="Switch Language"
               >
                 <span>{lang === "de" ? "🇩🇪 DE" : "🇬🇧 EN"}</span>
@@ -508,7 +545,7 @@ export default function Quiz() {
 
               <button
                 onClick={repeatWrongQuestions}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
+                className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer flex items-center gap-1.5 shadow-sm ${
                   wrongCount > 0
                     ? "bg-rose-600/90 hover:bg-rose-600 text-white border border-rose-500 shadow-rose-600/20"
                     : "bg-slate-800/60 text-slate-400 border border-slate-700/50 hover:bg-slate-800"
@@ -521,6 +558,31 @@ export default function Quiz() {
                 </span>
                 <span className="px-1.5 py-0.2 rounded-full bg-black/30 text-[10px]">
                   {wrongCount}
+                </span>
+              </button>
+
+              <button
+                onClick={() => setShowPasswordModal(true)}
+                className="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition cursor-pointer flex items-center gap-1 shadow-sm"
+                title={lang === "de" ? "Passwort verwalten" : "Manage password"}
+              >
+                <span>🔑</span>
+                <span className="hidden md:inline">
+                  {lang === "de" ? "Passwort" : "Password"}
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  logout();
+                  setIsUnlocked(false);
+                }}
+                className="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 hover:bg-rose-950/70 hover:text-rose-300 text-slate-300 border border-slate-700 transition cursor-pointer flex items-center gap-1 shadow-sm"
+                title={lang === "de" ? "App sperren" : "Lock app"}
+              >
+                <span>🔒</span>
+                <span className="hidden md:inline">
+                  {lang === "de" ? "Sperren" : "Lock"}
                 </span>
               </button>
             </div>
@@ -860,6 +922,13 @@ export default function Quiz() {
           </div>
         </div>
       </footer>
+
+      {/* Password Management Modal */}
+      <ChangePasswordModal
+        isOpen={showPasswordModal}
+        onClose={() => setShowPasswordModal(false)}
+        lang={lang}
+      />
     </div>
   );
 }
